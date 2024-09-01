@@ -1,0 +1,200 @@
+{
+  "identifiers": [
+    {
+      "type": "CUSTOM",
+      "details": "reaction index",
+      "value": "749"
+    },
+    {
+      "type": "REACTION_TYPE",
+      "details": "reaction type",
+      "value": "1.3.7 [N-arylation with Ar-X] Chloro N-arylation"
+    }
+  ],
+  "inputs": {
+    "Base": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "C(=O)([O-])[O-].[Cs+].[Cs+]"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.00413,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REAGENT",
+          "is_limiting": false
+        }
+      ]
+    },
+    "Solvent": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "C1COCCO1"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 0.015,
+              "units": "LITER"
+            }
+          },
+          "reaction_role": "SOLVENT",
+          "is_limiting": false
+        }
+      ]
+    },
+    "metal and ligand": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "CC1(C2=C(C(=CC=C2)P(C3=CC=CC=C3)C4=CC=CC=C4)OC5=C1C=CC=C5P(C6=CC=CC=C6)C7=CC=CC=C7)C"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.000275,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "CATALYST",
+          "is_limiting": false
+        },
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "C1=CC=C(C=C1)P(C2=CC=CC=C2)C3=CC=CC=C3.C1=CC=C(C=C1)P(C2=CC=CC=C2)C3=CC=CC=C3.C1=CC=C(C=C1)P(C2=CC=CC=C2)C3=CC=CC=C3.C1=CC=C(C=C1)P(C2=CC=CC=C2)C3=CC=CC=C3.[Pd]"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.000138,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "CATALYST",
+          "is_limiting": false
+        }
+      ]
+    },
+    "aryl halide": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "CC1(CC2=C(C=NN2C1)C3=CC(=NC=C3F)Cl)C"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.00138,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT",
+          "is_limiting": false
+        }
+      ]
+    },
+    "amine": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "CC(C)(C)OC(=O)N[C@@H]1CCC[C@@H](C1)C(=O)N"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.00138,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT",
+          "is_limiting": false
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 120.0,
+        "precision": 10.0,
+        "units": "CELSIUS"
+      }
+    }
+  },
+  "notes": {
+    "procedure_details": "Tetrakis(triphenylphosphine)palladium(0) (159 mg, 0.14 mmol) was added to 3-(2-chloro-5-fluoropyridin-4-yl)-5,5-dimethyl-5,6-dihydro-4H-pyrrolo[1,2-b]pyrazole (365.4 mg, 1.38 mmol), tert-butyl ((1R,3S)-3-carbamoylcyclohexyl)carbamate (333 mg, 1.38 mmol) and 9,9-dimethyl-4,5-bis(diphenylphosphino)xanthene (Xantphos) (159 mg, 0.28 mmol)and Cesium carbonate (1344 mg, 4.13 mmol) in 1,4-dioxane (15 mL). The resulting suspension was degassed for 10 minutes under nitrogen and then stirred at 120 °C for 8 hours overnight in the microwave reactor.  The reaction mixture was partioned between water (30 mL) and DCM (15 mL) and seperated.  _LCMS analysis showed product in the aqueous extract._  The aqueous layer was extracted with DCM (2 X 20 mL).  LCMS analysis showed some product still within in the aqueous extract.  _The aqueous layer was extracted again with DCM (2 X 25 mL).  _  The organic extracts were combined, dried over MgSO4, filtered and evaporated to afford crude product.  The crude product was purified by flash silica chromatography, elution gradient 0 to 60% EtOAc in heptane. Pure fractions were evaporated to dryness to afford tert-butyl ((1R,3S)-3-((4-(5,5-dimethyl-5,6-dihydro-4H-pyrrolo[1,2-b]pyrazol-3-yl)-5-fluoropyridin-2-yl)carbamoyl)cyclohexyl)carbamate (348 mg, 53.6 %) as a white solid.  "
+  },
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "CC1(CC2=C(C=NN2C1)C3=CC(=NC=C3F)NC(=O)[C@H]4CCC[C@H](C4)NC(=O)OC(C)(C)C)C"
+            }
+          ],
+          "is_desired_product": true,
+          "measurements": [
+            {
+              "type": "YIELD",
+              "percentage": {
+                "value": 53.6
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "experimenter": {
+      "organization": "AstraZeneca"
+    },
+    "experiment_start": {
+      "value": "08/06/2015"
+    },
+    "publication_url": "https://chemrxiv.org/engage/chemrxiv/article-details/60c9e3f37792a23bfdb2d471",
+    "record_created": {
+      "time": {
+        "value": "10/19/2021, 12:16:25 PM"
+      },
+      "person": {
+        "name": "Bozhao Nan",
+        "organization": "Notre Dame",
+        "email": "bnan@nd.edu"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Fri Oct 22 22:19:55 2021"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-180ffbd2722940d2bf70ecaf0fc8e2ac"
+}

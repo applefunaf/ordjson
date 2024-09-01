@@ -1,0 +1,200 @@
+{
+  "identifiers": [
+    {
+      "type": "CUSTOM",
+      "details": "reaction index",
+      "value": "736"
+    },
+    {
+      "type": "REACTION_TYPE",
+      "details": "reaction type",
+      "value": "1.3.6 [N-arylation with Ar-X] Bromo N-arylation"
+    }
+  ],
+  "inputs": {
+    "Base": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "CC(C)(C)[O-].[Na+]"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.00451,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REAGENT",
+          "is_limiting": false
+        }
+      ]
+    },
+    "Solvent": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "CC1=CC=CC=C1"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 0.01,
+              "units": "LITER"
+            }
+          },
+          "reaction_role": "SOLVENT",
+          "is_limiting": false
+        }
+      ]
+    },
+    "metal and ligand": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "C1=CC=C(C=C1)P(C2=CC=CC=C2)C3=C(C4=CC=CC=C4C=C3)C5=C(C=CC6=CC=CC=C65)P(C7=CC=CC=C7)C8=CC=CC=C8"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.000694,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "CATALYST",
+          "is_limiting": false
+        },
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "C1=CC=C(C=C1)/C=C/C(=O)/C=C/C2=CC=CC=C2.C1=CC=C(C=C1)/C=C/C(=O)/C=C/C2=CC=CC=C2.C1=CC=C(C=C1)/C=C/C(=O)/C=C/C2=CC=CC=C2.[Pd].[Pd]"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.000262,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "CATALYST",
+          "is_limiting": false
+        }
+      ]
+    },
+    "aryl halide": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "C1=CC2=C(C=NN2C3=CC=C(C=C3)F)C(=C1)Br"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.00301,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT",
+          "is_limiting": false
+        }
+      ]
+    },
+    "amine": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "CC1=CC(=C(C(=C1)C)S(=O)(=O)N[C@H](CN)C(C)C)C"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.00301,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT",
+          "is_limiting": false
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 110.0,
+        "precision": 10.0,
+        "units": "CELSIUS"
+      }
+    }
+  },
+  "notes": {
+    "procedure_details": "BINAP (0.432 g, 0.69 mmol) and Pd2(dba)3 (0.24 g, 0.26 mmol) were dissolved in toluene (10 mL) and to this (S)-N-(1-amino-3-methylbutan-2-yl)-2,4,6-trimethylbenzenesulfonamide (0.856 g, 3.01 mmol) and 4-bromo-1-(4-fluorophenyl)-1H-indazole (0.876 g, 3.01 mmol) was added followed by sodium tert-butoxide (0.434 g, 4.51 mmol). The reaction mixture was degassed and the reaction tube was filled with nitrogen before it was heated at 110°C for 2h. LCMS indicated 55% product and just a small amout of starting materials remained. The reaction was partitioned between EtOAc and water. The layers were separated and the aqueous extracted twice with EtOAc. The organic extracts were combined, filtered through a fine sinter funnel to remove a grey ppte and then dried using a phase separator cartridge. The solvent was removed in vacuo and the residue purified by silica gel column chromatography (0-20% ethyl acetate in heptane). The product 340mg was obtained as a orange foam and was 90% clean by LCMS. The material was dissolved in DMSO and submitted to WRAP. (S)-N-(1-((1-(4-fluorophenyl)-1H-indazol-4-yl)amino)-3-methylbutan-2-yl)-2,4,6-trimethylbenzenesulfonamide (0.169 g, 11.38 %). Final form unknown.  "
+  },
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "CC1=CC(=C(C(=C1)C)S(=O)(=O)N[C@H](CNC2=C3C=NN(C3=CC=C2)C4=CC=C(C=C4)F)C(C)C)C"
+            }
+          ],
+          "is_desired_product": true,
+          "measurements": [
+            {
+              "type": "YIELD",
+              "percentage": {
+                "value": 11.38
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "experimenter": {
+      "organization": "AstraZeneca"
+    },
+    "experiment_start": {
+      "value": "04/22/2015"
+    },
+    "publication_url": "https://chemrxiv.org/engage/chemrxiv/article-details/60c9e3f37792a23bfdb2d471",
+    "record_created": {
+      "time": {
+        "value": "10/19/2021, 12:16:25 PM"
+      },
+      "person": {
+        "name": "Bozhao Nan",
+        "organization": "Notre Dame",
+        "email": "bnan@nd.edu"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Fri Oct 22 22:19:55 2021"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-91d62f2c93df477a8b3df11f707f23e4"
+}

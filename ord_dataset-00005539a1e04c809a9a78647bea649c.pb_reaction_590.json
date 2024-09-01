@@ -1,0 +1,200 @@
+{
+  "identifiers": [
+    {
+      "type": "CUSTOM",
+      "details": "reaction index",
+      "value": "780"
+    },
+    {
+      "type": "REACTION_TYPE",
+      "details": "reaction type",
+      "value": "1.3.1 [N-arylation with Ar-X] Bromo Buchwald-Hartwig amination"
+    }
+  ],
+  "inputs": {
+    "Base": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "C(=O)([O-])[O-].[Cs+].[Cs+]"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0056,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REAGENT",
+          "is_limiting": false
+        }
+      ]
+    },
+    "Solvent": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "CC1=CC=CC=C1"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 0.012,
+              "units": "LITER"
+            }
+          },
+          "reaction_role": "SOLVENT",
+          "is_limiting": false
+        }
+      ]
+    },
+    "metal and ligand": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "C1=CC=C(C=C1)P(C2=CC=CC=C2)C3=C(C4=CC=CC=C4C=C3)C5=C(C=CC6=CC=CC=C65)P(C7=CC=CC=C7)C8=CC=CC=C8"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.000448,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "CATALYST",
+          "is_limiting": false
+        },
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "CC(=O)O.CC(=O)O.[Pd]"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.000336,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "CATALYST",
+          "is_limiting": false
+        }
+      ]
+    },
+    "aryl halide": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "C1=CN2C=C(C=C(C2=N1)Br)Cl"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.00224,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT",
+          "is_limiting": false
+        }
+      ]
+    },
+    "amine": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "C1COCCN1C2=CN=C(C=C2)N"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.00269,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT",
+          "is_limiting": false
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 105.0,
+        "precision": 10.0,
+        "units": "CELSIUS"
+      }
+    }
+  },
+  "notes": {
+    "procedure_details": "A mixture of 8-bromo-6-chloroimidazo[1,2-a]pyridine, HCl (600mg, 2.24 mmol), 5-morpholinopyridin-2-amine (482 mg, 2.69 mmol), BINAP (279 mg, 0.45 mmol), cesium carbonate (1824 mg, 5.60 mmol) in Toluene (12 mL) was sparged with nitrogen while stirring for 10 minutes. palladium(II) acetate (87 mg, 0.39 mmol) was then added and the reaction stirred at 105 °C for overnight. At ths stage LC/MS indicated that formation of the product. After this time, the reaction was cooled to room temperature, diluted with mixture of 1:1 methanol/DCM ( 100 mL) and filtered through celite. The filtrated concentrated under reduced pressure and the resulting residue purified by flash chromatography (silicagel, 0-10% DCM/Methanol, 25 minutes) to afford 6-chloro-N-(5-morpholinopyridin-2-yl)imidazo[1,2-a]pyridin-8-amine (482 mg, 65.3 %) as a solid.  LC/MS (2 minute, Acid _CV10.olp method 330 (M + 1), 0.66 minutes.  1H NMR (400 MHz, DMSO- _d_ 6) d ppm 9.16 (s, 1 H) 8.30 - 8.34 (m, 1 H) 8.25 - 8.29 (m, 1 H) 7.98 - 8.03 (m, 1 H) 7.88 - 7.92 (m, 1 H) 7.54 - 7.57(m, 1 H) 7.36 - 7.47 (m, 2 H) 3.72 - 3.79 (m, 4 H) 3.05 - 3.12 (m, 4 H)  "
+  },
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "C1COCCN1C2=CN=C(C=C2)NC3=CC(=CN4C3=NC=C4)Cl"
+            }
+          ],
+          "is_desired_product": true,
+          "measurements": [
+            {
+              "type": "YIELD",
+              "percentage": {
+                "value": 65.27
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "experimenter": {
+      "organization": "AstraZeneca"
+    },
+    "experiment_start": {
+      "value": "03/12/2014"
+    },
+    "publication_url": "https://chemrxiv.org/engage/chemrxiv/article-details/60c9e3f37792a23bfdb2d471",
+    "record_created": {
+      "time": {
+        "value": "10/19/2021, 12:16:25 PM"
+      },
+      "person": {
+        "name": "Bozhao Nan",
+        "organization": "Notre Dame",
+        "email": "bnan@nd.edu"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Fri Oct 22 22:19:55 2021"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-eba583eb36cf40e597f1d8a3b26c7756"
+}

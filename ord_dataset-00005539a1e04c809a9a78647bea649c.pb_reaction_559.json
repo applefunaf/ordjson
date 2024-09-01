@@ -1,0 +1,200 @@
+{
+  "identifiers": [
+    {
+      "type": "CUSTOM",
+      "details": "reaction index",
+      "value": "740"
+    },
+    {
+      "type": "REACTION_TYPE",
+      "details": "reaction type",
+      "value": "1.3.6 [N-arylation with Ar-X] Bromo N-arylation"
+    }
+  ],
+  "inputs": {
+    "Base": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "CC(C)(C)[O-].[Na+]"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.00169,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REAGENT",
+          "is_limiting": false
+        }
+      ]
+    },
+    "Solvent": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "CC1=CC=CC=C1"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 0.075,
+              "units": "LITER"
+            }
+          },
+          "reaction_role": "SOLVENT",
+          "is_limiting": false
+        }
+      ]
+    },
+    "metal and ligand": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "C1=CC=C(C=C1)P(C2=CC=CC=C2)C3=C(C4=CC=CC=C4C=C3)C5=C(C=CC6=CC=CC=C65)P(C7=CC=CC=C7)C8=CC=CC=C8"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.00169,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "CATALYST",
+          "is_limiting": false
+        },
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "C1=CC=C(C=C1)/C=C/C(=O)/C=C/C2=CC=CC=C2.C1=CC=C(C=C1)/C=C/C(=O)/C=C/C2=CC=CC=C2.C1=CC=C(C=C1)/C=C/C(=O)/C=C/C2=CC=CC=C2.[Pd].[Pd]"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.000778,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "CATALYST",
+          "is_limiting": false
+        }
+      ]
+    },
+    "aryl halide": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "CC1=C(N=CC=C1)Br"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0403,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT",
+          "is_limiting": false
+        }
+      ]
+    },
+    "amine": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "CC(C)(C)OC(=O)N1CCC[C@H](C1)N"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.048,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT",
+          "is_limiting": false
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 115.0,
+        "precision": 10.0,
+        "units": "CELSIUS"
+      }
+    }
+  },
+  "notes": {
+    "procedure_details": "Production using the conditions which were shown to work in EN07957-76  2016-03-01  14:20; Pd2(DBA)3 (1.05 g) and BINAP (712 mg mg) was stirred in toluene (75 ml).  14:25; 2-bromo-3-methylpyridine (6.94 g), the amine (9.62 g), and sodium t-butoxide (5.43 g), was added to the mixture.  14:30; Heating at 115 °C. In an attempt to degas the reaction by employing vacuum to the flask good reflux, indicating a slight exotherm, took place. HPLC after 5 minutes indicated complet reaction. The mixture was allowed to cool.  2016-03-02  09:00; Water (50 ml) was followowed by 0.5 M citric acid (~75 ml) to give pH 3. The aqueous phase was extracted with another 25 ml toluene and the combined extracts were washed with water. Removal of the solvent in vacuo followed by evaporation of the solvent gave a reddish brown residue, 13.3 g.  The mixture was dissolved in toluene and purified on a 100 g silica column, 25-100% ethyl acetate over 6 columns, collecting at 300 nm. This flash was repeated on a 340 g silica column to give 6.24 g oil with a clear orange color.  About 4 g more impure material was also isolated. It was realized that preparative HPLC was required for purifiaction of the material. The impurity was mainly the diphosphine oxide originating from the BINAP.  All material was purifed by preparative HPLC, 15-65% ACN in TFA 0.1%. The eluents were neutralized with ammonia and the acetonitrile was removed in vacuo. Extraction with DCM, drying (magnesium sulfate) and removal of the solvent in vacuo (over the weekend) gave 8.21 g semicrystalline material.  The 1H-NMR and 13C NMR looks slightly dubious (too many protons and a13C shift at 3.8 ppm) but probably good enough for further synthesis.  "
+  },
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "CC1=C(N=CC=C1)N[C@@H]2CCCN(C2)C(=O)OC(C)(C)C"
+            }
+          ],
+          "is_desired_product": true,
+          "measurements": [
+            {
+              "type": "YIELD",
+              "percentage": {
+                "value": 69.75
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "experimenter": {
+      "organization": "AstraZeneca"
+    },
+    "experiment_start": {
+      "value": "03/01/2016"
+    },
+    "publication_url": "https://chemrxiv.org/engage/chemrxiv/article-details/60c9e3f37792a23bfdb2d471",
+    "record_created": {
+      "time": {
+        "value": "10/19/2021, 12:16:25 PM"
+      },
+      "person": {
+        "name": "Bozhao Nan",
+        "organization": "Notre Dame",
+        "email": "bnan@nd.edu"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Fri Oct 22 22:19:55 2021"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-2949f6d733cb41eb863993e4ce1f0a88"
+}
