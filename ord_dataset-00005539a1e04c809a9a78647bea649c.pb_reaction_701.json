@@ -1,0 +1,200 @@
+{
+  "identifiers": [
+    {
+      "type": "CUSTOM",
+      "details": "reaction index",
+      "value": "929"
+    },
+    {
+      "type": "REACTION_TYPE",
+      "details": "reaction type",
+      "value": "1.3.1 [N-arylation with Ar-X] Bromo Buchwald-Hartwig amination"
+    }
+  ],
+  "inputs": {
+    "Base": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "C(=O)([O-])[O-].[Cs+].[Cs+]"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0021,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REAGENT",
+          "is_limiting": false
+        }
+      ]
+    },
+    "Solvent": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "CC1=CC=CC=C1"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 0.015,
+              "units": "LITER"
+            }
+          },
+          "reaction_role": "SOLVENT",
+          "is_limiting": false
+        }
+      ]
+    },
+    "metal and ligand": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "CC1(C2=C(C(=CC=C2)P(C3=CC=CC=C3)C4=CC=CC=C4)OC5=C1C=CC=C5P(C6=CC=CC=C6)C7=CC=CC=C7)C"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.00014,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "CATALYST",
+          "is_limiting": false
+        },
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "C1=CC=C(C=C1)/C=C/C(=O)/C=C/C2=CC=CC=C2.C1=CC=C(C=C1)/C=C/C(=O)/C=C/C2=CC=CC=C2.[Pd]"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 7.01e-05,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "CATALYST",
+          "is_limiting": false
+        }
+      ]
+    },
+    "aryl halide": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "C1COCC(=O)N1C2=NC(=CC=C2)Br"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.00175,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT",
+          "is_limiting": false
+        }
+      ]
+    },
+    "amine": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "CC1=CSC(=N1)N"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.00175,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT",
+          "is_limiting": false
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 115.0,
+        "precision": 10.0,
+        "units": "CELSIUS"
+      }
+    }
+  },
+  "notes": {
+    "procedure_details": "**_September 24 2015_**  4-methylthiazol-2-amine (200 mg, 1.75 mmol), 4-(6-bromopyridin-2-yl)morpholin-3-one (450 mg, 1.75 mmol), 4-(6-bromopyridin-2-yl)morpholin-3-one (450 mg, 1.75 mmol), (9,9-dimethyl-9H-xanthene-4,5-diyl)bis(diphenylphosphine) (81 mg, 0.14 mmol) and cesium carbonate (685 mg, 2.10 mmol) in toluene (15 mL) and DMF (1)were microwaved at 115 °C under N2 for one hour.  _(Note: Initially, DMF was not added as co-solvent, the microwave instrument was repeatly failed to reach the temperature, and shut down ar 100 °C.  It was due to the low thremal absorbance of toluene. Therefore, DMF was added to improve this situation.)_  LCMS showed no precursors and 87% of the desired mass MH+291 @ 0.87 min on a 2-min basic run. The reaction was cooled to RT.  **_September 25 2015_**  The reaction mixture was diluted with EtOAc, washed with water, filtered, and evaporated to give a brown solid as the crude product.  The crude product was added to a silica gel column, and was eluted with 20-100%EtOAc in Heptane. Collected fractions. Based on TLC and LCMS, most product fractions contained a non-MS-ionization unknown, were combined, and evpoarated to give an orange-yellow solid.  The orange-yellow solid was reloaded to a silica gel column and was eluted with 20-100%EtOAc in Heptane . Collected fractions .  **_September 28 2015_**  Based on TLC and LCMS, the product fractions were combined, and evpoarated to give a pale-yellow solid.  Based on LCMS, it was 93% pure; based on NMR, it was 94~95% pure.  "
+  },
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "CC1=CSC(=N1)NC2=NC(=CC=C2)N3CCOCC3=O"
+            }
+          ],
+          "is_desired_product": true,
+          "measurements": [
+            {
+              "type": "YIELD",
+              "percentage": {
+                "value": 80.02
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "experimenter": {
+      "organization": "AstraZeneca"
+    },
+    "experiment_start": {
+      "value": "09/23/2015"
+    },
+    "publication_url": "https://chemrxiv.org/engage/chemrxiv/article-details/60c9e3f37792a23bfdb2d471",
+    "record_created": {
+      "time": {
+        "value": "10/19/2021, 12:16:25 PM"
+      },
+      "person": {
+        "name": "Bozhao Nan",
+        "organization": "Notre Dame",
+        "email": "bnan@nd.edu"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Fri Oct 22 22:19:55 2021"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-4ad2f7e2a41645bd9dba54aaef4fa989"
+}
