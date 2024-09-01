@@ -1,0 +1,200 @@
+{
+  "identifiers": [
+    {
+      "type": "CUSTOM",
+      "details": "reaction index",
+      "value": "466"
+    },
+    {
+      "type": "REACTION_TYPE",
+      "details": "reaction type",
+      "value": "1.3.2 [N-arylation with Ar-X] Chloro Buchwald-Hartwig amination"
+    }
+  ],
+  "inputs": {
+    "Base": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "C(=O)([O-])[O-].[Cs+].[Cs+]"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.00799,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REAGENT",
+          "is_limiting": false
+        }
+      ]
+    },
+    "Solvent": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "C1COCCO1"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 0.016,
+              "units": "LITER"
+            }
+          },
+          "reaction_role": "SOLVENT",
+          "is_limiting": false
+        }
+      ]
+    },
+    "metal and ligand": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "CC1(C2=C(C(=CC=C2)P(C3=CC=CC=C3)C4=CC=CC=C4)OC5=C1C=CC=C5P(C6=CC=CC=C6)C7=CC=CC=C7)C"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0003,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "CATALYST",
+          "is_limiting": false
+        },
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "C1=CC=C(C=C1)/C=C/C(=O)/C=C/C2=CC=CC=C2.C1=CC=C(C=C1)/C=C/C(=O)/C=C/C2=CC=CC=C2.C1=CC=C(C=C1)/C=C/C(=O)/C=C/C2=CC=CC=C2.[Pd].[Pd]"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 9.99e-05,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "CATALYST",
+          "is_limiting": false
+        }
+      ]
+    },
+    "aryl halide": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "C1=CN=C(C=C1Cl)Cl"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.004,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT",
+          "is_limiting": false
+        }
+      ]
+    },
+    "amine": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "CCOC(=O)C1=CN=C(O1)N"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.004,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT",
+          "is_limiting": false
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 160.0,
+        "precision": 10.0,
+        "units": "CELSIUS"
+      }
+    }
+  },
+  "notes": {
+    "procedure_details": "Objective: Isolate a larger quantity of product for hydrolysis/decarboxylation study  Pd2(dba)3 (91 mg, 0.10 mmol), 9,9-dimethyl-4,5-bis(diphenylphosphino)xanthene (173 mg, 0.30 mmol), 2,4-dichloropyridine (591 mg, 4.00 mmol), cesium carbonate (2604 mg, 7.99 mmol) and ethyl 2-aminooxazole-5-carboxylate (624 mg, 4.00 mmol) were added to an oven dried microwave vial. The vial was capped and placed under an inert atmosphere, dioxane (16 mL) was added and the resulting mixture was heated at 160 °C for 1 h by microwave irradiation under a nitrogen atmosphere.  This reaction was run in four portions, i.e. four identical microwave reactions were carried out on 1/4 of the above scale. The reactions were then combined and purified as a single sample.  Purification by chromatography on silica using heptane:ethyl acetate as eluent, on alumina with heptane:ethyl acetate and via reverse phase on C18 silica failed. The crude product was purified by flash silica chromatography, elution gradient 0 to 3% Methanolic ammonia (7 M) in DCM. Pure fractions were evaporated to dryness to afford ethyl 2-(4-chloropyridin-2-ylamino)oxazole-5-carboxylate (534 mg, 49.9 %) as a pale yellow solid.  Althought the LCMS looks good for the fractions combined for this sample, the proton NMR shows significant impurities to be present.  Conclusion: Sufficient material isolated for hydrolysis/decarboxylation study.  "
+  },
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "CCOC(=O)C1=CN=C(O1)NC2=NC=CC(=C2)Cl"
+            }
+          ],
+          "is_desired_product": true,
+          "measurements": [
+            {
+              "type": "YIELD",
+              "percentage": {
+                "value": 49.92
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "experimenter": {
+      "organization": "AstraZeneca"
+    },
+    "experiment_start": {
+      "value": "04/12/2011"
+    },
+    "publication_url": "https://chemrxiv.org/engage/chemrxiv/article-details/60c9e3f37792a23bfdb2d471",
+    "record_created": {
+      "time": {
+        "value": "10/19/2021, 12:16:25 PM"
+      },
+      "person": {
+        "name": "Bozhao Nan",
+        "organization": "Notre Dame",
+        "email": "bnan@nd.edu"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Fri Oct 22 22:19:55 2021"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-b82571e96a704ae5a3aea3ab951d01e7"
+}

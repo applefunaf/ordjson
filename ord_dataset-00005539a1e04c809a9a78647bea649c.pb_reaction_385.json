@@ -1,0 +1,200 @@
+{
+  "identifiers": [
+    {
+      "type": "CUSTOM",
+      "details": "reaction index",
+      "value": "511"
+    },
+    {
+      "type": "REACTION_TYPE",
+      "details": "reaction type",
+      "value": "1.3.2 [N-arylation with Ar-X] Chloro Buchwald-Hartwig amination"
+    }
+  ],
+  "inputs": {
+    "Base": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "C(=O)([O-])[O-].[K+].[K+]"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.141,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REAGENT",
+          "is_limiting": false
+        }
+      ]
+    },
+    "Solvent": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "CC1=CC=CC=C1"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 0.2,
+              "units": "LITER"
+            }
+          },
+          "reaction_role": "SOLVENT",
+          "is_limiting": false
+        }
+      ]
+    },
+    "metal and ligand": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "C1=CC=C(C=C1)P(C2=CC=CC=C2)C3=C(C4=CC=CC=C4C=C3)C5=C(C=CC6=CC=CC=C65)P(C7=CC=CC=C7)C8=CC=CC=C8"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.00392,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "CATALYST",
+          "is_limiting": false
+        },
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "CC(=O)O.CC(=O)O.[Pd]"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.00235,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "CATALYST",
+          "is_limiting": false
+        }
+      ]
+    },
+    "aryl halide": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "CN1C[C@H](OC2=C(C1)C=CC(=N2)Cl)C3=CC=CC=C3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0783,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT",
+          "is_limiting": false
+        }
+      ]
+    },
+    "amine": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "CN1C=C(C=N1)C2=C(N=C(C=C2)N)OC"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0783,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT",
+          "is_limiting": false
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 110.0,
+        "precision": 10.0,
+        "units": "CELSIUS"
+      }
+    }
+  },
+  "notes": {
+    "procedure_details": "2011-05-03; 16:30  Charged a round-bottom flask with a mixture of 6-methoxy-5-(1-methyl-1H-pyrazol-4-yl)pyridin-2-amine (16 g, 78.34 mmol), (R)-8-chloro-4-methyl-2-phenyl-2,3,4,5-tetrahydropyrido[3,2-f][1,4]oxazepine (21.52 g, 78.34 mmol), palladium (II) acetate (0.528 g, 2.35 mmol), rac-BINAP (2.439 g, 3.92 mmol), potassium carbonate (19.49 g, 141.02 mmol), and toluene (200 mL). The atmosphere was inerted through consecutive vacuum-nitrogen purge cycles, then heated at 110 °C under N2(g).  2011-05-04; 10:52:55  HPLC-UV shows a small percentage (3-6% depending on wavelength) of oxazepine remaining, aminopyridine if fully converted. The mixture was allowed to cool to room temperature. DCM and 2M HCl was added and the orgaic phase were removed. The aqueous phase were basified using solid KOH, extracted with DCM and concentrated EN04644-87-001 (13 g, 29.4 mmol, 37.5 %) .  The remaining organic phase was treated second time with HCl 2M, this aqueous phase contained also product ( 75% according with HPLC). The HCl solution was basified using KOH and extracted with DCM to give EN04644-87-002.  EN04644-87-001 (13 g, 29.4 mmol, 37.5 %) (36g of crude) was dissolved in iPrOH (70mL) with heating and the slurry was left over a long weekend (4d). The precipitated obtained (after seeding with a sample from Jacob EN0) had 87% purity. The precipitated obtained (19g) were sent to for purification.  "
+  },
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "CN1C[C@H](OC2=C(C1)C=CC(=N2)NC3=NC(=C(C=C3)C4=CN(N=C4)C)OC)C5=CC=CC=C5"
+            }
+          ],
+          "is_desired_product": true,
+          "measurements": [
+            {
+              "type": "YIELD",
+              "percentage": {
+                "value": 37.5
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "experimenter": {
+      "organization": "AstraZeneca"
+    },
+    "experiment_start": {
+      "value": "05/03/2011"
+    },
+    "publication_url": "https://chemrxiv.org/engage/chemrxiv/article-details/60c9e3f37792a23bfdb2d471",
+    "record_created": {
+      "time": {
+        "value": "10/19/2021, 12:16:25 PM"
+      },
+      "person": {
+        "name": "Bozhao Nan",
+        "organization": "Notre Dame",
+        "email": "bnan@nd.edu"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Fri Oct 22 22:19:55 2021"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-570c79ad72a549d498fb0aa790356a1e"
+}

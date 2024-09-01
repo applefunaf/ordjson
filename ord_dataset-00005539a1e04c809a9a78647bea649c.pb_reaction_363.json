@@ -1,0 +1,200 @@
+{
+  "identifiers": [
+    {
+      "type": "CUSTOM",
+      "details": "reaction index",
+      "value": "485"
+    },
+    {
+      "type": "REACTION_TYPE",
+      "details": "reaction type",
+      "value": "1.3.2 [N-arylation with Ar-X] Chloro Buchwald-Hartwig amination"
+    }
+  ],
+  "inputs": {
+    "Base": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "C(=O)([O-])[O-].[Cs+].[Cs+]"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.00236,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REAGENT",
+          "is_limiting": false
+        }
+      ]
+    },
+    "Solvent": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "C1COCCO1"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 0.0048,
+              "units": "LITER"
+            }
+          },
+          "reaction_role": "SOLVENT",
+          "is_limiting": false
+        }
+      ]
+    },
+    "metal and ligand": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "CC1(C2=C(C(=CC=C2)P(C3=CC=CC=C3)C4=CC=CC=C4)OC5=C1C=CC=C5P(C6=CC=CC=C6)C7=CC=CC=C7)C"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 7.6e-05,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "CATALYST",
+          "is_limiting": false
+        },
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "CC(=O)O.CC(=O)O.[Pd]"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 5.07e-05,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "CATALYST",
+          "is_limiting": false
+        }
+      ]
+    },
+    "aryl halide": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "C1=CN=C(C=C1Cl)Cl"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.00101,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT",
+          "is_limiting": false
+        }
+      ]
+    },
+    "amine": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "C1=COC(=N1)N"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.00101,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT",
+          "is_limiting": false
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 100.0,
+        "precision": 10.0,
+        "units": "CELSIUS"
+      }
+    }
+  },
+  "notes": {
+    "procedure_details": "Palladium(II) acetate (11.38 mg, 0.05 mmol) was added in a single portion to a degassed solution of 9,9-dimethyl-4,5-bis(diphenylphosphino)xanthene (44.0 mg, 0.08 mmol), oxazol-2-amine (85 mg, 1.01 mmol), cesium carbonate (768 mg, 2.36 mmol),2,4-dichloropyridine (0.109 mL, 1.01 mmol), dioxane (4 mL) and DMSO (0.8 mL) and the resulting mixture was heated at 100 °C for 16 hours under a nitrogen atmosphere.  Note: the reaction mixture was degassed by first combing the reagents (with the exception of Pd((OAc)2), sealing the vessel and carrying out three pump- purge cycles (vac-nitrogen). Dioxane was then added to this mixture via syringe, followed by the Pd(OAc)2 in a single portion and the vessel was heated for the required time as above. Solvent boiled dry from reaction overnight. Only DMSO remained. **Crude proton NMR shows mainly dichlorpyridine starting material and the 2-aminooxazole starting material was absent**. Crude LCMS indicates that a product of the required mass is present.  The crude product was purified by flash chromatography on C-18 modified silica, elution gradient 0 to 100% MeCN in water with basic modifier (1% ammonium hydroxide). Pure fractions were evaporated to dryness to afford N-(4-chloropyridin-2-yl)oxazol-2-amine (22.00 mg, 11.10 %) as a pale yellow residue.  The product isolated, although impure, looks like the required product based on LCMS. The 1H NMR of the purified material is in D6-DMSO here and so not directly comparable with previous spectra in CDCl3.  Conclusion: This may be worth pursuing (i.e. adding DMSO to aid solubility) based on the slightly increased yield.  **Revision: Required product not isolated, spectral analysis of isolated sample does not match those of authentic samples of the coupled product**  .  "
+  },
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "C1=CN=C(C=C1Cl)NC2=NC=CO2"
+            }
+          ],
+          "is_desired_product": true,
+          "measurements": [
+            {
+              "type": "YIELD",
+              "percentage": {
+                "value": 11.1
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "experimenter": {
+      "organization": "AstraZeneca"
+    },
+    "experiment_start": {
+      "value": "02/09/2011"
+    },
+    "publication_url": "https://chemrxiv.org/engage/chemrxiv/article-details/60c9e3f37792a23bfdb2d471",
+    "record_created": {
+      "time": {
+        "value": "10/19/2021, 12:16:25 PM"
+      },
+      "person": {
+        "name": "Bozhao Nan",
+        "organization": "Notre Dame",
+        "email": "bnan@nd.edu"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Fri Oct 22 22:19:55 2021"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-5dfaf464504c42b7bafec75259e5a214"
+}

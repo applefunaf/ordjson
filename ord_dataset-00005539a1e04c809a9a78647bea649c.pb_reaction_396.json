@@ -1,0 +1,200 @@
+{
+  "identifiers": [
+    {
+      "type": "CUSTOM",
+      "details": "reaction index",
+      "value": "525"
+    },
+    {
+      "type": "REACTION_TYPE",
+      "details": "reaction type",
+      "value": "1.3.1 [N-arylation with Ar-X] Bromo Buchwald-Hartwig amination"
+    }
+  ],
+  "inputs": {
+    "Base": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "CC(C)(C)[O-].[Na+]"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0172,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REAGENT",
+          "is_limiting": false
+        }
+      ]
+    },
+    "Solvent": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "CC1=CC=CC=C1"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 0.035,
+              "units": "LITER"
+            }
+          },
+          "reaction_role": "SOLVENT",
+          "is_limiting": false
+        }
+      ]
+    },
+    "metal and ligand": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "C1=CC=C(C=C1)P(C2=CC=CC=C2)C3=C(C4=CC=CC=C4C=C3)C5=C(C=CC6=CC=CC=C65)P(C7=CC=CC=C7)C8=CC=CC=C8"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.000689,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "CATALYST",
+          "is_limiting": false
+        },
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "C1=CC=C(C=C1)/C=C/C(=O)/C=C/C2=CC=CC=C2.C1=CC=C(C=C1)/C=C/C(=O)/C=C/C2=CC=CC=C2.C1=CC=C(C=C1)/C=C/C(=O)/C=C/C2=CC=CC=C2.[Pd].[Pd]"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.00023,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "CATALYST",
+          "is_limiting": false
+        }
+      ]
+    },
+    "aryl halide": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "C1=C(C=NC=C1Br)Br"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0127,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT",
+          "is_limiting": false
+        }
+      ]
+    },
+    "amine": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "C1COCCN1"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0115,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT",
+          "is_limiting": false
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 110.0,
+        "precision": 10.0,
+        "units": "CELSIUS"
+      }
+    }
+  },
+  "notes": {
+    "procedure_details": "A mixture of 3,5-dibromopyridine (3.01 mL, 12.66 mmol), morpholine (1.00 g, 11.48 mmol), TRIS(DIBENZYLIDENEACETONE)DIPALLADIUM (0.210 g, 0.23 mmol), sodium 2-methylpropan-2-olate (1.655 g, 17.22 mmol) and 2,2'-bis(diphenylphosphino)-1,1'-binaphthyl (0.429 g, 0.69 mmol) in degassed toluene (35 mL) was stirred for 16 hours at 110 °C in a sealed vessel under inert atmosphere. Extraction with sat. aq. Na2CO3 solution and AE, then back extraction 2x NaCl sat using DCM. The organics were dried over MgSO4 and evaporated _in vacuo_. The residue (see structure below, LC MS FLA-04227-45-02: 3,5 dimorpholino pyridine) was washed off with diethylether, then AE. The liquors were vaporated _in vacuo_. The residue was purified by chromatography (11 cm SiO2, diameter: 5 cm) eluent: AE/hex 25/75to 45/55 to provide 4-(5-bromopyridin-3-yl)morpholine (1.400 g, 50.2 %) as a yellow solid.  1H NMR, LC MS: FLA-04227-45-03. OK  \\---------------------------------------------------------  "
+  },
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "C1COCCN1C2=CC(=CN=C2)Br"
+            }
+          ],
+          "is_desired_product": true,
+          "measurements": [
+            {
+              "type": "YIELD",
+              "percentage": {
+                "value": 50.17
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "experimenter": {
+      "organization": "AstraZeneca"
+    },
+    "experiment_start": {
+      "value": "07/12/2010"
+    },
+    "publication_url": "https://chemrxiv.org/engage/chemrxiv/article-details/60c9e3f37792a23bfdb2d471",
+    "record_created": {
+      "time": {
+        "value": "10/19/2021, 12:16:25 PM"
+      },
+      "person": {
+        "name": "Bozhao Nan",
+        "organization": "Notre Dame",
+        "email": "bnan@nd.edu"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Fri Oct 22 22:19:55 2021"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-822f9545d2954337a3563b98247b8f3b"
+}
