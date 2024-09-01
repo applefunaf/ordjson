@@ -1,0 +1,200 @@
+{
+  "identifiers": [
+    {
+      "type": "CUSTOM",
+      "details": "reaction index",
+      "value": "623"
+    },
+    {
+      "type": "REACTION_TYPE",
+      "details": "reaction type",
+      "value": "1.3.1 [N-arylation with Ar-X] Bromo Buchwald-Hartwig amination"
+    }
+  ],
+  "inputs": {
+    "Base": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "CC(C)(C)[O-].[Na+]"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.014,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REAGENT",
+          "is_limiting": false
+        }
+      ]
+    },
+    "Solvent": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "CC1=CC=CC=C1"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 0.003,
+              "units": "LITER"
+            }
+          },
+          "reaction_role": "SOLVENT",
+          "is_limiting": false
+        }
+      ]
+    },
+    "metal and ligand": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "C1=CC=C(C=C1)P(C2=CC=CC=C2)C3=C(C4=CC=CC=C4C=C3)C5=C(C=CC6=CC=CC=C65)P(C7=CC=CC=C7)C8=CC=CC=C8"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0001,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "CATALYST",
+          "is_limiting": false
+        },
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "C1=CC=C(C=C1)/C=C/C(=O)/C=C/C2=CC=CC=C2.C1=CC=C(C=C1)/C=C/C(=O)/C=C/C2=CC=CC=C2.C1=CC=C(C=C1)/C=C/C(=O)/C=C/C2=CC=CC=C2.[Pd].[Pd]"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 5e-05,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "CATALYST",
+          "is_limiting": false
+        }
+      ]
+    },
+    "aryl halide": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "CN1CC2=C(C1=O)C=C(C=C2)Br"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.01,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT",
+          "is_limiting": false
+        }
+      ]
+    },
+    "amine": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "CC(C)(C)OC(=O)N1CCNCC1"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.01,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT",
+          "is_limiting": false
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 60.0,
+        "precision": 10.0,
+        "units": "CELSIUS"
+      }
+    }
+  },
+  "notes": {
+    "procedure_details": "In an oven-dried RB flask was added Tris(dibenzylideneacetone)dipalladium(0) (0.046 g, 0.05 mmol) and rac-2,2'-Bis(diphenylphosphino)-1,1'-binaphthyl (0.062 g, 0.10 mmol). The flask was evacuated and back-filled with nitrogen. Anhydrous toluene (3 mL) was added and the mixture was stirred at rt for 10 min to give a purple solution. 6-bromo-2-methylisoindolin-1-one (2.261 g, 10 mmol), 1-Boc-piperazine (1.863 g, 10.00 mmol) and Sodium tert-butoxide (1.714 mL, 14.00 mmol) were added in one portion followed by anhydrous toluene (15 mL). The flask was evacuated and back-filled with nitrogen and the resulting mixture was stirred at 60 °C under a nitrogen atmosphere for 2 days. LCMS shows 10% conversion. Tris(dibenzylideneacetone)dipalladium(0) (0.183 g, 0.20 mmol) and 2-Dicyclohexylphosphino-2',6'-diisopropoxybiphenyl (0.187 g, 0.40 mmol) (RuPhos) were added and the mixture was heated to 80 °C and stirred for 5 h. LCMS shows complete conversion. When cooled to rt the mixture was diluted with EtOAc (25 mL) and stirred for 1 h. The solid was filtered off and washed with EtOAc (50 mL). The filtrate was washed with saturated aqueous Na2CO3 (20 mL), brine (20 mL), dried over MgSO4, filtered and concentrated. The crude producr was purified on a silica gel column eluted with 20-100% EtOAc in Heptane to give a yellow solid; tert-butyl 4-(2-methyl-3-oxoisoindolin-5-yl)piperazine-1-carboxylate (1.890 g, 57.0 %).  "
+  },
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "CC(C)(C)OC(=O)N1CCN(CC1)C2=CC3=C(CN(C3=O)C)C=C2"
+            }
+          ],
+          "is_desired_product": true,
+          "measurements": [
+            {
+              "type": "YIELD",
+              "percentage": {
+                "value": 57.03
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "experimenter": {
+      "organization": "AstraZeneca"
+    },
+    "experiment_start": {
+      "value": "05/30/2011"
+    },
+    "publication_url": "https://chemrxiv.org/engage/chemrxiv/article-details/60c9e3f37792a23bfdb2d471",
+    "record_created": {
+      "time": {
+        "value": "10/19/2021, 12:16:25 PM"
+      },
+      "person": {
+        "name": "Bozhao Nan",
+        "organization": "Notre Dame",
+        "email": "bnan@nd.edu"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Fri Oct 22 22:19:55 2021"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-ce627b9c98e74957a0959e5bb6499f88"
+}
