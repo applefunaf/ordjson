@@ -1,0 +1,200 @@
+{
+  "identifiers": [
+    {
+      "type": "CUSTOM",
+      "details": "reaction index",
+      "value": "35"
+    },
+    {
+      "type": "REACTION_TYPE",
+      "details": "reaction type",
+      "value": "1.3.2 [N-arylation with Ar-X] Chloro Buchwald-Hartwig amination"
+    }
+  ],
+  "inputs": {
+    "Base": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "CC(C)(C)[O-].[K+]"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.00509,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REAGENT",
+          "is_limiting": false
+        }
+      ]
+    },
+    "Solvent": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "C1COCCO1"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 0.0392,
+              "units": "LITER"
+            }
+          },
+          "reaction_role": "SOLVENT",
+          "is_limiting": false
+        }
+      ]
+    },
+    "metal and ligand": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "CC(C)C1=CC(=C(C(=C1)C(C)C)C2=CC=CC=C2P(C3CCCCC3)C4CCCCC4)C(C)C"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.000784,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "CATALYST",
+          "is_limiting": false
+        },
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "C1=CC=C(C=C1)/C=C/C(=O)/C=C/C2=CC=CC=C2.C1=CC=C(C=C1)/C=C/C(=O)/C=C/C2=CC=CC=C2.C1=CC=C(C=C1)/C=C/C(=O)/C=C/C2=CC=CC=C2.[Pd].[Pd]"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.000392,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "CATALYST",
+          "is_limiting": false
+        }
+      ]
+    },
+    "aryl halide": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "C1COCCN1CC2=CC(=C(C=C2)Cl)F"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.00392,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT",
+          "is_limiting": false
+        }
+      ]
+    },
+    "amine": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "CC1=NC=C(N1C2CCOCC2)C3=NC(=NC=C3F)N"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.00388,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT",
+          "is_limiting": false
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 102.0,
+        "precision": 10.0,
+        "units": "CELSIUS"
+      }
+    }
+  },
+  "notes": {
+    "procedure_details": "To degassed 1,4-dioxane (39.2 ml) in a flame-dried and argonflushed 250 mL roundbottomed flask were added 5-fluoro-4-(2-methyl-1-(tetrahydro-2H-pyran-4-yl)-1H-imidazol-5-yl)pyrimidin-2-amine (1.076 g, 3.88 mmol) and 4-(4-chloro-3-fluorobenzyl)morpholine (0.9 g, 3.92 mmol) followed by POTASSIUM TERT-BUTOXIDE (0.572 g, 5.09 mmol) whilst stirring. The resulting slurry was flushed with argon and stirred for 5-10 minutes followed by addition of TRIS(DIBENZYLIDENEACETONE)DIPALLADIUM(0) (0.359 g, 0.39 mmol) and 2-Dicyclohexylphosphino-2',4',6'-tri-iso- propyl-1,1'-biphenyl (0.374 g, 0.78 mmol), whereafter the reaction mixture was flushed with argon again and heated to 102 °C and stirred under argon for 3 h. No further conversion occurred after 2 hours.  The completion of the reaction was controlled by HPLC and the crude mixture was cooled to ambient temperatuer and then filtrated through Celite and washed through with dichloromethane. The solution was concentrated in vacuo and dissolved in 14 ml dichloromethane and purified by ISCO and then by prep-HPLC.  The pooled fractions were concentrated in vacuo and added HCl to give 5-fluoro-N-(2-fluoro-4-(morpholinomethyl)phenyl)-4-(2-methyl-1-(tetrahydro-2H-pyran-4-yl)-1H-imidazol-5-yl)pyrimidin-2-amine (0.227 g, 11.43 %)      "
+  },
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "CC1=NC=C(N1C2CCOCC2)C3=NC(=NC=C3F)NC4=C(C=C(C=C4)CN5CCOCC5)F"
+            }
+          ],
+          "is_desired_product": true,
+          "measurements": [
+            {
+              "type": "YIELD",
+              "percentage": {
+                "value": 11.43
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "experimenter": {
+      "organization": "AstraZeneca"
+    },
+    "experiment_start": {
+      "value": "04/03/2008"
+    },
+    "publication_url": "https://chemrxiv.org/engage/chemrxiv/article-details/60c9e3f37792a23bfdb2d471",
+    "record_created": {
+      "time": {
+        "value": "10/19/2021, 12:16:25 PM"
+      },
+      "person": {
+        "name": "Bozhao Nan",
+        "organization": "Notre Dame",
+        "email": "bnan@nd.edu"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Fri Oct 22 22:19:55 2021"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-68a2d19644de420ea283722f281ee146"
+}
