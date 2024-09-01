@@ -1,0 +1,200 @@
+{
+  "identifiers": [
+    {
+      "type": "CUSTOM",
+      "details": "reaction index",
+      "value": "151"
+    },
+    {
+      "type": "REACTION_TYPE",
+      "details": "reaction type",
+      "value": "1.3.1 [N-arylation with Ar-X] Bromo Buchwald-Hartwig amination"
+    }
+  ],
+  "inputs": {
+    "Base": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "C(=O)([O-])[O-].[Cs+].[Cs+]"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0171,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REAGENT",
+          "is_limiting": false
+        }
+      ]
+    },
+    "Solvent": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "C1COCCO1"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 0.04,
+              "units": "LITER"
+            }
+          },
+          "reaction_role": "SOLVENT",
+          "is_limiting": false
+        }
+      ]
+    },
+    "metal and ligand": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "CC1(C2=C(C(=CC=C2)P(C3=CC=CC=C3)C4=CC=CC=C4)OC5=C1C=CC=C5P(C6=CC=CC=C6)C7=CC=CC=C7)C"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.000268,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "CATALYST",
+          "is_limiting": false
+        },
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "C1=CC=C(C=C1)/C=C/C(=O)/C=C/C2=CC=CC=C2.C1=CC=C(C=C1)/C=C/C(=O)/C=C/C2=CC=CC=C2.C1=CC=C(C=C1)/C=C/C(=O)/C=C/C2=CC=CC=C2.[Pd].[Pd]"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.000125,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "CATALYST",
+          "is_limiting": false
+        }
+      ]
+    },
+    "aryl halide": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "C[C@H](C1=CC=C(C=C1)Br)NC(=O)OC(C)(C)C"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0147,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT",
+          "is_limiting": false
+        }
+      ]
+    },
+    "amine": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "C1=CN=CC=C1C2=CC3=CN=C(N=C3C(=C2)Cl)N"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.012,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT",
+          "is_limiting": false
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 100.0,
+        "precision": 10.0,
+        "units": "CELSIUS"
+      }
+    }
+  },
+  "notes": {
+    "procedure_details": "A 250 mL roundbottom flask was charged with 8-chloro-6-(pyridin-4-yl)quinazolin-2-amine (EN01547-76-1; 3.09 g, 12.04 mmol), (R)-tert-butyl 1-(4-bromophenyl)ethylcarbamate (EN01547-74-1; 4.42 g, 14.72 mmol), Pd2(dba)3 (114.4 mg, 2.1 mol % Pd), XantPhos (155.0 mg, 2.2 mol %), and Cs2CO3 (5.57 g, 17.10 mmol). The flask was evacuated and backfilled with N2 (3x), and then anhydrous dioxane (40 mL) was added. The mixture was allowed to stir at room temperature for ~5 minutes and was then heated under N2 in a 100 °C oil bath.  After heating overnight, LC-MS showed complete conversion of the starting material to the desired product (trace N-phenylated product). A significant side product appeared to be present, derived from the starting aminoquinazoline that had undergone two Suzuki couplings in the previous step (see EN01547-76; MW=518.6). The reaction was allowed to cool and was partitioned between EtOAc and H2O. The aqueous layer was extracted with EtOAc, and the combined organics were concentrated under reduced pressure. The crude material was purified by silica gel chromatography (Rf in EtOAc = 0.44) to give a yellow-orange solid.  2.92 g (51%) of solid was collected. A trace of EtOAc remained by NMR analysis despite being kept under high vacuum over the weekend.  "
+  },
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "C[C@H](C1=CC=C(C=C1)NC2=NC=C3C=C(C=C(C3=N2)Cl)C4=CC=NC=C4)NC(=O)OC(C)(C)C"
+            }
+          ],
+          "is_desired_product": true,
+          "measurements": [
+            {
+              "type": "YIELD",
+              "percentage": {
+                "value": 50.96
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "experimenter": {
+      "organization": "AstraZeneca"
+    },
+    "experiment_start": {
+      "value": "06/04/2008"
+    },
+    "publication_url": "https://chemrxiv.org/engage/chemrxiv/article-details/60c9e3f37792a23bfdb2d471",
+    "record_created": {
+      "time": {
+        "value": "10/19/2021, 12:16:25 PM"
+      },
+      "person": {
+        "name": "Bozhao Nan",
+        "organization": "Notre Dame",
+        "email": "bnan@nd.edu"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Fri Oct 22 22:19:55 2021"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-cb91af3b3ac34425a6933ab18a143ee0"
+}

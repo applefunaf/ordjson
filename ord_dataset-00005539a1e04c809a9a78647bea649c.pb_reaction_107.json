@@ -1,0 +1,200 @@
+{
+  "identifiers": [
+    {
+      "type": "CUSTOM",
+      "details": "reaction index",
+      "value": "147"
+    },
+    {
+      "type": "REACTION_TYPE",
+      "details": "reaction type",
+      "value": "1.3.1 [N-arylation with Ar-X] Bromo Buchwald-Hartwig amination"
+    }
+  ],
+  "inputs": {
+    "Base": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "CC(C)(C)[O-].[K+]"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.00165,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REAGENT",
+          "is_limiting": false
+        }
+      ]
+    },
+    "Solvent": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "C1CCOC1"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 0.01,
+              "units": "LITER"
+            }
+          },
+          "reaction_role": "SOLVENT",
+          "is_limiting": false
+        }
+      ]
+    },
+    "metal and ligand": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "CC(C)(C)P(C(C)(C)C)C(C)(C)C"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.00015,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "CATALYST",
+          "is_limiting": false
+        },
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "CC(C)(C)P(C(C)(C)C)C(C)(C)C.CC(C)(C)P(C(C)(C)C)C(C)(C)C.[Pd]"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.00015,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "CATALYST",
+          "is_limiting": false
+        }
+      ]
+    },
+    "aryl halide": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "C1=CC=C(C=C1)COC2=CC=C(C=C2)Br"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.003,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT",
+          "is_limiting": false
+        }
+      ]
+    },
+    "amine": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "C[C@@H]1CN(CCN1)C(=O)OC(C)(C)C"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0015,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT",
+          "is_limiting": false
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 75.0,
+        "precision": 10.0,
+        "units": "CELSIUS"
+      }
+    }
+  },
+  "notes": {
+    "procedure_details": "A mixture of 1-(benzyloxy)-4-bromobenzene (789 mg, 3.00 mmol), (R)-tert-butyl 3-methylpiperazine-1-carboxylate (300 mg, 1.5 mmol), bis(tri-t- butylphosphine)palladium(0) (77 mg, 0.15 mmol) and potassium tert-butoxide (185 mg, 1.65 mmol) in THF (10 mL) was flushed with nitrogen and heated to 75 °C overnight. A further 0.1eq of bis(tri-t-butylphosphine)palladium(0) (77 mg, 0.15 mmol) was added and the reaction was heated for a further 2.5 hours. The solvent was evaporated and the residue dissolved in MeOH (10mL) and purified by ion exchange chromatography, using an SCX column. The desired product was eluted from the column using 0.35M NH3/MeOH and purified further by flash silica chromatography, elution gradient 0 to 20% EtOAc in isohexane. Pure fractions were evaporated to dryness to afford (R)-tert-butyl 4-(4-(benzyloxy)phenyl)-3-methylpiperazine-1-carboxylate (181 mg, 31.5 %) as an orange oil.    "
+  },
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "C[C@@H]1CN(CCN1C2=CC=C(C=C2)OCC3=CC=CC=C3)C(=O)OC(C)(C)C"
+            }
+          ],
+          "is_desired_product": true,
+          "measurements": [
+            {
+              "type": "YIELD",
+              "percentage": {
+                "value": 31.55
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "experimenter": {
+      "organization": "AstraZeneca"
+    },
+    "experiment_start": {
+      "value": "02/25/2009"
+    },
+    "publication_url": "https://chemrxiv.org/engage/chemrxiv/article-details/60c9e3f37792a23bfdb2d471",
+    "record_created": {
+      "time": {
+        "value": "10/19/2021, 12:16:25 PM"
+      },
+      "person": {
+        "name": "Bozhao Nan",
+        "organization": "Notre Dame",
+        "email": "bnan@nd.edu"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Fri Oct 22 22:19:55 2021"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-53993d3e76914a9480a25e3f9305c2e9"
+}
