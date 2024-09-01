@@ -1,0 +1,200 @@
+{
+  "identifiers": [
+    {
+      "type": "CUSTOM",
+      "details": "reaction index",
+      "value": "822"
+    },
+    {
+      "type": "REACTION_TYPE",
+      "details": "reaction type",
+      "value": "1.3.7 [N-arylation with Ar-X] Chloro N-arylation"
+    }
+  ],
+  "inputs": {
+    "Base": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "C(=O)([O-])[O-].[Cs+].[Cs+]"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 6.1e-05,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REAGENT",
+          "is_limiting": false
+        }
+      ]
+    },
+    "Solvent": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "C1COCCO1"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 0.002,
+              "units": "LITER"
+            }
+          },
+          "reaction_role": "SOLVENT",
+          "is_limiting": false
+        }
+      ]
+    },
+    "metal and ligand": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "CC1(C2=C(C(=CC=C2)P(C3=CC=CC=C3)C4=CC=CC=C4)OC5=C1C=CC=C5P(C6=CC=CC=C6)C7=CC=CC=C7)C"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 6.1e-05,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "CATALYST",
+          "is_limiting": false
+        },
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "CC(=O)O.CC(=O)O.[Pd]"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 3.05e-05,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "CATALYST",
+          "is_limiting": false
+        }
+      ]
+    },
+    "aryl halide": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "C1=CC(=C(N=C1)Cl)Cl"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.000671,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT",
+          "is_limiting": false
+        }
+      ]
+    },
+    "amine": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "C1=CC=C(C=C1)C(=O)N"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.00061,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT",
+          "is_limiting": false
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 110.0,
+        "precision": 10.0,
+        "units": "CELSIUS"
+      }
+    }
+  },
+  "notes": {
+    "procedure_details": "In a 5 mL vial were added Pd(OAc)2 (6.85 mg, 0.03 mmol), (9,9-dimethyl-9H-xanthene-4,5-diyl)bis(diphenylphosphane) (35.3 mg, 0.06 mmol), N-(3-chloropyridin-2-yl)benzamide (15.30 mg, 10.78 %) and cesium carbonate (477 mg, 1.46 mmol) in dioxane (2 mL) to give a yellow solution. The flask was evacuated and filled with Nitrogen three times. Then, 2,3-dichloropyridine (99 mg, 0.67 mmol) was added. The reaction mixture was stirred overnight at 80°C.  The reaction mixture was diluted with EtOAc (3 mL) and filtered. The solid was washed with EtOAc and the collected organic layers were evaporated to dryness, to give the crude product.  The compound was purified by preparative HPLC on a Kromasil C8 column (10 µm 250x20 ID mm) using a gradient of 10-50% acetonitrile in H2O/ACN/FA 95/5/0.2 buffer, over 20 minutes with a flow of 19 mL/min. The compounds were detected by UV at 230nm. (15,3 mg pure product).  The reaction was repeated at 80C, RT and 110C on microwave, overnight and a weekend: the yield remains very low for all conditions except for the reaction at RT (no product at all).  "
+  },
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "C1=CC=C(C=C1)C(=O)NC2=C(C=CC=N2)Cl"
+            }
+          ],
+          "is_desired_product": true,
+          "measurements": [
+            {
+              "type": "YIELD",
+              "percentage": {
+                "value": 10.78
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "experimenter": {
+      "organization": "AstraZeneca"
+    },
+    "experiment_start": {
+      "value": "09/26/2016"
+    },
+    "publication_url": "https://chemrxiv.org/engage/chemrxiv/article-details/60c9e3f37792a23bfdb2d471",
+    "record_created": {
+      "time": {
+        "value": "10/19/2021, 12:16:25 PM"
+      },
+      "person": {
+        "name": "Bozhao Nan",
+        "organization": "Notre Dame",
+        "email": "bnan@nd.edu"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Fri Oct 22 22:19:55 2021"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-bb9134ed03e248f6b9498f9cb351f5cb"
+}

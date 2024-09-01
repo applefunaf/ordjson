@@ -1,0 +1,200 @@
+{
+  "identifiers": [
+    {
+      "type": "CUSTOM",
+      "details": "reaction index",
+      "value": "872"
+    },
+    {
+      "type": "REACTION_TYPE",
+      "details": "reaction type",
+      "value": "1.3.2 [N-arylation with Ar-X] Chloro Buchwald-Hartwig amination"
+    }
+  ],
+  "inputs": {
+    "Base": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "C(=O)([O-])[O-].[Cs+].[Cs+]"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.00405,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REAGENT",
+          "is_limiting": false
+        }
+      ]
+    },
+    "Solvent": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "C1COCCO1"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 0.15,
+              "units": "LITER"
+            }
+          },
+          "reaction_role": "SOLVENT",
+          "is_limiting": false
+        }
+      ]
+    },
+    "metal and ligand": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "CC1(C2=C(C(=CC=C2)P(C3=CC=CC=C3)C4=CC=CC=C4)OC5=C1C=CC=C5P(C6=CC=CC=C6)C7=CC=CC=C7)C"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.00405,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "CATALYST",
+          "is_limiting": false
+        },
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "CC(=O)O.CC(=O)O.[Pd]"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0027,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "CATALYST",
+          "is_limiting": false
+        }
+      ]
+    },
+    "aryl halide": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "C1=CN=C(C=C1Cl)Cl"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0338,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT",
+          "is_limiting": false
+        }
+      ]
+    },
+    "amine": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "CC1=NC(=NC=C1)N"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0338,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT",
+          "is_limiting": false
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 100.0,
+        "precision": 10.0,
+        "units": "CELSIUS"
+      }
+    }
+  },
+  "notes": {
+    "procedure_details": "Palladium(II) acetate (0.607 g, 2.70 mmol) was added to 2,4-dichloropyridine (5.00 g, 33.79 mmol), 4-methylpyrimidin-2-amine (3.69 g, 33.79 mmol), 9,9-Dimethyl-4,5-bis(diphenylphosphino)xanthene (2.346 g, 4.05 mmol) and Cesium carbonate (22.02 g, 67.57 mmol) in dioxane (150 mL) at 20ºC under nitrogen. The resulting suspension was stirred at 100 °C for 90 minutes. Complete reaction by LCMS, cooled to room temperature. The reaction mixture was then filtered, washed with DCM and filtrate concentrated _in vacuo_ to give a yellow gum. This was then dissolved in DCM (200 mL), washed with water (200 mL) and brine (200 mL). The organic layer was passed through phase separating cartridge and concentrated under reduced pressure. The crude product was suspended in DCM, isolubles filtered off and dried to give EN01580-50-1, N-(4-chloropyridin-2-yl)-4-methylpyrimidin-2-amine (2.859 g, 38.3 %), as a yellow solid. The fltrate was then purified by flash silica chromatography, elution gradient 0 to 5% MeOH in DCM. No separation acheived so all fractions containing product concentrated _in vacuo_. The residue was suspended in acetonitile/water, insolubles filtered off and dried to give EN01580-50-2, N-(4-chloropyridin-2-yl)-4-methylpyrimidin-2-amine (0.934 g, 12.5 %), as a yellow solid. The filtrate was then purified by preparative HPLC (Waters XBridge Prep C18 OBD column, 5µ silica, 50 mm diameter, 150 mm length), using decreasingly polar mixtures of water (containing 0.1% formic acid) and MeCN as eluents. Fractions containing the desired compound were evaporated to dryness to afford EN01580-50-3, N-(4-chloropyridin-2-yl)-4-methylpyrimidin-2-amine (0.511 g, 6.85 %), as a white solid.    "
+  },
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "CC1=NC(=NC=C1)NC2=NC=CC(=C2)Cl"
+            }
+          ],
+          "is_desired_product": true,
+          "measurements": [
+            {
+              "type": "YIELD",
+              "percentage": {
+                "value": 57.73
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "experimenter": {
+      "organization": "AstraZeneca"
+    },
+    "experiment_start": {
+      "value": "06/05/2008"
+    },
+    "publication_url": "https://chemrxiv.org/engage/chemrxiv/article-details/60c9e3f37792a23bfdb2d471",
+    "record_created": {
+      "time": {
+        "value": "10/19/2021, 12:16:25 PM"
+      },
+      "person": {
+        "name": "Bozhao Nan",
+        "organization": "Notre Dame",
+        "email": "bnan@nd.edu"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Fri Oct 22 22:19:55 2021"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-c1015abd205e430c801b5231e1cdfbf2"
+}

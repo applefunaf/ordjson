@@ -1,0 +1,200 @@
+{
+  "identifiers": [
+    {
+      "type": "CUSTOM",
+      "details": "reaction index",
+      "value": "861"
+    },
+    {
+      "type": "REACTION_TYPE",
+      "details": "reaction type",
+      "value": "1.3.2 [N-arylation with Ar-X] Chloro Buchwald-Hartwig amination"
+    }
+  ],
+  "inputs": {
+    "Base": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "CC(C)(C)[O-].[Na+]"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.00238,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REAGENT",
+          "is_limiting": false
+        }
+      ]
+    },
+    "Solvent": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "C1COCCO1"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 0.025,
+              "units": "LITER"
+            }
+          },
+          "reaction_role": "SOLVENT",
+          "is_limiting": false
+        }
+      ]
+    },
+    "metal and ligand": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "CC(C)OC1=C(C(=CC=C1)OC(C)C)C2=CC=CC=C2P(C3CCCCC3)C4CCCCC4"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.000106,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "CATALYST",
+          "is_limiting": false
+        },
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "CC(C)OC1=C(C(=CC=C1)OC(C)C)C2=CC=CC=C2P(C3CCCCC3)C4CCCCC4.CC(C)(C)OC.C1=CC=C([C-]=C1)CCN.Cl[Pd+]"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.000106,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "CATALYST",
+          "is_limiting": false
+        }
+      ]
+    },
+    "aryl halide": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "CC1=CC(=NC=C1C2=CC=C(C=C2)C3=NC4=C(C=CC=C4C(=O)N3)CO)Cl"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.000529,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT",
+          "is_limiting": false
+        }
+      ]
+    },
+    "amine": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "C[C@H]1CNCCN1C"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.00106,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT",
+          "is_limiting": false
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 110.0,
+        "precision": 10.0,
+        "units": "CELSIUS"
+      }
+    }
+  },
+  "notes": {
+    "procedure_details": "A mixture of CHLORO(2-DICYCLOHEXYLPHOSPHINO-2',6'-DI-I- PROPOXY-1,1'-BIPHENYL)[2-(2-AMINOETHYLPHENYL)]PALLADIUM(II), METHYL-T- BUTYLETHER ADDUCT (Ru Phos Pd cycle) (43.2 mgs, 0.1eq), sodium tert-butoxide (229 mg, 2.38 mmol), 2-(4-(6-chloro-4-methylpyridin-3-yl)phenyl)-8-(hydroxymethyl)quinazolin-4(3H)-one (250 mg, 0.53 mmol) , (S)-1,2-dimethylpiperazine (198 mg, 1.06 mmol) in dioxane (25ml) was stirred at 105°C for 1hr, LCMS only detected a small peak as product. 2 more equivalent of sodium tert-butoxide was added to the mixture and stirred for overnight under N2, LCMS indicated major peak as starting material; another batch of Ru phos pd cycle was added to the mixture, and the mixture was stirred at 120°C for 1.5hrs. LCMS indicated the completion of reaction. The solvent was removed by concentration, taken into 2ml of DMSO, filtered, the filtrate was purified with reverse phase chromatography column (eluted with 5% to 50% 0.1%TFA in ACN/0.1%TFA in water) and repurified with basic condition (eluted with 5% to 95% ACN/10MM ammonium acetate and 10MM ACN in water), still not pure enough for submission.  Repurified again by analytical group, to yield (S)-2-(4-(6-(3,4-dimethylpiperazin-1-yl)-4-methylpyridin-3-yl)phenyl)-8-(hydroxymethyl)quinazolin-4(3H)-one (64.0 mg, 26.5 %) as a light yellow solid.  "
+  },
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "C[C@H]1CN(CCN1C)C2=NC=C(C(=C2)C)C3=CC=C(C=C3)C4=NC5=C(C=CC=C5C(=O)N4)CO"
+            }
+          ],
+          "is_desired_product": true,
+          "measurements": [
+            {
+              "type": "YIELD",
+              "percentage": {
+                "value": 26.54
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "experimenter": {
+      "organization": "AstraZeneca"
+    },
+    "experiment_start": {
+      "value": "05/10/2012"
+    },
+    "publication_url": "https://chemrxiv.org/engage/chemrxiv/article-details/60c9e3f37792a23bfdb2d471",
+    "record_created": {
+      "time": {
+        "value": "10/19/2021, 12:16:25 PM"
+      },
+      "person": {
+        "name": "Bozhao Nan",
+        "organization": "Notre Dame",
+        "email": "bnan@nd.edu"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Fri Oct 22 22:19:55 2021"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-6baac44dbbb745bfaa3ee3e69cefbcee"
+}
