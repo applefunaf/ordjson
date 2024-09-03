@@ -1,0 +1,236 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][O:2][C:3]([C:5]1[O:6][C:7]([C:10]([OH:12])=[O:11])=[CH:8][CH:9]=1)=[O:4].[H][H]>C(OCC)(=O)C.[Rh]>[CH3:1][O:2][C:3]([CH:5]1[O:6][CH:7]([C:10]([OH:12])=[O:11])[CH2:8][CH2:9]1)=[O:4]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m4_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "furan-2,5-dicarboxylic acid monomethyl ester"
+            },
+            {
+              "type": "SMILES",
+              "value": "COC(=O)C=1OC(=CC1)C(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H6O5/c1-11-7(10)5-3-2-4(12-5)6(8)9/h2-3H,1H3,(H,8,9)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 1.95,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethyl acetate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)OCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 50.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "rhodium on carbon"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Rh]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Rh"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 400.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "CATALYST"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrogen"
+            },
+            {
+              "type": "SMILES",
+              "value": "[H][H]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2/h1H"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture of furan-2,5-dicarboxylic acid monomethyl ester (1.95 g) and 5% rhodium on carbon (400 mg) in ethyl acetate (50 ml) was hydrogenated until hydrogen uptake ceased. The catalyst was filtered off and washed with ethyl acetate. The combined filtrates were evaporated to give (2.00 g) of the title compound: νmax (film) 3170, 1765 and 1720 cm-1 ; δH (CDCl3) 1.95-2.65 (4 H, m), 3.85 (3 H, s) and 4.55-4.8 (2 H, m)."
+  },
+  "workups": [
+    {
+      "type": "FILTRATION",
+      "details": "The catalyst was filtered off"
+    },
+    {
+      "type": "WASH",
+      "details": "washed with ethyl acetate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The combined filtrates were evaporated"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "(2RS,5SR)-5-Methoxycarbonyltetrahydrofuran-2-yl carboxylic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "COC(=O)C1CCC(O1)C(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H10O5/c1-11-7(10)5-3-2-4(12-5)6(8)9/h4-5H,2-3H2,1H3,(H,8,9)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 2.0,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 100.2
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06001997",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:29.479509"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-602f631583b54b2b8b57e542c2de374a"
+}

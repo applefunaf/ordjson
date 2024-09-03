@@ -1,0 +1,264 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][S:2]([N:5]([C:10]1[CH:19]=[C:18]([S:20]([CH3:23])(=[O:22])=[O:21])[CH:17]=[CH:16][C:11]=1[C:12]([O:14]C)=[O:13])S(C)(=O)=O)(=[O:4])=[O:3].O.[OH-].[Li+].Cl>CO>[CH3:1][S:2]([NH:5][C:10]1[CH:19]=[C:18]([S:20]([CH3:23])(=[O:22])=[O:21])[CH:17]=[CH:16][C:11]=1[C:12]([OH:14])=[O:13])(=[O:3])=[O:4] |f:1.2.3|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methyl 2-[N,N-bis(methylsulphonyl)amino]-4-methylsulphonylbenzoate"
+            },
+            {
+              "type": "SMILES",
+              "value": "CS(=O)(=O)N(S(=O)(=O)C)C1=C(C(=O)OC)C=CC(=C1)S(=O)(=O)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C11H15NO8S3/c1-20-11(13)9-6-5-8(21(2,14)15)7-10(9)12(22(3,16)17)23(4,18)19/h5-7H,1-4H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 22.9,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "lithium hydroxide monohydrate"
+            },
+            {
+              "type": "SMILES",
+              "value": "O.[OH-].[Li+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Li.2H2O/h;2*1H2/q+1;;/p-1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 7.5,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrochloric acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/ClH/h1H"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "was stirred at room temperature for 18 hours"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A suspension of methyl 2-[N,N-bis(methylsulphonyl)amino]-4-methylsulphonylbenzoate (22.9 g) and lithium hydroxide monohydrate (7.5 g) in aqueous methanol (50%) was stirred at room temperature for 18 hours. The resulting solution was acidified with concentrated hydrochloric acid and extracted with ethyl acetate. The combined organic extracts were dried (magnesium sulphate), filtered and evaporated to yield 2-methylsulphonylamino-4-methylsulphonylbenzoic acid as a beige solid, NMR (acetone d6); 3.1(2 s,6H), 7.57(dd,1H), 8.15(d,1H), 8.23(d,1H)."
+  },
+  "workups": [
+    {
+      "type": "EXTRACTION",
+      "details": "extracted with ethyl acetate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "The combined organic extracts were dried (magnesium sulphate)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "magnesium sulphate"
+              },
+              {
+                "type": "SMILES",
+                "value": "S(=O)(=O)([O-])[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filtered"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "evaporated"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 18.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-methylsulphonylamino-4-methylsulphonylbenzoic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "CS(=O)(=O)NC1=C(C(=O)O)C=CC(=C1)S(=O)(=O)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H11NO6S2/c1-17(13,14)6-3-4-7(9(11)12)8(5-6)10-18(2,15)16/h3-5,10H,1-2H3,(H,11,12)"
+            }
+          ],
+          "isolated_color": "beige",
+          "texture": {
+            "type": "CUSTOM",
+            "details": "solid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998653",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:35.239988"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-b450b5b4db914abd9743c7ce5cd4309f"
+}

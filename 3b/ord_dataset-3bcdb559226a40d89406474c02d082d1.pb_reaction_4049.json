@@ -1,0 +1,374 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][O:2][CH2:3][CH2:4][OH:5].CC(C)([O-])C.[K+].Cl[C:13]1[C:22]2[C:17](=[C:18]([NH:23][C:24](=[O:33])[C:25]3[C:30]([Cl:31])=[CH:29][CH:28]=[CH:27][C:26]=3[Cl:32])[CH:19]=[CH:20][CH:21]=2)[N:16]=[CH:15][CH:14]=1>CN1CCCC1=O.C(OCC)(=O)C>[Cl:32][C:26]1[CH:27]=[CH:28][CH:29]=[C:30]([Cl:31])[C:25]=1[C:24]([NH:23][C:18]1[CH:19]=[CH:20][CH:21]=[C:22]2[C:17]=1[N:16]=[CH:15][CH:14]=[C:13]2[O:5][CH2:4][CH2:3][O:2][CH3:1])=[O:33] |f:1.2|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-chloro-8-(2,6-dichlorobenzoylamino)quinoline"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC1=CC=NC2=C(C=CC=C12)NC(C1=C(C=CC=C1Cl)Cl)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C16H9Cl3N2O/c17-10-7-8-20-15-9(10)3-1-6-13(15)21-16(22)14-11(18)4-2-5-12(14)19/h1-8H,(H,21,22)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 200.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethyl acetate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)OCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m1_m4_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-methoxyethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "COCCO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H8O2/c1-5-3-2-4/h4H,2-3H2,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 130.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "potassium tert-butoxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC(C)([O-])C.[K+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H9O.K/c1-4(2,3)5;/h1-3H3;/q-1;+1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 172.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-methylpyrrolidone"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN1C(CCC1)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C5H9NO/c1-6-4-2-3-5(6)7/h2-4H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 2.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "the mixture was stirred for 30 minutes at ambient temperature"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a stirred solution of 2-methoxyethanol (130 mg) in N-methylpyrrolidone (2 ml) was added potassium tert-butoxide (172 mg) under ice-cooling, and the mixture was stirred for 30 minutes at ambient temperature. To the mixture was added 4-chloro-8-(2,6-dichlorobenzoylamino)quinoline (200 mg), and the mixture was stirred for 5 hours at 80° C. The mixture was diluted with ethyl acetate, washed with water and brine, dried over magnesium sulfate and evaporated in vacuo. The residue was recrystallized from ethanol to give 8-(2,6-dichlorobenzoylamino)-4-(2-methoxyethoxy)quinoline (175 mg)."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "cooling"
+    },
+    {
+      "type": "STIRRING",
+      "details": "the mixture was stirred for 5 hours at 80° C",
+      "duration": {
+        "value": 5.0,
+        "units": "HOUR"
+      },
+      "temperature": {
+        "setpoint": {
+          "value": 80.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "washed with water and brine",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "brine"
+              },
+              {
+                "type": "SMILES",
+                "value": "[Cl-].[Na+].O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH.Na.H2O/h1H;;1H2/q;+1;/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "dried over magnesium sulfate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "magnesium sulfate"
+              },
+              {
+                "type": "SMILES",
+                "value": "S(=O)(=O)([O-])[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "evaporated in vacuo"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The residue was recrystallized from ethanol",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 30.0,
+        "units": "MINUTE"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "8-(2,6-dichlorobenzoylamino)-4-(2-methoxyethoxy)quinoline"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC1=C(C(=O)NC=2C=CC=C3C(=CC=NC23)OCCOC)C(=CC=C1)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C19H16Cl2N2O3/c1-25-10-11-26-16-8-9-22-18-12(16)4-2-7-15(18)23-19(24)17-13(20)5-3-6-14(17)21/h2-9H,10-11H2,1H3,(H,23,24)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 175.0,
+                  "units": "MILLIGRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 78.6
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06008230",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:22.770408"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-09792b71ad06463c85252fa709a73606"
+}

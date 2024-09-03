@@ -1,0 +1,431 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "C([Li])CCC.[CH3:6][O:7][C:8]1[CH:13]=[CH:12][C:11]([C:14]2[S:15][CH:16]=[CH:17][CH:18]=2)=[CH:10][CH:9]=1.[C:19](=[O:21])=[O:20].CC(C)=O>CCOCC>[CH3:6][O:7][C:8]1[CH:9]=[CH:10][C:11]([C:14]2[S:15][C:16]([C:19]([OH:21])=[O:20])=[CH:17][CH:18]=2)=[CH:12][CH:13]=1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m6_m2_m7": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "n-butyllithium"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(CCC)[Li]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H9.Li/c1-3-4-2;/h1,3-4H2,2H3;"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 6.3,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-(4-methoxyphenyl)thiophene"
+            },
+            {
+              "type": "SMILES",
+              "value": "COC1=CC=C(C=C1)C=1SC=CC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C11H10OS/c1-12-10-6-4-9(5-7-10)11-3-2-8-13-11/h2-8H,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 3.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ether"
+            },
+            {
+              "type": "SMILES",
+              "value": "CCOCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 50.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ether"
+            },
+            {
+              "type": "SMILES",
+              "value": "CCOCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 20.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m3_m4_m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "dry ice"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(=O)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CO2/c2-1-3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acetone"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC(=O)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H6O/c1-3(2)4/h1-2H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "CO2"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(=O)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CO2/c2-1-3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "The mixture is stirred at room temperature for 3 hours"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a solution of 6.3 mL of n-butyllithium (2.5 M solution in hexane) in 50 mL of dry ether is added a solution of 3.0 g (15.8 mmol) of 2-(4-methoxyphenyl)thiophene in 20 mL of dry ether under N2 atmosphere. The mixture is stirred at room temperature for 3 hours and then heated at reflux for 30 minutes. After the reaction mixture is cooled to -78° C. with dry ice and acetone bath, dry CO2 gas is bubbled through the reaction mixture for 3 hours and the resulting solution is stirred at room temperature overnight. The reaction mixture is diluted with 200 mL of chloroform, washed with 1% HCl solution (200 mL) and with water (2×200 mL). The separated organic layer is dried over anhydrous Na2SO4 and concentrated under reduced pressure to give 1.8 g (50%) of 5-(4-methoxyphenyl)-2-thienoic acid."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "heated"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "at reflux for 30 minutes",
+      "duration": {
+        "value": 30.0,
+        "units": "MINUTE"
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "is bubbled through the reaction mixture for 3 hours",
+      "duration": {
+        "value": 3.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "STIRRING",
+      "details": "the resulting solution is stirred at room temperature overnight",
+      "duration": {
+        "value": 8.0,
+        "precision": 8.0,
+        "units": "HOUR"
+      },
+      "temperature": {
+        "control": {
+          "type": "AMBIENT"
+        }
+      }
+    },
+    {
+      "type": "ADDITION",
+      "details": "The reaction mixture is diluted with 200 mL of chloroform",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "chloroform"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(Cl)(Cl)Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CHCl3/c2-1(3)4/h1H"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 200.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "washed with 1% HCl solution (200 mL) and with water (2×200 mL)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "HCl"
+              },
+              {
+                "type": "SMILES",
+                "value": "Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH/h1H"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 200.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 200.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "The separated organic layer is dried over anhydrous Na2SO4",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "Na2SO4"
+              },
+              {
+                "type": "SMILES",
+                "value": "[O-]S(=O)(=O)[O-].[Na+].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/2Na.H2O4S/c;;1-5(2,3)4/h;;(H2,1,2,3,4)/q2*+1;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated under reduced pressure"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 3.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "5-(4-methoxyphenyl)-2-thienoic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "COC1=CC=C(C=C1)C1=CC=C(S1)C(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C12H10O3S/c1-15-9-4-2-8(3-5-9)10-6-7-11(16-10)12(13)14/h2-7H,1H3,(H,13,14)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 1.8,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 50.0
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06005113",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:23.522969"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-3d357b7a57e94eb0bfddfb7e74e7490a"
+}

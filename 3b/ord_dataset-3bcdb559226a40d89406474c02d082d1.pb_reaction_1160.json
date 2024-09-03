@@ -1,0 +1,209 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH2:1]([N:3]=[C:4]=[O:5])[CH3:2].[N:6]1([CH2:11][CH2:12][CH2:13][NH2:14])[CH2:10][CH2:9][CH2:8][CH2:7]1>C(Cl)(Cl)Cl>[CH2:1]([NH:3][C:4]([NH:14][CH2:13][CH2:12][CH2:11][N:6]1[CH2:10][CH2:9][CH2:8][CH2:7]1)=[O:5])[CH3:2]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m3_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethyl isocyanate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)N=C=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H5NO/c1-2-4-3-5/h2H2,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 27.7,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3-(1-pyrrolidinyl)propylamine"
+            },
+            {
+              "type": "SMILES",
+              "value": "N1(CCCC1)CCCN"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H16N2/c8-4-3-7-9-5-1-2-6-9/h1-8H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 50.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "chloroform"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(Cl)(Cl)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CHCl3/c2-1(3)4/h1H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 250.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "the reaction mixture stirred at room temperature for 4 hours"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a solution of 27.7 gm (0.39 mole) ethyl isocyanate in 250 mL chloroform were added 50 gm (0.39 mole) 3-(1-pyrrolidinyl)propylamine dropwise with cooling. Once the addition was complete, the cooling bath was removed and the reaction mixture stirred at room temperature for 4 hours. The reaction mixture was then concentrated under reduced pressure to give 74.5 gm (96.4%) of the desired urea as a clear oil."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "with cooling"
+    },
+    {
+      "type": "ADDITION",
+      "details": "Once the addition"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the cooling bath was removed"
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "The reaction mixture was then concentrated under reduced pressure"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 4.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "urea"
+            },
+            {
+              "type": "NAME",
+              "value": "N-ethyl-N'-3-(1-pyrrolidinyl)propylurea"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)NC(=O)NCCCN1CCCC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C10H21N3O/c1-2-11-10(14)12-6-5-9-13-7-3-4-8-13/h2-9H2,1H3,(H2,11,12,14)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 74.5,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 96.4
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 95.9
+              }
+            }
+          ],
+          "isolated_color": "clear",
+          "texture": {
+            "type": "OIL",
+            "details": "oil"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998630",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:34.210530"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-7c78328015434ec9a8c344b0301b20aa"
+}

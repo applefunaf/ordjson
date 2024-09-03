@@ -1,0 +1,253 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[F:1][B-:2]([F:5])([F:4])[F:3].[H+].P(O)(O)O.[Cl-].[C:12]1([I+:18][C:19]2[CH:24]=[CH:23][CH:22]=[CH:21][CH:20]=2)[CH:17]=[CH:16][CH:15]=[CH:14][CH:13]=1>O.F[B-](F)(F)F.[Ag+]>[F:1][B-:2]([F:5])([F:4])[F:3].[C:19]1([I+:18][C:12]2[CH:13]=[CH:14][CH:15]=[CH:16][CH:17]=2)[CH:20]=[CH:21][CH:22]=[CH:23][CH:24]=1 |f:0.1,3.4,6.7,8.9|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m6_m2_m3_m5_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "fluoroboric acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "F[B-](F)(F)F.[H+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/BF4/c2-1(3,4)5/q-1/p+1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 2.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "phosphorous acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "P(O)(O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H3O3P/c1-4(2)3/h1-3H"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.5,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "diphenyliodonium chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Cl-].C1(=CC=CC=C1)[I+]C1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C12H10I.ClH/c1-3-7-11(8-4-1)13-12-9-5-2-6-10-12;/h1-10H;1H/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 44.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 30.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "silver fluoroborate"
+            },
+            {
+              "type": "SMILES",
+              "value": "F[B-](F)(F)F.[Ag+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Ag.BF4/c;2-1(3,4)5/q+1;-1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 29.2,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "CATALYST"
+        }
+      ]
+    },
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "aromatic iodonium"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "The aromatic iodonium complex salts may be prepared by metathesis of corresponding aromatic iodonium simple salts (such as, for example, diphenyliodonium bisulfate) in accordance with the teachings of Beringer et al., J. Am. Chem. Soc. 81,342 (1959). Thus, for example, the complex salt diphenyliodonium tetrafluoroborate is prepared by the addition at 60° C. of an aqueous solution containing 29.2 g silver fluoroborate, 2 g fluoroboric acid, and 0.5 g phosphorous acid in about 30 ml of water to a solution of 44 g (139 millimoles) of diphenyliodonium chloride. The silver halide that precipitates is filtered off and the filtrate concentrated to yield diphenyliodonium fluoroborate which may be purified by recrystallization."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "is prepared by the addition at 60° C. of an aqueous solution",
+      "temperature": {
+        "setpoint": {
+          "value": 60.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The silver halide that precipitates",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "silver halide"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "is filtered off"
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "the filtrate concentrated"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "diphenyliodonium fluoroborate"
+            },
+            {
+              "type": "SMILES",
+              "value": "F[B-](F)(F)F.C1(=CC=CC=C1)[I+]C1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C12H10I.BF4/c1-3-7-11(8-4-1)13-12-9-5-2-6-10-12;2-1(3,4)5/h1-10H;/q+1;-1"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998495",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:30.854570"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-7783fdca943a4aafba1be855cd7e9441"
+}

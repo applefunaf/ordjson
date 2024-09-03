@@ -1,0 +1,395 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[H-].[Na+].[Br:3][C:4]1[CH:9]=[CH:8][CH:7]=[CH:6][C:5]=1[OH:10].[CH3:11][O:12][CH2:13]Br.O>CN(C=O)C>[CH3:11][O:12][CH2:13][O:10][C:5]1[CH:6]=[CH:7][CH:8]=[CH:9][C:4]=1[Br:3] |f:0.1|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 250.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-bromophenol"
+            },
+            {
+              "type": "SMILES",
+              "value": "BrC1=C(C=CC=C1)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H5BrO/c7-5-3-1-2-4-6(5)8/h1-4,8H"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 6.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m1_m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sodium hydride"
+            },
+            {
+              "type": "SMILES",
+              "value": "[H-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Na.H/q+1;-1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 1.2,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "DMF"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN(C)C=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H7NO/c1-4(2)3-5/h3H,1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 75.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "bromomethyl methyl ether"
+            },
+            {
+              "type": "SMILES",
+              "value": "COCBr"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H5BrO/c1-4-2-3/h2H2,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 4.3,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "After stirring for 20 min"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a stirring suspension of sodium hydride (1.2 g, 52.1 mmol, 60% dispersion in mineral oil) in DMF (75 mL) at 0° C. was added 2-bromophenol (6.0 g, 34.7 mmol) dropwise. After stirring for 20 min, bromomethyl methyl ether (4.3 g, 34.7 mmol) was added. After stirring for 16 h at room temperature, the mixture was poured into water (250 mL) and extracted with hexane. The organic layer was washed with brine, dried (MgSO4), filtered and concentrated. The residue was purified by column chromatography (silica gel, hexane) to yield the title compound as a colorless oil (4.0 g, 53%). 1HNMR (400 MHz, CDCl3) δ7.55 (d, 1H), 7.28 (t, 1H), 7.16 (d, 1H), 6.91 (t, 1H), 5.25 (s, 2H), 3.54 (s, 3H)."
+  },
+  "workups": [
+    {
+      "type": "STIRRING",
+      "details": "After stirring for 16 h at room temperature",
+      "duration": {
+        "value": 16.0,
+        "units": "HOUR"
+      },
+      "temperature": {
+        "control": {
+          "type": "AMBIENT"
+        }
+      }
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "extracted with hexane",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "hexane"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCCCCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C6H14/c1-3-5-6-4-2/h3-6H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "The organic layer was washed with brine",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "brine"
+              },
+              {
+                "type": "SMILES",
+                "value": "[Cl-].[Na+].O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH.Na.H2O/h1H;;1H2/q;+1;/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "dried (MgSO4)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "MgSO4"
+              },
+              {
+                "type": "SMILES",
+                "value": "[O-]S(=O)(=O)[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filtered"
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The residue was purified by column chromatography (silica gel, hexane)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "hexane"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCCCCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C6H14/c1-3-5-6-4-2/h3-6H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 20.0,
+        "units": "MINUTE"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "2-methoxymethoxybromobenzene"
+            },
+            {
+              "type": "SMILES",
+              "value": "COCOC1=C(C=CC=C1)Br"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H9BrO2/c1-10-6-11-8-5-3-2-4-7(8)9/h2-5H,6H2,1H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 4.0,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 53.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 53.1
+              }
+            }
+          ],
+          "isolated_color": "colorless",
+          "texture": {
+            "type": "OIL",
+            "details": "oil"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998470",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:31.525429"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-26635667acde48f7992172c9b0d83d68"
+}

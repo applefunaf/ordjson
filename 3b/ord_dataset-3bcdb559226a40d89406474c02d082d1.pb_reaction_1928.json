@@ -1,0 +1,222 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[C:1]1(=[O:7])[O:6][C:4](=[O:5])[CH:3]=[CH:2]1>[Hg].C(OCC)(=O)C>[CH:3]12[C:4](=[O:5])[O:6][C:1](=[O:7])[CH:2]1[CH:3]1[C:4](=[O:5])[O:6][C:1](=[O:7])[CH:2]12",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "maleic anhydride"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1(\\C=C/C(=O)O1)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H2O3/c5-3-1-2-4(6)7-3/h1-2H"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 100.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethyl acetate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)OCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 1.0,
+              "units": "KILOGRAM"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "mercury"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Hg]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Hg"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "CATALYST"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "Under stirring in an agron atmosphere"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "In a 1 liter-glass flask equipped with a 500 W moderate-pressure mercury lamp, 100 g (1.02 M) of maleic anhydride and 1 kg of ethyl acetate were placed and mixed to provide a homogeneous solution. Under stirring in an agron atmosphere, the solution was irradiated with light by using the mercury lamp for 8 hours at 20° C. to precipitate a crystal. After the reaction, the crystal was recovered by filtration to obtain 3.3 g of cyclobutanetetracarboxylic dianhydride (100% trans form)."
+  },
+  "workups": [
+    {
+      "type": "ADDITION",
+      "details": "mixed"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to provide a homogeneous solution"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the solution was irradiated with light"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "for 8 hours",
+      "duration": {
+        "value": 8.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "at 20° C.",
+      "temperature": {
+        "setpoint": {
+          "value": 20.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to precipitate a crystal"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "After the reaction"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "the crystal was recovered by filtration"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "cyclobutanetetracarboxylic dianhydride"
+            },
+            {
+              "type": "SMILES",
+              "value": "C12C(C3C1C(=O)OC3=O)C(=O)OC2=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H4O6/c9-5-1-2(6(10)13-5)4-3(1)7(11)14-8(4)12/h1-4H"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 3.3,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 100.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 3.3
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06001276",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:15.640457"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-7e8636e3b437432283c323dab4460fe3"
+}

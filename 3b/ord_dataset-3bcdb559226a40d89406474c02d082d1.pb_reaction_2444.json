@@ -1,0 +1,187 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[C:1]([OH:10])(=O)[CH2:2][CH2:3][CH2:4][CH2:5][CH2:6][CH2:7][CH3:8].C(Cl)([Cl:13])=O>ClC1C=CC=CC=1>[C:1]([Cl:13])(=[O:10])[CH2:2][CH2:3][CH2:4][CH2:5][CH2:6][CH2:7][CH3:8]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "anhydride"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m1_m4_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "octanoic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(CCCCCCC)(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H16O2/c1-2-3-4-5-6-7-8(9)10/h2-7H2,1H3,(H,9,10)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 86.6,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "phosgene"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(=O)(Cl)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CCl2O/c2-1(3)4"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 600.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "monochlorobenzene"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H5Cl/c7-6-4-2-1-3-5-6/h1-5H"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 890.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 25.0,
+        "units": "CELSIUS"
+      }
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "86.6 g (0.6 mol) of octanoic acid and 890 g of monochlorobenzene are introduced into the reactor and 600 g (6.07 mol) of phosgene are then added over about 30 minutes, while maintaining the temperature of the reaction medium at a maximum of 25° C. The set pressure is adjusted to 10.5 bar relative and the reaction medium is heated. After two hours, the level of residual acid is about 1 mol %, the level of residual anhydride is zero and the level of octanoyl chloride obtained is 99 mol %."
+  },
+  "workups": [
+    {
+      "type": "ADDITION",
+      "details": "are then added over about 30 minutes",
+      "duration": {
+        "value": 30.0,
+        "units": "MINUTE"
+      }
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "the reaction medium is heated"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 2.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "octanoyl chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(CCCCCCC)(=O)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H15ClO/c1-2-3-4-5-6-7-8(9)10/h2-7H2,1H3"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06002043",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:23.949279"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-1460e59e3c9b450ab8bb4523a5a55d32"
+}

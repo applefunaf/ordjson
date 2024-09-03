@@ -1,0 +1,319 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "Cl[C:2]1[C:11]2[C:6](=[CH:7][C:8]([O:14][CH3:15])=[C:9]([O:12][CH3:13])[CH:10]=2)[N:5]=[CH:4][C:3]=1[C:16]#[N:17].[CH2:18]([C:20]1[CH:26]=[CH:25][C:23]([NH2:24])=[CH:22][CH:21]=1)[CH3:19].Cl.N1C=CC=CC=1.C(OCCO)C>>[CH2:18]([C:20]1[CH:26]=[CH:25][C:23]([NH:24][C:2]2[C:11]3[C:6](=[CH:7][C:8]([O:14][CH3:15])=[C:9]([O:12][CH3:13])[CH:10]=3)[N:5]=[CH:4][C:3]=2[C:16]#[N:17])=[CH:22][CH:21]=1)[CH3:19] |f:2.3|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m3_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-chloro-6,7-dimethoxy-quinoline-3-carbonitrile"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC1=C(C=NC2=CC(=C(C=C12)OC)OC)C#N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C12H9ClN2O2/c1-16-10-3-8-9(4-11(10)17-2)15-6-7(5-14)12(8)13/h3-4,6H,1-2H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.248,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-ethylaniline"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)C1=CC=C(N)C=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H11N/c1-2-7-3-5-8(9)6-4-7/h3-6H,2,9H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 0.14,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "pyridine hydrochloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl.N1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C5H5N.ClH/c1-2-4-6-5-3-1;/h1-5H;1H"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.116,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-ethoxyethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)OCCO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H10O2/c1-2-6-4-3-5/h5H,2-4H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 12.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 139.0,
+        "precision": 1.0,
+        "units": "CELSIUS"
+      }
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture of 0.248 g (1 mmol)of 4-chloro-6,7-dimethoxy-quinoline-3-carbonitrile, 0.14 ml (1.1 mmol) of 4-ethylaniline, 0.116 g (1 mmol) pyridine hydrochloride and 12 ml of 2-ethoxyethanol was heated in a 138-140° C. oil bath for 1 hour; progress of the reaction was monitored by TLC. When TLC indicated the disappearance of starting material, the reaction was cooled and concentrated in vacuo to a thick oil. To this oil was added 50 ml of water followed by 5 ml of 1M NaHCO3, approximately pH 8. The resulting precipitate was collected, washed with water and diethyl ether, and dried in vacuo at 65° C. to give 0.325 g (97.5%) of the desired product as light cream crystals. MP 248-250° C.; : mass spectrum (electrospray, m/e,): 333.1462."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "the reaction was cooled"
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated in vacuo to a thick oil"
+    },
+    {
+      "type": "ADDITION",
+      "details": "To this oil was added 50 ml of water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 50.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The resulting precipitate was collected"
+    },
+    {
+      "type": "WASH",
+      "details": "washed with water and diethyl ether",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "diethyl ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried in vacuo at 65° C.",
+      "temperature": {
+        "setpoint": {
+          "value": 65.0,
+          "units": "CELSIUS"
+        }
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "desired product"
+            },
+            {
+              "type": "NAME",
+              "value": "4(4-Ethylphenylamino)-6,7-dimethoxyquinoline-3-carbonitrile"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)C1=CC=C(C=C1)NC1=C(C=NC2=CC(=C(C=C12)OC)OC)C#N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C20H19N3O2/c1-4-13-5-7-15(8-6-13)23-20-14(11-21)12-22-17-10-19(25-3)18(24-2)9-16(17)20/h5-10,12H,4H2,1-3H3,(H,22,23)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 0.325,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 97.5
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 97.5
+              }
+            }
+          ],
+          "isolated_color": "light cream",
+          "texture": {
+            "type": "CRYSTAL",
+            "details": "crystals"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06002008",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:28.206299"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-1dfa084a87f84ce48f0159b797342296"
+}

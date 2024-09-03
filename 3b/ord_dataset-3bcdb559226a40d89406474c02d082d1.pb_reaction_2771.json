@@ -1,0 +1,387 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[O:1]1[CH2:6][CH2:5][CH2:4][CH2:3][CH:2]1[C:7]([OH:9])=O.C(Cl)(=O)[C:11]([Cl:13])=O>ClCCl.CN(C=O)C>[Cl:13][CH2:11][C:7]([CH:2]1[CH2:3][CH2:4][CH2:5][CH2:6][O:1]1)=[O:9]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m3_m2_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Tetrahydropyran-2-carboxylic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "O1C(CCCC1)C(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H10O3/c7-6(8)5-3-1-2-4-9-5/h5H,1-4H2,(H,7,8)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 3.3,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "oxalyl chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C(=O)Cl)(=O)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2Cl2O2/c3-1(5)2(4)6"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 3.3,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "dichloromethane"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClCCl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 60.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "DMF"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN(C)C=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H7NO/c1-4(2)3-5/h3H,1-2H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "CATALYST"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 2.5,
+        "precision": 2.5,
+        "units": "CELSIUS"
+      }
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "Tetrahydropyran-2-carboxylic acid (3.3 g) in dry dichloromethane (60 ml) was treated with oxalyl chloride (4.8 g, 3.3 ml) and DMF (2-3 drops). After the initial effervescence had ceased the mixture was left for a further 1 h at ambient temperature. The solvent and excess oxalyl chloride were removed in vacuo and the resultant oil (νmax (CH2Cl2)1830 cm-1 ] was dissolved in dichloromethane (20 ml). This acid chloride solution was then added dropwise to a freshly prepared ethereal solution of diazomethane (ca 2 fold excess) cooled to 0-5° C, t.l.c. analysis (60% ethyl acetate in hexane) showed a single mobile spot, i.r. spectrum of a sample showed clean conversion to the diazoketone [νmax (CH2Cl2) 2100 cm-1 ]. Hydrogen chloride gas was bubbled through the solution until no further starting material was observed by t.l.c. The mixture was washed with brine, dried and the solvent removed in vacuo and the residue purified by flash chromatography on silica gel. The title compound was obtained as a pale yellow oil, (2.8 g, 68%); νmax (CH2Cl2) 1740 cm-1 ; δH (CDCl3) 1.4-1.7 (4 H, m), 1.91-1.98 (2 H, m), 3.42-3.53 (1 H, m), 3.95-4.07 (2 H, m) and 4.48 (2 H, s) [Mass spectrum: +ve ion (NH3), MH+ (163), MNH4+ (180)]."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "The solvent and excess oxalyl chloride were removed in vacuo",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "oxalyl chloride"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C(=O)Cl)(=O)Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C2Cl2O2/c3-1(5)2(4)6"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DISSOLUTION",
+      "details": "the resultant oil (νmax (CH2Cl2)1830 cm-1 ] was dissolved in dichloromethane (20 ml)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "(CH2Cl2)1830"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "dichloromethane"
+              },
+              {
+                "type": "SMILES",
+                "value": "ClCCl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 20.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "ADDITION",
+      "details": "This acid chloride solution was then added dropwise to a freshly prepared ethereal solution of diazomethane (ca 2 fold excess)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "acid chloride"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "diazomethane"
+              },
+              {
+                "type": "SMILES",
+                "value": "[N+](=[N-])=C"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2N2/c1-3-2/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "Hydrogen chloride gas was bubbled through the solution until",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "Hydrogen chloride"
+              },
+              {
+                "type": "SMILES",
+                "value": "Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH/h1H"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "The mixture was washed with brine",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "brine"
+              },
+              {
+                "type": "SMILES",
+                "value": "[Cl-].[Na+].O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH.Na.H2O/h1H;;1H2/q;+1;/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the solvent removed in vacuo"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the residue purified by flash chromatography on silica gel"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 1.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "2- (2-Chloroacetyl)tetrahydropyran"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClCC(=O)C1OCCCC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H11ClO2/c8-5-6(9)7-3-1-2-4-10-7/h7H,1-5H2"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06001997",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:28.969086"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-30e1a692c1ad460da82f2f253915c837"
+}

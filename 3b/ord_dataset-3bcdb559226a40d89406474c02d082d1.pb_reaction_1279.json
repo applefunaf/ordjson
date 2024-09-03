@@ -1,0 +1,276 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[NH2:1][C:2]1[CH:7]=[CH:6][C:5]([S:8]([NH:11][C:12]2[CH:17]=[C:16](Cl)[N:15]=[C:14]([NH2:19])[N:13]=2)(=[O:10])=[O:9])=[CH:4][CH:3]=1.[CH2:20]([NH2:22])[CH3:21]>C(O)C>[NH2:1][C:2]1[CH:7]=[CH:6][C:5]([S:8]([NH:11][C:12]2[CH:17]=[C:16]([NH:22][CH2:20][CH3:21])[N:15]=[C:14]([NH2:19])[N:13]=2)(=[O:10])=[O:9])=[CH:4][CH:3]=1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 5.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m1_m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-amino-N-(2-amino-6-chloro-pyrimidin-4-yl)-benzenesufonamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC1=CC=C(C=C1)S(=O)(=O)NC1=NC(=NC(=C1)Cl)N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C10H10ClN5O2S/c11-8-5-9(15-10(13)14-8)16-19(17,18)7-3-1-6(12)2-4-7/h1-5H,12H2,(H3,13,14,15,16)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.5,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethylamine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H7N/c1-2-3/h2-3H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 11.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 20.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 130.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "stirred in an autoclave at 130° C. for 4 hours"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "0.50 g (0.00167 mol) of 4-amino-N-(2-amino-6-chloro-pyrimidin-4-yl)-benzenesufonamide and 11 ml (0.167 mol) of ethylamine were dissolved in 20 ml of ethanol and stirred in an autoclave at 130° C. for 4 hours. The reaction mixture was freed from solvent, the residue was suspended in 5 ml of ethanol and treated in an ultrasound bath for 15 minutes. The precipitate was filtered off, dissolved 10 ml of 0.1N NaOH and filtered. The filtrate was adjusted to pH 6 with 0.1N HCl. The precipitate was filtered off under suction, washed with water and dried. There was obtained"
+  },
+  "workups": [
+    {
+      "type": "ADDITION",
+      "details": "treated in an ultrasound bath for 15 minutes",
+      "duration": {
+        "value": 15.0,
+        "units": "MINUTE"
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "The precipitate was filtered off"
+    },
+    {
+      "type": "DISSOLUTION",
+      "details": "dissolved 10 ml of 0.1N NaOH",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "NaOH"
+              },
+              {
+                "type": "SMILES",
+                "value": "[OH-].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Na.H2O/h;1H2/q+1;/p-1"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 10.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filtered"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "The precipitate was filtered off under suction"
+    },
+    {
+      "type": "WASH",
+      "details": "washed with water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "There was obtained"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 4.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-Amino-N-(2-amino-6-ethylamino-pyrimidin-4-yl)-benzenesufonamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC1=CC=C(C=C1)S(=O)(=O)NC1=NC(=NC(=C1)NCC)N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C12H16N6O2S/c1-2-15-10-7-11(17-12(14)16-10)18-21(19,20)9-5-3-8(13)4-6-9/h3-7H,2,13H2,1H3,(H4,14,15,16,17,18)"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998665",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:35.598514"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-799a3542e855413ca023df769352c4ad"
+}

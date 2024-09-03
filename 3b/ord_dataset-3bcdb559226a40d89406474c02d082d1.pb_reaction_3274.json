@@ -1,0 +1,246 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH2:1]([O:4][C:5]1[N:9]([CH2:10][C:11]2[CH:16]=[CH:15][C:14]([C:17]3[CH:22]=[CH:21][CH:20]=[CH:19][C:18]=3[C:23]3[NH:27][N:26]=[N:25][N:24]=3)=[CH:13][CH:12]=2)[C:8]2[C:28]([C:32]([O:34]CC)=[O:33])=[CH:29][CH:30]=[CH:31][C:7]=2[N:6]=1)[CH2:2][CH3:3].[OH-].[Na+]>C(O)C>[CH2:1]([O:4][C:5]1[N:9]([CH2:10][C:11]2[CH:12]=[CH:13][C:14]([C:17]3[CH:22]=[CH:21][CH:20]=[CH:19][C:18]=3[C:23]3[NH:27][N:26]=[N:25][N:24]=3)=[CH:15][CH:16]=2)[C:8]2[C:28]([C:32]([OH:34])=[O:33])=[CH:29][CH:30]=[CH:31][C:7]=2[N:6]=1)[CH2:2][CH3:3] |f:1.2|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m3_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethyl 2-propoxy-1-[[2'-(1H-tetrazol-5-yl)-biphenyl-4-yl]methyl]benzimidazole-7-carboxylate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(CC)OC1=NC2=C(N1CC1=CC=C(C=C1)C1=C(C=CC=C1)C1=NN=NN1)C(=CC=C2)C(=O)OCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C27H26N6O3/c1-3-16-36-27-28-23-11-7-10-22(26(34)35-4-2)24(23)33(27)17-18-12-14-19(15-13-18)20-8-5-6-9-21(20)25-29-31-32-30-25/h5-15H,3-4,16-17H2,1-2H3,(H,29,30,31,32)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.23,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "NaOH"
+            },
+            {
+              "type": "SMILES",
+              "value": "[OH-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Na.H2O/h;1H2/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 1.5,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 4.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 80.0,
+        "units": "CELSIUS"
+      }
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A solution of ethyl 2-propoxy-1-[[2'-(1H-tetrazol-5-yl)-biphenyl-4-yl]methyl]benzimidazole-7-carboxylate (0.23 g) in ethanol (4 ml) containing 1N-NaOH (1.5 ml) was heated at 80° C. for 2 hours. The reaction mixture was concentrated to dryness and the residue was extracted with water and ethyl acetate. The aqueous layer was adjusted to pH 3-4 with 1N-HCl to give crystals. Recrystallization from ethyl acetate--methanol afforded colorless crystals (0.15 g, 69%), m.p. 174-175° C."
+  },
+  "workups": [
+    {
+      "type": "CONCENTRATION",
+      "details": "The reaction mixture was concentrated to dryness"
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "the residue was extracted with water and ethyl acetate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to give crystals"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "Recrystallization from ethyl acetate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-Propoxy-1-[[2'-(1H-tetrazol-5-yl)biphenyl-4-yl]methyl]benzimidazole-7-carboxylic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(CC)OC1=NC2=C(N1CC1=CC=C(C=C1)C1=C(C=CC=C1)C1=NN=NN1)C(=CC=C2)C(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C25H22N6O3/c1-2-14-34-25-26-21-9-5-8-20(24(32)33)22(21)31(25)15-16-10-12-17(13-11-16)18-6-3-4-7-19(18)23-27-29-30-28-23/h3-13H,2,14-15H2,1H3,(H,32,33)(H,27,28,29,30)"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06004989",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:22.620909"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-7213c8ff5bfd4f9bbabe4f9576ab2bd7"
+}

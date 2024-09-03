@@ -1,0 +1,277 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[NH2:1][C:2]1[CH:10]=[C:6]([C:7]([NH2:9])=[O:8])[C:5]([OH:11])=[CH:4][CH:3]=1.C([O-])(O)=O.[Na+].[I:17][CH2:18][C:19](Cl)=[O:20]>O>[I:17][CH2:18][C:19]([NH:1][C:2]1[CH:10]=[C:6]([C:7]([NH2:9])=[O:8])[C:5]([OH:11])=[CH:4][CH:3]=1)=[O:20] |f:1.2|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m5_m3_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "NaHCO3"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(=O)(O)[O-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2O3.Na/c2-1(3)4;/h(H2,2,3,4);/q;+1/p-1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 42.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "iodoacetyl chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "ICC(=O)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H2ClIO/c3-2(5)1-4/h1H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 18.4,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 300.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ice"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "5-Aminosalicylamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC1=CC=C(C(C(=O)N)=C1)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H8N2O2/c8-4-1-2-6(10)5(3-4)7(9)11/h1-3,10H,8H2,(H2,9,11)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 10.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 2.5,
+        "precision": 2.5,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "After stirring at 0-5° C. for 1 hr"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To an ice-cooled, stirred solution of 5-Aminosalicylamide (10.0 grams, 0.073 mol), in 300 mL of water containing NaHCO3 (42.0 grams, 0.5 mol), iodoacetyl chloride (18.4 grams, 0.09 mol) is added dropwise over 15 min. After stirring at 0-5° C. for 1 hr., the solution is acidified with cold 6 N HCI. The precipitate is collected and dried in vacuo over NaOH pellets, to afford 21.3 grams (96% yield) of crude 5-(iodoacetamido)salicylamide."
+  },
+  "workups": [
+    {
+      "type": "ADDITION",
+      "details": "is added dropwise over 15 min",
+      "duration": {
+        "value": 15.0,
+        "units": "MINUTE"
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The precipitate is collected"
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "dried in vacuo over NaOH pellets",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "NaOH"
+              },
+              {
+                "type": "SMILES",
+                "value": "[OH-].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Na.H2O/h;1H2/q+1;/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 1.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "5-(iodoacetamido)salicylamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "ICC(=O)NC1=CC=C(C(C(=O)N)=C1)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H9IN2O3/c10-4-8(14)12-5-1-2-7(13)6(3-5)9(11)15/h1-3,13H,4H2,(H2,11,15)(H,12,14)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 21.3,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 96.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 91.2
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06008406",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:26.893970"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-688987e079c14aa79c05574a501941a9"
+}

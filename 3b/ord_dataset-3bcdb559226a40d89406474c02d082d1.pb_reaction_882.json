@@ -1,0 +1,223 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][CH:2]1[CH2:7][C:6](=O)[CH2:5][C:4](=[O:9])[CH2:3]1.[NH3:10]>C1C=CC=CC=1>[NH2:10][C:6]1[CH2:7][CH:2]([CH3:1])[CH2:3][C:4](=[O:9])[CH:5]=1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "5-Methyl-1,3-cyclohexanedione"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC1CC(CC(C1)=O)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H10O2/c1-5-2-6(8)4-7(9)3-5/h5H,2-4H2,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 40.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "benzene"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H6/c1-2-4-6-5-3-1/h1-6H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 500.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "NH3"
+            },
+            {
+              "type": "SMILES",
+              "value": "N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H3N/h1H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 0.0,
+        "units": "CELSIUS"
+      }
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "5-Methyl-1,3-cyclohexanedione (40 g, 0.32 mol) was dissolved in 500 ml of benzene at 70° C. The solution was heated at reflux for 2 hours, during which NH3 was bubbled through the reaction mixture and formed H2O was collected in a Dean-Stark trap. The mixture was then cooled to 0° C. and title product recovered by filtration, 39.8 g, m.p. 165-169° C."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "The solution was heated"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "was bubbled through the reaction mixture"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "formed H2O",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "H2O"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "was collected in a Dean-Stark trap"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "title product recovered by filtration, 39.8 g, m.p. 165-169° C.",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "title product"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "1-Amino-5-methylcyclohex-1-en-3-one"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC1=CC(CC(C1)C)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H11NO/c1-5-2-6(8)4-7(9)3-5/h4-5H,2-3,8H2,1H3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998451",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:30.710064"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-d6134722543a410f8e2dcb38cf57f55d"
+}

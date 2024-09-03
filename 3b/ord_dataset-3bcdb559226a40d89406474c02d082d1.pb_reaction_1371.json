@@ -1,0 +1,180 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH2:1]([NH:3][C:4](=[O:11])[C:5]1[CH:10]=[CH:9][CH:8]=[CH:7][CH:6]=1)[CH3:2].[CH3:12][Si:13](Cl)([CH3:15])[CH3:14]>>[CH2:1]([NH:3][C:4](=[O:11])[C:5]1[CH:10]=[CH:9][CH:8]=[CH:7][C:6]=1[Si:13]([CH3:15])([CH3:14])[CH3:12])[CH3:2]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-Ethylbenzamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)NC(C1=CC=CC=C1)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H11NO/c1-2-10-9(11)8-6-4-3-5-7-8/h3-7H,2H2,1H3,(H,10,11)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 74.5,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "TMSCl"
+            },
+            {
+              "type": "SMILES",
+              "value": "C[Si](C)(C)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H9ClSi/c1-5(2,3)4/h1-3H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 135.8,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "N-Ethylbenzamide (74.5 g, 500 mmol) and TMSCl (135.8 g, 1.25 mol) were combined according to General Method C and purified by HPLC with 1:4 ethyl acetate/hexanes to afford 75.59 g of the title compound, as a white solid, a 68% yield. m.p. 64.0-66.0° C."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "purified by HPLC with 1:4 ethyl acetate/hexanes",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate hexanes"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "N-Ethyl-2-(trimethylsilyl)benzamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)NC(C1=C(C=CC=C1)[Si](C)(C)C)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C12H19NOSi/c1-5-13-12(14)10-8-6-7-9-11(10)15(2,3)4/h6-9H,5H2,1-4H3,(H,13,14)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 75.59,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 68.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 68.3
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998466",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:37.170276"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-a3f990954ba3468bb9e6996c2d85731b"
+}

@@ -1,0 +1,330 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][S:2](Cl)(=[O:4])=[O:3].[NH2:6][C:7]1[CH:16]=[C:15]([Cl:17])[CH:14]=[CH:13][C:8]=1[C:9]([O:11][CH3:12])=[O:10].C(N(CC)CC)C>ClCCl.Cl>[Cl:17][C:15]1[CH:14]=[CH:13][C:8]([C:9]([O:11][CH3:12])=[O:10])=[C:7]([NH:6][S:2]([CH3:1])(=[O:4])=[O:3])[CH:16]=1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m6": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrochloric acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/ClH/h1H"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m1_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methanesulphonyl chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "CS(=O)(=O)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH3ClO2S/c1-5(2,3)4/h1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 6.3,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "dichloromethane"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClCCl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m2_m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methyl 2-amino-4-chlorobenzoate"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC1=C(C(=O)OC)C=CC(=C1)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H8ClNO2/c1-12-8(11)6-3-2-5(9)4-7(6)10/h2-4H,10H2,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 9.5,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "dichloromethane"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClCCl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Triethylamine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)N(CC)CC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H15N/c1-4-7(5-2)6-3/h4-6H2,1-3H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 7.1,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 2.5,
+        "precision": 2.5,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "the mixture was stirred at 0-5° C. for 10 minutes"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A solution of methanesulphonyl chloride (6.3 g) in dichloromethane was added to a stirred, cooled (0-5° C.) solution of methyl 2-amino-4-chlorobenzoate (9.5 g) in dichloromethane. Triethylamine (7.1 g) was then added and the mixture was stirred at 0-5° C. for 10 minutes and then at room temperature for 0.5 hours. The mixture was diluted with 2N hydrochloric acid. The organic phase was separated, washed with water, dried and evaporated. The crude product was purified by column chromatography to yield methyl 4-chloro-2-(N-methylsulphonylamino)benzoate as a white solid, (3.6 g) m.p. 125.5-128.1° C."
+  },
+  "workups": [
+    {
+      "type": "WAIT",
+      "details": "at room temperature for 0.5 hours",
+      "duration": {
+        "value": 0.5,
+        "units": "HOUR"
+      },
+      "temperature": {
+        "control": {
+          "type": "AMBIENT"
+        }
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The organic phase was separated"
+    },
+    {
+      "type": "WASH",
+      "details": "washed with water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "evaporated"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The crude product was purified by column chromatography",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "crude product"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 10.0,
+        "units": "MINUTE"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methyl 4-chloro-2-(N-methylsulphonylamino)benzoate"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC1=CC(=C(C(=O)OC)C=C1)NS(=O)(=O)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H10ClNO4S/c1-15-9(12)7-4-3-6(10)5-8(7)11-16(2,13)14/h3-5,11H,1-2H3"
+            }
+          ],
+          "isolated_color": "white",
+          "texture": {
+            "type": "CUSTOM",
+            "details": "solid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998653",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:35.193574"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-6b11f9e035ad48f59a03328553159e52"
+}

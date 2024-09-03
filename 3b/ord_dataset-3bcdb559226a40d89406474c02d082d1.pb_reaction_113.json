@@ -1,0 +1,322 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "C(O[CH:4](OCC)[CH2:5][S:6][C:7]1[NH:8][C:9]2[C:14]([CH:15]=1)=[CH:13][CH:12]=[CH:11][CH:10]=2)C.C(=O)([O-])[O-].[K+].[K+]>O>[S:6]1[C:7]2=[CH:15][C:14]3[CH:13]=[CH:12][CH:11]=[CH:10][C:9]=3[N:8]2[CH:4]=[CH:5]1 |f:1.2.3|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 300.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m1_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-(2,2-diethoxyethylmercapto)indole"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)OC(CSC=1NC2=CC=CC=C2C1)OCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C14H19NO2S/c1-3-16-14(17-4-2)10-18-13-9-11-7-5-6-8-12(11)15-13/h5-9,14-15H,3-4,10H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 1.5,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "polyphosphoric acid"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 30.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "potassium carbonate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C([O-])([O-])=O.[K+].[K+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2O3.2K/c2-1(3)4;;/h(H2,2,3,4);;/q;2*+1/p-2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 130.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "A well stirred"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A well stirred mixture of 2-(2,2-diethoxyethylmercapto)indole (1.5 g, 0.0057 mole) in polyphosphoric acid (30 g) was heated to 130° C. for 20 minutes, then allowed to cool to room temperature and the mixture diluted with water (300 ml). The resulting aqueous solution was basified by addition of solid potassium carbonate and then extracted with ethyl acetate (2×120 ml). The combined extracts were dried (Na2SO4), concentrated in vacuo and the residue chromatographed on silica gel eluting with 10% ether/60-80 petrol to afford the title compound as a white solid (0.56 g, 57%)."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "to cool to room temperature",
+      "temperature": {
+        "control": {
+          "type": "AMBIENT"
+        }
+      }
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "extracted with ethyl acetate (2×120 ml)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 120.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "The combined extracts were dried (Na2SO4)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "Na2SO4"
+              },
+              {
+                "type": "SMILES",
+                "value": "[O-]S(=O)(=O)[O-].[Na+].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/2Na.H2O4S/c;;1-5(2,3)4/h;;(H2,1,2,3,4)/q2*+1;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated in vacuo"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the residue chromatographed on silica gel eluting with 10% ether/60-80 petrol",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "Thiazolo[3,2-a]indole"
+            },
+            {
+              "type": "SMILES",
+              "value": "S1C=CN2C1=CC=1C=CC=CC21"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C10H7NS/c1-2-4-9-8(3-1)7-10-11(9)5-6-12-10/h1-7H"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 0.56,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 57.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 56.7
+              }
+            }
+          ],
+          "isolated_color": "white",
+          "texture": {
+            "type": "CUSTOM",
+            "details": "solid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998409",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:17.663441"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-8a3c7d0feecc4842baa61152711a9b8b"
+}

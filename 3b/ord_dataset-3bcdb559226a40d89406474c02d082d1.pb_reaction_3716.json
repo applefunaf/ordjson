@@ -1,0 +1,307 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][C:2]1([CH3:14])[CH2:10][CH2:9][CH:8]2[C:11](=[CH2:12])[CH:3]1[CH2:4][CH2:5][CH:6]([OH:13])[CH2:7]2.[C:15](OC(=O)C)(=[O:17])[CH3:16].O>P(=O)(O)(O)O.CCOCC>[C:15]([O:13][CH:6]1[CH2:5][CH2:4][CH:3]2[C:11](=[CH2:12])[CH:8]([CH2:9][CH2:10][C:2]2([CH3:14])[CH3:1])[CH2:7]1)(=[O:17])[CH3:16]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "phosphoric acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "P(O)(O)(O)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H3O4P/c1-5(2,3)4/h(H3,1,2,3,4)"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "CATALYST"
+        }
+      ]
+    },
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "7,7-dimethyl-10-methylene-bicyclo[4.3.1] decan-3-ol"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC1(C2CCC(CC(CC1)C2=C)O)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C13H22O/c1-9-10-6-7-13(2,3)12(9)5-4-11(14)8-10/h10-12,14H,1,4-8H2,2-3H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.9,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acetic anhydride"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)OC(C)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H6O3/c1-3(5)7-4(2)6/h1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 8.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ether"
+            },
+            {
+              "type": "SMILES",
+              "value": "CCOCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "H2O"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 50.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "The reaction mixture was stirred overnight at room temperature"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "In a 3-necked flask which was equipped with a reflux condenser, there were placed, under N2 -atmosphere, 0.9 g (4.6 mmoles) of 7,7-dimethyl-10-methylene-bicyclo[4.3.1] decan-3-ol, 8 ml of acetic anhydride and 1 drop of phosphoric acid. The reaction mixture was stirred overnight at room temperature. Then 50 ml of H2O were added and the solution stirred one more night at room temperature. The resulting mixture was taken up in ether, washed to neutrality with brine and dried over Na2SO4. After filtration and concentration in vacuo, the product was distilled in a bulb-to-bulb apparatus at 150° C. (10 Pa). There were obtained 1.09 g of a colorless oil in 99% of the theoretical yield. The thus-obtained mixture was composed of 2 isomers (71/29) which were separated by gas chromatography on a chemically insert CARBOWAX® column having a length of 5 meters."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "In a 3-necked flask which was equipped with a reflux condenser"
+    },
+    {
+      "type": "STIRRING",
+      "details": "the solution stirred one more night at room temperature",
+      "temperature": {
+        "control": {
+          "type": "AMBIENT"
+        }
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "washed"
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "dried over Na2SO4",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "Na2SO4"
+              },
+              {
+                "type": "SMILES",
+                "value": "[O-]S(=O)(=O)[O-].[Na+].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/2Na.H2O4S/c;;1-5(2,3)4/h;;(H2,1,2,3,4)/q2*+1;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "After filtration and concentration in vacuo"
+    },
+    {
+      "type": "DISTILLATION",
+      "details": "the product was distilled in a bulb-to-bulb apparatus at 150° C. (10 Pa)",
+      "temperature": {
+        "setpoint": {
+          "value": 150.0,
+          "units": "CELSIUS"
+        }
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 8.0,
+        "precision": 8.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "colorless oil"
+            },
+            {
+              "type": "NAME",
+              "value": "7,7-dimethyl-10-methylene-bicyclo[4.3.1]dec-3-yl acetate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)OC1CC2CCC(C(CC1)C2=C)(C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C15H24O2/c1-10-12-7-8-15(3,4)14(10)6-5-13(9-12)17-11(2)16/h12-14H,1,5-9H2,2-4H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 1.09,
+                  "units": "GRAM"
+                }
+              }
+            }
+          ],
+          "isolated_color": "colorless",
+          "texture": {
+            "type": "OIL",
+            "details": "oil"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06008186",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:16.601497"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-37e47e1bcb3f4f75bdaaf5827d6c18f8"
+}

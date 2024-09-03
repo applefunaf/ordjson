@@ -1,0 +1,300 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "C(#N)C.[F:4][C:5]1[N:10]=[C:9]([F:11])[C:8]([F:12])=[C:7](F)[C:6]=1[F:14].[C:15]([NH2:19])([CH3:18])([CH3:17])[CH3:16]>C(Cl)(Cl)Cl>[C:15]([NH:19][C:7]1[C:8]([F:12])=[C:9]([F:11])[N:10]=[C:5]([F:4])[C:6]=1[F:14])([CH3:18])([CH3:17])[CH3:16]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "chloroform"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(Cl)(Cl)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CHCl3/c2-1(3)4/h1H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 150.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m1_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acetonitrile"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)#N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H3N/c1-2-3/h1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 100.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "pentafluoropyridine"
+            },
+            {
+              "type": "SMILES",
+              "value": "FC1=C(C(=C(C(=N1)F)F)F)F"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C5F5N/c6-1-2(7)4(9)11-5(10)3(1)8"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 24.5,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "t-butylamine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(C)(C)N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H11N/c1-4(2,3)5/h5H2,1-3H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 30.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To 100 ml of acetonitrile was added 24.5 g of pentafluoropyridine, and the mixture was stirred in an ice bath simultaneously with the dropwise addition of 30 g of t-butylamine. When the mixture warmed to room temperature, 150 ml of chloroform was added, and the mixture was washed twice with 800 ml of distilled water. The chloroform layer was dried over anhydrous magnesium sulfate and concentrated under reduced pressure to obtain 23 g of the title compound as a pale yellow oil."
+  },
+  "workups": [
+    {
+      "type": "WASH",
+      "details": "the mixture was washed twice with 800 ml of distilled water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 800.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "The chloroform layer was dried over anhydrous magnesium sulfate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "chloroform"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(Cl)(Cl)Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CHCl3/c2-1(3)4/h1H"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "magnesium sulfate"
+              },
+              {
+                "type": "SMILES",
+                "value": "S(=O)(=O)([O-])[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated under reduced pressure"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "4-(t-butylamino)-2,3,5,6-tetrafluoropyridine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(C)(C)NC1=C(C(=NC(=C1F)F)F)F"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H10F4N2/c1-9(2,3)15-6-4(10)7(12)14-8(13)5(6)11/h1-3H3,(H,14,15)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 23.0,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 71.4
+              }
+            }
+          ],
+          "isolated_color": "pale yellow",
+          "texture": {
+            "type": "OIL",
+            "details": "oil"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998436",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:27.311287"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-2c9400e4717244688d5929db31eafe23"
+}

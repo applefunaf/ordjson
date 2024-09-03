@@ -1,0 +1,343 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[Cl:1][C:2]1[N:7]=[C:6]2[CH:8]=[C:9]([C@H:11]3[CH2:15][CH2:14][CH2:13][N:12]3C(OC(C)(C)C)=O)[O:10][C:5]2=[CH:4][C:3]=1[Cl:23].C(O)(C(F)(F)F)=O>C(Cl)Cl>[Cl:1][C:2]1[N:7]=[C:6]2[CH:8]=[C:9]([C@H:11]3[CH2:15][CH2:14][CH2:13][NH:12]3)[O:10][C:5]2=[CH:4][C:3]=1[Cl:23]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "5,6-Dichloro-2-(1-t-butyloxycarbonyl-2-(R)-pyrrolidinyl)furo[3,2-b]pyridine"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC1=C(C=C2C(=N1)C=C(O2)[C@@H]2N(CCC2)C(=O)OC(C)(C)C)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C16H18Cl2N2O3/c1-16(2,3)23-15(21)20-6-4-5-11(20)13-8-10-12(22-13)7-9(17)14(18)19-10/h7-8,11H,4-6H2,1-3H3/t11-/m1/s1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 355.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "CH2Cl2"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(Cl)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 3.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "TFA"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(=O)(C(F)(F)F)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2HF3O2/c3-2(4,5)1(6)7/h(H,6,7)"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 3.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "After stirring for 1 hour"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "5,6-Dichloro-2-(1-t-butyloxycarbonyl-2-(R)-pyrrolidinyl)furo[3,2-b]pyridine (355 mg, 1.0 mmol) was dissolved in CH2Cl2 (3 mL) and TFA (3 mL) was added at ambient temperature. After stirring for 1 hour, the solvent was removed and the residue was redissolved in CH2Cl2 and washed with saturated K2CO3 solution, dried (MgSO4) and concentrated. The crude product was chromatographed (silica gel; CHCl3 /MeOH, 98:2) to afford a solid (220 mg, 87%): 1H NMR (CDCl3, 300 MHz) δ 1.81-2.05 (m, 3H), 2.15-2.29 (m, 1H), 3.04-3.20 (m, 2H), 4.39-4.42 (m, 1H), 6.70 (s, 1H), 7.80 (s, 1H); MS (CI/NH3) m/z: 257 (M+H)+."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "the solvent was removed"
+    },
+    {
+      "type": "DISSOLUTION",
+      "details": "the residue was redissolved in CH2Cl2",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "CH2Cl2"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(Cl)Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "washed with saturated K2CO3 solution",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "K2CO3"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(=O)([O-])[O-].[K+].[K+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2O3.2K/c2-1(3)4;;/h(H2,2,3,4);;/q;2*+1/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "dried (MgSO4)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "MgSO4"
+              },
+              {
+                "type": "SMILES",
+                "value": "[O-]S(=O)(=O)[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The crude product was chromatographed (silica gel; CHCl3 /MeOH, 98:2)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "crude product"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "CHCl3 MeOH"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(Cl)(Cl)Cl.CO"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CHCl3.CH4O/c2-1(3)4;1-2/h1H;2H,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 1.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "solid"
+            },
+            {
+              "type": "NAME",
+              "value": "5,6-Dichloro-2-(2-(R)-pyrrolidinyl)furo[3,2-b]pyridine"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC1=C(C=C2C(=N1)C=C(O2)[C@@H]2NCCC2)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C11H10Cl2N2O/c12-6-4-9-8(15-11(6)13)5-10(16-9)7-2-1-3-14-7/h4-5,7,14H,1-3H2/t7-/m1/s1"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 220.0,
+                  "units": "MILLIGRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 87.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 85.6
+              }
+            }
+          ],
+          "texture": {
+            "type": "CUSTOM",
+            "details": "solid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06001849",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:18.144461"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-3b9bba6406f641a5b3e450497a948d3a"
+}

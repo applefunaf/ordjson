@@ -1,0 +1,320 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "C([N:8]1[CH2:12][CH2:11][CH2:10][C@H:9]1[C:13]1[O:21][C:20]2[C:15](=[N:16][C:17]([Cl:22])=[CH:18][CH:19]=2)[CH:14]=1)(OC(C)(C)C)=O.C(O)(C(F)(F)F)=O.C([O-])([O-])=O.[K+].[K+]>C(Cl)Cl>[ClH:22].[Cl:22][C:17]1[N:16]=[C:15]2[CH:14]=[C:13]([C@@H:9]3[CH2:10][CH2:11][CH2:12][NH:8]3)[O:21][C:20]2=[CH:19][CH:18]=1 |f:2.3.4,6.7|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "compound"
+            },
+            {
+              "type": "NAME",
+              "value": "2-(1-BOC-2-(S)-pyrrolidinyl)-5-chlorofuro[3,2-b]pyridine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(=O)(OC(C)(C)C)N1[C@@H](CCC1)C1=CC2=NC(=CC=C2O1)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C16H19ClN2O3/c1-16(2,3)22-15(20)19-8-4-5-11(19)13-9-10-12(21-13)6-7-14(17)18-10/h6-7,9,11H,4-5,8H2,1-3H3/t11-/m0/s1"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "CH2Cl2"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(Cl)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 10.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "TFA"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(=O)(C(F)(F)F)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2HF3O2/c3-2(4,5)1(6)7/h(H,6,7)"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 10.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "K2CO3"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(=O)([O-])[O-].[K+].[K+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2O3.2K/c2-1(3)4;;/h(H2,2,3,4);;/q;2*+1/p-2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 0.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "The solution was stirred under N2"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A 1.5 g sample of the compound from step 11d above was dissolved in 10 mL of CH2Cl2 and cooled to 0° C. The solution was stirred under N2, 10 mL of TFA was added, and the reaction mixture was stirred for 1 hr. The reaction mixture was poured into saturated K2CO3, and the mixture was extracted with CH2Cl2. The solution was dried over MgSO4, and the solvent was removed. The residue was chromatographed on silica gel, eluting with 99:1 to 95:5 CHCl3 :MeOH. The residue was converted to the salt by treatment with HCl/ether to give 0.78 g of title compound: 1H NMR (D2O, 300 MHz) δ 2.22-2.65 (m, 4H), 3.52-3.57 (m, 2H), 5.06 (t, 1H, J=8 Hz), 7.15 (d, 1H), 7.48 (d, 1H, J=8.6 Hz), 8.1 (d, 1H, J=8.6 Hz); MS m/z: 223 (M+H)+, 240 (M+NH4)+ ; Anal. Calcd for C11H11N2OCl.1.0 HCl: C, 50.99; H, 4.67 N, 10.81. Found: C, 51.21; H, 4.79; N, 10.55."
+  },
+  "workups": [
+    {
+      "type": "STIRRING",
+      "details": "the reaction mixture was stirred for 1 hr",
+      "duration": {
+        "value": 1.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "the mixture was extracted with CH2Cl2",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "CH2Cl2"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(Cl)Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "The solution was dried over MgSO4",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "MgSO4"
+              },
+              {
+                "type": "SMILES",
+                "value": "[O-]S(=O)(=O)[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the solvent was removed"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The residue was chromatographed on silica gel"
+    },
+    {
+      "type": "WASH",
+      "details": "eluting with 99:1 to 95:5 CHCl3",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "CHCl3"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(Cl)(Cl)Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CHCl3/c2-1(3)4/h1H"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "5-chloro-2-(2-(S)-pyrrolidinyl)-furo[3,2-b]pyridine hydrochloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl.ClC1=CC=C2C(=N1)C=C(O2)[C@H]2NCCC2"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C11H11ClN2O.ClH/c12-11-4-3-9-8(14-11)6-10(15-9)7-2-1-5-13-7;/h3-4,6-7,13H,1-2,5H2;1H/t7-;/m0./s1"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 0.78,
+                  "units": "GRAM"
+                }
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06001849",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:17.753159"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-43761bb13b6b4bc9922c91ddf9089917"
+}

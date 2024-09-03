@@ -1,0 +1,285 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[Cl-].[Na+].[CH3:3][O:4][C:5](=[NH:10])[NH:6][N+:7]([O-:9])=[O:8].Cl.N[CH2:13][C:14]1[S:18][C:17]([Cl:19])=[N:16][CH:15]=1.[OH-].[Na+]>>[CH3:3][O:4][C:5](=[N:6][N+:7]([O-:9])=[O:8])[NH:10][CH2:13][C:14]1[S:18][C:17]([Cl:19])=[N:16][CH:15]=1 |f:0.1,5.6|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m3_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sodium chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Cl-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/ClH.Na/h1H;/q;+1/p-1"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 40.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "O-methyl-N-nitroisourea"
+            },
+            {
+              "type": "SMILES",
+              "value": "COC(N[N+](=O)[O-])=N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H5N3O3/c1-8-2(3)4-5(6)7/h1H3,(H2,3,4)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 2.3,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrochloric acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/ClH/h1H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 1.49,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "5-(aminomethyl)-2-chlorothiazole"
+            },
+            {
+              "type": "SMILES",
+              "value": "NCC1=CN=C(S1)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H5ClN2S/c5-4-7-2-3(1-6)8-4/h2H,1,6H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 2.5,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sodium hydroxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "[OH-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Na.H2O/h;1H2/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "stirred at room temperature for 3 days"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To an aqueous solution (40 ml) of sodium chloride (7.9 g, 0.13 mol) were added O-methyl-N-nitroisourea (2.3 g, 19.3 mmol), concentrated hydrochloric acid (1.49 ml, 16.8 mmol) and 5-(aminomethyl)-2-chlorothiazole (2.5 g, 16.8 mmol). The mixture was adjusted to pH 7.0 with 30% aqueous sodium hydroxide solution, and stirred at room temperature for 3 days. The resulting white crystals were collected by filtration under reduced pressure, and washed with water. The washed crystals were dried under reduced pressure (80° C., 2 hours) to provide 3.23 g (76.6% yield) of O-methyl-N-(2-chloro-5-thiazolylmethyl)-N'-nitroisourea."
+  },
+  "workups": [
+    {
+      "type": "FILTRATION",
+      "details": "The resulting white crystals were collected by filtration under reduced pressure"
+    },
+    {
+      "type": "WASH",
+      "details": "washed with water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The washed crystals were dried under reduced pressure (80° C., 2 hours)",
+      "duration": {
+        "value": 2.0,
+        "units": "HOUR"
+      },
+      "temperature": {
+        "setpoint": {
+          "value": 80.0,
+          "units": "CELSIUS"
+        }
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 3.0,
+        "units": "DAY"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "O-methyl-N-(2-chloro-5-thiazolylmethyl)-N'-nitroisourea"
+            },
+            {
+              "type": "SMILES",
+              "value": "COC(NCC1=CN=C(S1)Cl)=N[N+](=O)[O-]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H7ClN4O3S/c1-14-6(10-11(12)13)9-3-4-2-8-5(7)15-4/h2H,3H2,1H3,(H,9,10)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 3.23,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 76.6
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 76.7
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06008363",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:25.619779"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-15916411d7744832a0e8015366265d09"
+}

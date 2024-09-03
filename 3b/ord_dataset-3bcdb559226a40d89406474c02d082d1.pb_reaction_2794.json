@@ -1,0 +1,256 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][C:2]1[O:6][C:5]([C:7]([OH:9])=[O:8])=[CH:4][CH:3]=1.[H][H]>C(OCC)(=O)C.[Rh]>[CH3:1][CH:2]1[O:6][CH:5]([C:7]([OH:9])=[O:8])[CH2:4][CH2:3]1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "rhodium on carbon"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Rh]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Rh"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 250.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "CATALYST"
+        }
+      ]
+    },
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "5-methyl-2-furoic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC1=CC=C(O1)C(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H6O3/c1-4-2-3-5(9-4)6(7)8/h2-3H,1H3,(H,7,8)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 3.65,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrogen"
+            },
+            {
+              "type": "SMILES",
+              "value": "[H][H]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2/h1H"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethyl acetate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)OCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 60.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A solution of 5-methyl-2-furoic acid (3.65 g, 28.97 mmol) in ethyl acetate (60 ml) was hydrogenated over 5% rhodium on carbon (250 mg) until hydrogen uptake ceased. The catalyst was filtered off and washed with ethyl acetate. The combined filtrates were concentrated in vacuo to yield the title compound as a pale yellow oil (3.67 g, 97%); νmax (CH2Cl2) 3384, 3359, 1775, 1724 and 1355 cm-1 ; δH (CDCl3, 250 MHz) 1.35 (3 H, d, J 6.1 Hz), 1.53 (1 H, m), 2.09 (1 H, m), 2.17-2.40 (2 H, m), 4.21 (1 H, m) and 4.46 (1 H, dd, J 8.9, 4.7 Hz). [Mass spectrum: +ve ion (ammonia) MNH4+ (148)]."
+  },
+  "workups": [
+    {
+      "type": "FILTRATION",
+      "details": "The catalyst was filtered off"
+    },
+    {
+      "type": "WASH",
+      "details": "washed with ethyl acetate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "The combined filtrates were concentrated in vacuo"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "5-Methyl-2-tetrahydrofuroic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC1CCC(O1)C(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H10O3/c1-4-2-3-5(9-4)6(7)8/h4-5H,2-3H2,1H3,(H,7,8)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 3.67,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 97.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 97.3
+              }
+            }
+          ],
+          "isolated_color": "pale yellow",
+          "texture": {
+            "type": "OIL",
+            "details": "oil"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06001997",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:29.392996"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-c6127bd4f3474134925daf20378aa523"
+}

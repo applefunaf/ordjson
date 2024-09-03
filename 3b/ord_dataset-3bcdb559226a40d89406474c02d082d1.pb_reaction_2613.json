@@ -1,0 +1,326 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[C:1]1(=[O:8])[O:7][C:5](=[O:6])[CH2:4][C:2]1=[CH2:3].[NH2:9][C:10]1[CH:11]=[C:12]2[C:17](=[CH:18][CH:19]=1)[N:16]=[CH:15][C:14]([C:20]#[N:21])=[C:13]2[NH:22][C:23]1[CH:28]=[CH:27][CH:26]=[C:25]([Br:29])[CH:24]=1.CCCCCC>C(OCC)(=O)C>[Br:29][C:25]1[CH:24]=[C:23]([NH:22][C:13]2[C:12]3[C:17](=[CH:18][CH:19]=[C:10]([NH:9][C:5](=[O:6])[CH2:4][C:2](=[CH2:3])[C:1]([OH:7])=[O:8])[CH:11]=3)[N:16]=[CH:15][C:14]=2[C:20]#[N:21])[CH:28]=[CH:27][CH:26]=1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Itaconic anhydride"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1(C(=C)CC(=O)O1)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C5H4O3/c1-3-2-4(6)8-5(3)7/h1-2H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.14,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "6-amino-4-[(3-bromophenyl)amino]-3-quinolinecarbonitrile"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC=1C=C2C(=C(C=NC2=CC1)C#N)NC1=CC(=CC=C1)Br"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C16H11BrN4/c17-11-2-1-3-13(6-11)21-16-10(8-18)9-20-15-5-4-12(19)7-14(15)16/h1-7,9H,19H2,(H,20,21)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.1,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethyl acetate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)OCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 2.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m3_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ice water"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hexane"
+            },
+            {
+              "type": "SMILES",
+              "value": "CCCCCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H14/c1-3-5-6-4-2/h3-6H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "After stirring at room temperature overnight"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "Itaconic anhydride (0.14 g, 1.25 mmol) was added portionwise to a solution of 0.1 g (0.30 mmol) of 6-amino-4-[(3-bromophenyl)amino]-3-quinolinecarbonitrile in 2 mL of ethyl acetate under N2. After stirring at room temperature overnight, the reaction solution was added into ice water and hexane. The product was collected, washed with water, ether and hexane, and dried in vacuo to give 0.09 g (68%) of yellowish brown solid; ESMS m/z 451.2 (M+H+)."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "The product was collected"
+    },
+    {
+      "type": "WASH",
+      "details": "washed with water, ether and hexane",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "hexane"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCCCCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C6H14/c1-3-5-6-4-2/h3-6H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried in vacuo"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 8.0,
+        "precision": 8.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "yellowish brown solid"
+            },
+            {
+              "type": "NAME",
+              "value": "4-[[4-[(3-Bromophenyl)amino]-3-cyano-6-quinolinyl]-amino]-2-methylene-4-oxo-butanoic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "BrC=1C=C(C=CC1)NC1=C(C=NC2=CC=C(C=C12)NC(CC(C(=O)O)=C)=O)C#N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C21H15BrN4O3/c1-12(21(28)29)7-19(27)25-16-5-6-18-17(9-16)20(13(10-23)11-24-18)26-15-4-2-3-14(22)8-15/h2-6,8-9,11H,1,7H2,(H,24,26)(H,25,27)(H,28,29)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 0.09,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 68.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 66.5
+              }
+            }
+          ],
+          "isolated_color": "yellowish brown",
+          "texture": {
+            "type": "CUSTOM",
+            "details": "solid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06002008",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:26.737147"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-2a16a2c1928c427d91a9aa24d32855f1"
+}

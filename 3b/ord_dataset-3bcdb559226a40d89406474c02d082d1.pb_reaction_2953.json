@@ -1,0 +1,312 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][O:2][C:3]1[CH:4]=[C:5]2[C:9](=[CH:10][CH:11]=1)[C:8](=[O:12])O[C:6]2=[O:13].Cl.[N:15]1[CH:20]=[CH:19][C:18]([NH:21][NH2:22])=[CH:17][CH:16]=1.C(O)(=O)C>O>[CH3:1][O:2][C:3]1[CH:4]=[C:5]2[C:9](=[CH:10][CH:11]=1)[C:8](=[O:12])[N:22]([NH:21][C:18]1[CH:19]=[CH:20][N:15]=[CH:16][CH:17]=1)[C:6]2=[O:13] |f:1.2|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 100.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m1_m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "5-methoxyisobenzofuran-1,3-dione"
+            },
+            {
+              "type": "SMILES",
+              "value": "COC=1C=C2C(OC(C2=CC1)=O)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H6O4/c1-12-5-2-3-6-7(4-5)9(11)13-8(6)10/h2-4H,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 33.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-pyridinylhydrazine hydrochloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl.N1=CC=C(C=C1)NN"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C5H7N3.ClH/c6-8-5-1-3-7-4-2-5;/h1-4H,6H2,(H,7,8);1H"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 25.7,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acetic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H4O2/c1-2(3)4/h1H3,(H,3,4)"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 100.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "with stirring"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture of 5-methoxyisobenzofuran-1,3-dione (33.0 g), 4-pyridinylhydrazine hydrochloride (25.7 g) and glacial acetic acid (100 ml) was heated overnight, under reflux, under nitrogen, with stirring. Water (100 ml) was added, and the mixture was evaporated and dried in vacuo. The residue was triturated with acetone, the acetone decanted, and the residue was triturated with methanol to give 16.1 g of 5-methoxy-2-(4-pyridinylamino)isoindol-1,3-dione. To a mixture of lithium aluminum hydride (6.00 g) and dry tetrahydrofuran (150 ml) at ambient temperature, under nitrogen, 5-methoxy-2-(4-pyridinylamino)isoindol-1,3-dione hydrochloride (16.1 g) was added in portions, with stirring. The reaction mixture was stirred at room temperature, under nitrogen, 4 hrs, and sodium sulfate decahydrate was added in portions. The mixture was filtered through a bed of celite, the filter cake was washed thoroughly with ethyl acetate, and the filtrate was concentrated in vacuo. The residue was chromatographed over silica gel, eluting with 7% methanol-dichloromethane followed by 185:14:1 dichloromethane:methanol:ammomium hydroxide. The appropriate fractions were collected and concentrated. The residue was crystallized from ethanol to give 5.8 (46%) of product, mp 166-167° C."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "was heated overnight",
+      "duration": {
+        "value": 8.0,
+        "precision": 8.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "under reflux, under nitrogen"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the mixture was evaporated"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried in vacuo"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The residue was triturated with acetone",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "acetone"
+              },
+              {
+                "type": "SMILES",
+                "value": "CC(=O)C"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C3H6O/c1-3(2)4/h1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the acetone decanted",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "acetone"
+              },
+              {
+                "type": "SMILES",
+                "value": "CC(=O)C"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C3H6O/c1-3(2)4/h1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the residue was triturated with methanol",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "methanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "CO"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "5-methoxy-2-(4-pyridinylamino)isoindol-1,3-dione"
+            },
+            {
+              "type": "SMILES",
+              "value": "COC=1C=C2C(N(C(C2=CC1)=O)NC1=CC=NC=C1)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C14H11N3O3/c1-20-10-2-3-11-12(8-10)14(19)17(13(11)18)16-9-4-6-15-7-5-9/h2-8H,1H3,(H,15,16)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 16.1,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 33.9
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06004977",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:17.892273"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-920ad0cd27a24be1b1a588f5693ad889"
+}

@@ -1,0 +1,206 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[Br-:1].[CH2:2]([N+:9]1[C:13]2[CH:14]=[CH:15][CH:16]=[CH:17][C:12]=2[S:11][C:10]=1[CH3:18])[C:3]1[CH:8]=[CH:7][CH:6]=[CH:5][CH:4]=1.[CH3:19][N:20]([CH3:29])[C:21]1[CH:28]=[CH:27][C:24]([CH:25]=O)=[CH:23][CH:22]=1>C(OC(=O)C)(=O)C>[Br-:1].[CH3:19][N:20]([CH3:29])[C:21]1[CH:28]=[CH:27][C:24](/[CH:25]=[CH:18]/[C:10]2[S:11][C:12]3[CH:17]=[CH:16][CH:15]=[CH:14][C:13]=3[N+:9]=2[CH2:2][C:3]2[CH:4]=[CH:5][CH:6]=[CH:7][CH:8]=2)=[CH:23][CH:22]=1 |f:0.1,4.5|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3-benzyl-2-methylbenzothiazol-3-ium bromide"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Br-].C(C1=CC=CC=C1)[N+]1=C(SC2=C1C=CC=C2)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C15H14NS.BrH/c1-12-16(11-13-7-3-2-4-8-13)14-9-5-6-10-15(14)17-12;/h2-10H,11H2,1H3;1H/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.3,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-dimethylaminobenzaldehyde"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN(C1=CC=C(C=O)C=C1)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H11NO/c1-10(2)9-5-3-8(7-11)4-6-9/h3-7H,1-2H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.21,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acetic anhydride"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)OC(C)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H6O3/c1-3(5)7-4(2)6/h1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 5.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture of 3-benzyl-2-methylbenzothiazol-3-ium bromide (0.30 g, 0.94 mmol) and 4-dimethylaminobenzaldehyde (0.21 g, 1.41 mmol) in 5 mL of acetic anhydride was heated under nitrogen. Upon refluxing, the mixture turned red and all solids appeared to be in solution. The solution was refluxed for 15 minutes, cooled, and filtered. The solid was washed with ethyl acetate to give (E)-2-[2-(4-dimethylaminophenyl)vinyl]-3-benzylbenzothiazol-3-ium bromide as a purple solid, mp 247-248° C., decomposed (dec)."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "was heated under nitrogen"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "Upon refluxing"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "The solution was refluxed for 15 minutes",
+      "duration": {
+        "value": 15.0,
+        "units": "MINUTE"
+      }
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "cooled"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filtered"
+    },
+    {
+      "type": "WASH",
+      "details": "The solid was washed with ethyl acetate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "(E)-2-[2-(4-dimethylaminophenyl)vinyl]-3-benzylbenzothiazol-3-ium bromide"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Br-].CN(C1=CC=C(C=C1)/C=C/C=1SC2=C([N+]1CC1=CC=CC=C1)C=CC=C2)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C24H23N2S.BrH/c1-25(2)21-15-12-19(13-16-21)14-17-24-26(18-20-8-4-3-5-9-20)22-10-6-7-11-23(22)27-24;/h3-17H,18H2,1-2H3;1H/q+1;/p-1"
+            }
+          ],
+          "isolated_color": "purple",
+          "texture": {
+            "type": "CUSTOM",
+            "details": "solid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06001331",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:15.697647"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-13636e6d5f0246e8aa98cf9f11b002ba"
+}

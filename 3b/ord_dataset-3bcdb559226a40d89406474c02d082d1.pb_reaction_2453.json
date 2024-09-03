@@ -1,0 +1,239 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][C:2]([CH:4]1[CH2:6][CH2:5]1)=[O:3].[CH:7](OC)(OC)[O:8]C.[C:14]1(C)C=CC(S(O)(=O)=O)=CC=1.C[O-].[Na+]>CO>[CH3:14][O:3][C:2]([CH:4]1[CH2:6][CH2:5]1)([O:8][CH3:7])[CH3:1] |f:3.4|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sodium methoxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "C[O-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH3O.Na/c1-2;/h1H3;/q-1;+1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.15,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m1_m2_m5_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "cyclopropyl methyl ketone"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC(=O)C1CC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C5H8O/c1-4(6)5-2-3-5/h5H,2-3H2,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 50.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "trimethyl orthoformate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(OC)(OC)OC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H10O3/c1-5-4(6-2)7-3/h4H,1-3H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 82.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "p-toluenesulfonic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1(=CC=C(C=C1)S(=O)(=O)O)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H8O3S/c1-6-2-4-7(5-3-6)11(8,9)10/h2-5H,1H3,(H,8,9,10)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.25,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 200.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "was stirred at room temperature for 2 hours"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture of 50 g (0.59 mol) of cyclopropyl methyl ketone, 82 g (0.77 mol) of trimethyl orthoformate, 200 ml of methanol and 0.25 g of p-toluenesulfonic acid was stirred at room temperature for 2 hours, and then 0.15 g of sodium methoxide was added. Then, under reduced pressure, the methanol was first distilled off (at about 400 mbar) and, finally (at about 250 mbar), the product (II) as a colorless liquid."
+  },
+  "workups": [
+    {
+      "type": "DISTILLATION",
+      "details": "Then, under reduced pressure, the methanol was first distilled off (at about 400 mbar) and, finally (at about 250 mbar)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "methanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "CO"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 2.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "(1,1-Dimethoxyethyl)cyclopropane"
+            },
+            {
+              "type": "SMILES",
+              "value": "COC(C)(OC)C1CC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H14O2/c1-7(8-2,9-3)6-4-5-6/h6H,4-5H2,1-3H3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06002062",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:24.060773"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-5a75d3c7b9884fd1989eec67c5f71a7d"
+}

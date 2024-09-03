@@ -1,0 +1,465 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[C:1]([S:4][CH2:5][CH2:6][C:7](=[O:15])[NH:8][CH2:9][CH2:10][NH:11][C:12](=[O:14])[CH3:13])(=O)[CH3:2].ClCC[S:19][CH:20]1[CH2:25][CH2:24][CH2:23][CH2:22][O:21]1.[OH-].[K+].CO>O>[C:12]([NH:11][CH2:10][CH2:9][NH:8][C:7](=[O:15])[CH2:6][CH2:5][S:4][CH2:1][CH2:2][S:19][CH:20]1[CH2:25][CH2:24][CH2:23][CH2:22][O:21]1)(=[O:14])[CH3:13] |f:2.3|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m2_m3_m4_m5_m6": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "S-{2-[N-(2-acetylaminoethyl)carbamoyl]ethyl} thioacetate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)SCCC(NCCNC(C)=O)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H16N2O3S/c1-7(12)10-4-5-11-9(14)3-6-15-8(2)13/h3-6H2,1-2H3,(H,10,12)(H,11,14)"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-(2-chloroethylthio)tetrahydropyran"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClCCSC1OCCCC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H13ClOS/c8-4-6-10-7-3-1-2-5-9-7/h7H,1-6H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 3.2,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "potassium hydroxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "[OH-].[K+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/K.H2O/h;1H2/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 2.5,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 10.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 5.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 75.0,
+        "units": "CELSIUS"
+      }
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A quantity of the S-{2-[N-(2-acetylaminoethyl)carbamoyl]ethyl} thioacetate, prepared above, (3.2 g, 23 mmol), 2-(2-chloroethylthio)tetrahydropyran (2 g, 11 mmol), potassium hydroxide (2.5 g, 44 mmol), methanol (10 cm3) and water (5 cm3) were mixed together and heated at 75° C. for 30 min. The mixture was allowed to cool and then partitioned between chloroform (50 cm3) and water (50 cm3). The organic layer was separated and the aqueous layer extracted with a further portion of chloroform. The combined chloroform extracts were then dried (MgSO4) and volatile components removed under reduced pressure to leave the crude product as an oily solid. A quantity of this material was purified firstly by chromatography on silica using a mixture of ethyl acetate, and methanol (95:5) as the eluant and then by reverse phase h.p.l.c. using aqueous methanol as the eluant. The pure N-(2-acetylaminoethyl)-3-[2-(tetrahydropyran-2-ylthio)ethylthi o]propionamide was obtained as a white solid (0.3 g)."
+  },
+  "workups": [
+    {
+      "type": "ADDITION",
+      "details": "were mixed together"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "to cool"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "partitioned between chloroform (50 cm3) and water (50 cm3)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "chloroform"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(Cl)(Cl)Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CHCl3/c2-1(3)4/h1H"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 50.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 50.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The organic layer was separated"
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "the aqueous layer extracted with a further portion of chloroform",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "chloroform"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(Cl)(Cl)Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CHCl3/c2-1(3)4/h1H"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "The combined chloroform extracts were then dried (MgSO4) and volatile components",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "chloroform"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(Cl)(Cl)Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CHCl3/c2-1(3)4/h1H"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "MgSO4"
+              },
+              {
+                "type": "SMILES",
+                "value": "[O-]S(=O)(=O)[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "removed under reduced pressure"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to leave the crude product as an oily solid",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "crude product"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "A quantity of this material was purified firstly by chromatography on silica using"
+    },
+    {
+      "type": "ADDITION",
+      "details": "a mixture of ethyl acetate, and methanol (95:5) as the eluant",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "methanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "CO"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-(2-acetylaminoethyl)-3-[2-(tetrahydropyran-2-ylthio)ethylthi o]propionamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)NCCNC(CCSCCSC1OCCCC1)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C14H26N2O3S2/c1-12(17)15-6-7-16-13(18)5-9-20-10-11-21-14-4-2-3-8-19-14/h14H,2-11H2,1H3,(H,15,17)(H,16,18)"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "solid"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 0.3,
+                  "units": "GRAM"
+                }
+              }
+            }
+          ],
+          "texture": {
+            "type": "CUSTOM",
+            "details": "solid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06004531",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:15.529355"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-be53340275cc417cbd147afb1da78600"
+}

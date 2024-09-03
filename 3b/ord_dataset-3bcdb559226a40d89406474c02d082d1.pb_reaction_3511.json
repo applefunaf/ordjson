@@ -1,0 +1,271 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[NH:1]([C:3]1[CH:8]=[C:7]([C:9]2[C:18]3[C:13](=[CH:14][C:15]([O:21][CH3:22])=[C:16]([O:19][CH3:20])[CH:17]=3)[CH:12]=[C:11]([CH2:23][OH:24])[C:10]=2[CH2:25][OH:26])[CH:6]=[CH:5][N:4]=1)[NH2:2].[C:27](O)(=[O:29])[CH3:28].C(=O)([O-])[O-].[K+].[K+]>C(Cl)Cl>[C:27]([NH:2][NH:1][C:3]1[CH:8]=[C:7]([C:9]2[C:18]3[C:13](=[CH:14][C:15]([O:21][CH3:22])=[C:16]([O:19][CH3:20])[CH:17]=3)[CH:12]=[C:11]([CH2:23][OH:24])[C:10]=2[CH2:25][OH:26])[CH:6]=[CH:5][N:4]=1)(=[O:29])[CH3:28] |f:2.3.4|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methylene chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(Cl)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m1_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "1-(2-hydrazino-4-pyridyl)-2,3-bis(hydroxymethyl)-6,7-dimethoxynaphthalene"
+            },
+            {
+              "type": "SMILES",
+              "value": "N(N)C1=NC=CC(=C1)C1=C(C(=CC2=CC(=C(C=C12)OC)OC)CO)CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C19H21N3O4/c1-25-16-6-12-5-13(9-23)15(10-24)19(14(12)8-17(16)26-2)11-3-4-21-18(7-11)22-20/h3-8,23-24H,9-10,20H2,1-2H3,(H,21,22)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 2.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acetic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H4O2/c1-2(3)4/h1H3,(H,3,4)"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 20.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "potassium carbonate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C([O-])([O-])=O.[K+].[K+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2O3.2K/c2-1(3)4;;/h(H2,2,3,4);;/q;2*+1/p-2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "is stirred at room temperature for 96 hours"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture of 1-(2-hydrazino-4-pyridyl)-2,3-bis(hydroxymethyl)-6,7-dimethoxynaphthalene (2.0 g) and acetic acid (20 ml) is stirred at room temperature for 96 hours. After the reaction is complete, to the mixture are added methylene chloride and an aqueous potassium carbonate solution. The methylene chloride layer is separated, concentrated under reduced pressure, and the residue is crystallized from chloroform to give 1-[2-(2-acetylhydrazino)pyridin-4-yl]-2,3-bis(hydroxymethyl)-6,7-dimethoxynaphthalene (0.84 g), which is listed in Table 10."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "The methylene chloride layer is separated",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "methylene chloride"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(Cl)Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated under reduced pressure"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the residue is crystallized from chloroform",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "chloroform"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(Cl)(Cl)Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CHCl3/c2-1(3)4/h1H"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 96.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "1-[2-(2-acetylhydrazino)pyridin-4-yl]-2,3-bis(hydroxymethyl)-6,7-dimethoxynaphthalene"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)NNC1=NC=CC(=C1)C1=C(C(=CC2=CC(=C(C=C12)OC)OC)CO)CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C21H23N3O5/c1-12(27)23-24-20-8-13(4-5-22-20)21-16-9-19(29-3)18(28-2)7-14(16)6-15(10-25)17(21)11-26/h4-9,25-26H,10-11H2,1-3H3,(H,22,24)(H,23,27)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 0.84,
+                  "units": "GRAM"
+                }
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06005106",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:25.833053"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-59a4f45a6fc84a8e8c6290482806f619"
+}

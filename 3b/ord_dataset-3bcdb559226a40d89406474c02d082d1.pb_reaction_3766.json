@@ -1,0 +1,295 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[NH2:1][C:2]1[N:6]([CH2:7][CH3:8])[N:5]=[C:4]([CH3:9])[CH:3]=1.I[C:11]1[CH:19]=[CH:18][CH:17]=[CH:16][C:12]=1[C:13]([OH:15])=[O:14].CN(C=O)C.C([O-])([O-])=O.[K+].[K+]>C(O)(=O)C>[CH2:7]([N:6]1[C:2]([NH:1][C:11]2[C:12](=[CH:16][CH:17]=[CH:18][CH:19]=2)[C:13]([OH:15])=[O:14])=[CH:3][C:4]([CH3:9])=[N:5]1)[CH3:8] |f:3.4.5|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m6": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acetic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H4O2/c1-2(3)4/h1H3,(H,3,4)"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m1_m2_m3_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "5-amino-1-ethyl-3-methylpyrazole"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC1=CC(=NN1CC)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H11N3/c1-3-9-6(7)4-5(2)8-9/h4H,3,7H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 7.5,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-iodobenzoic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "IC1=C(C(=O)O)C=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H5IO2/c8-6-4-2-1-3-5(6)7(9)10/h1-4H,(H,9,10)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 14.88,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "DMF"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN(C)C=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H7NO/c1-4(2)3-5/h3H,1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 50.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "K2CO3"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(=O)([O-])[O-].[K+].[K+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2O3.2K/c2-1(3)4;;/h(H2,2,3,4);;/q;2*+1/p-2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 8.3,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ice water"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture of 5-amino-1-ethyl-3-methylpyrazole (7.5 g, 0.06 mol), 2-iodobenzoic acid (14.88 g, 0.06 mol), DMF (50 ml) Cu(OAc)2 ·H2O (0.5 g) and K2CO3 (8.3 g, 0.06 mol) was refluxed under a nitrogen atmosphere for 20 hours. The reaction mixture was cooled to room temperature and then was poured into ice-water. The mixture was neutralized with acetic acid and the resulting solid was collected by filtration, washed with water and dried to afford 7.1 g (48%) of N-(1-ethyl-3-methylpyrazol-5-yl)anthranilic acid."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "was refluxed under a nitrogen atmosphere for 20 hours",
+      "duration": {
+        "value": 20.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "the resulting solid was collected by filtration"
+    },
+    {
+      "type": "WASH",
+      "details": "washed with water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-(1-ethyl-3-methylpyrazol-5-yl)anthranilic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)N1N=C(C=C1NC=1C(C(=O)O)=CC=CC1)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C13H15N3O2/c1-3-16-12(8-9(2)15-16)14-11-7-5-4-6-10(11)13(17)18/h4-8,14H,3H2,1-2H3,(H,17,18)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 7.1,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 48.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 48.2
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06008226",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:17.403413"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-161acc9d6d9949d9a1afc4b8b4149ea4"
+}

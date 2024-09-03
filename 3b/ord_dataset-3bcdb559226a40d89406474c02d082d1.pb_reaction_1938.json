@@ -1,0 +1,230 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][O:2][C:3]1[CH:22]=[CH:21][C:6]2[N:7]=[C:8]([N:10]=[N:11][C:12]3[CH:17]=[CH:16][C:15]([N:18]([CH3:20])[CH3:19])=[CH:14][CH:13]=3)[S:9][C:5]=2[CH:4]=1.[S:23]([O:28]C)([O:26][CH3:27])(=[O:25])=[O:24]>ClC1C=CC=CC=1>[CH3:27][O:26][S:23]([O-:28])(=[O:25])=[O:24].[CH3:20][N:18]([CH3:19])[C:15]1[CH:14]=[CH:13][C:12]([N:11]=[N:10][C:8]2[S:9][C:5]3[CH:4]=[C:3]([O:2][CH3:1])[CH:22]=[CH:21][C:6]=3[N+:7]=2[CH3:27])=[CH:17][CH:16]=1 |f:3.4|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "[4-(6-methoxy-benzothiazol-2-ylazo)phenyl]-dimethyl-amine"
+            },
+            {
+              "type": "SMILES",
+              "value": "COC1=CC2=C(N=C(S2)N=NC2=CC=C(C=C2)N(C)C)C=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C16H16N4OS/c1-20(2)12-6-4-11(5-7-12)18-19-16-17-14-9-8-13(21-3)10-15(14)22-16/h4-10H,1-3H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.75,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "dimethyl sulfate"
+            },
+            {
+              "type": "SMILES",
+              "value": "S(=O)(=O)(OC)OC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6O4S/c1-5-7(3,4)6-2/h1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 0.5,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "chlorobenzene"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H5Cl/c7-6-4-2-1-3-5-6/h1-5H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 15.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A solution of [4-(6-methoxy-benzothiazol-2-ylazo)phenyl]-dimethyl-amine (Example 4b, 0.75 g, 2.40 mmol) and dimethyl sulfate (0.50 mL, 5.28 mmol) in 15 mL of chlorobenzene was heated under nitrogen at 70° C. for 3 hours. The solution was cooled and solid formed. The mixture was filtered, the solid was washed with diethyl ether and recrystallized from ethanol to give the title compound as a dark blue-black solid, mp 206-207° C., dec."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "The solution was cooled"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "solid formed"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "The mixture was filtered"
+    },
+    {
+      "type": "WASH",
+      "details": "the solid was washed with diethyl ether",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "diethyl ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "recrystallized from ethanol",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "2-[[4-(Dimethylamino)phenyl]azo]-6-methoxy-3-methylbenzothiazol-3-ium methylsulfate"
+            },
+            {
+              "type": "SMILES",
+              "value": "COS(=O)(=O)[O-].CN(C1=CC=C(C=C1)N=NC=1SC2=C([N+]1C)C=CC(=C2)OC)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C17H19N4OS.CH4O4S/c1-20(2)13-7-5-12(6-8-13)18-19-17-21(3)15-10-9-14(22-4)11-16(15)23-17;1-5-6(2,3)4/h5-11H,1-4H3;1H3,(H,2,3,4)/q+1;/p-1"
+            }
+          ],
+          "isolated_color": "dark blue-black",
+          "texture": {
+            "type": "CUSTOM",
+            "details": "solid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06001331",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:15.755754"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-50b4ea20d9b148bca48d75e7c2081bce"
+}

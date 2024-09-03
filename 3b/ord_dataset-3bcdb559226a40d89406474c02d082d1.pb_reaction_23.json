@@ -1,0 +1,316 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][N:2]1[CH:6]=[CH:5][N:4]=[C:3]1[C:7]([O:9][CH2:10][CH3:11])=[O:8].[N+:12]([O-])([OH:14])=[O:13]>S(=O)(=O)(O)O>[CH3:1][N:2]1[CH:6]=[C:5]([N+:12]([O-:14])=[O:13])[N:4]=[C:3]1[C:7]([O:9][CH2:10][CH3:11])=[O:8]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Ethyl 1-methylimidazole-2-carboxylate"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN1C(=NC=C1)C(=O)OCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H10N2O2/c1-3-11-7(10)6-8-4-5-9(6)2/h4-5H,3H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sulfuric acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "S(O)(O)(=O)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O4S/c1-5(2,3)4/h(H2,1,2,3,4)"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 1000.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "nitric acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "[N+](=O)(O)[O-]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/HNO3/c2-1(3)4/h(H,2,3,4)"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 1.0,
+              "units": "LITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 0.0,
+        "units": "CELSIUS"
+      }
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "Ethyl 1-methylimidazole-2-carboxylate was carefully dissolved in 1000 mL of concentrated sulfuric acid cooled to 0° C. 90% nitric acid (1 L) was slowly added maintaining a temperature of 0° C. The reaction was then refluxed with an efficient condenser (-20° C.) in a well ventilated hood for 50 min. The reaction was cooled with an ice bath, and quenched by pouring onto 10 L ice. The resulting blue solution was then extracted with 20 L DCM, the combined extracts dried (sodium sulfate) and concentrated in vacuo to yield a tan solid which was recrystallized from 22 L of 21:1 carbon tetrachloride/ethanol. The resulting white crystals are collected by vacuum filtration."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "maintaining a temperature of 0° C",
+      "temperature": {
+        "setpoint": {
+          "value": 0.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "The reaction was then refluxed with an efficient condenser (-20° C.) in a well ventilated hood for 50 min",
+      "duration": {
+        "value": 50.0,
+        "units": "MINUTE"
+      },
+      "temperature": {
+        "setpoint": {
+          "value": -20.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "The reaction was cooled with an ice bath"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "quenched"
+    },
+    {
+      "type": "ADDITION",
+      "details": "by pouring onto 10 L ice",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ice"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 10.0,
+                "units": "LITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "The resulting blue solution was then extracted with 20 L DCM",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "DCM"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(Cl)Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 20.0,
+                "units": "LITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "the combined extracts dried (sodium sulfate)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "sodium sulfate"
+              },
+              {
+                "type": "SMILES",
+                "value": "S(=O)(=O)([O-])[O-].[Na+].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/2Na.H2O4S/c;;1-5(2,3)4/h;;(H2,1,2,3,4)/q2*+1;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated in vacuo"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to yield a tan solid which"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "was recrystallized from 22 L of 21:1 carbon tetrachloride/ethanol",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "carbon tetrachloride ethanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(Cl)(Cl)(Cl)Cl.C(C)O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C2H6O.CCl4/c1-2-3;2-1(3,4)5/h3H,2H2,1H3;"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 22.0,
+                "units": "LITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "The resulting white crystals are collected by vacuum filtration"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Ethyl 1-methyl-4-nitroimidazole-2-carboxylate"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN1C(=NC(=C1)[N+](=O)[O-])C(=O)OCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H9N3O4/c1-3-14-7(11)6-8-5(10(12)13)4-9(6)2/h4H,3H2,1-2H3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998140",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:16.199563"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-ca770469cfe8464d962e399650e6a123"
+}

@@ -1,0 +1,216 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][N:2]([CH3:17])[CH2:3][CH2:4][O:5][C:6]1[CH:10]=[C:9]([C:11]2[CH:16]=[CH:15][CH:14]=[CH:13][CH:12]=2)[O:8][N:7]=1.[ClH:18].O1CCOCC1>O1CCOCC1>[ClH:18].[CH3:1][N:2]([CH3:17])[CH2:3][CH2:4][O:5][C:6]1[CH:10]=[C:9]([C:11]2[CH:16]=[CH:15][CH:14]=[CH:13][CH:12]=2)[O:8][N:7]=1 |f:1.2,4.5|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3-(2-Dimethylaminoethoxy)-5-phenylisoxazole"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN(CCOC1=NOC(=C1)C1=CC=CC=C1)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C13H16N2O2/c1-15(2)8-9-16-13-10-12(17-14-13)11-6-4-3-5-7-11/h3-7,10H,8-9H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 130.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "dioxane"
+            },
+            {
+              "type": "SMILES",
+              "value": "O1CCOCC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O2/c1-2-6-4-3-5-1/h1-4H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 1.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrochloric acid dioxane"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl.O1CCOCC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O2.ClH/c1-2-6-4-3-5-1;/h1-4H2;1H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 0.2,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "3-(2-Dimethylaminoethoxy)-5-phenylisoxazole (130 mg) was dissolved in dioxane (1.0 ml), and a solution of 4N hydrochloric acid/dioxane (0.2 ml) was added thereto, and the resulting mixture was allowed to stand at room temperature for 15 minutes. The solvent was evaporated under reduced pressure and the residue was washed with ethyl acetate (5 ml) to obtain the title compound (148 mg, 98%) as colorless crystals."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "The solvent was evaporated under reduced pressure"
+    },
+    {
+      "type": "WASH",
+      "details": "the residue was washed with ethyl acetate (5 ml)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 5.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 15.0,
+        "units": "MINUTE"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "3-(2-Dimethylaminoethoxy)-5-phenylisoxazole hydrochloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl.CN(CCOC1=NOC(=C1)C1=CC=CC=C1)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C13H16N2O2.ClH/c1-15(2)8-9-16-13-10-12(17-14-13)11-6-4-3-5-7-11;/h3-7,10H,8-9H2,1-2H3;1H"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 148.0,
+                  "units": "MILLIGRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 98.0
+              }
+            }
+          ],
+          "isolated_color": "colorless",
+          "texture": {
+            "type": "CRYSTAL",
+            "details": "crystals"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06005116",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:24.413062"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-5017179cea2943169bd51fcbc8fb9bad"
+}

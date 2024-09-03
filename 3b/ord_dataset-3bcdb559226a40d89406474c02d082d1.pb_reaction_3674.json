@@ -1,0 +1,386 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[OH:1][C:2]([C:17]1[CH:26]=[CH:25][C:20]([C:21]([O:23]C)=[O:22])=[CH:19][CH:18]=1)=[CH:3][C:4]([C:6]1[CH:11]=[C:10]([Si:12]([CH3:15])([CH3:14])[CH3:13])[CH:9]=[CH:8][C:7]=1[OH:16])=[O:5].[OH-].[Na+].Cl>C(O)C>[OH:1][C:2]([C:17]1[CH:18]=[CH:19][C:20]([C:21]([OH:23])=[O:22])=[CH:25][CH:26]=1)=[CH:3][C:4]([C:6]1[CH:11]=[C:10]([Si:12]([CH3:15])([CH3:13])[CH3:14])[CH:9]=[CH:8][C:7]=1[OH:16])=[O:5] |f:1.2|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrochloric acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/ClH/h1H"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m1_m4_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methyl 4-[1-hydroxy-3(2-hydroxy-5-trimethylsilylphenyl)-3-oxo-1-propenyl]benzoate"
+            },
+            {
+              "type": "SMILES",
+              "value": "OC(=CC(=O)C1=C(C=CC(=C1)[Si](C)(C)C)O)C1=CC=C(C(=O)OC)C=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C20H22O5Si/c1-25-20(24)14-7-5-13(6-8-14)18(22)12-19(23)16-11-15(26(2,3)4)9-10-17(16)21/h5-12,21-22H,1-4H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 148.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sodium hydroxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "[OH-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Na.H2O/h;1H2/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 20.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "with stirring"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a solution of 148 mg (0.4 mmol) of methyl 4-[1-hydroxy-3(2-hydroxy-5-trimethylsilylphenyl)-3-oxo-1-propenyl]benzoate in 20 ml of ethanol was added 2 ml of 2N-sodium hydroxide solution at room temperature with stirring. The mixture was stirred at room temperature for 1 day and acidified with 10%-hydrochloric acid to pH 4. A deposited precipitation was extracted with AcOEt. The extract was washed with H2O and saturated aq.NaCl, dried over MgSO4, and evaporated. The residue was recrystallized from methanol to give 72 mg of yellow needles (yield 51%), m.p. 207°-209° C."
+  },
+  "workups": [
+    {
+      "type": "STIRRING",
+      "details": "The mixture was stirred at room temperature for 1 day",
+      "duration": {
+        "value": 1.0,
+        "units": "DAY"
+      },
+      "temperature": {
+        "control": {
+          "type": "AMBIENT"
+        }
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "A deposited precipitation"
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "was extracted with AcOEt",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "AcOEt"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOC(=O)C"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "The extract was washed with H2O",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "H2O"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "NaCl, dried over MgSO4",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "NaCl"
+              },
+              {
+                "type": "SMILES",
+                "value": "[Na+].[Cl-]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH.Na/h1H;/q;+1/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "MgSO4"
+              },
+              {
+                "type": "SMILES",
+                "value": "[O-]S(=O)(=O)[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "evaporated"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The residue was recrystallized from methanol",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "methanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "CO"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "yellow needles"
+            },
+            {
+              "type": "NAME",
+              "value": "4-[1-Hydroxy-3-(2-hydroxy-5-trimethylsilylphenyl)-3-oxo-1-propenyl]benzoic Acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "OC(=CC(=O)C1=C(C=CC(=C1)[Si](C)(C)C)O)C1=CC=C(C(=O)O)C=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C19H20O5Si/c1-25(2,3)14-8-9-16(20)15(10-14)18(22)11-17(21)12-4-6-13(7-5-12)19(23)24/h4-11,20-21H,1-3H3,(H,23,24)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 72.0,
+                  "units": "MILLIGRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 51.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 50.5
+              }
+            }
+          ],
+          "isolated_color": "yellow",
+          "texture": {
+            "type": "CRYSTAL",
+            "details": "needles"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "USRE036477",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:15.860026"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-6cb3febf859148579709cfb31c3c6c95"
+}

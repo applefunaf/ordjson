@@ -1,0 +1,395 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][O:2][C:3]1[CH:4]=[C:5]([C@H:13]2[C@H:22]3[C:23]([O:25][CH2:26][C@@H:21]3[C@@H:20]([OH:27])[C:19]3[CH:18]=[C:17]4[O:28][CH2:29][O:30][C:16]4=[CH:15][C:14]2=3)=[O:24])[CH:6]=[C:7]([O:11][CH3:12])[C:8]=1[O:9]C.Cl>C(Cl)Cl.C(OCC)C>[CH3:12][O:11][C:7]1[CH:6]=[C:5]([C@H:13]2[C@H:22]3[C:23]([O:25][CH2:26][C@@H:21]3[C@H:20]([OH:27])[C:19]3[CH:18]=[C:17]4[O:28][CH2:29][O:30][C:16]4=[CH:15][C:14]2=3)=[O:24])[CH:4]=[C:3]([O:2][CH3:1])[C:8]=1[OH:9]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m3_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "podophyllotoxin"
+            },
+            {
+              "type": "SMILES",
+              "value": "COC=1C=C(C=C(C1OC)OC)[C@@H]2C=3C=C4C(=CC3[C@@H]([C@@H]5[C@@H]2C(=O)OC5)O)OCO4"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C22H22O8/c1-25-16-4-10(5-17(26-2)21(16)27-3)18-11-6-14-15(30-9-29-14)7-12(11)20(23)13-8-28-22(24)19(13)18/h4-7,13,18-20,23H,8-9H2,1-3H3/t13-,18+,19-,20-/m0/s1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 1.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "CH2Cl2"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(Cl)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 15.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethyl ether"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)OCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 5.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrochloric acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/ClH/h1H"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "stirring"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "1 g of podophyllotoxin I is dissolved in a mixture of 15 ml of CH2Cl2 and 5 ml of ethyl ether. A slight stream of gaseous hydrochloric acid is introduced into the solution for 15 min at -10° C. and then stirring is maintained at this temperature for 1 h. After evaporating the reaction mixture without heating, 0.54 g of D,L-methionine and then 5 ml of methanesulfonic acid are added. After dissolving and stirring for 1 h with return to ordinary temperature, the reaction mixture is plunged into a water-acetone mixture and then BaCO3 is added to neutrality. After extracting with ethyl acetate, separating by settling, drying over Na2SO4, filtering and evaporating under reduced pressure, a residue is obtained which is crystallized from ethyl ether to provide 0.5 g (Yd 52%) of white crystals of 4'-demethylepipodophyllotoxin exhibiting a homogeneous spot by TLC."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "is maintained at this temperature for 1 h",
+      "duration": {
+        "value": 1.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "After evaporating the reaction mixture"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "without heating"
+    },
+    {
+      "type": "ADDITION",
+      "details": "0.54 g of D,L-methionine and then 5 ml of methanesulfonic acid are added",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "D,L-methionine"
+              },
+              {
+                "type": "SMILES",
+                "value": "NC(CCSC)C(=O)O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C5H11NO2S/c1-9-3-2-4(6)5(7)8/h4H,2-3,6H2,1H3,(H,7,8)"
+              }
+            ],
+            "amount": {
+              "mass": {
+                "value": 0.54,
+                "units": "GRAM"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "methanesulfonic acid"
+              },
+              {
+                "type": "SMILES",
+                "value": "CS(=O)(=O)O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH4O3S/c1-5(2,3)4/h1H3,(H,2,3,4)"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 5.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DISSOLUTION",
+      "details": "After dissolving"
+    },
+    {
+      "type": "STIRRING",
+      "details": "stirring for 1 h with return to ordinary temperature",
+      "duration": {
+        "value": 1.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "ADDITION",
+      "details": "BaCO3 is added to neutrality",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "BaCO3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "After extracting with ethyl acetate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "separating"
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "drying over Na2SO4",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "Na2SO4"
+              },
+              {
+                "type": "SMILES",
+                "value": "[O-]S(=O)(=O)[O-].[Na+].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/2Na.H2O4S/c;;1-5(2,3)4/h;;(H2,1,2,3,4)/q2*+1;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filtering"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "evaporating under reduced pressure"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "a residue is obtained which"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "is crystallized from ethyl ether",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4'-demethylepipodophyllotoxin"
+            },
+            {
+              "type": "SMILES",
+              "value": "COC=1C=C(C=C(C1O)OC)[C@@H]2C=3C=C4C(=CC3[C@H]([C@@H]5[C@@H]2C(=O)OC5)O)OCO4"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C21H20O8/c1-25-15-3-9(4-16(26-2)20(15)23)17-10-5-13-14(29-8-28-13)6-11(10)19(22)12-7-27-21(24)18(12)17/h3-6,12,17-19,22-23H,7-8H2,1-2H3/t12-,17+,18-,19+/m0/s1"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06008382",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:26.383780"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-d4caf1967a024645a3c2eda5724790e0"
+}

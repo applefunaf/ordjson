@@ -1,0 +1,318 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[OH-:1].[Na+].CC(O)(C)CN[C:7]1[C:16]2[C:11](=[CH:12][CH:13]=[CH:14][CH:15]=2)[N:10]2[N:17]=[N:18][N:19]=[C:9]2[C:8]=1[N+:20]([O-:22])=[O:21]>O>[N+:20]([C:8]1[C:9]2[N:10]([N:17]=[N:18][N:19]=2)[C:11]2[C:16]([C:7]=1[OH:1])=[CH:15][CH:14]=[CH:13][CH:12]=2)([O-:22])=[O:21] |f:0.1|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sodium hydroxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "[OH-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Na.H2O/h;1H2/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 30.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-methyl-[(4-nitro-5-tetrazolo[1,5-a]quinolinyl)amino]-2-propanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC(CNC1=C(C=2N(C3=CC=CC=C13)N=NN2)[N+](=O)[O-])(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C13H14N6O3/c1-13(2,20)7-14-10-8-5-3-4-6-9(8)18-12(15-16-17-18)11(10)19(21)22/h3-6,14,20H,7H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 34.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 500.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "upon stirring a solid"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "Aqueous sodium hydroxide (30 g of 50%) was added to a suspension of 2-methyl-[(4-nitro-5-tetrazolo[1,5-a]quinolinyl)amino]-2-propanol (34.0 g, 0.1125 mole, Example 3) in water (500 mL). The mixture was heated on a steam bath and the solid dissolved rapidly. The solution was heated for about 30 minutes and then upon stirring a solid began to precipitate. The mixture was made acidic with 6N hydrochloric acid. The resulting solid was isolated by filtration; washed in succession with water, ethanol and ether; then dried under vacuum at 100° C. to provide 23.2 g of crude product as a pale yellow/green solid. A sample (3.2 g) was recrystallized initially from methanol/dichloromethane and then from toluene to provide 4-nitrotetrazolo[1,5-a]quinolin-5-ol. Analysis: Calculated for C9H5N5O3 : % C, 46.76; % H, 2.18; % N, 30.29; Found: % C, 46.85; % H, 2.23; % N, 29.91."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "The mixture was heated on a steam bath"
+    },
+    {
+      "type": "DISSOLUTION",
+      "details": "the solid dissolved rapidly"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "The solution was heated for about 30 minutes",
+      "duration": {
+        "value": 30.0,
+        "units": "MINUTE"
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to precipitate"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The resulting solid was isolated by filtration"
+    },
+    {
+      "type": "WASH",
+      "details": "washed in succession with water, ethanol and ether",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "then dried under vacuum at 100° C.",
+      "temperature": {
+        "setpoint": {
+          "value": 100.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to provide 23.2 g of crude product as a pale yellow/green solid",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "crude product"
+              }
+            ],
+            "amount": {
+              "mass": {
+                "value": 23.2,
+                "units": "GRAM"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "A sample (3.2 g) was recrystallized initially from methanol/dichloromethane",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "methanol dichloromethane"
+              },
+              {
+                "type": "SMILES",
+                "value": "CO.ClCCl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2Cl2.CH4O/c2-1-3;1-2/h1H2;2H,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-nitrotetrazolo[1,5-a]quinolin-5-ol"
+            },
+            {
+              "type": "SMILES",
+              "value": "[N+](=O)([O-])C=1C=2N(C3=CC=CC=C3C1O)N=NN2"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H5N5O3/c15-8-5-3-1-2-4-6(5)13-9(10-11-12-13)7(8)14(16)17/h1-4,15H"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998619",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:32.292664"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-46d8180e7bb04403adc3b55f52f232f2"
+}

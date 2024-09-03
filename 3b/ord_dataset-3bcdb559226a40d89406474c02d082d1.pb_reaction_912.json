@@ -1,0 +1,365 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH2:1]([O:8][C:9]([NH:11][C@H](C(O)=O)CC(C)C)=[O:10])[C:2]1[CH:7]=[CH:6][CH:5]=[CH:4][CH:3]=1.C[N:21]1[CH2:26][CH2:25][O:24]CC1.ClC(O[CH2:31][CH:32]([CH3:34])[CH3:33])=O>C1COCC1>[CH2:1]([O:8][C:9]([NH:11][C:25](=[O:24])[C@H:26]([CH2:31][CH:32]([CH3:34])[CH3:33])[NH2:21])=[O:10])[C:2]1[CH:7]=[CH:6][CH:5]=[CH:4][CH:3]=1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-benzyloxycarbonyl-L-leucine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C1=CC=CC=C1)OC(=O)N[C@@H](CC(C)C)C(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C14H19NO4/c1-10(2)8-12(13(16)17)15-14(18)19-9-11-6-4-3-5-7-11/h3-7,10,12H,8-9H2,1-2H3,(H,15,18)(H,16,17)/t12-/m0/s1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 4.6,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "THF"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1CCOC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O/c1-2-4-5-3-1/h1-4H2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-methylmorpholine"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN1CCOCC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C5H11NO/c1-6-2-4-7-5-3-6/h2-5H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 4.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "isobutyl chloroformate"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC(=O)OCC(C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C5H9ClO2/c1-4(2)3-8-5(6)7/h4H,3H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 2.25,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "After stirring for 15 min"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a stirring solution of N-benzyloxycarbonyl-L-leucine (4.6 g, 17.3 mmol) in THF, cooled to -40° C., was added N-methylmorpholine (3.68 g, 36.4 mmol; 4.0 mL) and isobutyl chloroformate (2.37 g, 17.3 mmol; 2.25 mL). After stirring for 15 min, ammonia was bubbled through the solution for 5 min. The solution was warmed to room temperature, evaporated, and the residue was dissolved in ethyl acetate, washed with 0.1 N Hcl, and saturated brine, then dried (MgSO4), filtered and evaporated to dryness to give the title compound as a white solid (4.58 g, 100%)."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "ammonia was bubbled through the solution for 5 min",
+      "duration": {
+        "value": 5.0,
+        "units": "MINUTE"
+      },
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ammonia"
+              },
+              {
+                "type": "SMILES",
+                "value": "N"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H3N/h1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "evaporated"
+    },
+    {
+      "type": "DISSOLUTION",
+      "details": "the residue was dissolved in ethyl acetate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "washed with 0.1 N Hcl, and saturated brine",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "brine"
+              },
+              {
+                "type": "SMILES",
+                "value": "[Cl-].[Na+].O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH.Na.H2O/h1H;;1H2/q;+1;/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "dried (MgSO4)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "MgSO4"
+              },
+              {
+                "type": "SMILES",
+                "value": "[O-]S(=O)(=O)[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filtered"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "evaporated to dryness"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 15.0,
+        "units": "MINUTE"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "N-benzyloxycarbonyl-L-leucinamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C1=CC=CC=C1)OC(=O)NC([C@@H](N)CC(C)C)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C14H20N2O3/c1-10(2)8-12(15)13(17)16-14(18)19-9-11-6-4-3-5-7-11/h3-7,10,12H,8-9,15H2,1-2H3,(H,16,17,18)/t12-/m0/s1"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 4.58,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 100.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 100.2
+              }
+            }
+          ],
+          "isolated_color": "white",
+          "texture": {
+            "type": "CUSTOM",
+            "details": "solid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998470",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:31.225955"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-de3741207e3a4828960a16333862fcc4"
+}

@@ -1,0 +1,415 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[C:1]1([C:12]2[CH:17]=[CH:16][CH:15]=[CH:14][CH:13]=2)[CH:6]=[CH:5][C:4]([N:7]2[CH:11]=[CH:10][CH:9]=[CH:8]2)=[CH:3][CH:2]=1.CSC.C(#N)C.[Br:24]Br>C(Cl)Cl>[C:1]1([C:12]2[CH:13]=[CH:14][CH:15]=[CH:16][CH:17]=2)[CH:6]=[CH:5][C:4]([N:7]2[CH:11]=[CH:10][C:9]([Br:24])=[CH:8]2)=[CH:3][CH:2]=1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4_m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "bromine"
+            },
+            {
+              "type": "SMILES",
+              "value": "BrBr"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Br2/c1-2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "CH2Cl2"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(Cl)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 5.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m1_m2_m6_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-biphenyl-4-yl-1H-pyrrole"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1(=CC=C(C=C1)N1C=CC=C1)C1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C16H13N/c1-2-6-14(7-3-1)15-8-10-16(11-9-15)17-12-4-5-13-17/h1-13H"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 500.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "dimethylsulfide"
+            },
+            {
+              "type": "SMILES",
+              "value": "CSC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6S/c1-3-2/h1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 0.25,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acetonitrile"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)#N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H3N/c1-2-3/h1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 10.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "CH2Cl2"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(Cl)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 30.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 10.0,
+        "units": "CELSIUS"
+      }
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a mixture of N-biphenyl-4-yl-1H-pyrrole (500 mg, 2.28 mmol), dimethylsulfide (0.25 mL, 3.4 mmol), CH2Cl2 (30 mL), and acetonitrile (10 mL) at -10° C. was added dropwise a solution of bromine in CH2Cl2 (5 mL) over 15 minutes. The mixture was allowed to warm to 10° C. over 2 hours. The resultant mixture was washed with 1M pH 7 phosphate buffer (50 mL) and extracted with CH2Cl2 (25 mL). The combined organic layers were dried over Na2SO4 and concentrated to a crude residue which was purified via flash column chromatography with 0-10% CH2Cl2 /hex gradient eluant to furnish 240 mg (40%) of N-(biphenyl-4-yl)-3-bromo-1H-pyrrole as a white solid, mp 141-3° C. 1H NMR: δ 7.65 (d, 2H, J=8.5 Hz), 7.59 (d, 2H, J=8.1 Hz), 7.49-7.34 (m, 5H), 7.12 (s, 1H), 7.02 (t, 1H, J=2.6 Hz), 6.36 (dd, 1H, J=3.2, 1.7 Hz). Anal. Calculated for C16H12NBr: C, 64.45; H, 4.06; N, 4.70; Br, 26.80. Found: C, 64.37; H, 4.10; N, 4.64; Br, 26.69."
+  },
+  "workups": [
+    {
+      "type": "WASH",
+      "details": "The resultant mixture was washed with 1M pH 7 phosphate buffer (50 mL)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "resultant mixture"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "phosphate"
+              },
+              {
+                "type": "SMILES",
+                "value": "P(=O)([O-])([O-])[O-]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H3O4P/c1-5(2,3)4/h(H3,1,2,3,4)/p-3"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 50.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "extracted with CH2Cl2 (25 mL)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "CH2Cl2"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(Cl)Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 25.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "The combined organic layers were dried over Na2SO4",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "Na2SO4"
+              },
+              {
+                "type": "SMILES",
+                "value": "[O-]S(=O)(=O)[O-].[Na+].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/2Na.H2O4S/c;;1-5(2,3)4/h;;(H2,1,2,3,4)/q2*+1;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated to a crude residue which",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "crude residue"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "was purified via flash column chromatography with 0-10% CH2Cl2 /hex gradient eluant",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "CH2Cl2"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(Cl)Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-(biphenyl-4-yl)-3-bromo-1H-pyrrole"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1(=CC=C(C=C1)N1C=C(C=C1)Br)C1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C16H12BrN/c17-15-10-11-18(12-15)16-8-6-14(7-9-16)13-4-2-1-3-5-13/h1-12H"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 240.0,
+                  "units": "MILLIGRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 40.0
+              }
+            }
+          ],
+          "isolated_color": "white",
+          "texture": {
+            "type": "CUSTOM",
+            "details": "solid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06008243",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:28.329463"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-99574ae6fb394f36bcd79b58d9741fd1"
+}

@@ -1,0 +1,348 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][O:2][C:3]1[CH:8]=[CH:7][C:6]([C:9]([C:18]2[CH:23]=[CH:22][C:21]([O:24][CH3:25])=[CH:20][CH:19]=2)([CH2:15][CH2:16][CH3:17])[CH2:10][C:11]([O:13]C)=[O:12])=[CH:5][CH:4]=1.O1CCOCC1.[OH-].[K+]>O>[CH3:25][O:24][C:21]1[CH:22]=[CH:23][C:18]([C:9]([C:6]2[CH:5]=[CH:4][C:3]([O:2][CH3:1])=[CH:8][CH:7]=2)([CH2:15][CH2:16][CH3:17])[CH2:10][C:11]([OH:13])=[O:12])=[CH:19][CH:20]=1 |f:2.3|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m1_m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Methyl 3,3-bis(4-methoxyphenyl)hexanoate"
+            },
+            {
+              "type": "SMILES",
+              "value": "COC1=CC=C(C=C1)C(CC(=O)OC)(CCC)C1=CC=C(C=C1)OC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C21H26O4/c1-5-14-21(15-20(22)25-4,16-6-10-18(23-2)11-7-16)17-8-12-19(24-3)13-9-17/h6-13H,5,14-15H2,1-4H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 5.2,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "dioxane"
+            },
+            {
+              "type": "SMILES",
+              "value": "O1CCOCC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O2/c1-2-6-4-3-5-1/h1-4H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 20.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "KOH"
+            },
+            {
+              "type": "SMILES",
+              "value": "[OH-].[K+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/K.H2O/h;1H2/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 1.05,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "Methyl 3,3-bis(4-methoxyphenyl)hexanoate (5.2 g, 15.2 mmol) was introduced into 20 ml of dioxane, KOH (1.05 g, 18.2 mmol) was added, and the mixture was boiled for about 1 h. It was subsequently diluted with water and washed with ethyl acetate, and the aqueous phase was then adjusted to pH 3 with dilute HCl and extracted with ethyl acetate. The organic phase was then washed with saturated NaCl solution, dried over MgSO4 and concentrated. Chromatography on silica gel (CH2Cl2 /methanol 3%) resulted in 4.1 g of a pale yellowish oil (84%)."
+  },
+  "workups": [
+    {
+      "type": "ADDITION",
+      "details": "was added"
+    },
+    {
+      "type": "WASH",
+      "details": "washed with ethyl acetate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "extracted with ethyl acetate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "The organic phase was then washed with saturated NaCl solution",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "NaCl"
+              },
+              {
+                "type": "SMILES",
+                "value": "[Na+].[Cl-]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH.Na/h1H;/q;+1/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "dried over MgSO4",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "MgSO4"
+              },
+              {
+                "type": "SMILES",
+                "value": "[O-]S(=O)(=O)[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 1.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "pale yellowish oil"
+            },
+            {
+              "type": "NAME",
+              "value": "3,3-Bis(4-methoxyphenyl)hexanoic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "COC1=CC=C(C=C1)C(CC(=O)O)(CCC)C1=CC=C(C=C1)OC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C20H24O4/c1-4-13-20(14-19(21)22,15-5-9-17(23-2)10-6-15)16-7-11-18(24-3)12-8-16/h5-12H,4,13-14H2,1-3H3,(H,21,22)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 4.1,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 84.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 82.1
+              }
+            }
+          ],
+          "isolated_color": "pale yellowish",
+          "texture": {
+            "type": "OIL",
+            "details": "oil"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06004988",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:18.408315"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-8715097dfa104cedb015f073d966593b"
+}

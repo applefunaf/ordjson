@@ -1,0 +1,363 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[F:1][C:2]1[CH:3]=[C:4]([CH:11]=[CH:12][C:13]=1[F:14])[CH:5]=[C:6]([CH3:10])[C:7]([OH:9])=[O:8]>CO.O=[Pt]=O>[F:1][C:2]1[CH:3]=[C:4]([CH:11]=[CH:12][C:13]=1[F:14])[CH2:5][CH:6]([CH3:10])[C:7]([OH:9])=[O:8]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3,4-difluoro-α-methylcinnamic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "FC=1C=C(C=C(C(=O)O)C)C=CC1F"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C10H8F2O2/c1-6(10(13)14)4-7-2-3-8(11)9(12)5-7/h2-5H,1H3,(H,13,14)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 28.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "MeOH"
+            },
+            {
+              "type": "SMILES",
+              "value": "CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 250.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "PtO2"
+            },
+            {
+              "type": "SMILES",
+              "value": "O=[Pt]=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/2O.Pt"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 1.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "CATALYST"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "28 g (0.141 mol) of 3,4-difluoro-α-methylcinnamic acid, 1 g of PtO2 in 250 ml of MeOH is hydrogenated at 45 p.s.i. until the theoretical uptake is completed. The catalyst is filtered off, and the material evaporated to one-third its volume. A 15% potassium hydroxide solution (10 ml) is added, and the mixture refluxed for 30 minutes when it is poured into water and extracted with ether (2×100 ml). The aqueous layer is acidified with concentrated HCl and ice. The oil which comes out is extracted into ether, the ether solution dried over MgSO4 and evaporated to leave a clear oil which crystallizes. 3,4-difluoro-α-methylhydrocinnamic acid, M.P. 55-56° C., is isolated."
+  },
+  "workups": [
+    {
+      "type": "FILTRATION",
+      "details": "The catalyst is filtered off"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the material evaporated to one-third its volume"
+    },
+    {
+      "type": "ADDITION",
+      "details": "A 15% potassium hydroxide solution (10 ml) is added",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "potassium hydroxide"
+              },
+              {
+                "type": "SMILES",
+                "value": "[OH-].[K+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/K.H2O/h;1H2/q+1;/p-1"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 10.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "the mixture refluxed for 30 minutes when it",
+      "duration": {
+        "value": 30.0,
+        "units": "MINUTE"
+      }
+    },
+    {
+      "type": "ADDITION",
+      "details": "is poured into water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "extracted with ether (2×100 ml)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 100.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "The oil which comes out is extracted into ether",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "the ether solution dried over MgSO4",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "MgSO4"
+              },
+              {
+                "type": "SMILES",
+                "value": "[O-]S(=O)(=O)[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "evaporated"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to leave a clear oil which"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "crystallizes"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3,4-difluoro-α-methylhydrocinnamic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "FC=1C=C(CC(C(=O)O)C)C=CC1F"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C10H10F2O2/c1-6(10(13)14)4-7-2-3-8(11)9(12)5-7/h2-3,5-6H,4H2,1H3,(H,13,14)"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998477",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:25.723659"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-49f9abfe09364922892687ec3a936af9"
+}

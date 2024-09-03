@@ -1,0 +1,331 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[F:1][C:2]1[CH:7]=[CH:6][C:5]([CH2:8][CH2:9][O:10][CH2:11][CH2:12][NH:13]C(=O)OC)=[CH:4][CH:3]=1.[OH-].[K+].O.NN>C(O)CO.O>[F:1][C:2]1[CH:3]=[CH:4][C:5]([CH2:8][CH2:9][O:10][CH2:11][CH2:12][NH2:13])=[CH:6][CH:7]=1 |f:1.2,3.4|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "product"
+            },
+            {
+              "type": "NAME",
+              "value": "Methyl N-[2-(2-(4-fluorophenyl)ethoxy)ethyl]carbamate"
+            },
+            {
+              "type": "SMILES",
+              "value": "FC1=CC=C(C=C1)CCOCCNC(OC)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C12H16FNO3/c1-16-12(15)14-7-9-17-8-6-10-2-4-11(13)5-3-10/h2-5H,6-9H2,1H3,(H,14,15)"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethylene glycol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(CO)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6O2/c3-1-2-4/h3-4H,1-2H2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "potassium hydroxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "[OH-].[K+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/K.H2O/h;1H2/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 48.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrazine hydrate"
+            },
+            {
+              "type": "SMILES",
+              "value": "O.NN"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H4N2.H2O/c1-2;/h1-2H2;1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 8.3,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "The product of step d) (8.0 g) was dissolved in ethylene glycol and to this was added potassium hydroxide (48 g) and hydrazine hydrate (8.3 ml). The stirred mixture was heated to 140° for 4 hours then allowed to cool to room temperature overnight. The mixture was then diluted with water and extracted with diethyl ether (×3). The combined organic extracts were washed with brine, dried (MgOS4) and filtered. The volatiles were removed in vacuo to give the subtitle compound (5.36 g)."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "The stirred mixture was heated to 140° for 4 hours",
+      "duration": {
+        "value": 4.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "extracted with diethyl ether (×3)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "diethyl ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "The combined organic extracts were washed with brine",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "brine"
+              },
+              {
+                "type": "SMILES",
+                "value": "[Cl-].[Na+].O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH.Na.H2O/h1H;;1H2/q;+1;/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "dried (MgOS4)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "MgOS4"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filtered"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The volatiles were removed in vacuo"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "subtitle compound"
+            },
+            {
+              "type": "NAME",
+              "value": "2-[2-(4-Fluorophenyl)ethoxy]ethanamine"
+            },
+            {
+              "type": "SMILES",
+              "value": "FC1=CC=C(C=C1)CCOCCN"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C10H14FNO/c11-10-3-1-9(2-4-10)5-7-13-8-6-12/h1-4H,5-8,12H2"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 5.36,
+                  "units": "GRAM"
+                }
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06008365",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:25.991785"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-c23dbf51e3e34da2b62ea41f3c4e8157"
+}

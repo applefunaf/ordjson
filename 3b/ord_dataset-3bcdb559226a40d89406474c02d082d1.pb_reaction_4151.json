@@ -1,0 +1,299 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "Cl[C:2]1[C:6]2[CH:7]=[CH:8][C:9]([O:11][CH3:12])=[CH:10][C:5]=2[O:4][N:3]=1.[NH:13]1[CH2:19][CH2:18][CH2:17][NH:16][CH2:15][CH2:14]1>CCOC(C)=O>[N:13]1([C:2]2[C:6]3[CH:7]=[CH:8][C:9]([O:11][CH3:12])=[CH:10][C:5]=3[O:4][N:3]=2)[CH2:19][CH2:18][CH2:17][NH:16][CH2:15][CH2:14]1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3-Chloro-6-methoxy-1,2-benzisoxazole"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC1=NOC2=C1C=CC(=C2)OC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H6ClNO2/c1-11-5-2-3-6-7(4-5)12-10-8(6)9/h2-4H,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 5.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "homopiperazine"
+            },
+            {
+              "type": "SMILES",
+              "value": "N1CCNCCC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C5H12N2/c1-2-6-4-5-7-3-1/h6-7H,1-5H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 8.2,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "EtOAc"
+            },
+            {
+              "type": "SMILES",
+              "value": "CCOC(=O)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 500.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 140.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "mechanically stirred under N2 at 140° C. for 45 minutes"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "3-Chloro-6-methoxy-1,2-benzisoxazole (5.0 g, 27.2 mml) and homopiperazine (8.2 g, 81.6 mmol) were combined and mechanically stirred under N2 at 140° C. for 45 minutes. The reaction mixture was cooled to room temperature, dissolved with EtOAc (500 ml), and the solution was washed with water, brine, dried over MgSO4, and concentrated in vacuo. Flash column chromatography (silica gel, 20% MeOH/CH2Cl2) provided the product (2.0 g, m.p. 74-75° C."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "The reaction mixture was cooled to room temperature",
+      "temperature": {
+        "control": {
+          "type": "AMBIENT"
+        }
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "the solution was washed with water, brine",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "brine"
+              },
+              {
+                "type": "SMILES",
+                "value": "[Cl-].[Na+].O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH.Na.H2O/h1H;;1H2/q;+1;/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "dried over MgSO4",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "MgSO4"
+              },
+              {
+                "type": "SMILES",
+                "value": "[O-]S(=O)(=O)[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated in vacuo"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "Flash column chromatography (silica gel, 20% MeOH/CH2Cl2) provided the product (2.0 g, m.p. 74-75° C.",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "MeOH CH2Cl2"
+              },
+              {
+                "type": "SMILES",
+                "value": "CO.C(Cl)Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2Cl2.CH4O/c2-1-3;1-2/h1H2;2H,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 45.0,
+        "units": "MINUTE"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3-(1 -homopiperazinyl)-6-methoxy-1,2-benzisoxazole"
+            },
+            {
+              "type": "SMILES",
+              "value": "N1(CCNCCC1)C1=NOC2=C1C=CC(=C2)OC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C13H17N3O2/c1-17-10-3-4-11-12(9-10)18-15-13(11)16-7-2-5-14-6-8-16/h3-4,9,14H,2,5-8H2,1H3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06008348",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:24.615365"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-bc7ab2840e6f4fa6a67fcfb2cf4751d3"
+}

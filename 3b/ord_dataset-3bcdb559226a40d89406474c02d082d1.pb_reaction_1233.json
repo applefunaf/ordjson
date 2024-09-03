@@ -1,0 +1,248 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[C@H:1]1([C:10]([OH:12])=[O:11])[CH2:6][CH2:5][C@H:4]([C:7]([OH:9])=[O:8])[CH2:3][CH2:2]1.C(O)=O.[Cu:16].C(O)=O>CO>[Cu:16].[C@H:1]1([C:10]([OH:12])=[O:11])[CH2:2][CH2:3][C@H:4]([C:7]([OH:9])=[O:8])[CH2:5][CH2:6]1 |f:2.3,5.6|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m5_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "formic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2O2/c2-1-3/h1H,(H,2,3)"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 20.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 100.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "1,4-trans-cyclohexane dicarboxylic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "[C@H]1(CC[C@H](CC1)C(=O)O)C(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H12O4/c9-7(10)5-1-2-6(4-3-5)8(11)12/h5-6H,1-4H2,(H,9,10)(H,11,12)/t5-,6-"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 2.58,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "formic acid copper"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Cu].C(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2O2.Cu/c2-1-3;/h1H,(H,2,3);"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 3.38,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 100.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "under stirring"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "2.58 g of 1,4-trans-cyclohexane dicarboxylic acid was dissolved under heating in a mixture solvent of 100 cm3 of methanol and 20 cm3 of formic acid. After this solution was cooled to the normal temperature, into this solution under stirring, a further solution in which 3.38 g of formic acid copper was dissolved in 100 cm3 of methanol was dripped and then this was kept still for a few days. Thereafter, the precipitation product was suction-filtered and dried for 110° C./4 hours, whereby 1.43 g of 1,4-trans-cyclohexane dicarboxylic acid copper was obtained."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "After this solution was cooled to the normal temperature, into this solution"
+    },
+    {
+      "type": "WAIT",
+      "details": "this was kept still for a few days"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "Thereafter, the precipitation product was suction-filtered"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried for 110° C./4 hours",
+      "duration": {
+        "value": 4.0,
+        "units": "HOUR"
+      },
+      "temperature": {
+        "setpoint": {
+          "value": 110.0,
+          "units": "CELSIUS"
+        }
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "1,4-trans-cyclohexane dicarboxylic acid copper"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Cu].[C@H]1(CC[C@H](CC1)C(=O)O)C(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H12O4.Cu/c9-7(10)5-1-2-6(4-3-5)8(11)12;/h5-6H,1-4H2,(H,9,10)(H,11,12);/t5-,6-;"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 1.43,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 40.5
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998647",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:34.911532"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-db2435c3784a4b61b13551dd23a898d9"
+}

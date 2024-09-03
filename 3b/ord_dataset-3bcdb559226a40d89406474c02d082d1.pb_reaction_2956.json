@@ -1,0 +1,370 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[F:1][C:2]1[CH:3]=[C:4]([CH2:10][CH2:11][N:12]([C:14]2C=CN=CC=2)[NH2:13])[CH:5]=[C:6](OC)[CH:7]=1.C[O:21][CH2:22]Cl.[OH-].[Na+].[C:26](O)(=O)[CH3:27]>>[F:1][C:2]1[CH:3]=[C:4]2[C:5](=[CH:6][C:7]=1[O:21][CH3:22])[CH2:14][N:12]([NH:13][C:27]1[CH:26]=[CH:14][N:12]=[CH:11][CH:10]=1)[CH2:11][CH2:10]2 |f:2.3|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-[2-(3-fluoro-5-methoxyphenyl)ethyl]-N-pyridin-4-yl hydrazine"
+            },
+            {
+              "type": "SMILES",
+              "value": "FC=1C=C(C=C(C1)OC)CCN(N)C1=CC=NC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C14H16FN3O/c1-19-14-9-11(8-12(15)10-14)4-7-18(16)13-2-5-17-6-3-13/h2-3,5-6,8-10H,4,7,16H2,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 15.1,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "chloromethyl methyl ether"
+            },
+            {
+              "type": "SMILES",
+              "value": "COCCl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H5ClO/c1-4-2-3/h2H2,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 5.3,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acetic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H4O2/c1-2(3)4/h1H3,(H,3,4)"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 240.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Sodium hydroxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "[OH-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Na.H2O/h;1H2/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 0.0,
+        "units": "CELSIUS"
+      }
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "Lithium aluminum hydride (4.5 g) was added portionwise to a suspension of the N-[2-(3-fluoro-5-methoxyphenyl)ethylidine]-N'-4-hydrazine hydrochloride (16.8 g) in tetrahydrofuran (300 ml) at 0° C. The reaction mixture was stirred at ambient temperature for 1 hr, and sodium sulfate decahydrate was added. The mixture was filtered and was concentrated to provide 15.1 g of N-[2-(3-fluoro-5-methoxyphenyl)ethyl]-N-pyridin-4-yl hydrazine. A solution of N-[2-(3-fluoro-5-methoxyphenyl)ethyl]-N-pyridin-4-yl hydrazine (15.1 g) and chloromethyl methyl ether (5.3 g) in acetic acid (240 ml) was heated under reflux for 2 hrs and then cooled to 0° C. 50% Sodium hydroxide solution was added, and the mixture was extracted with ethyl acetate. The combined organic extracts were washed with water and brine, dried over anhydrous magnesium sulfate, filtered, and the filtrate was concentrated. The residue was recrystallized from methanol to provide 3.5 g (23%) of product, mp 216-218° C."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "under reflux for 2 hrs",
+      "duration": {
+        "value": 2.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "the mixture was extracted with ethyl acetate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "The combined organic extracts were washed with water and brine",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "brine"
+              },
+              {
+                "type": "SMILES",
+                "value": "[Cl-].[Na+].O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH.Na.H2O/h1H;;1H2/q;+1;/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "dried over anhydrous magnesium sulfate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "magnesium sulfate"
+              },
+              {
+                "type": "SMILES",
+                "value": "S(=O)(=O)([O-])[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filtered"
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "the filtrate was concentrated"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The residue was recrystallized from methanol",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "methanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "CO"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "product"
+            },
+            {
+              "type": "NAME",
+              "value": "(6-Fluoro-7-methoxy-3,4-dihydro-1H-isoquinolin-2-yl)-4-pyridinylamine"
+            },
+            {
+              "type": "SMILES",
+              "value": "FC=1C=C2CCN(CC2=CC1OC)NC1=CC=NC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C15H16FN3O/c1-20-15-9-12-10-19(7-4-11(12)8-14(15)16)18-13-2-5-17-6-3-13/h2-3,5-6,8-9H,4,7,10H2,1H3,(H,17,18)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 3.5,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 23.0
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06004977",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:17.928248"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-c0738afd8d544f98ad022c6e81451365"
+}

@@ -1,0 +1,261 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[F:1][C:2]1[CH:10]=[C:9]2[C:5]([C:6]([CH:11]3[CH2:16][CH2:15][N:14]([CH2:17][C:18]#[N:19])[CH2:13][CH2:12]3)=[N:7][NH:8]2)=[CH:4][CH:3]=1.[H-].[Al+3].[Li+].[H-].[H-].[H-]>C1COCC1>[F:1][C:2]1[CH:10]=[C:9]2[C:5]([C:6]([CH:11]3[CH2:12][CH2:13][N:14]([CH2:17][CH2:18][NH2:19])[CH2:15][CH2:16]3)=[N:7][NH:8]2)=[CH:4][CH:3]=1 |f:1.2.3.4.5.6|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m3_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "[4-(6-fluoro-1H-indazol-3-yl)-1-piperidinyl]-acetonitrile"
+            },
+            {
+              "type": "SMILES",
+              "value": "FC1=CC=C2C(=NNC2=C1)C1CCN(CC1)CC#N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C14H15FN4/c15-11-1-2-12-13(9-11)17-18-14(12)10-3-6-19(7-4-10)8-5-16/h1-2,9-10H,3-4,6-8H2,(H,17,18)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 6.1,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "lithium aluminum hydride"
+            },
+            {
+              "type": "SMILES",
+              "value": "[H-].[Al+3].[Li+].[H-].[H-].[H-]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Al.Li.4H/q+3;+1;4*-1"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 28.4,
+              "units": "MILLIMOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "THF"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1CCOC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O/c1-2-4-5-3-1/h1-4H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 235.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 0.0,
+        "units": "CELSIUS"
+      }
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "to a solution of [4-(6-fluoro-1H-indazol-3-yl)-1-piperidinyl]-acetonitrile (6.1 g, 23.6 mmol) in dry THF (235 ml) was added (dropwise) lithium aluminum hydride (LAH) (28.4 mmol, 1.0 M in THF) at room temperature, under nitrogen. Upon complete addition, the reaction mixture was warmed to reflux for 3 hours. After cooling to 0° C. in an ice bath, the reaction was carefully quenched with water (4.0 ml). The solids were removed via filtration and washed with THF. The combined filtrates were concentrated to give 5.6 g of the desired product. This material was suspended in DCM and filtered to give the product as an off-white solid, m.p. 125-128° C."
+  },
+  "workups": [
+    {
+      "type": "ADDITION",
+      "details": "Upon complete addition"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "the reaction mixture was warmed"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "to reflux for 3 hours",
+      "duration": {
+        "value": 3.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the reaction was carefully quenched with water (4.0 ml)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 4.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The solids were removed via filtration"
+    },
+    {
+      "type": "WASH",
+      "details": "washed with THF",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "THF"
+              },
+              {
+                "type": "SMILES",
+                "value": "C1CCOC1"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O/c1-2-4-5-3-1/h1-4H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "The combined filtrates were concentrated"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "desired product"
+            },
+            {
+              "type": "NAME",
+              "value": "2-[4-(6-Fluoro-1H-indazol-3-yl)-1-piperidinyl]ethylamine"
+            },
+            {
+              "type": "SMILES",
+              "value": "FC1=CC=C2C(=NNC2=C1)C1CCN(CC1)CCN"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C14H19FN4/c15-11-1-2-12-13(9-11)17-18-14(12)10-3-6-19(7-4-10)8-5-16/h1-2,9-10H,3-8,16H2,(H,17,18)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 5.6,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 90.5
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998417",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:24.357226"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-705fada8dfb0408b9e51eaaf5faa0042"
+}

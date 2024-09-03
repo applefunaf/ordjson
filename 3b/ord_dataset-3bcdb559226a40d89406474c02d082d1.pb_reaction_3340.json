@@ -1,0 +1,547 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "C([N:8]1[CH2:12][CH2:11][C@@H:10]([C:13]([C:26]#[N:27])([C:20]2[CH:25]=[CH:24][CH:23]=[CH:22][CH:21]=2)[C:14]2[CH:19]=[CH:18][CH:17]=[CH:16][CH:15]=2)[CH2:9]1)C1C=CC=CC=1.Cl.[H][H]>[C].[Pd].C(O)C>[C:26]([C:13]([C@@H:10]1[CH2:11][CH2:12][NH:8][CH2:9]1)([C:20]1[CH:21]=[CH:22][CH:23]=[CH:24][CH:25]=1)[C:14]1[CH:19]=[CH:18][CH:17]=[CH:16][CH:15]=1)#[N:27] |f:3.4|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrogen"
+            },
+            {
+              "type": "SMILES",
+              "value": "[H][H]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2/h1H"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "palladium-carbon"
+            },
+            {
+              "type": "SMILES",
+              "value": "[C].[Pd]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C.Pd"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "CATALYST"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrochloric acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/ClH/h1H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 0.72,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m1_m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "(S)-1-benzyl-3-(1-cyano-1,1-diphenylmethyl)-pyrrolidine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C1=CC=CC=C1)N1C[C@@H](CC1)C(C1=CC=CC=C1)(C1=CC=CC=C1)C#N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C25H24N2/c26-20-25(22-12-6-2-7-13-22,23-14-8-3-9-15-23)24-16-17-27(19-24)18-21-10-4-1-5-11-21/h1-15,24H,16-19H2/t24-/m1/s1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 3.5,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 2.8,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 60.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "with stirring on an ice-water bath"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixed solution obtained by mixing 3.5 g of 79% pure (S)-1-benzyl-3-(1-cyano-1,1-diphenylmethyl)-pyrrolidine with 2.8 ml of ethanol and adding dropwise 0.72 ml of 35% aqueous hydrochloric acid thereto with cooling on an ice-water bath was charged, together with 139 mg of moist 5% palladium-carbon (water content 52% by weight), into an autoclave, hydrogen was introduced thereinto and the autoclave was heated to raise the temperature to 60° C. and the pressure to 203 kPa, and the reaction was allowed to proceed for 3 hours. Hydrogen absorption came to an end in 2.6 hours after the start of hydrogen introduction. After completion of the reaction, the reaction mixture was cooled to room temperature and depressurized. The reaction mixture was taken out, the catalyst was filtered off, the filtrate obtained was concentrated under reduced pressure, toluene and water were added to the thus-obtained oily concentrate, and the pH was adjusted to 13 by adding dropwise 30% aqueous sodium hydroxide with stirring on an ice-water bath. The toluene layer was recovered, the aqueous layer was further extracted with toluene, and the toluene layers were combined, washed with a saturated aqueous solution of sodium chloride, dried with anhydrous sodium sulfate and, after filtration, concentrated under reduced pressure and further dried under vacuum to give 2.1 g of (S)-3-(1-cyano-1,1-diphenylmethyl)-pyrrolidine as an oil (yield: 91 mole percent)."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "A mixed solution obtained"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "with cooling on an ice-water bath"
+    },
+    {
+      "type": "ADDITION",
+      "details": "was introduced"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "the autoclave was heated"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "Hydrogen absorption",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "Hydrogen"
+              },
+              {
+                "type": "SMILES",
+                "value": "[H][H]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2/h1H"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WAIT",
+      "details": "came to an end in 2.6 hours",
+      "duration": {
+        "value": 2.6,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "After completion of the reaction"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "the reaction mixture was cooled to room temperature",
+      "temperature": {
+        "control": {
+          "type": "AMBIENT"
+        }
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "the catalyst was filtered off"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the filtrate obtained"
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "was concentrated under reduced pressure, toluene and water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "toluene"
+              },
+              {
+                "type": "SMILES",
+                "value": "C1(=CC=CC=C1)C"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C7H8/c1-7-5-3-2-4-6-7/h2-6H,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "ADDITION",
+      "details": "were added to the thus-obtained oily concentrate"
+    },
+    {
+      "type": "ADDITION",
+      "details": "by adding dropwise 30% aqueous sodium hydroxide",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "sodium hydroxide"
+              },
+              {
+                "type": "SMILES",
+                "value": "[OH-].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Na.H2O/h;1H2/q+1;/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The toluene layer was recovered",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "toluene"
+              },
+              {
+                "type": "SMILES",
+                "value": "C1(=CC=CC=C1)C"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C7H8/c1-7-5-3-2-4-6-7/h2-6H,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "the aqueous layer was further extracted with toluene",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "toluene"
+              },
+              {
+                "type": "SMILES",
+                "value": "C1(=CC=CC=C1)C"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C7H8/c1-7-5-3-2-4-6-7/h2-6H,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "washed with a saturated aqueous solution of sodium chloride",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "sodium chloride"
+              },
+              {
+                "type": "SMILES",
+                "value": "[Cl-].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH.Na/h1H;/q;+1/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "dried with anhydrous sodium sulfate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "sodium sulfate"
+              },
+              {
+                "type": "SMILES",
+                "value": "S(=O)(=O)([O-])[O-].[Na+].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/2Na.H2O4S/c;;1-5(2,3)4/h;;(H2,1,2,3,4)/q2*+1;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "after filtration"
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated under reduced pressure"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "further dried under vacuum"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 3.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "(S)-3-(1-cyano-1,1-diphenylmethyl)-pyrrolidine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(#N)C(C1=CC=CC=C1)(C1=CC=CC=C1)[C@H]1CNCC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C18H18N2/c19-14-18(17-11-12-20-13-17,15-7-3-1-4-8-15)16-9-5-2-6-10-16/h1-10,17,20H,11-13H2/t17-/m1/s1"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 2.1,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 80.6
+              }
+            }
+          ],
+          "texture": {
+            "type": "OIL",
+            "details": "oil"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06005119",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:23.641412"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-ce20c089dc3b4b738732833a9a20870c"
+}

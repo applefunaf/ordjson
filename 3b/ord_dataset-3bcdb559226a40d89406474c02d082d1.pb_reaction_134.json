@@ -1,0 +1,355 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[N:1]1[N:2]=[CH:3][N:4]([C:6]2[CH:11]=[CH:10][C:9]([NH:12]N)=[CH:8][CH:7]=2)[CH:5]=1.[O:14]1[CH:19]=[CH:18][CH2:17][CH2:16][CH2:15]1.Cl>O1CCOCC1>[N:1]1[N:2]=[CH:3][N:4]([C:6]2[CH:11]=[C:10]3[C:9](=[CH:8][CH:7]=2)[NH:12][CH:19]=[C:18]3[CH2:17][CH2:16][CH2:15][OH:14])[CH:5]=1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrochloric acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/ClH/h1H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 150.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m1_m4_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-(1,2,4-triazol-4-yl)phenylhydrazine"
+            },
+            {
+              "type": "SMILES",
+              "value": "N=1N=CN(C1)C1=CC=C(C=C1)NN"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H9N5/c9-12-7-1-3-8(4-2-7)13-5-10-11-6-13/h1-6,12H,9H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 25.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "dihydropyran"
+            },
+            {
+              "type": "SMILES",
+              "value": "O1CCCC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C5H8O/c1-2-4-6-5-3-1/h2,4H,1,3,5H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 24.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "dioxan"
+            },
+            {
+              "type": "SMILES",
+              "value": "O1CCOCC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O2/c1-2-6-4-3-5-1/h1-4H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 250.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A solution of 4-(1,2,4-triazol-4-yl)phenylhydrazine (prepared as described in WO 94/03446, Example 1) (25 g, 143 mmol) in dioxan (250 ml) was treated with dihydropyran (24 g, 286 mmol) followed by 1 M hydrochloric acid (150 ml) and heated at reflux for 18 hours. The reaction mixture was evaporated with toluene then reevaporated. Inorganic solids were removed by treating the residue with a mixture of methanol and acetonitrile. The mother liquors were purified by column chromatography on silica using dichloromethane:methanol (9:1→4:1) as the eluant. The compound was recrystallised from acetonitrile to afford the title compound as a white solid (10.24 g, 30%), mp 205-207° C. δ (360 MHz, d6 -DMSO) 1.81 (2H, quintet, J=7Hz, CH2), 2.75 (2H, t, J=8Hz, CH2), 3.46 (2H, dt, J1 =6Hz, J2 =5Hz, CH2), 4.43 (1H, t, J=5Hz, OH), 7.26 (1H, d, J=2Hz, AR--H), 7.29 (1H, dd, J1 =9Hz, J2 =2Hz, Ar--H), 7.47 (1H, d, J=9Hz, Ar--H), 7.77 (1H, d, J=2Hz, Ar--H), 9.01 (2H, s, Triazole-H), 11.05 (1H, br s, indole NH). MS, CI+, m/z for (M+H)+ =243."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "heated"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "at reflux for 18 hours",
+      "duration": {
+        "value": 18.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The reaction mixture was evaporated with toluene",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "toluene"
+              },
+              {
+                "type": "SMILES",
+                "value": "C1(=CC=CC=C1)C"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C7H8/c1-7-5-3-2-4-6-7/h2-6H,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "then reevaporated"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "Inorganic solids were removed"
+    },
+    {
+      "type": "ADDITION",
+      "details": "by treating the residue"
+    },
+    {
+      "type": "ADDITION",
+      "details": "with a mixture of methanol and acetonitrile",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "methanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "CO"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "acetonitrile"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)#N"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C2H3N/c1-2-3/h1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The mother liquors were purified by column chromatography on silica"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The compound was recrystallised from acetonitrile",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "acetonitrile"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)#N"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C2H3N/c1-2-3/h1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "3-[5-(1,2,4-Triazol-4-yl)-1H-indol-3-yl]propan-1-ol"
+            },
+            {
+              "type": "SMILES",
+              "value": "N=1N=CN(C1)C=1C=C2C(=CNC2=CC1)CCCO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C13H14N4O/c18-5-1-2-10-7-14-13-4-3-11(6-12(10)13)17-8-15-16-9-17/h3-4,6-9,14,18H,1-2,5H2"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 10.24,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 30.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 29.6
+              }
+            }
+          ],
+          "isolated_color": "white",
+          "texture": {
+            "type": "CUSTOM",
+            "details": "solid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998415",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:17.974847"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-0e5949a4c40a4d3d97df482c0c84c31c"
+}

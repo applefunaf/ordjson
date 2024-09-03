@@ -1,0 +1,410 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH2:1]([O:3][C:4]1[C:8]2[CH2:9][CH2:10][CH2:11][CH2:12][C:7]=2[O:6][N:5]=1)[CH3:2].[OH:13]S(O)(=O)=O.[Cr](O[Cr]([O-])(=O)=O)([O-])(=O)=O.[Na+].[Na+].[OH-].[Na+]>C(O)(=O)C.C(OCC)C>[CH2:1]([O:3][C:4]1[C:8]2[C:9](=[O:13])[CH2:10][CH2:11][CH2:12][C:7]=2[O:6][N:5]=1)[CH3:2] |f:2.3.4,5.6|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "NaOH"
+            },
+            {
+              "type": "SMILES",
+              "value": "[OH-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Na.H2O/h;1H2/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m6": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acetic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H4O2/c1-2(3)4/h1H3,(H,3,4)"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 300.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sodium dichromate"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Cr](=O)(=O)([O-])O[Cr](=O)(=O)[O-].[Na+].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/2Cr.2Na.7O/q;;2*+1;;;;;;2*-1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 71.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m7": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "diethyl ether"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)OCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 3.0,
+              "units": "LITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m1_m5_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3-ethoxy-4,5,6,7-tetrahydro-1,2-benzisoxazole"
+            },
+            {
+              "type": "NAME",
+              "value": "3-Ethoxy-4,5,6,7-tetrahydro-1,2-benzisoxazole"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)OC1=NOC2=C1CCCC2"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H13NO2/c1-2-11-9-7-5-3-4-6-8(7)12-10-9/h2-6H2,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 35.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "H2SO4"
+            },
+            {
+              "type": "SMILES",
+              "value": "OS(=O)(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O4S/c1-5(2,3)4/h(H2,1,2,3,4)"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 29.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acetic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H4O2/c1-2(3)4/h1H3,(H,3,4)"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 500.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 27.5,
+        "precision": 2.5,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "The mixture was stirred for another 3 hours at 25-30° C"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a solution of 3-ethoxy-4,5,6,7-tetrahydro-1,2-benzisoxazole 1a (35 g) in glacial acetic acid (500 mL) at 10° C. was added concentrated H2SO4 (29 mL). A solution of sodium dichromate (71 g) in glacial acetic acid (300 mL) kept at 40-45° C. was added dropwise during one hour at 20-25° C. The mixture was stirred for another 3 hours at 25-30° C. The reaction mixture was poured onto ice and diethyl ether (3 L). pH was adjusted to >10 by addition of concentrated aqueous NaOH. The organic phase was separated and worked up. The remaining crude title compound was purified by column chromatography on silica gel (eluted with ethyl acetate/heptane 1:1). Pure 3-ethoxy-4,5,6,7-tetrahydro-1,2-benzisoxazol-4-one was washed with diisopropyl ether and dried. Yield 27 g. Mp 98-99° C."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "kept at 40-45° C.",
+      "temperature": {
+        "setpoint": {
+          "value": 42.5,
+          "precision": 2.5,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "ADDITION",
+      "details": "was added dropwise during one hour at 20-25° C",
+      "duration": {
+        "value": 1.0,
+        "units": "HOUR"
+      },
+      "temperature": {
+        "setpoint": {
+          "value": 22.5,
+          "precision": 2.5,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The organic phase was separated"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The remaining crude title compound was purified by column chromatography on silica gel (eluted with ethyl acetate/heptane 1:1)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "crude title compound"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate heptane"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC.CCCCCCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C7H16.C4H8O2/c1-3-5-7-6-4-2;1-3-6-4(2)5/h3-7H2,1-2H3;3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "Pure 3-ethoxy-4,5,6,7-tetrahydro-1,2-benzisoxazol-4-one was washed with diisopropyl ether",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "3-ethoxy-4,5,6,7-tetrahydro-1,2-benzisoxazol-4-one"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)OC1=NOC2=C1C(CCC2)=O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C9H11NO3/c1-2-12-9-8-6(11)4-3-5-7(8)13-10-9/h2-5H2,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "diisopropyl ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(C)OC(C)C"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C6H14O/c1-5(2)7-6(3)4/h5-6H,1-4H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 3.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3-Ethoxy-4,5,6,7-tetrahydro-1,2-benzisoxazol-4-one"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)OC1=NOC2=C1C(CCC2)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H11NO3/c1-2-12-9-8-6(11)4-3-5-7(8)13-10-9/h2-5H2,1H3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998613",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:33.284572"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-c5a7805b62124235a660c5255b4a9793"
+}

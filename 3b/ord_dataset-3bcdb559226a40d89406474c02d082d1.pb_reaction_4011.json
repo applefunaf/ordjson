@@ -1,0 +1,284 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[N:1]1[C:5]2[CH:6]=[CH:7][CH:8]=[CH:9][C:4]=2[NH:3][CH:2]=1.[H-].[Na+].Br[CH2:13][C:14]1[C:23]2[C:18](=[C:19]([NH:24][C:25](=[O:34])[C:26]3[C:31]([Cl:32])=[CH:30][CH:29]=[CH:28][C:27]=3[Cl:33])[CH:20]=[CH:21][CH:22]=2)[N:17]=[CH:16][CH:15]=1.O>CN(C)C=O>[N:1]1([CH2:13][C:14]2[C:23]3[C:18](=[C:19]([NH:24][C:25](=[O:34])[C:26]4[C:31]([Cl:32])=[CH:30][CH:29]=[CH:28][C:27]=4[Cl:33])[CH:20]=[CH:21][CH:22]=3)[N:17]=[CH:16][CH:15]=2)[C:5]2[CH:6]=[CH:7][CH:8]=[CH:9][C:4]=2[N:3]=[CH:2]1 |f:1.2|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-bromomethyl-8-(2,6-dichlorobenzoylamino)quinoline"
+            },
+            {
+              "type": "SMILES",
+              "value": "BrCC1=CC=NC2=C(C=CC=C12)NC(C1=C(C=CC=C1Cl)Cl)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C17H11BrCl2N2O/c18-9-10-7-8-21-16-11(10)3-1-6-14(16)22-17(23)15-12(19)4-2-5-13(15)20/h1-8H,9H2,(H,22,23)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 80.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m1_m5_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "benzimidazole"
+            },
+            {
+              "type": "SMILES",
+              "value": "N1=CNC2=C1C=CC=C2"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H6N2/c1-2-4-7-6(3-1)8-5-9-7/h1-5H,(H,8,9)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 26.5,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sodium hydride"
+            },
+            {
+              "type": "SMILES",
+              "value": "[H-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Na.H/q+1;-1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 8.6,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N,N-dimethylformamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN(C=O)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H7NO/c1-4(2)3-5/h3H,1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 1.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "the mixture was stirred at the same temperature for half an hour"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a stirred solution of benzimidazole (26.5 mg) in N,N-dimethylformamide (1 ml) was added sodium hydride (60% in oil, 8.6 mg) in an ice bath, and the mixture was stirred at the same temperature for half an hour. To this mixture was added 4-bromomethyl-8-(2,6-dichlorobenzoylamino)quinoline (80 mg) one portion, and the reaction mixture was stirred at the same temperature for half an hour and then at ambient temperature for one hour. Water was added thereto, and the resulting precipitate was collected by filtration. The solid was washed with hot 95% aqueous ethanol (1 ml) and allowed to cool to ambient temperature. The solid was collected by filtration and air-dried to give 4-(1H-benzimidazol-1-ylmethyl)-8-(2,6-dichlorobenzoylamino)quinoline (65 mg) as an off-white solid."
+  },
+  "workups": [
+    {
+      "type": "STIRRING",
+      "details": "the reaction mixture was stirred at the same temperature for half an hour"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "the resulting precipitate was collected by filtration"
+    },
+    {
+      "type": "WASH",
+      "details": "The solid was washed with hot 95% aqueous ethanol (1 ml)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 1.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "The solid was collected by filtration"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "air-dried"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 1.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-(1H-benzimidazol-1-ylmethyl)-8-(2,6-dichlorobenzoylamino)quinoline"
+            },
+            {
+              "type": "SMILES",
+              "value": "N1(C=NC2=C1C=CC=C2)CC2=CC=NC1=C(C=CC=C21)NC(C2=C(C=CC=C2Cl)Cl)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C24H16Cl2N4O/c25-17-6-4-7-18(26)22(17)24(31)29-20-9-3-5-16-15(11-12-27-23(16)20)13-30-14-28-19-8-1-2-10-21(19)30/h1-12,14H,13H2,(H,29,31)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 65.0,
+                  "units": "MILLIGRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 74.5
+              }
+            }
+          ],
+          "isolated_color": "off-white",
+          "texture": {
+            "type": "CUSTOM",
+            "details": "solid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06008230",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:21.960606"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-17d357a7c1834d308e34e54d141c6050"
+}

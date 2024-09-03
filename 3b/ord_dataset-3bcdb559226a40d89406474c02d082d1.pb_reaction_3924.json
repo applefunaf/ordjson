@@ -1,0 +1,328 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][C:2]([C:4]1[CH:9]=[C:8]([OH:10])[CH:7]=[CH:6][C:5]=1[OH:11])=[O:3].N1C[CH2:15][CH2:14][CH2:13]1.CC(C)=O>C(#N)C>[CH3:13][C:14]1([CH3:15])[CH2:1][C:2](=[O:3])[C:4]2[C:5](=[CH:6][CH:7]=[C:8]([OH:10])[CH:9]=2)[O:11]1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m4_m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2,5-dihydroxyacetophenone"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC(=O)C1=C(C=CC(=C1)O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H8O3/c1-5(9)7-4-6(10)2-3-8(7)11/h2-4,10-11H,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 100.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "pyrrolidine"
+            },
+            {
+              "type": "SMILES",
+              "value": "N1CCCC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H9N/c1-2-4-5-3-1/h5H,1-4H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 130.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acetone"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC(=O)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H6O/c1-3(2)4/h1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 290.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acetonitrile"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)#N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H3N/c1-2-3/h1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 1.0,
+              "units": "LITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 45.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "stirred with activated carbon"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A reaction mixture of 100 g (0.65 mol) of 2,5-dihydroxyacetophenone in 1 l of acetonitrile, 130 ml (1.55 mol) of pyrrolidine and 290 ml (3.95 mol) of acetone was heated at 45° C. for 8 h. The sol. were then removed i. vac. and the residue was dissolved in 1 l of EA. The organic phase was washed twice with dilute hydrochloric acid, stirred with activated carbon and dried over magnesium sulfate and substantially concentrated. The residue was stirred with petroleum ether and the precipitate was filtered off with suction giving 102 g of 2,2-dimethyl-6-hydroxychroman-4-one, m.p. 161° C."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "The sol. were then removed i"
+    },
+    {
+      "type": "DISSOLUTION",
+      "details": "and the residue was dissolved in 1 l of EA",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "EA"
+              },
+              {
+                "type": "SMILES",
+                "value": "CC(OCC)=O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 1.0,
+                "units": "LITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "The organic phase was washed twice with dilute hydrochloric acid",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "hydrochloric acid"
+              },
+              {
+                "type": "SMILES",
+                "value": "Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH/h1H"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "dried over magnesium sulfate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "magnesium sulfate"
+              },
+              {
+                "type": "SMILES",
+                "value": "S(=O)(=O)([O-])[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "substantially concentrated"
+    },
+    {
+      "type": "STIRRING",
+      "details": "The residue was stirred with petroleum ether",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "petroleum ether"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "the precipitate was filtered off with suction"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2,2-dimethyl-6-hydroxychroman-4-one"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC1(OC2=CC=C(C=C2C(C1)=O)O)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C11H12O3/c1-11(2)6-9(13)8-5-7(12)3-4-10(8)14-11/h3-5,12H,6H2,1-2H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 102.0,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 81.6
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06008245",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:20.349802"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-ba9a7dbe4dde4653b6ac93c3127603d3"
+}

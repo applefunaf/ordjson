@@ -1,0 +1,236 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[SH:1][C:2]1[NH:6][C:5]2[CH:7]=[CH:8][CH:9]=[CH:10][C:4]=2[N:3]=1.Cl[CH2:12][C:13]1[CH:18]=[C:17]([O:19][CH2:20][CH2:21][CH2:22][O:23][CH3:24])[CH:16]=[CH:15][N:14]=1.[OH-].[Na+]>C(O)C>[CH3:24][O:23][CH2:22][CH2:21][CH2:20][O:19][C:17]1[CH:16]=[CH:15][N:14]=[C:13]([CH2:12][S:1][C:2]2[NH:6][C:5]3[CH:7]=[CH:8][CH:9]=[CH:10][C:4]=3[N:3]=2)[CH:18]=1 |f:2.3|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m3_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-mercapto-1H-benzimidazole"
+            },
+            {
+              "type": "SMILES",
+              "value": "SC1=NC2=C(N1)C=CC=C2"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H6N2S/c10-7-8-5-3-1-2-4-6(5)9-7/h1-4H,(H2,8,9,10)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 1.5,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-chloromethyl-4-(3-methoxypropoxy)pyridine"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClCC1=NC=CC(=C1)OCCCOC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C10H14ClNO2/c1-13-5-2-6-14-10-3-4-12-9(7-10)8-11/h3-4,7H,2,5-6,8H2,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 3.2,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sodium hydroxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "[OH-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Na.H2O/h;1H2/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.51,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 60.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture comprising 1.50 g (0.01 mol) of 2-mercapto-1H-benzimidazole, 3.20 g (0.015 mol) of 2-chloromethyl-4-(3-methoxypropoxy)pyridine, 0.51 g (0.012 mol) of 95% sodium hydroxide and 60 ml of ethanol was stirred at 40° C. for 0.5 hour and filtered. The filtrate was concentrated under a reduced pressure and purified by silica gel column chromatography (ethyl acetate/n-hexane) to obtain 3.27 g of the title compound as a colorless crystal."
+  },
+  "workups": [
+    {
+      "type": "FILTRATION",
+      "details": "filtered"
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "The filtrate was concentrated under a reduced pressure"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "purified by silica gel column chromatography (ethyl acetate/n-hexane)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate n-hexane"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC.CCCCCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C6H14.C4H8O2/c1-3-5-6-4-2;1-3-6-4(2)5/h3-6H2,1-2H3;3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "2-[4-(3-Methoxypropoxy)pyridine-2-yl]methylthio-1H-benzimidazole"
+            },
+            {
+              "type": "SMILES",
+              "value": "COCCCOC1=CC(=NC=C1)CSC1=NC2=C(N1)C=CC=C2"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C17H19N3O2S/c1-21-9-4-10-22-14-7-8-18-13(11-14)12-23-17-19-15-5-2-3-6-16(15)20-17/h2-3,5-8,11H,4,9-10,12H2,1H3,(H,19,20)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 3.27,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 99.3
+              }
+            }
+          ],
+          "isolated_color": "colorless",
+          "texture": {
+            "type": "CRYSTAL",
+            "details": "crystal"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998445",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:21.425552"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-e87f15e183b242a1ae97d62a1f31913d"
+}

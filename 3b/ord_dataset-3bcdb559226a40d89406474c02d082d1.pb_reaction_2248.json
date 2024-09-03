@@ -1,0 +1,205 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH:1]1[CH:2]=[CH:3][C:4]([C@@H:7]([NH2:24])[C:8]([NH:10][C@@H:11]2[C:18](=[O:19])[N:17]3[C@@H:12]2[CH2:13][CH2:14][C:15]([Cl:23])=[C:16]3[C:20]([OH:22])=[O:21])=[O:9])=[CH:5][CH:6]=1.C([O-])C>O>[CH:1]1[CH:2]=[CH:3][C:4]([C@@H:7]([NH2:24])[C:8]([NH:10][C@@H:11]2[C:18](=[O:19])[N:17]3[C@@H:12]2[CH2:13][CH2:14][C:15]([Cl:23])=[C:16]3[C:20]([OH:22])=[O:21])=[O:9])=[CH:5][CH:6]=1 |f:0.1|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Loracarbef ethanolate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C=1C=CC(=CC1)[C@H](C(=O)N[C@H]2[C@H]3CCC(=C(N3C2=O)C(=O)O)Cl)N.C(C)[O-]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C16H16ClN3O4.C2H5O/c17-9-6-7-10-12(15(22)20(10)13(9)16(23)24)19-14(21)11(18)8-4-2-1-3-5-8;1-2-3/h1-5,10-12H,6-7,18H2,(H,19,21)(H,23,24);2H2,1H3/q;-1/t10-,11-,12+;/m1./s1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 5.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "monohydrate"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "H2O"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 70.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 50.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "The slurry was stirred at 50° C. for 1 hour"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "Loracarbef ethanolate (5.0 g, 86.2%, potency as loracarbef), from above was suspended in 70 ml of H2O, and the slurry was heated to 50° C. The slurry became very thick which indicated conversion to the monohydrate. The slurry was stirred at 50° C. for 1 hour, filtered, washed with H2O and dried under vacuum at 40° C. The actual yield of loracarbef monohydrate was 3.06 g, 102.8% potency as loracarbef monohydrate, the theoretical yield was 4.53 g, and the percent yield was 69.3%."
+  },
+  "workups": [
+    {
+      "type": "FILTRATION",
+      "details": "filtered"
+    },
+    {
+      "type": "WASH",
+      "details": "washed with H2O",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "H2O"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried under vacuum at 40° C",
+      "temperature": {
+        "setpoint": {
+          "value": 40.0,
+          "units": "CELSIUS"
+        }
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 1.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Loracarbef"
+            },
+            {
+              "type": "SMILES",
+              "value": "C=1C=CC(=CC1)[C@H](C(=O)N[C@H]2[C@H]3CCC(=C(N3C2=O)C(=O)O)Cl)N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C16H16ClN3O4/c17-9-6-7-10-12(15(22)20(10)13(9)16(23)24)19-14(21)11(18)8-4-2-1-3-5-8/h1-5,10-12H,6-7,18H2,(H,19,21)(H,23,24)/t10-,11-,12+/m1/s1"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06001996",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:20.438919"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-10bb88e28da44ff38acc85ee70f3e33a"
+}

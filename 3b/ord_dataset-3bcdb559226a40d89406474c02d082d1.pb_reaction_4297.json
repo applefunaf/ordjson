@@ -1,0 +1,236 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "Cl[C:2]1([F:12])[CH2:7][C:6]([CH3:8])=[C:5]([CH3:9])[CH2:4][C:3]1(F)[F:10].[OH-].[Na+]>[Cl-].C([N+](CC)(CC)CC)C1C=CC=CC=1>[F:10][C:3]1[CH:4]=[C:5]([CH3:9])[C:6]([CH3:8])=[CH:7][C:2]=1[F:12] |f:1.2,3.4|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "5-chloro-1,2-dimethyl-4,4,5-trifluorocyclohexene"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC1(C(CC(=C(C1)C)C)(F)F)F"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H10ClF3/c1-5-3-7(9,10)8(11,12)4-6(5)2/h3-4H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sodium hydroxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "[OH-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Na.H2O/h;1H2/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 40.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "benzyltriethylammonium chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Cl-].C(C1=CC=CC=C1)[N+](CC)(CC)CC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C13H22N.ClH/c1-4-14(5-2,6-3)12-13-10-8-7-9-11-13;/h7-11H,4-6,12H2,1-3H3;1H/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 1.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "CATALYST"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 80.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "The reaction mixture was stirred for additional 2 hours at 80° C."
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a stirred solution of 5-chloro-1,2-dimethyl-4,4,5-trifluorocyclohexene of 12.6 g prepared in Example 14 was added 1.0 g of benzyltriethylammonium chloride, and then the reaction mixture was heated to 80° C. followed by slowly adding 40 g of 50% aqueous sodium hydroxide solution for 30 min. The reaction mixture was stirred for additional 2 hours at 80° C., and then the resultant was purified by steam distillation followed by separating the aqueous layer. The organic layer was dried with calcium chloride, and then 7.3 g of the desired product was collected by fractional distillation at temperature 150° C. as a colorless liquid."
+  },
+  "workups": [
+    {
+      "type": "DISTILLATION",
+      "details": "the resultant was purified by steam distillation"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "by separating the aqueous layer"
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "The organic layer was dried with calcium chloride",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "calcium chloride"
+              },
+              {
+                "type": "SMILES",
+                "value": "[Cl-].[Ca+2].[Cl-]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Ca.2ClH/h;2*1H/q+2;;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DISTILLATION",
+      "details": "7.3 g of the desired product was collected by fractional distillation at temperature 150° C. as a colorless liquid",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "desired product"
+              }
+            ],
+            "amount": {
+              "mass": {
+                "value": 7.3,
+                "units": "GRAM"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      },
+      "temperature": {
+        "setpoint": {
+          "value": 150.0,
+          "units": "CELSIUS"
+        }
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 2.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4,5-difluoro-ortho-xylene"
+            },
+            {
+              "type": "SMILES",
+              "value": "FC=1C=C(C(=CC1F)C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H8F2/c1-5-3-7(9)8(10)4-6(5)2/h3-4H,1-2H3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06008407",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:26.842315"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-d168ffdbc1464913baf518db1544ccdc"
+}

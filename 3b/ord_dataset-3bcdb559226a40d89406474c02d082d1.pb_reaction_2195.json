@@ -1,0 +1,173 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][O:2][C:3]1[CH:11]=[CH:10][CH:9]=[C:8]([CH3:12])[C:4]=1[C:5](O)=[O:6].S(Cl)([Cl:15])=O>>[CH3:1][O:2][C:3]1[CH:11]=[CH:10][CH:9]=[C:8]([CH3:12])[C:4]=1[C:5]([Cl:15])=[O:6]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "1A"
+            },
+            {
+              "type": "NAME",
+              "value": "2-Methoxy-6-methylbenzoic Acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "COC1=C(C(=O)O)C(=CC=C1)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H10O3/c1-6-4-3-5-7(12-2)8(6)9(10)11/h3-5H,1-2H3,(H,10,11)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 1.7,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "thionyl chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "S(=O)(Cl)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Cl2OS/c1-4(2)3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 2.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture of 1A (1.7 g, 10.2 mmol) and thionyl chloride (2 ml) is heated under reflux for 1 hour. The mixture is concentrated and the resulting benzoylchloride is used without further purification."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "is heated"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "under reflux for 1 hour",
+      "duration": {
+        "value": 1.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "The mixture is concentrated"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the resulting benzoylchloride is used without further purification",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "benzoylchloride"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C1=CC=CC=C1)(=O)Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C7H5ClO/c8-7(9)6-4-2-1-3-5-6/h1-5H"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-Methoxy-6-methylbenzoyl Chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "COC1=C(C(=O)Cl)C(=CC=C1)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H9ClO2/c1-6-4-3-5-7(12-2)8(6)9(10)11/h3-5H,1-2H3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06001883",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:19.668262"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-450ca4c394d9487ebfe0cf542fbc9cb8"
+}

@@ -1,0 +1,325 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[C:1]([C:3]1[CH:4]=[CH:5][C:6]([N+:10]([O-])=O)=[C:7]([OH:9])[CH:8]=1)#[N:2].[Sn](Cl)Cl.[OH-].[Na+]>C(O)C>[NH2:10][C:6]1[CH:5]=[CH:4][C:3]([C:1]#[N:2])=[CH:8][C:7]=1[OH:9] |f:2.3|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "5-cyano-2-nitrophenol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(#N)C=1C=CC(=C(C1)O)[N+](=O)[O-]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H4N2O3/c8-4-5-1-2-6(9(11)12)7(10)3-5/h1-3,10H"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 250.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "tin (II) chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Sn](Cl)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/2ClH.Sn/h2*1H;/q;;+2/p-2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 3.2,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 50.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "NaOH"
+            },
+            {
+              "type": "SMILES",
+              "value": "[OH-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Na.H2O/h;1H2/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 80.0,
+        "units": "CELSIUS"
+      }
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture of 5-cyano-2-nitrophenol(250 mg, 1.5 mmol) and tin (II) chloride (3.2 g, 14.4 mmol) in ethanol(50 mL) was heated at 80° C. under argon. After 2 hours, the starting material has disappeared and the solution was allowed to cool down and then poured into ice. The pH was made slightly basic (pH7-8), by addition of solid NaOH, before being extracted with ethyl acetate. The organic phase was washed with brine, dried over MgSO4 and filtered. The solvent was evaporated and chromatography of the resulting solid on silica gel (4%MeOH/CH2Cl2) gave the desired product(175 mg, 86%). 1H NMR (CD3OD): δ 7.00 (d, 1H), 6.88 (s,1H), 6.69 (d, 1H)."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "to cool down"
+    },
+    {
+      "type": "ADDITION",
+      "details": "poured into ice"
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "before being extracted with ethyl acetate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "The organic phase was washed with brine",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "brine"
+              },
+              {
+                "type": "SMILES",
+                "value": "[Cl-].[Na+].O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH.Na.H2O/h1H;;1H2/q;+1;/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "dried over MgSO4",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "MgSO4"
+              },
+              {
+                "type": "SMILES",
+                "value": "[O-]S(=O)(=O)[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filtered"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The solvent was evaporated"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 2.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "desired product"
+            },
+            {
+              "type": "NAME",
+              "value": "2-amino-5-cyanophenol"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC1=C(C=C(C=C1)C#N)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H6N2O/c8-4-5-1-2-6(9)7(10)3-5/h1-3,10H,9H2"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 175.0,
+                  "units": "MILLIGRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 86.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 87.0
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06005008",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:21.111024"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-2f78b954dfa84cae83df065a9b578349"
+}

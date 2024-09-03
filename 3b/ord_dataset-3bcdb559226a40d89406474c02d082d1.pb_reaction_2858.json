@@ -1,0 +1,192 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "C([O:8][P:9]([CH2:19][CH:20]([CH2:31][CH2:32][C:33]([O:35]CC1C=CC=CC=1)=[O:34])[C:21]([O:23]CC1C=CC=CC=1)=[O:22])([O:11]CC1C=CC=CC=1)=[O:10])C1C=CC=CC=1>[Pd].CO>[P:9]([CH2:19][CH:20]([CH2:31][CH2:32][C:33]([OH:35])=[O:34])[C:21]([OH:23])=[O:22])([OH:11])([OH:10])=[O:8]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m3_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "benzyl pentanedioate"
+            },
+            {
+              "type": "NAME",
+              "value": "Dibenzyl 2-[[Bis(benzyloxy)phosphoryl]methyl]-pentanedioate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C1=CC=CC=C1)OP(=O)(OCC1=CC=CC=C1)CC(C(=O)OCC1=CC=CC=C1)CCC(=O)OCC1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C34H35O7P/c35-33(38-23-28-13-5-1-6-14-28)22-21-32(34(36)39-24-29-15-7-2-8-16-29)27-42(37,40-25-30-17-9-3-10-18-30)41-26-31-19-11-4-12-20-31/h1-20,32H,21-27H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 2.9,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Pd/C"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Pd]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Pd"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "CATALYST"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 20.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "The benzyl pentanedioate 2(2.9 g, 4.9 mmol) was added to a mixture of 20 ml of methanol containing 0.29 g (6 mol %) of 10% Pd/C. This mixture was hydrogenated on a Parr hydrogenator at 40 psi for 24 hours, filtered and evaporated to give 3(1.0 g, 90%) as a clear slightly golden viscous oil."
+  },
+  "workups": [
+    {
+      "type": "FILTRATION",
+      "details": "filtered"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "evaporated"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 24.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3"
+            },
+            {
+              "type": "NAME",
+              "value": "2-(Phosphonomethyl)pentanedioic Acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "P(=O)(O)(O)CC(C(=O)O)CCC(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H11O7P/c7-5(8)2-1-4(6(9)10)3-14(11,12)13/h4H,1-3H2,(H,7,8)(H,9,10)(H2,11,12,13)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 1.0,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 90.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 90.3
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06004946",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:16.313521"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-6e298782d2fd496196f5ea4130a76a30"
+}

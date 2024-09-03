@@ -1,0 +1,370 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][C:2]1([C:8]2[CH:13]=[CH:12][C:11]([O:14][CH3:15])=[C:10]([O:16][CH2:17][CH:18]3[CH2:20][CH2:19]3)[CH:9]=2)[O:6][C:5](=[O:7])[NH:4][CH2:3]1.[OH-].[K+].[CH3:23]I>O1CCCC1>[CH:18]1([CH2:17][O:16][C:10]2[CH:9]=[C:8]([C:2]3([CH3:1])[O:6][C:5](=[O:7])[N:4]([CH3:23])[CH2:3]3)[CH:13]=[CH:12][C:11]=2[O:14][CH3:15])[CH2:20][CH2:19]1 |f:1.2|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m3_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "5-methyl-5-(3-cyclopropylmethoxy-4-methoxyphenyl)-2-oxazolidinone"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC1(CNC(O1)=O)C1=CC(=C(C=C1)OC)OCC1CC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C15H19NO4/c1-15(9-16-14(17)20-15)11-5-6-12(18-2)13(7-11)19-8-10-3-4-10/h5-7,10H,3-4,8-9H2,1-2H3,(H,16,17)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 500.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "potassium hydroxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "[OH-].[K+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/K.H2O/h;1H2/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 113.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methyl iodide"
+            },
+            {
+              "type": "SMILES",
+              "value": "CI"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH3I/c1-2/h1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 0.15,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "tetrahydrofuran"
+            },
+            {
+              "type": "SMILES",
+              "value": "O1CCCC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O/c1-2-4-5-3-1/h1-4H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 4.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "500 mg (1.8 mmol) of 5-methyl-5-(3-cyclopropylmethoxy-4-methoxyphenyl)-2-oxazolidinone, 113 mg (2.0 mmol) of potassium hydroxide, and 0.15 ml (2.2 mmol) of methyl iodide were stirred in 4 ml of tetrahydrofuran for 4 hours at room temperature. The reaction mixture was filtered, the filtrate combined with 30 ml of water and then extracted with ethyl acetate. The ethyl acetate phase was washed with water, dried over sodium sulfate, filtered, and concentrated (390 mg of a yellow oil). By PSC separation with methylene chloride/ether (1:1), 212 mg of 5-(3-cyclopropylmethoxy-4-methoxyphenyl)-3,5-dimethyl-2-oxazolidinone was obtained as an oil."
+  },
+  "workups": [
+    {
+      "type": "FILTRATION",
+      "details": "The reaction mixture was filtered"
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "extracted with ethyl acetate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "The ethyl acetate phase was washed with water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "dried over sodium sulfate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "sodium sulfate"
+              },
+              {
+                "type": "SMILES",
+                "value": "S(=O)(=O)([O-])[O-].[Na+].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/2Na.H2O4S/c;;1-5(2,3)4/h;;(H2,1,2,3,4)/q2*+1;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filtered"
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated (390 mg of a yellow oil)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "yellow oil"
+              }
+            ],
+            "amount": {
+              "mass": {
+                "value": 390.0,
+                "units": "MILLIGRAM"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "By PSC separation with methylene chloride/ether (1:1)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "methylene chloride ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(Cl)Cl.CCOCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O.CH2Cl2/c1-3-5-4-2;2-1-3/h3-4H2,1-2H3;1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "5-(3-cyclopropylmethoxy-4-methoxyphenyl)-3,5-dimethyl-2-oxazolidinone"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1(CC1)COC=1C=C(C=CC1OC)C1(CN(C(O1)=O)C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C16H21NO4/c1-16(10-17(2)15(18)21-16)12-6-7-13(19-3)14(8-12)20-9-11-4-5-11/h6-8,11H,4-5,9-10H2,1-3H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 212.0,
+                  "units": "MILLIGRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 40.4
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998453",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:21.970609"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-1e350d4ce1b9412d8fe55db4a9c462ac"
+}

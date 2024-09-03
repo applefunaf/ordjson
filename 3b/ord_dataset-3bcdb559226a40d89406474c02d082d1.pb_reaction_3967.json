@@ -1,0 +1,327 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "ClC1C=CC=C(Cl)C=1C([O:6][CH2:7][C:8]1[C:17]2[C:12](=[C:13]([NH:18][C:19](=[O:28])[C:20]3[C:25]([Cl:26])=[CH:24][CH:23]=[CH:22][C:21]=3[Cl:27])[CH:14]=[CH:15][CH:16]=2)[N:11]=[CH:10][CH:9]=1)=O.[OH-].[Na+]>C(O)C.O1CCOCC1.ClCCl>[Cl:27][C:21]1[CH:22]=[CH:23][CH:24]=[C:25]([Cl:26])[C:20]=1[C:19]([NH:18][C:13]1[CH:14]=[CH:15][CH:16]=[C:17]2[C:12]=1[N:11]=[CH:10][CH:9]=[C:8]2[CH2:7][OH:6])=[O:28] |f:1.2|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m3_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-(2,6-dichlorobenzoyloxymethyl)-8-(2,6-dichlorobenzoylamino)quinoline"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC1=C(C(=O)OCC2=CC=NC3=C(C=CC=C23)NC(C2=C(C=CC=C2Cl)Cl)=O)C(=CC=C1)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C24H14Cl4N2O3/c25-15-5-2-6-16(26)20(15)23(31)30-19-9-1-4-14-13(10-11-29-22(14)19)12-33-24(32)21-17(27)7-3-8-18(21)28/h1-11H,12H2,(H,30,31)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 100.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sodium hydroxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "[OH-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Na.H2O/h;1H2/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 0.4,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 2.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "dioxane"
+            },
+            {
+              "type": "SMILES",
+              "value": "O1CCOCC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O2/c1-2-6-4-3-5-1/h1-4H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 1.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "dichloromethane"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClCCl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture of 4-(2,6-dichlorobenzoyloxymethyl)-8-(2,6-dichlorobenzoylamino)quinoline (100 mg), 1N sodium hydroxide solution (0.4 ml) in ethanol (2 ml) and dioxane (1 ml) was refluxed for 5 hours. After cooling, the mixture was diluted with dichloromethane, washed with saturated sodium bicarbonate solution, dried over magnesium sulfate and evaporated in vacuo. The residue was purified by flash chromatography (ethyl acetate-n-hexane) to give 8-(2,6-dichlorobenzoylamino)-4-hydroxymethylquinoline (20 mg)."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "was refluxed for 5 hours",
+      "duration": {
+        "value": 5.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "After cooling"
+    },
+    {
+      "type": "WASH",
+      "details": "washed with saturated sodium bicarbonate solution",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "sodium bicarbonate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C([O-])(O)=O.[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2O3.Na/c2-1(3)4;/h(H2,2,3,4);/q;+1/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "dried over magnesium sulfate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "magnesium sulfate"
+              },
+              {
+                "type": "SMILES",
+                "value": "S(=O)(=O)([O-])[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "evaporated in vacuo"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The residue was purified by flash chromatography (ethyl acetate-n-hexane)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate n-hexane"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC.CCCCCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C6H14.C4H8O2/c1-3-5-6-4-2;1-3-6-4(2)5/h3-6H2,1-2H3;3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "8-(2,6-dichlorobenzoylamino)-4-hydroxymethylquinoline"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC1=C(C(=O)NC=2C=CC=C3C(=CC=NC23)CO)C(=CC=C1)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C17H12Cl2N2O2/c18-12-4-2-5-13(19)15(12)17(23)21-14-6-1-3-11-10(9-22)7-8-20-16(11)14/h1-8,22H,9H2,(H,21,23)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 20.0,
+                  "units": "MILLIGRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 30.0
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06008230",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:21.052355"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-c074ef647109421f93aa68b220ac6177"
+}

@@ -1,0 +1,344 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[C:1]([O:5][C:6]([N:8]1[CH2:13][CH2:12][NH:11][C:10](=[O:14])[CH2:9]1)=[O:7])([CH3:4])([CH3:3])[CH3:2].[H-].[Na+].[CH2:17](Br)[C:18]1[CH:23]=[CH:22][CH:21]=[CH:20][CH:19]=1>CN(C=O)C>[CH2:17]([N:11]1[CH2:12][CH2:13][N:8]([C:6]([O:5][C:1]([CH3:4])([CH3:2])[CH3:3])=[O:7])[CH2:9][C:10]1=[O:14])[C:18]1[CH:23]=[CH:22][CH:21]=[CH:20][CH:19]=1 |f:1.2|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "benzyl bromide"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C1=CC=CC=C1)Br"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H7Br/c8-6-7-4-2-1-3-5-7/h1-5H,6H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 1.16,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m1_m4_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Intermediate 1"
+            },
+            {
+              "type": "NAME",
+              "value": "4-(tert-Butyloxycarbonyl)piperazin-2-one"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(C)(C)OC(=O)N1CC(NCC1)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H16N2O3/c1-9(2,3)14-8(13)11-5-4-10-7(12)6-11/h4-6H2,1-3H3,(H,10,12)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 1.5,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sodium hydride"
+            },
+            {
+              "type": "SMILES",
+              "value": "[H-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Na.H/q+1;-1"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "DMF"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN(C)C=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H7NO/c1-4(2)3-5/h3H,1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 30.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 60.0,
+        "units": "CELSIUS"
+      }
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a stirred solution solution of Intermediate 1 (1.5 g, 7.5 mmol) in DMF (30 mL) at 0° C., under nitrogen, was added sodium hydride (330 mg of a 60% dispersion in mineral oil. 8.3 mmol). The solution was stirred for 90 min before benzyl bromide (1.16 mL, 9.8 mmol) was added. The solution was heated at 60° C. for 3 h then the solvent was removed in vacuo. The residue was partitioned between EtOAc (2×50 mL) and water (50 mL). The combined organic phases were dried (Na2SO4) and evaporated. The residue was chromatographed on silica, eluting with petrol:EtOAc (1:1), to afford the title amide (2.11 g, 97%) as a colourless solid. m.p. 85-88° C., 1H NMR (250 MHz, CDCl3) δ 1.46 (9H, s), 3.23-3.28 (2H, m), 3.56-3.61 (2H, m), 4.16 (2H, s), 4.63 (2H, s), 7.24-7.35 (5H, m)."
+  },
+  "workups": [
+    {
+      "type": "ADDITION",
+      "details": "was added"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the solvent was removed in vacuo"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The residue was partitioned between EtOAc (2×50 mL) and water (50 mL)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "EtOAc"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOC(=O)C"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 50.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 50.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "The combined organic phases were dried (Na2SO4)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "Na2SO4"
+              },
+              {
+                "type": "SMILES",
+                "value": "[O-]S(=O)(=O)[O-].[Na+].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/2Na.H2O4S/c;;1-5(2,3)4/h;;(H2,1,2,3,4)/q2*+1;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "evaporated"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The residue was chromatographed on silica"
+    },
+    {
+      "type": "WASH",
+      "details": "eluting with petrol:EtOAc (1:1)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "petrol EtOAc"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "amide"
+            },
+            {
+              "type": "NAME",
+              "value": "1-Benzyl-4-(tert-butyloxycarbonyl)piperazin-2-one"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C1=CC=CC=C1)N1C(CN(CC1)C(=O)OC(C)(C)C)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C16H22N2O3/c1-16(2,3)21-15(20)18-10-9-17(14(19)12-18)11-13-7-5-4-6-8-13/h4-8H,9-12H2,1-3H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 2.11,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 97.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 96.9
+              }
+            }
+          ],
+          "isolated_color": "colourless",
+          "texture": {
+            "type": "CUSTOM",
+            "details": "solid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998415",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:17.989915"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-18b6f11b6f284f36b36e31f4de70ec5b"
+}

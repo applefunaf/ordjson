@@ -1,0 +1,203 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][C:2]1[S:3][C:4]2[CH:10]=[CH:9][CH:8]=[CH:7][C:5]=2[N:6]=1.[I:11][CH2:12][CH2:13][CH2:14][CH2:15][CH2:16][CH2:17][CH3:18]>>[I-:11].[CH2:12]([N+:6]1[C:5]2[CH:7]=[CH:8][CH:9]=[CH:10][C:4]=2[S:3][C:2]=1[CH3:1])[CH2:13][CH2:14][CH2:15][CH2:16][CH2:17][CH3:18] |f:2.3|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-methylbenzothiazole"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC=1SC2=C(N1)C=CC=C2"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H7NS/c1-6-9-7-4-2-3-5-8(7)10-6/h2-5H,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 10.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "1-iodoheptane"
+            },
+            {
+              "type": "SMILES",
+              "value": "ICCCCCCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H15I/c1-2-3-4-5-6-7-8/h2-7H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 110.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A solution of 2-methylbenzothiazole (10.0 g, 0.067 mol) and 1-iodoheptane (110 mL, 0.67 mol) in 100 mL of acetronitrile was refluxed under nitrogen for 48 hours. The mixture was cooled, filtered, and the solid formed was washed with diethyl ether and recrystallized from ethanol-ethyl acetate to give 3-heptyl-2-methylbenzothiazolium iodide as a light purple solid, mp 110-113° C."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "The mixture was cooled"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filtered"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the solid formed"
+    },
+    {
+      "type": "WASH",
+      "details": "was washed with diethyl ether",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "diethyl ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "recrystallized from ethanol-ethyl acetate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethanol ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)O.C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2.C2H6O/c1-3-6-4(2)5;1-2-3/h3H2,1-2H3;3H,2H2,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3-heptyl-2-methylbenzothiazolium iodide"
+            },
+            {
+              "type": "SMILES",
+              "value": "[I-].C(CCCCCC)[N+]1=C(SC2=C1C=CC=C2)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C15H22NS.HI/c1-3-4-5-6-9-12-16-13(2)17-15-11-8-7-10-14(15)16;/h7-8,10-11H,3-6,9,12H2,1-2H3;1H/q+1;/p-1"
+            }
+          ],
+          "isolated_color": "light purple",
+          "texture": {
+            "type": "CUSTOM",
+            "details": "solid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06001331",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:15.709042"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-7ef6d825ff6b47c2bd8b1433ab51f5e9"
+}

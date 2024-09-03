@@ -1,0 +1,296 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[Li][C:2]([CH3:5])([CH3:4])[CH3:3].CCCCC.F[C:12]1[CH:17]=[CH:16][CH:15]=[CH:14][C:13]=1[C:18]1[O:19][CH2:20][C:21]([CH3:24])([CH3:23])[N:22]=1>C1COCC1>[C:2]([C:12]1[CH:17]=[CH:16][CH:15]=[CH:14][C:13]=1[C:18]1[O:19][CH2:20][C:21]([CH3:24])([CH3:23])[N:22]=1)([CH3:5])([CH3:4])[CH3:3]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m3_m4_m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "solution"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "t-BuLi"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Li]C(C)(C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H9.Li/c1-4(2)3;/h1-3H3;"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "pentane"
+            },
+            {
+              "type": "SMILES",
+              "value": "CCCCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C5H12/c1-3-5-4-2/h3-5H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 161.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-(2-fluorophenyl)-4,4-dimethyl-2-oxazoline"
+            },
+            {
+              "type": "SMILES",
+              "value": "FC1=C(C=CC=C1)C=1OCC(N1)(C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C11H12FNO/c1-11(2)7-14-10(13-11)8-5-3-4-6-9(8)12/h3-6H,7H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 48.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "THF"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1CCOC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O/c1-2-4-5-3-1/h1-4H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 320.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A 1.7M solution of t-BuLi in pentane (161 mL, 274 mmol) was added dropwise to a solution of 2-(2-fluorophenyl)-4,4-dimethyl-2-oxazoline [cf. Meyers A. I. and Williams B. E., Tetrahedron Letters, 223-226(1978)] (48.0 g., 249 mmol) in THF (320 mL), maintaining the reaction temperature between -45 and -40° C. with a dry-ice/acetone cooling bath. The resulting reaction mixture was maintained at ≤-40° C. with a dry-ice/acetonitrile bath, and monitored to completion by GLC over 20 min. This mixture was poured onto ice and extracted three times with ether. These extracts were combined, dried (MgSO4), concentrated and distilled under vacuum to afford 56.87 g of 2-(2-tert-butylphenyl)-4,4-dimethyl-2-oxazoline, a 93% yield."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "maintaining the reaction temperature between -45 and -40° C. with a dry-ice/acetone cooling bath"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The resulting reaction mixture"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "was maintained at ≤-40° C. with a dry-ice/acetonitrile bath"
+    },
+    {
+      "type": "ADDITION",
+      "details": "This mixture was poured onto ice"
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "extracted three times with ether",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "dried (MgSO4)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "MgSO4"
+              },
+              {
+                "type": "SMILES",
+                "value": "[O-]S(=O)(=O)[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated"
+    },
+    {
+      "type": "DISTILLATION",
+      "details": "distilled under vacuum"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 20.0,
+        "units": "MINUTE"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-(2-tert-butylphenyl)-4,4-dimethyl-2-oxazoline"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(C)(C)C1=C(C=CC=C1)C=1OCC(N1)(C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C15H21NO/c1-14(2,3)12-9-7-6-8-11(12)13-16-15(4,5)10-17-13/h6-9H,10H2,1-5H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 56.87,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 93.0
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998466",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:36.929291"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-0ef7846b0e8340989b36b23fb111a016"
+}

@@ -1,0 +1,340 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "I[C:2]1[CH:10]=[CH:9][CH:8]=[CH:7][C:3]=1[C:4]([OH:6])=[O:5].C([O-])([O-])=O.[K+].[K+].[NH2:17][C:18]1[N:22]([CH:23]([CH3:25])[CH3:24])[N:21]=[CH:20][CH:19]=1>CN(C=O)C.O.C([O-])(=O)C.[Cu+2].C([O-])(=O)C>[CH:23]([N:22]1[C:18]([NH:17][C:2]2[C:3](=[CH:7][CH:8]=[CH:9][CH:10]=2)[C:4]([OH:6])=[O:5])=[CH:19][CH:20]=[N:21]1)([CH3:25])[CH3:24] |f:1.2.3,6.7.8.9|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "5-amino-1-isopropylpyrazole"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC1=CC=NN1C(C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H11N3/c1-5(2)9-6(7)3-4-8-9/h3-5H,7H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 27.3,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "copper (II) acetate monohydrate"
+            },
+            {
+              "type": "SMILES",
+              "value": "O.C(C)(=O)[O-].[Cu+2].C(C)(=O)[O-]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/2C2H4O2.Cu.H2O/c2*1-2(3)4;;/h2*1H3,(H,3,4);;1H2/q;;+2;/p-2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.9,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "CATALYST"
+        }
+      ]
+    },
+    "m1_m4_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-iodobenzoic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "IC1=C(C(=O)O)C=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H5IO2/c8-6-4-2-1-3-5(6)7(9)10/h1-4H,(H,9,10)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 54.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "K2CO3"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(=O)([O-])[O-].[K+].[K+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2O3.2K/c2-1(3)4;;/h(H2,2,3,4);;/q;2*+1/p-2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 33.4,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "DMF"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN(C)C=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H7NO/c1-4(2)3-5/h3H,1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 570.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To 2-iodobenzoic acid (54 g, 0.218 mol) in DMF (570 ml) was added K2CO3 (33.4 g, 0.242 mol), then 5-amino-1-isopropylpyrazole (27.3 g, 0.218 mol) and finally copper (II) acetate monohydrate (0.9 g, 4.5 mmol). The reaction mixture was refluxed overnight and then the DMF was evaporated. The residue was poured into ice/water and then the mixture was acidified with acetic acid and concentrated HCl to a pH of about 4. A precipitate formed which was collected by filtration, washed with water and dried in a vacuum oven at 40° C. to afford 52 g (97.2 %) of N-(1-isopropylpyrazol-5-yl)anthranilic acid."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "The reaction mixture was refluxed overnight",
+      "duration": {
+        "value": 8.0,
+        "precision": 8.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the DMF was evaporated",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "DMF"
+              },
+              {
+                "type": "SMILES",
+                "value": "CN(C)C=O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C3H7NO/c1-4(2)3-5/h3H,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "ADDITION",
+      "details": "The residue was poured into ice/water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ice water"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "A precipitate formed which"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "was collected by filtration"
+    },
+    {
+      "type": "WASH",
+      "details": "washed with water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried in a vacuum oven at 40° C.",
+      "temperature": {
+        "setpoint": {
+          "value": 40.0,
+          "units": "CELSIUS"
+        }
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-(1-isopropylpyrazol-5-yl)anthranilic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(C)N1N=CC=C1NC=1C(C(=O)O)=CC=CC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C13H15N3O2/c1-9(2)16-12(7-8-14-16)15-11-6-4-3-5-10(11)13(17)18/h3-9,15H,1-2H3,(H,17,18)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 52.0,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 97.2
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 97.3
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06008226",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:17.286435"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-f80ad7e3fea7412aa0060b9be9594e59"
+}

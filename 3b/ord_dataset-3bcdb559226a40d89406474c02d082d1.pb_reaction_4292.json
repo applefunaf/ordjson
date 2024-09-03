@@ -1,0 +1,219 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[Cl:1][C:2]([F:6])=[C:3]([F:5])[F:4].[CH2:7]=[CH:8][CH:9]=[CH2:10]>>[Cl:1][C:2]1([F:6])[C:3]([F:5])([F:4])[CH2:10][CH:9]=[CH:8][CH2:7]1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m0_m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "chlorotrifluoroethylene"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC(=C(F)F)F"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2ClF3/c3-1(4)2(5)6"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "1,3-butadiene"
+            },
+            {
+              "type": "SMILES",
+              "value": "C=CC=C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H6/c1-3-4-2/h3-4H,1-2H2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "4-chloro-4,5,5-trifluorocyclohexene was prepared in the same manner as in Example 12 except that chlorotrifluoroethylene (CTFE) and 1,3-butadiene were continuously injected into the flow reactor at the rates of 65.2 g/hr and 30.3 g/hr, respectively. Then, 8.6 g of unreacted chlorotrifluoroethylene (CTFE) was recovered. The resultant was purified by steam distillation, and then the water layer was removed to give 64.9 g of the mixture (GC%=61%)."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "Then, 8.6 g of unreacted chlorotrifluoroethylene (CTFE) was recovered",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "chlorotrifluoroethylene"
+              },
+              {
+                "type": "SMILES",
+                "value": "ClC(=C(F)F)F"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C2ClF3/c3-1(4)2(5)6"
+              }
+            ],
+            "amount": {
+              "mass": {
+                "value": 8.6,
+                "units": "GRAM"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DISTILLATION",
+      "details": "The resultant was purified by steam distillation"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the water layer was removed",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-chloro-4,5,5-trifluorocyclohexene"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC1(CC=CCC1(F)F)F"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H6ClF3/c7-5(8)3-1-2-4-6(5,9)10/h1-2H,3-4H2"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "mixture"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 64.9,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 61.0
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06008407",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:26.797109"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-159a7e97243245ef94e4260a64b45480"
+}

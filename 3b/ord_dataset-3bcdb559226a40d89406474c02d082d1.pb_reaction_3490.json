@@ -1,0 +1,299 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[F:1][C:2]1([F:17])[C:7]([F:9])([F:8])[C:6]([F:11])([F:10])[C:5]([F:13])([F:12])[C:4]([F:15])([F:14])[C:3]1=[O:16].[Cl:18][C:19]([Cl:24])([Cl:23])C(O)=O>CN(C)P(N(C)C)(N(C)C)=O>[F:1][C:2]1([F:17])[C:7]([F:9])([F:8])[C:6]([F:10])([F:11])[C:5]([F:12])([F:13])[C:4]([F:14])([F:15])[C:3]1([C:19]([Cl:24])([Cl:23])[Cl:18])[OH:16]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hexamethylphosphoramide"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN(P(=O)(N(C)C)N(C)C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H18N3OP/c1-7(2)11(10,8(3)4)9(5)6/h1-6H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 113.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m1_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "perfluorocyclohexanone"
+            },
+            {
+              "type": "SMILES",
+              "value": "FC1(C(C(C(C(C1(F)F)(F)F)(F)F)(F)F)=O)F"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6F10O/c7-2(8)1(17)3(9,10)5(13,14)6(15,16)4(2,11)12"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 30.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "trichloroacetic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC(C(=O)O)(Cl)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2HCl3O2/c3-2(4,5)1(6)7/h(H,6,7)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 31.7,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ketone"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": -10.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "stirring"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A solution of 30 g of perfluorocyclohexanone and 31.7 g of trichloroacetic acid was stirred in a pre-dried reaction vessel containing 113 mL of hexamethylphosphoramide. This mixture was cooled to -10° C. in a dry ice/acetone bath. Slight gas evolution was noted before and during the ketone addition. The stirred milky white reaction mixture was maintained at about 0° C. for an hour and then allowed to warm to 23° C. and stirring was continued 17 hours. The clear yellow solution was quenched with 150 mL of 10% HCl and then transferred to a separatory funnel with 400 mL of ethyl ether. This organic phase was washed with 4×500 mL of dilute HCl and then 300 mL of saturated NaCl solution. The solvent was removed by evaporation. The residue (33.7 g) contained 40.8% product by GC, confirmed by fluorine NMR. This carbinol can be converted to the corresponding acrylate by methods previously described (cf. Example 24)."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "The stirred milky white reaction mixture was maintained at about 0° C. for an hour",
+      "temperature": {
+        "setpoint": {
+          "value": 0.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "to warm to 23° C.",
+      "temperature": {
+        "setpoint": {
+          "value": 23.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The clear yellow solution was quenched with 150 mL of 10% HCl",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "HCl"
+              },
+              {
+                "type": "SMILES",
+                "value": "Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH/h1H"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 150.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "transferred to a separatory funnel with 400 mL of ethyl ether",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 400.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "This organic phase was washed with 4×500 mL of dilute HCl",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "HCl"
+              },
+              {
+                "type": "SMILES",
+                "value": "Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH/h1H"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 500.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The solvent was removed by evaporation"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 17.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2,2,3,3,4,4,5,5,6,6-decafluoro-1-(trichloromethyl)-1-cyclohexanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "FC1(C(C(C(C(C1(F)F)(F)F)(F)F)(F)F)(O)C(Cl)(Cl)Cl)F"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7HCl3F10O/c8-7(9,10)1(21)2(11,12)4(15,16)6(19,20)5(17,18)3(1,13)14/h21H"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06005137",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:25.511838"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-e936acf9733545889ddf505774b32d9b"
+}

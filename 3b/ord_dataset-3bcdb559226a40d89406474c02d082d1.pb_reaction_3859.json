@@ -1,0 +1,342 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH2:1]([C:8]1[CH:13]=[C:12]([O:14][CH3:15])[CH:11]=[CH:10][C:9]=1[CH2:16][C:17]([OH:19])=O)[C:2]1[CH:7]=[CH:6][CH:5]=[CH:4][CH:3]=1>CCOCC>[CH3:15][O:14][C:12]1[CH:11]=[CH:10][C:9]2[CH2:16][C:17](=[O:19])[C:7]3[CH:6]=[CH:5][CH:4]=[CH:3][C:2]=3[CH2:1][C:8]=2[CH:13]=1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Et2O"
+            },
+            {
+              "type": "SMILES",
+              "value": "CCOCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 330.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-benzyl-4-methoxyphenylacetic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C1=CC=CC=C1)C1=C(C=CC(=C1)OC)CC(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C16H16O3/c1-19-15-8-7-13(11-16(17)18)14(10-15)9-12-5-3-2-4-6-12/h2-8,10H,9,11H2,1H3,(H,17,18)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 3.26,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "polyphosphoric acid"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 165.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "the mixture was stirred briskly for 15 min"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "Finely powdered 2-benzyl-4-methoxyphenylacetic acid (3.26 g, 12.72 mmol) was added to well-stirred polyphosphoric acid (165 g) at 100-110° C. After 15 min, the reaction was poured onto ice (330 g). Et2O (330 mL) was added, and the mixture was stirred briskly for 15 min. The layers were separated, and the aqueous layer was extracted with Et2O (330 mL). The combined organic layers were washed with 5% NaHCO3 (2×80 mL) then with brine (80 mL), dried (MgSO4), and concentrated. The residue was reconcentrated from toluene, then was chromatographed (silica gel, 20% EtOAc/hexanes). The title compound was obtained as a yellow solid (1.44 g, 48%): TLC Rf (20% EtOAc/hexanes) 0.46; 1H NMR (250 MHz, CDCl3) δ 8.07-8.15 (m, 1H), 7.39-7.49 (m, 1H), 7.25-7.48 (m, 2H), 7.19 (d, J=8.3 Hz, 1H), 6.86 (d, J=2.6 Hz, 1H), 6.71 (dd, J=8.3, 2.6 Hz, 1H), 4.21 (s, 2H), 4.11 (s, 2H), 3.77 (s, 3H); FTIR (CCl4) 1680, 1501, 1282, 1270 cm-1 ; MS (ES) m/e 261 (M+Na)+, 256.0 (M+NH4)+, 239.0 (M+H)+."
+  },
+  "workups": [
+    {
+      "type": "ADDITION",
+      "details": "the reaction was poured onto ice (330 g)"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The layers were separated"
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "the aqueous layer was extracted with Et2O (330 mL)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "Et2O"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 330.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "The combined organic layers were washed with 5% NaHCO3 (2×80 mL)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "NaHCO3"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(=O)(O)[O-].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2O3.Na/c2-1(3)4;/h(H2,2,3,4);/q;+1/p-1"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 80.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "with brine (80 mL), dried (MgSO4)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "brine"
+              },
+              {
+                "type": "SMILES",
+                "value": "[Cl-].[Na+].O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH.Na.H2O/h1H;;1H2/q;+1;/p-1"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 80.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "MgSO4"
+              },
+              {
+                "type": "SMILES",
+                "value": "[O-]S(=O)(=O)[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "was chromatographed (silica gel, 20% EtOAc/hexanes)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "EtOAc hexanes"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 15.0,
+        "units": "MINUTE"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "3-Methoxy-5H-dibenzo[a,d]cycloheptene-10(11H)-one"
+            },
+            {
+              "type": "SMILES",
+              "value": "COC=1C=CC2=C(CC3=C(C(C2)=O)C=CC=C3)C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C16H14O2/c1-18-14-7-6-11-10-16(17)15-5-3-2-4-12(15)8-13(11)9-14/h2-7,9H,8,10H2,1H3"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "solid"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 1.44,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 48.0
+              }
+            }
+          ],
+          "texture": {
+            "type": "CUSTOM",
+            "details": "solid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06008213",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:19.389381"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-d02b45046dfa421dba60203736abdd75"
+}

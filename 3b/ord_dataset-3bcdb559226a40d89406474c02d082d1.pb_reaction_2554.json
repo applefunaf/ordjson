@@ -1,0 +1,310 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[NH2:1][C:2]1[CH:12]=[C:11]([O:13][CH2:14][CH2:15][O:16][CH3:17])[C:10]([O:18][CH2:19][CH2:20][O:21][CH3:22])=[CH:9][C:3]=1[C:4]([O:6][CH2:7][CH3:8])=[O:5].P(Cl)(Cl)(Cl)=O.[OH-].[Na+].[CH3:30][N:31]([CH:33]=O)[CH3:32]>C(Cl)Cl>[C:4]([C:3]1[CH:9]=[C:10]([O:18][CH2:19][CH2:20][O:21][CH3:22])[C:11]([O:13][CH2:14][CH2:15][O:16][CH3:17])=[CH:12][C:2]=1[N:1]=[CH:30][N:31]([CH3:33])[CH3:32])([O:6][CH2:7][CH3:8])=[O:5] |f:2.3|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sodium hydroxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "[OH-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Na.H2O/h;1H2/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methylene chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(Cl)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m1_m4_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethyl 2-amino-4,5-bis(2-methoxyethoxy)-benzoate"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC1=C(C(=O)OCC)C=C(C(=C1)OCCOC)OCCOC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C15H23NO6/c1-4-20-15(17)11-9-13(21-7-5-18-2)14(10-12(11)16)22-8-6-19-3/h9-10H,4-8,16H2,1-3H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 15.7,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "phosphorous oxychloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "P(=O)(Cl)(Cl)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Cl3OP/c1-5(2,3)4"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 5.6,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "DMF"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN(C)C=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H7NO/c1-4(2)3-5/h3H,1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 50.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 55.0,
+        "units": "CELSIUS"
+      }
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a stirred solution of 15.7 g (50 mmol) of ethyl 2-amino-4,5-bis(2-methoxyethoxy)-benzoate (Pfizer patent WO 96130347) in 50 ml of DMF at 0° C. was added phosphorous oxychloride (5.6 ml, 60 mmol) during 15 m. The resulting solution was heated at 55° C. for 45 m, cooled, diluted with methylene chloride, and treated at 0° C. with 200 ml of N/i sodium hydroxide during 2 m. The organic layer was separated and washed at 0° C. with water. The solution was dried and evaporated with added toluene present to give 18.4 g of amber oil; NMR (CDCl3) δ 3.02 (s, Me2N)."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "cooled"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The organic layer was separated"
+    },
+    {
+      "type": "WASH",
+      "details": "washed at 0° C. with water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      },
+      "temperature": {
+        "setpoint": {
+          "value": 0.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The solution was dried"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "evaporated with added toluene present",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "toluene"
+              },
+              {
+                "type": "SMILES",
+                "value": "C1(=CC=CC=C1)C"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C7H8/c1-7-5-3-2-4-6-7/h2-6H,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "amber oil"
+            },
+            {
+              "type": "NAME",
+              "value": "N'-[2-Carbethoxy-4,5-bis(2-methoxyethoxy)phenyl]-N,N-dimethylformamidine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(=O)(OCC)C1=C(C=C(C(=C1)OCCOC)OCCOC)N=CN(C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C18H28N2O6/c1-6-24-18(21)14-11-16(25-9-7-22-4)17(26-10-8-23-5)12-15(14)19-13-20(2)3/h11-13H,6-10H2,1-5H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 18.4,
+                  "units": "GRAM"
+                }
+              }
+            }
+          ],
+          "isolated_color": "amber",
+          "texture": {
+            "type": "OIL",
+            "details": "oil"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06002008",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:25.732600"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-729b666d0249474c800fee3e58234841"
+}

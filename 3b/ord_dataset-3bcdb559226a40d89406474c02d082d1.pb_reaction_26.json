@@ -1,0 +1,270 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH2:1]([NH:5][CH2:6][P:7]([OH:10])([OH:9])=[O:8])[C:2]([OH:4])=[O:3].[NH3:11]>O>[CH2:1]([NH:5][CH2:6][PH2:7])[C:2]([O-:4])=[O:3].[NH4+:11].[CH2:1]([NH:5][CH2:6][P:7]([OH:10])([OH:9])=[O:8])[C:2]([OH:4])=[O:3] |f:3.4|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ammonia"
+            },
+            {
+              "type": "SMILES",
+              "value": "N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H3N/h1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 1623.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m6": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m2_m7": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Solution 1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 500.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 968.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ammonia"
+            },
+            {
+              "type": "SMILES",
+              "value": "N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H3N/h1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 85.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "glyphosate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C(=O)O)NCP(=O)(O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H8NO5P/c5-3(6)1-4-2-10(7,8)9/h4H,1-2H2,(H,5,6)(H2,7,8,9)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 2409.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "With stirring"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "In a stirred 10 liter round-bottom flask equipped with a water cooled condenser, thermometer, nitrogen blanket and equilibrating dropping funnel, was charged 500 grams of Solution 1 and 968 grams of water. With stirring, 2409 grams of glyphosate acid in the form of wet cake were added. Then 1623 grams of 25% aqueous ammonia were added at such a rate that the temperature of reaction mixture did not exceed 85° C. The pH of the reaction mixture was measured, and up to 85 grams of 25% aqueous ammonia were added in increments until a pH of 6.3-6.7 was obtained. The assay was determined by high pressure liquid chromatography by standard methods and sufficient additional water added to give an ammonium glyphosate solution with a glyphosate assay of 41.7% a.e. or 525 g a.e./l."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "In a stirred 10 liter round-bottom flask equipped with a water cooled condenser"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "that the temperature of reaction mixture"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "did not exceed 85° C",
+      "temperature": {
+        "setpoint": {
+          "value": 85.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "was obtained"
+    },
+    {
+      "type": "ADDITION",
+      "details": "added"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ammonium glyphosate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C(=O)[O-])NCP.[NH4+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H8NO2P.H3N/c5-3(6)1-4-2-7;/h4H,1-2,7H2,(H,5,6);1H3"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "glyphosate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C(=O)O)NCP(=O)(O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H8NO5P/c5-3(6)1-4-2-10(7,8)9/h4H,1-2H2,(H,5,6)(H2,7,8,9)"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998332",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:16.264317"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-36d1ea93fb564ca2a2e770fd879a0244"
+}

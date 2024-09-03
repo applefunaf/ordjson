@@ -1,0 +1,398 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[N:1]1([CH2:7][CH2:8][O:9][C:10]2[CH:17]=[CH:16][C:13]([C:14]#[N:15])=[CH:12][CH:11]=2)[CH2:6][CH2:5][O:4][CH2:3][CH2:2]1.C(O)C>Cl.O=[Pt]=O.C(Cl)(Cl)Cl>[N:1]1([CH2:7][CH2:8][O:9][C:10]2[CH:17]=[CH:16][C:13]([CH2:14][NH2:15])=[CH:12][CH:11]=2)[CH2:2][CH2:3][O:4][CH2:5][CH2:6]1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m5_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-[2-(4-morpholinyl)ethoxy]benzonitrile"
+            },
+            {
+              "type": "SMILES",
+              "value": "N1(CCOCC1)CCOC1=CC=C(C#N)C=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C13H16N2O2/c14-11-12-1-3-13(4-2-12)17-10-7-15-5-8-16-9-6-15/h1-4H,5-10H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.93,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 100.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "PtO2"
+            },
+            {
+              "type": "SMILES",
+              "value": "O=[Pt]=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/2O.Pt"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 100.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "CATALYST"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "CHCl3"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(Cl)(Cl)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CHCl3/c2-1(3)4/h1H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 4.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "HCl"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/ClH/h1H"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "CATALYST"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture of 4-[2-(4-morpholinyl)ethoxy]benzonitrile (0.93 g, 4 mmol), ethanol (100 mL), CHCl3 (4 mL) and PtO2 (100 mg) was hydrogenated at 45 psi on a Parr hydrogenator for 8 hours. Concentrated HCl (2-3 drops) was then added to the reaction mixture and the hydrogenation was continued for another 10 hours. The catalyst was removed by filtration, the filter cake was washed with ethanol and then the filtrate was evaporated to dryness. The residue was dissolved in water and then was saturated with solid K2CO3. The mixture was extracted with CH2Cl2 and then the CH2Cl2 layer was dried over K2CO3 and evaporated to afford 0.75 g (79%) of 4-[2-(4-morpholinyl)ethoxy]phenylmethylamine."
+  },
+  "workups": [
+    {
+      "type": "WAIT",
+      "details": "the hydrogenation was continued for another 10 hours",
+      "duration": {
+        "value": 10.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The catalyst was removed by filtration"
+    },
+    {
+      "type": "WASH",
+      "details": "the filter cake was washed with ethanol",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the filtrate was evaporated to dryness"
+    },
+    {
+      "type": "DISSOLUTION",
+      "details": "The residue was dissolved in water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "The mixture was extracted with CH2Cl2",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "CH2Cl2"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(Cl)Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "the CH2Cl2 layer was dried over K2CO3",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "CH2Cl2"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(Cl)Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "K2CO3"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(=O)([O-])[O-].[K+].[K+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2O3.2K/c2-1(3)4;;/h(H2,2,3,4);;/q;2*+1/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "evaporated"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 8.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-[2-(4-morpholinyl)ethoxy]phenylmethylamine"
+            },
+            {
+              "type": "SMILES",
+              "value": "N1(CCOCC1)CCOC1=CC=C(C=C1)CN"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C13H20N2O2/c14-11-12-1-3-13(4-2-12)17-10-7-15-5-8-16-9-6-15/h1-4H,5-11,14H2"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 0.75,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 79.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 79.3
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06008226",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:17.566252"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-30f3825258264214a8d1299779c54a1d"
+}

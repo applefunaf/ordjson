@@ -1,0 +1,268 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[C:1]([C:5]1[CH:6]=[C:7]([CH:10]=[C:11]([C:14]([CH3:17])([CH3:16])[CH3:15])[C:12]=1[OH:13])[CH:8]=O)([CH3:4])([CH3:3])[CH3:2].[S:18]1[CH2:22][C:21](=[O:23])[NH:20][C:19]1=[O:24].C([O-])(=O)C.[Na+]>C(O)(=O)C>[CH3:16][C:14]([C:11]1[CH:10]=[C:7]([CH:8]=[C:22]2[S:18][C:19](=[O:24])[NH:20][C:21]2=[O:23])[CH:6]=[C:5]([C:1]([CH3:3])([CH3:2])[CH3:4])[C:12]=1[OH:13])([CH3:15])[CH3:17] |f:2.3|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acetic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H4O2/c1-2(3)4/h1H3,(H,3,4)"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 175.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m1_m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3,5-di-tert-butyl-4-hydroxybenzaldehyde"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(C)(C)C=1C=C(C=O)C=C(C1O)C(C)(C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C15H22O2/c1-14(2,3)11-7-10(9-16)8-12(13(11)17)15(4,5)6/h7-9,17H,1-6H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 41.7,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2,4-thiazolidinedione"
+            },
+            {
+              "type": "SMILES",
+              "value": "S1C(NC(C1)=O)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H3NO2S/c5-2-1-7-3(6)4-2/h1H2,(H,4,5,6)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 25.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sodium acetate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)[O-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H4O2.Na/c1-2(3)4;/h1H3,(H,3,4);/q;+1/p-1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 29.5,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "the mixture was stirred"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a flask containing 41.7 g (0.18 moles) of 3,5-di-tert-butyl-4-hydroxybenzaldehyde, 25 g (0.21 moles) of 2,4-thiazolidinedione and 29.5 g (0.36 moles) of anhydrous sodium acetate were added. To these solids 175 ml of glacial acetic acid was added and the mixture was stirred and refluxed for 18 hours. The mixture was allowed to cool to room temperature and the precipitated solid was collected by filtration. The precipitate was rinsed with 1:1 water/ethanol then dried. The dried solid was slurried in 300 ml of methylene chloride for five hours, then collected and dried to yield 38.7 g of the sub-titled intermediate."
+  },
+  "workups": [
+    {
+      "type": "ADDITION",
+      "details": "were added"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "refluxed for 18 hours",
+      "duration": {
+        "value": 18.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "the precipitated solid was collected by filtration"
+    },
+    {
+      "type": "WASH",
+      "details": "The precipitate was rinsed with 1:1 water/ethanol",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water ethanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "O.C(C)O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C2H6O.H2O/c1-2-3;/h3H,2H2,1H3;1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "then dried"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "collected"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 5.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sub-titled intermediate"
+            },
+            {
+              "type": "NAME",
+              "value": "5-{[3,5-bis(1,1-dimethylethyl)-4-hydroxyphenyl]}methylene-2,4-thiazolidinedione"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC(C)(C)C=1C=C(C=C(C1O)C(C)(C)C)C=C1C(NC(S1)=O)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C18H23NO3S/c1-17(2,3)11-7-10(8-12(14(11)20)18(4,5)6)9-13-15(21)19-16(22)23-13/h7-9,20H,1-6H3,(H,19,21,22)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 38.7,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 64.5
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06005142",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:25.437950"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-54c1162cbb884b8e99eed9ab3b699091"
+}

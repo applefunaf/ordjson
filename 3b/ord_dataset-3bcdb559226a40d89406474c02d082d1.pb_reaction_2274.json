@@ -1,0 +1,205 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[S:1]1[C:5]2[C:6]([C:10]([O:12][CH3:13])=[O:11])=[CH:7][CH:8]=[CH:9][C:4]=2[N:3]=N1>O1CCOCC1.[Pd]>[NH2:3][C:4]1[C:5]([SH:1])=[C:6]([CH:7]=[CH:8][CH:9]=1)[C:10]([O:12][CH3:13])=[O:11]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methyl benzo-1,2,3-thiadiazole-7-carboxylate"
+            },
+            {
+              "type": "SMILES",
+              "value": "S1N=NC2=C1C(=CC=C2)C(=O)OC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H6N2O2S/c1-12-8(11)5-3-2-4-6-7(5)13-10-9-6/h2-4H,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 1.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "dioxane"
+            },
+            {
+              "type": "SMILES",
+              "value": "O1CCOCC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O2/c1-2-6-4-3-5-1/h1-4H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 40.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "palladium-on-charcoal"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Pd]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Pd"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.5,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "CATALYST"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A solution of 1 g of methyl benzo-1,2,3-thiadiazole-7-carboxylate in 40 ml of dioxane is hydrogenated over 0.5 g of palladium-on-charcoal (5%) at 160° C. under an initial pressure of 150 bar. After the starting substance has reacted completely, the catalyst is filtered off and rinsed with dioxane, the filtrate is evaporated, avoiding contact with air, and the residue is purified over silica gel (hexane/ethyl acetate (6:4)). The title compound of melting point 174-175° C. is obtained by this procedure."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "After the starting substance has reacted completely"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "the catalyst is filtered off"
+    },
+    {
+      "type": "WASH",
+      "details": "rinsed with dioxane",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "dioxane"
+              },
+              {
+                "type": "SMILES",
+                "value": "O1CCOCC1"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-2-6-4-3-5-1/h1-4H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the filtrate is evaporated"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the residue is purified over silica gel (hexane/ethyl acetate (6:4))"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "Methyl 3-amino-2-mercaptobenzoate"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC=1C(=C(C(=O)OC)C=CC1)S"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H9NO2S/c1-11-8(10)5-3-2-4-6(9)7(5)12/h2-4,12H,9H2,1H3"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06002013",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:20.780885"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-3ca0b8119f5344e5a7eb428f042f5e73"
+}

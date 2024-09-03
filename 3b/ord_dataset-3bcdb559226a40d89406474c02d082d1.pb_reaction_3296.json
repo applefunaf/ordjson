@@ -1,0 +1,320 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[OH-].[K+].[CH3:3][O:4][N:5]=[C:6]1[C:10]2[CH:11]=[CH:12][CH:13]=[CH:14][C:9]=2[O:8][C:7]1=[N:15][OH:16].[CH2:17]1[O:19][CH2:18]1.C(O)(=O)C>O>[CH3:3][O:4][N:5]=[C:6]([C:7]1[O:19][CH2:18][CH2:17][O:16][N:15]=1)[C:10]1[CH:11]=[CH:12][CH:13]=[CH:14][C:9]=1[OH:8] |f:0.1|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acetic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H4O2/c1-2(3)4/h1H3,(H,3,4)"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m1_m2_m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "potassium hydroxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "[OH-].[K+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/K.H2O/h;1H2/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 19.8,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "benzofuran-2,3-dione 3-(O-methyl-oxime) 2-oxime"
+            },
+            {
+              "type": "SMILES",
+              "value": "CON=C1C(OC2=C1C=CC=C2)=NO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H8N2O3/c1-13-11-8-6-4-2-3-5-7(6)14-9(8)10-12/h2-5,12H,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 38.4,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 400.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethylene oxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1CO1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H4O/c1-2-3-1/h1-2H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 17.6,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "the mixture was stirred for 30 minutes, on which a solution forms"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "At 20° C., 19.8 g (0.3 mol) of potassium hydroxide pellets are added to a suspension of 38.4 g (0.2 mol) of benzofuran-2,3-dione 3-(O-methyl-oxime) 2-oxime in 400 ml of water and the mixture was stirred for 30 minutes, on which a solution forms. At 20° C., 17.6 g (0.4 mol) of ethylene oxide are introduced over a period of 75 minutes, and the mixture is stirred at 20° C. overnight, on which a precipitate forms. The mixture is then stirred at 60° C. for 11 hours, on which the precipitate redissolves. The solution is cooled and acidified to pH 5-6 with glacial acetic acid. The crystalline product is filtered off with suction, washed with 300 ml of water a little at a time and dried at 45° C. in a vacuum drying cabinet. 19.6 g (39.3% of theory) of (5,6-dihydro-[1,4,2]dioxazin-3-yl)-(2-hydroxy-phenyl)-methanone O-methyl-oxime are obtained."
+  },
+  "workups": [
+    {
+      "type": "STIRRING",
+      "details": "the mixture is stirred at 20° C. overnight, on which a precipitate forms",
+      "duration": {
+        "value": 8.0,
+        "precision": 8.0,
+        "units": "HOUR"
+      },
+      "temperature": {
+        "setpoint": {
+          "value": 20.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "STIRRING",
+      "details": "The mixture is then stirred at 60° C. for 11 hours, on which the precipitate",
+      "duration": {
+        "value": 11.0,
+        "units": "HOUR"
+      },
+      "temperature": {
+        "setpoint": {
+          "value": 60.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "DISSOLUTION",
+      "details": "redissolves"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "The solution is cooled"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "The crystalline product is filtered off with suction"
+    },
+    {
+      "type": "WASH",
+      "details": "washed with 300 ml of water a little at a time",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 300.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried at 45° C. in a vacuum",
+      "temperature": {
+        "setpoint": {
+          "value": 45.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "drying cabinet"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 30.0,
+        "units": "MINUTE"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "(5,6-dihydro-[1,4,2]dioxazin-3-yl)-(2-hydroxy-phenyl)-methanone O-methyl-oxime"
+            },
+            {
+              "type": "SMILES",
+              "value": "CON=C(C1=C(C=CC=C1)O)C1=NOCCO1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C11H12N2O4/c1-15-12-10(11-13-17-7-6-16-11)8-4-2-3-5-9(8)14/h2-5,14H,6-7H2,1H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 19.6,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 39.3
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 41.5
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06005104",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:22.994336"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-2b73b2d7dcc5471faca233124fb3b389"
+}

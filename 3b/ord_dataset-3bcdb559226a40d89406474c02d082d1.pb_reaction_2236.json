@@ -1,0 +1,343 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "C1(=O)OC(=O)C=C1.O.[C:9]([OH:21])(=[O:20])[CH2:10][C:11]([CH2:16][C:17]([OH:19])=[O:18])([C:13]([OH:15])=[O:14])[OH:12].[OH-].[NH4+]>O>[C:9]([OH:21])(=[O:20])[CH2:10][C:11]([CH2:16][C:17]([OH:19])=[O:18])([C:13]([OH:15])=[O:14])[OH:12] |f:1.2,3.4|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4_m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "aqueous solution"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ammonium hydroxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "[OH-].[NH4+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H3N.H2O/h1H3;1H2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.44,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2_m6": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "maleic anhydride"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1(\\C=C/C(=O)O1)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H2O3/c5-3-1-2-4(6)7-3/h1-2H"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 19.6,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 40.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "citric acid monohydrate"
+            },
+            {
+              "type": "SMILES",
+              "value": "O.C(CC(O)(C(=O)O)CC(=O)O)(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H8O7.H2O/c7-3(8)1-6(13,5(11)12)2-4(9)10;/h13H,1-2H2,(H,7,8)(H,9,10)(H,11,12);1H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 4.2,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 25.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "the mixture was stirred until all solids"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A slurry of 19.6 g (0.2 mole) maleic anhydride was dissolved in 40 ml water at 80°-95° C. and 4.2 g (0.02 moles) of citric acid monohydrate (Formula weight 210) was added and the mixture was stirred until all solids were in solution, after which the mixture was allowed to cool to 25° C. To this solution at 25° C. was added 60 g of 30% aqueous solution of ammonium hydroxide (0.44 mol NH3). This solution was evaporated to dryness over a period of 8 minutes. The solid was then heated at 235°-245° C. for 5 minutes, removed from the heat, allowed to cool and broken up with a spatula. The solid was then heated at 235°-245° C. for a second 10 minute period, removed from the heat, allowed to cool and broken up with a spatula. Finally, the solid was heated at 235°-245° C. for a third 10 minute period, removed from the heat and allowed to cool to room temperature. The resulting water insoluble copolymer of polysuccinimide and citric acid (21.7 g) was slurried in 29.1 ml of water and a solution of 8.0 g of sodium hydroxide in 12 ml of water was added over 5 minutes. The solution was stirred for 10-20 minutes to give a clear red-brown solution of a copolymer of polyaspartic acid and citric acid."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "This solution was evaporated to dryness over a period of 8 minutes",
+      "duration": {
+        "value": 8.0,
+        "units": "MINUTE"
+      }
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "The solid was then heated at 235°-245° C. for 5 minutes",
+      "duration": {
+        "value": 5.0,
+        "units": "MINUTE"
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "removed from the heat"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "to cool"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "The solid was then heated at 235°-245° C. for a second 10 minute period",
+      "duration": {
+        "value": 10.0,
+        "units": "MINUTE"
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "removed from the heat"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "to cool"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "Finally, the solid was heated at 235°-245° C. for a third 10 minute period",
+      "duration": {
+        "value": 10.0,
+        "units": "MINUTE"
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "removed from the"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "heat"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "to cool to room temperature",
+      "temperature": {
+        "control": {
+          "type": "AMBIENT"
+        }
+      }
+    },
+    {
+      "type": "ADDITION",
+      "details": "a solution of 8.0 g of sodium hydroxide in 12 ml of water was added over 5 minutes",
+      "duration": {
+        "value": 5.0,
+        "units": "MINUTE"
+      },
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "sodium hydroxide"
+              },
+              {
+                "type": "SMILES",
+                "value": "[OH-].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Na.H2O/h;1H2/q+1;/p-1"
+              }
+            ],
+            "amount": {
+              "mass": {
+                "value": 8.0,
+                "units": "GRAM"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 12.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "STIRRING",
+      "details": "The solution was stirred for 10-20 minutes",
+      "duration": {
+        "value": 15.0,
+        "precision": 5.0,
+        "units": "MINUTE"
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "polyaspartic acid"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "citric acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(CC(O)(C(=O)O)CC(=O)O)(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H8O7/c7-3(8)1-6(13,5(11)12)2-4(9)10/h13H,1-2H2,(H,7,8)(H,9,10)(H,11,12)"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06001956",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:20.212755"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-cd45fd6c9e1f465098b05fa52cbfe5dd"
+}

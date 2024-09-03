@@ -1,0 +1,331 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH2:1]1[O:11][C:4]2([CH2:9][CH2:8][C:7](=O)[CH2:6][CH2:5]2)[O:3][CH2:2]1.[CH3:12][NH:13][CH3:14].C([BH3-])#N.[Na+]>C(O)(=O)C>[CH2:1]1[O:11][C:4]2([CH2:9][CH2:8][CH:7]([N:13]([CH3:14])[CH3:12])[CH2:6][CH2:5]2)[O:3][CH2:2]1 |f:2.3|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acetic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H4O2/c1-2(3)4/h1H3,(H,3,4)"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 16.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m1_m2_m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "1,4-cyclohexanedione mono-ethylene ketal"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1COC2(CCC(CC2)=O)O1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H12O3/c9-7-1-3-8(4-2-7)10-5-6-11-8/h1-6H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 5.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "dimethylamine"
+            },
+            {
+              "type": "SMILES",
+              "value": "CNC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H7N/c1-3-2/h3H,1-2H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 10.8,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acetic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H4O2/c1-2(3)4/h1H3,(H,3,4)"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 2.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sodium cyanoborohydride"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(#N)[BH3-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH3BN.Na/c2-1-3;/h2H3;/q-1;+1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 3.62,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 0.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "the mixture was stirred at 0° C. for 1.5 hours"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a solution of 5.0 gm (32 mMol) 1,4-cyclohexanedione mono-ethylene ketal and 10.80 gm (240 mMol) dimethylamine were added 2.0 mL acetic acid and the mixture was stirred at 0° C. for 1.5 hours. To this solution were then added 3.62 gm (58 mMol) sodium cyanoborohydride and the reaction stirred for an additional hour at ambient. The pH of the reaction mixture was adjusted to ~7 with 16 mL acetic acid and stirred 18 hours at ambient. The volatiles were removed under reduced pressure and the residue dissolved in cold 5% tartaric acid solution and then the aqueous phase was made basic with 5N sodium hydroxide. This aqueous phase was extracted well with dichloromethane. These organic extracts were combined and concentrated under reduced pressure to give 5.04 gm (85%) of the title compound as an oil."
+  },
+  "workups": [
+    {
+      "type": "STIRRING",
+      "details": "the reaction stirred for an additional hour at ambient"
+    },
+    {
+      "type": "STIRRING",
+      "details": "stirred 18 hours at ambient",
+      "duration": {
+        "value": 18.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The volatiles were removed under reduced pressure"
+    },
+    {
+      "type": "DISSOLUTION",
+      "details": "the residue dissolved in cold 5% tartaric acid solution",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "tartaric acid"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C(O)C(O)C(=O)O)(=O)O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H6O6/c5-1(3(7)8)2(6)4(9)10/h1-2,5-6H,(H,7,8)(H,9,10)"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "This aqueous phase was extracted well with dichloromethane",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "dichloromethane"
+              },
+              {
+                "type": "SMILES",
+                "value": "ClCCl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated under reduced pressure"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 1.5,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "4-dimethylamino-1-cyclohexanone Ethylene Ketal"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1COC2(CCC(CC2)N(C)C)O1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C10H19NO2/c1-11(2)9-3-5-10(6-4-9)12-7-8-13-10/h9H,3-8H2,1-2H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 5.04,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 85.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 85.0
+              }
+            }
+          ],
+          "texture": {
+            "type": "OIL",
+            "details": "oil"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998630",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:34.261361"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-79c8832c9a7846909ff6db4ba0c334c9"
+}

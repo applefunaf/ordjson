@@ -1,0 +1,314 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "Br[CH2:2][CH2:3][O:4][C:5]1[CH:9]=[C:8]([C:10]2[CH:15]=[CH:14][CH:13]=[CH:12][CH:11]=2)[O:7][N:6]=1.[NH:16]1[CH2:21][CH2:20][CH2:19][CH2:18][CH2:17]1>CO>[C:10]1([C:8]2[O:7][N:6]=[C:5]([O:4][CH2:3][CH2:2][N:16]3[CH2:21][CH2:20][CH2:19][CH2:18][CH2:17]3)[CH:9]=2)[CH:15]=[CH:14][CH:13]=[CH:12][CH:11]=1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3-(2-Bromoethoxy)-5-phenylisoxazole"
+            },
+            {
+              "type": "SMILES",
+              "value": "BrCCOC1=NOC(=C1)C1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C11H10BrNO2/c12-6-7-14-11-8-10(15-13-11)9-4-2-1-3-5-9/h1-5,8H,6-7H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 268.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 1.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "piperidine"
+            },
+            {
+              "type": "SMILES",
+              "value": "N1CCCCC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C5H11N/c1-2-4-6-5-3-1/h6H,1-5H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 426.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ice"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 20.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "3-(2-Bromoethoxy)-5-phenylisoxazole (268 mg) was dissolved in methanol (1.0 ml), and piperidine (426 mg) was added thereto, followed by reflux of the resulting mixture for 3 hours. After the reaction mixture was added to ice-cold water (20 ml) and extracted with ether (20 ml×2), the organic layer was dried over anhydrous magnesium sulfate. After filtration, the solvent was evaporated under reduced pressure. The residue was purified by silica gel column chromatography (eluent: ethyl acetate) to obtain the title compound (251 mg, 92%) as colorless crystals."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "by reflux of the resulting mixture for 3 hours",
+      "duration": {
+        "value": 3.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "extracted with ether (20 ml×2)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 20.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "the organic layer was dried over anhydrous magnesium sulfate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "magnesium sulfate"
+              },
+              {
+                "type": "SMILES",
+                "value": "S(=O)(=O)([O-])[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "After filtration"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the solvent was evaporated under reduced pressure"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The residue was purified by silica gel column chromatography (eluent: ethyl acetate)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "5-Phenyl-3-(2-(1-piperidyl)ethoxy)isoxazole"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1(=CC=CC=C1)C1=CC(=NO1)OCCN1CCCCC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C16H20N2O2/c1-3-7-14(8-4-1)15-13-16(17-20-15)19-12-11-18-9-5-2-6-10-18/h1,3-4,7-8,13H,2,5-6,9-12H2"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 251.0,
+                  "units": "MILLIGRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 92.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 92.2
+              }
+            }
+          ],
+          "isolated_color": "colorless",
+          "texture": {
+            "type": "CRYSTAL",
+            "details": "crystals"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06005116",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:24.422706"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-35a1b20fc1d74e029752a7d3c2b0ec6f"
+}

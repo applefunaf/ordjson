@@ -1,0 +1,194 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[NH:1]1[C:9]2[C:4](=[CH:5][CH:6]=[CH:7][CH:8]=2)[C:3]([C:10]([OH:12])=[O:11])=[CH:2]1.[CH2:13]([N:20]1[CH2:25][CH2:24][CH:23]([CH2:26]O)[CH2:22][CH2:21]1)[C:14]1[CH:19]=[CH:18][CH:17]=[CH:16][CH:15]=1>>[NH:1]1[C:9]2[C:4](=[CH:5][CH:6]=[CH:7][CH:8]=2)[C:3]([C:10]([O:12][CH2:26][CH:23]2[CH2:22][CH2:21][N:20]([CH2:13][C:14]3[CH:19]=[CH:18][CH:17]=[CH:16][CH:15]=3)[CH2:25][CH2:24]2)=[O:11])=[CH:2]1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Indole-3-carboxylic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "N1C=C(C2=CC=CC=C12)C(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H7NO2/c11-9(12)7-5-10-8-4-2-1-3-6(7)8/h1-5,10H,(H,11,12)"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acid chloride"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "1-benzyl-4-piperidinemethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C1=CC=CC=C1)N1CCC(CC1)CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C13H19NO/c15-11-13-6-8-14(9-7-13)10-12-4-2-1-3-5-12/h1-5,13,15H,6-11H2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "Indole-3-carboxylic acid was converted to its acid chloride and then reacted with 1-benzyl-4-piperidinemethanol (D7) using the method given in Example 1a. The resulting orange oil was chromatographed on silica gel eluting with chloroform/ethanol (9:1) to afford (1-benzyl-4-piperidyl)methyl indole-3-carboxylate as a yellow oil (88%)"
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "The resulting orange oil was chromatographed on silica gel eluting with chloroform/ethanol (9:1)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "chloroform ethanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(Cl)(Cl)Cl.C(C)O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C2H6O.CHCl3/c1-2-3;2-1(3)4/h3H,2H2,1H3;1H"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "(1-benzyl-4-piperidyl)methyl indole-3-carboxylate"
+            },
+            {
+              "type": "SMILES",
+              "value": "N1C=C(C2=CC=CC=C12)C(=O)OCC1CCN(CC1)CC1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C22H24N2O2/c25-22(20-14-23-21-9-5-4-8-19(20)21)26-16-18-10-12-24(13-11-18)15-17-6-2-1-3-7-17/h1-9,14,18,23H,10-13,15-16H2"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 88.0
+              }
+            }
+          ],
+          "isolated_color": "yellow",
+          "texture": {
+            "type": "OIL",
+            "details": "oil"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998409",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:17.192794"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-7fbd3c741116489abdb6755e5ccd7147"
+}

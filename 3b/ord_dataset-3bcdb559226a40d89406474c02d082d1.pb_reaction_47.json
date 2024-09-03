@@ -1,0 +1,447 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "Cl.[N+:2]([C:5]1[CH:6]=[C:7]([CH:9]=[CH:10][CH:11]=1)[NH2:8])([O-:4])=[O:3].[N:12]1([C:17]#[N:18])[CH2:16][CH2:15][CH2:14][CH2:13]1.ClC1C=CC=CC=1>O>[N+:2]([C:5]1[CH:6]=[C:7]([NH:8][C:17]([N:12]2[CH2:16][CH2:15][CH2:14][CH2:13]2)=[NH:18])[CH:9]=[CH:10][CH:11]=1)([O-:4])=[O:3] |f:0.1|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 200.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3-nitroaniline hydrochloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl.[N+](=O)([O-])C=1C=C(N)C=CC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H6N2O2.ClH/c7-5-2-1-3-6(4-5)8(9)10;/h1-4H,7H2;1H"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "1-pyrrolidinecarbonitrile"
+            },
+            {
+              "type": "SMILES",
+              "value": "N1(CCCC1)C#N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C5H8N2/c6-5-7-3-1-2-4-7/h1-4H2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "chlorobenzene"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H5Cl/c7-6-4-2-1-3-5-6/h1-5H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 12.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "stirred until yellow solids"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "Samples of 3-nitroaniline hydrochloride, 15.5 g, and 1-pyrrolidinecarbonitrile, 9.6 g, were combined with 12 ml of chlorobenzene, and the mixture was warmed to reflux for three hours, and then allowed to cool. The resulting solid mass was taken up in 200 ml of hot water, and the chlorobenzene layer was separated. The aqueous layer was washed with 30 ml of chloroform and the combined organic layers were washed with 50 ml of water. The aqueous layers were combined, warmed, treated with charcoal and filtered hot. The filtrate was allowed to cool, and made strongly basic with 50% sodium hydroxide. This basic mixture was extracted with 200 ml of chloroform. The chloroform extract was concentrated on a steam bath to 150 ml, then diluted with hexanes to 300 ml, and stirred until yellow solids formed, giving 17 g of the N-(3-nitrophenyl)-1-pyrrolidinecarboximidamide. m.p. 117-118° C."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "the mixture was warmed"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "to reflux for three hours",
+      "duration": {
+        "value": 3.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "to cool"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the chlorobenzene layer was separated",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "chlorobenzene"
+              },
+              {
+                "type": "SMILES",
+                "value": "ClC1=CC=CC=C1"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C6H5Cl/c7-6-4-2-1-3-5-6/h1-5H"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "The aqueous layer was washed with 30 ml of chloroform",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "chloroform"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(Cl)(Cl)Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CHCl3/c2-1(3)4/h1H"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 30.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "the combined organic layers were washed with 50 ml of water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 50.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "warmed"
+    },
+    {
+      "type": "ADDITION",
+      "details": "treated with charcoal",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "charcoal"
+              },
+              {
+                "type": "SMILES",
+                "value": "C"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH4/h1H4"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filtered hot"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "to cool"
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "This basic mixture was extracted with 200 ml of chloroform",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "chloroform"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(Cl)(Cl)Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CHCl3/c2-1(3)4/h1H"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 200.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "The chloroform extract",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "chloroform"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(Cl)(Cl)Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CHCl3/c2-1(3)4/h1H"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "was concentrated on a steam bath to 150 ml"
+    },
+    {
+      "type": "ADDITION",
+      "details": "diluted with hexanes to 300 ml",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "hexanes"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "formed"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-(3-nitrophenyl)-1-pyrrolidinecarboximidamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "[N+](=O)([O-])C=1C=C(C=CC1)NC(=N)N1CCCC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C11H14N4O2/c12-11(14-6-1-2-7-14)13-9-4-3-5-10(8-9)15(16)17/h3-5,8H,1-2,6-7H2,(H2,12,13)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 17.0,
+                  "units": "GRAM"
+                }
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998399",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:16.581358"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-d1f8d4c2b6574c249dd1b77c09d6c28a"
+}

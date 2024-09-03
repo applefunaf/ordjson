@@ -1,0 +1,343 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "CN([CH:4]=[N:5][C:6]1[CH:15]=[CH:14][CH:13]=[CH:12][C:7]=1[C:8]([O:10]C)=O)C.C[O-].[Na+].[C:19](#[N:21])[CH3:20].Cl>O.C1(C)C=CC=CC=1>[O:10]=[C:8]1[C:7]2[C:6](=[CH:15][CH:14]=[CH:13][CH:12]=2)[NH:5][CH:4]=[C:20]1[C:19]#[N:21] |f:1.2|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "HCl"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/ClH/h1H"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m1_m2_m3_m6": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methyl 2-(dimethylaminomethyleneamino)benzoate"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN(C)C=NC1=C(C(=O)OC)C=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C11H14N2O2/c1-13(2)8-12-10-7-5-4-6-9(10)11(14)15-3/h4-8H,1-3H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 1.03,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sodium methoxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "C[O-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH3O.Na/c1-2;/h1H3;/q-1;+1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.54,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acetonitrile"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)#N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H3N/c1-2-3/h1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 1.04,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "toluene"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1(=CC=CC=C1)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H8/c1-7-5-3-2-4-6-7/h2-6H,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 10.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A stirred mixture of 1.03 g of methyl 2-(dimethylaminomethyleneamino)benzoate, 0.54 g of sodium methoxide, 1.04 ml of acetonitrile, and 10 ml of toluene was refluxed for 18 h. The mixture was cooled, treated with water, and brought to pH 3 by addition of dilute HCl. The resulting solid was extracted with ethyl acetate. The extract was washed with water, dried and evaporated. The residue was recrystallized from ethanol to give a solid, mp 290-300° C."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "was refluxed for 18 h",
+      "duration": {
+        "value": 18.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "The mixture was cooled"
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "The resulting solid was extracted with ethyl acetate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "The extract was washed with water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "evaporated"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The residue was recrystallized from ethanol",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to give a solid, mp 290-300° C."
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "1,4-Dihydro-4oxo-3-quinolinecarbonitrile"
+            },
+            {
+              "type": "SMILES",
+              "value": "O=C1C(=CNC2=CC=CC=C12)C#N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C10H6N2O/c11-5-7-6-12-9-4-2-1-3-8(9)10(7)13/h1-4,6H,(H,12,13)"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06002008",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:24.663806"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-27e5f83834ba43c1bf159db5906dea3a"
+}

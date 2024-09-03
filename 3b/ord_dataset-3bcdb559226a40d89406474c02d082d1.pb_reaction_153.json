@@ -1,0 +1,323 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[Cl:1][CH2:2][CH2:3][O:4][C:5]1[CH:12]=[CH:11][C:8]([CH2:9]O)=[CH:7][CH:6]=1.S(Br)([Br:15])=O>O1CCOCC1.CCOCC>[Cl:1][CH2:2][CH2:3][O:4][C:5]1[CH:12]=[CH:11][C:8]([CH2:9][Br:15])=[CH:7][CH:6]=1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ether"
+            },
+            {
+              "type": "SMILES",
+              "value": "CCOCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 200.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-(2-Chloroethoxy)benzylalcohol"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClCCOC1=CC=C(CO)C=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H11ClO2/c10-5-6-12-9-3-1-8(7-11)2-4-9/h1-4,11H,5-7H2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "thionylbromide"
+            },
+            {
+              "type": "SMILES",
+              "value": "S(=O)(Br)Br"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Br2OS/c1-4(2)3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 7.13,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "dioxane"
+            },
+            {
+              "type": "SMILES",
+              "value": "O1CCOCC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O2/c1-2-6-4-3-5-1/h1-4H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 100.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To 4-(2-Chloroethoxy)benzylalcohol CAS No. [111728-87-1] (6.4 g, 34.31 mmol) in dioxane (100 mL) at 0° C. was added slowly thionylbromide (7.13 g, 34.31 mmol). The reaction was run at 0° C. after 5 min. The reaction mixture was diluted with ether (200 mL) and washed with H2O (1×30 mL) then NaHCO3 (2×25 mL), and brine (30 mL). The organic extract was dried over MgSO4 and concentrated. The crude product was purified by silica gel chromatography (15% EtOAc/Hex) to yield 5.0 g (58%) of the desired product. Mp=64-66° C.; 1H NMR (DMSO) 7.37 (d, 2H, J=8.8 Hz), 6.93 (d, 2H, J=8.8 Hz), 4.68 (s, 2H), 4.24 (t, 2H, J=5.05 Hz), 3.93 (t, 2 H, J=5.27 Hz); MS eI m/z 248 (M+)."
+  },
+  "workups": [
+    {
+      "type": "WASH",
+      "details": "washed with H2O (1×30 mL)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "H2O"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 30.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "The organic extract"
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "was dried over MgSO4",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "MgSO4"
+              },
+              {
+                "type": "SMILES",
+                "value": "[O-]S(=O)(=O)[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The crude product was purified by silica gel chromatography (15% EtOAc/Hex)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "crude product"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "EtOAc"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOC(=O)C"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 5.0,
+        "units": "MINUTE"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "desired product"
+            },
+            {
+              "type": "NAME",
+              "value": "4-(2-Chloroethoxy)benzylbromide"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClCCOC1=CC=C(CBr)C=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H10BrClO/c10-7-8-1-3-9(4-2-8)12-6-5-11/h1-4H,5-7H2"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 5.0,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 58.0
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998402",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:18.261734"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-e6588f3323434d89aac4fdc627ef4953"
+}

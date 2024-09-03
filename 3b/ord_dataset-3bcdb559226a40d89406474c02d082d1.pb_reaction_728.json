@@ -1,0 +1,281 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[ClH:1].C([NH:9][C:10]1[CH:15]=[C:14]([NH2:16])[C:13]([F:17])=[CH:12][N:11]=1)C1C=CC=CC=1>[Pd].CO>[ClH:1].[NH2:9][C:10]1[CH:15]=[C:14]([NH2:16])[C:13]([F:17])=[CH:12][N:11]=1 |f:4.5|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-benzylamino-4-amino-5-fluoropyridine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C1=CC=CC=C1)NC1=NC=C(C(=C1)N)F"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C12H12FN3/c13-10-8-16-12(6-11(10)14)15-7-9-4-2-1-3-5-9/h1-6,8H,7H2,(H3,14,15,16)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 350.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "palladium on carbon"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Pd]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Pd"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 50.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "CATALYST"
+        }
+      ]
+    },
+    "m4_m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrochloric acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/ClH/h1H"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 400.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 4.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To 4 ml of methanol having added 400 mg of concentrated hydrochloric acid added thereto was added 350 mg of 2-benzylamino-4-amino-5-fluoropyridine together with 50 mg of 10% palladium on carbon, and the mixture was hydrogenated at 40° C. for 2 days. The catalyst was separated by filtration, and the solvent and the like were distilled off under reduced pressure. Procedure of adding 10 ml of distilled water to the residue and concentrating under reduced pressure was repeated 4 times, and the procedure of adding 10 ml of ethanol and concentrating under reduced pressure was repeated twice. 260 mg of the title compound was obtained as a residue in the form of a yellowish orange paste."
+  },
+  "workups": [
+    {
+      "type": "ADDITION",
+      "details": "added"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The catalyst was separated by filtration"
+    },
+    {
+      "type": "DISTILLATION",
+      "details": "the solvent and the like were distilled off under reduced pressure"
+    },
+    {
+      "type": "ADDITION",
+      "details": "Procedure of adding 10 ml of distilled water to the residue",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 10.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrating under reduced pressure"
+    },
+    {
+      "type": "ADDITION",
+      "details": "the procedure of adding 10 ml of ethanol",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 10.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrating under reduced pressure"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 2.0,
+        "units": "DAY"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "2,4-diamino-5-fluoropyridine hydrochloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl.NC1=NC=C(C(=C1)N)F"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C5H6FN3.ClH/c6-3-2-9-5(8)1-4(3)7;/h1-2H,(H4,7,8,9);1H"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 260.0,
+                  "units": "MILLIGRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 98.7
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998436",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:28.019634"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-11c8ba0c99d746d0a02e1644b67a8cda"
+}

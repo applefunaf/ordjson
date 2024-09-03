@@ -1,0 +1,399 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_TYPE",
+      "value": "Ni-catalyzed C(sp2)-C(sp2) Suzuki-Miyaura coupling"
+    }
+  ],
+  "inputs": {
+    "aryl chloride in dioxane": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "ClC1=CC=C(OC)C=C1"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 8.0,
+              "units": "MICROMOLE"
+            }
+          },
+          "reaction_role": "REACTANT",
+          "is_limiting": true
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "dioxane"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1COCCO1"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 44.0,
+              "units": "MICROLITER"
+            },
+            "volume_includes_solutes": true
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ],
+      "addition_order": 3
+    },
+    "boronic acid + water in dioxane": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "OB(O)C1=C(C)C=C(C)C=C1C"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 16.0,
+              "units": "MICROMOLE"
+            }
+          },
+          "reaction_role": "REACTANT",
+          "is_limiting": false
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 40.0,
+              "units": "MICROMOLE"
+            }
+          },
+          "reaction_role": "REAGENT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "dioxane"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1COCCO1"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 40.0,
+              "units": "MICROLITER"
+            },
+            "volume_includes_solutes": true
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ],
+      "addition_order": 2
+    },
+    "Ni(cod)2 + phosphine ligand in dioxane": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Ni(cod)2"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1=C\\CC/C=C\\CC/1.C1=C\\CC/C=C\\CC/1.[Ni]"
+            },
+            {
+              "type": "CAS_NUMBER",
+              "value": "1295-35-8"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.16,
+              "units": "MICROMOLE"
+            }
+          },
+          "reaction_role": "CATALYST"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "dioxane"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1COCCO1"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 16.0,
+              "units": "MICROLITER"
+            },
+            "volume_includes_solutes": true
+          },
+          "reaction_role": "SOLVENT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "PtBu2neopentyl"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC(CP(C(C)(C)C)C(C)(C)C)(C)C"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.32,
+              "units": "MICROMOLE"
+            }
+          },
+          "reaction_role": "CATALYST"
+        }
+      ],
+      "addition_order": 4
+    },
+    "K3PO4 in dioxane ": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "K3PO4"
+            },
+            {
+              "type": "SMILES",
+              "value": "O=P([O-])([O-])[O-].[K+].[K+].[K+]"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 36.0,
+              "units": "MICROMOLE"
+            }
+          },
+          "reaction_role": "REAGENT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "dioxane"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1COCCO1"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 60.0,
+              "units": "MICROLITER"
+            },
+            "volume_includes_solutes": true
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ],
+      "addition_order": 1
+    }
+  },
+  "setup": {
+    "vessel": {
+      "type": "WELL_PLATE",
+      "details": "8 x 30 mm glass vials in 96 well-plate Para-dox Aluminum Reaction Block",
+      "material": {
+        "type": "GLASS"
+      }
+    },
+    "is_automated": false,
+    "environment": {
+      "type": "GLOVE_BOX",
+      "details": "N2 glovebox"
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "DRY_ALUMINUM_PLATE"
+      },
+      "setpoint": {
+        "value": 60.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "STIR_BAR",
+      "details": "Parylene-coated stirrer bars (1.98 x 4.80 mm)"
+    },
+    "reflux": false,
+    "conditions_are_dynamic": false
+  },
+  "notes": {
+    "is_heterogeneous": true,
+    "is_sensitive_to_oxygen": true,
+    "procedure_details": "pre-ligate Ni(cod)2 and phosphine ligand in dioxane for 15 minutes in a separate plate "
+  },
+  "workups": [
+    {
+      "type": "ADDITION",
+      "details": "Dilute with acetonitrile",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "acetonitrile"
+              },
+              {
+                "type": "SMILES",
+                "value": "CC#N"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 340.0,
+                "units": "MICROLITER"
+              },
+              "volume_includes_solutes": false
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      },
+      "stirring": {
+        "type": "STIR_BAR"
+      },
+      "is_automated": false
+    },
+    {
+      "type": "ALIQUOT",
+      "amount": {
+        "volume": {
+          "value": 47.0,
+          "units": "MICROLITER"
+        }
+      },
+      "is_automated": false
+    },
+    {
+      "type": "CUSTOM",
+      "details": "Diluent solution was made in 1 L batches with 950 mL acetonitrile, 25 mL water, 25 mL glacial acetic acid, and 53 mg 4,4’-di-tert-butylbiphenyl as an external standard (0.2 equiv standard per reaction). Aliquot taken from each well (47 ul) is added into 753 ul of diluent solution",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "4,4’-di-tert-butylbiphenyl"
+              },
+              {
+                "type": "SMILES",
+                "value": "CC(C)(C)c1ccc(-c2ccc(C(C)(C)C)cc2)cc1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 1.6,
+                "units": "MICROMOLE"
+              }
+            },
+            "reaction_role": "INTERNAL_STANDARD"
+          }
+        ]
+      },
+      "is_automated": false
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 18.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "SMILES",
+              "value": "CC1=CC(C)=CC(C)=C1C2=CC=C(OC)C=C2"
+            }
+          ],
+          "is_desired_product": true,
+          "measurements": [
+            {
+              "analysis_key": "UPLC-MS",
+              "type": "YIELD",
+              "details": "Reaction yields are based on response factors calculated for the starting material and desired product relative to external standard.",
+              "uses_internal_standard": true,
+              "is_normalized": true,
+              "uses_authentic_standard": false,
+              "percentage": {
+                "value": 0.0
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ],
+      "analyses": {
+        "UPLC-MS": {
+          "type": "LCMS",
+          "is_of_isolated_species": false,
+          "instrument_manufacturer": "Waters Acquity UPLC-MS "
+        }
+      }
+    }
+  ],
+  "provenance": {
+    "doi": "10.26434/chemrxiv.14388557.v1",
+    "publication_url": "https://chemrxiv.org/articles/preprint/Linking_Mechanistic_Analysis_of_Catalytic_Reactivity_Cliffs_to_Ligand_Classification/14388557",
+    "record_created": {
+      "time": {
+        "value": "6/10/2021, 10:43:43 PM"
+      },
+      "person": {
+        "username": "beef-broccoli",
+        "name": "Jason Wang",
+        "orcid": "0000-0001-5826-2554",
+        "organization": "Princeton/UCLA",
+        "email": "wang10@g.ucla.edu"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Wed Jun 16 13:19:51 2021"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-3a7d4490bed440ac9f5853f60c0ce086"
+}

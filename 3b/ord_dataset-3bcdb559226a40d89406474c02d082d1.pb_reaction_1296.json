@@ -1,0 +1,223 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[NH2:1][C:2]1[CH:7]=[CH:6][C:5]([S:8]([NH:11][C:12]2[CH:17]=[C:16](Cl)[N:15]=[C:14]([N:19]([CH3:21])[CH3:20])[N:13]=2)(=[O:10])=[O:9])=[CH:4][CH:3]=1.[CH3:22][NH2:23]>C(O)C>[NH2:1][C:2]1[CH:7]=[CH:6][C:5]([S:8]([NH:11][C:12]2[CH:17]=[C:16]([NH:23][CH3:22])[N:15]=[C:14]([N:19]([CH3:21])[CH3:20])[N:13]=2)(=[O:10])=[O:9])=[CH:4][CH:3]=1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-amino-N-(2-dimethylamino-6-chloro-pyrimidin-4-yl)-benzenesulfonamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC1=CC=C(C=C1)S(=O)(=O)NC1=NC(=NC(=C1)Cl)N(C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C12H14ClN5O2S/c1-18(2)12-15-10(13)7-11(16-12)17-21(19,20)9-5-3-8(14)4-6-9/h3-7H,14H2,1-2H3,(H,15,16,17)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.5,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methylamine"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH5N/c1-2/h2H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 20.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 130.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "stirred in an autoclave at 130° C. for 4 hours"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "0.50 g (0.00153 mol) of 4-amino-N-(2-dimethylamino-6-chloro-pyrimidin-4-yl)-benzenesulfonamide were dissolved in 20 ml (0.176 mol) of 8M methylamine in ethanol and stirred in an autoclave at 130° C. for 4 hours. The reaction mixture was freed from solvent and the residue was chromatographed on silica gel with methanol/dichloromethane 1:19. There was obtained 0.10 g (21%) of 4-amino-N-(2-dimethylamino-6-methylamino-pyrimidin-4-yl)-benzenesulfonamide as beige crystals; m.p: 253-254° C."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "the residue was chromatographed on silica gel with methanol/dichloromethane 1:19",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "methanol dichloromethane"
+              },
+              {
+                "type": "SMILES",
+                "value": "CO.ClCCl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2Cl2.CH4O/c2-1-3;1-2/h1H2;2H,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 4.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-amino-N-(2-dimethylamino-6-methylamino-pyrimidin-4-yl)-benzenesulfonamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC1=CC=C(C=C1)S(=O)(=O)NC1=NC(=NC(=C1)NC)N(C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C13H18N6O2S/c1-15-11-8-12(17-13(16-11)19(2)3)18-22(20,21)10-6-4-9(14)5-7-10/h4-8H,14H2,1-3H3,(H2,15,16,17,18)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 0.1,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 21.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 20.3
+              }
+            }
+          ],
+          "isolated_color": "beige",
+          "texture": {
+            "type": "CRYSTAL",
+            "details": "crystals"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998665",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:36.049342"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-7384a68584ab466ab1ff2464fa6662c9"
+}

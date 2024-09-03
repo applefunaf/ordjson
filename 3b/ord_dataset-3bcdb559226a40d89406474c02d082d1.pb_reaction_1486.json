@@ -1,0 +1,281 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[OH-].[Na+].C([O:5][C:6]([C:8]1[N:9]=[C:10]([Cl:13])[S:11][CH:12]=1)=[O:7])C>C(O)C>[Cl:13][C:10]1[S:11][CH:12]=[C:8]([C:6]([OH:7])=[O:5])[N:9]=1 |f:0.1|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "NaOH"
+            },
+            {
+              "type": "SMILES",
+              "value": "[OH-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Na.H2O/h;1H2/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 1.9,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethyl-2-chloro-4-thiazolecarboxylate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)OC(=O)C=1N=C(SC1)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H6ClNO2S/c1-2-10-5(9)4-3-11-6(7)8-4/h3H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 7.6,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 100.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "was stirred at RT for 4 h"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture of NaOH (1.9 g, 47.5 mmol) and ethyl-2-chloro-4-thiazolecarboxylate (7.6 g, 40 mmol) in 100 mL absolute ethanol was stirred at RT for 4 h. After that, ethanol was removed in vacuo and the residue was dissolved in water. The aq layer was washed with ether and then acidified with conc HCl. The solid was filtered and air dried to give 4 g of 2-chloro-4-thiazolecarboxylic acid."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "After that, ethanol was removed in vacuo",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DISSOLUTION",
+      "details": "the residue was dissolved in water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "The aq layer was washed with ether",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "The solid was filtered"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "air dried"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 4.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-chloro-4-thiazolecarboxylic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC=1SC=C(N1)C(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H2ClNO2S/c5-4-6-2(1-9-4)3(7)8/h1H,(H,7,8)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 4.0,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 61.1
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998466",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:38.810574"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-3b6d2607e6f449298751f66f09ae94db"
+}

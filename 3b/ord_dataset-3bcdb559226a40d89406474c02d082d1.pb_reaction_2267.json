@@ -1,0 +1,257 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[S:1]1[C:5]2[C:6]([C:10]([OH:12])=O)=[CH:7][CH:8]=[CH:9][C:4]=2[N:3]=[N:2]1.CN(C)C=O.S(Cl)([Cl:20])=O>C1(C)C=CC=CC=1>[S:1]1[C:5]2[C:6]([C:10]([Cl:20])=[O:12])=[CH:7][CH:8]=[CH:9][C:4]=2[N:3]=[N:2]1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "toluene"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1(=CC=CC=C1)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H8/c1-7-5-3-2-4-6-7/h2-6H,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 1.6,
+              "units": "LITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "benzo-1,2,3-thiadiazole-7-carboxylic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "S1N=NC2=C1C(=CC=C2)C(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H4N2O2S/c10-7(11)4-2-1-3-5-6(4)12-9-8-5/h1-3H,(H,10,11)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 290.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "dimethylformamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN(C=O)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H7NO/c1-4(2)3-5/h3H,1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 3.5,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "thionyl chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "S(=O)(Cl)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Cl2OS/c1-4(2)3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 129.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 85.0,
+        "precision": 5.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "the mixture is stirred at 80-90° C."
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "290 g of benzo-1,2,3-thiadiazole-7-carboxylic acid are suspended in 1.6 l of toluene, 3.5 ml of dimethylformamide and 129 ml of thionyl chloride are added and the mixture is stirred at 80-90° C., the suspension turning into a solution as the release of gas progresses. When the reaction has ended, the solution is cooled and filtered over a little Hyflo, the residue is rinsed with toluene and the filtrate is evaporated. 297 g (93%) of crude acid chloride, which can be further reacted directly, result."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "the solution is cooled"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filtered over a little Hyflo"
+    },
+    {
+      "type": "WASH",
+      "details": "the residue is rinsed with toluene",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "toluene"
+              },
+              {
+                "type": "SMILES",
+                "value": "C1(=CC=CC=C1)C"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C7H8/c1-7-5-3-2-4-6-7/h2-6H,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the filtrate is evaporated"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "297 g (93%) of crude acid chloride, which can be further reacted directly",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "acid chloride"
+              }
+            ],
+            "amount": {
+              "mass": {
+                "value": 297.0,
+                "units": "GRAM"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "result"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Benzo-1,2,3-thiadiazole-7-carbonyl chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "S1N=NC2=C1C(=CC=C2)C(=O)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H3ClN2OS/c8-7(11)4-2-1-3-5-6(4)12-10-9-5/h1-3H"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06002013",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:20.695528"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-5d5a961c60304c3ab9b10703a5dfae27"
+}

@@ -1,0 +1,202 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[OH:1][C:2]1[CH:9]=[CH:8][C:7]([N+:10]([O-:12])=[O:11])=[CH:6][C:3]=1C=O.[CH:13]([O:18][CH3:19])([O:16][CH3:17])OC>CO>[OH:1][C:2]1[CH:9]=[CH:8][C:7]([N+:10]([O-:12])=[O:11])=[CH:6][C:3]=1[CH:13]([O:16][CH3:17])[O:18][CH3:19]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-Hydroxy-5-nitrobenzaldehyde"
+            },
+            {
+              "type": "SMILES",
+              "value": "OC1=C(C=O)C=C(C=C1)[N+](=O)[O-]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H5NO4/c9-4-5-3-6(8(11)12)1-2-7(5)10/h1-4,10H"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 3.34,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 30.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Trimethyl orthoformate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(OC)(OC)OC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H10O3/c1-5-4(6-2)7-3/h4H,1-3H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 20.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "50W"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "The mixture was stirred for 30 min. at room temperature"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "2-Hydroxy-5-nitrobenzaldehyde (3.34 g) was dissolved in methanol (30 ml). Trimethyl orthoformate (20 ml) and then Dowex 50W×8 (H+ form)(generally 2 ml) were added to this solution. The mixture was stirred for 30 min. at room temperature. The resin was removed from the reaction mixture by passing the mixture through an alumina. The filtrate was evaporated to give the title compound (4.0 g) having the following physical data."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "The resin was removed from the reaction mixture"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The filtrate was evaporated"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 30.0,
+        "units": "MINUTE"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "1-Hydroxy-2-dimethoxymethyl-4-nitrobenzene"
+            },
+            {
+              "type": "SMILES",
+              "value": "OC1=C(C=C(C=C1)[N+](=O)[O-])C(OC)OC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H11NO5/c1-14-9(15-2)7-5-6(10(12)13)3-4-8(7)11/h3-5,9,11H,1-2H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 4.0,
+                  "units": "GRAM"
+                }
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06001877",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:19.484479"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-d1b160a14cca469cbc8b12fb400ef927"
+}

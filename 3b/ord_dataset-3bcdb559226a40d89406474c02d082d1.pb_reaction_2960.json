@@ -1,0 +1,254 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[F:1][C:2]1[CH:7]=[CH:6][C:5]([O:8][CH3:9])=[CH:4][C:3]=1[CH:10]=[CH:11]OC.[ClH:14].[NH:15]([C:17]1[CH:22]=[CH:21][N:20]=[CH:19][CH:18]=1)[NH2:16].C1(C)C=CC(S(O)(=O)=O)=CC=1>C(O)C>[ClH:14].[F:1][C:2]1[CH:7]=[CH:6][C:5]([O:8][CH3:9])=[CH:4][C:3]=1[CH2:10][CH:11]=[N:16][NH:15][C:17]1[CH:22]=[CH:21][N:20]=[CH:19][CH:18]=1 |f:1.2,5.6|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m4_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "1-fluoro-4-methoxy-2-(2-methoxyvinyl)benzene"
+            },
+            {
+              "type": "SMILES",
+              "value": "FC1=C(C=C(C=C1)OC)C=COC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C10H11FO2/c1-12-6-5-8-7-9(13-2)3-4-10(8)11/h3-7H,1-2H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 20.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-hydrazinopyridine hydrochloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl.N(N)C1=CC=NC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C5H7N3.ClH/c6-8-5-1-3-7-4-2-5;/h1-4H,6H2,(H,7,8);1H"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 17.7,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "p-toluene sulfonic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1(=CC=C(C=C1)S(=O)(=O)O)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H8O3S/c1-6-2-4-7(5-3-6)11(8,9)10/h2-5H,1H3,(H,8,9,10)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 3.13,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 300.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "with stirring"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a solution of 1-fluoro-4-methoxy-2-(2-methoxyvinyl)benzene (20 g) and 4-hydrazinopyridine hydrochloride (17.7 g) in ethanol (300 ml), p-toluene sulfonic acid (3.13 g) was added, with stirring. The reaction mixture was stirred under reflux for 2 hrs, filtered, and the filtrate was concentrated in vacuo. The residue was recrystallized from methanol to yield 13.24 g (41%) of product, mp 219-220° C."
+  },
+  "workups": [
+    {
+      "type": "STIRRING",
+      "details": "The reaction mixture was stirred"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "under reflux for 2 hrs",
+      "duration": {
+        "value": 2.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filtered"
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "the filtrate was concentrated in vacuo"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The residue was recrystallized from methanol",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "methanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "CO"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "product"
+            },
+            {
+              "type": "NAME",
+              "value": "N-[2-(2-fluoro-5-methoxy-phenyl)ethylidene]-N'-pyridin-4-yl-hydrazine hydrochloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl.FC1=C(C=C(C=C1)OC)CC=NNC1=CC=NC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C14H14FN3O.ClH/c1-19-13-2-3-14(15)11(10-13)4-9-17-18-12-5-7-16-8-6-12;/h2-3,5-10H,4H2,1H3,(H,16,18);1H"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 13.24,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 41.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 40.8
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06004977",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:18.002246"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-f28f2580b498436ea1bc02c647703aed"
+}

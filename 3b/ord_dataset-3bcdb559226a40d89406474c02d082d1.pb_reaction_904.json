@@ -1,0 +1,315 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "Br[CH2:2][C:3]1[CH:12]=[CH:11][C:6]([C:7]([O:9][CH3:10])=[O:8])=[CH:5][CH:4]=1.[CH3:13][NH:14][CH3:15]>CO>[CH3:13][N:14]([CH2:2][C:3]1[CH:12]=[CH:11][C:6]([C:7]([O:9][CH3:10])=[O:8])=[CH:5][CH:4]=1)[CH3:15]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Methyl 4-(bromomethyl)benzoate"
+            },
+            {
+              "type": "SMILES",
+              "value": "BrCC1=CC=C(C(=O)OC)C=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H9BrO2/c1-12-9(11)8-4-2-7(6-10)3-5-8/h2-5H,6H2,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 2.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "dimethylamine"
+            },
+            {
+              "type": "SMILES",
+              "value": "CNC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H7N/c1-3-2/h3H,1-2H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "After stirring for 25 min"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "Methyl 4-(bromomethyl)benzoate (2.0 g, 8.73 mmol) was added to a saturated solution of dimethylamine in methanol. After stirring for 25 min, the solution was concentrated and the residue was partitioned between 1N NaOH and ethyl acetate. The organic layer was washed with saturated brine, dried (MgSO4), filtered, and concentrated to provide the title compound as a colorless liquid (1.67 g, 99%). 1H NMR (250 MHz, CDCl3) δ 8.00 (d, 2H), 7.39 (d, 2H), 3.91 (s, 3H), 3.47 (d, 2H), 2.25 (s, 6H)."
+  },
+  "workups": [
+    {
+      "type": "CONCENTRATION",
+      "details": "the solution was concentrated"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the residue was partitioned between 1N NaOH and ethyl acetate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "NaOH"
+              },
+              {
+                "type": "SMILES",
+                "value": "[OH-].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Na.H2O/h;1H2/q+1;/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "The organic layer was washed with saturated brine",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "brine"
+              },
+              {
+                "type": "SMILES",
+                "value": "[Cl-].[Na+].O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH.Na.H2O/h1H;;1H2/q;+1;/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "dried (MgSO4)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "MgSO4"
+              },
+              {
+                "type": "SMILES",
+                "value": "[O-]S(=O)(=O)[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filtered"
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 25.0,
+        "units": "MINUTE"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "methyl 4-(N,N-dimethylaminomethyl)benzoate"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN(C)CC1=CC=C(C(=O)OC)C=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C11H15NO2/c1-12(2)8-9-4-6-10(7-5-9)11(13)14-3/h4-7H,8H2,1-3H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 1.67,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 99.0
+              }
+            }
+          ],
+          "isolated_color": "colorless",
+          "texture": {
+            "type": "CUSTOM",
+            "details": "liquid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998470",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:31.095742"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-31df0852d3c844bb8a22fc415f184a2e"
+}

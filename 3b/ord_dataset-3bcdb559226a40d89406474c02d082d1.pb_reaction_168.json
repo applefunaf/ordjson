@@ -1,0 +1,229 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "C(OC([N:8]([S:24]([N:27]1[CH2:32][CH2:31][N:30]([C:33]2[CH:38]=[CH:37][C:36]([Cl:39])=[CH:35][CH:34]=2)[CH2:29][CH2:28]1)(=[O:26])=[O:25])[C@H:9]([CH2:17][C:18]1[CH:23]=[CH:22][CH:21]=[CH:20][CH:19]=1)[C:10]([O:12]C(C)(C)C)=[O:11])=O)(C)(C)C.Cl>C(Cl)Cl>[Cl:39][C:36]1[CH:35]=[CH:34][C:33]([N:30]2[CH2:29][CH2:28][N:27]([S:24]([NH:8][C@H:9]([CH2:17][C:18]3[CH:19]=[CH:20][CH:21]=[CH:22][CH:23]=3)[C:10]([OH:12])=[O:11])(=[O:26])=[O:25])[CH2:32][CH2:31]2)=[CH:38][CH:37]=1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "tert-butyl 2-(R)-{tert-butoxycarbonyl-[4-(4-chlorophenyl)piperazine-1sulfonyl]amino}-3-phenylpropionate"
+            },
+            {
+              "type": "NAME",
+              "value": "tert-butyl 2-(R)-{tert-butoxycarbonyl-[4-(4-chlorophenyl)piperazine-1-sulfonyl]amino}-3-phenylpropionate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(C)(C)OC(=O)N([C@@H](C(=O)OC(C)(C)C)CC1=CC=CC=C1)S(=O)(=O)N1CCN(CC1)C1=CC=C(C=C1)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C28H38ClN3O6S/c1-27(2,3)37-25(33)24(20-21-10-8-7-9-11-21)32(26(34)38-28(4,5)6)39(35,36)31-18-16-30(17-19-31)23-14-12-22(29)13-15-23/h7-15,24H,16-20H2,1-6H3/t24-/m1/s1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 579.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrogen chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/ClH/h1H"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methylene chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(Cl)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 20.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "the reaction mixture was stirred at RT"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A solution of tert-butyl 2-(R)-{tert-butoxycarbonyl-[4-(4-chlorophenyl)piperazine-1sulfonyl]amino}-3-phenylpropionate (579 mg, 1.15 mmol), [prepared as described in Step 2 above], in methylene chloride (20 ml) was saturated with dry hydrogen chloride gas at 0° C. The reaction vessel was sealed and the reaction mixture was stirred at RT. After 72 h, the reaction mixture was vented with nitrogen and then concentrated in vacuo. The residue was treated with methylene chloride and the product was filtered to give 2-(R)-{[4-(4-chlorophenyl)piperazine-1-sulfonyl]amino}-3-phenylpropionic acid as a white solid (74%), mp 176.0-178.0 ° C."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "The reaction vessel was sealed"
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated in vacuo"
+    },
+    {
+      "type": "ADDITION",
+      "details": "The residue was treated with methylene chloride",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "methylene chloride"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(Cl)Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "the product was filtered"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 72.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-(R)-{[4-(4-chlorophenyl)piperazine-1-sulfonyl]amino}-3-phenylpropionic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC1=CC=C(C=C1)N1CCN(CC1)S(=O)(=O)N[C@@H](C(=O)O)CC1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C19H22ClN3O4S/c20-16-6-8-17(9-7-16)22-10-12-23(13-11-22)28(26,27)21-18(19(24)25)14-15-4-2-1-3-5-15/h1-9,18,21H,10-14H2,(H,24,25)/t18-/m1/s1"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 74.0
+              }
+            }
+          ],
+          "isolated_color": "white",
+          "texture": {
+            "type": "CUSTOM",
+            "details": "solid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998412",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:18.529140"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-bae143de939745f4b84cfcb6f836c18a"
+}

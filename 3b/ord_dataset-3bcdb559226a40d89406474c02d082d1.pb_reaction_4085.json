@@ -1,0 +1,205 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][O:2][C:3]1[CH:4]=[C:5]([CH:8]=[CH:9][C:10]=1[N+:11]([O-])=O)[CH2:6][OH:7].[H][H]>[Pd].CO>[NH2:11][C:10]1[CH:9]=[CH:8][C:5]([CH2:6][OH:7])=[CH:4][C:3]=1[O:2][CH3:1]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m3_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3-methoxy-4-nitrobenzyl alcohol"
+            },
+            {
+              "type": "SMILES",
+              "value": "COC=1C=C(CO)C=CC1[N+](=O)[O-]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H9NO4/c1-13-8-4-6(5-10)2-3-7(8)9(11)12/h2-4,10H,5H2,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 1.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "palladium on carbon"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Pd]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Pd"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 100.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "CATALYST"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrogen"
+            },
+            {
+              "type": "SMILES",
+              "value": "[H][H]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2/h1H"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture of 3-methoxy-4-nitrobenzyl alcohol (1.0 g) and 10% palladium on carbon (100 mg) in methanol was stirred for 2 hours under 3 atmospheric pressure of hydrogen. After filtration, the filtrate was concentrated in vacuo to give 4-amino-3-methoxybenzyl alcohol (910 mg) as an oil."
+  },
+  "workups": [
+    {
+      "type": "FILTRATION",
+      "details": "After filtration"
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "the filtrate was concentrated in vacuo"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-amino-3-methoxybenzyl alcohol"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC1=C(C=C(CO)C=C1)OC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H11NO2/c1-11-8-4-6(5-10)2-3-7(8)9/h2-4,10H,5,9H2,1H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 910.0,
+                  "units": "MILLIGRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 108.8
+              }
+            }
+          ],
+          "texture": {
+            "type": "OIL",
+            "details": "oil"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06008229",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:23.314921"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-91bce1332ac54aae9e0c19f0f9b55334"
+}

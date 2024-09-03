@@ -1,0 +1,281 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "Cl.C(O)(=O)C.C([NH:10][C:11]1[N:16]=[C:15]([N:17]2[C:26]3[C:21](=[CH:22][C:23]([F:29])=[C:24]([F:28])[C:25]=3[Cl:27])[C:20](=[O:30])[C:19]([C:31]([O:33]CC)=[O:32])=[CH:18]2)[C:14]([Cl:36])=[CH:13][C:12]=1[F:37])(C)(C)C>O>[NH2:10][C:11]1[N:16]=[C:15]([N:17]2[C:26]3[C:21](=[CH:22][C:23]([F:29])=[C:24]([F:28])[C:25]=3[Cl:27])[C:20](=[O:30])[C:19]([C:31]([OH:33])=[O:32])=[CH:18]2)[C:14]([Cl:36])=[CH:13][C:12]=1[F:37]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 2.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m1_m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrochloric acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/ClH/h1H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 2.5,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acetic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H4O2/c1-2(3)4/h1H3,(H,3,4)"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethyl 1-[6-(t-butylamino)-3-chloro-5-fluoropyridin-2-yl]-8-chloro-6,7-difluoro-4-oxo-1,4-dihydroquinoline-3-carboxylate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(C)(C)NC1=C(C=C(C(=N1)N1C=C(C(C2=CC(=C(C(=C12)Cl)F)F)=O)C(=O)OCC)Cl)F"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C21H18Cl2F3N3O3/c1-5-32-20(31)10-8-29(16-9(17(10)30)6-12(24)15(26)14(16)23)19-11(22)7-13(25)18(27-19)28-21(2,3)4/h6-8H,5H2,1-4H3,(H,27,28)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 600.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "with stirring for 4.5 hours"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a mixed solution (1:1) of 2.5 ml of 4N hydrochloric acid and acetic acid was added 600 mg of ethyl 1-[6-(t-butylamino)-3-chloro-5-fluoropyridin-2-yl]-8-chloro-6,7-difluoro-4-oxo-1,4-dihydroquinoline-3-carboxylate, and the mixture was heated under reflux with stirring for 4.5 hours. After adding 2 ml of distilled water, the solution was allowed to cool and the precipitate was collected by filtration and washed with ethanol and diisopropylether successively to obtain 458 mg of the title compound as a pale yellow powder."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "the mixture was heated"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "under reflux"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "to cool"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "the precipitate was collected by filtration"
+    },
+    {
+      "type": "WASH",
+      "details": "washed with ethanol and diisopropylether successively",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "diisopropylether"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(C)OC(C)C"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C6H14O/c1-5(2)7-6(3)4/h5-6H,1-4H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 4.5,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "1-(6-amino-3-chloro-5-fluoropyridin-2-yl)-8-chloro-6,7-difluoro-4-oxo-1,4-dihydroquinoline-3-carboxylic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC1=C(C=C(C(=N1)N1C=C(C(C2=CC(=C(C(=C12)Cl)F)F)=O)C(=O)O)Cl)F"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C15H6Cl2F3N3O3/c16-6-2-8(19)13(21)22-14(6)23-3-5(15(25)26)12(24)4-1-7(18)10(20)9(17)11(4)23/h1-3H,(H2,21,22)(H,25,26)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 458.0,
+                  "units": "MILLIGRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 92.2
+              }
+            }
+          ],
+          "isolated_color": "pale yellow",
+          "texture": {
+            "type": "POWDER",
+            "details": "powder"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998436",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:27.813818"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-abcc3e30eac64fd2848411b21d9172dd"
+}

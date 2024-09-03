@@ -1,0 +1,251 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[F:1][C:2]1[C:10]([O:11]C)=[CH:9][CH:8]=[C:7]2[C:3]=1[CH2:4][N:5]([NH:13][C:14]1[CH:19]=[CH:18][N:17]=[CH:16][CH:15]=1)[CH2:6]2.[BrH:20]>O>[BrH:20].[F:1][C:2]1[C:10]([OH:11])=[CH:9][CH:8]=[C:7]2[C:3]=1[CH2:4][N:5]([NH:13][C:14]1[CH:19]=[CH:18][N:17]=[CH:16][CH:15]=1)[CH2:6]2 |f:3.4|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2,3-dihydro-4-fluoro-5-methoxy-N-(4-pyridinyl)-1H-isoindol-2-amine"
+            },
+            {
+              "type": "SMILES",
+              "value": "FC1=C2CN(CC2=CC=C1OC)NC1=CC=NC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C14H14FN3O/c1-19-13-3-2-10-8-18(9-12(10)14(13)15)17-11-4-6-16-7-5-11/h2-7H,8-9H2,1H3,(H,16,17)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 3.25,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrobromic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "Br"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/BrH/h1H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 25.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "stirred at ambient temperature overnight"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A solution of 2,3-dihydro-4-fluoro-5-methoxy-N-(4-pyridinyl)-1H-isoindol-2-amine (3.25 g) in 48% hydrobromic acid (25 ml) was stirred, under reflux, for 5 hrs. The reaction mixture was diluted with water and stirred at ambient temperature overnight. The mixture was cooled to approximately 10° C. and filtered. The filter cake was washed with cold water and dried under vacuum at 80° C. to give 2.8 g (69%) of product. Recrystallization from water gave the analytical sample, mp. >250° C., dried at 80° C. under vacuum."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "under reflux, for 5 hrs",
+      "duration": {
+        "value": 5.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "The mixture was cooled to approximately 10° C.",
+      "temperature": {
+        "setpoint": {
+          "value": 10.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filtered"
+    },
+    {
+      "type": "WASH",
+      "details": "The filter cake was washed with cold water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried under vacuum at 80° C.",
+      "temperature": {
+        "setpoint": {
+          "value": 80.0,
+          "units": "CELSIUS"
+        }
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 8.0,
+        "precision": 8.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "product"
+            },
+            {
+              "type": "NAME",
+              "value": "2,3-Dihydro-4-fluoro-2-(-4-pyridinylamino)-1 H-isoindol-5-ol hydrobromide"
+            },
+            {
+              "type": "SMILES",
+              "value": "Br.FC1=C2CN(CC2=CC=C1O)NC1=CC=NC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C13H12FN3O.BrH/c14-13-11-8-17(7-9(11)1-2-12(13)18)16-10-3-5-15-6-4-10;/h1-6,18H,7-8H2,(H,15,16);1H"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 2.8,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 69.0
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06004977",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:18.147368"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-0400c73362384427be9c7378d34ea783"
+}

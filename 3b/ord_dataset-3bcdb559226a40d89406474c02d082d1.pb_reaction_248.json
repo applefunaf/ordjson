@@ -1,0 +1,348 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][N:2]1[CH2:6][CH2:5][CH2:4][C@H:3]1[CH2:7][OH:8].CC(C)([O-])C.[K+].Cl[C:16]1[CH:21]=[N:20][CH:19]=[CH:18][N:17]=1>C1COCC1>[CH3:1][N:2]1[CH2:6][CH2:5][CH2:4][C@H:3]1[CH2:7][O:8][C:16]1[CH:21]=[N:20][CH:19]=[CH:18][N:17]=1 |f:1.2|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "chloropyrazine"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC1=NC=CN=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H3ClN2/c5-4-3-6-1-2-7-4/h1-3H"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m1_m4_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "(S)-1-methyl-2-pyrrolidinemethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN1[C@@H](CCC1)CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H13NO/c1-7-4-2-3-6(7)5-8/h6,8H,2-5H2,1H3/t6-/m0/s1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 1.15,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "potassium tert-butoxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC(C)([O-])C.[K+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H9O.K/c1-4(2,3)5;/h1-3H3;/q-1;+1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 1.2,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "THF"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1CCOC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O/c1-2-4-5-3-1/h1-4H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 45.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "the reaction stirred for 1.5 h"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A solution of (S)-1-methyl-2-pyrrolidinemethanol (1.15 g) in THF (45 mL) was treated with potassium tert-butoxide (1.2 g). After 10 min, chloropyrazine was added and the reaction stirred for 1.5 h. The reaction was quenched with 5N HCl (4 mL) and the solvent evaporated. The residue was suspended in water and extracted with ether. The aqueous fraction was made basic and extracted with CHCl3. The extracts were dried, the solvent evaporated, and the residue purified by radial chromatography eluting with 20%-EtOH-2%-NH4OH-CHCl3 to give (S)-2-(1-methyl-2-pyrrolidinylmethoxy)pyrazine (1.1). The HCl salt crystallized from EtOAc as a white solid, m.p. 121-122° C. (Compound 28)."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "The reaction was quenched with 5N HCl (4 mL)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "HCl"
+              },
+              {
+                "type": "SMILES",
+                "value": "Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH/h1H"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 4.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the solvent evaporated"
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "extracted with ether",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "extracted with CHCl3",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "CHCl3"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(Cl)(Cl)Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CHCl3/c2-1(3)4/h1H"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The extracts were dried"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the solvent evaporated"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the residue purified by radial chromatography"
+    },
+    {
+      "type": "WASH",
+      "details": "eluting with 20%-EtOH-2%-NH4OH-CHCl3",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "EtOH"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCO"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "NH4OH CHCl3"
+              },
+              {
+                "type": "SMILES",
+                "value": "[NH4+].[OH-].C(Cl)(Cl)Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CHCl3.H3N.H2O/c2-1(3)4;;/h1H;1H3;1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 10.0,
+        "units": "MINUTE"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "(S)-2-(1-methyl-2-pyrrolidinylmethoxy)pyrazine"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN1[C@@H](CCC1)COC1=NC=CN=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C10H15N3O/c1-13-6-2-3-9(13)8-14-10-7-11-4-5-12-10/h4-5,7,9H,2-3,6,8H2,1H3/t9-/m0/s1"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998434",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:19.922976"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-bea78d2a9d9b456c8452e2f57f1424a7"
+}

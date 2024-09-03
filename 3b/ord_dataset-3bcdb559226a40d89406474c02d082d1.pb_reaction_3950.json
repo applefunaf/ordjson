@@ -1,0 +1,326 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH2:1]([O:3][C:4]([CH:6](C(OCC)=O)[C:7]1[C:16]2[C:11](=[C:12]([N+:17]([O-:19])=[O:18])[CH:13]=[CH:14][CH:15]=2)[N:10]=[CH:9][C:8]=1[Br:20])=[O:5])[CH3:2].[Cl-].[Li+].O>CS(C)=O>[Br:20][C:8]1[CH:9]=[N:10][C:11]2[C:16]([C:7]=1[CH2:6][C:4]([O:3][CH2:1][CH3:2])=[O:5])=[CH:15][CH:14]=[CH:13][C:12]=2[N+:17]([O-:19])=[O:18] |f:1.2|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m3_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-[bis(ethoxycarbonyl)methyl]-3-bromo-8-nitroquinoline"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)OC(=O)C(C1=C(C=NC2=C(C=CC=C12)[N+](=O)[O-])Br)C(=O)OCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C16H15BrN2O6/c1-3-24-15(20)13(16(21)25-4-2)12-9-6-5-7-11(19(22)23)14(9)18-8-10(12)17/h5-8,13H,3-4H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 316.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "lithium chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Cl-].[Li+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/ClH.Li/h1H;/q;+1/p-1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 65.1,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 13.8,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "dimethyl sulfoxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "CS(=O)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6OS/c1-4(2)3/h1-2H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 130.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "was stirred for 20 minutes at 130° C"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture of 4-[bis(ethoxycarbonyl)methyl]-3-bromo-8-nitroquinoline (316 mg), lithium chloride (65.1 mg), water (13.8 mg) in dimethyl sulfoxide was stirred for 20 minutes at 130° C. The mixture was partitioned between ethyl acetate and water, and the organic layer was washed with brine, dried over magnesium sulfate and evaporated in vacuo to give 3-bromo-4-ethoxycarbonylmethyl-8-nitroquinoline (236.8 mg)."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "The mixture was partitioned between ethyl acetate and water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "the organic layer was washed with brine",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "brine"
+              },
+              {
+                "type": "SMILES",
+                "value": "[Cl-].[Na+].O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH.Na.H2O/h1H;;1H2/q;+1;/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "dried over magnesium sulfate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "magnesium sulfate"
+              },
+              {
+                "type": "SMILES",
+                "value": "S(=O)(=O)([O-])[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "evaporated in vacuo"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 20.0,
+        "units": "MINUTE"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3-bromo-4-ethoxycarbonylmethyl-8-nitroquinoline"
+            },
+            {
+              "type": "SMILES",
+              "value": "BrC=1C=NC2=C(C=CC=C2C1CC(=O)OCC)[N+](=O)[O-]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C13H11BrN2O4/c1-2-20-12(17)6-9-8-4-3-5-11(16(18)19)13(8)15-7-10(9)14/h3-5,7H,2,6H2,1H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 236.8,
+                  "units": "MILLIGRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 90.9
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06008230",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:20.750397"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-eaea2e2ab3f643b5a7fe9716c4ba2f53"
+}

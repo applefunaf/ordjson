@@ -1,0 +1,320 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[NH2:1][C:2]1[NH:3][C:4]([C:10]2[CH:11]=[N:12][CH:13]=[CH:14][CH:15]=2)=[C:5]([CH3:9])[C:6]=1[C:7]#[N:8].C(C(C#N)=C(C1C=CC=CC=1)C(Br)C)#N.[ClH:31].CO>CO>[ClH:31].[NH2:1][C:2]1[NH:3][C:4]([C:10]2[CH:11]=[N:12][CH:13]=[CH:14][CH:15]=2)=[C:5]([CH3:9])[C:6]=1[C:7]#[N:8] |f:2.3,5.6|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 220.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-Amino-3-cyano-4-methyl-5-(3-pyridyl)pyrrole"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC=1NC(=C(C1C#N)C)C=1C=NC=CC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C11H10N4/c1-7-9(5-12)11(13)15-10(7)8-3-2-4-14-6-8/h2-4,6,15H,13H2,1H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Example 1"
+            },
+            {
+              "type": "NAME",
+              "value": "1,1-Dicyano-2-phenyl-2-(1-bromoethyl)ethylene"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(#N)C(=C(C(C)Br)C1=CC=CC=C1)C#N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C12H9BrN2/c1-9(13)12(11(7-14)8-15)10-5-3-2-4-6-10/h2-6,9H,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 5.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "HCl methanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl.CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH4O.ClH/c1-2;/h2H,1H3;1H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 4.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "with stirring"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "2-Amino-3-cyano-4-methyl-5-(3-pyridyl)pyrrole (compound No. 8) obtained in the same manner as Example 1 (5.0 g) was dissolved in methanol 220 ml) under heating, followed by addition of 40% HCl-methanol (4 ml) under ice-cooling with stirring. The separated crystals were collected by filtration, washed with methanol (50 ml) twice and diethyl ether (50 ml) 3 times, and air-dried. The crude crystals thus obtained were recrystallized from methanol to provide the title compound as reddish brown crystals (3.4 g). m.p. 279-281° C."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "under heating"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "cooling"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "The separated crystals were collected by filtration"
+    },
+    {
+      "type": "WASH",
+      "details": "washed with methanol (50 ml) twice",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "methanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "CO"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 50.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "diethyl ether (50 ml) 3 times, and air-dried",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "diethyl ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 50.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The crude crystals thus obtained"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "were recrystallized from methanol",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "methanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "CO"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "2-Amino-3-cyano-4-methyl-5-(3-pyridyl)pyrrole hydrochloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl.NC=1NC(=C(C1C#N)C)C=1C=NC=CC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C11H10N4.ClH/c1-7-9(5-12)11(13)15-10(7)8-3-2-4-14-6-8;/h2-4,6,15H,13H2,1H3;1H"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 3.4,
+                  "units": "GRAM"
+                }
+              }
+            }
+          ],
+          "isolated_color": "reddish brown",
+          "texture": {
+            "type": "CRYSTAL",
+            "details": "crystals"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998459",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:25.192225"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-c8847bebbffd473b80ac2aa835a5bbb8"
+}

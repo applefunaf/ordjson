@@ -1,0 +1,414 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[Cl:1][C:2]1[CH:22]=[CH:21][CH:20]=[C:19]([Cl:23])[C:3]=1[C:4]([NH:6][C:7]1[CH:8]=[CH:9][CH:10]=[C:11]2[C:16]=1[N:15]=[CH:14][CH:13]=[C:12]2[NH:17][NH2:18])=[O:5].[CH:24](N)=[O:25]>C(O)=O>[Cl:1][C:2]1[CH:22]=[CH:21][CH:20]=[C:19]([Cl:23])[C:3]=1[C:4]([NH:6][C:7]1[CH:8]=[CH:9][CH:10]=[C:11]2[C:16]=1[N:15]=[CH:14][CH:13]=[C:12]2[NH:17][NH:18][CH:24]=[O:25])=[O:5]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m3_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "8-(2,6-dichlorobenzoylamino)-4-hydrazinoquinoline"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC1=C(C(=O)NC=2C=CC=C3C(=CC=NC23)NN)C(=CC=C1)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C16H12Cl2N4O/c17-10-4-2-5-11(18)14(10)16(23)21-13-6-1-3-9-12(22-19)7-8-20-15(9)13/h1-8H,19H2,(H,20,22)(H,21,23)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 200.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "formamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(=O)N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH3NO/c2-1-3/h1H,(H2,2,3)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 26.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "formic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2O2/c2-1-3/h1H,(H,2,3)"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 4.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "the mixture was stirred at ambient temperature for 3 hours"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a solution of 8-(2,6-dichlorobenzoylamino)-4-hydrazinoquinoline (200 mg) in formic acid (4 ml) was added formamide (26 mg), and the mixture was stirred at ambient temperature for 3 hours. The solvent was azeotropically removed with toluene. The residue was diluted with ethyl acetate, washed with water and saturated aqueous sodium bicarbonate solution, dried over magnesium sulfate and concentrated in vacuo. The residual solid was treated with hot ethanol (2 ml), allowed to cool to ambient temperature, filtered and washed with ethanol to give 8-(2,6-dichlorobenzoylamino)-4-(2-formylhydrazino)quinoline (180 mg) as pale yellow crystal."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "The solvent was azeotropically removed with toluene",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "toluene"
+              },
+              {
+                "type": "SMILES",
+                "value": "C1(=CC=CC=C1)C"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C7H8/c1-7-5-3-2-4-6-7/h2-6H,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "ADDITION",
+      "details": "The residue was diluted with ethyl acetate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "washed with water and saturated aqueous sodium bicarbonate solution",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "sodium bicarbonate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C([O-])(O)=O.[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2O3.Na/c2-1(3)4;/h(H2,2,3,4);/q;+1/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "dried over magnesium sulfate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "magnesium sulfate"
+              },
+              {
+                "type": "SMILES",
+                "value": "S(=O)(=O)([O-])[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated in vacuo"
+    },
+    {
+      "type": "ADDITION",
+      "details": "The residual solid was treated with hot ethanol (2 ml)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 2.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "to cool to ambient temperature",
+      "temperature": {
+        "control": {
+          "type": "AMBIENT"
+        }
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filtered"
+    },
+    {
+      "type": "WASH",
+      "details": "washed with ethanol",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 3.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "8-(2,6-dichlorobenzoylamino)-4-(2-formylhydrazino)quinoline"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC1=C(C(=O)NC=2C=CC=C3C(=CC=NC23)NNC=O)C(=CC=C1)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C17H12Cl2N4O2/c18-11-4-2-5-12(19)15(11)17(25)22-14-6-1-3-10-13(23-21-9-24)7-8-20-16(10)14/h1-9H,(H,20,23)(H,21,24)(H,22,25)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 180.0,
+                  "units": "MILLIGRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 83.3
+              }
+            }
+          ],
+          "isolated_color": "pale yellow",
+          "texture": {
+            "type": "CRYSTAL",
+            "details": "crystal"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06008230",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:22.881838"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-465418af947342fa9aa5194a189f76fa"
+}

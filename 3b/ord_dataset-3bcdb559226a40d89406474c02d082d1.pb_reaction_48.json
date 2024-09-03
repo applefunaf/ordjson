@@ -1,0 +1,300 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[N+:1]([C:4]1[CH:5]=[C:6]([NH:10][C:11]([N:13]2[CH2:17][CH2:16][CH2:15][CH2:14]2)=[NH:12])[CH:7]=[CH:8][CH:9]=1)([O-])=O.[H][H].[ClH:20]>[Pd]>[ClH:20].[ClH:20].[NH2:1][C:4]1[CH:5]=[C:6]([NH:10][C:11]([N:13]2[CH2:17][CH2:16][CH2:15][CH2:14]2)=[NH:12])[CH:7]=[CH:8][CH:9]=1 |f:4.5.6|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Pd/C"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Pd]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Pd"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 1.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "CATALYST"
+        }
+      ]
+    },
+    "m1_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "product"
+            },
+            {
+              "type": "NAME",
+              "value": "N-(3-nitrophenyl)-1-pyrrolidinecarboximidamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "[N+](=O)([O-])C=1C=C(C=CC1)NC(=N)N1CCCC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C11H14N4O2/c12-11(14-6-1-2-7-14)13-9-4-3-5-10(8-9)15(16)17/h3-5,8H,1-2,6-7H2,(H2,12,13)"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrochloric acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/ClH/h1H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 200.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrogen"
+            },
+            {
+              "type": "SMILES",
+              "value": "[H][H]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2/h1H"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A sample of the product of step (a), 17 g, was dissolved in 200 ml of 1 M hydrochloric acid. The mixture was then hydrogenated with 1 g of 5% Pd/C. When hydrogen uptake had stopped the catalyst was filtered off. The solvent was evaporated in vacuum, and the residue dissolved in isopropanol, evaporated in vacuum again and the residue dissolved in 100 ml of methanol. To this mix was added 200 ml of toluene. This was then concentrated on a steam bath until the volume had decreased to approximately 175 ml. The crystals that precipitated were filtered to give N-(3-aminophenyl)-1-pyrrolidinecarboximidamide dihydrochloride, m.p. 250-251° C."
+  },
+  "workups": [
+    {
+      "type": "FILTRATION",
+      "details": "was filtered off"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The solvent was evaporated in vacuum"
+    },
+    {
+      "type": "DISSOLUTION",
+      "details": "the residue dissolved in isopropanol",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "isopropanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(C)O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C3H8O/c1-3(2)4/h3-4H,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "evaporated in vacuum again"
+    },
+    {
+      "type": "DISSOLUTION",
+      "details": "the residue dissolved in 100 ml of methanol",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "methanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "CO"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 100.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "ADDITION",
+      "details": "To this mix was added 200 ml of toluene",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "toluene"
+              },
+              {
+                "type": "SMILES",
+                "value": "C1(=CC=CC=C1)C"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C7H8/c1-7-5-3-2-4-6-7/h2-6H,1H3"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 200.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "This was then concentrated on a steam bath until the volume"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The crystals that precipitated"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "were filtered"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-(3-aminophenyl)-1-pyrrolidinecarboximidamide dihydrochloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl.Cl.NC=1C=C(C=CC1)NC(=N)N1CCCC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C11H16N4.2ClH/c12-9-4-3-5-10(8-9)14-11(13)15-6-1-2-7-15;;/h3-5,8H,1-2,6-7,12H2,(H2,13,14);2*1H"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998399",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:16.605068"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-fdf92bd609684cd8beed86177bfeefbf"
+}

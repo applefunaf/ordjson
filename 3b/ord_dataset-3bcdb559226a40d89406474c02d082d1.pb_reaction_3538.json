@@ -1,0 +1,327 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "Cl.[OH:2][C:3]1[CH:8]=[C:7]([C:9]2[CH:14]=[CH:13][CH:12]=[CH:11][CH:10]=2)[O:6][C:5](=[O:15])[C:4]=1[NH:16][CH2:17][C:18]1[CH:23]=[CH:22][CH:21]=[CH:20][CH:19]=1.CN1CCOCC1.[C:31]([N:35]=[C:36]=[O:37])([CH3:34])([CH3:33])[CH3:32]>C(OCC)(=O)C>[CH3:32][C:31]([NH:35][C:36]([N:16]([C:4]1[C:5](=[O:15])[O:6][C:7]([C:9]2[CH:10]=[CH:11][CH:12]=[CH:13][CH:14]=2)=[CH:8][C:3]=1[OH:2])[CH2:17][C:18]1[CH:23]=[CH:22][CH:21]=[CH:20][CH:19]=1)=[O:37])([CH3:34])[CH3:33] |f:0.1|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-hydroxy-6-phenyl-3-(phenylmethyl)amino-2H-pyran-2-one, monohydrochloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl.OC1=C(C(OC(=C1)C1=CC=CC=C1)=O)NCC1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C18H15NO3.ClH/c20-15-11-16(14-9-5-2-6-10-14)22-18(21)17(15)19-12-13-7-3-1-4-8-13;/h1-11,19-20H,12H2;1H"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.153,
+              "units": "MILLIMOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethyl acetate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)OCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 10.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-methylmorpholine"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN1CCOCC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C5H11NO/c1-6-2-4-7-5-3-6/h2-5H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 2.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "tert-butyl isocyanate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(C)(C)N=C=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C5H9NO/c1-5(2,3)6-4-7/h1-3H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 2.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "to stir for 2.5 hrs"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a suspension of 4-hydroxy-6-phenyl-3-(phenylmethyl)amino-2H-pyran-2-one, monohydrochloride (0.153 mmol) in ethyl acetate (10 ml) was added N-methylmorpholine (2.0 ml) and tert-butyl isocyanate (2.0 ml). The reaction was allowed to stir for 2.5 hrs and then quenched by dilution with ethyl acetate. The organic layer was washed with 5% citric acid and saturated sodium chloride and was dried over anhydrous magnesium sulfate. After evaporation of the solvents in vacuo the crude product was purified by column chromatography (silica gel-230 to 400 mesh) using 5% methanol in dichloromethane as eluents."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "quenched by dilution with ethyl acetate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "The organic layer was washed with 5% citric acid and saturated sodium chloride",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "citric acid"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(CC(O)(C(=O)O)CC(=O)O)(=O)O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C6H8O7/c7-3(8)1-6(13,5(11)12)2-4(9)10/h13H,1-2H2,(H,7,8)(H,9,10)(H,11,12)"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "sodium chloride"
+              },
+              {
+                "type": "SMILES",
+                "value": "[Cl-].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH.Na/h1H;/q;+1/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "was dried over anhydrous magnesium sulfate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "magnesium sulfate"
+              },
+              {
+                "type": "SMILES",
+                "value": "S(=O)(=O)([O-])[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "After evaporation of the solvents in vacuo the crude product",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "crude product"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "was purified by column chromatography (silica gel-230 to 400 mesh)"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 2.5,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-(1,1-Dimethylethyl)-N'-(4-hydroxy-2-oxo-6-phenyl-2H-pyran-3-yl)-N'-(phenylmethyl) Urea"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC(C)(C)NC(=O)N(CC1=CC=CC=C1)C=1C(OC(=CC1O)C1=CC=CC=C1)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C23H24N2O4/c1-23(2,3)24-22(28)25(15-16-10-6-4-7-11-16)20-18(26)14-19(29-21(20)27)17-12-8-5-9-13-17/h4-14,26H,15H2,1-3H3,(H,24,28)"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06005103",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:26.257325"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-407582ca917e4df7b968e0e30ea39369"
+}

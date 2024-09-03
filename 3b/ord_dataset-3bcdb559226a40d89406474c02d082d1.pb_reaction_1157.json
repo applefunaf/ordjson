@@ -1,0 +1,203 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[F:1][C:2]1[CH:19]=[CH:18][C:5]([C:6]([NH:8][C:9]2[CH:14]=[CH:13][C:12]([N+:15]([O-])=O)=[CH:11][CH:10]=2)=[O:7])=[CH:4][CH:3]=1>[Pt].O1CCCC1>[F:1][C:2]1[CH:19]=[CH:18][C:5]([C:6]([NH:8][C:9]2[CH:14]=[CH:13][C:12]([NH2:15])=[CH:11][CH:10]=2)=[O:7])=[CH:4][CH:3]=1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m3_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-(4-fluorobenzoyl)-4-nitroaniline"
+            },
+            {
+              "type": "SMILES",
+              "value": "FC1=CC=C(C(=O)NC2=CC=C(C=C2)[N+](=O)[O-])C=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C13H9FN2O3/c14-10-3-1-9(2-4-10)13(17)15-11-5-7-12(8-6-11)16(18)19/h1-8H,(H,15,17)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 32.25,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "platinum on carbon"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Pt]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Pt"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 3.2,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "CATALYST"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "tetrahydrofuran"
+            },
+            {
+              "type": "SMILES",
+              "value": "O1CCCC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O/c1-2-4-5-3-1/h1-4H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 500.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "60"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture of 32.25 gm (124 mMol) N-(4-fluorobenzoyl)-4-nitroaniline and 3.2 gm platinum on carbon in 500 mL tetrahydrofuran was hydrogenated at room temperature for 18 hours with an initial pressure of 60 p.s.i. The reaction mixture was then filtered and the filtrate concentrated under reduced pressure to give 22.45 gm (79%) of N-(4-fluorobenzoyl)-4-aminoaniline."
+  },
+  "workups": [
+    {
+      "type": "FILTRATION",
+      "details": "The reaction mixture was then filtered"
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "the filtrate concentrated under reduced pressure"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 18.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-(4-fluorobenzoyl)-4-aminoaniline"
+            },
+            {
+              "type": "SMILES",
+              "value": "FC1=CC=C(C(=O)NC2=CC=C(C=C2)N)C=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C13H11FN2O/c14-10-3-1-9(2-4-10)13(17)16-12-7-5-11(15)6-8-12/h1-8H,15H2,(H,16,17)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 22.45,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 79.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 78.6
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998630",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:34.172218"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-c87bf4664e674f879edf777b3085544f"
+}

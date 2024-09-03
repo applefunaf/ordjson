@@ -1,0 +1,277 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[NH2:1][C:2]1[CH:3]=[C:4]2[C:9](=[CH:10][CH:11]=1)[N:8]=[CH:7][C:6]([C:12]#[N:13])=[C:5]2[NH:14][C:15]1[CH:20]=[CH:19][C:18]([Br:21])=[C:17]([Br:22])[CH:16]=1.C(N(CC)CC)C.[C:30](Cl)(=[O:33])[CH:31]=[CH2:32]>O1CCCC1>[Br:22][C:17]1[CH:16]=[C:15]([NH:14][C:5]2[C:4]3[C:9](=[CH:10][CH:11]=[C:2]([NH:1][C:30](=[O:33])[CH:31]=[CH2:32])[CH:3]=3)[N:8]=[CH:7][C:6]=2[C:12]#[N:13])[CH:20]=[CH:19][C:18]=1[Br:21]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m4_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "6-amino-4-[(3,4-dibromophenyl)amino]-3-quinolinecarbonitrile"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC=1C=C2C(=C(C=NC2=CC1)C#N)NC1=CC(=C(C=C1)Br)Br"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C16H10Br2N4/c17-13-3-2-11(6-14(13)18)22-16-9(7-19)8-21-15-4-1-10(20)5-12(15)16/h1-6,8H,20H2,(H,21,22)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.75,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "triethylamine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)N(CC)CC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H15N/c1-4-7(5-2)6-3/h4-6H2,1-3H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.22,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acryloyl chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C=C)(=O)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H3ClO/c1-2-3(4)5/h2H,1H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.195,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "tetrahydrofuran"
+            },
+            {
+              "type": "SMILES",
+              "value": "O1CCCC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O/c1-2-4-5-3-1/h1-4H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 10.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 25.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "After stirring overnight at 25° C."
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a solution of 0.75 g (1.79 mmol) of 6-amino-4-[(3,4-dibromophenyl)amino]-3-quinolinecarbonitrile and 0.22 g (2.15 mmol) of triethylamine in 10 mL of tetrahydrofuran was added dropwise 0.195 g (2.15 mmol) of acryloyl chloride. After stirring overnight at 25° C., volatile material was removed and the residue was slurried in water and solid was collected. The crude product was washed with boiling ethyl acetate dried in vacuo (50° C.) to give 0.609 g of brown solid: high resolution mass spectrum (m/e): 470.9457."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "volatile material was removed"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "solid was collected"
+    },
+    {
+      "type": "WASH",
+      "details": "The crude product was washed with boiling ethyl acetate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "crude product"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried in vacuo (50° C.)",
+      "temperature": {
+        "setpoint": {
+          "value": 50.0,
+          "units": "CELSIUS"
+        }
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 8.0,
+        "precision": 8.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "brown solid"
+            },
+            {
+              "type": "NAME",
+              "value": "N-[4-[(3,4-Dibromophenyl)amino]-3-cyano-6-quinolinyl]-2-propenamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "BrC=1C=C(C=CC1Br)NC1=C(C=NC2=CC=C(C=C12)NC(C=C)=O)C#N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C19H12Br2N4O/c1-2-18(26)24-12-4-6-17-14(7-12)19(11(9-22)10-23-17)25-13-3-5-15(20)16(21)8-13/h2-8,10H,1H2,(H,23,25)(H,24,26)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 0.609,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 72.1
+              }
+            }
+          ],
+          "isolated_color": "brown",
+          "texture": {
+            "type": "CUSTOM",
+            "details": "solid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06002008",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:25.004048"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-da21e736817140b29b3e45a247f02db3"
+}

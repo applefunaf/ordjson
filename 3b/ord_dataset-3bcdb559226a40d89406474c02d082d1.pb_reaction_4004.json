@@ -1,0 +1,265 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "O.O.O.O.O.O.O.O.O.[S-2:10].[Na+].[Na+].Cl[C:14]1[C:23]2[C:18](=[C:19]([NH:24][C:25](=[O:34])[C:26]3[C:31]([Cl:32])=[CH:30][CH:29]=[CH:28][C:27]=3[Cl:33])[CH:20]=[CH:21][CH:22]=2)[N:17]=[CH:16][C:15]=1[C:35]([O:37][CH2:38][CH3:39])=[O:36].Cl>CN(C)C=O>[Cl:33][C:27]1[CH:28]=[CH:29][CH:30]=[C:31]([Cl:32])[C:26]=1[C:25]([NH:24][C:19]1[CH:20]=[CH:21][CH:22]=[C:23]2[C:18]=1[N:17]=[CH:16][C:15]([C:35]([O:37][CH2:38][CH3:39])=[O:36])=[C:14]2[SH:10])=[O:34] |f:0.1.2.3.4.5.6.7.8.9.10.11|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrochloric acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/ClH/h1H"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-chloro-8-(2,6-dichlorobenzoylamino)-3-ethoxycarbonylquinoline"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC1=C(C=NC2=C(C=CC=C12)NC(C1=C(C=CC=C1Cl)Cl)=O)C(=O)OCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C19H13Cl3N2O3/c1-2-27-19(26)11-9-23-17-10(16(11)22)5-3-8-14(17)24-18(25)15-12(20)6-4-7-13(15)21/h3-9H,2H2,1H3,(H,24,25)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 297.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m1_m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sodium sulfide nonahydrate"
+            },
+            {
+              "type": "SMILES",
+              "value": "O.O.O.O.O.O.O.O.O.[S-2].[Na+].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/2Na.9H2O.S/h;;9*1H2;/q2*+1;;;;;;;;;;-2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 202.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "dimethylformamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN(C=O)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H7NO/c1-4(2)3-5/h3H,1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 5.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ice water"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "the mixture was stirred for 1 hour at ambient temperature"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a mixture of sodium sulfide nonahydrate (202 mg) in dimethylformamide (5 ml) was dropwise added 4-chloro-8-(2,6-dichlorobenzoylamino)-3-ethoxycarbonylquinoline (297 mg), and the mixture was stirred for 1 hour at ambient temperature. To the mixture was added ice-water, and the mixture was adjusted to pH 3 with 1N hydrochloric acid. The resulting precipitate was collected by filtration and washed with water to give 8-(2,6-dichlorobenzoylamino)-3-ethoxycarbonyl-4-mercaptoquinoline (260 mg)."
+  },
+  "workups": [
+    {
+      "type": "FILTRATION",
+      "details": "The resulting precipitate was collected by filtration"
+    },
+    {
+      "type": "WASH",
+      "details": "washed with water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 1.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "8-(2,6-dichlorobenzoylamino)-3-ethoxycarbonyl-4-mercaptoquinoline"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC1=C(C(=O)NC=2C=CC=C3C(=C(C=NC23)C(=O)OCC)S)C(=CC=C1)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C19H14Cl2N2O3S/c1-2-26-19(25)11-9-22-16-10(17(11)27)5-3-8-14(16)23-18(24)15-12(20)6-4-7-13(15)21/h3-9H,2H2,1H3,(H,22,27)(H,23,24)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 260.0,
+                  "units": "MILLIGRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 88.0
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06008230",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:21.744400"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-32b6fd940d5447d2b52eb0902ec234b7"
+}

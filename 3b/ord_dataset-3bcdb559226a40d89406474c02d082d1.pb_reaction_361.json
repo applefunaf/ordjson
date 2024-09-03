@@ -1,0 +1,315 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH2:1]([O:8][CH2:9][C@H:10]([C:12]1[C:20]2[C:15](=[N:16][CH:17]=[C:18]([C:21]([CH3:27])([CH3:26])[C:22]([O:24]C)=[O:23])[CH:19]=2)[NH:14][C:13]=1[C:28]1[CH:33]=[C:32]([CH3:34])[CH:31]=[C:30]([CH3:35])[CH:29]=1)[CH3:11])[C:2]1[CH:7]=[CH:6][CH:5]=[CH:4][CH:3]=1.[OH-].[K+].Cl>CO>[CH2:1]([O:8][CH2:9][C@H:10]([C:12]1[C:20]2[C:15](=[N:16][CH:17]=[C:18]([C:21]([CH3:26])([CH3:27])[C:22]([OH:24])=[O:23])[CH:19]=2)[NH:14][C:13]=1[C:28]1[CH:29]=[C:30]([CH3:35])[CH:31]=[C:32]([CH3:34])[CH:33]=1)[CH3:11])[C:2]1[CH:3]=[CH:4][CH:5]=[CH:6][CH:7]=1 |f:1.2|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methyl (S)-2-[3-(2-benzyloxy-1-methylethyl)-2-(3,5-dimethyl-phenyl)-1H-pyrrolo[2,3-b]pyridin-5-yl]-2-methylpropanoate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C1=CC=CC=C1)OC[C@@H](C)C1=C(NC2=NC=C(C=C21)C(C(=O)OC)(C)C)C2=CC(=CC(=C2)C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C30H34N2O3/c1-19-12-20(2)14-23(13-19)27-26(21(3)17-35-18-22-10-8-7-9-11-22)25-15-24(16-31-28(25)32-27)30(4,5)29(33)34-6/h7-16,21H,17-18H2,1-6H3,(H,31,32)/t21-/m1/s1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 3.82,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "KOH"
+            },
+            {
+              "type": "SMILES",
+              "value": "[OH-].[K+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/K.H2O/h;1H2/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 40.6,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "MeOH"
+            },
+            {
+              "type": "SMILES",
+              "value": "CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 40.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "HCl"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/ClH/h1H"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 80.0,
+        "units": "CELSIUS"
+      }
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A vigorously stirred suspension of methyl (S)-2-[3-(2-benzyloxy-1-methylethyl)-2-(3,5-dimethyl-phenyl)-1H-pyrrolo[2,3-b]pyridin-5-yl]-2-methylpropanoate (3.82 g, 8.12 mmol) and 2N KOH (40.6 mL, 0.081 mol) in MeOH (40 mL) was heated at 80° C. for approximately 4 h. After cooling to room temperature, the reaction mixture was acidified to pH 6 with 2N HCl and extracted with ethyl acetate (×3). The combined organic extract was washed with brine, dried (MgSO4) and concentrated in vacuo. The crude residue was used without further purification in the subsequent reaction."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "After cooling to room temperature",
+      "temperature": {
+        "control": {
+          "type": "AMBIENT"
+        }
+      }
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "extracted with ethyl acetate (×3)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "The combined organic extract"
+    },
+    {
+      "type": "WASH",
+      "details": "was washed with brine",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "brine"
+              },
+              {
+                "type": "SMILES",
+                "value": "[Cl-].[Na+].O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH.Na.H2O/h1H;;1H2/q;+1;/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "dried (MgSO4)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "MgSO4"
+              },
+              {
+                "type": "SMILES",
+                "value": "[O-]S(=O)(=O)[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated in vacuo"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The crude residue was used without further purification in the subsequent reaction",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "crude residue"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "(S)-2-[3-(2-Benzyloxy-1-methylethyl)-2-(3,5-dimethylphenyl)-1H-pyrrolo[2,3-b]pyridin-5-yl]-2-methylpropanoic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C1=CC=CC=C1)OC[C@@H](C)C1=C(NC2=NC=C(C=C21)C(C(=O)O)(C)C)C2=CC(=CC(=C2)C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C29H32N2O3/c1-18-11-19(2)13-22(12-18)26-25(20(3)16-34-17-21-9-7-6-8-10-21)24-14-23(15-30-27(24)31-26)29(4,5)28(32)33/h6-15,20H,16-17H2,1-5H3,(H,30,31)(H,32,33)/t20-/m1/s1"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998432",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:21.868376"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-971d82806f324a49bea9df9534390146"
+}

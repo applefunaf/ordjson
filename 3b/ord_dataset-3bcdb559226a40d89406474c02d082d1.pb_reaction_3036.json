@@ -1,0 +1,603 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "C([O:8][C:9]1[C:10](=[O:18])[O:11][CH:12]([CH2:15][CH2:16][I:17])[C:13]=1[OH:14])C1C=CC=CC=1.C(OC(=O)C)(=O)C.N1C=CC=CC=1.B(Cl)(Cl)Cl>C(Cl)Cl.[Cl-].[Na+].O>[OH:8][C:9]1[C:10](=[O:18])[O:11][CH:12]([CH2:15][CH2:16][I:17])[C:13]=1[OH:14] |f:5.6.7|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m6": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "brine"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Cl-].[Na+].O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/ClH.Na.H2O/h1H;;1H2/q;+1;/p-1"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 50.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acetic anhydride"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)OC(C)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H6O3/c1-3(5)7-4(2)6/h1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 0.38,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "pyridine"
+            },
+            {
+              "type": "SMILES",
+              "value": "N1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C5H5N/c1-2-4-6-5-3-1/h1-5H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 0.34,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m4_m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "BCl3"
+            },
+            {
+              "type": "SMILES",
+              "value": "B(Cl)(Cl)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/BCl3/c2-1(3)4"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 5.2,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "CH2Cl2"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(Cl)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m1_m7": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3-benzyloxy-4-hydroxy-5-(2-iodoethyl)-2(5H)-furanone"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C1=CC=CC=C1)OC=1C(OC(C1O)CCI)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C13H13IO4/c14-7-6-10-11(15)12(13(16)18-10)17-8-9-4-2-1-3-5-9/h1-5,10,15H,6-8H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.72,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "CH2Cl2"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(Cl)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 10.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": -78.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "with stirring in an ice-water bath"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a dry flask flushed with argon was added 0.72 g (2.0 mmol) of 3-benzyloxy-4-hydroxy-5-(2-iodoethyl)-2(5H)-furanone and 10 mL of CH2Cl2. The solution was cooled with stirring in an ice-water bath, and 0.38 mL (4.0 mmol) of acetic anhydride and 0.34 mL (4.2 mmol) of pyridine were added. The ice bath was removed and the solution was stirred for 1 hour. All volatile substances were removed in vacuo (2 h at 1 mm Hg, 25° C.). Argon was introduced to the reaction flask and the residue was taken up in 20 mL of dry CH2Cl2, cooled to -78° C. and 5.2 mL (2.6 mmol) of 1.0 M BCl3 in CH2Cl2 was added with stirring. The reaction mixture was kept at -78° C. for 1 hour and at room temperature for 30 minutes. The mixture was poured into 50 mL of brine and extracted with 3×30 mL of ether. The combined ether extracts were washed with 5 mL of H2O and extracted into saturated NaHCO3 solution (3×15 mL). The bicarbonate fractions were pooled and washed with 15 mL of ether, acidified to pH 1 with 25% aqueous HCl solution, and extracted with 3×30 mL of ether. The ether extracts were combined and washed with 15 mL of brine, dried (MgSO4) and concentrated to provide 360 mg (67% yield) of 3,4-dihydroxy-5-(2-iodoethyl)-2(5H)-furanone as a white crystalline solid: mp 150-151° C.; 1H NMR (acetone-d6) δ 4.80 (dd, 1H, J=3.5, 8.0 Hz), 3.50-3.25 (m, 2H), 2.60-2.35 (m, 1H), 2.20-1.95 (m, 1H). Anal Calcd for C6H7O4I: C, 26.69; H, 2.61. Found: C, 26.54; H, 2.59."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "To a dry flask flushed with argon"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "The solution was cooled"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The ice bath was removed",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ice"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "STIRRING",
+      "details": "the solution was stirred for 1 hour",
+      "duration": {
+        "value": 1.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "All volatile substances were removed in vacuo (2 h at 1 mm Hg, 25° C.)",
+      "duration": {
+        "value": 2.0,
+        "units": "HOUR"
+      },
+      "temperature": {
+        "setpoint": {
+          "value": 25.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "ADDITION",
+      "details": "Argon was introduced to the reaction flask"
+    },
+    {
+      "type": "STIRRING",
+      "details": "with stirring"
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "extracted with 3×30 mL of ether",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 30.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "The combined ether extracts were washed with 5 mL of H2O",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "H2O"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 5.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "extracted into saturated NaHCO3 solution (3×15 mL)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "NaHCO3"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(=O)(O)[O-].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2O3.Na/c2-1(3)4;/h(H2,2,3,4);/q;+1/p-1"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 15.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "washed with 15 mL of ether",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 15.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "extracted with 3×30 mL of ether",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 30.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "washed with 15 mL of brine",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "brine"
+              },
+              {
+                "type": "SMILES",
+                "value": "[Cl-].[Na+].O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH.Na.H2O/h1H;;1H2/q;+1;/p-1"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 15.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "dried (MgSO4)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "MgSO4"
+              },
+              {
+                "type": "SMILES",
+                "value": "[O-]S(=O)(=O)[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 30.0,
+        "units": "MINUTE"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3,4-dihydroxy-5-(2-iodoethyl)-2(5H)-furanone"
+            },
+            {
+              "type": "SMILES",
+              "value": "OC=1C(OC(C1O)CCI)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H7IO4/c7-2-1-3-4(8)5(9)6(10)11-3/h3,8-9H,1-2H2"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 360.0,
+                  "units": "MILLIGRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 67.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 66.7
+              }
+            }
+          ],
+          "isolated_color": "white crystalline",
+          "texture": {
+            "type": "CUSTOM",
+            "details": "solid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06005000",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:19.206059"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-608de87841a74ac4b285ae794acc7506"
+}

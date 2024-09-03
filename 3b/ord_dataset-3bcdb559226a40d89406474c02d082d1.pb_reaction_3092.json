@@ -1,0 +1,324 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[Br:1][C:2]1[CH:7]=[CH:6][CH:5]=[CH:4][C:3]=1[OH:8].C(=O)([O-])[O-].[K+].[K+].[CH:15](I)([CH3:17])[CH3:16]>C(O)(C)C>[Br:1][C:2]1[CH:7]=[CH:6][CH:5]=[CH:4][C:3]=1[O:8][CH:15]([CH3:17])[CH3:16] |f:1.2.3|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ortho-bromo-phenol"
+            },
+            {
+              "type": "SMILES",
+              "value": "BrC1=C(C=CC=C1)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H5BrO/c7-5-3-1-2-4-6(5)8/h1-4,8H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 17.4,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "potassium carbonate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C([O-])([O-])=O.[K+].[K+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2O3.2K/c2-1(3)4;;/h(H2,2,3,4);;/q;2*+1/p-2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 20.7,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "isopropanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H8O/c1-3(2)4/h3-4H,1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 175.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "isopropyl iodide"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(C)I"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H7I/c1-3(2)4/h3H,1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 16.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "stir the mixture overnight"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "Prepare a stirred mixture of ortho-bromo-phenol (25.951 g, 17.4 mL, 0.15 mole) and potassium carbonate (20.70 g, 0.16 mole) in 175 mL isopropanol at ambient temperature under argon. Slowly add isopropyl iodide (22.2 g, 16.00 mL), heat at reflux and stir the mixture overnight. Cool to ambient temperature then filter, condensing the filtrate on a rotary evaporator. Dissolve the residual oil in diethyl ether (300 mL) and twice extract with 100 mL 50% sodium hyroxide. Separate, wash with brine and concentrate on a rotary evaporator to give a pale yellow liquid. Distill on the Kugelrohr (0.05 mm, 100°-120° C.) to obtain the title compound as an oil. (24.21 g, 75%)."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "Prepare"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "at reflux"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "then filter"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "condensing the filtrate"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "on a rotary evaporator"
+    },
+    {
+      "type": "DISSOLUTION",
+      "details": "Dissolve the residual oil in diethyl ether (300 mL)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "diethyl ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 300.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "twice extract with 100 mL 50% sodium hyroxide",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "sodium hyroxide"
+              },
+              {
+                "type": "SMILES",
+                "value": "[OH-].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Na.H2O/h;1H2/q+1;/p-1"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 100.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "Separate"
+    },
+    {
+      "type": "WASH",
+      "details": "wash with brine",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "brine"
+              },
+              {
+                "type": "SMILES",
+                "value": "[Cl-].[Na+].O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH.Na.H2O/h1H;;1H2/q;+1;/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrate on a rotary evaporator"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to give a pale yellow liquid"
+    },
+    {
+      "type": "DISTILLATION",
+      "details": "Distill on the Kugelrohr (0.05 mm, 100°-120° C.)"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 8.0,
+        "precision": 8.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "1-bromo-2-isopropoxy-benzene"
+            },
+            {
+              "type": "SMILES",
+              "value": "BrC1=C(C=CC=C1)OC(C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H11BrO/c1-7(2)11-9-6-4-3-5-8(9)10/h3-7H,1-2H3"
+            }
+          ],
+          "texture": {
+            "type": "OIL",
+            "details": "oil"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06004959",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:19.924727"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-b757932acdd7444b92733299de2b5f67"
+}

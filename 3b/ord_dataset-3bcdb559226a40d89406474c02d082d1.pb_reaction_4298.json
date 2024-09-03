@@ -1,0 +1,275 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[F:1][C:2]1[CH:3]=[C:4]([CH3:9])[CH:5]=[CH:6][C:7]=1[F:8].[Cl:10]Cl>>[Cl:10][C:5]1[CH:6]=[C:7]([F:8])[C:2]([F:1])=[CH:3][C:4]=1[CH3:9]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "chlorine"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClCl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Cl2/c1-2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m1_m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3,4-difluorotoluene"
+            },
+            {
+              "type": "SMILES",
+              "value": "FC=1C=C(C=CC1F)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H6F2/c1-5-2-3-6(8)7(9)4-5/h2-4H,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 925.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "steel"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 17.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ferric chloride"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 2.5,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 15.0,
+        "units": "CELSIUS"
+      }
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To 925 g of 3,4-difluorotoluene prepared in Example 15 were added 17 g of shaving steel and 2.5 g of ferric chloride, and then chlorine gas was injected at the rate of 10.0 l/hr for 19 hours, maintaining the temperature between 15° C. The reaction mixture was washed with 10%/ aqueous sodium sulfite and water. After drying with 32 g of calcium chloride, the resultant was purified by fractional distillation to give 980 g of the desired product as a colorless liquid, collecting at temperature of 156° C."
+  },
+  "workups": [
+    {
+      "type": "WASH",
+      "details": "The reaction mixture was washed with 10%/ aqueous sodium sulfite and water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "sodium sulfite"
+              },
+              {
+                "type": "SMILES",
+                "value": "S(=O)([O-])[O-].[Na+].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/2Na.H2O3S/c;;1-4(2)3/h;;(H2,1,2,3)/q2*+1;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "After drying with 32 g of calcium chloride",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "calcium chloride"
+              },
+              {
+                "type": "SMILES",
+                "value": "[Cl-].[Ca+2].[Cl-]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Ca.2ClH/h;2*1H/q+2;;/p-2"
+              }
+            ],
+            "amount": {
+              "mass": {
+                "value": 32.0,
+                "units": "GRAM"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DISTILLATION",
+      "details": "the resultant was purified by fractional distillation"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "desired product"
+            },
+            {
+              "type": "NAME",
+              "value": "2-chloro-4,5-difluorotoluene"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC1=C(C=C(C(=C1)F)F)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H5ClF2/c1-4-2-6(9)7(10)3-5(4)8/h2-3H,1H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 980.0,
+                  "units": "GRAM"
+                }
+              }
+            }
+          ],
+          "isolated_color": "colorless",
+          "texture": {
+            "type": "CUSTOM",
+            "details": "liquid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06008407",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:26.853170"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-cb6ea09f18b04a7d961dcae9fc175201"
+}

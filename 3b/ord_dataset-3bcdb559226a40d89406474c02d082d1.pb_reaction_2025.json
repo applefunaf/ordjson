@@ -1,0 +1,329 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "Cl[C:2]1[C:3]2[C:10]([C:11]3[CH:16]=[CH:15][C:14]([NH:17][S:18]([C:21]4[CH:26]=[CH:25][CH:24]=[CH:23][CH:22]=4)(=[O:20])=[O:19])=[CH:13][CH:12]=3)=[CH:9][N:8]([CH:27]([CH3:29])[CH3:28])[C:4]=2[N:5]=[CH:6][N:7]=1.[NH3:30]>O1CCOCC1>[NH2:30][C:2]1[C:3]2[C:10]([C:11]3[CH:16]=[CH:15][C:14]([NH:17][S:18]([C:21]4[CH:26]=[CH:25][CH:24]=[CH:23][CH:22]=4)(=[O:20])=[O:19])=[CH:13][CH:12]=3)=[CH:9][N:8]([CH:27]([CH3:29])[CH3:28])[C:4]=2[N:5]=[CH:6][N:7]=1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-[4-(4-chloro-7-isopropylpyrrolo[2,3-d]pyrimidin-5-yl)phenyl]-benzenesulphonamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC=1C2=C(N=CN1)N(C=C2C2=CC=C(C=C2)NS(=O)(=O)C2=CC=CC=C2)C(C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C21H19ClN4O2S/c1-14(2)26-12-18(19-20(22)23-13-24-21(19)26)15-8-10-16(11-9-15)25-29(27,28)17-6-4-3-5-7-17/h3-14,25H,1-2H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.34,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ammonia"
+            },
+            {
+              "type": "SMILES",
+              "value": "N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H3N/h1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 30.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "1,4-dioxane"
+            },
+            {
+              "type": "SMILES",
+              "value": "O1CCOCC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O2/c1-2-6-4-3-5-1/h1-4H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 30.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 120.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "with stirring at 120° C. in a pressure vessel for 16 hours"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture of N-[4-(4-chloro-7-isopropylpyrrolo[2,3-d]pyrimidin-5-yl)phenyl]-benzenesulphonamide (0.34 g), concentrated ammonia (30 ml, SG 0.880) and 1,4-dioxane (30 ml) was heated with stirring at 120° C. in a pressure vessel for 16 hours. The mixture was allowed to cool to ambient temperature and the solvent was removed under reduced pressure to give a residue which was partitioned between water (40 ml) and ethyl acetate (40 ml). The organic layer was separated and the aqueous layer was further extracted with ethyl acetate (2×40 ml). The combined ethyl acetate extracts were washed, dried, filtered and evaporated to give a solid which was purified by flash column chromatography on silica using ethyl acetate/cyclohexane (8:2) as the mobile phase. Appropriate fractions were collected, combined and concentrated to give N-[4-(4-amino-7-isopropyl-7H-pyrrolo[2,3-d]pyrimidin-5-yl)phenyl]benzenesulphonamide, m.p. 238-240° C."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "was heated"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "to cool to ambient temperature",
+      "temperature": {
+        "control": {
+          "type": "AMBIENT"
+        }
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the solvent was removed under reduced pressure"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to give a residue which"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "was partitioned between water (40 ml) and ethyl acetate (40 ml)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 40.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 40.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The organic layer was separated"
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "the aqueous layer was further extracted with ethyl acetate (2×40 ml)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 40.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "The combined ethyl acetate extracts were washed",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filtered"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "evaporated"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to give a solid which"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "was purified by flash column chromatography on silica"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "Appropriate fractions were collected"
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 16.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-[4-(4-amino-7-isopropyl-7H-pyrrolo[2,3-d]pyrimidin-5-yl)phenyl]benzenesulphonamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC=1C2=C(N=CN1)N(C=C2C2=CC=C(C=C2)NS(=O)(=O)C2=CC=CC=C2)C(C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C21H21N5O2S/c1-14(2)26-12-18(19-20(22)23-13-24-21(19)26)15-8-10-16(11-9-15)25-29(27,28)17-6-4-3-5-7-17/h3-14,25H,1-2H3,(H2,22,23,24)"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06001839",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:17.125846"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-81e8ef1e7f2b4b50b35b1752038391e2"
+}

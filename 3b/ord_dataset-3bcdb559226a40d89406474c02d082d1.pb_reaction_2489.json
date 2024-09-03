@@ -1,0 +1,186 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[NH2:1][C:2]1[CH:3]=[C:4]([O:10][CH3:11])[C:5]([O:8][CH3:9])=[CH:6][CH:7]=1.C(O[CH:15]=[C:16]([C:22]#[N:23])[C:17]([O:19][CH2:20][CH3:21])=[O:18])C>C1(C)C=CC=CC=1>[C:22]([C:16](=[CH:15][NH:1][C:2]1[CH:7]=[CH:6][C:5]([O:8][CH3:9])=[C:4]([O:10][CH3:11])[CH:3]=1)[C:17]([O:19][CH2:20][CH3:21])=[O:18])#[N:23]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-aminoveratrole"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC=1C=C(C(=CC1)OC)OC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H11NO2/c1-10-7-4-3-6(9)5-8(7)11-2/h3-5H,9H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 7.66,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethyl ethoxymethylenecyanoacetate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)OC=C(C(=O)OCC)C#N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H11NO3/c1-3-11-6-7(5-9)8(10)12-4-2/h6H,3-4H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 8.49,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "toluene"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1(=CC=CC=C1)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H8/c1-7-5-3-2-4-6-7/h2-6H,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 20.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 100.0,
+        "units": "CELSIUS"
+      }
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture of 7.66 g of 4-aminoveratrole, 8.49 g of ethyl ethoxymethylenecyanoacetate, and 20 ml of toluene was heated at 100° C. for 90 min. The toluene was evaporated to give a solid, mp 150-155° C."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "The toluene was evaporated",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "toluene"
+              },
+              {
+                "type": "SMILES",
+                "value": "C1(=CC=CC=C1)C"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C7H8/c1-7-5-3-2-4-6-7/h2-6H,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to give a solid, mp 150-155° C."
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Ethyl 2-cyano-3-(3,4-dimethoxyphenylamino)acrylate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(#N)C(C(=O)OCC)=CNC1=CC(=C(C=C1)OC)OC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C14H16N2O4/c1-4-20-14(17)10(8-15)9-16-11-5-6-12(18-2)13(7-11)19-3/h5-7,9,16H,4H2,1-3H3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06002008",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:24.602143"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-1950c5abef8a4cd68723b2295b0365aa"
+}

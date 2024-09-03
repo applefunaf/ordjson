@@ -1,0 +1,318 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[F:1][C:2]1[CH:10]=[C:9]2[C:5]([C:6]([N:11]3[CH2:16][CH2:15][N:14]([CH2:17][CH2:18][N:19]4[C:27](=[O:28])[C:26]5[C:21](=[CH:22][CH:23]=[CH:24][CH:25]=5)[C:20]4=[O:29])[CH2:13][CH2:12]3)=[N:7][NH:8]2)=[CH:4][CH:3]=1.[C:30]([Cl:38])(=[O:37])[C:31]1[CH:36]=[CH:35][CH:34]=[CH:33][CH:32]=1.C(O)C>CCOCC>[ClH:38].[C:30]([N:8]1[C:9]2[C:5](=[CH:4][CH:3]=[C:2]([F:1])[CH:10]=2)[C:6]([N:11]2[CH2:16][CH2:15][N:14]([CH2:17][CH2:18][N:19]3[C:27](=[O:28])[C:26]4=[CH:25][CH:24]=[CH:23][CH:22]=[C:21]4[C:20]3=[O:29])[CH2:13][CH2:12]2)=[N:7]1)(=[O:37])[C:31]1[CH:36]=[CH:35][CH:34]=[CH:33][CH:32]=1 |f:4.5|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Et2O"
+            },
+            {
+              "type": "SMILES",
+              "value": "CCOCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m1_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-[2-[4-(6-fluoro-1H-indazol-3-yl)-1-piperazinyl]ethyl]-1H-isoindol-1,3-(2H)-dione"
+            },
+            {
+              "type": "SMILES",
+              "value": "FC1=CC=C2C(=NNC2=C1)N1CCN(CC1)CCN1C(C2=CC=CC=C2C1=O)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C21H20FN5O2/c22-14-5-6-17-18(13-14)23-24-19(17)26-10-7-25(8-11-26)9-12-27-20(28)15-3-1-2-4-16(15)21(27)29/h1-6,13H,7-12H2,(H,23,24)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 6.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "benzoyl chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C1=CC=CC=C1)(=O)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H5ClO/c8-7(9)6-4-2-1-3-5-6/h1-5H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 25.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 300.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 175.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "was stirred at 175° C. under N2 for 2.0 hours"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture of 2-[2-[4-(6-fluoro-1H-indazol-3-yl)-1-piperazinyl]ethyl]-1H-isoindol-1,3-(2H)-dione (6.0 g, 15 mmol) and benzoyl chloride (25 ml) was stirred at 175° C. under N2 for 2.0 hours. The reaction was cooled and diluted with anhydrous Et2O and the resultant hydrochloride salt was collected to yield 7.2 g. The compound was stirred in boiling absolute ethanol (300 ml) for 1 hour and then at ambient temperature overnight. The solid was collected and dried to afford 6.9 g. Recrystallization from MeOH gave 3.9 g of a light grey solid, m.p. 257-260° C."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "The reaction was cooled"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the resultant hydrochloride salt was collected",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "hydrochloride salt"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to yield 7.2 g"
+    },
+    {
+      "type": "STIRRING",
+      "details": "The compound was stirred"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "for 1 hour",
+      "duration": {
+        "value": 1.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "at ambient temperature",
+      "temperature": {
+        "control": {
+          "type": "AMBIENT"
+        }
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "overnight",
+      "duration": {
+        "value": 8.0,
+        "precision": 8.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The solid was collected"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to afford 6.9 g"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "Recrystallization from MeOH",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "MeOH"
+              },
+              {
+                "type": "SMILES",
+                "value": "CO"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 2.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "light grey solid"
+            },
+            {
+              "type": "NAME",
+              "value": "N-[2-[4-(1-Benzoyl-6-fluoro-1H-indazol-3-yl)-1-piperazinyl]ethyl]-phthalimide hydrochloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl.C(C1=CC=CC=C1)(=O)N1N=C(C2=CC=C(C=C12)F)N1CCN(CC1)CCN1C(C=2C(C1=O)=CC=CC2)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C28H24FN5O3.ClH/c29-20-10-11-23-24(18-20)34(26(35)19-6-2-1-3-7-19)30-25(23)32-15-12-31(13-16-32)14-17-33-27(36)21-8-4-5-9-22(21)28(33)37;/h1-11,18H,12-17H2;1H"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 3.9,
+                  "units": "GRAM"
+                }
+              }
+            }
+          ],
+          "isolated_color": "light grey",
+          "texture": {
+            "type": "CUSTOM",
+            "details": "solid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998417",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:24.428840"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-c57274ba141843deb74be4651a0564dd"
+}

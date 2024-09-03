@@ -1,0 +1,353 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[OH:1]OS([O-])=O.[K+].[Cl:7][C:8]1[C:12]([S:13][CH2:14][CH3:15])=[N:11][S:10][N:9]=1.[OH2:16]>C1COCC1>[Cl:7][C:8]1[C:12]([S:13]([CH2:14][CH3:15])(=[O:1])=[O:16])=[N:11][S:10][N:9]=1 |f:0.1|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m3_m2_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Oxone"
+            },
+            {
+              "type": "SMILES",
+              "value": "OOS(=O)[O-].[K+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/K.H2O4S/c;1-4-5(2)3/h;1H,(H,2,3)/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 84.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3-chloro-4-ethylthio-1,2,5-thiadiazole"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC1=NSN=C1SCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H5ClN2S2/c1-2-8-4-3(5)6-9-7-4/h2H2,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 12.2,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "H2O"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 400.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "THF"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1CCOC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O/c1-2-4-5-3-1/h1-4H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 200.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "After stirring overnight"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A solution of Oxone (84 g, 0.137 mol) in H2O (400 mL) was rapidly stirred as 3-chloro-4-ethylthio-1,2,5-thiadiazole (12.2 g, 0.067 mol) in THF (200 mL) was added. After stirring overnight, the THF was evaporated and the residue extracted with ether (3×). The extracts were washed with H2O, aqueous NaHCO3, and brine then the solvent dried and evaporated to give a clear liquid (13.6 g). (Compound 4)."
+  },
+  "workups": [
+    {
+      "type": "ADDITION",
+      "details": "was added"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the THF was evaporated",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "THF"
+              },
+              {
+                "type": "SMILES",
+                "value": "C1CCOC1"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O/c1-2-4-5-3-1/h1-4H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "the residue extracted with ether (3×)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "The extracts were washed with H2O, aqueous NaHCO3, and brine",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "H2O"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "NaHCO3"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(=O)(O)[O-].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2O3.Na/c2-1(3)4;/h(H2,2,3,4);/q;+1/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "brine"
+              },
+              {
+                "type": "SMILES",
+                "value": "[Cl-].[Na+].O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH.Na.H2O/h1H;;1H2/q;+1;/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the solvent dried"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "evaporated"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 8.0,
+        "precision": 8.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "liquid"
+            },
+            {
+              "type": "NAME",
+              "value": "3-Chloro-4-ethylsulfonyl-1,2,5-thiadiazole"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC1=NSN=C1S(=O)(=O)CC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H5ClN2O2S2/c1-2-11(8,9)4-3(5)6-10-7-4/h2H2,1H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 13.6,
+                  "units": "GRAM"
+                }
+              }
+            }
+          ],
+          "texture": {
+            "type": "CUSTOM",
+            "details": "liquid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998434",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:19.695953"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-aa45569ca0314ad699fb4e2ac9095912"
+}

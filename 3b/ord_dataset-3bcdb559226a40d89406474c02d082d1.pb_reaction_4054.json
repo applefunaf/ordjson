@@ -1,0 +1,271 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "C1(OC2C=CC=CC=2)C=CC=CC=1.C1(C2C=CC=CC=2)C=CC=CC=1.[CH3:26][C:27]1[CH:28]=[CH:29][C:30]([N+:45]([O-:47])=[O:46])=[C:31]([CH:44]=1)[NH:32][CH:33]=[C:34]1[C:42](=[O:43])OC(C)(C)OC1=O>CCCCCC>[CH3:26][C:27]1[CH:28]=[CH:29][C:30]([N+:45]([O-:47])=[O:46])=[C:31]2[C:44]=1[C:42](=[O:43])[CH:34]=[CH:33][NH:32]2",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "n-hexane"
+            },
+            {
+              "type": "SMILES",
+              "value": "CCCCCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H14/c1-3-5-6-4-2/h3-6H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 100.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m1_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "diphenyl ether"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1(=CC=CC=C1)OC1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C12H10O/c1-3-7-11(8-4-1)13-12-9-5-2-6-10-12/h1-10H"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 37.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "biphenyl"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1(=CC=CC=C1)C1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C12H10/c1-3-7-11(8-4-1)12-9-5-2-6-10-12/h1-10H"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 13.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "isopropylidene (5-methyl-2-nitroanilino)methylenemalonate"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC=1C=CC(=C(NC=C2C(=O)OC(C)(C)OC2=O)C1)[N+](=O)[O-]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C14H14N2O6/c1-8-4-5-11(16(19)20)10(6-8)15-7-9-12(17)21-14(2,3)22-13(9)18/h4-7,15H,1-3H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 14.6,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 100.0,
+        "units": "CELSIUS"
+      }
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a stirred mixture of diphenyl ether (37 g) and biphenyl (13 g) was added isopropylidene (5-methyl-2-nitroanilino)methylenemalonate (14.6 g) at 220° C., and the mixture was heated at the same temperature for half an hour. The reaction mixture was allowed to cool to 100° C. and then n-hexane (100 ml) was added dropwise to the mixture. After cooling to ambient temperature, the precipitate was collected by filtration. The solid was washed with hot ethanol (70 ml) and allowed to cool to ambient temperature. The solid was collected by filtration and air-dried to give 1,4-dihydro-5-methyl-8-nitro-4-oxoquinoline (8.8 g) as a dark brown solid."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "the mixture was heated at the same temperature for half an hour"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "After cooling to ambient temperature",
+      "temperature": {
+        "control": {
+          "type": "AMBIENT"
+        }
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "the precipitate was collected by filtration"
+    },
+    {
+      "type": "WASH",
+      "details": "The solid was washed with hot ethanol (70 ml)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 70.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "to cool to ambient temperature",
+      "temperature": {
+        "control": {
+          "type": "AMBIENT"
+        }
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "The solid was collected by filtration"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "air-dried"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "1,4-dihydro-5-methyl-8-nitro-4-oxoquinoline"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC1=C2C(C=CNC2=C(C=C1)[N+](=O)[O-])=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C10H8N2O3/c1-6-2-3-7(12(14)15)10-9(6)8(13)4-5-11-10/h2-5H,1H3,(H,11,13)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 8.8,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 90.4
+              }
+            }
+          ],
+          "isolated_color": "dark brown",
+          "texture": {
+            "type": "CUSTOM",
+            "details": "solid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06008230",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:22.850308"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-8ac6ca2330e742f1989c43af8538ad46"
+}

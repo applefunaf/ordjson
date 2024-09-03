@@ -1,0 +1,238 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "C(Cl)Cl.[F:4][C:5]1[N:10]=[C:9]([F:11])[C:8]([F:12])=[C:7](F)[C:6]=1[F:14].[CH3:15][NH:16][CH3:17]>O>[CH3:15][N:16]([CH3:17])[C:7]1[C:6]([F:14])=[C:5]([F:4])[N:10]=[C:9]([F:11])[C:8]=1[F:12]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m2_m3_m4_m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "pentafluoropyridine"
+            },
+            {
+              "type": "SMILES",
+              "value": "FC1=C(C(=C(C(=N1)F)F)F)F"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C5F5N/c6-1-2(7)4(9)11-5(10)3(1)8"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 2.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "dimethylamine"
+            },
+            {
+              "type": "SMILES",
+              "value": "CNC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H7N/c1-3-2/h3H,1-2H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "solution"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methylene chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(Cl)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 50.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "After stirring for 30 minutes the solution"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To methylene chloride (50 mL) cooled in an ice bath was added pentafluoropyridine (2.0 g, 11.8 mmol) and dimethylamine (2.97 mL of a 40% solution in water, 24 mmol). After stirring for 30 minutes the solution was washed with water, and dried over basic alumina. The solvent was removed in vacuo to give 4-dimethylamino-2,3,5,6-tetrafluoropyridine; NMR (CDCl3) 3.13 (m,6) ppm."
+  },
+  "workups": [
+    {
+      "type": "WASH",
+      "details": "was washed with water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried over basic alumina"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The solvent was removed in vacuo"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 30.0,
+        "units": "MINUTE"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-dimethylamino-2,3,5,6-tetrafluoropyridine"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN(C1=C(C(=NC(=C1F)F)F)F)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H6F4N2/c1-13(2)5-3(8)6(10)12-7(11)4(5)9/h1-2H3"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06004981",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:18.613141"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-b5b7a64f26294b40a789840a9e4132fd"
+}

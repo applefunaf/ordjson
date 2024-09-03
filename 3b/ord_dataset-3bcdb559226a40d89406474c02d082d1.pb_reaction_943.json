@@ -1,0 +1,245 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][C:2]1([CH3:25])[S:6][C@@H:5]2[C@H:7]([NH:10][C:11]([C@H:13]([NH2:21])[C:14]3[CH:15]=[CH:16][C:17]([OH:20])=[CH:18][CH:19]=3)=[O:12])[C:8](=[O:9])[N:4]2[C@H:3]1[C:22]([OH:24])=[O:23].Cl>>[CH3:1][C:2]1([CH3:25])[S:6][C@@H:5]2[C@H:7]([NH:10][C:11]([C@H:13]([NH2:21])[C:14]3[CH:15]=[CH:16][C:17]([OH:20])=[CH:18][CH:19]=3)=[O:12])[C:8](=[O:9])[N:4]2[C@H:3]1[C:22]([OH:24])=[O:23].[OH2:9].[OH2:9].[OH2:9] |f:2.3.4.5|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4_m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ice water"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrochloric acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/ClH/h1H"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m1_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "solution"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "mixture"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "amoxicillin"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC1([C@@H](N2[C@H](S1)[C@@H](C2=O)NC(=O)[C@@H](C=3C=CC(=CC3)O)N)C(=O)O)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C16H19N3O5S/c1-16(2)11(15(23)24)19-13(22)10(14(19)25-16)18-12(21)9(17)7-3-5-8(20)6-4-7/h3-6,9-11,14,20H,17H2,1-2H3,(H,18,21)(H,23,24)/t9-,10-,11+,14-/m1/s1"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "The mixture is stirred for 90 minutes at a temperature of -30/-15°"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "The solution obtained in step a) is added dropwise to the mixture obtained in step b) at a temperature of -45/-30°. The mixture is stirred for 90 minutes at a temperature of -30/-15°. The resultant crude protected amoxicillin mixture is worked up by treatment with a mixture of ice-water and concentrated hydrochloric acid and stirring for 30 minutes while cooling with ice. The aqueous phase is separated off and the organic phase reextracted with water. The combined aqueous phases are treated with concentrated aqueous sodium hydroxide to a pH of 4.5/5.5. Crystalline amoxicillin trihydrate is isolated as described in Example 10 c). Yield 88.4%. Purity 99.3%."
+  },
+  "workups": [
+    {
+      "type": "STIRRING",
+      "details": "stirring for 30 minutes",
+      "duration": {
+        "value": 30.0,
+        "units": "MINUTE"
+      }
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "while cooling with ice"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The aqueous phase is separated off"
+    },
+    {
+      "type": "ADDITION",
+      "details": "The combined aqueous phases are treated with concentrated aqueous sodium hydroxide to a pH of 4.5/5.5",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "sodium hydroxide"
+              },
+              {
+                "type": "SMILES",
+                "value": "[OH-].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Na.H2O/h;1H2/q+1;/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 90.0,
+        "units": "MINUTE"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "amoxicillin trihydrate"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC1([C@@H](N2[C@H](S1)[C@@H](C2=O)NC(=O)[C@@H](C3=CC=C(C=C3)O)N)C(=O)O)C.O.O.O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C16H19N3O5S.3H2O/c1-16(2)11(15(23)24)19-13(22)10(14(19)25-16)18-12(21)9(17)7-3-5-8(20)6-4-7;;;/h3-6,9-11,14,20H,17H2,1-2H3,(H,18,21)(H,23,24);3*1H2/t9-,10-,11+,14-;;;/m1.../s1"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 88.4
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998610",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:31.874904"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-eae9812d476c4887b2977b5e6de8d9a1"
+}

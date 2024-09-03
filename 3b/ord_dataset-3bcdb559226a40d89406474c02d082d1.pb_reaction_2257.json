@@ -1,0 +1,191 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[OH:1][CH:2]([CH2:6][N:7]1[CH2:12][CH2:11][CH2:10][CH2:9][CH2:8]1)[CH2:3][O:4][NH2:5].[CH2:13]([N:20]=[C:21]=[O:22])[C:14]1[CH:19]=[CH:18][CH:17]=[CH:16][CH:15]=1>C(Cl)(Cl)Cl>[CH2:13]([NH:20][C:21]([NH:5][O:4][CH2:3][CH:2]([OH:1])[CH2:6][N:7]1[CH2:12][CH2:11][CH2:10][CH2:9][CH2:8]1)=[O:22])[C:14]1[CH:19]=[CH:18][CH:17]=[CH:16][CH:15]=1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "O-(2-hydroxy-3-piperidino-propyl)-hydroxylamine"
+            },
+            {
+              "type": "SMILES",
+              "value": "OC(CON)CN1CCCCC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H18N2O2/c9-12-7-8(11)6-10-4-2-1-3-5-10/h8,11H,1-7,9H2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "benzyl isocyanate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C1=CC=CC=C1)N=C=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H7NO/c10-7-9-6-8-4-2-1-3-5-8/h1-5H,6H2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "chloroform"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(Cl)(Cl)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CHCl3/c2-1(3)4/h1H"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "while stirring"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "O-(2-hydroxy-3-piperidino-propyl)-hydroxylamine (2,53 g, 0,0145 mol) was dissolved in 40 ml abs. chloroform and 1,8 ml (0,0145 mol) benzyl isocyanate was added thereto while stirring. The mixture was stirred for 2 hours, the solution was evaporated and the residue was crystallized from ethanol-ether mixture. Yield: 2,1 g (47%). Mp.: 100-101° C."
+  },
+  "workups": [
+    {
+      "type": "STIRRING",
+      "details": "The mixture was stirred for 2 hours",
+      "duration": {
+        "value": 2.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the solution was evaporated"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the residue was crystallized from ethanol-ether mixture",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethanol-ether"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-benzyl-N'-(2-hydroxy-3-piperidino-propoxy)-urea"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C1=CC=CC=C1)NC(=O)NOCC(CN1CCCCC1)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C16H25N3O3/c20-15(12-19-9-5-2-6-10-19)13-22-18-16(21)17-11-14-7-3-1-4-8-14/h1,3-4,7-8,15,20H,2,5-6,9-13H2,(H2,17,18,21)"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06002002",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:20.564779"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-95b48cfbc99a45f98ab4dc31fd79ed96"
+}

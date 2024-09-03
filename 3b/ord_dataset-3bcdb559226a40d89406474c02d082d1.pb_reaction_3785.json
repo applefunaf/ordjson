@@ -1,0 +1,433 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[Al+3].[Cl-].[Cl-].[Cl-].[CH3:5][C:6]1([CH3:17])[C:15]2[C:10](=[CH:11][CH:12]=[CH:13][CH:14]=2)[C:9](=[O:16])[CH2:8][CH2:7]1.[Br:18]Br>C(Cl)Cl>[CH3:5][C:6]1([CH3:17])[C:15]2[C:10](=[CH:11][C:12]([Br:18])=[CH:13][CH:14]=2)[C:9](=[O:16])[CH2:8][CH2:7]1 |f:0.1.2.3|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "AlCl3"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Al+3].[Cl-].[Cl-].[Cl-]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Al.3ClH/h;3*1H/q+3;;;/p-3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 9.5,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "CH2Cl2"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(Cl)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 3.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3,4-dihydro-4,4-dimethyl-1(2H)-naphthalenone"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC1(CCC(C2=CC=CC=C12)=O)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C12H14O/c1-12(2)8-7-11(13)9-5-3-4-6-10(9)12/h3-6H,7-8H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 5.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Bromine"
+            },
+            {
+              "type": "SMILES",
+              "value": "BrBr"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Br2/c1-2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 70.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "with stirring"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A 100 ml three-necked flask, fitted with an efficient reflux condenser and drying tube, and addition funnel, was charged with a mixture of AlCl3 9.5 g (71.4 mmol) and 3 ml of CH2Cl2. The 3,4-dihydro-4,4-dimethyl-1(2H)-naphthalenone (5.0 g, 28.7 mmol), was added dropwise with stirring (Caution: Exothermic Reaction!) to the mixture at room temperature. Bromine, 5.5 g (34.5 mmol), was then added very slowly, and the resulting mixture stirred for 2 hours at room temperature. (Note: if stirring stops, the mixture can be warmed to 70° C. until stirring resumes.) The reaction was then quenched by the slow addition of ice-cold 6M HCl. The mixture was extracted with Et2O and the combined organic layers washed with water, saturated aqueous NaHCO3, and saturated NaCl, before being dried over MgSO4. Removal of the solvent under reduced pressure, and distillation of the residue afforded 5.8 g (80%) of the product as a pale-yellow oil which solidified on standing, bp: 140° C./0.4 mm Hg. 1H NMR (CDCl3): δ 8.11 (1H, d, J=3.0 Hz), 7.61 (1H, dd, J=3.0, 9.0 Hz), 7.31 (1H, d, J=9.0 Hz), 2.72 (2H, t, J=6.0 Hz), 2.01 (2H, t, J=6.0 Hz), 1.28 (6H, s)."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "A 100 ml three-necked flask, fitted with an efficient reflux condenser"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "drying"
+    },
+    {
+      "type": "ADDITION",
+      "details": "tube, and addition funnel"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "(Caution: Exothermic Reaction!) to the mixture at room temperature",
+      "temperature": {
+        "control": {
+          "type": "AMBIENT"
+        }
+      }
+    },
+    {
+      "type": "STIRRING",
+      "details": "the resulting mixture stirred for 2 hours at room temperature",
+      "duration": {
+        "value": 2.0,
+        "units": "HOUR"
+      },
+      "temperature": {
+        "control": {
+          "type": "AMBIENT"
+        }
+      }
+    },
+    {
+      "type": "STIRRING",
+      "details": "(Note: if stirring stops"
+    },
+    {
+      "type": "STIRRING",
+      "details": "until stirring resumes"
+    },
+    {
+      "type": "CUSTOM",
+      "details": ") The reaction was then quenched by the slow addition of ice-cold 6M HCl",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ice"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "The mixture was extracted with Et2O",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "Et2O"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "the combined organic layers washed with water, saturated aqueous NaHCO3, and saturated NaCl",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "NaHCO3"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(=O)(O)[O-].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2O3.Na/c2-1(3)4;/h(H2,2,3,4);/q;+1/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "NaCl"
+              },
+              {
+                "type": "SMILES",
+                "value": "[Na+].[Cl-]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH.Na/h1H;/q;+1/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "before being dried over MgSO4",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "MgSO4"
+              },
+              {
+                "type": "SMILES",
+                "value": "[O-]S(=O)(=O)[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "Removal of the solvent"
+    },
+    {
+      "type": "DISTILLATION",
+      "details": "under reduced pressure, and distillation of the residue"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "product"
+            },
+            {
+              "type": "NAME",
+              "value": "3.4-dihydro-4,4-dimethyl-7-bromo-1(2H)-naphthalenone"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC1(CCC(C2=CC(=CC=C12)Br)=O)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C12H13BrO/c1-12(2)6-5-11(14)9-7-8(13)3-4-10(9)12/h3-4,7H,5-6H2,1-2H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 5.8,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 80.0
+              }
+            }
+          ],
+          "isolated_color": "pale-yellow",
+          "texture": {
+            "type": "OIL",
+            "details": "oil"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06008204",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:17.747973"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-f4415c7f5c804ad2b692277c7abebd1c"
+}

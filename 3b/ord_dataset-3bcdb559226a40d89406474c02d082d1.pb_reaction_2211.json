@@ -1,0 +1,241 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][O-:2].[K+].F[C:5]1[CH:13]=[CH:12][CH:11]=[C:10]([C:14]([F:17])([F:16])[F:15])[C:6]=1[C:7]([OH:9])=[O:8].O>CO>[CH3:1][O:2][C:5]1[CH:13]=[CH:12][CH:11]=[C:10]([C:14]([F:17])([F:16])[F:15])[C:6]=1[C:7]([OH:9])=[O:8] |f:0.1|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m1_m4_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "potassium methylate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C[O-].[K+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH3O.K/c1-2;/h1H3;/q-1;+1"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-fluoro-6-trifluoromethylbenzoic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "FC1=C(C(=O)O)C(=CC=C1)C(F)(F)F"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H4F4O2/c9-5-3-1-2-4(8(10,11)12)6(5)7(13)14/h1-3H,(H,13,14)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 2.08,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 15.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "with stirring for 40 hours"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture of potassium methylate in methanol (15 ml, 15%) and 2-fluoro-6-trifluoromethylbenzoic acid (2.08 g, 0.01 mol) is heated to reflux with stirring for 40 hours. Upon cooling to room temperature water is added. The reaction mixture is filtered and the filtrate is acidified with concentrated hydrochloric acid. The solid material is collected by filtration, washed with water and dried yielding white crystals, 1.4 g (64%), mp 130-131° C."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "is heated"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "to reflux"
+    },
+    {
+      "type": "ADDITION",
+      "details": "is added"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "The reaction mixture is filtered"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "The solid material is collected by filtration"
+    },
+    {
+      "type": "WASH",
+      "details": "washed with water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "yielding white crystals, 1.4 g (64%), mp 130-131° C."
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 40.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-methoxy-6-trifluoromethylbenzoic Acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "COC1=C(C(=O)O)C(=CC=C1)C(F)(F)F"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H7F3O3/c1-15-6-4-2-3-5(9(10,11)12)7(6)8(13)14/h2-4H,1H3,(H,13,14)"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06001883",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:19.865542"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-59a931e776544b77ae6ea1b472ab51c4"
+}

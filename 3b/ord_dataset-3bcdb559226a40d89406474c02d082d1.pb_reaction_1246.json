@@ -1,0 +1,313 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "S(=O)(=O)(O)O.C(O)(=O)C.[Br:10][C:11]1[CH:19]=[CH:18][C:14]([C:15]([OH:17])=[O:16])=[C:13]([N:20]([CH2:25][CH3:26])S(C)(=O)=O)[C:12]=1[O:27][CH2:28][CH3:29].[OH-].[Na+]>O>[Br:10][C:11]1[CH:19]=[CH:18][C:14]([C:15]([OH:17])=[O:16])=[C:13]([NH:20][CH2:25][CH3:26])[C:12]=1[O:27][CH2:28][CH3:29] |f:3.4|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sodium hydroxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "[OH-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Na.H2O/h;1H2/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m1_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sulphuric acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "S(O)(O)(=O)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O4S/c1-5(2,3)4/h(H2,1,2,3,4)"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 128.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acetic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H4O2/c1-2(3)4/h1H3,(H,3,4)"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 192.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-bromo-3-ethoxy-2-(N-ethyl-N-methylsulphonylamino)benzoic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "BrC1=C(C(=C(C(=O)O)C=C1)N(S(=O)(=O)C)CC)OCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C12H16BrNO5S/c1-4-14(20(3,17)18)10-8(12(15)16)6-7-9(13)11(10)19-5-2/h6-7H,4-5H2,1-3H3,(H,15,16)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 8.8,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture of concentrated sulphuric acid (128 ml) and acetic acid (192 ml) was added with stirring to 4-bromo-3-ethoxy-2-(N-ethyl-N-methylsulphonylamino)benzoic acid (8.8 g) at 85° C. for 100 minutes and left to stand at ambient temperature for 3 days. After pouring onto excess water, the mixture was made neutral by the careful addition of sodium hydroxide solution with cooling, extracted with ethyl acetate, dried (anhydrous magnesium sulphate) and the solvent evaporated to give 4-bromo-2-ethylamino-3-ethoxybenzoic acid (4.74 g) as a brown solid, m.p. 129-139° C."
+  },
+  "workups": [
+    {
+      "type": "ADDITION",
+      "details": "was added"
+    },
+    {
+      "type": "WAIT",
+      "details": "left"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "with cooling"
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "extracted with ethyl acetate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "dried (anhydrous magnesium sulphate)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "magnesium sulphate"
+              },
+              {
+                "type": "SMILES",
+                "value": "S(=O)(=O)([O-])[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the solvent evaporated"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 3.0,
+        "units": "DAY"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-bromo-2-ethylamino-3-ethoxybenzoic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "BrC1=C(C(=C(C(=O)O)C=C1)NCC)OCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C11H14BrNO3/c1-3-13-9-7(11(14)15)5-6-8(12)10(9)16-4-2/h5-6,13H,3-4H2,1-2H3,(H,14,15)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 4.74,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 68.5
+              }
+            }
+          ],
+          "isolated_color": "brown",
+          "texture": {
+            "type": "CUSTOM",
+            "details": "solid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998653",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:35.110019"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-0c51fe93ad11408081ec187608bc742c"
+}

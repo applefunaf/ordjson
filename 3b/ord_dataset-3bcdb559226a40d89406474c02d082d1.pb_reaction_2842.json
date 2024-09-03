@@ -1,0 +1,393 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[OH-].[K+].[CH3:3][C:4]1[CH:9]=[CH:8][C:7]([CH2:10][C:11]#[N:12])=[CH:6][CH:5]=1.[N+:13]([C:16]1[CH:21]=[CH:20][CH:19]=[CH:18][CH:17]=1)([O-])=[O:14].C(O)(=O)C>CO.O>[OH:14][N:13]=[C:16]1[CH:21]=[CH:20][C:19](=[C:10]([C:7]2[CH:8]=[CH:9][C:4]([CH3:3])=[CH:5][CH:6]=2)[C:11]#[N:12])[CH:18]=[CH:17]1 |f:0.1|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m7": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 400.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-methylphenylacetonitrile"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC1=CC=C(C=C1)CC#N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H9N/c1-8-2-4-9(5-3-8)6-7-10/h2-5H,6H2,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 25.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m1_m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "KOH"
+            },
+            {
+              "type": "SMILES",
+              "value": "[OH-].[K+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/K.H2O/h;1H2/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 40.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 200.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m4_m6": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acetic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H4O2/c1-2(3)4/h1H3,(H,3,4)"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 110.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 100.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "nitrobenzene"
+            },
+            {
+              "type": "SMILES",
+              "value": "[N+](=O)([O-])C1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H5NO2/c8-7(9)6-4-2-1-3-5-6/h1-5H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 18.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 55.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "The reaction mixture is stirred at 55° C. for 2.5 hrs"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "40 g of KOH are dissolved in 200 ml of methanol and heated up to 55° C. To the solution are added 25 g (0.19 mol) of 4-methylphenylacetonitrile, followed by 18 ml (0.17 mol) of nitrobenzene. The reaction mixture is stirred at 55° C. for 2.5 hrs. After cooling, 400 ml of water are added with stirring. The resulting solution is acidified by addition of 110 ml of acetic acid in 100 ml of water, leading to a yellow precipitate. The mixture is then filtered, and the solid is washed with a mixture of methanol and water, and methanol. After the solid is dried in air, 29.6 g (74%) of (4-Hydroxyimino-cyclohexa-2,5-dienylidene)-(4-methylphenyl)-acetonitrile are obtained in the form of a yellow powder having a melting point of 148-151° C. (dec.)."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "After cooling"
+    },
+    {
+      "type": "STIRRING",
+      "details": "with stirring"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "The mixture is then filtered"
+    },
+    {
+      "type": "WASH",
+      "details": "the solid is washed with a mixture of methanol and water, and methanol",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "methanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "CO"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "methanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "CO"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "After the solid is dried in air, 29.6 g (74%) of (4-Hydroxyimino-cyclohexa-2,5-dienylidene)-(4-methylphenyl)-acetonitrile",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "(4-Hydroxyimino-cyclohexa-2,5-dienylidene)-(4-methylphenyl)-acetonitrile"
+              },
+              {
+                "type": "SMILES",
+                "value": "ON=C1C=CC(C=C1)=C(C#N)C1=CC=C(C=C1)C"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C15H12N2O/c1-11-2-4-12(5-3-11)15(10-16)13-6-8-14(17-18)9-7-13/h2-9,18H,1H3"
+              }
+            ],
+            "amount": {
+              "mass": {
+                "value": 29.6,
+                "units": "GRAM"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "are obtained in the form of a yellow powder"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 2.5,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "(4-Hydroxyimino-cyclohexa-2,5-dienylidene)-(4-methylphenyl)-acetonitrile"
+            },
+            {
+              "type": "SMILES",
+              "value": "ON=C1C=CC(C=C1)=C(C#N)C1=CC=C(C=C1)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C15H12N2O/c1-11-2-4-12(5-3-11)15(10-16)13-6-8-14(17-18)9-7-13/h2-9,18H,1H3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06004724",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:16.033339"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-f1ba1db8beda47e9873fdc3a5a82e4b1"
+}

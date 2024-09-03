@@ -1,0 +1,286 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][C:2]1([C:15]([O:17]CC)=[O:16])[CH:6]=[CH:5][N:4]([C:7]2[CH:12]=[CH:11][C:10]([O:13][CH3:14])=[CH:9][CH:8]=2)[NH:3]1.[OH-].[K+]>C(O)C>[CH3:1][C:2]1([C:15]([OH:17])=[O:16])[CH:6]=[CH:5][N:4]([C:7]2[CH:12]=[CH:11][C:10]([O:13][CH3:14])=[CH:9][CH:8]=2)[NH:3]1 |f:1.2|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethyl 3-methyl-1-(4-methoxyphenyl)-1 H-pyrazolecarboxylate"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC1(NN(C=C1)C1=CC=C(C=C1)OC)C(=O)OCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C14H18N2O3/c1-4-19-13(17)14(2)9-10-16(15-14)11-5-7-12(18-3)8-6-11/h5-10,15H,4H2,1-3H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 5.197,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "potassium hydroxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "[OH-].[K+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/K.H2O/h;1H2/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 3.362,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 70.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "was stirred at ambient temperature for 5 h"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture of ethyl 3-methyl-1-(4-methoxyphenyl)-1 H-pyrazolecarboxylate (0.01997 mol, 5.197 g) and potassium hydroxide (3.362 g, 3.0 eq.) in ethanol (70 mL) was stirred at ambient temperature for 5 h. The solvent was removed in vacuo and the residue was taken up in water. This was extracted with methylene chloride (3×) to remove unreacted starting material. The aqueous was made acidic (pH 3) by the dropwise addition of conc. HCl at 0° C. to give white precipitation of acid. The solid acid was obtained by filtration and pumped on for several hours to dry. This procedure gave 4.23 g of pure product (91%); mp: 161.8° C."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "The solvent was removed in vacuo"
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "This was extracted with methylene chloride (3×)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "methylene chloride"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(Cl)Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to remove unreacted"
+    },
+    {
+      "type": "ADDITION",
+      "details": "by the dropwise addition of conc. HCl at 0° C.",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "HCl"
+              },
+              {
+                "type": "SMILES",
+                "value": "Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH/h1H"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      },
+      "temperature": {
+        "setpoint": {
+          "value": 0.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to give white"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "precipitation of acid"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The solid acid was obtained by filtration"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "pumped on for several hours"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to dry"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 5.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "pure product"
+            },
+            {
+              "type": "NAME",
+              "value": "3-Methyl-1-(4-methoxyphenyl)-1H-pyrazolecarboxylic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC1(NN(C=C1)C1=CC=C(C=C1)OC)C(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C12H14N2O3/c1-12(11(15)16)7-8-14(13-12)9-3-5-10(17-2)6-4-9/h3-8,13H,1-2H3,(H,15,16)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 4.23,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 91.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 90.4
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998424",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:25.869190"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-88c23e1ba20945ea81c24c1b7938518b"
+}

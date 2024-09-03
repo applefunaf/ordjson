@@ -1,0 +1,225 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[NH:1]1[C:9]2[C:4](=[CH:5][CH:6]=[CH:7][CH:8]=2)[C:3]([N:10]2[CH2:15][CH2:14][NH:13][CH2:12][CH2:11]2)=[N:2]1.Br[CH2:17][CH2:18][N:19]1[C:23](=[O:24])[C:22]2=[CH:25][CH:26]=[CH:27][CH:28]=[C:21]2[C:20]1=[O:29].C(=O)(O)[O-].[Na+]>C(#N)C>[NH:1]1[C:9]2[C:4](=[CH:5][CH:6]=[CH:7][CH:8]=2)[C:3]([N:10]2[CH2:11][CH2:12][N:13]([CH2:17][CH2:18][N:19]3[C:23](=[O:24])[C:22]4=[CH:25][CH:26]=[CH:27][CH:28]=[C:21]4[C:20]3=[O:29])[CH2:14][CH2:15]2)=[N:2]1 |f:2.3|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m3_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-(1H-indazol-3-yl)piperazine"
+            },
+            {
+              "type": "SMILES",
+              "value": "N1N=C(C2=CC=CC=C12)N1CCNCC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C11H14N4/c1-2-4-10-9(3-1)11(14-13-10)15-7-5-12-6-8-15/h1-4,12H,5-8H2,(H,13,14)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 1.6,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-(2- bromoethyl)phthalimide"
+            },
+            {
+              "type": "SMILES",
+              "value": "BrCCN1C(C=2C(C1=O)=CC=CC2)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C10H8BrNO2/c11-5-6-12-9(13)7-3-1-2-4-8(7)10(12)14/h1-4H,5-6H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 2.1,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sodium bicarbonate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C([O-])(O)=O.[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2O3.Na/c2-1(3)4;/h(H2,2,3,4);/q;+1/p-1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.7,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acetonitrile"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)#N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H3N/c1-2-3/h1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 160.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A suspension of 4-(1H-indazol-3-yl)piperazine (1.6 g, 7.9 mmol), N-(2- bromoethyl)phthalimide (2.1 g, 7.9 mmol), and sodium bicarbonate (0.7 g, 8.3 mmol) in acetonitrile (160 ml) was warmed to reflux for 24 hours. Upon cooling to room temperature, the reaction mixture was filtered through a pad of celite and the solids were washed with DCM. The combined filtrates were concentrated to give the N-[2-[4-(1H-indazol-3-yl)-1-piperazinyl]ethyl]phthalimide which was used without further purification."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "was warmed"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "to reflux for 24 hours",
+      "duration": {
+        "value": 24.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "the reaction mixture was filtered through a pad of celite"
+    },
+    {
+      "type": "WASH",
+      "details": "the solids were washed with DCM",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "DCM"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(Cl)Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "The combined filtrates were concentrated"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-[2-[4-(1H-indazol-3-yl)-1-piperazinyl]ethyl]phthalimide"
+            },
+            {
+              "type": "SMILES",
+              "value": "N1N=C(C2=CC=CC=C12)N1CCN(CC1)CCN1C(C=2C(C1=O)=CC=CC2)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C21H21N5O2/c27-20-15-5-1-2-6-16(15)21(28)26(20)14-11-24-9-12-25(13-10-24)19-17-7-3-4-8-18(17)22-23-19/h1-8H,9-14H2,(H,22,23)"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998417",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:24.584143"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-8a2a7a921e8f4d39a85d60441172373f"
+}

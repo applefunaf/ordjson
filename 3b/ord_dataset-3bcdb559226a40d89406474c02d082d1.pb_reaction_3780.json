@@ -1,0 +1,239 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH2:1]([N:3]1[C:7]([NH:8][C:9]2[C:10](=[CH:14][C:15]([O:18][CH3:19])=[CH:16][CH:17]=2)[C:11](O)=O)=[CH:6][CH:5]=[N:4]1)[CH3:2].[NH4+].[OH-].O=P(Cl)(Cl)[Cl:24]>>[CH2:1]([N:3]1[C:7]2=[N:8][C:9]3[C:10]([C:11]([Cl:24])=[C:6]2[CH:5]=[N:4]1)=[CH:14][C:15]([O:18][CH3:19])=[CH:16][CH:17]=3)[CH3:2] |f:1.2|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-(1-ethylpyrazol-5-yl)-5-methoxyanthranilic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)N1N=CC=C1NC=1C(C(=O)O)=CC(=CC1)OC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C13H15N3O3/c1-3-16-12(6-7-14-16)15-11-5-4-9(19-2)8-10(11)13(17)18/h4-8,15H,3H2,1-2H3,(H,17,18)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 110.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "POCl3"
+            },
+            {
+              "type": "SMILES",
+              "value": "O=P(Cl)(Cl)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Cl3OP/c1-5(2,3)4"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 300.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ice water"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "NH4OH"
+            },
+            {
+              "type": "SMILES",
+              "value": "[NH4+].[OH-]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H3N.H2O/h1H3;1H2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture of N-(1-ethylpyrazol-5-yl)-5-methoxyanthranilic acid (110 g, 0.421 mol) and POCl3 (300 mL) was refluxed overnight and then was allowed to stand at room temperature for about 3 days. The reaction mixture was poured into ice-water and then was basified with NH4OH. The solid which formed was collected by filtration, washed with water and air dried to afford 100.5 g of 1-ethyl-4-chloro-6-methoxy-1H-pyrazolo[3,4-b]quinoline."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "was refluxed overnight",
+      "duration": {
+        "value": 8.0,
+        "precision": 8.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The solid which formed"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "was collected by filtration"
+    },
+    {
+      "type": "WASH",
+      "details": "washed with water and air",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 3.0,
+        "units": "DAY"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "1-ethyl-4-chloro-6-methoxy-1H-pyrazolo[3,4-b]quinoline"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)N1N=CC=2C1=NC1=CC=C(C=C1C2Cl)OC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C13H12ClN3O/c1-3-17-13-10(7-15-17)12(14)9-6-8(18-2)4-5-11(9)16-13/h4-7H,3H2,1-2H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 100.5,
+                  "units": "GRAM"
+                }
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06008226",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:17.658418"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-f0061146041f413eb9e82a97757d9faf"
+}

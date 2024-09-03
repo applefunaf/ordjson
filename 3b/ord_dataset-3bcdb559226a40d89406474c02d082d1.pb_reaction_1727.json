@@ -1,0 +1,254 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][N:2]([CH2:4][C:5]1[S:26][C:8]2[CH2:9][N:10]([C:13](=[O:25])[CH2:14][CH2:15][CH2:16][CH2:17][CH2:18][C:19]3[CH:24]=[CH:23][CH:22]=[CH:21][CH:20]=3)[CH2:11][CH2:12][C:7]=2[CH:6]=1)[CH3:3].[ClH:27]>CO>[ClH:27].[CH3:1][N:2]([CH2:4][C:5]1[S:26][C:8]2[CH2:9][N:10]([C:13](=[O:25])[CH2:14][CH2:15][CH2:16][CH2:17][CH2:18][C:19]3[CH:24]=[CH:23][CH:22]=[CH:21][CH:20]=3)[CH2:11][CH2:12][C:7]=2[CH:6]=1)[CH3:3] |f:3.4|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "1-(2-Dimethylaminomethyl-5,7-dihydro-4H-thieno[2,3-c]pyridin-6-yl)-6-phenylhexan-1-one"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN(C)CC1=CC2=C(CN(CC2)C(CCCCCC2=CC=CC=C2)=O)S1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C22H30N2OS/c1-23(2)16-20-15-19-13-14-24(17-21(19)26-20)22(25)12-8-4-7-11-18-9-5-3-6-10-18/h3,5-6,9-10,15H,4,7-8,11-14,16-17H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 70.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 2.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m2_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrogen chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/ClH/h1H"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "by stirring"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "1-(2-Dimethylaminomethyl-5,7-dihydro-4H-thieno[2,3-c]pyridin-6-yl)-6-phenylhexan-1-one 70 mg was dissolved in 2 ml of methanol; hydrogen chloride in methanol was added in excess, followed by stirring. After this mixture was concentrated, diethyl ether was added; the resulting solid was filtered and washed with diethyl ether to yield the desired product."
+  },
+  "workups": [
+    {
+      "type": "CONCENTRATION",
+      "details": "After this mixture was concentrated"
+    },
+    {
+      "type": "ADDITION",
+      "details": "diethyl ether was added",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "diethyl ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "the resulting solid was filtered"
+    },
+    {
+      "type": "WASH",
+      "details": "washed with diethyl ether",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "diethyl ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "desired product"
+            },
+            {
+              "type": "NAME",
+              "value": "1-(2-dimethylaminomethyl-5,7-dihydro-4H-thieno[2,3-c]pyridin-6-yl)-6-phenylhexan-1-one hydrochloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl.CN(C)CC1=CC2=C(CN(CC2)C(CCCCCC2=CC=CC=C2)=O)S1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C22H30N2OS.ClH/c1-23(2)16-20-15-19-13-14-24(17-21(19)26-20)22(25)12-8-4-7-11-18-9-5-3-6-10-18;/h3,5-6,9-10,15H,4,7-8,11-14,16-17H2,1-2H3;1H"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998433",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:42.947096"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-0009c9878fc546ba94ab9775dea516a7"
+}

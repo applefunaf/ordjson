@@ -1,0 +1,298 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][NH:2][S:3]([CH3:6])(=[O:5])=[O:4].[H-].[Na+].[F:9][C:10]([F:29])([F:28])[CH2:11][CH2:12][CH2:13][O:14][C:15]1[CH:16]=[C:17]2[C:22](=[CH:23][CH:24]=1)[O:21][C:20]([CH3:26])([CH3:25])[C@@H:19]1[O:27][C@H:18]21.O>CS(C)=O>[OH:27][C@@H:19]1[C@@H:18]([CH2:6][S:3]([NH:2][CH3:1])(=[O:5])=[O:4])[C:17]2[C:22](=[CH:23][CH:24]=[C:15]([O:14][CH2:13][CH2:12][CH2:11][C:10]([F:29])([F:9])[F:28])[CH:16]=2)[O:21][C:20]1([CH3:26])[CH3:25] |f:1.2|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m1_m2_m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-methyl-methanesulfonamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "CNS(=O)(=O)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H7NO2S/c1-3-6(2,4)5/h3H,1-2H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.77,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sodium hydride"
+            },
+            {
+              "type": "SMILES",
+              "value": "[H-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Na.H/q+1;-1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.065,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "DMSO"
+            },
+            {
+              "type": "SMILES",
+              "value": "CS(=O)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6OS/c1-4(2)3/h1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 3.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m3_m6": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "(3R,4R)-(+)-6-(4,4,4-trifluorobutoxy)-2,2-dimethyl-3,4-epoxychroman"
+            },
+            {
+              "type": "SMILES",
+              "value": "FC(CCCOC=1C=C2[C@@H]3[C@H](C(OC2=CC1)(C)C)O3)(F)F"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C15H17F3O3/c1-14(2)13-12(20-13)10-8-9(4-5-11(10)21-14)19-7-3-6-15(16,17)18/h4-5,8,12-13H,3,6-7H2,1-2H3/t12-,13-/m1/s1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 1.65,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "DMSO"
+            },
+            {
+              "type": "SMILES",
+              "value": "CS(=O)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6OS/c1-4(2)3/h1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 5.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "the mixture was stirred at RT for 20 min"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "Under argon, 0.77 g (7.1 mmol) of N-methyl-methanesulfonamide was added to a suspension of 0.065 g (2.7 mmol) of 80 percent sodium hydride in 3 ml of DMSO, and the mixture was stirred at RT for 20 min. 1.65 g (5.5 mmol) of (3R,4R)-(+)-6-(4,4,4-trifluorobutoxy)-2,2-dimethyl-3,4-epoxychroman, dissolved in 5 ml of DMSO, were then added dropwise and the batch was left to stand at RT for 4 days and then heated at 45° C. for a further 9 h. The mixture was subsequently poured into water and the precipitate was filtered off with suction and dried thoroughly under reduced pressure, giving 1.9 g of (3R,4S)-(+)-[3-hydroxy-2,2-dimethyl-6-(4,4,4-trifluorobutoxy)chroman-4-yl]-N-methyl-methanesulfonamide, which was recrystallized from a little isopropanol (->1.4 g; m.p. 178-179° C.; optical purity (chiral HPLC) 100%)."
+  },
+  "workups": [
+    {
+      "type": "ADDITION",
+      "details": "were then added dropwise"
+    },
+    {
+      "type": "WAIT",
+      "details": "the batch was left"
+    },
+    {
+      "type": "WAIT",
+      "details": "to stand at RT for 4 days",
+      "duration": {
+        "value": 4.0,
+        "units": "DAY"
+      },
+      "temperature": {
+        "control": {
+          "type": "AMBIENT"
+        }
+      }
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "heated at 45° C. for a further 9 h",
+      "duration": {
+        "value": 9.0,
+        "units": "HOUR"
+      },
+      "temperature": {
+        "setpoint": {
+          "value": 45.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "the precipitate was filtered off with suction"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried thoroughly under reduced pressure"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 20.0,
+        "units": "MINUTE"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "(3R,4S)-(+)-[3-hydroxy-2,2-dimethyl-6-(4,4,4-trifluorobutoxy)chroman-4-yl]-N-methyl-methanesulfonamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "O[C@H]1C(OC2=CC=C(C=C2[C@@H]1CS(=O)(=O)NC)OCCCC(F)(F)F)(C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C17H24F3NO5S/c1-16(2)15(22)13(10-27(23,24)21-3)12-9-11(5-6-14(12)26-16)25-8-4-7-17(18,19)20/h5-6,9,13,15,21-22H,4,7-8,10H2,1-3H3/t13-,15+/m0/s1"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 1.9,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 84.0
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06008245",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:20.549403"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-860cb93b231848d2a57af261041ef14e"
+}

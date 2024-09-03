@@ -1,0 +1,350 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "Cl([O-])(=O)(=O)=O.[CH2:6]1[C:13]2[CH2:12][CH2:11][CH2:10][N+:9]=2[CH2:8][CH2:7]1.[C:14]([Mg]Br)#[CH:15]>C1COCC1>[C:14]([C:13]12[CH2:12][CH2:11][CH2:10][N:9]1[CH2:8][CH2:7][CH2:6]2)#[CH:15] |f:0.1|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "compound"
+            },
+            {
+              "type": "NAME",
+              "value": "1,2,3,5,6,7-Hexahydropyrrolizinium perchlorate"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl(=O)(=O)(=O)[O-].C1CC[N+]=2CCCC12"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H12N.ClHO4/c1-3-7-4-2-6-8(7)5-1;2-1(3,4)5/h1-6H2;(H,2,3,4,5)/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethynylmagnesium bromide"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(#C)[Mg]Br"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H.BrH.Mg/c1-2;;/h1H;1H;/q;;+1/p-1"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 29.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "THF"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1CCOC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O/c1-2-4-5-3-1/h1-4H2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "The reaction mixture was stirred for 45 minutes"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "The compound from step 15a above (1.0 g, 4.8 mmol) was added to a solution of 0.5 M ethynylmagnesium bromide (29 mL, 14.3 mmol) in THF at room temperature. The reaction mixture was stirred for 45 minutes, quenched with 15% NaOH solution, and diluted with brine:water (1:1). The aqueous phase was extracted with CH2Cl2, and the organic phases were combined, dried (MgSO4), concentrated and chromatographed (silica gel; CHCl3 /MeOH, 90:10) to afford an amber oil (463 mg, 71%): 1H NMR (CDCl3, 300 MHz) δ 1.75-2.06 (m, 6H), 2.14-2.23 (m, 2H), 2.33 (s, 1H), 2.53-2.62 (m, 2H), 322-3.28 (m, 2H); MS (CI/NH3) m/z: 136 (M+H)+."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "quenched with 15% NaOH solution",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "NaOH"
+              },
+              {
+                "type": "SMILES",
+                "value": "[OH-].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Na.H2O/h;1H2/q+1;/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "ADDITION",
+      "details": "diluted with brine:water (1:1)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "brine water"
+              },
+              {
+                "type": "SMILES",
+                "value": "[Cl-].[Na+].O.O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH.Na.2H2O/h1H;;2*1H2/q;+1;;/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "The aqueous phase was extracted with CH2Cl2",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "CH2Cl2"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(Cl)Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "dried (MgSO4)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "MgSO4"
+              },
+              {
+                "type": "SMILES",
+                "value": "[O-]S(=O)(=O)[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "chromatographed (silica gel; CHCl3 /MeOH, 90:10)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "CHCl3 MeOH"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(Cl)(Cl)Cl.CO"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CHCl3.CH4O/c2-1(3)4;1-2/h1H;2H,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 45.0,
+        "units": "MINUTE"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "oil"
+            },
+            {
+              "type": "NAME",
+              "value": "7a-Ethynyl-hexahydro-1H-pyrrolizine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(#C)C12CCCN2CCC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H13N/c1-2-9-5-3-7-10(9)8-4-6-9/h1H,3-8H2"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 463.0,
+                  "units": "MILLIGRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 71.0
+              }
+            }
+          ],
+          "texture": {
+            "type": "OIL",
+            "details": "oil"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06001849",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:17.923845"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-7c193c6b89e0489a88a8cce43796b9e1"
+}

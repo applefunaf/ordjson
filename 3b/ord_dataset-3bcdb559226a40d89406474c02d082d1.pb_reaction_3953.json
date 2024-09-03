@@ -1,0 +1,209 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH2:1]([O:3][C:4]([CH2:6][O:7][C:8]1[C:17]2[C:12](=[C:13]([N+:18]([O-])=O)[CH:14]=[CH:15][CH:16]=2)[N:11]=[CH:10][CH:9]=1)=[O:5])[CH3:2]>[Pd].C(O)C.O1CCOCC1>[NH2:18][C:13]1[CH:14]=[CH:15][CH:16]=[C:17]2[C:12]=1[N:11]=[CH:10][CH:9]=[C:8]2[O:7][CH2:6][C:4]([O:3][CH2:1][CH3:2])=[O:5]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m3_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-ethoxycarbonylmethoxy-8-nitroquinoline"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)OC(=O)COC1=CC=NC2=C(C=CC=C12)[N+](=O)[O-]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C13H12N2O5/c1-2-19-12(16)8-20-11-6-7-14-13-9(11)4-3-5-10(13)15(17)18/h3-7H,2,8H2,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 404.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "palladium on carbon"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Pd]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Pd"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "CATALYST"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 5.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "dioxane"
+            },
+            {
+              "type": "SMILES",
+              "value": "O1CCOCC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O2/c1-2-6-4-3-5-1/h1-4H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 5.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "was stirred for 5 hours at ambient temperature under hydrogen atmosphere"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture of 4-ethoxycarbonylmethoxy-8-nitroquinoline (404 mg) and 10% palladium on carbon in ethanol (5 ml) and dioxane (5 ml) was stirred for 5 hours at ambient temperature under hydrogen atmosphere. Insoluble material was filtered off and the filtrate was concentrated in vacuo. The residue was pulverized with diethyl ether to give 8-amino-4-(ethoxycarbonylmethoxy)quinoline (234 mg)."
+  },
+  "workups": [
+    {
+      "type": "FILTRATION",
+      "details": "Insoluble material was filtered off"
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "the filtrate was concentrated in vacuo"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 5.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "8-amino-4-(ethoxycarbonylmethoxy)quinoline"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC=1C=CC=C2C(=CC=NC12)OCC(=O)OCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C13H14N2O3/c1-2-17-12(16)8-18-11-6-7-15-13-9(11)4-3-5-10(13)14/h3-7H,2,8,14H2,1H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 234.0,
+                  "units": "MILLIGRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 65.0
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06008230",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:20.801707"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-cebf766e27214c619c4ea7505f3d362b"
+}

@@ -1,0 +1,363 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[OH:1][CH:2]1[CH2:7][CH2:6][O:5][C:3]1=[O:4].[CH3:8][Si:9](Cl)([CH3:11])[CH3:10].C(N(CC)CC)C.O>C1COCC1.CCOCC>[CH3:8][Si:9]([CH3:11])([CH3:10])[O:1][CH:2]1[CH2:7][CH2:6][O:5][C:3]1=[O:4]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "trimethylsilyl chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "C[Si](C)(C)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H9ClSi/c1-5(2,3)4/h1-3H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 14.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "triethylamine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)N(CC)CC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H15N/c1-4-7(5-2)6-3/h4-6H2,1-3H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 16.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m1_m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "α-hydroxy-γ-butyrolactone"
+            },
+            {
+              "type": "SMILES",
+              "value": "OC1C(=O)OCC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H6O3/c5-3-1-2-7-4(3)6/h3,5H,1-2H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 10.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "THF"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1CCOC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O/c1-2-4-5-3-1/h1-4H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 100.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m4_m6": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "H2O"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 100.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ether"
+            },
+            {
+              "type": "SMILES",
+              "value": "CCOCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 500.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "stirred for 4 hours"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A solution of 10.0 g (98 mmol) of α-hydroxy-γ-butyrolactone in 100 mL of anhydrous THF under argon was cooled to 0-5° C. with magnetic stirring. Addition of 14 mL (110 mmol) of trimethylsilyl chloride and 16 mL (115 mmol) of triethylamine immediately produced a white precipitate. The suspension was warmed to room temperature and stirred for 4 hours. The suspension was poured into a separatory funnel containing 100 mL of H2O and 500 mL of ether. The organic layer was washed with 50 mL of H2O, 50 mL of brine, dried (MgSO4) and concentrated. Purification (Kugelrohr distillation) provided 14.7 g (90% yield) of α-trimethylsilyloxy-γ-butyrolactone bp 80-100° C. (8 mm Hg)."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "immediately produced a white precipitate"
+    },
+    {
+      "type": "ADDITION",
+      "details": "The suspension was poured into a separatory funnel"
+    },
+    {
+      "type": "WASH",
+      "details": "The organic layer was washed with 50 mL of H2O, 50 mL of brine",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "H2O"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 50.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "brine"
+              },
+              {
+                "type": "SMILES",
+                "value": "[Cl-].[Na+].O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH.Na.H2O/h1H;;1H2/q;+1;/p-1"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 50.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "dried (MgSO4)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "MgSO4"
+              },
+              {
+                "type": "SMILES",
+                "value": "[O-]S(=O)(=O)[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated"
+    },
+    {
+      "type": "DISTILLATION",
+      "details": "Purification (Kugelrohr distillation)"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 4.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "α-trimethylsilyloxy-γ-butyrolactone"
+            },
+            {
+              "type": "SMILES",
+              "value": "C[Si](OC1C(=O)OCC1)(C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H14O3Si/c1-11(2,3)10-6-4-5-9-7(6)8/h6H,4-5H2,1-3H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 14.7,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 90.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 86.1
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06005000",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:19.118933"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-a2fccfdcbdaa4cabaebb340afc3447a1"
+}

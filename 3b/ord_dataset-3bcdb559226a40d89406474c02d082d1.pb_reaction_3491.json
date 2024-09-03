@@ -1,0 +1,209 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "Br[C:2]1[CH:11]=[CH:10][C:9]2[C:4](=[CH:5][CH:6]=[C:7]([O:12][CH3:13])[CH:8]=2)[CH:3]=1.[C:14](C1C=CC=C(C(C)(C)C)C=1O)(C)(C)[CH3:15].CC([O-])=O.[Na+]>CN(C)C(=O)C>[CH:14]([C:2]1[CH:11]=[CH:10][C:9]2[C:4](=[CH:5][CH:6]=[C:7]([O:12][CH3:13])[CH:8]=2)[CH:3]=1)=[CH2:15] |f:2.3|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-bromo-6-methoxynaphthalene"
+            },
+            {
+              "type": "SMILES",
+              "value": "BrC1=CC2=CC=C(C=C2C=C1)OC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C11H9BrO/c1-13-11-5-3-8-6-10(12)4-2-9(8)7-11/h2-7H,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 23.7,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N,N-dimethylacetamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN(C(C)=O)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H9NO/c1-4(6)5(2)3/h1-3H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 150.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m2_m3_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2,6-di-tert-butylphenol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(C)(C)C1=C(C(=CC=C1)C(C)(C)C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C14H22O/c1-13(2,3)10-8-7-9-11(12(10)15)14(4,5)6/h7-9,15H,1-6H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 1.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "NaOAc"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC(=O)[O-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H4O2.Na/c1-2(3)4;/h1H3,(H,3,4);/q;+1/p-1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 10.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "palladacycle"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 50.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "stirred autoclave"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "23.7 g of 2-bromo-6-methoxynaphthalene (100 mmol) are dissolved in 150 ml of N,N-dimethylacetamide. 1 mg of 2,6-di-tert-butylphenol, 10 g of NaOAc (1.2 eq) and 50 mg of palladacycle are added. The solution is transferred to a V4A stirred autoclave and is stirred at 140° C. under an ethylene pressure of 20 bar until conversion is complete. Time: from 10 to 16 hours"
+  },
+  "workups": [
+    {
+      "type": "STIRRING",
+      "details": "is stirred at 140° C. under an ethylene pressure of 20 bar until conversion",
+      "temperature": {
+        "setpoint": {
+          "value": 140.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "from 10 to 16 hours",
+      "duration": {
+        "value": 13.0,
+        "precision": 3.0,
+        "units": "HOUR"
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-vinyl-6-methoxynaphthalene"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(=C)C1=CC2=CC=C(C=C2C=C1)OC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C13H12O/c1-3-10-4-5-12-9-13(14-2)7-6-11(12)8-10/h3-9H,1H2,2H3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06005151",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:25.523409"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-1da981796dc7428abd9ea77a3cb09521"
+}

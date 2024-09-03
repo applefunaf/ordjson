@@ -1,0 +1,237 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "C(O)[C@@H](O)[C@H:3]([OH:13])[C@@H:4]([OH:12])[C@@H:5]([OH:11])[C@@H:6]([OH:10])[C:7]([O-])=[O:8].O.O.[Na+]>O.O.O.O.O.O.[Co](Cl)Cl.O>[O:8]=[CH:7][C@H:6]([C@@H:5]([C@@H:4]([CH2:3][OH:13])[OH:12])[OH:11])[OH:10] |f:0.1.2.3,4.5.6.7.8.9.10|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Sodium glucoheptonate dihydrate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C([C@H]([C@@H]([C@H]([C@H]([C@H](C(=O)[O-])O)O)O)O)O)O.O.O.[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H14O8.Na.2H2O/c8-1-2(9)3(10)4(11)5(12)6(13)7(14)15;;;/h2-6,8-13H,1H2,(H,14,15);;2*1H2/q;+1;;/p-1/t2-,3+,4-,5-,6-;;;/m1.../s1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 71.3,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "cobalt chloride hexahydrate"
+            },
+            {
+              "type": "SMILES",
+              "value": "O.O.O.O.O.O.[Co](Cl)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/2ClH.Co.6H2O/h2*1H;;6*1H2/q;;+2;;;;;;/p-2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.12,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "CATALYST"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 500.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "the solution is agitated for a further hour"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "Sodium glucoheptonate dihydrate (71.3 g/0.25 mole), cobalt chloride hexahydrate (0.12 g/0.50 mmole) and water (500 ml) are introduced into a double envelope reactor. The mixture is brought to a temperature of 30° C. and to a pH of 6.5 by the addition of soda 2N. The water, oxygenated to 30% (77 ml/0.75 mole), is introduced over 75 minutes, maintaining the temperature between 30 and 35° C. and the pH at 6.5 with the aid of soda 2N. When the addition is finished, the solution is agitated for a further hour. The pH is brought to 2.5 by the addition of concentrated sulphuric acid (8 ml). The pink solution has the following composition:"
+  },
+  "workups": [
+    {
+      "type": "ADDITION",
+      "details": "The mixture is brought to a temperature of 30° C. and to a pH of 6.5 by the addition of soda 2N",
+      "temperature": {
+        "setpoint": {
+          "value": 30.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The water, oxygenated to 30% (77 ml/0.75 mole)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "ADDITION",
+      "details": "is introduced over 75 minutes",
+      "duration": {
+        "value": 75.0,
+        "units": "MINUTE"
+      }
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "maintaining the temperature between 30 and 35° C."
+    },
+    {
+      "type": "ADDITION",
+      "details": "When the addition"
+    },
+    {
+      "type": "ADDITION",
+      "details": "The pH is brought to 2.5 by the addition of concentrated sulphuric acid (8 ml)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "sulphuric acid"
+              },
+              {
+                "type": "SMILES",
+                "value": "S(O)(O)(=O)=O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O4S/c1-5(2,3)4/h(H2,1,2,3,4)"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 8.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "D-arabinose"
+            },
+            {
+              "type": "SMILES",
+              "value": "O=C[C@@H](O)[C@H](O)[C@H](O)CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C5H10O5/c6-1-3(8)5(10)4(9)2-7/h1,3-5,7-10H,2H2/t3-,4-,5+/m1/s1"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998608",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:31.835923"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-fca1fbc5efb542a6a353ed43df3f54fc"
+}

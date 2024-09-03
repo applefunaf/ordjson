@@ -1,0 +1,308 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "C([O:4][CH2:5][CH2:6][N:7]1[CH2:11][CH2:10]/[C:9](=[C:12](/[C:23]2[CH:28]=[CH:27][C:26]([Cl:29])=[CH:25][CH:24]=2)\\[C:13]2[CH:18]=[CH:17][C:16]([S:19]([CH3:22])(=[O:21])=[O:20])=[CH:15][CH:14]=2)/[C:8]1=[O:30])(=O)C.[OH-].[Na+]>C(O)C.O>[Cl:29][C:26]1[CH:25]=[CH:24][C:23](/[C:12](=[C:9]2\\[C:8](=[O:30])[N:7]([CH2:6][CH2:5][OH:4])[CH2:11][CH2:10]\\2)/[C:13]2[CH:14]=[CH:15][C:16]([S:19]([CH3:22])(=[O:20])=[O:21])=[CH:17][CH:18]=2)=[CH:28][CH:27]=1 |f:1.2|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m3_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "(Z)-2-[3-[1-(4-chlorophenyl)-1-[4-(methylsulphonyl)phenyl]methylene]-2-oxo-pyrrolidin-1-yl]ethyl acetate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)OCCN1C(\\C(\\CC1)=C(\\C1=CC=C(C=C1)S(=O)(=O)C)/C1=CC=C(C=C1)Cl)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C22H22ClNO5S/c1-15(25)29-14-13-24-12-11-20(22(24)26)21(16-3-7-18(23)8-4-16)17-5-9-19(10-6-17)30(2,27)28/h3-10H,11-14H2,1-2H3/b21-20+"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 1.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 13.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 11.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sodium hydroxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "[OH-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Na.H2O/h;1H2/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.1,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "The medium is stirred at ambient temperature for 4 h"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "1 g (0.0022 mole) of (Z)-2-[3-[1-(4-chlorophenyl)-1-[4-(methylsulphonyl)phenyl]methylene]-2-oxo-pyrrolidin-1-yl]ethyl acetate are placed in solution in a mixture of 13 ml of ethanol and 11 ml of water and treated with 0.1 g (1.1 eq.) of sodium hydroxide. The medium is stirred at ambient temperature for 4 h, then the ethanol is evaporated off. The aqueous phase is extracted with dichloromethane. The organic phase is washed with water, dried and concentrated. The residue is taken up into t-butyl methyl ether. 0.7 g of (Z)-3-[1-(4-chlorophenyl)-1-[4-(methylsulphonyl)phenyl]methylene]-1-(2-hydroxyethyl)-pyrrolidin-2-one are thus obtained as a yellow solid of melting point 187-188° C."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "the ethanol is evaporated off",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "The aqueous phase is extracted with dichloromethane",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "dichloromethane"
+              },
+              {
+                "type": "SMILES",
+                "value": "ClCCl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "The organic phase is washed with water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried"
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 4.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "(Z)-3-[1-(4-chlorophenyl)-1-[4-(methylsulphonyl)phenyl]methylene]-1-(2-hydroxyethyl)-pyrrolidin-2-one"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC1=CC=C(C=C1)\\C(\\C1=CC=C(C=C1)S(=O)(=O)C)=C\\1/C(N(CC1)CCO)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C20H20ClNO4S/c1-27(25,26)17-8-4-15(5-9-17)19(14-2-6-16(21)7-3-14)18-10-11-22(12-13-23)20(18)24/h2-9,23H,10-13H2,1H3/b19-18+"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 0.7,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 78.4
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06004994",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:18.805850"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-794833f1f50f40afa88cdfb983813347"
+}

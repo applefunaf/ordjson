@@ -1,0 +1,241 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "C([O:8][C:9]1[C:17]2[N:16]=[C:15]([O:18][CH3:19])[N:14]([CH3:20])[C:13]=2[CH:12]=[CH:11][CH:10]=1)C1C=CC=CC=1>[Pd].CO>[OH:8][C:9]1[C:17]2[N:16]=[C:15]([O:18][CH3:19])[N:14]([CH3:20])[C:13]=2[CH:12]=[CH:11][CH:10]=1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-benzyloxy-2-methoxy-1-methyl-1H-benzimidazole"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C1=CC=CC=C1)OC1=CC=CC=2N(C(=NC21)OC)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C16H16N2O2/c1-18-13-9-6-10-14(15(13)17-16(18)19-2)20-11-12-7-4-3-5-8-12/h3-10H,11H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 254.8,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "palladium on carbon"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Pd]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Pd"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 25.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "CATALYST"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 2.5,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "was stirred for 7 hours at ambient temperature under hydrogen atmosphere"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture of 4-benzyloxy-2-methoxy-1-methyl-1H-benzimidazole (254.8 mg) and 10% palladium on carbon (25 mg) in methanol (2.5 ml) was stirred for 7 hours at ambient temperature under hydrogen atmosphere. Insoluble material was filtered off, and the filtrate was concentrated in vacuo. The residue was purified by column chromatography on silica gel (ethyl acetate:n-hexane=3:1, V/V) to give 4-hydroxy-2-methoxy-1-methyl-1H-benzimidazole (58.7 mg)."
+  },
+  "workups": [
+    {
+      "type": "FILTRATION",
+      "details": "Insoluble material was filtered off"
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "the filtrate was concentrated in vacuo"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The residue was purified by column chromatography on silica gel (ethyl acetate:n-hexane=3:1, V/V)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "n-hexane"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCCCCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C6H14/c1-3-5-6-4-2/h3-6H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 7.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-hydroxy-2-methoxy-1-methyl-1H-benzimidazole"
+            },
+            {
+              "type": "SMILES",
+              "value": "OC1=CC=CC=2N(C(=NC21)OC)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H10N2O2/c1-11-6-4-3-5-7(12)8(6)10-9(11)13-2/h3-5,12H,1-2H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 58.7,
+                  "units": "MILLIGRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 34.7
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06008229",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:23.422038"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-a5f0bab14bbd477aa4ae87d4689eb861"
+}

@@ -1,0 +1,293 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][N:2]1[CH:6]=[CH:5][N:4]=[CH:3]1.C(#N)C.Cl[C:11]([O:13][CH2:14][CH3:15])=[O:12]>C(N(CC)CC)C>[CH3:1][N:2]1[CH:6]=[CH:5][N:4]=[C:3]1[C:11]([O:13][CH2:14][CH3:15])=[O:12]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-methylimidazole"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN1C=NC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H6N2/c1-6-3-2-5-4-6/h2-4H,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 320.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acetonitrile"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)#N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H3N/c1-2-3/h1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 2.0,
+              "units": "LITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "triethylamine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)N(CC)CC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H15N/c1-4-7(5-2)6-3/h4-6H2,1-3H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 1.0,
+              "units": "LITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Ethyl chloroformate"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC(=O)OCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H5ClO2/c1-2-6-3(4)5/h2H2,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 1000.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": -20.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "with stirring"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "N-methylimidazole (320 g, 3.9 mol) was combined with 2 L acetonitrile and 1 L triethylamine in a 12 L flask equipped with a mechanical stirrer and the solution cooled to -20° C. Ethyl chloroformate (1000 g, 9.2 mol) was added with stirring, keeping the temperature between -20° C. and -25° C. The reaction was allowed to slowly warm to room temperature and stir for 36 h. Precipitated triethylamine hydrochloride was removed by filtration and the solution concentrated in vacuo at 65° C. The resulting oil was purified by distillation under reduced pressure (2 torr, 102° C.) to provide a white solid (360 g, 82% yield)."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "equipped with a mechanical stirrer"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the temperature between -20° C. and -25° C"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "to slowly warm to room temperature",
+      "temperature": {
+        "control": {
+          "type": "AMBIENT"
+        }
+      }
+    },
+    {
+      "type": "STIRRING",
+      "details": "stir for 36 h",
+      "duration": {
+        "value": 36.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "Precipitated triethylamine hydrochloride was removed by filtration",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "triethylamine hydrochloride"
+              },
+              {
+                "type": "SMILES",
+                "value": "Cl.C(C)N(CC)CC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C6H15N.ClH/c1-4-7(5-2)6-3;/h4-6H2,1-3H3;1H"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "the solution concentrated in vacuo at 65° C",
+      "temperature": {
+        "setpoint": {
+          "value": 65.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "DISTILLATION",
+      "details": "The resulting oil was purified by distillation under reduced pressure (2 torr, 102° C.)",
+      "temperature": {
+        "setpoint": {
+          "value": 102.0,
+          "units": "CELSIUS"
+        }
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "solid"
+            },
+            {
+              "type": "NAME",
+              "value": "Ethyl 1-methylimidazole-2-carboxylate"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN1C(=NC=C1)C(=O)OCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H10N2O2/c1-3-11-7(10)6-8-4-5-9(6)2/h4-5H,3H2,1-2H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 360.0,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 82.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 59.9
+              }
+            }
+          ],
+          "texture": {
+            "type": "CUSTOM",
+            "details": "solid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998140",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:16.189406"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-0bc25d2375054b9997865346bc072bf3"
+}

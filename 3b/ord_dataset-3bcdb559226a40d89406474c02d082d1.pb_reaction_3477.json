@@ -1,0 +1,201 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[Na].[O:2]1CCO[CH2:4][CH2:3]1.CS[C:10](SC)=[C:11]([C:14](=[O:25])[C:15]1[CH:20]=[CH:19][CH:18]=[C:17]([C:21]([F:24])([F:23])[F:22])[CH:16]=1)[C:12]#[N:13].[CH2:28]([OH:30])[CH3:29]>>[CH2:3]([O:2][C:10]([O:30][CH2:28][CH3:29])=[C:11]([C:14](=[O:25])[C:15]1[CH:20]=[CH:19][CH:18]=[C:17]([C:21]([F:24])([F:23])[F:22])[CH:16]=1)[C:12]#[N:13])[CH3:4] |^1:0|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Sodium"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Na]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Na"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.126,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 15.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "dioxane"
+            },
+            {
+              "type": "SMILES",
+              "value": "O1CCOCC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O2/c1-2-6-4-3-5-1/h1-4H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 20.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3,3-bis-methylthio-2-(3-trifluoromethylbenzoyl)-acrylonitrile"
+            },
+            {
+              "type": "SMILES",
+              "value": "CSC(=C(C#N)C(C1=CC(=CC=C1)C(F)(F)F)=O)SC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C13H10F3NOS2/c1-19-12(20-2)10(7-17)11(18)8-4-3-5-9(6-8)13(14,15)16/h3-6H,1-2H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 1.59,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "let stir overnight at room temperature"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "Sodium (0.126 g, 5.5 mmol) was dissolved in 15 mL of ethanol and 20 mL of dioxane was added followed by 1.59 g (5.0 mmol) of 3,3-bis-methylthio-2-(3-trifluoromethylbenzoyl)-acrylonitrile and the reaction mixture was refluxed for 4 hours and let stir overnight at room temperature. This compound was relatively unstable to aqueous conditions and was not isolated as such. Instead, an aliquot of the mixture was stripped and the product was identified by 300 MHz proton NMR: NMR (DMSO d6): 1.14 (6H, tJ=7), 3.45 (4H, q, J=7), 7.44-8.16 (4H, m)."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "the reaction mixture was refluxed for 4 hours",
+      "duration": {
+        "value": 4.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "was not isolated as such"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 8.0,
+        "precision": 8.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3,3-Bis-ethoxy-2-(3-trifluoromethylbenzoyl)-acrylonitrile"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)OC(=C(C#N)C(C1=CC(=CC=C1)C(F)(F)F)=O)OCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C15H14F3NO3/c1-3-21-14(22-4-2)12(9-19)13(20)10-6-5-7-11(8-10)15(16,17)18/h5-8H,3-4H2,1-2H3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06005109",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:25.316280"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-6005e0183553425da43c829784a85e0b"
+}

@@ -1,0 +1,213 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[F:1][C:2]1[C:3]([O:13]COC)=[N:4][O:5][C:6]=1[C:7]1[CH:12]=[CH:11][CH:10]=[CH:9][CH:8]=1>Cl.O1CCOCC1>[F:1][C:2]1[C:3]([OH:13])=[N:4][O:5][C:6]=1[C:7]1[CH:12]=[CH:11][CH:10]=[CH:9][CH:8]=1 |f:1.2|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-Fluoro-3-methoxymethoxy-5-phenylisoxazole"
+            },
+            {
+              "type": "SMILES",
+              "value": "FC=1C(=NOC1C1=CC=CC=C1)OCOC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C11H10FNO3/c1-14-7-15-11-9(12)10(16-13-11)8-5-3-2-4-6-8/h2-6H,7H2,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.44,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrochloric acid dioxane"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl.O1CCOCC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O2.ClH/c1-2-6-4-3-5-1;/h1-4H2;1H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 5.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "the solution was stirred at room temperature for one hour"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "4-Fluoro-3-methoxymethoxy-5-phenylisoxazole (0.44 g) was dissolved in a solution of 4N hydrochloric acid/dioxane (5.0 ml), and the solution was stirred at room temperature for one hour. After the reaction, the solvent was evaporated under reduced pressure and the crystal thus obtained was washed with dichloromethane (10 ml) to obtain the title compound (0.30 g, 83%) as colorless crystals."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "After the reaction"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the solvent was evaporated under reduced pressure"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the crystal thus obtained"
+    },
+    {
+      "type": "WASH",
+      "details": "was washed with dichloromethane (10 ml)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "dichloromethane"
+              },
+              {
+                "type": "SMILES",
+                "value": "ClCCl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 10.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 1.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "4-Fluoro-3-hydroxy-5-phenylisoxazole"
+            },
+            {
+              "type": "SMILES",
+              "value": "FC=1C(=NOC1C1=CC=CC=C1)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H6FNO2/c10-7-8(13-11-9(7)12)6-4-2-1-3-5-6/h1-5H,(H,11,12)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 0.3,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 83.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 84.9
+              }
+            }
+          ],
+          "isolated_color": "colorless",
+          "texture": {
+            "type": "CRYSTAL",
+            "details": "crystals"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06005116",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:24.376145"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-3a43b3fe7e1247b4bd4d2510ffd293a6"
+}

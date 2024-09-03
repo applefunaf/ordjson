@@ -1,0 +1,285 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[O:1]([C:8]1[CH:13]=[CH:12][C:11]([S:14](Cl)(=[O:16])=[O:15])=[CH:10][CH:9]=1)[C:2]1[CH:7]=[CH:6][CH:5]=[CH:4][CH:3]=1.[C:18]1([NH2:25])[CH:23]=[CH:22][CH:21]=[CH:20][C:19]=1[NH2:24]>CCCCCC>[O:1]([C:8]1[CH:13]=[CH:12][C:11]([S:14]([NH:24][C:19]2[CH:20]=[CH:21][CH:22]=[CH:23][C:18]=2[NH2:25])(=[O:16])=[O:15])=[CH:10][CH:9]=1)[C:2]1[CH:7]=[CH:6][CH:5]=[CH:4][CH:3]=1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-phenoxyphenylsulfonyl chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "O(C1=CC=CC=C1)C1=CC=C(C=C1)S(=O)(=O)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C12H9ClO3S/c13-17(14,15)12-8-6-11(7-9-12)16-10-4-2-1-3-5-10/h1-9H"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 969.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "o-phenylenediamine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1(=C(C=CC=C1)N)N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H8N2/c7-5-3-1-2-4-6(5)8/h1-4H,7-8H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 300.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Hexane"
+            },
+            {
+              "type": "SMILES",
+              "value": "CCCCCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H14/c1-3-5-6-4-2/h3-6H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "The title compound was prepared according to General Method C using 4-phenoxyphenylsulfonyl chloride (969 mg, 3.6 mmol) and o-phenylenediamine (300 mg, 2.77 mmol). The reaction mixture was partitioned between water (200 ml) and toluene:methylene chloride (1:3). The organic phase collected and the methylene chloride evaporated leaving the toluene. Hexane added and the product precipitated from solution. (317 mg, 34%) EI-MS m/z 341 (M+H)+"
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "The reaction mixture was partitioned between water (200 ml) and toluene:methylene chloride (1:3)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 200.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "toluene methylene chloride"
+              },
+              {
+                "type": "SMILES",
+                "value": "C1(=CC=CC=C1)C.C(Cl)Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C7H8.CH2Cl2/c1-7-5-3-2-4-6-7;2-1-3/h2-6H,1H3;1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The organic phase collected"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the methylene chloride evaporated",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "methylene chloride"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(Cl)Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "leaving the toluene",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "toluene"
+              },
+              {
+                "type": "SMILES",
+                "value": "C1(=CC=CC=C1)C"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C7H8/c1-7-5-3-2-4-6-7/h2-6H,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the product precipitated from solution"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "2-((4-Phenoxyphenyl)sulfonylamino)aniline"
+            },
+            {
+              "type": "SMILES",
+              "value": "O(C1=CC=CC=C1)C1=CC=C(C=C1)S(=O)(=O)NC1=C(N)C=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C18H16N2O3S/c19-17-8-4-5-9-18(17)20-24(21,22)16-12-10-15(11-13-16)23-14-6-2-1-3-7-14/h1-13,20H,19H2"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06005008",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:21.528498"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-44e8c9fcc52f48429c9067f035ac04f4"
+}

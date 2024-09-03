@@ -1,0 +1,351 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "Cl[S:2][C:3]1[CH:11]=[CH:10][CH:9]=[CH:8][C:4]=1[C:5](Cl)=[O:6].[CH3:12][CH:13]([NH2:17])[CH2:14][CH2:15][CH3:16]>C(OCC)C>[CH3:12][CH:13]([N:17]1[C:5](=[O:6])[C:4]2[CH:8]=[CH:9][CH:10]=[CH:11][C:3]=2[S:2]1)[CH2:14][CH2:15][CH3:16]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-Chlorosulphenylbenzoyl chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClSC1=C(C(=O)Cl)C=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H4Cl2OS/c8-7(10)5-3-1-2-4-6(5)11-9/h1-4H"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "diethylether"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)OCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 30.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m2_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "1-methylbutylamine"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC(CCC)N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C5H13N/c1-3-4-5(2)6/h5H,3-4,6H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "diethylether"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)OCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 30.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ether"
+            },
+            {
+              "type": "SMILES",
+              "value": "CCOCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "The reactants were stirred for 16 hours"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "2-Chlorosulphenylbenzoyl chloride (6 parts, 0.029M) dissolved in diethylether (30 ml) was added dropwise at 0 to 3° C. to a stirred solution of 1-methylbutylamine (7.36 parts, 0.84M ex Aldrich) in diethylether (30 ml). The reactants were stirred for 16 hours whilst allowing the temperature to rise to about 20° C. The ether solution was then screened, washed with water and dried over magnesium sulphate. After evaporation of the ether, the product was obtained as a pale yellow gum (5.5 parts, 86% theory) which gradually solidified on standing. This was recrystallised from hexane. mp=52-54° C."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "to rise to about 20° C",
+      "temperature": {
+        "setpoint": {
+          "value": 20.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "washed with water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "dried over magnesium sulphate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "magnesium sulphate"
+              },
+              {
+                "type": "SMILES",
+                "value": "S(=O)(=O)([O-])[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "After evaporation of the ether",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the product was obtained as a pale yellow gum (5.5 parts, 86% theory) which"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "This was recrystallised from hexane",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "hexane"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCCCCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C6H14/c1-3-5-6-4-2/h3-6H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 16.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-(1-methylbutyl)benzisothiazolin-3-one"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC(CCC)N1SC2=C(C1=O)C=CC=C2"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C12H15NOS/c1-3-6-9(2)13-12(14)10-7-4-5-8-11(10)15-13/h4-5,7-9H,3,6H2,1-2H3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06005032",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:21.633254"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-3a564361bbf14d2e93e13e20369b47bf"
+}

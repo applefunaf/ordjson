@@ -1,0 +1,428 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH:1]([NH:3][C@H:4]([C:12]([OH:14])=[O:13])[CH2:5][C:6]1[CH:11]=[CH:10][CH:9]=[CH:8][CH:7]=1)=[CH2:2].CCN([CH2:20][CH3:21])CC.Cl[C:23]([O:25][CH2:26][C:27]1[CH:32]=[CH:31][CH:30]=[CH:29][CH:28]=1)=[O:24]>CN(C)C1C=CN=CC=1.CS(C)=O.CCOC(C)=O>[CH2:1]([N:3]([C:23]([O:25][CH2:26][C:27]1[CH:32]=[CH:31][CH:30]=[CH:29][CH:28]=1)=[O:24])[C@:4]([CH:20]=[CH2:21])([C:12]([OH:14])=[O:13])[CH2:5][C:6]1[CH:11]=[CH:10][CH:9]=[CH:8][CH:7]=1)[C:2]1[CH:7]=[CH:6][CH:5]=[CH:4][CH:12]=1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m6": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "EtOAc"
+            },
+            {
+              "type": "SMILES",
+              "value": "CCOC(=O)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 150.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m1_m2_m4_m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "(±)-vinylphenylalanine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(=C)N[C@@H](CC1=CC=CC=C1)C(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C11H13NO2/c1-2-12-10(11(13)14)8-9-6-4-3-5-7-9/h2-7,10,12H,1,8H2,(H,13,14)/t10-/m0/s1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 560.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "NEt3"
+            },
+            {
+              "type": "SMILES",
+              "value": "CCN(CC)CC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H15N/c1-4-7(5-2)6-3/h4-6H2,1-3H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 1.6,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-dimethylaminopyridine"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN(C1=CC=NC=C1)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H10N2/c1-9(2)7-3-5-8-6-4-7/h3-6H,1-2H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 71.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "CATALYST"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "DMSO"
+            },
+            {
+              "type": "SMILES",
+              "value": "CS(=O)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6OS/c1-4(2)3/h1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 3.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "benzyl chloroformate"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC(=O)OCC1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H7ClO2/c9-8(10)11-6-7-4-2-1-3-5-7/h1-5H,6H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 1.9,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "dropwise and with stirring"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a suspension of (±)-vinylphenylalanine (560 mg. 2.9 mmol), NEt3 (1.6 mL, 12 mmol) and 4-dimethylaminopyridine (71 mg, 0.59 mmol) in dry DMSO (3 mL) at 10° C. was added benzyl chloroformate (1.9 mL, 13 mmol), dropwise and with stirring. After being stirred for 1.5 h at 50° C., the reaction mixture was diluted with EtOAc (150 mL) and extracted with NaHCO3 (aq, 50 mL). The organic layer was further extracted with 1 N HCl (50 mL) and brine (50 mL). After drying (MgSO4), the volatiles were evaporated in vacuo and the residue purified by flash SiO2 chromatography (10% Et2O-hexane) to give 19 (1.0 g, 82%) as a white solid: mp 68-70° C.; 1H NMR (500 MHz, CDCl3)δ3.33(d, J=13 Hz, 1 H); 3.62 (d, J=13 Hz, 1 H); 5.10-5.25 (m, 4 H); 5.27(d, J=10 Hz, 1 H); 5.28 (d, J=17 Hz, 1 H); 5.68 (s, 1 H); 6.08 (dd, J=10, 17 Hz, 1 H); 6.90-6.91 (m, 2 H); 7.10-7.20 (m, 3 H); 7.26-7.43 (m, 10 H); 13C NMR (125 MHz, CDCl3)δ40.4, 65.1, 66.5, 67.8, 116.2, 126.9, 128.1, 128.20, 128.23, 128.4, 128.5, 128.6, 130.0, 130.3, 135.0, 135.4, 136.6, 136.8, 154.4, 171.2; IR (film) 3420-3330, 1723 cm-1 ; HRMS (FAB, 3-NOBA) calcd for C26H25NO4Na (M+Na)+ 438.1681, obsd 438.1685. Anal. Calcd for C26H25NO4:C, 75.16; H, 6.07; N, 3.37. Found: C, 74.98; H, 6.22; N, 3.37."
+  },
+  "workups": [
+    {
+      "type": "STIRRING",
+      "details": "After being stirred for 1.5 h at 50° C.",
+      "duration": {
+        "value": 1.5,
+        "units": "HOUR"
+      },
+      "temperature": {
+        "setpoint": {
+          "value": 50.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "extracted with NaHCO3 (aq, 50 mL)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "NaHCO3"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(=O)(O)[O-].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2O3.Na/c2-1(3)4;/h(H2,2,3,4);/q;+1/p-1"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 50.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "The organic layer was further extracted with 1 N HCl (50 mL) and brine (50 mL)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "HCl"
+              },
+              {
+                "type": "SMILES",
+                "value": "Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH/h1H"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 50.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "brine"
+              },
+              {
+                "type": "SMILES",
+                "value": "[Cl-].[Na+].O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH.Na.H2O/h1H;;1H2/q;+1;/p-1"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 50.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "After drying (MgSO4)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "MgSO4"
+              },
+              {
+                "type": "SMILES",
+                "value": "[O-]S(=O)(=O)[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the volatiles were evaporated in vacuo"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the residue purified by flash SiO2 chromatography (10% Et2O-hexane)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "Et2O hexane"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOCC.CCCCCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C6H14.C4H10O/c1-3-5-6-4-2;1-3-5-4-2/h3-6H2,1-2H3;3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "19"
+            },
+            {
+              "type": "NAME",
+              "value": "(±)-Benzyl N-Benzyloxycarbonyl-α-vinylphenylalanine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C1=CC=CC=C1)N([C@@](CC1=CC=CC=C1)(C(=O)O)C=C)C(=O)OCC1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C26H25NO4/c1-2-26(24(28)29,18-21-12-6-3-7-13-21)27(19-22-14-8-4-9-15-22)25(30)31-20-23-16-10-5-11-17-23/h2-17H,1,18-20H2,(H,28,29)/t26-/m0/s1"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 1.0,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 82.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 166.0
+              }
+            }
+          ],
+          "isolated_color": "white",
+          "texture": {
+            "type": "CUSTOM",
+            "details": "solid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06008386",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:26.496350"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-e2faae480d494135b434501d1214be66"
+}

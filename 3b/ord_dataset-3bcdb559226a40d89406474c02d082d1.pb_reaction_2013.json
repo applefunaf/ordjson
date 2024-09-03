@@ -1,0 +1,333 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[Cl:1][C:2]1[N:7]=[CH:6][NH:5][C:4]2=[N:8][CH:9]=[C:10]([I:11])[C:3]=12.[H-].[Na+].[CH:14](Br)([CH3:16])[CH3:15]>CN(C)C=O>[Cl:1][C:2]1[C:3]2[C:10]([I:11])=[CH:9][N:8]([CH:14]([CH3:16])[CH3:15])[C:4]=2[N:5]=[CH:6][N:7]=1 |f:1.2|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m3_m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "isopropyl bromide"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(C)Br"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H7Br/c1-3(2)4/h3H,1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 34.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N,N-dimethylformamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN(C=O)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H7NO/c1-4(2)3-5/h3H,1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 20.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-Chloro-5-iodopyrrolo[2,3-d]pyrimidine"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC1=C2C(NC=N1)=NC=C2I"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H3ClIN3/c7-5-4-3(8)1-9-6(4)11-2-10-5/h1-2H,(H,9,10,11)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 10.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sodium hydride"
+            },
+            {
+              "type": "SMILES",
+              "value": "[H-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Na.H/q+1;-1"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N,N-dimethylformamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN(C=O)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H7NO/c1-4(2)3-5/h3H,1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 250.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "The mixture was stirred at ambient temperature overnight"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "4-Chloro-5-iodopyrrolo[2,3-d]pyrimidine (10.0 g, see Example 17) was added in portions with stirring under nitrogen at 0° C. to a suspension of sodium hydride (1.6 g of a 60% dispersion in mineral oil) in N,N-dimethylformamide (250 ml). When the addition was complete the mixture was allowed to warm up to ambient temperature and when no more gas evolution was observed, a solution of isopropyl bromide (34.0 ml) in N,N-dimethylformamide (20 ml) was added dropwise. The mixture was stirred at ambient temperature overnight then quenched by the dropwise addition of water (300 ml) with external ice-cooling. The mixture was then washed with ethyl acetate (3×300 ml), the combined organic layers were washed with water, dried, filtered and evaporated to give 4-chloro-5-iodo-7-isopropylpyrrolo-[2,3-d]pyrimidine as a yellow solid, m.p. 116-118° C. The structure was confirmed by 1H nmr."
+  },
+  "workups": [
+    {
+      "type": "ADDITION",
+      "details": "When the addition"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "then quenched by the dropwise addition of water (300 ml) with external ice-",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 300.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "cooling"
+    },
+    {
+      "type": "WASH",
+      "details": "The mixture was then washed with ethyl acetate (3×300 ml)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 300.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "the combined organic layers were washed with water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filtered"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "evaporated"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 8.0,
+        "precision": 8.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-chloro-5-iodo-7-isopropylpyrrolo-[2,3-d]pyrimidine"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC=1C2=C(N=CN1)N(C=C2I)C(C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H9ClIN3/c1-5(2)14-3-6(11)7-8(10)12-4-13-9(7)14/h3-5H,1-2H3"
+            }
+          ],
+          "isolated_color": "yellow",
+          "texture": {
+            "type": "CUSTOM",
+            "details": "solid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06001839",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:16.935812"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-dcd60a91bc444b4da7c0aa11ae007259"
+}

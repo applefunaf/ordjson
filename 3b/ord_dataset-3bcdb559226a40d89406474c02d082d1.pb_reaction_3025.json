@@ -1,0 +1,374 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][O:2][C:3]1[CH:8]=[CH:7][C:6]([CH2:9][CH2:10][CH2:11]Br)=[CH:5][CH:4]=1.NC(N)=[S:15].[OH-].[Na+]>C(O)C.O>[CH3:1][O:2][C:3]1[CH:8]=[CH:7][C:6]([CH2:9][CH2:10][CH2:11][SH:15])=[CH:5][CH:4]=1 |f:2.3|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3-(p-methoxyphenyl)-1-propylbromide"
+            },
+            {
+              "type": "SMILES",
+              "value": "COC1=CC=C(C=C1)CCCBr"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C10H13BrO/c1-12-10-6-4-9(5-7-10)3-2-8-11/h4-7H,2-3,8H2,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 14.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "thiourea"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC(=S)N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH4N2S/c2-1(3)4/h(H4,2,3,4)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 5.1,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 150.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 50.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sodium hydroxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "[OH-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Na.H2O/h;1H2/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 100.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "After stirring the resulting mixture for two hours"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture of 3-(p-methoxyphenyl)-1-propylbromide (14 g; 61 mmol) and thiourea (5.1 g; 67 mmol) in ethanol (150 mL) was refluxed for 48 hours. Evaporation of the solvent provided a clear glassy compound, which was dissolved in 50 mL of water and treated with 100 mL of 40% aqueous sodium hydroxide. After stirring the resulting mixture for two hours, the product was extracted into ether (3×), and the combined organic extracts were washed with sodium bicarbonate and brine, dried, and concentrated. Chromatographic purification of the crude thiol on a silica gel column eluting with 2% either in hexane delivered 10.2 g of 3-(p-methoxyphenyl)-1-propylmercaptan as a clear liquid. 1H NMR (300 MHz, CDCl3): δ 1.34 (t, 1H); 1.88-1.92 (m, 2H); 2.49-2.53 (m, 2H); 2.64-2.69 (m, 2H); 3.77 (s, 3H); 6.80-6.84 (m, 2H); 7.06-7.24 (m, 2H)."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "was refluxed for 48 hours",
+      "duration": {
+        "value": 48.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "Evaporation of the solvent"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "provided a clear glassy compound, which"
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "the product was extracted into ether (3×)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "the combined organic extracts were washed with sodium bicarbonate and brine",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "sodium bicarbonate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C([O-])(O)=O.[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2O3.Na/c2-1(3)4;/h(H2,2,3,4);/q;+1/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "brine"
+              },
+              {
+                "type": "SMILES",
+                "value": "[Cl-].[Na+].O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH.Na.H2O/h1H;;1H2/q;+1;/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried"
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "Chromatographic purification of the crude thiol on a silica gel column",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "thiol"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "eluting with 2% either in hexane",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "hexane"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCCCCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C6H14/c1-3-5-6-4-2/h3-6H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 2.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3-(p-Methoxyphenyl)-1-propylmercaptan"
+            },
+            {
+              "type": "SMILES",
+              "value": "COC1=CC=C(C=C1)CCCS"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C10H14OS/c1-11-10-6-4-9(5-7-10)3-2-8-12/h4-7,12H,2-3,8H2,1H3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06004993",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:19.022372"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-7f8a8d22a6474655850defbacf76891a"
+}

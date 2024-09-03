@@ -1,0 +1,333 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "Cl[C:2]1[C:11]2[C:6](=[CH:7][CH:8]=[C:9]([N+:12]([O-:14])=[O:13])[CH:10]=2)[N:5]=[CH:4][C:3]=1[C:15]#[N:16].[NH2:17][C:18]1[CH:23]=[CH:22][CH:21]=[C:20]([CH3:24])[CH:19]=1.C(=O)(O)[O-].[Na+]>C(O)C>[N+:12]([C:9]1[CH:10]=[C:11]2[C:6](=[CH:7][CH:8]=1)[N:5]=[CH:4][C:3]([C:15]#[N:16])=[C:2]2[NH:17][C:18]1[CH:23]=[CH:22][CH:21]=[C:20]([CH3:24])[CH:19]=1)([O-:14])=[O:13] |f:2.3|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sodium bicarbonate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C([O-])(O)=O.[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2O3.Na/c2-1(3)4;/h(H2,2,3,4);/q;+1/p-1"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m1_m4_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-chloro-6-nitro-3-quinolinecarbonitrile"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC1=C(C=NC2=CC=C(C=C12)[N+](=O)[O-])C#N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C10H4ClN3O2/c11-10-6(4-12)5-13-9-2-1-7(14(15)16)3-8(9)10/h1-3,5H"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 5.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3-toluidine"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC1=CC(=CC=C1)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H9N/c1-6-3-2-4-7(8)5-6/h2-5H,8H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 2.75,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 200.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "stirred with Darco"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture of 5.00 g (21.5 mmol) 4-chloro-6-nitro-3-quinolinecarbonitrile, 200 ml ethanol, and 2.75 ml (25.7 mmol) 3-toluidine was heated to reflux for 4.5 hours. Cooled and added a saturated sodium bicarbonate until pH was basic. Stripped solvents and azeotroped with ethanol. Slurried with hexane, collected, and air dried. Washed with water and dried in vacuo. Boiled in ethyl acetate, stirred with Darco and filtered. Stripped solvent and dried in vacuo to give 4.82 g of yellow-orange solid: mass spectrum (electrospray m/e): M+H=305.2."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "was heated"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "to reflux for 4.5 hours",
+      "duration": {
+        "value": 4.5,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "Cooled"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "Stripped solvents and azeotroped with ethanol",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "Slurried with hexane, collected",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "hexane"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCCCCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C6H14/c1-3-5-6-4-2/h3-6H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "air dried"
+    },
+    {
+      "type": "WASH",
+      "details": "Washed with water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried in vacuo"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filtered"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "Stripped solvent and dried in vacuo"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "yellow-orange solid"
+            },
+            {
+              "type": "NAME",
+              "value": "6-Nitro-4-[(3-methylphenyl)amino]-3-quinolinecarbonitrile"
+            },
+            {
+              "type": "SMILES",
+              "value": "[N+](=O)([O-])C=1C=C2C(=C(C=NC2=CC1)C#N)NC1=CC(=CC=C1)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C17H12N4O2/c1-11-3-2-4-13(7-11)20-17-12(9-18)10-19-16-6-5-14(21(22)23)8-15(16)17/h2-8,10H,1H3,(H,19,20)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 4.82,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 73.7
+              }
+            }
+          ],
+          "isolated_color": "yellow-orange",
+          "texture": {
+            "type": "CUSTOM",
+            "details": "solid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06002008",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:25.867791"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-dac4f142feed4062a79cc13d146fc680"
+}

@@ -1,0 +1,228 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[O:1]1[CH:5]=[CH:4][C:3]([CH2:6][CH2:7][CH2:8][NH:9][CH2:10][CH2:11][CH2:12][CH2:13][CH2:14][CH2:15][C:16]2[CH:21]=[CH:20][CH:19]=[CH:18][CH:17]=2)=[CH:2]1.[C:22]([O:29][C:30]([O:32][C:33]([CH3:36])([CH3:35])[CH3:34])=[O:31])([O:24][C:25]([CH3:28])([CH3:27])[CH3:26])=[O:23]>ClCCl>[C:25]([O:24][C:22]([N:9]([CH2:10][CH2:11][CH2:12][CH2:13][CH2:14][CH2:15][C:16]1[CH:17]=[CH:18][CH:19]=[CH:20][CH:21]=1)[CH2:8][CH2:7][CH2:6][C:3]1[CH:4]=[CH:5][O:1][CH:2]=1)=[O:23])([CH3:28])([CH3:27])[CH3:26].[C:30]([O:29][C:22]([O:24][C:25]([CH3:28])([CH3:27])[CH3:26])=[O:23])([O:32][C:33]([CH3:35])([CH3:36])[CH3:34])=[O:31]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m2_m4_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-[3-(3-furyl)propyl]-6-phenylhexylamine"
+            },
+            {
+              "type": "SMILES",
+              "value": "O1C=C(C=C1)CCCNCCCCCCC1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C19H27NO/c1(4-9-18-10-5-3-6-11-18)2-7-14-20-15-8-12-19-13-16-21-17-19/h3,5-6,10-11,13,16-17,20H,1-2,4,7-9,12,14-15H2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "di-tert-butyl dicarbonate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(=O)(OC(C)(C)C)OC(=O)OC(C)(C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C10H18O5/c1-9(2,3)14-7(11)13-8(12)15-10(4,5)6/h1-6H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 2.49,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "dichloromethane"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClCCl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 100.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "by stirring at room temperature for 2 hours"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a solution of the above crude N-[3-(3-furyl)propyl]-6-phenylhexylamine in 100 ml of dichloromethane, 2.49 g (11.4 mmol) of di-tert-butyl dicarbonate was added, followed by stirring at room temperature for 2 hours. The solvent was distilled off under reduced pressure. The resulting crude product was purified by silica gel column chromatography (hexane/ethyl acetate=9/1) to yield N-(tert-butoxycarbonyl)-N-[3-(3-furyl)propyl]-6-phenylhexylamine as a mixture with di-tert-butyl dicarbonate."
+  },
+  "workups": [
+    {
+      "type": "DISTILLATION",
+      "details": "The solvent was distilled off under reduced pressure"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The resulting crude product was purified by silica gel column chromatography (hexane/ethyl acetate=9/1)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "crude product"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "hexane ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCCCCC.C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C6H14.C4H8O2/c1-3-5-6-4-2;1-3-6-4(2)5/h3-6H2,1-2H3;3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 2.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-(tert-butoxycarbonyl)-N-[3-(3-furyl)propyl]-6-phenylhexylamine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(C)(C)OC(=O)N(CCCC1=COC=C1)CCCCCCC1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C24H35NO3/c1-24(2,3)28-23(26)25(18-11-15-22-16-19-27-20-22)17-10-5-4-7-12-21-13-8-6-9-14-21/h6,8-9,13-14,16,19-20H,4-5,7,10-12,15,17-18H2,1-3H3"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "di-tert-butyl dicarbonate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(=O)(OC(C)(C)C)OC(=O)OC(C)(C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C10H18O5/c1-9(2,3)14-7(11)13-8(12)15-10(4,5)6/h1-6H3"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998433",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:42.597133"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-24363952d8c041c796611c0893883795"
+}

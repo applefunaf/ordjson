@@ -1,0 +1,309 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[NH2:1][NH:2][C:3]([NH2:5])=[S:4].[CH:6]1[CH:10]=[C:9]([C:11]([CH2:13][CH2:14][CH2:15][Cl:16])=O)[S:8][CH:7]=1>CO.Cl.O>[Cl:16][CH2:15][CH2:14][CH2:13][C:11](=[N:1][NH:2][C:3](=[S:4])[NH2:5])[C:9]1[S:8][CH:7]=[CH:6][CH:10]=1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m6": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "HCl"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/ClH/h1H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 27.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m1_m2_m3_m4_m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Thiosemicarbazide"
+            },
+            {
+              "type": "SMILES",
+              "value": "NNC(=S)N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH5N3S/c2-1(5)4-3/h3H2,(H3,2,4,5)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 9.11,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-chloro-2'-butyrothienone"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1=CSC(=C1)C(=O)CCCCl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H9ClOS/c9-5-1-3-7(10)8-4-2-6-11-8/h2,4,6H,1,3,5H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 16.2,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 350.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "HCl"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/ClH/h1H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 27.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 25.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "After stirring at room temperature for approximately 2 hours"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "Thiosemicarbazide (9.11 g, 0.1 mol) was added under nitrogen to a solution 4-chloro-2'-butyrothienone (16.2 mL, 0.1 mol) in 350 mL of methanol plus 27 mL 1N HCl plus 25 mL of water. After stirring at room temperature for approximately 2 hours, all of the solid had dissolved. The reaction was then stirred at room temperature for 24 hours (overnight). By TLC starting material remained. An additional 27 mL of 1N HCl was added and the reaction stirred at room temperature for 6 hours. The solid formed was removed by filtration and dried under high vacuum to give 14.87 g (57%) of the title compound as a brown solid, mp 120-122° C."
+  },
+  "workups": [
+    {
+      "type": "DISSOLUTION",
+      "details": "all of the solid had dissolved"
+    },
+    {
+      "type": "STIRRING",
+      "details": "The reaction was then stirred at room temperature for 24 hours (overnight)",
+      "duration": {
+        "value": 8.0,
+        "precision": 8.0,
+        "units": "HOUR"
+      },
+      "temperature": {
+        "control": {
+          "type": "AMBIENT"
+        }
+      }
+    },
+    {
+      "type": "STIRRING",
+      "details": "the reaction stirred at room temperature for 6 hours",
+      "duration": {
+        "value": 6.0,
+        "units": "HOUR"
+      },
+      "temperature": {
+        "control": {
+          "type": "AMBIENT"
+        }
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The solid formed"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "was removed by filtration"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried under high vacuum"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 2.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "2-[4-Chloro-1-(thiophen-2-yl)-butylidene]-hydrazinecarbothioamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClCCCC(C=1SC=CC1)=NNC(N)=S"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H12ClN3S2/c10-5-1-3-7(12-13-9(11)14)8-4-2-6-15-8/h2,4,6H,1,3,5H2,(H3,11,13,14)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 14.87,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 57.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 56.8
+              }
+            }
+          ],
+          "isolated_color": "brown",
+          "texture": {
+            "type": "CUSTOM",
+            "details": "solid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06008362",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:25.055110"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-08f667f3cc214dae90b9d0e45627e7c1"
+}

@@ -1,0 +1,278 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "C([N:3]([C:8]1[CH:13]=[CH:12][C:11]([O:14][CH3:15])=[CH:10][CH:9]=1)[CH2:4][C:5]([OH:7])=[O:6])C.O.[OH-].[Li+].Cl>C1COCC1.O>[CH3:15][O:14][C:11]1[CH:10]=[CH:9][C:8]([NH:3][CH2:4][C:5]([OH:7])=[O:6])=[CH:13][CH:12]=1 |f:1.2.3|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m4_m2_m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethyl N-(4-methoxyphenyl)glycine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)N(CC(=O)O)C1=CC=C(C=C1)OC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C11H15NO3/c1-3-12(8-11(13)14)9-4-6-10(15-2)7-5-9/h4-7H,3,8H2,1-2H3,(H,13,14)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 19.59,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "lithium hydroxide monohydrate"
+            },
+            {
+              "type": "SMILES",
+              "value": "O.[OH-].[Li+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Li.2H2O/h;2*1H2/q+1;;/p-1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 5.44,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "THF"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1CCOC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O/c1-2-4-5-3-1/h1-4H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 100.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 25.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrochloric acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/ClH/h1H"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a solution of 19.59 g (108 mmol) of ethyl N-(4-methoxyphenyl)glycine in 100 mL of THF under N2 was added 5.44 g (130 mmol) of lithium hydroxide monohydrate in 25 mL water. After 15 hours, the mixture was reduced to 1/2 the original volume in vacuo and then acidified with concentrated hydrochloric acid to ph 3 and a precipitate formed. The solid was collected and washed with 100 mL water, then dried in vacuo to give 9.92 g (51%) of the desired compound as a off-white solid. 1H NMR (CDCl3): δ6.68 (d, J=8.8, 2H); 6.49 (d, J=8.8, 2H); 3.73 (s, 2H); 3.64 (s, 3H); 2.49 (br s, 2H)."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "a precipitate formed"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The solid was collected"
+    },
+    {
+      "type": "WASH",
+      "details": "washed with 100 mL water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 100.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried in vacuo"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 15.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "desired compound"
+            },
+            {
+              "type": "NAME",
+              "value": "N-(4-Methoxyphenyl)glycine"
+            },
+            {
+              "type": "SMILES",
+              "value": "COC1=CC=C(C=C1)NCC(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H11NO3/c1-13-8-4-2-7(3-5-8)10-6-9(11)12/h2-5,10H,6H2,1H3,(H,11,12)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 9.92,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 51.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 50.7
+              }
+            }
+          ],
+          "isolated_color": "off-white",
+          "texture": {
+            "type": "CUSTOM",
+            "details": "solid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998424",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:26.098683"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-3cd6a5a412684168ba9af767553a513f"
+}

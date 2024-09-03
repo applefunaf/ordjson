@@ -1,0 +1,204 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[NH2:1][CH2:2][CH2:3][NH:4][C:5](=[O:15])[CH2:6][N:7]1[CH:11]=[CH:10][N:9]=[C:8]1[N+:12]([O-:14])=[O:13].[O:16]=[C:17]1[CH2:22][S:21][CH2:20][CH2:19][S:18]1>CO.CC(C)=O>[SH:18][CH2:19][CH2:20][S:21][CH2:22][C:17]([NH:1][CH2:2][CH2:3][NH:4][C:5](=[O:15])[CH2:6][N:7]1[CH:11]=[CH:10][N:9]=[C:8]1[N+:12]([O-:14])=[O:13])=[O:16]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m3_m2_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-(2-Aminoethyl)-(2-nitroimidazol-1-yl)acetamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "NCCNC(CN1C(=NC=C1)[N+](=O)[O-])=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H11N5O3/c8-1-2-9-6(13)5-11-4-3-10-7(11)12(14)15/h3-4H,1-2,5,8H2,(H,9,13)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 40.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-oxo-1,4-dithiane"
+            },
+            {
+              "type": "SMILES",
+              "value": "O=C1SCCSC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H6OS2/c5-4-3-6-1-2-7-4/h1-3H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 40.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 0.5,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acetone"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC(=O)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H6O/c1-3(2)4/h1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 0.2,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "N-(2-Aminoethyl)-(2-nitroimidazol-1-yl)acetamide (40 mg, 0.23 mmol) in methanol (0.5 cm3) was added to 2-oxo-1,4-dithiane (40 mg, 0.27 mmol) in acetone (0.2 cm3) under an atmosphere of dry nitrogen. The mixture was left at room temperature and monitored by n.m.r. spectroscopy until the reaction was complete. The bulk of the solvent was removed, and the resulting material purified by reverse phase h.p.l.c. using aqueous methanol as the eluant. The pure N-(2-[(2-mercaptoethylthio)acetylamino]ethyl)-(2-nitroimidazol -1-yl)acetamide (30 mg) was isolated as a pale yellow solid."
+  },
+  "workups": [
+    {
+      "type": "WAIT",
+      "details": "The mixture was left at room temperature",
+      "temperature": {
+        "control": {
+          "type": "AMBIENT"
+        }
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The bulk of the solvent was removed"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the resulting material purified by reverse phase h.p.l.c"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-(2-[(2-mercaptoethylthio)acetylamino]ethyl)-(2-nitroimidazol -1-yl)acetamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "SCCSCC(=O)NCCNC(CN1C(=NC=C1)[N+](=O)[O-])=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C11H17N5O4S2/c17-9(7-15-4-3-14-11(15)16(19)20)12-1-2-13-10(18)8-22-6-5-21/h3-4,21H,1-2,5-8H2,(H,12,17)(H,13,18)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 30.0,
+                  "units": "MILLIGRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 37.5
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06004531",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:15.509829"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-e8ca9205bba34ba8bcf423dda68c4f27"
+}

@@ -1,0 +1,336 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH2:1]([NH:3][C:4](=[O:17])[C:5]1[C:10]([S:11][C:12]([CH3:15])([CH3:14])[CH3:13])=[CH:9][CH:8]=[CH:7][C:6]=1[F:16])[CH3:2].[OH:18]OS([O-])=O.[K+].S(S([O-])=O)([O-])(=O)=O.[Na+].[Na+].[OH2:33]>CO>[CH3:14][C:12]([S:11]([C:10]1[CH:9]=[CH:8][CH:7]=[C:6]([F:16])[C:5]=1[C:4]([NH:3][CH2:1][CH3:2])=[O:17])(=[O:18])=[O:33])([CH3:13])[CH3:15] |f:1.2,3.4.5|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 5.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-ethyl 2-fluoro-6-(1,1-dimethylethylthio)benzamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)NC(C1=C(C=CC=C1SC(C)(C)C)F)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C13H18FNOS/c1-5-15-12(16)11-9(14)7-6-8-10(11)17-13(2,3)4/h6-8H,5H2,1-4H3,(H,15,16)"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "OXONE"
+            },
+            {
+              "type": "SMILES",
+              "value": "OOS(=O)[O-].[K+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/K.H2O4S/c;1-4-5(2)3/h;1H,(H,2,3)/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 5.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sodium metabisulfite"
+            },
+            {
+              "type": "SMILES",
+              "value": "S(=O)(=O)([O-])S(=O)[O-].[Na+].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/2Na.H2O5S2/c;;1-6(2)7(3,4)5/h;;(H,1,2)(H,3,4,5)/q2*+1;/p-2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 100.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "This mixture was stirred overnight"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A 0° C. solution of N-ethyl 2-fluoro-6-(1,1-dimethylethylthio)benzamide, described in Example 194, (0.15 g, 0.59 mmol) in methanol (5 mL) was combined with a 0° C. solution of OXONE® (1.08 g, 1.76 mmol) in water (5 mL). This mixture was stirred overnight, then was poured into 25% aq sodium metabisulfite (100 mL) and extracted with ether (3×100 mL). The combined organics were washed with brine followed with water, then was dried (MgSO4) and concentrated to give the title compound as a clear oil."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "was combined with a 0° C.",
+      "temperature": {
+        "setpoint": {
+          "value": 0.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "extracted with ether (3×100 mL)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 100.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "The combined organics were washed with brine",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "brine"
+              },
+              {
+                "type": "SMILES",
+                "value": "[Cl-].[Na+].O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH.Na.H2O/h1H;;1H2/q;+1;/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "was dried (MgSO4)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "MgSO4"
+              },
+              {
+                "type": "SMILES",
+                "value": "[O-]S(=O)(=O)[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 8.0,
+        "precision": 8.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "2-[(1,1-Dimethylethyl)sulfonyl]-N-ethyl-6-fluorobenzamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC(C)(C)S(=O)(=O)C1=C(C(=O)NCC)C(=CC=C1)F"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C13H18FNO3S/c1-5-15-12(16)11-9(14)7-6-8-10(11)19(17,18)13(2,3)4/h6-8H,5H2,1-4H3,(H,15,16)"
+            }
+          ],
+          "isolated_color": "clear",
+          "texture": {
+            "type": "OIL",
+            "details": "oil"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998466",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:38.745239"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-f371e53abafb4a93bcaff9812e6ef4cc"
+}

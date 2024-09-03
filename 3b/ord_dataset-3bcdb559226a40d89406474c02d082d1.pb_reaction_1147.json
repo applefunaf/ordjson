@@ -1,0 +1,329 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH2:1](O)[CH2:2][CH:3]([OH:5])[CH3:4].[S:7](Cl)([C:10]1[CH:16]=[CH:15][C:13]([CH3:14])=[CH:12][CH:11]=1)(=[O:9])=[O:8]>C(Cl)Cl>[S:7]([CH2:1][CH2:2][CH:3]([OH:5])[CH3:4])([C:10]1[CH:16]=[CH:15][C:13]([CH3:14])=[CH:12][CH:11]=1)(=[O:9])=[O:8]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "1,3-butandiol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(CC(C)O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H10O2/c1-4(6)2-3-5/h4-6H,2-3H2,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 1.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "CH2Cl2"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(Cl)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 10.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m2_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "TsCl"
+            },
+            {
+              "type": "SMILES",
+              "value": "S(=O)(=O)(C1=CC=C(C)C=C1)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H7ClO2S/c1-6-2-4-7(5-3-6)11(8,9)10/h2-5H,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 2.12,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "CH2Cl3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 5.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 0.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "The resulting mixture was stirred at 0° C."
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a mixture of 1,3-butandiol (1.0 g, 11.1 mmol), Et3 3N (1.6 mL, 11.5 mmol) in CH2Cl2 (10 mL) at 0° C. was added dropwise a solution of TsCl(2.12 g, 11.1 mmol) in CH2Cl3 (5 mL). The resulting mixture was stirred at 0° C. and warmed gradually to room temperature, then kept at room temperature for overnight. It was transferred into a separatory funnel and washed with H2O (3×20 mL). The organic layer was dried (MgSO4), filtered. The filtrate was concentrated in vacuo. The residue was purified on column chromatography (silical gel, 30% ethyl acetate/hexane), thereby affording a colorless oil (1.3 g, 48%). 1H NMR (CDCl3) d 1.07 (d, J=6.0 Hz, 3 H, CH3), 1.52-1.76 (m, 2 H, CH2), 2.33 (s, 3 H, CH3), 3.84 (br s, 1 H, OH), 4.08-4.20 (m, 2 H, CH2), 7.25 (d, J=8.4 Hz, 2 H, aromatic), 7.77 (d, J=8.1 Hz, 2 H, 5 aromatic). 13C NMR (CDCl3) d 21.60 (q, CH3), 23.58 (q, CH3), 37.86 (t, CH2), 64.10 (d, CH), 67.79 (t, CH2OTs), 127.85 (d, aromatic) 129.84 (d, aromatic), 144.78 (s, aromatic), 152.23 (s, aromatic)."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "warmed gradually to room temperature",
+      "temperature": {
+        "control": {
+          "type": "AMBIENT"
+        }
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "It was transferred into a separatory funnel"
+    },
+    {
+      "type": "WASH",
+      "details": "washed with H2O (3×20 mL)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "H2O"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 20.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "The organic layer was dried (MgSO4)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "MgSO4"
+              },
+              {
+                "type": "SMILES",
+                "value": "[O-]S(=O)(=O)[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filtered"
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "The filtrate was concentrated in vacuo"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The residue was purified on column chromatography (silical gel, 30% ethyl acetate/hexane)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate hexane"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC.CCCCCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C6H14.C4H8O2/c1-3-5-6-4-2;1-3-6-4(2)5/h3-6H2,1-2H3;3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 8.0,
+        "precision": 8.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "oil"
+            },
+            {
+              "type": "NAME",
+              "value": "4-tosylbutan-2-ol"
+            },
+            {
+              "type": "SMILES",
+              "value": "S(=O)(=O)(C1=CC=C(C)C=C1)CCC(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C11H16O3S/c1-9-3-5-11(6-4-9)15(13,14)8-7-10(2)12/h3-6,10,12H,7-8H2,1-2H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 1.3,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 48.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 51.3
+              }
+            }
+          ],
+          "texture": {
+            "type": "OIL",
+            "details": "oil"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998624",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:33.994568"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-5ca4c352491f41e29f980cc585c199cf"
+}

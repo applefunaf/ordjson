@@ -1,0 +1,228 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[Si:1]([O:18][CH2:19][C:20]1[C:25]([CH3:26])=[CH:24][CH:23]=[C:22](/[C:27](/[CH3:41])=[CH:28]\\[CH2:29][N:30]2C(=O)C3=CC=CC=C3C2=O)[C:21]=1[CH3:42])([C:14]([CH3:17])([CH3:16])[CH3:15])([C:8]1[CH:13]=[CH:12][CH:11]=[CH:10][CH:9]=1)[C:2]1[CH:7]=[CH:6][CH:5]=[CH:4][CH:3]=1.O.NN>C(O)C>[NH2:30][CH2:29]/[CH:28]=[C:27](\\[C:22]1[C:21]([CH3:42])=[C:20]([CH2:19][O:18][Si:1]([C:14]([CH3:17])([CH3:16])[CH3:15])([C:2]2[CH:3]=[CH:4][CH:5]=[CH:6][CH:7]=2)[C:8]2[CH:13]=[CH:12][CH:11]=[CH:10][CH:9]=2)[C:25]([CH3:26])=[CH:24][CH:23]=1)/[CH3:41] |f:1.2|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "1-tert-butyldiphenylsilyloxymethyl-2,6-dimethyl-3-((Z)-1-methyl-3-phthalimido-1-propenyl)benzene"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Si](C1=CC=CC=C1)(C1=CC=CC=C1)(C(C)(C)C)OCC1=C(C(=CC=C1C)\\C(=C/CN1C(C=2C(C1=O)=CC=CC2)=O)\\C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C37H39NO3Si/c1-26-21-22-31(27(2)23-24-38-35(39)32-19-13-14-20-33(32)36(38)40)28(3)34(26)25-41-42(37(4,5)6,29-15-9-7-10-16-29)30-17-11-8-12-18-30/h7-23H,24-25H2,1-6H3/b27-23-"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 94.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 1.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrazine monohydrate"
+            },
+            {
+              "type": "SMILES",
+              "value": "O.NN"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H4N2.H2O/c1-2;/h1-2H2;1H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 16.4,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a suspension of 1-tert-butyldiphenylsilyloxymethyl-2,6-dimethyl-3-((Z)-1-methyl-3-phthalimido-1-propenyl)benzene (94 mg) in ethanol (1 ml) was added hydrazine monohydrate (16.4 mg), and the mixture was refluxed for 1 hour. After cooling, the insoluble material was filtered off, and the filtrate was concentrated in vacuo. To the residue was added dichloromethane, and the insoluble material was filtered off. The filtrate was concentrated in vacuo to give 3-((Z)-3-amino-1-methyl-1-propenyl)-1-tert-butyldiphenylsilyloxymethyl-2,6-dimethylbenzene (66 mg) as pale yellow amorphous."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "the mixture was refluxed for 1 hour",
+      "duration": {
+        "value": 1.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "After cooling"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "the insoluble material was filtered off"
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "the filtrate was concentrated in vacuo"
+    },
+    {
+      "type": "ADDITION",
+      "details": "To the residue was added dichloromethane",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "dichloromethane"
+              },
+              {
+                "type": "SMILES",
+                "value": "ClCCl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "the insoluble material was filtered off"
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "The filtrate was concentrated in vacuo"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3-((Z)-3-amino-1-methyl-1-propenyl)-1-tert-butyldiphenylsilyloxymethyl-2,6-dimethylbenzene"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC\\C=C(\\C)/C=1C(=C(C(=CC1)C)CO[Si](C1=CC=CC=C1)(C1=CC=CC=C1)C(C)(C)C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C29H37NOSi/c1-22-17-18-27(23(2)19-20-30)24(3)28(22)21-31-32(29(4,5)6,25-13-9-7-10-14-25)26-15-11-8-12-16-26/h7-19H,20-21,30H2,1-6H3/b23-19-"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 66.0,
+                  "units": "MILLIGRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 90.8
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06008229",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:24.301781"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-b229f8f5793a4efe89c7363a47e1f5c8"
+}

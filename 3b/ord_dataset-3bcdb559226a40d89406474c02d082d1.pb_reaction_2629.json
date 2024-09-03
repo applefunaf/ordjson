@@ -1,0 +1,309 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[Br:1][C:2]1[CH:3]=[C:4]([NH:8][C:9]2[C:18]3[C:13](=[CH:14][C:15]([O:22][CH2:23][CH3:24])=[C:16]([N+:19]([O-])=O)[CH:17]=3)[N:12]=[CH:11][C:10]=2[C:25]#[N:26])[CH:5]=[CH:6][CH:7]=1.[Cl-].[NH4+].CO>O.C(OCC)(=O)C.[Fe]>[NH2:19][C:16]1[CH:17]=[C:18]2[C:13](=[CH:14][C:15]=1[O:22][CH2:23][CH3:24])[N:12]=[CH:11][C:10]([C:25]#[N:26])=[C:9]2[NH:8][C:4]1[CH:5]=[CH:6][CH:7]=[C:2]([Br:1])[CH:3]=1 |f:1.2|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 40.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m1_m2_m6": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-[(3-bromophenyl)amino]-7-ethoxy-6-nitro-quinoline-3-carbonitrile"
+            },
+            {
+              "type": "SMILES",
+              "value": "BrC=1C=C(C=CC1)NC1=C(C=NC2=CC(=C(C=C12)[N+](=O)[O-])OCC)C#N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C18H13BrN4O3/c1-2-26-17-8-15-14(7-16(17)23(24)25)18(11(9-20)10-21-15)22-13-5-3-4-12(19)6-13/h3-8,10H,2H2,1H3,(H,21,22)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 2.5,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ammonium chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Cl-].[NH4+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/ClH.H3N/h1H;1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 2.4,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "iron"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Fe]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Fe"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 1.5,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "CATALYST"
+        }
+      ]
+    },
+    "m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethyl acetate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)OCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 500.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 40.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "was stirred"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture of 2.5 g (6 mmol) of 4-[(3-bromophenyl)amino]-7-ethoxy-6-nitro-quinoline-3-carbonitrile, 2.4 g (45 mmol) of ammonium chloride, and 1.5 g (27 mmol) iron was stirred at reflux in 40 ml of water and 40 ml of methanol for 4 hours. The mixture was diluted with 500 ml of hot ethyl acetate and the hot mixture was filtered. The filtration was washed with saturated sodium chloride solution and then the organic layer was dried over sodium sulfate. The solution was concentrated and 1.5 of beige solid was collected: mass spectrum (electrospray, m/e): M+H 382.8 and 384.8."
+  },
+  "workups": [
+    {
+      "type": "FILTRATION",
+      "details": "the hot mixture was filtered"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "The filtration"
+    },
+    {
+      "type": "WASH",
+      "details": "was washed with saturated sodium chloride solution",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "sodium chloride"
+              },
+              {
+                "type": "SMILES",
+                "value": "[Cl-].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH.Na/h1H;/q;+1/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "the organic layer was dried over sodium sulfate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "sodium sulfate"
+              },
+              {
+                "type": "SMILES",
+                "value": "S(=O)(=O)([O-])[O-].[Na+].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/2Na.H2O4S/c;;1-5(2,3)4/h;;(H2,1,2,3,4)/q2*+1;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "The solution was concentrated"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "1.5 of beige solid was collected"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "6-Amino-4-(3-bromo-phenylamino)-7-ethoxy-quinoline-3-carbonitrile"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC=1C=C2C(=C(C=NC2=CC1OCC)C#N)NC1=CC(=CC=C1)Br"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C18H15BrN4O/c1-2-24-17-8-16-14(7-15(17)21)18(11(9-20)10-22-16)23-13-5-3-4-12(19)6-13/h3-8,10H,2,21H2,1H3,(H,22,23)"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06002008",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:27.067769"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-10c386e382f54febbd4e582798b4b112"
+}

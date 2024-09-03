@@ -1,0 +1,246 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "Cl.[NH2:2][C:3]1[N:8]=[C:7]([N:9]2[C:18]3[C:13](=[C:14]([F:22])[C:15]([F:21])=[C:16]([F:20])[C:17]=3[F:19])[C:12](=[O:23])[C:11]([C:24]([O:26]CC)=[O:25])=[CH:10]2)[C:6]([F:29])=[CH:5][C:4]=1[F:30]>C(O)(=O)C>[NH2:2][C:3]1[N:8]=[C:7]([N:9]2[C:18]3[C:13](=[C:14]([F:22])[C:15]([F:21])=[C:16]([F:20])[C:17]=3[F:19])[C:12](=[O:23])[C:11]([C:24]([OH:26])=[O:25])=[CH:10]2)[C:6]([F:29])=[CH:5][C:4]=1[F:30]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m4_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "mixed solution"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 2.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrochloric acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/ClH/h1H"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethyl 1-(6-amino-3,5-difluoropyridin-2-yl)-5,6,7,8-tetrafluoro-4-oxo-1,4-dihydroquinoline-3-carboxylate"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC1=C(C=C(C(=N1)N1C=C(C(C2=C(C(=C(C(=C12)F)F)F)F)=O)C(=O)OCC)F)F"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C17H9F6N3O3/c1-2-29-17(28)5-4-26(16-7(19)3-6(18)15(24)25-16)13-8(14(5)27)9(20)10(21)11(22)12(13)23/h3-4H,2H2,1H3,(H2,24,25)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 320.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acetic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H4O2/c1-2(3)4/h1H3,(H,3,4)"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "with stirring"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To 2 ml of the mixed solution (1:1) of 4N hydrochloric acid and acetic acid was added 320 mg of ethyl 1-(6-amino-3,5-difluoropyridin-2-yl)-5,6,7,8-tetrafluoro-4-oxo-1,4-dihydroquinoline-3-carboxylate, and the mixture was heated under reflux for 3 hours with stirring, and allowed to cool. The precipitate was collected by filtration, and washed with ethanol to obtain 280 mg of the title compound as a colorless powder."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "the mixture was heated"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "under reflux for 3 hours",
+      "duration": {
+        "value": 3.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "to cool"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "The precipitate was collected by filtration"
+    },
+    {
+      "type": "WASH",
+      "details": "washed with ethanol",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "1-(6-amino-3,5-difluoropyridin-2-yl)-5,6,7,8-tetrafluoro-4-oxo-1,4-dihydroquinoline-3-carboxylic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC1=C(C=C(C(=N1)N1C=C(C(C2=C(C(=C(C(=C12)F)F)F)F)=O)C(=O)O)F)F"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C15H5F6N3O3/c16-4-1-5(17)14(23-13(4)22)24-2-3(15(26)27)12(25)6-7(18)8(19)9(20)10(21)11(6)24/h1-2H,(H2,22,23)(H,26,27)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 280.0,
+                  "units": "MILLIGRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 93.8
+              }
+            }
+          ],
+          "isolated_color": "colorless",
+          "texture": {
+            "type": "POWDER",
+            "details": "powder"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998436",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:28.898880"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-edbede5e794e4f3e862a1fef0dd3eede"
+}

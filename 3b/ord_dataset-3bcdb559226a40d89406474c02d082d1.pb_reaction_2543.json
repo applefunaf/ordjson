@@ -1,0 +1,275 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[OH:1][C:2]1[CH:3]=[C:4]([CH:8]=[CH:9][C:10]=1[O:11][CH3:12])[C:5]([OH:7])=[O:6].S(=O)(=O)(O)O.[CH3:18]O>>[OH:1][C:2]1[CH:3]=[C:4]([CH:8]=[CH:9][C:10]=1[O:11][CH3:12])[C:5]([O:7][CH3:18])=[O:6]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3-hydroxy-4-methoxybenzoic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "OC=1C=C(C(=O)O)C=CC1OC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H8O4/c1-12-7-3-2-5(8(10)11)4-6(7)9/h2-4,9H,1H3,(H,10,11)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 30.8,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sulfuric acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "S(O)(O)(=O)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O4S/c1-5(2,3)4/h(H2,1,2,3,4)"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 6.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 600.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A solution of 30.8 g (183 mmol) of 3-hydroxy-4-methoxybenzoic acid and 6 mL of conc sulfuric acid in 600 mL of methanol was refluxed overnight. Most of the solvent was removed and the remaining solution was poured into 600 mL of water containing 25 g of sodium bicarbonate. The product was extracted into ether, treated with Darco, dried and evaporated. The yield was 31.8 g of methyl 3-hydroxy-4-methoxybenzoate as pale yellow crystals."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "Most of the solvent was removed"
+    },
+    {
+      "type": "ADDITION",
+      "details": "the remaining solution was poured into 600 mL of water containing 25 g of sodium bicarbonate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 600.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "sodium bicarbonate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C([O-])(O)=O.[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2O3.Na/c2-1(3)4;/h(H2,2,3,4);/q;+1/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "The product was extracted into ether",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "ADDITION",
+      "details": "treated with Darco",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "Darco"
+              },
+              {
+                "type": "SMILES",
+                "value": "C"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH4/h1H4"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "evaporated"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Methyl 3-Hydroxy-4-methoxybenzoate"
+            },
+            {
+              "type": "SMILES",
+              "value": "OC=1C=C(C(=O)OC)C=CC1OC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H10O4/c1-12-8-4-3-6(5-7(8)10)9(11)13-2/h3-5,10H,1-2H3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06002008",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:25.564494"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-8c0a3a9f78e641e79d67fcd4094b5d90"
+}

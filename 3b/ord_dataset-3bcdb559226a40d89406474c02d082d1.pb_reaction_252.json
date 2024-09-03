@@ -1,0 +1,390 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[N+:1]([C:4]1[CH:5]=[C:6]2[C:10](=[CH:11][CH:12]=1)[NH:9][CH:8]=[CH:7]2)([O-:3])=[O:2].[H-].[Na+].Cl[CH2:16][C:17]1[N:21]([CH:22]([CH3:24])[CH3:23])[N:20]=[N:19][N:18]=1.O>CN(C)C=O.ClCCl>[CH:22]([N:21]1[C:17]([CH2:16][N:9]2[C:10]3[C:6](=[CH:5][C:4]([N+:1]([O-:3])=[O:2])=[CH:12][CH:11]=3)[CH:7]=[CH:8]2)=[N:18][N:19]=[N:20]1)([CH3:24])[CH3:23] |f:1.2|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m6": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "dichloromethane"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClCCl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sodium hydride"
+            },
+            {
+              "type": "SMILES",
+              "value": "[H-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Na.H/q+1;-1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 370.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m1_m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "5-nitroindole"
+            },
+            {
+              "type": "SMILES",
+              "value": "[N+](=O)([O-])C=1C=C2C=CNC2=CC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H6N2O2/c11-10(12)7-1-2-8-6(5-7)3-4-9-8/h1-5,9H"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "dimethylformamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN(C=O)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H7NO/c1-4(2)3-5/h3H,1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 70.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "5-chloromethyl-1-isopropyl-1,2,3,4-tetrazole"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClCC1=NN=NN1C(C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C5H9ClN4/c1-4(2)10-5(3-6)7-8-9-10/h4H,3H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 1.63,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 60.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "the mixture was stirred under nitrogen gas stream at 60° C. for 1 hour"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "1.5 Grams of 5-nitroindole was dissolved in 70 ml of dimethylformamide, then 370 mg of sodium hydride (in oil) was added thereto, the mixture was stirred under nitrogen gas stream at 60° C. for 1 hour. Under cooling at 0° C., 1.63 g of 5-chloromethyl-1-isopropyl-1,2,3,4-tetrazole was added, the reaction mixture was stirred at room temperature for 4.5 hours. After the reaction was finished, water was added to the reaction mixture, then the separated crystals were collected by filtration and washed with water. The crystals were dissolved in dichloromethane, the solution was dried with anhydrous magnesium sulfate, and the solvent was removed by distillation under reduced pressure. The residue obtained was subjected to a silica gel column chromatography (eluent: dichloromethane→3% methanol/dichloromethane), there was obtained 2.3 g of 1-(1-isopropyl-1,2,3,4-tetrazol-5-ylmethyl)-5-nitroindole as in the form of yellow powder."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "Under cooling at 0° C.",
+      "temperature": {
+        "setpoint": {
+          "value": 0.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "STIRRING",
+      "details": "the reaction mixture was stirred at room temperature for 4.5 hours",
+      "duration": {
+        "value": 4.5,
+        "units": "HOUR"
+      },
+      "temperature": {
+        "control": {
+          "type": "AMBIENT"
+        }
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "the separated crystals were collected by filtration"
+    },
+    {
+      "type": "WASH",
+      "details": "washed with water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DISSOLUTION",
+      "details": "The crystals were dissolved in dichloromethane",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "dichloromethane"
+              },
+              {
+                "type": "SMILES",
+                "value": "ClCCl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "the solution was dried with anhydrous magnesium sulfate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "magnesium sulfate"
+              },
+              {
+                "type": "SMILES",
+                "value": "S(=O)(=O)([O-])[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the solvent was removed by distillation under reduced pressure"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The residue obtained"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 1.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "1-(1-isopropyl-1,2,3,4-tetrazol-5-ylmethyl)-5-nitroindole"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(C)N1N=NN=C1CN1C=CC2=CC(=CC=C12)[N+](=O)[O-]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C13H14N6O2/c1-9(2)18-13(14-15-16-18)8-17-6-5-10-7-11(19(20)21)3-4-12(10)17/h3-7,9H,8H2,1-2H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 2.3,
+                  "units": "GRAM"
+                }
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998437",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:20.001016"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-35fa088cec7e497bb5314397a1ef67e4"
+}

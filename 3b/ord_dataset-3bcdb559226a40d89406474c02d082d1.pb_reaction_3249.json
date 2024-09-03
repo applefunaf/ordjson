@@ -1,0 +1,318 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[C:1]1([NH2:8])[CH:6]=[CH:5][CH:4]=[CH:3][C:2]=1[NH2:7].[C:9](O)(=O)C.[C:13]([O:16][CH2:17][CH3:18])(=O)C>C([O-])([O-])([O-])OCCC>[CH2:17]([O:16][C:13]1[NH:7][C:2]2[CH:3]=[CH:4][CH:5]=[CH:6][C:1]=2[N:8]=1)[CH2:18][CH3:9]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethyl acetate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)OCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m1_m4_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "o-phenylenediamine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1(=C(C=CC=C1)N)N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H8N2/c7-5-3-1-2-4-6(5)8/h1-4H,7-8H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 2.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acetic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H4O2/c1-2(3)4/h1H3,(H,3,4)"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 1.1,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "propyl orthocarbonate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(OCCC)([O-])([O-])[O-]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H7O4/c1-2-3-8-4(5,6)7/h2-3H2,1H3/q-3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 5.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 80.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "the solution was stirred at 80° C. for 3 hours"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a solution of o-phenylenediamine (2 g) in propyl orthocarbonate (5 ml) was added acetic acid (1.1 ml) and the solution was stirred at 80° C. for 3 hours. To the reaction mixture was added ethyl acetate, and the solution was washed with an aqueous solution of sodium hydrogen carbonate and water, then dried (Na2SO4), followed by concentration to dryness. The concentrate was purified by column chromatography on silica gel to give crystals. Recrystallization from ethyl acetate--benzene afforded colorless crystals (1.54 g, 47%), m.p. 163-164° C."
+  },
+  "workups": [
+    {
+      "type": "WASH",
+      "details": "the solution was washed with an aqueous solution of sodium hydrogen carbonate and water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "sodium hydrogen carbonate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(O)([O-])=O.[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2O3.Na/c2-1(3)4;/h(H2,2,3,4);/q;+1/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "dried (Na2SO4)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "Na2SO4"
+              },
+              {
+                "type": "SMILES",
+                "value": "[O-]S(=O)(=O)[O-].[Na+].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/2Na.H2O4S/c;;1-5(2,3)4/h;;(H2,1,2,3,4)/q2*+1;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "followed by concentration to dryness"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The concentrate was purified by column chromatography on silica gel"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to give crystals"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "Recrystallization from ethyl acetate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 3.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-Propoxybenzimidazole"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(CC)OC=1NC2=C(N1)C=CC=C2"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C10H12N2O/c1-2-7-13-10-11-8-5-3-4-6-9(8)12-10/h3-6H,2,7H2,1H3,(H,11,12)"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06004989",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:22.194066"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-3ccc118d67e74ab798db017b63989585"
+}

@@ -1,0 +1,298 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[Br:1]Br.[CH3:3][C:4]1[C:9]([C:10]([OH:12])=[O:11])=[C:8]([O:13][CH3:14])[CH:7]=[CH:6][CH:5]=1.C([O-])(=O)C.[Na+]>C(O)(=O)C>[Br:1][C:5]1[CH:6]=[CH:7][C:8]([O:13][CH3:14])=[C:9]([C:4]=1[CH3:3])[C:10]([OH:12])=[O:11] |f:2.3|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acetic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H4O2/c1-2(3)4/h1H3,(H,3,4)"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 3.0,
+              "units": "LITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "63A"
+            },
+            {
+              "type": "NAME",
+              "value": "6-methyl-2-methoxybenzoic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC1=CC=CC(=C1C(=O)O)OC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H10O3/c1-6-4-3-5-7(12-2)8(6)9(10)11/h3-5H,1-2H3,(H,10,11)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 304.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m1_m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "bromine"
+            },
+            {
+              "type": "SMILES",
+              "value": "BrBr"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Br2/c1-2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 102.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acetic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H4O2/c1-2(3)4/h1H3,(H,3,4)"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 225.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sodium acetate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)[O-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H4O2.Na/c1-2(3)4;/h1H3,(H,3,4);/q;+1/p-1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 164.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "The reaction mixture is stirred at room temperature for 16 hours"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture of bromine (102 ml, 2.0 mol) and acetic acid (225 ml) is added to a mixture of 63A (304.0 g, 1.8 mol),), sodium acetate (164.0 g, 2.0 mol) and acetic acid (3.0 l) at a temperature of 10 to 15° C. The reaction mixture is stirred at room temperature for 16 hours. The solid material is collected by vacuum filtration, washed with water and dried yielding off-white crystals 321.0 g (72.6.%), mp 81-83° C."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "at a temperature of 10 to 15° C",
+      "temperature": {
+        "setpoint": {
+          "value": 12.5,
+          "precision": 2.5,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "The solid material is collected by vacuum filtration"
+    },
+    {
+      "type": "WASH",
+      "details": "washed with water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 16.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "crystals"
+            },
+            {
+              "type": "NAME",
+              "value": "5-Bromo-6-methyl-2-methoxybenzoic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "BrC=1C=CC(=C(C(=O)O)C1C)OC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H9BrO3/c1-5-6(10)3-4-7(13-2)8(5)9(11)12/h3-4H,1-2H3,(H,11,12)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 321.0,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 72.8
+              }
+            }
+          ],
+          "texture": {
+            "type": "CRYSTAL",
+            "details": "crystals"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06001883",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:19.832024"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-50425bea07fb4629bc58bf23e5d69dbf"
+}

@@ -1,0 +1,373 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[Cl:1][CH2:2][CH2:3][NH:4][C:5](=[O:18])[C:6]1[C:11]([S:12][C:13]([CH3:16])([CH3:15])[CH3:14])=[CH:10][CH:9]=[CH:8][C:7]=1[F:17].[OH:19]OS([O-])=O.[K+].S(S([O-])=O)([O-])(=O)=O.[Na+].[Na+]>CO.O>[Cl:1][CH2:2][CH2:3][NH:4][C:5](=[O:18])[C:6]1[C:7]([F:17])=[CH:8][CH:9]=[CH:10][C:11]=1[S:12]([C:13]([CH3:14])([CH3:15])[CH3:16])=[O:19] |f:1.2,3.4.5|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-(2-chloroethyl)-2-fluoro-6-(1,1-dimethylethylthio)benzamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClCCNC(C1=C(C=CC=C1SC(C)(C)C)F)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C13H17ClFNOS/c1-13(2,3)18-10-6-4-5-9(15)11(10)12(17)16-8-7-14/h4-6H,7-8H2,1-3H3,(H,16,17)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 2.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 50.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "OXONE"
+            },
+            {
+              "type": "SMILES",
+              "value": "OOS(=O)[O-].[K+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/K.H2O4S/c;1-4-5(2)3/h;1H,(H,2,3)/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 50.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sodium metabisulfite"
+            },
+            {
+              "type": "SMILES",
+              "value": "S(=O)(=O)([O-])S(=O)[O-].[Na+].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/2Na.H2O5S2/c;;1-6(2)7(3,4)5/h;;(H,1,2)(H,3,4,5)/q2*+1;/p-2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 100.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "This mixture was stirred for 2 min"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A 0° C. solution of N-(2-chloroethyl)-2-fluoro-6-(1,1-dimethylethylthio)benzamide (2.0 g, 7.0 mmol) in methanol (50 mL) was combined with a 0° C. solution of OXONE® (4.24 g, 7.0 mmol) in water (50 mL). This mixture was stirred for 2 min, then was poured into 25% aq sodium metabisulfite (100 mL) and extracted with ether (3×100 mL). The combined organics were washed with brine followed with water, then were dried (MgSO4), concentrated, and purified by HPLC with 7:3 ethyl acetate/hexanes to afford 2.1 g of the title compound as a white solid, a 98% yield. m.p. 80-90° C."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "was combined with a 0° C.",
+      "temperature": {
+        "setpoint": {
+          "value": 0.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "extracted with ether (3×100 mL)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 100.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "The combined organics were washed with brine",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "brine"
+              },
+              {
+                "type": "SMILES",
+                "value": "[Cl-].[Na+].O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH.Na.H2O/h1H;;1H2/q;+1;/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "were dried (MgSO4)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "MgSO4"
+              },
+              {
+                "type": "SMILES",
+                "value": "[O-]S(=O)(=O)[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "purified by HPLC with 7:3 ethyl acetate/hexanes",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate hexanes"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 2.0,
+        "units": "MINUTE"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "N-(2-Chloroethyl)-2-[(1,1-dimethylethyl)sulfinyl]-6-fluorobenzamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClCCNC(C1=C(C=CC=C1F)S(=O)C(C)(C)C)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C13H17ClFNO2S/c1-13(2,3)19(18)10-6-4-5-9(15)11(10)12(17)16-8-7-14/h4-6H,7-8H2,1-3H3,(H,16,17)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 2.1,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 98.0
+              }
+            }
+          ],
+          "isolated_color": "white",
+          "texture": {
+            "type": "CUSTOM",
+            "details": "solid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998466",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:38.086797"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-7db70afff3294882b12e261f5069bdd4"
+}

@@ -1,0 +1,337 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][O:2][C:3]1[CH:8]=[CH:7][C:6]([OH:9])=[CH:5][CH:4]=1.[OH-].[K+].[C:12](#[N:15])[CH:13]=[CH2:14]>C(O)(C)(C)C.CCOCC>[C:12]([CH2:13][CH2:14][O:9][C:6]1[CH:7]=[CH:8][C:3]([O:2][CH3:1])=[CH:4][CH:5]=1)#[N:15] |f:1.2|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m3_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-Methoxyphenol"
+            },
+            {
+              "type": "SMILES",
+              "value": "COC1=CC=C(C=C1)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H8O2/c1-9-7-4-2-6(8)3-5-7/h2-5,8H,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 248.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "KOH"
+            },
+            {
+              "type": "SMILES",
+              "value": "[OH-].[K+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/K.H2O/h;1H2/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 5.6,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acrylo-nitrile"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C=C)#N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H3N/c1-2-3-4/h2H,1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 397.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "t-butanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(C)(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H10O/c1-4(2,3)5/h5H,1-3H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 1.0,
+              "units": "LITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ether"
+            },
+            {
+              "type": "SMILES",
+              "value": "CCOCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 75.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "with stirring at 75° C. for 5 hours"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "4-Methoxyphenol (248 g), KOH (5.6 g) and acrylo-nitrile (397 ml) were dissolved in 1 liter of t-butanol and heated with stirring at 75° C. for 5 hours. The mixture was then cooled to room temperature and stripped in vacuo to solid residue, which was repulped in ether and insolubles recovered by filtration. The latter were taken up in 2 liters of ethyl acetate, washed in sequence with 1 liter each of H2O, saturated NaHCO3 and saturated NaCl, dried over MgSo4 and restripped to yield purified title product, 199.4 g, m.p. 62-64° C."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "heated"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "The mixture was then cooled to room temperature",
+      "temperature": {
+        "control": {
+          "type": "AMBIENT"
+        }
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "insolubles recovered by filtration"
+    },
+    {
+      "type": "WASH",
+      "details": "washed in sequence with 1 liter each of H2O, saturated NaHCO3 and saturated NaCl",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "H2O"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 1.0,
+                "units": "LITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "NaHCO3"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(=O)(O)[O-].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2O3.Na/c2-1(3)4;/h(H2,2,3,4);/q;+1/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "NaCl"
+              },
+              {
+                "type": "SMILES",
+                "value": "[Na+].[Cl-]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH.Na/h1H;/q;+1/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried over MgSo4"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to yield"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "purified title product, 199.4 g, m.p. 62-64° C.",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "title product"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 5.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4- (2-Cyanoethoxy)anisole"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(#N)CCOC1=CC=C(C=C1)OC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C10H11NO2/c1-12-9-3-5-10(6-4-9)13-8-2-7-11/h3-6H,2,8H2,1H3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998451",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:30.649913"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-ebb828bdced2423db50b0cb15ce2fc20"
+}

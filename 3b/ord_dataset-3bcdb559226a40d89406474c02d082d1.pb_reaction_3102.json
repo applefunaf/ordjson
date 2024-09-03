@@ -1,0 +1,481 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "C([O:4][C:5]1[CH:17]=[CH:16][CH:15]=[C:14]2[C:6]=1[C:7]1[C:8]([O:23][CH3:24])=[CH:9][C:10]([O:19][CH2:20][CH2:21][CH3:22])=[CH:11][C:12]=1[C:13]2=[O:18])(C)C.B(Cl)(Cl)Cl>C(Cl)Cl>[OH:4][C:5]1[CH:17]=[CH:16][CH:15]=[C:14]2[C:6]=1[C:7]1[C:8]([O:23][CH3:24])=[CH:9][C:10]([O:19][CH2:20][CH2:21][CH3:22])=[CH:11][C:12]=1[C:13]2=[O:18]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "5-isopropoxy-2-propoxy-4-methoxy-fluoren-9-one"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(C)OC1=C2C=3C(=CC(=CC3C(C2=CC=C1)=O)OCCC)OC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C20H22O4/c1-5-9-23-13-10-15-19(17(11-13)22-4)18-14(20(15)21)7-6-8-16(18)24-12(2)3/h6-8,10-12H,5,9H2,1-4H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 2.2,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methylene chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(Cl)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 100.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "boron trichloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "B(Cl)(Cl)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/BCl3/c2-1(3)4"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 15.4,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "Prepare a stirred solution of 5-isopropoxy-2-propoxy-4-methoxy-fluoren-9-one (2.2 g, 6.7 mmole) in 100 mL methylene chloride at 0° under argon. Dropwise add boron trichloride (15.4 mL of 1.0 M in methylene chloride, 15.4 mmole). Monitor the reaction by TLC on aliquots, in 40% ethyl acetate/hexane, quenching with saturated ammonium chloride. After 1 hour, quench the reaction with saturated ammonium chloride. Filter and wash twice with 1.00 mL methylene chloride. Separate the organic layer from the filtrate and wash with brine. Dry with magnesium sulfate, filter and strip the solvent. Chromatograph the crude product dissolving first in methylene chloride, then eluting in 30% ethyl acetate/hexane to give the title compound as a red powder (1.75 g, 6.1 mmole, 92%). Rf =0.54 (EtOAc/hex., 40:60)."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "Monitor the reaction by TLC on aliquots"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "in 40% ethyl acetate/hexane, quenching with saturated ammonium chloride",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate hexane"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC.CCCCCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C6H14.C4H8O2/c1-3-5-6-4-2;1-3-6-4(2)5/h3-6H2,1-2H3;3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ammonium chloride"
+              },
+              {
+                "type": "SMILES",
+                "value": "[Cl-].[NH4+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH.H3N/h1H;1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "quench"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the reaction with saturated ammonium chloride",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ammonium chloride"
+              },
+              {
+                "type": "SMILES",
+                "value": "[Cl-].[NH4+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH.H3N/h1H;1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "Filter"
+    },
+    {
+      "type": "WASH",
+      "details": "wash twice with 1.00 mL methylene chloride",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "methylene chloride"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(Cl)Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 1.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "Separate the organic layer from the filtrate"
+    },
+    {
+      "type": "WASH",
+      "details": "wash with brine",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "brine"
+              },
+              {
+                "type": "SMILES",
+                "value": "[Cl-].[Na+].O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH.Na.H2O/h1H;;1H2/q;+1;/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "Dry with magnesium sulfate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "magnesium sulfate"
+              },
+              {
+                "type": "SMILES",
+                "value": "S(=O)(=O)([O-])[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filter"
+    },
+    {
+      "type": "DISSOLUTION",
+      "details": "Chromatograph the crude product dissolving first in methylene chloride",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "crude product"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "methylene chloride"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(Cl)Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "eluting in 30% ethyl acetate/hexane",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate hexane"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC.CCCCCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C6H14.C4H8O2/c1-3-5-6-4-2;1-3-6-4(2)5/h3-6H2,1-2H3;3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 1.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "5-Hydroxy-2-propoxy-4-methoxy-fluoren-9-one"
+            },
+            {
+              "type": "SMILES",
+              "value": "OC1=C2C=3C(=CC(=CC3C(C2=CC=C1)=O)OCCC)OC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C17H16O4/c1-3-7-21-10-8-12-16(14(9-10)20-2)15-11(17(12)19)5-4-6-13(15)18/h4-6,8-9,18H,3,7H2,1-2H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "AMOUNT",
+              "amount": {
+                "moles": {
+                  "value": 6.1,
+                  "units": "MILLIMOLE"
+                }
+              }
+            },
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 1.75,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 92.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 91.0
+              }
+            }
+          ],
+          "isolated_color": "red",
+          "texture": {
+            "type": "POWDER",
+            "details": "powder"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06004959",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:20.091015"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-b9d61e8f846f4cd38b9481c9a9ccd78a"
+}

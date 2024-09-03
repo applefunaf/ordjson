@@ -1,0 +1,209 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][O:2][C:3](=[O:17])[CH2:4][C:5]1[CH:9]=[CH:8][N:7]([C:10]2[CH:15]=[CH:14][C:13](F)=[CH:12][CH:11]=2)[CH:6]=1.N[C:19]1([C:31]#[N:32])[CH:24]=[CH:23][C:22](C2C=CC=CC=2)=[CH:21][CH2:20]1.COC1C(CC(OC)=O)CC(OC)O1>>[CH3:1][O:2][C:3](=[O:17])[CH2:4][C:5]1[CH:9]=[CH:8][N:7]([C:10]2[CH:15]=[CH:14][C:13]([C:22]3[CH:23]=[CH:24][C:19]([C:31]#[N:32])=[CH:20][CH:21]=3)=[CH:12][CH:11]=2)[CH:6]=1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m2_m3_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-[1-(4-fluorophenyl)-1H-pyrrol-3-yl]-acetic acid methyl ester"
+            },
+            {
+              "type": "SMILES",
+              "value": "COC(CC1=CN(C=C1)C1=CC=C(C=C1)F)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C13H12FNO2/c1-17-13(16)8-10-6-7-15(9-10)12-4-2-11(14)3-5-12/h2-7,9H,8H2,1H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-amino-4-cyano-biphenyl"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC1(CC=C(C=C1)C1=CC=CC=C1)C#N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C13H12N2/c14-10-13(15)8-6-12(7-9-13)11-4-2-1-3-5-11/h1-8H,9,15H2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methyl 2-(2,5-dimethoxy-tetrahydrofuran-3-yl)acetate"
+            },
+            {
+              "type": "SMILES",
+              "value": "COC1OC(CC1CC(=O)OC)OC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H16O5/c1-11-7(10)4-6-5-8(12-2)14-9(6)13-3/h6,8-9H,4-5H2,1-3H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "According to the procedure described in Example 14(a) for the preparation of 2-[1-(4-fluorophenyl)-1H-pyrrol-3-yl]-acetic acid methyl ester, 4-amino-4-cyano-biphenyl (commercially available from TCI) and methyl 2-(2,5-dimethoxy-tetrahydrofuran-3-yl)acetate were condensed in 6 hours at 80° C. to give a crude product. Successive flash column chromatography with EtOAc/CH2Cl2Cl2 /hex gave in 60% yield 2-[1-(4'-cyanobiphenyl-4-yl)-1H-pyrrol-3-yl]-acetic acid methyl ester as an amorphous solid. 1 1H NMR: δ 7.75 (d, 2H, J=8.8 Hz), 7.69 (d, 2H, J=8.8 Hz), 7.64 (d, 2H, J=8.5 Hz), 7.48 (d, 2H, J=8.8 Hz), 7.10-7.09 (m, 2H), 6.33 (t, 1H, J=2.2 Hz), 3.73 (s, 3H), 3.58 (s, 2H). Anal. Calculated for C20H16N2O2 : C, 75.93; H, 5.10; N, 8.86. Found: C, 75.86; H, 5.14; N, 8.90."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "condensed in 6 hours at 80° C.",
+      "duration": {
+        "value": 6.0,
+        "units": "HOUR"
+      },
+      "temperature": {
+        "setpoint": {
+          "value": 80.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to give a crude product",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "crude product"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "EtOAc CH2Cl2Cl2"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-[1-(4'-cyanobiphenyl-4-yl)-1H-pyrrol-3-yl]-acetic acid methyl ester"
+            },
+            {
+              "type": "SMILES",
+              "value": "COC(CC1=CN(C=C1)C1=CC=C(C=C1)C1=CC=C(C=C1)C#N)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C20H16N2O2/c1-24-20(23)12-16-10-11-22(14-16)19-8-6-18(7-9-19)17-4-2-15(13-21)3-5-17/h2-11,14H,12H2,1H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 60.0
+              }
+            }
+          ],
+          "isolated_color": "amorphous",
+          "texture": {
+            "type": "CUSTOM",
+            "details": "solid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06008243",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:28.590830"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-500a3aab627c4182a02754931513e6b9"
+}

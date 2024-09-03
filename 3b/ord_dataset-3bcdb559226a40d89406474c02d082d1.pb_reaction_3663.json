@@ -1,0 +1,258 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[OH-].[K+].[CH3:3][Si:4]([CH3:24])([CH3:23])[C:5]1[CH:6]=[C:7](/[CH:11]=[CH:12]/[C:13]2[CH:22]=[CH:21][C:16]([C:17]([O:19]C)=[O:18])=[CH:15][CH:14]=2)[CH:8]=[CH:9][CH:10]=1.Cl>CCO>[CH3:24][Si:4]([CH3:3])([CH3:23])[C:5]1[CH:6]=[C:7]([CH:11]=[CH:12][C:13]2[CH:14]=[CH:15][C:16]([C:17]([OH:19])=[O:18])=[CH:21][CH:22]=2)[CH:8]=[CH:9][CH:10]=1 |f:0.1|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "KOH"
+            },
+            {
+              "type": "SMILES",
+              "value": "[OH-].[K+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/K.H2O/h;1H2/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "trans-methyl 4-[(3-trimethylsilylphenyl)ethenyl]benzoate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C[Si](C=1C=C(C=CC1)/C=C/C1=CC=C(C(=O)OC)C=C1)(C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C19H22O2Si/c1-21-19(20)17-12-10-15(11-13-17)8-9-16-6-5-7-18(14-16)22(2,3)4/h5-14H,1-4H3/b9-8+"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 143.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "EtOH"
+            },
+            {
+              "type": "SMILES",
+              "value": "CCO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 3.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrochloric acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/ClH/h1H"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "The mixture was stirred at room temperature"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A solution of 1.8 ml (3.6 mmol) of 2N-KOH was added to a solution of 143 mg (0.461 mmol) of trans-methyl 4-[(3-trimethylsilylphenyl)ethenyl]benzoate in 3 ml of EtOH. The mixture was stirred at room temperature. The reaction mixture was adjusted to acid pH with 2N hydrochloric acid, and then the aqueous solution was extracted with AcOEt. The extract was dried and evaporated to give 137 mg of the title compound as white crystals (yield 100%), which were recrystallized from a mixture of ethyl acetate, methylene chloride and n-hexane, and dried to give 116 mg of white crystals, m.p. 216°-218° C. (yield 85%)."
+  },
+  "workups": [
+    {
+      "type": "EXTRACTION",
+      "details": "the aqueous solution was extracted with AcOEt",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "AcOEt"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOC(=O)C"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The extract was dried"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "evaporated"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "4-[(3-Trimethylsilylphenyl)ethenyl]benzoic Acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C[Si](C=1C=C(C=CC1)C=CC1=CC=C(C(=O)O)C=C1)(C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C18H20O2Si/c1-21(2,3)17-6-4-5-15(13-17)8-7-14-9-11-16(12-10-14)18(19)20/h4-13H,1-3H3,(H,19,20)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 137.0,
+                  "units": "MILLIGRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 100.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 100.3
+              }
+            }
+          ],
+          "isolated_color": "white",
+          "texture": {
+            "type": "CRYSTAL",
+            "details": "crystals"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "USRE036477",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:15.663820"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-f341d9db8f944e80af19f454afecb821"
+}

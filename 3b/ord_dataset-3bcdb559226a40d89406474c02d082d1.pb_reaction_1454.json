@@ -1,0 +1,297 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][N:2]([CH3:25])[C:3]1[CH:4]=[CH:5][C:6]([Si:21]([CH3:24])([CH3:23])[CH3:22])=[C:7]([CH:20]=1)[C:8]([N:10](CC)[CH:11](OC)[C:12](C)(C)C)=[O:9].I[Si](C)(C)C>C(Cl)Cl>[CH3:25][N:2]([CH3:1])[C:3]1[CH:4]=[CH:5][C:6]([Si:21]([CH3:23])([CH3:22])[CH3:24])=[C:7]([CH:20]=1)[C:8]([NH:10][CH2:11][CH3:12])=[O:9]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "compound"
+            },
+            {
+              "type": "NAME",
+              "value": "5-(Dimethylamino)-N-ethyl-N-(1-methoxy-2,2-dimethylpropyl)-2-(trimethylsilyl)benzamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN(C=1C=CC(=C(C(=O)N(C(C(C)(C)C)OC)CC)C1)[Si](C)(C)C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C20H36N2O2Si/c1-11-22(19(24-7)20(2,3)4)18(23)16-14-15(21(5)6)12-13-17(16)25(8,9)10/h12-14,19H,11H2,1-10H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.31,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "CH2Cl2"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(Cl)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 20.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "iodotrimethylsilane"
+            },
+            {
+              "type": "SMILES",
+              "value": "I[Si](C)(C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H9ISi/c1-5(2,3)4/h1-3H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 2.1,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "The reaction was stirred for 2 h"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "The compound of Example 222 (0.31 g, 0.85 mmol) was dissolved in CH2Cl2 (20 mL) and was treated with iodotrimethylsilane (2.1 mL, 15 mmol) in a foil-covered flask. The reaction was stirred for 2 h and was quenched with sat NaHCO3. The mixture was extracted with ether, the organic layers were washed with brine and sat sodium bisulfite, dried (MgSO4) and concentrated to afford the title compound. The crude product was purified by RC (ethyl acetate/hexanes) and recrystallized from hexanes to afford 68 mg (5%) of the title compound as a white solid. m.p. 141-143° C."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "was quenched with sat NaHCO3",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "NaHCO3"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(=O)(O)[O-].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2O3.Na/c2-1(3)4;/h(H2,2,3,4);/q;+1/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "The mixture was extracted with ether",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "the organic layers were washed with brine",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "brine"
+              },
+              {
+                "type": "SMILES",
+                "value": "[Cl-].[Na+].O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH.Na.H2O/h1H;;1H2/q;+1;/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "dried (MgSO4)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "MgSO4"
+              },
+              {
+                "type": "SMILES",
+                "value": "[O-]S(=O)(=O)[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 2.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "5-(Dimethylamino)-N-ethyl-2-(trimethylsilyl)benzamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN(C=1C=CC(=C(C(=O)NCC)C1)[Si](C)(C)C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C14H24N2OSi/c1-7-15-14(17)12-10-11(16(2)3)8-9-13(12)18(4,5)6/h8-10H,7H2,1-6H3,(H,15,17)"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998466",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:38.349148"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-17ab26b1259a4f5e8e67ad64ca104dec"
+}

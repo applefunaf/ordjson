@@ -1,0 +1,325 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "C(OC([N:8]1[CH2:13][CH2:12][CH:11]([C:14]([C:16]2[N:20]([CH2:21][CH2:22][O:23][CH2:24][C:25]3[O:26][CH:27]=[CH:28][CH:29]=3)[C:19]3[CH:30]=[CH:31][CH:32]=[CH:33][C:18]=3[N:17]=2)=[O:15])[CH2:10][CH2:9]1)=O)(C)(C)C.O1CCOCC1.Cl>ClCCl>[O:26]1[CH:27]=[CH:28][CH:29]=[C:25]1[CH2:24][O:23][CH2:22][CH2:21][N:20]1[C:19]2[CH:30]=[CH:31][CH:32]=[CH:33][C:18]=2[N:17]=[C:16]1[C:14]([CH:11]1[CH2:10][CH2:9][NH:8][CH2:13][CH2:12]1)=[O:15]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "1-(t-butoxycarbonyl)-4-(1-(2-fur-2-ylmethoxy-ethyl)-1H-benzimidazole-2-carbonyl)piperidine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(C)(C)OC(=O)N1CCC(CC1)C(=O)C1=NC2=C(N1CCOCC=1OC=CC1)C=CC=C2"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C25H31N3O5/c1-25(2,3)33-24(30)27-12-10-18(11-13-27)22(29)23-26-20-8-4-5-9-21(20)28(23)14-16-31-17-19-7-6-15-32-19/h4-9,15,18H,10-14,16-17H2,1-3H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 1.0,
+              "units": "MILLIMOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "dioxane"
+            },
+            {
+              "type": "SMILES",
+              "value": "O1CCOCC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O2/c1-2-6-4-3-5-1/h1-4H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 10.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrochloric aicd"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/ClH/h1H"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "dioxane"
+            },
+            {
+              "type": "SMILES",
+              "value": "O1CCOCC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O2/c1-2-6-4-3-5-1/h1-4H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 0.25,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "dichloromethane"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClCCl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "Combine 1-(t-butoxycarbonyl)-4-(1-(2-fur-2-ylmethoxy-ethyl)-1H-benzimidazole-2-carbonyl)piperidine (1.0 mmol) and dioxane (10 mL). Cool in an ice bath. Slowly add a solution of hydrochloric aicd in dioxane (0.25 mL, 4 M, 1.0 mmol). After 45 minutes, dilute the reaction mixture with dichloromethane and extract with saturated aqueous sodium bicarbonate solution. Separate the organic layer and extract with brine. Dry the organic layer over Na2SO4, filter, and evaporate invacuo to give the title compound."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "Cool in an ice bath"
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "extract with saturated aqueous sodium bicarbonate solution",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "sodium bicarbonate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C([O-])(O)=O.[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2O3.Na/c2-1(3)4;/h(H2,2,3,4);/q;+1/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "Separate the organic layer"
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "extract with brine",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "brine"
+              },
+              {
+                "type": "SMILES",
+                "value": "[Cl-].[Na+].O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH.Na.H2O/h1H;;1H2/q;+1;/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "Dry the organic layer over Na2SO4",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "Na2SO4"
+              },
+              {
+                "type": "SMILES",
+                "value": "[O-]S(=O)(=O)[O-].[Na+].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/2Na.H2O4S/c;;1-5(2,3)4/h;;(H2,1,2,3,4)/q2*+1;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filter"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "evaporate invacuo"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 45.0,
+        "units": "MINUTE"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "4-(1-(2-(fur-2-ylmethoxy)ethyl)-1H-benzimidazole-2-carbonyl)piperidine"
+            },
+            {
+              "type": "SMILES",
+              "value": "O1C(=CC=C1)COCCN1C(=NC2=C1C=CC=C2)C(=O)C2CCNCC2"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C20H23N3O3/c24-19(15-7-9-21-10-8-15)20-22-17-5-1-2-6-18(17)23(20)11-13-25-14-16-4-3-12-26-16/h1-6,12,15,21H,7-11,13-14H2"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998439",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:20.484584"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-30309be5e03348e5a50a60063c03a76a"
+}

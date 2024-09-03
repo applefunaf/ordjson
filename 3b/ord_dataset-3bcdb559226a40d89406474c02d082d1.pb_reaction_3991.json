@@ -1,0 +1,218 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[Cl:1][C:2]1[CH:23]=[CH:22][CH:21]=[C:20]([Cl:24])[C:3]=1[C:4]([NH:6][C:7]1[CH:8]=[CH:9][CH:10]=[C:11]2[C:16]=1[N:15]=[CH:14][C:13]([CH:17]([OH:19])[CH3:18])=[CH:12]2)=[O:5]>ClCCl.[O-2].[Mn+4].[O-2]>[C:17]([C:13]1[CH:14]=[N:15][C:16]2[C:11]([CH:12]=1)=[CH:10][CH:9]=[CH:8][C:7]=2[NH:6][C:4](=[O:5])[C:3]1[C:20]([Cl:24])=[CH:21][CH:22]=[CH:23][C:2]=1[Cl:1])(=[O:19])[CH3:18] |f:2.3.4|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "8-(2,6-dichlorobenzoylamino)-3-(1-hydroxyethyl)quinoline"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC1=C(C(=O)NC=2C=CC=C3C=C(C=NC23)C(C)O)C(=CC=C1)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C18H14Cl2N2O2/c1-10(23)12-8-11-4-2-7-15(17(11)21-9-12)22-18(24)16-13(19)5-3-6-14(16)20/h2-10,23H,1H3,(H,22,24)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 562.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "dichloromethane"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClCCl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 20.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "manganese (IV) oxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "[O-2].[Mn+4].[O-2]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Mn.2O/q+4;2*-2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 2.71,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "CATALYST"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "the mixture was stirred at ambient temperature overnight"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a solution of 8-(2,6-dichlorobenzoylamino)-3-(1-hydroxyethyl)quinoline (562 mg) in dichloromethane (20 ml) was added manganese (IV) oxide (2.71 g), and the mixture was stirred at ambient temperature overnight. Insoluble material was filtered off, and the filtrate was concentrated in vacuo. The residue was crystallized from ethanol to give 3-acetyl-8-(2,6-dichlorobenzoylamino)quinoline (101 mg)."
+  },
+  "workups": [
+    {
+      "type": "FILTRATION",
+      "details": "Insoluble material was filtered off"
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "the filtrate was concentrated in vacuo"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The residue was crystallized from ethanol",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 8.0,
+        "precision": 8.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3-acetyl-8-(2,6-dichlorobenzoylamino)quinoline"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)C=1C=NC2=C(C=CC=C2C1)NC(C1=C(C=CC=C1Cl)Cl)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C18H12Cl2N2O2/c1-10(23)12-8-11-4-2-7-15(17(11)21-9-12)22-18(24)16-13(19)5-3-6-14(16)20/h2-9H,1H3,(H,22,24)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 101.0,
+                  "units": "MILLIGRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 18.1
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06008230",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:21.547361"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-2734e2bccdaa4fbbb9007e044c7547b2"
+}

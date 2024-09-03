@@ -1,0 +1,225 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[Cl:1][C:2]1[CH:7]=[CH:6][C:5]([C:8]([CH:13]2[CH2:15][CH2:14]2)=[C:9]([F:12])[CH2:10][OH:11])=[CH:4][CH:3]=1>[O-2].[Mn+4].[O-2]>[Cl:1][C:2]1[CH:3]=[CH:4][C:5]([C:8]([CH:13]2[CH2:14][CH2:15]2)=[C:9]([F:12])[CH:10]=[O:11])=[CH:6][CH:7]=1 |f:1.2.3|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hexanes"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m5_m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3-(p-chlorophenyl)-3-cyclopropyl-2-fluoro-2-propen-1-ol"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC1=CC=C(C=C1)C(=C(CO)F)C1CC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C12H12ClFO/c13-10-5-3-9(4-6-10)12(8-1-2-8)11(14)7-15/h3-6,8,15H,1-2,7H2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "( E )-"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "manganese(IV) oxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "[O-2].[Mn+4].[O-2]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Mn.2O/q+4;2*-2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 101.25,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "CATALYST"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "is stirred at room temperature overnight"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "Activated manganese(IV) oxide (101.25 g, 1.16 mol) is added to a solution of 3-(p-chlorophenyl)-3-cyclopropyl-2-fluoro-2-propen-1-ol, (E)- and (Z)- (26.4 g, 0.116 mol) in hexanes. The resultant reaction mixture is stirred at room temperature overnight, filtered through a pad of diatomaceous earth, and concentrated in vacuo to obtain a residue. Flash column chromatography of the residue using silica gel and an ethyl acetate/hexanes solution (1:9) gives the title product as an oil (15.8 g, 60%)."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "The resultant reaction mixture"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filtered through a pad of diatomaceous earth"
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated in vacuo"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to obtain a residue"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 8.0,
+        "precision": 8.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethyl acetate hexanes"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title product"
+            },
+            {
+              "type": "NAME",
+              "value": "p-Chloro-β-cyclopropyl-α-fluorocinnamaldehyde"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC1=CC=C(C(=C(C=O)F)C2CC2)C=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C12H10ClFO/c13-10-5-3-9(4-6-10)12(8-1-2-8)11(14)7-15/h3-8H,1-2H2"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 15.8,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 60.0
+              }
+            }
+          ],
+          "texture": {
+            "type": "OIL",
+            "details": "oil"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998673",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:36.742398"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-89c70e72653740c1bdbd7ca3d72dda58"
+}

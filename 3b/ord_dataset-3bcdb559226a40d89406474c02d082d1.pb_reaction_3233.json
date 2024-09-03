@@ -1,0 +1,420 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH2:1]([NH:3][C:4]1[CH:9]=[CH:8][CH:7]=[CH:6][CH:5]=1)[CH3:2].[C:10](=O)([O-])[O-].[Na+].[Na+].O.CCO[CH2:20][CH3:21]>>[CH2:1]([N:3]([CH2:10][C:20]#[CH:21])[C:4]1[CH:9]=[CH:8][CH:7]=[CH:6][CH:5]=1)[CH3:2] |f:1.2.3|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Ethylaniline"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)NC1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H11N/c1-2-9-8-6-4-3-5-7-8/h3-7,9H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 37.1,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Sodium Carbonate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C([O-])([O-])=O.[Na+].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2O3.2Na/c2-1(3)4;;/h(H2,2,3,4);;/q;2*+1/p-2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 125.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 100.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m4_m0": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ether"
+            },
+            {
+              "type": "SMILES",
+              "value": "CCOCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "the mixture stirred for 40 hours"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "The procedure follows that of (Reppe and Mitarbeiter, Annalen der Chemie, 596:38-75 (1955)). Ethylaniline (37.1 g, 0.300 Moles) and Benzenesunfonylchloride (60.7 g, 0.300 Moles); are combined in a 500 mL Erlenmeyer flask. To this is added 125 mL of 13% Sodium Carbonate and 100 mL of water and the mixture stirred for 40 hours. The mixture was extracted with ether, dried and 97 mL Acetic anhydride added, the ether evaporated, thinned with benzene and finally extracted with 3:1 Hydrochloric acid. The acidic solution was back extracted with about 30 mL of benzene before being neutralized with Sodium Carbonate, let settle overnight and finally steam distilled. The distillate was extracted with ether and the ether evaporated to 26.8 g (56% yield) of pale yellow liquid IR (neat) 3291, 3062, 3027, 2972, 2931, 2113, 1600, 1505, 1457, 1377, 1348, 1275, 1244, 1185, 1127, 1039, 1009, 750, 692, 651 cm-1 ; 1H NMR (CDCl3) δ1.27 (t, J=7.3) 2.23 (t, J=2.5, 1), 3.49 (q, J=7.2), 4.06 (d, J=2.5), 6.89 (m, 3), 7.29 (m, 2); 13C NMR (CDCl3)2 δ12.9 (--CH3), 40.1 (N--CH2 --), 46.0 (N--CH2 --), 72.1 (yneC-), 80.8 (yneC), 114.4 (arom), 118.2 (arom), 129.6 (arom), 148.3 (arom)."
+  },
+  "workups": [
+    {
+      "type": "EXTRACTION",
+      "details": "The mixture was extracted with ether",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried"
+    },
+    {
+      "type": "ADDITION",
+      "details": "97 mL Acetic anhydride added",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "Acetic anhydride"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OC(C)=O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H6O3/c1-3(5)7-4(2)6/h1-2H3"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 97.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the ether evaporated",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "finally extracted with 3:1 Hydrochloric acid",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "Hydrochloric acid"
+              },
+              {
+                "type": "SMILES",
+                "value": "Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH/h1H"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "The acidic solution was back extracted with about 30 mL of benzene",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "benzene"
+              },
+              {
+                "type": "SMILES",
+                "value": "C1=CC=CC=C1"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C6H6/c1-2-4-6-5-3-1/h1-6H"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 30.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WAIT",
+      "details": "let settle overnight",
+      "duration": {
+        "value": 8.0,
+        "precision": 8.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "DISTILLATION",
+      "details": "finally steam distilled"
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "The distillate was extracted with ether",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 40.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "pale yellow liquid"
+            },
+            {
+              "type": "NAME",
+              "value": "N-Ethyl-N-Propargylaniline"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)N(C1=CC=CC=C1)CC#C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C11H13N/c1-3-10-12(4-2)11-8-6-5-7-9-11/h1,5-9H,4,10H2,2H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 26.8,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 56.0
+              }
+            }
+          ],
+          "isolated_color": "pale yellow",
+          "texture": {
+            "type": "CUSTOM",
+            "details": "liquid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06005058",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:21.907996"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-3c0cde8d38d14ea59fb5df15732020f4"
+}

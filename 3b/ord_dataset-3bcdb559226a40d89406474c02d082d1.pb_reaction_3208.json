@@ -1,0 +1,292 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[OH:1][C:2]1[C:7]([N+:8]([O-])=O)=[CH:6][CH:5]=[CH:4][C:3]=1[NH:11][C:12]([NH:14][C:15]1[CH:20]=[CH:19][CH:18]=[CH:17][C:16]=1[Br:21])=[O:13].[Sn](Cl)(Cl)(Cl)Cl.C([O-])(O)=O.[Na+]>C(O)C>[OH:1][C:2]1[C:7]([NH2:8])=[CH:6][CH:5]=[CH:4][C:3]=1[NH:11][C:12]([NH:14][C:15]1[CH:20]=[CH:19][CH:18]=[CH:17][C:16]=1[Br:21])=[O:13] |f:2.3|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "NaHCO3"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(=O)(O)[O-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2O3.Na/c2-1(3)4;/h(H2,2,3,4);/q;+1/p-1"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m1_m4_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-(2-hydroxy-3-nitrophenyl)-N'-(2-bromophenyl)urea"
+            },
+            {
+              "type": "SMILES",
+              "value": "OC1=C(C=CC=C1[N+](=O)[O-])NC(=O)NC1=C(C=CC=C1)Br"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C13H10BrN3O4/c14-8-4-1-2-5-9(8)15-13(19)16-10-6-3-7-11(12(10)18)17(20)21/h1-7,18H,(H2,15,16,19)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 300.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Tin chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Sn](Cl)(Cl)(Cl)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/4ClH.Sn/h4*1H;/q;;;;+4/p-4"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 958.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 20.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "The reaction mixture was stirred"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a solution of N-(2-hydroxy-3-nitrophenyl)-N'-(2-bromophenyl)urea (300 mg, 0.85 mmol) in ethanol (20 mL), Tin chloride (958 mg, 4.25 mmol) was added. The reaction mixture was stirred at reflux for 16 hours then cooled to room temperature. The reaction mixture was basified to pH 8 with aq. NaHCO3 then extracted with ethyl acetate (3×). The organic extracts were combined, dried over MgSO4, filtered and concentrated under reduced pressure to give product (274 mg, 99%). EI-MS m/z 323 (M+H)+."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "at reflux for 16 hours",
+      "duration": {
+        "value": 16.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "then extracted with ethyl acetate (3×)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "dried over MgSO4",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "MgSO4"
+              },
+              {
+                "type": "SMILES",
+                "value": "[O-]S(=O)(=O)[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filtered"
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated under reduced pressure"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "product"
+            },
+            {
+              "type": "NAME",
+              "value": "N-(2-hydroxy-3-aminophenyl)-N'-(2-bromophenyl)urea"
+            },
+            {
+              "type": "SMILES",
+              "value": "OC1=C(C=CC=C1N)NC(=O)NC1=C(C=CC=C1)Br"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C13H12BrN3O2/c14-8-4-1-2-6-10(8)16-13(19)17-11-7-3-5-9(15)12(11)18/h1-7,18H,15H2,(H2,16,17,19)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 274.0,
+                  "units": "MILLIGRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 99.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 100.1
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06005008",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:21.572587"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-a2c84edc9f4543a19b5eeb96c179f97f"
+}

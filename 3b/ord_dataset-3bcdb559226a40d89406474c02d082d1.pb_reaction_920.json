@@ -1,0 +1,274 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[NH2:1][C:2]([NH:4][C:5]([NH2:7])=[S:6])=[S:3].[I:8][CH3:9]>C1COCC1.C1(C)C=CC=CC=1>[IH:8].[CH3:9][SH:3]=[C:2]([NH:4][C:5]([NH2:7])=[S:6])[NH2:1] |f:4.5|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "toluene"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1(=CC=CC=C1)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H8/c1-7-5-3-2-4-6-7/h2-6H,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 150.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m1_m3_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "dithiobiuret"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC(=S)NC(=S)N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H5N3S2/c3-1(6)5-2(4)7/h(H5,3,4,5,6,7)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 5.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "iodomethane"
+            },
+            {
+              "type": "SMILES",
+              "value": "IC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH3I/c1-2/h1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 5.76,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "THF"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1CCOC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O/c1-2-4-5-3-1/h1-4H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 75.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "After stirring at room temperature for 22 h"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a stirring solution of dithiobiuret (5.0 g, 37 mmol) in THF (75 mL) was added iodomethane (13.1 g, 92.5 mmol, 5.76 ml). After stirring at room temperature for 22 h, the solution was diluted with 150 mL of toluene and allowed to stand at 0° C. for 3 h. The crystals were collected by filtration and washed with cold 2:1 toluene/THF, then dried in vacuo to give the title compound as a white solid (8.7 g, 85%). MS(ESI): 149.9 (M+H)+."
+  },
+  "workups": [
+    {
+      "type": "WAIT",
+      "details": "to stand at 0° C. for 3 h",
+      "duration": {
+        "value": 3.0,
+        "units": "HOUR"
+      },
+      "temperature": {
+        "setpoint": {
+          "value": 0.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "The crystals were collected by filtration"
+    },
+    {
+      "type": "WASH",
+      "details": "washed with cold 2:1 toluene/THF",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "toluene THF"
+              },
+              {
+                "type": "SMILES",
+                "value": "C1(=CC=CC=C1)C.C1CCOC1"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C7H8.C4H8O/c1-7-5-3-2-4-6-7;1-2-4-5-3-1/h2-6H,1H3;1-4H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried in vacuo"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 22.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "S-methyl dithiobiuret hydroiodide salt"
+            },
+            {
+              "type": "SMILES",
+              "value": "I.CS=C(N)NC(=S)N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H9N3S2.HI/c1-8-3(5)6-2(4)7;/h8H,5H2,1H3,(H3,4,6,7);1H"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 8.7,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 85.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 84.2
+              }
+            }
+          ],
+          "isolated_color": "white",
+          "texture": {
+            "type": "CUSTOM",
+            "details": "solid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998470",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:31.424544"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-0efee5bed1e544629c1afb4d62e75950"
+}

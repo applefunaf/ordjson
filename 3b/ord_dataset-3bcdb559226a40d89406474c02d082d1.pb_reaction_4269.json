@@ -1,0 +1,370 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[F:1][C:2]1[C:8]([OH:9])=[CH:7][CH:6]=[CH:5][C:3]=1O.[C:10](=[O:13])([O-])[O-].[K+].[K+].[CH3:16]I>CC(C)=O>[CH3:16][O:9][C:8]1[CH:7]=[CH:6][CH:5]=[C:3]([O:13][CH3:10])[C:2]=1[F:1] |f:1.2.3|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ice water"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 500.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m1_m2_m3_m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-fluoro resorcinol"
+            },
+            {
+              "type": "SMILES",
+              "value": "FC1=C(O)C=CC=C1O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H5FO2/c7-6-4(8)2-1-3-5(6)9/h1-3,8-9H"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 12.8,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "potassium carbonate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C([O-])([O-])=O.[K+].[K+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2O3.2K/c2-1(3)4;;/h(H2,2,3,4);;/q;2*+1/p-2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 42.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methyl iodide"
+            },
+            {
+              "type": "SMILES",
+              "value": "CI"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH3I/c1-2/h1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 25.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acetone"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC(=O)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H6O/c1-3(2)4/h1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 300.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "2-fluoro resorcinol (prepared according to Patrick, T. B., et al., J. Org. Chem (1986), 51, 3242-4) (12.8 g, 100 mmol), potassium carbonate (42 g, 0.3 mol), and methyl iodide (25 mL, 0.4 mol) were mixed with acetone (300 mL) and refluxed for 6 hrs. The reaction was poured into ice-water (500 mL) and extracted in ethyl acetate (500 mL). The ethyl acetate was washed with water (200 mL×2), and brine (200 mL×1), dried over sodium sulfate, filtered, and solvent was removed to yield 14.2 grams (91%) of 1,3-dimethoxy 2-fluoro benzene. This fluoro-benzene intermediate (23.19 g, 148.5 mmoL), N-bromo succinimide (26.52 g, 149 mmol), and 300 uL of 70% aqueous perchloric acid (Aldrich Chemical, 3.4 mmoL) were mixed in carbon tetrachloride (100 mL) and stirred at room temperature for 1 hour. The mixture was filtered, and solvent was removed to obtain a yellow oil. The oil was subjected to silica-gel chromatography (silica gel, hexane mobile phase) to yield 33.28 grams (95%) of the 1,3-dimethoxy-4-bromo-2-fluorobenzene 12 compound as a yellow oil."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "refluxed for 6 hrs",
+      "duration": {
+        "value": 6.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "extracted in ethyl acetate (500 mL)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 500.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "The ethyl acetate was washed with water (200 mL×2), and brine (200 mL×1)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 200.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "brine"
+              },
+              {
+                "type": "SMILES",
+                "value": "[Cl-].[Na+].O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH.Na.H2O/h1H;;1H2/q;+1;/p-1"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 200.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "dried over sodium sulfate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "sodium sulfate"
+              },
+              {
+                "type": "SMILES",
+                "value": "S(=O)(=O)([O-])[O-].[Na+].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/2Na.H2O4S/c;;1-5(2,3)4/h;;(H2,1,2,3,4)/q2*+1;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filtered"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "solvent was removed"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "1,3-dimethoxy 2-fluoro benzene"
+            },
+            {
+              "type": "SMILES",
+              "value": "COC1=C(C(=CC=C1)OC)F"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H9FO2/c1-10-6-4-3-5-7(11-2)8(6)9/h3-5H,1-2H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 14.2,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 91.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 90.9
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06008379",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:26.447950"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-9dd13d9905804fc6b46f4f66eb78f65d"
+}

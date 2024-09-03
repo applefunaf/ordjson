@@ -1,0 +1,302 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "OC([C:6]1([O:16][CH3:17])[CH:14]=[CH:13][C:12]([Cl:15])=[CH:11][CH:7]1[C:8]([NH2:10])=[O:9])C(C)C.S(Cl)(Cl)=O>C(OCC)C>[Cl:15][C:12]1[CH:13]=[CH:14][C:6]([O:16][CH3:17])=[C:7]([C:8]2[O:9][CH2:6][C:7]([CH3:11])([CH3:8])[N:10]=2)[CH:11]=1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-(1 -hydroxy-2-methylpropyl)-5-chloro-2-methoxy benzamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "OC(C(C)C)C1(C(C(=O)N)C=C(C=C1)Cl)OC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C12H18ClNO3/c1-7(2)10(15)12(17-3)5-4-8(13)6-9(12)11(14)16/h4-7,9-10,15H,1-3H3,(H2,14,16)"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "thionyl chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "S(=O)(Cl)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Cl2OS/c1-4(2)3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 40.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "diethyl ether"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)OCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 200.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "The reaction mixture was stirred for 30 min"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a solution of 5-chloro-o-anisic acid (50 g) in toluene (100 mL) was added thionyl chloride (50 mL). The reaction mixture was heated under reflux for 2 hrs and distilled using a short path distillation apparatus to give 5-chloro-o-anisyl chloride, which was used in the next step. To a solution of 2-amino-2-methyl-1-propanol (38 mL) in dichloromethane (200 mL) was added a solution of 5-chloro-o-anisyl chloride in dichloromethane (150 mL) dropwise. The reaction mixture was stirred at ambient temperature for 1 hr, dichloromethane was added and the mixture was washed with 2 N hydrochloric acid. The organic phase was separated, dried over anhydrous magnesium sulfate, filtered, and the filtrate was concentrated in vacuo to give N-(2-(1-hydroxy-2-methylpropyl)-5-chloro-2-methoxy benzamide, which was used in the next step. To N-(2-(1 -hydroxy-2-methylpropyl)-5-chloro-2-methoxy benzamide was added thionyl chloride (40 mL) at 0° C. The reaction mixture was stirred for 30 min, warmed to ambient temperature, diluted with diethyl ether (200 mL), and the mixture was stirred for 10 mins. The mixture was decanted, 10% sodium hydroxide solution was added, and the mixture was extracted with ethyl acetate. The organic extracts were combined, dried over anhydrous magnesium sulfate, filtered, and the filtrate was concentrated in vacuo to afford 41 g (64%) of product, mp 50-51° C."
+  },
+  "workups": [
+    {
+      "type": "STIRRING",
+      "details": "the mixture was stirred for 10 mins",
+      "duration": {
+        "value": 10.0,
+        "units": "MINUTE"
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The mixture was decanted"
+    },
+    {
+      "type": "ADDITION",
+      "details": "10% sodium hydroxide solution was added",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "sodium hydroxide"
+              },
+              {
+                "type": "SMILES",
+                "value": "[OH-].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Na.H2O/h;1H2/q+1;/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "the mixture was extracted with ethyl acetate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "dried over anhydrous magnesium sulfate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "magnesium sulfate"
+              },
+              {
+                "type": "SMILES",
+                "value": "S(=O)(=O)([O-])[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filtered"
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "the filtrate was concentrated in vacuo"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 30.0,
+        "units": "MINUTE"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "product"
+            },
+            {
+              "type": "NAME",
+              "value": "2-(5-Chloro-2-methoxyphenyl)-4,4-dimethyl-4,5-dihydrooxazole"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC=1C=CC(=C(C1)C=1OCC(N1)(C)C)OC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C12H14ClNO2/c1-12(2)7-16-11(14-12)9-6-8(13)4-5-10(9)15-3/h4-6H,7H2,1-3H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 41.0,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 64.0
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06004977",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:18.174696"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-24fd36a1200e40a5830b772495d86352"
+}

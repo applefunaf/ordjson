@@ -1,0 +1,284 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "Cl[C:2]1[CH:7]=[C:6]([Cl:8])[N:5]=[C:4]([NH:9][CH3:10])[N:3]=1.[K+].[Cl:12][C:13]1[CH:18]=[CH:17][C:16]([S:19]([NH-:22])(=[O:21])=[O:20])=[CH:15][CH:14]=1>CN1CCCC1=O>[Cl:12][C:13]1[CH:14]=[CH:15][C:16]([S:19]([NH:22][C:2]2[CH:7]=[C:6]([Cl:8])[N:5]=[C:4]([NH:9][CH3:10])[N:3]=2)(=[O:20])=[O:21])=[CH:17][CH:18]=1 |f:1.2|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "(4,6-dichloro-pyrimidin-2-yl)-methylamine"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC1=NC(=NC(=C1)Cl)NC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C5H5Cl2N3/c1-8-5-9-3(6)2-4(7)10-5/h2H,1H3,(H,8,9,10)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.39,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-chloro-benzenesulfonamide potassium salt"
+            },
+            {
+              "type": "SMILES",
+              "value": "[K+].ClC1=CC=C(C=C1)S(=O)(=O)[NH-]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H5ClNO2S.K/c7-5-1-3-6(4-2-5)11(8,9)10;/h1-4H,(H-,8,9,10);/q-1;+1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 1.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "1-methyl-2-pyrrolidone"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN1C(CCC1)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C5H9NO/c1-6-4-2-3-5(6)7/h2-4H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 10.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "0.39 g (0.0022 mol) of (4,6-dichloro-pyrimidin-2-yl)-methylamine and 1.0 g (0.0044 mol) of 4-chloro-benzenesulfonamide potassium salt were stirred in 10 ml of 1-methyl-2-pyrrolidone at 150° C. for 8 hours. Then, the solvent was distilled off in a high vacuum, the residue was partitioned in ethyl acetate/water and extracted. The aqueous phase was saturated with sodium chloride, evaporated briefly in a vacuum, made acid with 4N HCl and extracted with dichloromethane. The two extracts were combined and chromatographed over silica gel with cyclohexane/ethyl acetate 1:1 as the eluent. There was obtained 0.62 g (85%) of 4-chloro-N-(6-chloro-2-methylamino-pyrimidin-4-yl)-benzenesulfonamide as white crystals. m.p. 196-198° C."
+  },
+  "workups": [
+    {
+      "type": "DISTILLATION",
+      "details": "Then, the solvent was distilled off in a high vacuum"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the residue was partitioned in ethyl acetate/water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate water"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC.O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2.H2O/c1-3-6-4(2)5;/h3H2,1-2H3;1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "extracted"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "evaporated briefly in a vacuum"
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "extracted with dichloromethane",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "dichloromethane"
+              },
+              {
+                "type": "SMILES",
+                "value": "ClCCl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "chromatographed over silica gel with cyclohexane/ethyl acetate 1:1 as the eluent",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "cyclohexane ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C1CCCCC1.C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C6H12.C4H8O2/c1-2-4-6-5-3-1;1-3-6-4(2)5/h1-6H2;3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-chloro-N-(6-chloro-2-methylamino-pyrimidin-4-yl)-benzenesulfonamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC1=CC=C(C=C1)S(=O)(=O)NC1=NC(=NC(=C1)Cl)NC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C11H10Cl2N4O2S/c1-14-11-15-9(13)6-10(16-11)17-20(18,19)8-4-2-7(12)3-5-8/h2-6H,1H3,(H2,14,15,16,17)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 0.62,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 85.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 84.6
+              }
+            }
+          ],
+          "isolated_color": "white",
+          "texture": {
+            "type": "CRYSTAL",
+            "details": "crystals"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998665",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:36.156801"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-9fd6398ba40543cd972acfc122bf9c91"
+}

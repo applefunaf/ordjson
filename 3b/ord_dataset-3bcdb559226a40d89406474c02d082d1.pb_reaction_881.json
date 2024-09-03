@@ -1,0 +1,364 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][O:2][C:3]1[CH:4]=[C:5]2[C:10](=[CH:11][CH:12]=1)[O:9][CH2:8][CH2:7][C:6]2=[O:13].[Br:14]Br.C(Cl)Cl>C(OCC)C>[Br:14][CH:7]1[C:6](=[O:13])[C:5]2[C:10](=[CH:11][CH:12]=[C:3]([O:2][CH3:1])[CH:4]=2)[O:9][CH2:8]1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethyl ether"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)OCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 1.6,
+              "units": "LITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "6-methoxy-4-chromanone"
+            },
+            {
+              "type": "SMILES",
+              "value": "COC=1C=C2C(CCOC2=CC1)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C10H10O3/c1-12-7-2-3-10-8(6-7)9(11)4-5-13-10/h2-3,6H,4-5H2,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 35.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "bromine"
+            },
+            {
+              "type": "SMILES",
+              "value": "BrBr"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Br2/c1-2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 10.6,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "CH2Cl2"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(Cl)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 7.5,
+        "precision": 2.5,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "The mixture was stirred at 5-10° C. for 30 minutes"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a solution of 6-methoxy-4-chromanone (35 g) in ethyl ether (1.6 liters) at 5-101 C. was added dropwise over 30 minutes 10.6 ml of bromine. The mixture was stirred at 5-10° C. for 30 minutes and then allowed to warm to room temperature. After 2 hours tlc (CH2Cl2) indicated formation of less polar products and only a trace of starting material remaining. The reaction mixture was washed with water (1 liter), saturated NaHCO3 (500 ml), and brine (500 ml). dried over MgSO4, and concentrated in vacuo to a yellow solid. The crude product was purified by silica gel flash column chromatography on 2.4 Kg fine silica gel, eluting with a gradient system consisting of 3:1 hexanes/dichloromethane followed by 2:1 hexanes/dichloromethane and finally 30% hexanes/dichloromethane. This afforded title product as a yellow solid in 80% yield."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "to warm to room temperature",
+      "temperature": {
+        "control": {
+          "type": "AMBIENT"
+        }
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "The reaction mixture was washed with water (1 liter), saturated NaHCO3 (500 ml), and brine (500 ml)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 1.0,
+                "units": "LITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "NaHCO3"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(=O)(O)[O-].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2O3.Na/c2-1(3)4;/h(H2,2,3,4);/q;+1/p-1"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 500.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "brine"
+              },
+              {
+                "type": "SMILES",
+                "value": "[Cl-].[Na+].O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH.Na.H2O/h1H;;1H2/q;+1;/p-1"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 500.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "dried over MgSO4",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "MgSO4"
+              },
+              {
+                "type": "SMILES",
+                "value": "[O-]S(=O)(=O)[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated in vacuo to a yellow solid"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The crude product was purified by silica gel flash column chromatography on 2.4 Kg fine silica gel",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "crude product"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "eluting with a gradient system"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 30.0,
+        "units": "MINUTE"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title product"
+            },
+            {
+              "type": "NAME",
+              "value": "3-Bromo-6-methoxy-4-chromanone"
+            },
+            {
+              "type": "SMILES",
+              "value": "BrC1COC2=CC=C(C=C2C1=O)OC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C10H9BrO3/c1-13-6-2-3-9-7(4-6)10(12)8(11)5-14-9/h2-4,8H,5H2,1H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 80.0
+              }
+            }
+          ],
+          "isolated_color": "yellow",
+          "texture": {
+            "type": "CUSTOM",
+            "details": "solid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998451",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:30.685168"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-45c2c201f26f4183a90a6b5a0df03e85"
+}

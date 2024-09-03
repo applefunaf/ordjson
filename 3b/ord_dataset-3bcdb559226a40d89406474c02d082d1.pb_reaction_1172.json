@@ -1,0 +1,181 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][O:2][C:3]1[CH:8]=[CH:7][C:6]([CH:9]=[CH:10][CH2:11][CH2:12][CH2:13][CH2:14][CH2:15][C:16]([OH:18])=[O:17])=[CH:5][CH:4]=1>[Pd].[O-]S([O-])(=O)=O.[Ba+2]>[CH3:1][O:2][C:3]1[CH:4]=[CH:5][C:6]([CH2:9][CH2:10][CH2:11][CH2:12][CH2:13][CH2:14][CH2:15][C:16]([OH:18])=[O:17])=[CH:7][CH:8]=1 |f:1.2.3|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "8-(p-methoxyphenyl)-7-octenoic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "COC1=CC=C(C=C1)C=CCCCCCC(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C15H20O3/c1-18-14-11-9-13(10-12-14)7-5-3-2-4-6-8-15(16)17/h5,7,9-12H,2-4,6,8H2,1H3,(H,16,17)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 1.24,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Pd BaSO4"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Pd].[O-]S(=O)(=O)[O-].[Ba+2]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Ba.H2O4S.Pd/c;1-5(2,3)4;/h;(H2,1,2,3,4);/q+2;;/p-2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 125.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "CATALYST"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "This compound was synthesized from 8-(p-methoxyphenyl)-7-octenoic acid (1.24 g, 5 mmol) and Pd/BaSO4 (125 mg) by hydrogenation. Crystallization (petroleum ether) afforded the product (1.20 g, 96%) as white crystals (mp 42-43° C.). IR: 3400-2500, 1705 cm-1 ; 1H-NMR: 1.40 (m, 10H), 2.40 (m, 4H), 3.80 (s, 3H), 6.95 (q, 4H), 10.10 (bs, 1H). Anal. Calcd. for C15H22O2 : C, 71.97, H, 8.86%; Found: C, 72.07, H, 8.88%."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "Crystallization (petroleum ether)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "petroleum ether"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "product"
+            },
+            {
+              "type": "NAME",
+              "value": "8-(p-Methoxyphenyl)octanoic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "COC1=CC=C(C=C1)CCCCCCCC(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C15H22O3/c1-18-14-11-9-13(10-12-14)7-5-3-2-4-6-8-15(16)17/h9-12H,2-8H2,1H3,(H,16,17)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 1.2,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 96.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 95.9
+              }
+            }
+          ],
+          "isolated_color": "white",
+          "texture": {
+            "type": "CRYSTAL",
+            "details": "crystals"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998642",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:34.333422"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-93dba431b1644a0293fd73991c19af3e"
+}

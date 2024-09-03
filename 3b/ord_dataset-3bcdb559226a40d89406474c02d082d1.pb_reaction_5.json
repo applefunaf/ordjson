@@ -1,0 +1,213 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[ClH:1].[CH3:2][C:3](=[CH:5][CH2:6][CH3:7])[CH3:4].[N:8]([O:10]CCC(C)C)=O>>[Cl:1][C:3]([CH3:4])([CH:5]([N:8]=[O:10])[CH2:6][CH3:7])[CH3:2]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrogen chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/ClH/h1H"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-methyl-2-pentene"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC(C)=CCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H12/c1-4-5-6(2)3/h5H,4H2,1-3H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 20.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "iso-amyl nitrite"
+            },
+            {
+              "type": "SMILES",
+              "value": "N(=O)OCCC(C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C5H11NO2/c1-5(2)3-4-8-6-7/h5H,3-4H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 55.67,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": -20.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "to stir at 0° C. overnight"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "Dry hydrogen chloride gas was passed into a mixture of 2-methyl-2-pentene (20 g, 237 mmol) and iso-amyl nitrite (55.67 g, 475 mmol) cooled to -20° C. The reaction mixture was left to stir at 0° C. overnight and the precipitated material was then filtered off and washed with cold (-20° C.) ethanol (3×5 ml). The product was dried in a stream of air and was used without further purification, (13 g, 36%)."
+  },
+  "workups": [
+    {
+      "type": "WAIT",
+      "details": "The reaction mixture was left"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "the precipitated material was then filtered off"
+    },
+    {
+      "type": "WASH",
+      "details": "washed with cold (-20° C.) ethanol (3×5 ml)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 5.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      },
+      "temperature": {
+        "setpoint": {
+          "value": -20.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The product was dried in a stream of air"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "was used without further purification, (13 g, 36%)"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 8.0,
+        "precision": 8.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-Chloro-2-methyl-3-nitrosopentane"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC(C)(C(CC)N=O)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H12ClNO/c1-4-5(8-9)6(2,3)7/h5H,4H2,1-3H3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05997843",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:15.950472"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-05e94ea8f0d644f3b3c8be9d4ebb5bb0"
+}

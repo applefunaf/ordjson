@@ -1,0 +1,239 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[OH-].[Na+].[CH3:3][C:4]1[CH:13]=[CH:12][C:7]([C:8]([O:10]C)=[O:9])=[C:6]([N:14](S(C)(=O)=O)[S:15]([CH3:18])(=[O:17])=[O:16])[CH:5]=1.CC1C=CC(C(OC)=O)=C(NS(C)(=O)=O)C=1>CO>[CH3:3][C:4]1[CH:13]=[CH:12][C:7]([C:8]([OH:10])=[O:9])=[C:6]([NH:14][S:15]([CH3:18])(=[O:17])=[O:16])[CH:5]=1 |f:0.1|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m3_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sodium hydroxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "[OH-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Na.H2O/h;1H2/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 11.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methyl 4-methyl-2-[N,N-bis(methylsulphonyl)amino]benzoate"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC1=CC(=C(C(=O)OC)C=C1)N(S(=O)(=O)C)S(=O)(=O)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C11H15NO6S2/c1-8-5-6-9(11(13)18-2)10(7-8)12(19(3,14)15)20(4,16)17/h5-7H,1-4H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methyl 4-methyl-2-(N-methylsulphonylamino)benzoate"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC1=CC(=C(C(=O)OC)C=C1)NS(=O)(=O)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C10H13NO4S/c1-7-4-5-8(10(12)15-2)9(6-7)11-16(3,13)14/h4-6,11H,1-3H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 23.26,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "An aqueous solution of sodium hydroxide (11.0 g) was added to a solution of a mixture of methyl 4-methyl-2-[N,N-bis(methylsulphonyl)amino]benzoate and methyl 4-methyl-2-(N-methylsulphonylamino)benzoate (23.26 g) in methanol and the resulting suspension was heated at reflux for 1 hour. It was cooled and the methanol was removed by evaporation. The aqueous solution was acidified and the resultant solid was filtered off to give 4-methyl-2-(N-methylsulphonylamino)benzoic acid (16.42 g) as a cream solid, m.p. 202-205° C."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "the resulting suspension was heated"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "at reflux for 1 hour",
+      "duration": {
+        "value": 1.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "It was cooled"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the methanol was removed by evaporation",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "methanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "CO"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "the resultant solid was filtered off"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-methyl-2-(N-methylsulphonylamino)benzoic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC1=CC(=C(C(=O)O)C=C1)NS(=O)(=O)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H11NO4S/c1-6-3-4-7(9(11)12)8(5-6)10-15(2,13)14/h3-5,10H,1-2H3,(H,11,12)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 16.42,
+                  "units": "GRAM"
+                }
+              }
+            }
+          ],
+          "isolated_color": "cream",
+          "texture": {
+            "type": "CUSTOM",
+            "details": "solid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998653",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:35.214754"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-954e4f28e4a74207aca33cc2dc88807d"
+}

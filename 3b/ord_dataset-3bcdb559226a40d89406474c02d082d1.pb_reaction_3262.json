@@ -1,0 +1,271 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "Cl[C:2]1[N:6]([CH2:7][C:8]2[CH:13]=[CH:12][C:11]([C:14]3[CH:19]=[CH:18][CH:17]=[CH:16][C:15]=3[C:20]#[N:21])=[CH:10][CH:9]=2)[C:5]2[C:22]([C:26]([O:28][CH3:29])=[O:27])=[CH:23][CH:24]=[CH:25][C:4]=2[N:3]=1.[NH:30]1[CH2:35][CH2:34][O:33][CH2:32][CH2:31]1>>[C:20]([C:15]1[CH:16]=[CH:17][CH:18]=[CH:19][C:14]=1[C:11]1[CH:12]=[CH:13][C:8]([CH2:7][N:6]2[C:5]3[C:22]([C:26]([O:28][CH3:29])=[O:27])=[CH:23][CH:24]=[CH:25][C:4]=3[N:3]=[C:2]2[N:30]2[CH2:35][CH2:34][O:33][CH2:32][CH2:31]2)=[CH:9][CH:10]=1)#[N:21]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methyl 2-chloro-1-[(2'-cyanobiphenyl-4-yl)methyl]benzimidazole-7-carboxylate"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC1=NC2=C(N1CC1=CC=C(C=C1)C1=C(C=CC=C1)C#N)C(=CC=C2)C(=O)OC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C23H16ClN3O2/c1-29-22(28)19-7-4-8-20-21(19)27(23(24)26-20)14-15-9-11-16(12-10-15)18-6-3-2-5-17(18)13-25/h2-12H,14H2,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.8,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "morpholine"
+            },
+            {
+              "type": "SMILES",
+              "value": "N1CCOCC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H9NO/c1-3-6-4-2-5-1/h5H,1-4H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 15.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 100.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "was stirred at 100° C. for 2 hours"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture of methyl 2-chloro-1-[(2'-cyanobiphenyl-4-yl)methyl]benzimidazole-7-carboxylate (0.8 g) in morpholine (15 ml) was stirred at 100° C. for 2 hours and the reaction mixture was concentrated to dryness. The residue was extracted with ethyl acetate. The extract was washed with water, dried and evaporated. The resulting crystals were recrystallized from ethyl acetate--hexane to afford colorless prisms (0.69 g, 77%)."
+  },
+  "workups": [
+    {
+      "type": "CONCENTRATION",
+      "details": "the reaction mixture was concentrated to dryness"
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "The residue was extracted with ethyl acetate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "The extract was washed with water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "evaporated"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The resulting crystals were recrystallized from ethyl acetate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 2.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "prisms"
+            },
+            {
+              "type": "NAME",
+              "value": "Methyl 1-[(2'-cyanobiphenyl-4-yl)methyl]-2-morpholinobenzimidazole-7-carboxylate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(#N)C1=C(C=CC=C1)C1=CC=C(C=C1)CN1C(=NC2=C1C(=CC=C2)C(=O)OC)N2CCOCC2"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C27H24N4O3/c1-33-26(32)23-7-4-8-24-25(23)31(27(29-24)30-13-15-34-16-14-30)18-19-9-11-20(12-10-19)22-6-3-2-5-21(22)17-28/h2-12H,13-16,18H2,1H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 0.69,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 77.0
+              }
+            }
+          ],
+          "texture": {
+            "type": "CRYSTAL",
+            "details": "prisms"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06004989",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:22.446875"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-a50aaa7007bc4b50a168b53b7cafa53c"
+}

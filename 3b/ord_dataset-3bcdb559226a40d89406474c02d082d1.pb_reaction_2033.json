@@ -1,0 +1,277 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "Cl.[O:2]([C:9]1[CH:14]=[CH:13][C:12]([C:15]2[C:23]3[C:22]([NH2:24])=[N:21][CH:20]=[N:19][C:18]=3[N:17]([CH:25]3[CH2:30][O:29]C(C4C=CC=CC=4)[O:27][CH2:26]3)[CH:16]=2)=[CH:11][CH:10]=1)[C:3]1[CH:8]=[CH:7][CH:6]=[CH:5][CH:4]=1.C(O)CC>CO>[NH2:24][C:22]1[C:23]2[C:15]([C:12]3[CH:13]=[CH:14][C:9]([O:2][C:3]4[CH:8]=[CH:7][CH:6]=[CH:5][CH:4]=4)=[CH:10][CH:11]=3)=[CH:16][N:17]([CH:25]([CH2:26][OH:27])[CH2:30][OH:29])[C:18]=2[N:19]=[CH:20][N:21]=1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m1_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrochloric acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/ClH/h1H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 45.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "5-(4-phenoxyphenyl)-7-(2-phenyl-1,3-dioxan-5-yl)-7H-pyrrolo[2,3-d]pyrimidin-4-ylamine"
+            },
+            {
+              "type": "SMILES",
+              "value": "O(C1=CC=CC=C1)C1=CC=C(C=C1)C1=CN(C=2N=CN=C(C21)N)C2COC(OC2)C2=CC=CC=C2"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C28H24N4O3/c29-26-25-24(19-11-13-23(14-12-19)35-22-9-5-2-6-10-22)15-32(27(25)31-18-30-26)21-16-33-28(34-17-21)20-7-3-1-4-8-20/h1-15,18,21,28H,16-17H2,(H2,29,30,31)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 170.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Propan-1-ol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(CC)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H8O/c1-2-3-4/h4H,2-3H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 30.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "Dilute hydrochloric acid (45 ml of 2M solution) was added to 5-(4-phenoxyphenyl)-7-(2-phenyl-1,3-dioxan-5-yl)-7H-pyrrolo[2,3-d]pyrimidin-4-ylamine (170 mg) and the mixture heated to boiling under reflux. Propan-1-ol (30 ml) was added and the mixture boiled under reflux for 6 hours and then the propanol was distilled off. The mixture was evaporated under reduced pressure to give a residue which was triturated with ethyl acetate and then filtered to give a solid which was dissolved in methanol, and purified by chromatography to give 2-[4-amino-5-(4-phenoxyphenyl)-7H-pyrrolo[2,3-d]pyrimidin-7-yl]propan-1,3-diol. The structure was confirmed by 1H nmr and mass spectra."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "the mixture heated"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "under reflux"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "under reflux for 6 hours",
+      "duration": {
+        "value": 6.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "DISTILLATION",
+      "details": "the propanol was distilled off",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "propanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(CC)O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C3H8O/c1-2-3-4/h4H,2-3H2,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The mixture was evaporated under reduced pressure"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to give a residue which"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "was triturated with ethyl acetate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filtered"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to give a solid which"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "purified by chromatography"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-[4-amino-5-(4-phenoxyphenyl)-7H-pyrrolo[2,3-d]pyrimidin-7-yl]propan-1,3-diol"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC=1C2=C(N=CN1)N(C=C2C2=CC=C(C=C2)OC2=CC=CC=C2)C(CO)CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C21H20N4O3/c22-20-19-18(10-25(15(11-26)12-27)21(19)24-13-23-20)14-6-8-17(9-7-14)28-16-4-2-1-3-5-16/h1-10,13,15,26-27H,11-12H2,(H2,22,23,24)"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06001839",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:17.248535"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-87c4358e042e453ea593b2008e1474ef"
+}

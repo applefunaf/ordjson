@@ -1,0 +1,289 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[Cl:1][C:2]1[CH:3]=[C:4]([S:8]([NH:11][C:12]2[CH:17]=[C:16](Cl)[N:15]=[C:14]([NH:19][CH3:20])[N:13]=2)(=[O:10])=[O:9])[CH:5]=[CH:6][CH:7]=1.Cl.CN.[CH2:24]([N:26](CC)CC)C>CCO>[CH3:20][NH:19][C:14]1[N:13]=[C:12]([NH:11][S:8]([C:4]2[CH:5]=[CH:6][CH:7]=[C:2]([Cl:1])[CH:3]=2)(=[O:10])=[O:9])[CH:17]=[C:16]([NH:26][CH3:24])[N:15]=1 |f:1.2|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3-chloro-N-(6-chloro-2-methylamino-pyrimidin-4-yl)-benzenesulfonamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC=1C=C(C=CC1)S(=O)(=O)NC1=NC(=NC(=C1)Cl)NC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C11H10Cl2N4O2S/c1-14-11-15-9(13)6-10(16-11)17-20(18,19)8-4-2-3-7(12)5-8/h2-6H,1H3,(H2,14,15,16,17)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.1,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "EtOH"
+            },
+            {
+              "type": "SMILES",
+              "value": "CCO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 5.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methylamine hydrochloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl.CN"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH5N.ClH/c1-2;/h2H2,1H3;1H"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.27,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "triethylamine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)N(CC)CC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H15N/c1-4-7(5-2)6-3/h4-6H2,1-3H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 1.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 145.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "stirred in an autoclave at 145° C. for 17 hours"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "0.10 g (0.00030 mol) of 3-chloro-N-(6-chloro-2-methylamino-pyrimidin-4-yl)-benzenesulfonamide was dissolved in 5 ml of EtOH, treated with 0.27 g (0.004 mol) of methylamine hydrochloride and 1 ml (0.007 mol) of triethylamine and stirred in an autoclave at 145° C. for 17 hours. The entire reaction mixture was partitioned in ethyl acetate/water and extracted. The residue was recrystallized from MeOH. There was obtained 0.04 g (41%) of N-(2,6-bis-methylamino-pyrimidin-4-yl)-3-chloro-benzenesulfonamide as white crystals; m.p. 167-168° C."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "The entire reaction mixture"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "was partitioned in ethyl acetate/water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate water"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC.O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2.H2O/c1-3-6-4(2)5;/h3H2,1-2H3;1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "extracted"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The residue was recrystallized from MeOH",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "MeOH"
+              },
+              {
+                "type": "SMILES",
+                "value": "CO"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 17.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-(2,6-bis-methylamino-pyrimidin-4-yl)-3-chloro-benzenesulfonamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "CNC1=NC(=CC(=N1)NS(=O)(=O)C1=CC(=CC=C1)Cl)NC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C12H14ClN5O2S/c1-14-10-7-11(17-12(15-2)16-10)18-21(19,20)9-5-3-4-8(13)6-9/h3-7H,1-2H3,(H3,14,15,16,17,18)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 0.04,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 41.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 40.7
+              }
+            }
+          ],
+          "isolated_color": "white",
+          "texture": {
+            "type": "CRYSTAL",
+            "details": "crystals"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998665",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:36.290436"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-8b3a502dc863485aa077787d516b559e"
+}

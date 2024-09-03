@@ -1,0 +1,219 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[C:1]1([C:10]([OH:12])=[O:11])([C:7]([OH:9])=[O:8])[CH2:6][CH2:5][CH2:4][CH2:3][CH2:2]1.C([O-])(=O)C.[Mo+4:17].C([O-])(=O)C.C([O-])(=O)C.C([O-])(=O)C>CO>[Mo:17].[C:1]1([C:10]([OH:12])=[O:11])([C:7]([OH:9])=[O:8])[CH2:2][CH2:3][CH2:4][CH2:5][CH2:6]1 |f:1.2.3.4.5,7.8|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "cyclohexane dicarboxylic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1(CCCCC1)(C(=O)O)C(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H12O4/c9-6(10)8(7(11)12)4-2-1-3-5-8/h1-5H2,(H,9,10)(H,11,12)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.885,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "molybdenum acetate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)[O-].[Mo+4].C(C)(=O)[O-].C(C)(=O)[O-].C(C)(=O)[O-]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/4C2H4O2.Mo/c4*1-2(3)4;/h4*1H3,(H,3,4);/q;;;;+4/p-4"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 2.34,
+              "units": "MILLIMOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 900.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "After this was stirred for three days at the room temperature"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "0.885 g (5.14 mmol) of cyclohexane dicarboxylic acid and 1,000 g (2.34 mmol) of molybdenum acetate were dissolved in 900 ml of methanol. After this was stirred for three days at the room temperature, this was kept still for a few days. Thereafter, its precipitation product was suction-filtered, rinsed sufficiently with methanol and then vacuum-dried for 60° C./4 hours, whereby 1.216 g of target substance was obtained. This substance had the specific surface area of 212 m2 /g. And, a measurement according to the HK method using argon revealed that the substance had the pore diameter of 5.2 Å."
+  },
+  "workups": [
+    {
+      "type": "WAIT",
+      "details": "this was kept still for a few days"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "Thereafter, its precipitation product"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "was suction-filtered"
+    },
+    {
+      "type": "WASH",
+      "details": "rinsed sufficiently with methanol",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "methanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "CO"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "vacuum-dried for 60° C./4 hours, whereby 1.216 g of target substance",
+      "duration": {
+        "value": 4.0,
+        "units": "HOUR"
+      },
+      "temperature": {
+        "setpoint": {
+          "value": 60.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "was obtained"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 3.0,
+        "units": "DAY"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "cyclohexane dicarboxylic acid molybdenum"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Mo].C1(CCCCC1)(C(=O)O)C(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H12O4.Mo/c9-6(10)8(7(11)12)4-2-1-3-5-8;/h1-5H2,(H,9,10)(H,11,12);"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998647",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:34.936743"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-96d438c069e0448c99acbd5c2db4799a"
+}

@@ -1,0 +1,333 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[OH-:1].[Na+].Cl.[NH2:4]O.[O-]S([O-])=O.[Na+].[Na+].[NH2:12][C:13]1[CH:14]=[C:15]([OH:23])[C:16](=[CH:21][CH:22]=1)[C:17](OC)=[O:18].OS(O)(=O)=O>O>[NH2:12][C:13]1[CH:22]=[CH:21][C:16]([C:17]([NH:4][OH:1])=[O:18])=[C:15]([OH:23])[CH:14]=1 |f:0.1,2.3,4.5.6|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Na2SO3"
+            },
+            {
+              "type": "SMILES",
+              "value": "[O-]S(=O)[O-].[Na+].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/2Na.H2O3S/c;;1-4(2)3/h;;(H2,1,2,3)/q2*+1;/p-2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.4,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m6": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "H2SO4"
+            },
+            {
+              "type": "SMILES",
+              "value": "OS(=O)(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O4S/c1-5(2,3)4/h(H2,1,2,3,4)"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methyl 4-aminosalicylate"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC=1C=C(C(C(=O)OC)=CC1)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H9NO3/c1-12-8(11)6-3-2-5(9)4-7(6)10/h2-4,10H,9H2,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 3.35,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m1_m7_m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "NaOH"
+            },
+            {
+              "type": "SMILES",
+              "value": "[OH-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Na.H2O/h;1H2/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 4.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydroxylamine hydrochloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl.NO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/ClH.H3NO/c;1-2/h1H;2H,1H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 2.8,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ice"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 20.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 16.0,
+              "units": "NANOLITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "The resulting solution is stirred for up to 24 hours at room temperature"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "NaOH (4.0 grams) in 16 nL of water is carefully added to hydroxylamine hydrochloride (2.8 grams, 40 mmol) and 20 grams of ice. After dissolution, Na2SO3 (0.4 grams) is added, followed by methyl 4-aminosalicylate (3.35 grams, 20 mmol). The resulting solution is stirred for up to 24 hours at room temperature, the course of the reaction is monitored every few hours by reverse phase HPLC. The resulting solution is chilled on ice and acidified by addition of 25% H2SO4. A precipitate is first formed at approx. pH 6. The pH is finally adjusted to approx. pH 4, and the pale tan precipitate collected by filtration. The product is dried in vacuo over P2O5, to afford 3.0 grams (89% yield) of 4-amino-2-hydroxybenzohydroxamic acid (m.p. 180-181° C.). The structure was confirmed by 1H NMR spectrometry in d6 -DMSO."
+  },
+  "workups": [
+    {
+      "type": "ADDITION",
+      "details": "is added"
+    },
+    {
+      "type": "WAIT",
+      "details": "the course of the reaction is monitored every few hours by reverse phase HPLC"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "The resulting solution is chilled on ice"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "A precipitate is first formed at approx. pH 6"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "the pale tan precipitate collected by filtration"
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "The product is dried in vacuo over P2O5",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "P2O5"
+              },
+              {
+                "type": "SMILES",
+                "value": "O=P12OP3(=O)OP(=O)(O1)OP(=O)(O2)O3"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/O10P4/c1-11-5-12(2)8-13(3,6-11)10-14(4,7-11)9-12"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 24.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-amino-2-hydroxybenzohydroxamic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC1=CC(=C(C(=O)NO)C=C1)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H8N2O3/c8-4-1-2-5(6(10)3-4)7(11)9-12/h1-3,10,12H,8H2,(H,9,11)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 3.0,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 89.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 89.2
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06008406",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:26.879488"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-1bebb71a56b64521b9325ce7a8b11d90"
+}

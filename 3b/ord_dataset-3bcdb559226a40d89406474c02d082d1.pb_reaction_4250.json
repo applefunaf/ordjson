@@ -1,0 +1,311 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[C:1]1([S:7][CH2:8][CH2:9][OH:10])[CH:6]=[CH:5][CH:4]=[CH:3][CH:2]=1.[C:11]([O:15][C:16](=[O:19])[CH2:17]Br)([CH3:14])([CH3:13])[CH3:12].[OH-].[Na+]>[Br-].C([N+](CCCC)(CCCC)CCCC)CCC.C1(C)C=CC=CC=1>[C:1]1([S:7][CH2:8][CH2:9][O:10][CH2:17][C:16]([O:15][C:11]([CH3:14])([CH3:13])[CH3:12])=[O:19])[CH:6]=[CH:5][CH:4]=[CH:3][CH:2]=1 |f:2.3,4.5|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m4_m5_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-Phenylthioethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1(=CC=CC=C1)SCCO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H10OS/c9-6-7-10-8-4-2-1-3-5-8/h1-5,9H,6-7H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 6.1,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "t-butylbromoacetate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(C)(C)OC(CBr)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H11BrO2/c1-6(2,3)9-5(8)4-7/h4H2,1-3H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 7.9,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sodium hydroxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "[OH-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Na.H2O/h;1H2/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 40.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "tetrabutylammoniumbromide"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Br-].C(CCC)[N+](CCCC)(CCCC)CCCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C16H36N.BrH/c1-5-9-13-17(14-10-6-2,15-11-7-3)16-12-8-4;/h5-16H2,1-4H3;1H/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 1.3,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "CATALYST"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "toluene"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1(=CC=CC=C1)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H8/c1-7-5-3-2-4-6-7/h2-6H,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 80.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "2-Phenylthioethanol (6.1 g), t-butylbromoacetate (7.9 ml), tetrabutylammoniumbromide (1.3 g), toluene (80 ml), and 75% aqueous sodium hydroxide (40 ml) were stirred together for 72 hours. The organic layer was separated and the aqueous layer extracted with dichloromethane. The combined organics were washed with brine, dried (MgSO4) and the solvent was removed in vacuo to provide the subtitle compound (12.07 g)."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "The organic layer was separated"
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "the aqueous layer extracted with dichloromethane",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "dichloromethane"
+              },
+              {
+                "type": "SMILES",
+                "value": "ClCCl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "The combined organics were washed with brine",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "brine"
+              },
+              {
+                "type": "SMILES",
+                "value": "[Cl-].[Na+].O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH.Na.H2O/h1H;;1H2/q;+1;/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "dried (MgSO4)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "MgSO4"
+              },
+              {
+                "type": "SMILES",
+                "value": "[O-]S(=O)(=O)[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the solvent was removed in vacuo"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "subtitle compound"
+            },
+            {
+              "type": "NAME",
+              "value": "t-Butyl 2-(2-phenylthioethoxy)acetate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1(=CC=CC=C1)SCCOCC(=O)OC(C)(C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C14H20O3S/c1-14(2,3)17-13(15)11-16-9-10-18-12-7-5-4-6-8-12/h4-8H,9-11H2,1-3H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 12.07,
+                  "units": "GRAM"
+                }
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06008365",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:26.126773"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-17adbc8079c74edd863b37a5ccbdf975"
+}

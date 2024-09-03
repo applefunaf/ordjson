@@ -1,0 +1,310 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "C([NH:11][CH2:12][CH2:13][C:14]([NH:16][CH2:17][CH2:18][S:19]([OH:22])(=[O:21])=[O:20])=[O:15])(OCC1C=CC=CC=1)=O.Br>CC(O)=O>[NH2:11][CH2:12][CH2:13][C:14]([NH:16][CH2:17][CH2:18][S:19]([OH:22])(=[O:20])=[O:21])=[O:15]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-carbobenzoxy-β-alanyl-taurine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(=O)(OCC1=CC=CC=C1)NCCC(=O)NCCS(=O)(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C13H18N2O6S/c16-12(14-8-9-22(18,19)20)6-7-15-13(17)21-10-11-4-2-1-3-5-11/h1-5H,6-10H2,(H,14,16)(H,15,17)(H,18,19,20)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 1.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "HBr"
+            },
+            {
+              "type": "SMILES",
+              "value": "Br"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/BrH/h1H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 3.4,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "AcOH"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H4O2/c1-2(3)4/h1H3,(H,3,4)"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "AcOH"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H4O2/c1-2(3)4/h1H3,(H,3,4)"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 23.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 40.0,
+        "units": "CELSIUS"
+      }
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "N-carbobenzoxy-β-alanyl-taurine (1.00 g, 3.4 mmol) was slurried in 23 ml glacial AcOH. To the mixture was added 3.4 mL HBr in AcOH (30 wt %) to result in a clear solution. The reaction was heated to 40° C. and allowed to mix overnight. The product precipitated out of solution and acetonitrile was added to force the precipitation. The mixture was filtered, the filter cake washed and the product collected. The crude Br salt was loaded onto an ion exchange column (Dowex AG1-XB8). The column was eluted with H2O. The product cut was collected and lyophilized to give 583 mg of β-alanyl-taurine (87.3%). The zinc salt was prepared by treatment with Zn(OH)2 in H2O, followed by lyophilization. (See FIG. 1 for reaction Scheme.)"
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "to result in a clear solution"
+    },
+    {
+      "type": "ADDITION",
+      "details": "to mix overnight",
+      "duration": {
+        "value": 8.0,
+        "precision": 8.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The product precipitated out of solution and acetonitrile",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "acetonitrile"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)#N"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C2H3N/c1-2-3/h1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "ADDITION",
+      "details": "was added"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the precipitation"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "The mixture was filtered"
+    },
+    {
+      "type": "WASH",
+      "details": "the filter cake washed"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the product collected"
+    },
+    {
+      "type": "WASH",
+      "details": "The column was eluted with H2O",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "H2O"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The product cut was collected"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "β-alanyl-taurine"
+            },
+            {
+              "type": "SMILES",
+              "value": "NCCC(=O)NCCS(=O)(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C5H12N2O4S/c6-2-1-5(8)7-3-4-12(9,10)11/h1-4,6H2,(H,7,8)(H,9,10,11)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 583.0,
+                  "units": "MILLIGRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 87.3
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 87.4
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06007819",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:16.165074"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-0c43a9da23f445b8914c3a855bc66f21"
+}

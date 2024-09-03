@@ -1,0 +1,413 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][O:2][C:3]1[CH:11]=[CH:10][C:6]([CH:7]=[N:8][OH:9])=[CH:5][CH:4]=1.C[O:13][C:14](=[O:21])[C:15]([CH2:17][C:18]([OH:20])=[O:19])=[CH2:16].[CH2:22]1COCC1>>[CH3:1][O:2][C:3]1[CH:11]=[CH:10][C:6]([C:7]2[CH2:16][C:15]([C:14]([OH:13])=[O:21])([CH2:17][C:18]([O:20][CH3:22])=[O:19])[O:9][N:8]=2)=[CH:5][CH:4]=1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-Methoxybenzaldehyde oxime"
+            },
+            {
+              "type": "SMILES",
+              "value": "COC1=CC=C(C=NO)C=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H9NO2/c1-11-8-4-2-7(3-5-8)6-9-10/h2-6,10H,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 5.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "itaconic acid monomethyl ester"
+            },
+            {
+              "type": "SMILES",
+              "value": "COC(C(=C)CC(=O)O)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H8O4/c1-4(3-5(7)8)6(9)10-2/h1,3H2,2H3,(H,7,8)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 5.72,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "THF"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1CCOC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O/c1-2-4-5-3-1/h1-4H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 200.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "aqueous solution"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "The reaction mixture was then stirred at RT under N2 for 12 h"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "4-Methoxybenzaldehyde oxime (5.00 g, 33.1 mmol) and itaconic acid monomethyl ester (5.72 g, 39.7 mol) were added together with 200 mL of THF. To the above mixture was added bleach (84 mL of 0.67M aqueous solution) dropwise at room temperature. The reaction mixture was then stirred at RT under N2 for 12 h. The THF was removed in vacuo. The aqueous mixture was acidified with aqueous HCl and extracted with EtOAc. The EtOAc solution was washed with brine, dried over MgSO4, concentrated, and chromatographed with 10-30% MeOH in CH2Cl2 on silica gel to give 5.58 g of the desired product (58%). 1H NMR (DMSC-d6): δ63.08 (m, 2H); 3.61 (s, 3H); 3.55-3.87 (m, 2H); 3.80 (s, 3H); 7.00 (d, 2H); 7.61 (d, 2H)."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "The THF was removed in vacuo",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "THF"
+              },
+              {
+                "type": "SMILES",
+                "value": "C1CCOC1"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O/c1-2-4-5-3-1/h1-4H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "extracted with EtOAc",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "EtOAc"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOC(=O)C"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "The EtOAc solution was washed with brine",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "EtOAc"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOC(=O)C"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "brine"
+              },
+              {
+                "type": "SMILES",
+                "value": "[Cl-].[Na+].O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH.Na.H2O/h1H;;1H2/q;+1;/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "dried over MgSO4",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "MgSO4"
+              },
+              {
+                "type": "SMILES",
+                "value": "[O-]S(=O)(=O)[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "chromatographed with 10-30% MeOH in CH2Cl2 on silica gel",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "MeOH"
+              },
+              {
+                "type": "SMILES",
+                "value": "CO"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "CH2Cl2"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(Cl)Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 12.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "desired product"
+            },
+            {
+              "type": "NAME",
+              "value": "3-(4-Methoxyphenyl)-5-carbomethoxy methyl-isoxazolin-5-ylcarboxylic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "COC1=CC=C(C=C1)C1=NOC(C1)(CC(=O)OC)C(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C14H15NO6/c1-19-10-5-3-9(4-6-10)11-7-14(13(17)18,21-15-11)8-12(16)20-2/h3-6H,7-8H2,1-2H3,(H,17,18)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 5.58,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 58.0
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998424",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:25.985892"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-234ec7f0e7d640d58fee777c3ec54bce"
+}

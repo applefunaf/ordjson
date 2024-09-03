@@ -1,0 +1,446 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[C:1]1([CH:11]([CH2:14][CH2:15][CH2:16][CH2:17][CH:18]([F:20])[F:19])[C:12]#[N:13])[C:10]2[C:5](=[CH:6][CH:7]=[CH:8][CH:9]=2)[CH:4]=[CH:3][CH:2]=1.N.[H][H]>[Ni].CO>[C:1]1([CH:11]([CH2:14][CH2:15][CH2:16][CH2:17][CH:18]([F:19])[F:20])[CH2:12][NH2:13])[C:10]2[C:5](=[CH:6][CH:7]=[CH:8][CH:9]=2)[CH:4]=[CH:3][CH:2]=1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m4_m2_m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-(naphth-1-yl)-7,7-difluoroheptanenitrile"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1(=CC=CC2=CC=CC=C12)C(C#N)CCCCC(F)F"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C17H17F2N/c18-17(19)11-4-2-7-14(12-20)16-10-5-8-13-6-1-3-9-15(13)16/h1,3,5-6,8-10,14,17H,2,4,7,11H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 413.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ammonia"
+            },
+            {
+              "type": "SMILES",
+              "value": "N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H3N/h1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.9,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Raney nickel"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Ni]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Ni"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 413.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "CATALYST"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 20.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrogen"
+            },
+            {
+              "type": "SMILES",
+              "value": "[H][H]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2/h1H"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture of 2-(naphth-1-yl)-7,7-difluoroheptanenitrile (413 mg, 1.51 mmol), Raney nickel (413 mg) and ammonia (0.9 g) in methanol (20 ml) was hydrogenated under 340 kPa (50 psi) hydrogen overnight at room temperature. The mixture was filtered and the filtrate was concentrated in vacuo. The residue was partitioned between ethyl acetate (50 ml) and water (40 ml) and the ethyl acetate extract was washed with brine (30 ml), dried (sodium sulfate) and concentrated in vacuo. The residue (400 mg) was purified by column chromatography on silica gel (100 g), eluting with 85:15 ethyl acetate/methanol to yield the title compound as an oil (321 mg, 77% yield). 1H NMR (300 MHz, CDCl3) δ1.35 (c, 6H), 1.78 (c, 4H), 3.08 (c, 2H), 3.61 (c, 1H), 5.52, 5.71, 5.9 (3t, total 1H), 7.37 (d, 1H), 7.5 (m, 3H), 7.75 (d, 1H), 7.88 (d, 1H), 8.16 (d, 1H)."
+  },
+  "workups": [
+    {
+      "type": "FILTRATION",
+      "details": "The mixture was filtered"
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "the filtrate was concentrated in vacuo"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The residue was partitioned between ethyl acetate (50 ml) and water (40 ml)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 50.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 40.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "the ethyl acetate extract",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "was washed with brine (30 ml)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "brine"
+              },
+              {
+                "type": "SMILES",
+                "value": "[Cl-].[Na+].O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH.Na.H2O/h1H;;1H2/q;+1;/p-1"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 30.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "dried (sodium sulfate)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "sodium sulfate"
+              },
+              {
+                "type": "SMILES",
+                "value": "S(=O)(=O)([O-])[O-].[Na+].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/2Na.H2O4S/c;;1-5(2,3)4/h;;(H2,1,2,3,4)/q2*+1;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated in vacuo"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The residue (400 mg) was purified by column chromatography on silica gel (100 g)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "residue"
+              }
+            ],
+            "amount": {
+              "mass": {
+                "value": 400.0,
+                "units": "MILLIGRAM"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "eluting with 85:15 ethyl acetate/methanol",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate methanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC.CO"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2.CH4O/c1-3-6-4(2)5;1-2/h3H2,1-2H3;2H,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "2-(Naphth-1-yl)-7,7-difluoroheptanamine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1(=CC=CC2=CC=CC=C12)C(CN)CCCCC(F)F"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C17H21F2N/c18-17(19)11-4-2-7-14(12-20)16-10-5-8-13-6-1-3-9-15(13)16/h1,3,5-6,8-10,14,17H,2,4,7,11-12,20H2"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 321.0,
+                  "units": "MILLIGRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 77.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 76.6
+              }
+            }
+          ],
+          "texture": {
+            "type": "OIL",
+            "details": "oil"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06001860",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:18.860857"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-e9b00d0b0f29479f8eb502c54e15e398"
+}

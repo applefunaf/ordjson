@@ -1,0 +1,252 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[NH2:1][C:2]1[CH:3]=[C:4]([O:10][CH3:11])[C:5]([O:8][CH3:9])=[CH:6][CH:7]=1.C([O:14][CH:15]=[C:16]([C:22](OCC)=O)[C:17]([O:19][CH2:20][CH3:21])=[O:18])C>C1(OC2C=CC=CC=2)C=CC=CC=1.CCCCCC>[C:17]([C:16]1[CH:22]=[N:1][C:2]2[C:7]([C:15]=1[OH:14])=[CH:6][C:5]([O:8][CH3:9])=[C:4]([O:10][CH3:11])[CH:3]=2)([O:19][CH2:20][CH3:21])=[O:18]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hexane"
+            },
+            {
+              "type": "SMILES",
+              "value": "CCCCCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H14/c1-3-5-6-4-2/h3-6H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m1_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-aminoveratrole"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC=1C=C(C(=CC1)OC)OC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H11NO2/c1-10-7-4-3-6(9)5-8(7)11-2/h3-5H,9H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 30.6,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "diethyl ethoxymethylenemalonate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)OC=C(C(=O)OCC)C(=O)OCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C10H16O5/c1-4-13-7-8(9(11)14-5-2)10(12)15-6-3/h7H,4-6H2,1-3H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 43.2,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "diphenyl ether"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1(=CC=CC=C1)OC1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C12H10O/c1-3-7-11(8-4-1)13-12-9-5-2-6-10-12/h1-10H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 600.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 165.0,
+        "units": "CELSIUS"
+      }
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture of 30.6 g of 4-aminoveratrole and 43.2 g of diethyl ethoxymethylenemalonate was heated at 100 for 2 h and at 165° C. for 0.75 h. The intermediate thus obtained was dissolved in 600 ml of diphenyl ether, and the resulting solution was heated at reflux temperature for 2 h, cooled, and diluted with hexane. The resulting solid was filtered, washed with hexane followed by ether, and dried to provide the tide compound as a brown solid, mp 275-285° C."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "The intermediate thus obtained"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "the resulting solution was heated"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "at reflux temperature for 2 h",
+      "duration": {
+        "value": 2.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "cooled"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "The resulting solid was filtered"
+    },
+    {
+      "type": "WASH",
+      "details": "washed with hexane",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "hexane"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCCCCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C6H14/c1-3-5-6-4-2/h3-6H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "compound"
+            },
+            {
+              "type": "NAME",
+              "value": "3-Carbethoxy-4-hydroxy-6,7-dimethoxyquinoline"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(=O)(OCC)C=1C=NC2=CC(=C(C=C2C1O)OC)OC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C14H15NO5/c1-4-20-14(17)9-7-15-10-6-12(19-3)11(18-2)5-8(10)13(9)16/h5-7H,4H2,1-3H3,(H,15,16)"
+            }
+          ],
+          "isolated_color": "brown",
+          "texture": {
+            "type": "CUSTOM",
+            "details": "solid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06002008",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:24.530667"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-e2e52782ddd34621927539afb5255454"
+}

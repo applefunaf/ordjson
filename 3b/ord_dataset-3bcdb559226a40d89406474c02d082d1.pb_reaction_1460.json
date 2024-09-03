@@ -1,0 +1,358 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[Cl:1][C:2]1[C:12]([CH:13]=O)=[CH:11][CH:10]=[C:9]([Si:15]([CH3:18])([CH3:17])[CH3:16])[C:3]=1[C:4]([NH:6][CH2:7][CH3:8])=[O:5].[N+:19]([CH3:22])([O-:21])=[O:20].[OH-].[Na+].Cl>CO>[Cl:1][C:2]1[C:12](/[CH:13]=[CH:22]/[N+:19]([O-:21])=[O:20])=[CH:11][CH:10]=[C:9]([Si:15]([CH3:18])([CH3:17])[CH3:16])[C:3]=1[C:4]([NH:6][CH2:7][CH3:8])=[O:5] |f:2.3|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "HCl"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/ClH/h1H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 10.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m1_m5_m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "compound"
+            },
+            {
+              "type": "NAME",
+              "value": "2-Chloro-N-ethyl-3-formyl-6-(trimethylsilyl)benzamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC1=C(C(=O)NCC)C(=CC=C1C=O)[Si](C)(C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C13H18ClNO2Si/c1-5-15-13(17)11-10(18(2,3)4)7-6-9(8-16)12(11)14/h6-8H,5H2,1-4H3,(H,15,17)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.199,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "nitromethane"
+            },
+            {
+              "type": "SMILES",
+              "value": "[N+](=O)([O-])C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH3NO2/c1-2(3)4/h1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 0.3,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "NaOH"
+            },
+            {
+              "type": "SMILES",
+              "value": "[OH-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Na.H2O/h;1H2/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 2.3,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 5.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a solution of the compound of Example 223 (0.199 g, 0.7 mmol) in methanol (5 mL) at 0° C. was added nitromethane (0.3 mL, 5.0 mmol) and 2.5 N NaOH (2.3 mL, 5.8 mmol) portionwise over 2 h. The suspension was dissolved by addition of ice-cold water and cold 2 N HCl (10 mL) was added. The precipitate was filtered and washed with water to afford the crude title compound. The crude product was purified by recrystallization from aq methanol to afford the title compound as a light yellow fluffy solid (60 mg, 26%). m.p. 104-106° C."
+  },
+  "workups": [
+    {
+      "type": "ADDITION",
+      "details": "was added"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "The precipitate was filtered"
+    },
+    {
+      "type": "WASH",
+      "details": "washed with water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to afford the crude title compound",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "crude title compound"
+              },
+              {
+                "type": "NAME",
+                "value": "2-Chloro-N-ethyl-3-(2-(E)-nitro-ethenyl)-6-(trimethylsilyl)benzamide"
+              },
+              {
+                "type": "SMILES",
+                "value": "ClC1=C(C(=O)NCC)C(=CC=C1\\C=C\\[N+](=O)[O-])[Si](C)(C)C"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C14H19ClN2O3Si/c1-5-16-14(18)12-11(21(2,3)4)7-6-10(13(12)15)8-9-17(19)20/h6-9H,5H2,1-4H3,(H,16,18)/b9-8+"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The crude product was purified by recrystallization from aq methanol",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "crude product"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "methanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "CO"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "2-Chloro-N-ethyl-3-(2-(E)-nitro-ethenyl)-6-(trimethylsilyl)benzamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC1=C(C(=O)NCC)C(=CC=C1\\C=C\\[N+](=O)[O-])[Si](C)(C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C14H19ClN2O3Si/c1-5-16-14(18)12-11(21(2,3)4)7-6-10(13(12)15)8-9-17(19)20/h6-9H,5H2,1-4H3,(H,16,18)/b9-8+"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 60.0,
+                  "units": "MILLIGRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 26.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 26.2
+              }
+            }
+          ],
+          "isolated_color": "light yellow fluffy",
+          "texture": {
+            "type": "CUSTOM",
+            "details": "solid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998466",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:38.443754"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-4b36efc5cbf441a79cdc957fc87a95dd"
+}

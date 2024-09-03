@@ -1,0 +1,217 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[C:1]1([C:7]2[CH:8]=[C:9]3[C:13](=[CH:14][CH:15]=2)[NH:12][CH:11]=[C:10]3[CH2:16][CH2:17][N:18]([CH3:20])[CH3:19])[CH2:6][CH2:5][CH2:4][CH2:3][CH:2]=1>C(OCC)(=O)C.[Pd]>[CH:1]1([C:7]2[CH:8]=[C:9]3[C:13](=[CH:14][CH:15]=2)[NH:12][CH:11]=[C:10]3[CH2:16][CH2:17][N:18]([CH3:19])[CH3:20])[CH2:2][CH2:3][CH2:4][CH2:5][CH2:6]1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "5-(Cyclohex-1-en-1-yl)-3-[2-(N,N-dimethylamino)ethyl]-1H-indole"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1(=CCCCC1)C=1C=C2C(=CNC2=CC1)CCN(C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C18H24N2/c1-20(2)11-10-16-13-19-18-9-8-15(12-17(16)18)14-6-4-3-5-7-14/h6,8-9,12-13,19H,3-5,7,10-11H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 8.4,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethyl acetate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)OCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 2.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Pd/C"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Pd]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Pd"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "CATALYST"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "was stirred at room temperature under an atmosphere of hydrogen for 5 h"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "5-(Cyclohex-1-en-1-yl)-3-[2-(N,N-dimethylamino)ethyl]-1H-indole (Example 9a, 8.4 mg, 0.031 mmol) in ethyl acetate (2 mL) containing a spatula tip of Pd/C (10%) was stirred at room temperature under an atmosphere of hydrogen for 5 h. The crude product was filtered through celite using 10% 2M methanolic ammonia in dichloromethane to rinse. Evaporation of the solvent in vacuo yielded 5-cyclohexyl-3-[2-(N,N-dimethylamino)ethyl]-1H-indole (6.8 mg, 81%); HRMS-FAB+ for C18H26N2 :calculated MH+ :271.21744; found MH+ :271.21692."
+  },
+  "workups": [
+    {
+      "type": "FILTRATION",
+      "details": "The crude product was filtered through celite",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "crude product"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "to rinse"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "Evaporation of the solvent in vacuo"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 5.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "5-cyclohexyl-3-[2-(N,N-dimethylamino)ethyl]-1H-indole"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1(CCCCC1)C=1C=C2C(=CNC2=CC1)CCN(C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C18H26N2/c1-20(2)11-10-16-13-19-18-9-8-15(12-17(16)18)14-6-4-3-5-7-14/h8-9,12-14,19H,3-7,10-11H2,1-2H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 6.8,
+                  "units": "MILLIGRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 81.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 81.1
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998438",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:19.585267"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-1e1a2303d4e642969db9a30fa24a9ecc"
+}

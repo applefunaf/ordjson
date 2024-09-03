@@ -1,0 +1,263 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][O:2][C:3]1[N:7]([CH2:8][C:9]2[CH:14]=[CH:13][C:12]([C:15]3[CH:20]=[CH:19][CH:18]=[CH:17][C:16]=3[C:21]3[NH:25][N:24]=[N:23][N:22]=3)=[CH:11][CH:10]=2)[C:6]2[C:26]([C:30]([O:32]C)=[O:31])=[CH:27][CH:28]=[CH:29][C:5]=2[N:4]=1.[OH-].[Na+]>CO>[CH3:1][O:2][C:3]1[N:7]([CH2:8][C:9]2[CH:10]=[CH:11][C:12]([C:15]3[CH:20]=[CH:19][CH:18]=[CH:17][C:16]=3[C:21]3[NH:25][N:24]=[N:23][N:22]=3)=[CH:13][CH:14]=2)[C:6]2[C:26]([C:30]([OH:32])=[O:31])=[CH:27][CH:28]=[CH:29][C:5]=2[N:4]=1 |f:1.2|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m3_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methyl 2-methoxy-1-[[2'-(1H-tetrazol-5-yl)-biphenyl-4-yl]methyl]benzimidazole-7-carboxylate"
+            },
+            {
+              "type": "SMILES",
+              "value": "COC1=NC2=C(N1CC1=CC=C(C=C1)C1=C(C=CC=C1)C1=NN=NN1)C(=CC=C2)C(=O)OC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C24H20N6O3/c1-32-23(31)19-8-5-9-20-21(19)30(24(25-20)33-2)14-15-10-12-16(13-11-15)17-6-3-4-7-18(17)22-26-28-29-27-22/h3-13H,14H2,1-2H3,(H,26,27,28,29)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.22,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "NaOH"
+            },
+            {
+              "type": "SMILES",
+              "value": "[OH-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Na.H2O/h;1H2/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 1.5,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 10.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a solution of methyl 2-methoxy-1-[[2'-(1H-tetrazol-5-yl)-biphenyl-4-yl]methyl]benzimidazole-7-carboxylate (0.22 g) in methanol (10 ml) was added 1N-NaOH (1.5 ml). The mixture was heated for 6 hours under reflux. The reaction mixture was concentrated to dryness and to the residue was added water. The mixture was adjusted to pH 3-4 with 1N-HCl to give crystals. Recrystallization from methanol-chloroform gave colorless needles (0.17 g, 77%), m.p. 208-209° C."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "The mixture was heated for 6 hours",
+      "duration": {
+        "value": 6.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "under reflux"
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "The reaction mixture was concentrated to dryness and to the residue"
+    },
+    {
+      "type": "ADDITION",
+      "details": "was added water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to give crystals"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "Recrystallization from methanol-chloroform",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "methanol chloroform"
+              },
+              {
+                "type": "SMILES",
+                "value": "CO.C(Cl)(Cl)Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CHCl3.CH4O/c2-1(3)4;1-2/h1H;2H,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "needles"
+            },
+            {
+              "type": "NAME",
+              "value": "2-Methoxy-1-[[2'-(1H-tetrazol-5-yl)biphenyl-4-yl]methyl]benzimidazole-7-carboxylic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "COC1=NC2=C(N1CC1=CC=C(C=C1)C1=C(C=CC=C1)C1=NN=NN1)C(=CC=C2)C(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C23H18N6O3/c1-32-23-24-19-8-4-7-18(22(30)31)20(19)29(23)13-14-9-11-15(12-10-14)16-5-2-3-6-17(16)21-25-27-28-26-21/h2-12H,13H2,1H3,(H,30,31)(H,25,26,27,28)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 0.17,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 77.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 79.8
+              }
+            }
+          ],
+          "texture": {
+            "type": "CRYSTAL",
+            "details": "needles"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06004989",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:22.739589"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-191e34975c0f402e89d57dd8bec87526"
+}

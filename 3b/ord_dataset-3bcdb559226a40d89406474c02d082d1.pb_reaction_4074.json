@@ -1,0 +1,283 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[Cl:1][C:2]1[CH:34]=[CH:33][CH:32]=[C:31]([Cl:35])[C:3]=1[C:4]([NH:6][C:7]1[CH:8]=[CH:9][CH:10]=[C:11]2[C:16]=1[N:15]=[CH:14][C:13]([CH2:17][O:18][CH3:19])=[C:12]2[O:20]C(=O)C1C(Cl)=CC=CC=1Cl)=[O:5]>C(O)C.[OH-].[Na+]>[Cl:1][C:2]1[CH:34]=[CH:33][CH:32]=[C:31]([Cl:35])[C:3]=1[C:4]([NH:6][C:7]1[CH:8]=[CH:9][CH:10]=[C:11]2[C:16]=1[NH:15][CH:14]=[C:13]([CH2:17][O:18][CH3:19])[C:12]2=[O:20])=[O:5] |f:2.3|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "8-(2,6-dichlorobenzoylamino)-4-(2,6-dichlorobenzoyloxy)-3-methoxymethylquinoline"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC1=C(C(=O)NC=2C=CC=C3C(=C(C=NC23)COC)OC(C2=C(C=CC=C2Cl)Cl)=O)C(=CC=C1)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C25H16Cl4N2O4/c1-34-12-13-11-30-22-14(23(13)35-25(33)21-17(28)8-4-9-18(21)29)5-2-10-19(22)31-24(32)20-15(26)6-3-7-16(20)27/h2-11H,12H2,1H3,(H,31,32)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 4.88,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 100.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sodium hydroxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "[OH-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Na.H2O/h;1H2/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 30.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 90.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "was stirred for 2 hours at 90° C"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A suspension of 8-(2,6-dichlorobenzoylamino)-4-(2,6-dichlorobenzoyloxy)-3-methoxymethylquinoline (4.88 g) in ethanol (100 ml) and 1N sodium hydroxide solution (30 ml) was stirred for 2 hours at 90° C. After evaporation, the residue was diluted with water, and the solution was neutralized with 1N hydrochloric acid. The resulting precipitates were collected by filtration and washed with water and diethyl ether to give 8-(2,6-dichlorobenzoylamino)-1,4-dihydro-3-methoxymethyl-4-oxoquinoline (3.41 g) as white powder."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "After evaporation"
+    },
+    {
+      "type": "ADDITION",
+      "details": "the residue was diluted with water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The resulting precipitates"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "were collected by filtration"
+    },
+    {
+      "type": "WASH",
+      "details": "washed with water and diethyl ether",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "diethyl ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 2.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "8-(2,6-dichlorobenzoylamino)-1,4-dihydro-3-methoxymethyl-4-oxoquinoline"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC1=C(C(=O)NC=2C=CC=C3C(C(=CNC23)COC)=O)C(=CC=C1)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C18H14Cl2N2O3/c1-25-9-10-8-21-16-11(17(10)23)4-2-7-14(16)22-18(24)15-12(19)5-3-6-13(15)20/h2-8H,9H2,1H3,(H,21,23)(H,22,24)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 3.41,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 101.9
+              }
+            }
+          ],
+          "isolated_color": "white",
+          "texture": {
+            "type": "POWDER",
+            "details": "powder"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06008230",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:23.140136"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-091fe1e5ad6a49c3b8106ea221f09a87"
+}

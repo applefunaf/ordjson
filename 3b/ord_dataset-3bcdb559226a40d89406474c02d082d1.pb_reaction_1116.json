@@ -1,0 +1,257 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH2:1]=[CH:2][C:3]1[CH:8]=[CH:7][CH:6]=[CH:5][CH:4]=1.[CH3:9][N+:10]([O-:12])=[CH2:11]>>[CH3:9][N:10]1[CH2:11][CH2:1][CH:2]([C:3]2[CH:8]=[CH:7][CH:6]=[CH:5][CH:4]=2)[O:12]1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "styrene"
+            },
+            {
+              "type": "SMILES",
+              "value": "C=CC1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H8/c1-2-8-6-4-3-5-7-8/h2-7H,1H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 37.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-methylnitrone"
+            },
+            {
+              "type": "SMILES",
+              "value": "C[N+](=C)[O-]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H5NO/c1-3(2)4/h1H2,2H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture of styrene (37.0 g, 356 mmol) and the N-methylnitrone solution from Example 5 is heated at 85° C. for 4 hours. After cooling, the phases were separated and the aqueous phase is extracted with chloroform (2×50 g). The combined chloroform extracts were combined with the initial organic phase, and the resultant mixture is washed with water (50 g). The organic phase is dried (K2CO3) and stripped of chloroform and excess styrene to give 2-methyl-5-phenylisoxazolidine (ca. 16 g)."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "After cooling"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the phases were separated"
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "the aqueous phase is extracted with chloroform (2×50 g)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "chloroform"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(Cl)(Cl)Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CHCl3/c2-1(3)4/h1H"
+              }
+            ],
+            "amount": {
+              "mass": {
+                "value": 50.0,
+                "units": "GRAM"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "the resultant mixture is washed with water (50 g)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "resultant mixture"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "mass": {
+                "value": 50.0,
+                "units": "GRAM"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "The organic phase is dried (K2CO3)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "K2CO3"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(=O)([O-])[O-].[K+].[K+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2O3.2K/c2-1(3)4;;/h(H2,2,3,4);;/q;2*+1/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-methyl-5-phenylisoxazolidine"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN1OC(CC1)C1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C10H13NO/c1-11-8-7-10(12-11)9-5-3-2-4-6-9/h2-6,10H,7-8H2,1H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 16.0,
+                  "units": "GRAM"
+                }
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998627",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:33.496559"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-315797db5b324e259f409f6fb369be40"
+}

@@ -1,0 +1,240 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH2:1]([C:5]1[C:14](=[O:15])[C:13]2[CH2:12][CH2:11][CH2:10][CH2:9][C:8]=2[N:7]([CH2:16][C:17]2[CH:22]=[CH:21][C:20]([C:23]3[C:24]([C:29]([O:31]C)=[O:30])=[CH:25][CH:26]=[CH:27][CH:28]=3)=[CH:19][CH:18]=2)[CH:6]=1)[CH2:2][CH2:3][CH3:4].[C:33](O)(=O)C>[OH-].[Na+]>[CH2:1]([C:5]1[C:14](=[O:15])[C:13]2[CH2:12][CH:11]([CH3:33])[CH2:10][CH2:9][C:8]=2[N:7]([CH2:16][C:17]2[CH:18]=[CH:19][C:20]([C:23]3[C:24]([C:29]([OH:31])=[O:30])=[CH:25][CH:26]=[CH:27][CH:28]=3)=[CH:21][CH:22]=2)[CH:6]=1)[CH2:2][CH2:3][CH3:4] |f:2.3|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "product A"
+            },
+            {
+              "type": "NAME",
+              "value": "Methyl 4'-[(3-butyl-1,4,5,6,7,8-hexahydro-4-oxo-1-quinolinyl)-methyl](1,1'-biphenyl)-2-carboxylate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(CCC)C1=CN(C=2CCCCC2C1=O)CC1=CC=C(C=C1)C=1C(=CC=CC1)C(=O)OC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C28H31NO3/c1-3-4-9-22-19-29(26-13-8-7-12-25(26)27(22)30)18-20-14-16-21(17-15-20)23-10-5-6-11-24(23)28(31)32-2/h5-6,10-11,14-17,19H,3-4,7-9,12-13,18H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.4,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acetic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H4O2/c1-2(3)4/h1H3,(H,3,4)"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sodium hydroxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "[OH-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Na.H2O/h;1H2/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 10.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 60.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "The mixture was stirred over-night at about 60° C."
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "Using the procedure of Example 31, 0.4 g of product A of Example 32 in 10 ml of 2N sodium hydroxide were reacted. The mixture was stirred over-night at about 60° C. and the medium was cooled to ambient temperature, acidified with glacial acetic acid, decanted, impasted in a solution of 2N hydrochloric acid, separated, dried and crystallized from 50 ml of an ethanol-water 49-1 mixture to obtain 0.220 g of the expected product melting at 255° C."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "were reacted"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "the medium was cooled to ambient temperature",
+      "temperature": {
+        "control": {
+          "type": "AMBIENT"
+        }
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "decanted"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "separated"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "crystallized from 50 ml of an ethanol-water 49-1 mixture",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethanol water"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)O.O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C2H6O.H2O/c1-2-3;/h3H,2H2,1H3;1H2"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 50.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "expected product"
+            },
+            {
+              "type": "NAME",
+              "value": "4'-[(3-butyl-1,4,5,6,7,8-hexahydro-6-methyl-4-oxo-1-quinolinyl)methyl)(1,1'-biphenyl)-2-carboxylic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(CCC)C1=CN(C=2CCC(CC2C1=O)C)CC1=CC=C(C=C1)C=1C(=CC=CC1)C(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C28H31NO3/c1-3-4-7-22-18-29(26-15-10-19(2)16-25(26)27(22)30)17-20-11-13-21(14-12-20)23-8-5-6-9-24(23)28(31)32/h5-6,8-9,11-14,18-19H,3-4,7,10,15-17H2,1-2H3,(H,31,32)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 0.22,
+                  "units": "GRAM"
+                }
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06004979",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:17.531207"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-7a029892ea1c40e3b9b72364650be1ef"
+}

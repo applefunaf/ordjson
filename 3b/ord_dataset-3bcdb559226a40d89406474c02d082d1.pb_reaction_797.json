@@ -1,0 +1,278 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[I-:1].[Na+].I.Cl[C:5]1[CH:13]=[CH:12][C:8]([C:9]([OH:11])=[O:10])=[CH:7][N:6]=1>CC(C)=O>[I:1][C:5]1[CH:13]=[CH:12][C:8]([C:9]([OH:11])=[O:10])=[CH:7][N:6]=1 |f:0.1|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acetone"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC(=O)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H6O/c1-3(2)4/h1-2H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sodium iodide"
+            },
+            {
+              "type": "SMILES",
+              "value": "[I-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/HI.Na/h1H;/q;+1/p-1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 27.97,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydriodic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "I"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/HI/h1H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 71.6,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "6-chloronicotinic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC1=NC=C(C(=O)O)C=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H4ClNO2/c7-5-2-1-4(3-8-5)6(9)10/h1-3H,(H,9,10)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 30.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "with stirring for 5 minutes"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To 27.97 g (186.6 mmol) of sodium iodide cooled to -78° C. was added 121.77 g (71.6 ml, 952.0 mmol) of hydriodic acid (57 wt %). The reaction mixture was allowed to warm slightly with stirring for 5 minutes, and then 30.00 g (190.4 mmol) of 6-chloronicotinic acid was added. The resulting mixture was allowed to warm to room temperature with stirring and then heated at 120-125° C. in an oil bath for 42 hours. A dark brown layer formed above the yellow solid material. The reaction mixture was allowed to cool to room temperature and then poured into acetone (chilled to 0° C.). The resultant yellow solid was collected by filtration, washed with 200 ml of 1N NaHSO3 solution, and dried in high vacuum (3 mm Hg) to give the title compound as a pale yellow solid."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "to warm slightly"
+    },
+    {
+      "type": "STIRRING",
+      "details": "with stirring"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "heated at 120-125° C. in an oil bath for 42 hours",
+      "duration": {
+        "value": 42.0,
+        "units": "HOUR"
+      },
+      "temperature": {
+        "setpoint": {
+          "value": 122.5,
+          "precision": 2.5,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "A dark brown layer formed above the yellow solid material"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "to cool to room temperature",
+      "temperature": {
+        "control": {
+          "type": "AMBIENT"
+        }
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "The resultant yellow solid was collected by filtration"
+    },
+    {
+      "type": "WASH",
+      "details": "washed with 200 ml of 1N NaHSO3 solution",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "NaHSO3"
+              },
+              {
+                "type": "SMILES",
+                "value": "OS(=O)[O-].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Na.H2O3S/c;1-4(2)3/h;(H2,1,2,3)/q+1;/p-1"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 200.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried in high vacuum (3 mm Hg)"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 5.0,
+        "units": "MINUTE"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "6-Iodonicotinic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "IC1=NC=C(C(=O)O)C=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H4INO2/c7-5-2-1-4(3-8-5)6(9)10/h1-3H,(H,9,10)"
+            }
+          ],
+          "isolated_color": "pale yellow",
+          "texture": {
+            "type": "CUSTOM",
+            "details": "solid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998471",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:29.348884"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-1843901782924fea9ef3069f491f7a00"
+}

@@ -1,0 +1,196 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "S(Cl)([Cl:3])=O.[N:5]1[CH:10]=[CH:9][CH:8]=[C:7]([CH2:11][CH2:12][C:13]([OH:15])=O)[CH:6]=1>[Cl-].C([N+](CC)(CC)CC)C1C=CC=CC=1.ClCCCl>[N:5]1[CH:10]=[CH:9][CH:8]=[C:7]([CH2:11][CH2:12][C:13]([Cl:3])=[O:15])[CH:6]=1 |f:2.3|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "thionyl chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "S(=O)(Cl)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Cl2OS/c1-4(2)3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 0.05,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2_m3_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3-(3-pyridyl)propionic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "N1=CC(=CC=C1)CCC(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H9NO2/c10-8(11)4-3-7-2-1-5-9-6-7/h1-2,5-6H,3-4H2,(H,10,11)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 80.2,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "benzyltriethylammonium chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Cl-].C(C1=CC=CC=C1)[N+](CC)(CC)CC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C13H22N.ClH/c1-4-14(5-2,6-3)12-13-10-8-7-9-11-13;/h7-11H,4-6,12H2,1-3H3;1H/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 1.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "CATALYST"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "1,2-dichloroethane"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClCCCl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H4Cl2/c3-1-2-4/h1-2H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 20.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "Add thionyl chloride (0.05 mL, 0.53 mmol) to a stirred suspension of 3-(3-pyridyl)propionic acid (80.2 mg, 0.53 mmol) and benzyltriethylammonium chloride (1 mg, 0.004 mmol) in 1,2-dichloroethane (20 mL) and heat to reflux for 2.5 hours. Cool the reaction mixture to room temperature and concentrate in vacuo. Azeotrope the residue with CCl4 and place under vacuum. Use the resulting acid chloride without further purification."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "heat"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "to reflux for 2.5 hours",
+      "duration": {
+        "value": 2.5,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrate in vacuo"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "without further purification"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3-(3-pyridyl)propanoyl chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "N1=CC(=CC=C1)CCC(=O)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H8ClNO/c9-8(11)4-3-7-2-1-5-10-6-7/h1-2,5-6H,3-4H2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06008196",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:16.809210"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-da6f477ca9344f2ab17f08116fd10489"
+}

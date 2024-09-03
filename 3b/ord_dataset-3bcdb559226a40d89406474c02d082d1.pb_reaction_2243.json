@@ -1,0 +1,371 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "F[C:2]1[CH:16]=[CH:15][C:5]([C:6]([C:8]2[CH:13]=[CH:12][C:11](F)=[CH:10][CH:9]=2)=[O:7])=[CH:4][CH:3]=1.[H-].[Na+].[CH2:19]([OH:25])[CH:20]=[CH:21][CH:22]=[CH:23][CH3:24]>CN(C=O)C>[CH2:19]([O:25][C:2]1[CH:16]=[CH:15][C:5]([C:6]([C:8]2[CH:13]=[CH:12][C:11]([O:7][CH2:6][CH:5]=[CH:4][CH:3]=[CH:2][CH3:16])=[CH:10][CH:9]=2)=[O:7])=[CH:4][CH:3]=1)[CH:20]=[CH:21][CH:22]=[CH:23][CH3:24] |f:1.2|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4,4'-Difluorobenzophenone"
+            },
+            {
+              "type": "SMILES",
+              "value": "FC1=CC=C(C(=O)C2=CC=C(C=C2)F)C=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C13H8F2O/c14-11-5-1-9(2-6-11)13(16)10-3-7-12(15)8-4-10/h1-8H"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 4.8,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "DMF"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN(C)C=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H7NO/c1-4(2)3-5/h3H,1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 1.0,
+              "units": "LITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "NaH"
+            },
+            {
+              "type": "SMILES",
+              "value": "[H-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Na.H/q+1;-1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 5.6,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2,4-Hexadienol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C=CC=CC)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H10O/c1-2-3-4-5-6-7/h2-5,7H,6H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 5.8,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 0.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "with stirring under argon overnight"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "4,4'-Difluorobenzophenone (34) (4.8 grams, 22 mmol) was dissolved in anhydrous DMF (1 liter). NaH (95%; 5.6 grams, 220 mmol) was added and the solution was cooled to 0° C. 2,4-Hexadienol (5.8 mL, 51 mmol) was slowly added to the solution and the reaction mixture was allowed to warm to room temperature with stirring under argon overnight. The reaction mixture was concentrated in vacuo, dissolved in dichloromethane, and washed with water. The organic phase was dried (MgSO4) and concentrated and purified by column chromatography (silica gel; hexane/CH2Cl2, 1/3) to afford 2.07 grams (25%) of compound 35 as a white solid. 1H NMR (300 MHz, DMSO-d6) δ 1.73 (d, J=6.6 Hz, 6H), 4.68 (d, J=6.0 Hz, 4H), 5.69-5.84 (m, 4H), 6.05-6.19 (m, 2H), 6.31-6.45 (m, 2H), 7.08 (d, J=9.0 Hz, 4), 7.68 (d, J=10.2 Hz, 4)."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "to warm to room temperature",
+      "temperature": {
+        "control": {
+          "type": "AMBIENT"
+        }
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "The reaction mixture was concentrated in vacuo"
+    },
+    {
+      "type": "DISSOLUTION",
+      "details": "dissolved in dichloromethane",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "dichloromethane"
+              },
+              {
+                "type": "SMILES",
+                "value": "ClCCl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "washed with water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "The organic phase was dried (MgSO4)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "MgSO4"
+              },
+              {
+                "type": "SMILES",
+                "value": "[O-]S(=O)(=O)[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "purified by column chromatography (silica gel; hexane/CH2Cl2, 1/3)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "hexane CH2Cl2"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCCCCC.C(Cl)Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C6H14.CH2Cl2/c1-3-5-6-4-2;2-1-3/h3-6H2,1-2H3;1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 8.0,
+        "precision": 8.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "compound 35"
+            },
+            {
+              "type": "NAME",
+              "value": "4,4'-di-2,4-hexadienoxybenzophenone"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C=CC=CC)OC1=CC=C(C(=O)C2=CC=C(C=C2)OCC=CC=CC)C=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C25H26O3/c1-3-5-7-9-19-27-23-15-11-21(12-16-23)25(26)22-13-17-24(18-14-22)28-20-10-8-6-4-2/h3-18H,19-20H2,1-2H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 2.07,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 25.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 50.3
+              }
+            }
+          ],
+          "isolated_color": "white",
+          "texture": {
+            "type": "CUSTOM",
+            "details": "solid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06001966",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:20.347209"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-993632ae505c479aba1aa985bf9f4bdb"
+}

@@ -1,0 +1,321 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[O:1]1[CH:6]=[CH:5][CH2:4][CH2:3][CH:2]1[C:7]1[CH:8]=[C:9]2[C:13](=[CH:14][CH:15]=1)[N:12](C(=O)C1C=CC=CC=1)[CH:11]=[C:10]2[CH:24]1[CH2:28][CH2:27][N:26]([CH3:29])[CH2:25]1.[OH-].[Na+]>CO>[O:1]1[CH:6]=[CH:5][CH2:4][CH2:3][CH:2]1[C:7]1[CH:8]=[C:9]2[C:13](=[CH:14][CH:15]=1)[NH:12][CH:11]=[C:10]2[CH:24]1[CH2:28][CH2:27][N:26]([CH3:29])[CH2:25]1 |f:1.2|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m3_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "5-(2,3-dihydropyran-2-yl)-3-(N-methylpyrrolidin-3-yl)-1-benzoylindole"
+            },
+            {
+              "type": "SMILES",
+              "value": "O1C(CCC=C1)C=1C=C2C(=CN(C2=CC1)C(C1=CC=CC=C1)=O)C1CN(CC1)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C25H26N2O2/c1-26-13-12-20(16-26)22-17-27(25(28)18-7-3-2-4-8-18)23-11-10-19(15-21(22)23)24-9-5-6-14-29-24/h2-4,6-8,10-11,14-15,17,20,24H,5,9,12-13,16H2,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.158,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "NaOH"
+            },
+            {
+              "type": "SMILES",
+              "value": "[OH-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Na.H2O/h;1H2/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 6.8,
+              "units": "MILLIMOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 5.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a solution of 5-(2,3-dihydropyran-2-yl)-3-(N-methylpyrrolidin-3-yl)-1-benzoylindole (Example 18a, 0.158 g, 0.409 mmol) in methanol (5 mL) was added 2N NaOH (6.8 mmol) and the mixture was heated at reflux for 2 hours. The solution was cooled to room temperature and the solvent was evaporated and the product was extracted with CH2Cl2 (3×). The organic layer was dried and concentrated by reduced pressure and purified by column chromatography [10% NH3 (2M in MeOH) in CH2Cl2 ] to yield the title compound (0.035 g, 30%) as a yellow foam; HRMS-FAB+ for C18H22N2O; calc. MH+ :283.1810; found MH+ :283.1839."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "the mixture was heated"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "at reflux for 2 hours",
+      "duration": {
+        "value": 2.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the solvent was evaporated"
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "the product was extracted with CH2Cl2 (3×)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "CH2Cl2"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(Cl)Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The organic layer was dried"
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated by reduced pressure"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "purified by column chromatography [10% NH3 (2M in MeOH) in CH2Cl2 ]",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "NH3"
+              },
+              {
+                "type": "SMILES",
+                "value": "N"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H3N/h1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "MeOH"
+              },
+              {
+                "type": "SMILES",
+                "value": "CO"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "CH2Cl2"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(Cl)Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "5-(2,3-Dihydropyran-2-yl)-3-(N-methylpyrrolidin-3-yl)-1H-indole"
+            },
+            {
+              "type": "SMILES",
+              "value": "O1C(CCC=C1)C=1C=C2C(=CNC2=CC1)C1CN(CC1)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C18H22N2O/c1-20-8-7-14(12-20)16-11-19-17-6-5-13(10-15(16)17)18-4-2-3-9-21-18/h3,5-6,9-11,14,18-19H,2,4,7-8,12H2,1H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 0.035,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 30.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 30.3
+              }
+            }
+          ],
+          "isolated_color": "yellow",
+          "texture": {
+            "type": "FOAM",
+            "details": "foam"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998438",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:19.625008"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-ee8f04965f8c45fe869b01c48a551bc2"
+}

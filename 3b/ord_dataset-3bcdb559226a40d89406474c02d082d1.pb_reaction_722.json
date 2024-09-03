@@ -1,0 +1,372 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "ClCCl.[Cl:4][C:5]1[C:6]([F:14])=[N:7][C:8]([F:13])=[C:9]([F:12])[C:10]=1F.[C:15]1(=[O:25])[NH:19][C:18](=[O:20])[C:17]2=[CH:21][CH:22]=[CH:23][CH:24]=[C:16]12.[K]>C(Cl)(Cl)Cl>[Cl:4][C:5]1[C:6]([F:14])=[N:7][C:8]([F:13])=[C:9]([F:12])[C:10]=1[N:19]1[C:18](=[O:20])[C:17]2=[CH:21][CH:22]=[CH:23][CH:24]=[C:16]2[C:15]1=[O:25] |f:2.3,^1:25|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m3_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "dichloromethane"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClCCl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 40.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N,N-methylformamide"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 20.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3-chloro-2,4,5,6-tetrafluoropyridine"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC=1C(=NC(=C(C1F)F)F)F"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C5ClF4N/c6-1-2(7)3(8)5(10)11-4(1)9"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 18.5,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "potassium phthalimide"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1(C=2C(C(N1)=O)=CC=CC2)=O.[K]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H5NO2.K/c10-7-5-3-1-2-4-6(5)8(11)9-7;/h1-4H,(H,9,10,11);"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 20.5,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "chloroform"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(Cl)(Cl)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CHCl3/c2-1(3)4/h1H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 40.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 40.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "the mixture was stirred at 40° C. for one day"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a mixed solution of 40 ml dichloromethane and 20 ml N,N-methylformamide were added 18.5 g of 3-chloro-2,4,5,6-tetrafluoropyridine and 20.5 g potassium phthalimide, and the mixture was stirred at 40° C. for one day. After adding 40 ml of chloroform, the mixture was washed twice with 500 ml of distilled water and once with 500 ml of 0.5% aqueous solution of sodium hydroxide. The organic layer was dried over anhydrous magnesium sulfate and concentrated under reduced pressure. The precipitate was dispersed in diisopropylether, and collected by filtration to obtain 32.0 g of the title compound as a colorless powder."
+  },
+  "workups": [
+    {
+      "type": "WASH",
+      "details": "the mixture was washed twice with 500 ml of distilled water and once with 500 ml of 0.5% aqueous solution of sodium hydroxide",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 500.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "aqueous solution"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "sodium hydroxide"
+              },
+              {
+                "type": "SMILES",
+                "value": "[OH-].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Na.H2O/h;1H2/q+1;/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "The organic layer was dried over anhydrous magnesium sulfate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "magnesium sulfate"
+              },
+              {
+                "type": "SMILES",
+                "value": "S(=O)(=O)([O-])[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated under reduced pressure"
+    },
+    {
+      "type": "ADDITION",
+      "details": "The precipitate was dispersed in diisopropylether",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "diisopropylether"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(C)OC(C)C"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C6H14O/c1-5(2)7-6(3)4/h5-6H,1-4H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "collected by filtration"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 1.0,
+        "units": "DAY"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "N-(3-chloro-2,5,6-trifluoropyridin-4-yl)phthalimide"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC=1C(=NC(=C(C1N1C(C=2C(C1=O)=CC=CC2)=O)F)F)F"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C13H4ClF3N2O2/c14-7-9(8(15)11(17)18-10(7)16)19-12(20)5-3-1-2-4-6(5)13(19)21/h1-4H"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 32.0,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 102.6
+              }
+            }
+          ],
+          "isolated_color": "colorless",
+          "texture": {
+            "type": "POWDER",
+            "details": "powder"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998436",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:27.922471"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-2ca3cd9b546a45939421bf2456161048"
+}

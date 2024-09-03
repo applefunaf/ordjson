@@ -1,0 +1,383 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "C([O-])([O-])=O.[K+].[K+].[CH3:7][O:8][C:9]1[CH:10]=[C:11]([OH:16])[CH:12]=[CH:13][C:14]=1[Br:15].[CH2:17](Br)[CH:18]=[CH2:19]>>[Br:15][C:14]1[CH:13]=[CH:12][C:11]([O:16][CH2:19][CH:18]=[CH2:17])=[CH:10][C:9]=1[O:8][CH3:7] |f:0.1.2|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "allyl bromide"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C=C)Br"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H5Br/c1-2-3-4/h2H,1,3H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 3.6,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "K2CO3"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(=O)([O-])[O-].[K+].[K+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2O3.2K/c2-1(3)4;;/h(H2,2,3,4);;/q;2*+1/p-2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 3.45,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3-methoxy-4-bromo-phenol"
+            },
+            {
+              "type": "SMILES",
+              "value": "COC=1C=C(C=CC1Br)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H7BrO2/c1-10-7-4-5(9)2-3-6(7)8/h2-4,9H,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 6.09,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "stirred overnight"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a stirred mixture of K2CO3 (3.45 g, 0.025 mol), and 3-methoxy-4-bromo-phenol (6.09 g, 0.030 mol) at ambient temperature under argon is added allyl bromide (3.60 g, 0.030 mol). The resulting mixture is heated and stirred overnight. The mixture is filtered and the filtrate is concentrated on the rotovap. The residue is partitioned between Et2O and H2O. The Et2O layer is separated and extracted with 2×70 ml 5% NaOH, washed with brine, dried (MgSO4) and filtered. Evaporation on the rotovap followed by flash chromatography (EtOAc-hexane 1:9) gives 5.93 (81%) of the title compound. Rf-0.41 (EtOAc-hexane 25:75) HNMR (CDCl3) d 7.38 (d, 1H), 6.38 (dd, 1H) 6.1-5.9 (m, 1H), 5.41 (d, 1H), 5.29 (d, 1H), 4.51-4.48 (m, 2H), 3.84 (s, 3H)."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "The resulting mixture is heated"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "The mixture is filtered"
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "the filtrate is concentrated on the rotovap"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The residue is partitioned between Et2O and H2O",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "Et2O"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "H2O"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The Et2O layer is separated",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "Et2O"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "extracted with 2×70 ml 5% NaOH",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "NaOH"
+              },
+              {
+                "type": "SMILES",
+                "value": "[OH-].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Na.H2O/h;1H2/q+1;/p-1"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 70.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "washed with brine",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "brine"
+              },
+              {
+                "type": "SMILES",
+                "value": "[Cl-].[Na+].O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH.Na.H2O/h1H;;1H2/q;+1;/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "dried (MgSO4)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "MgSO4"
+              },
+              {
+                "type": "SMILES",
+                "value": "[O-]S(=O)(=O)[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filtered"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "Evaporation on the rotovap"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 8.0,
+        "precision": 8.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "5.93"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 81.0
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "1-Bromo-2-methoxy-4-allyloxybenzene"
+            },
+            {
+              "type": "SMILES",
+              "value": "BrC1=C(C=C(C=C1)OCC=C)OC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C10H11BrO2/c1-3-6-13-8-4-5-9(11)10(7-8)12-2/h3-5,7H,1,6H2,2H3"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06004959",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:20.207358"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-fd12c7e8cf464c7aa6f0df47d17e4629"
+}

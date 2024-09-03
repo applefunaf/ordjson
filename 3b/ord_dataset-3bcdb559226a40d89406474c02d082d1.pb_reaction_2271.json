@@ -1,0 +1,256 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[NH2:1][C:2]1[CH:3]=[C:4]([CH:8]=[CH:9][CH:10]=1)[C:5]([OH:7])=[O:6].[CH3:11][N:12]=[C:13]=[S:14]>C(O)(=O)C>[CH3:11][NH:12][C:13](=[S:14])[NH:1][C:2]1[CH:3]=[C:4]([CH:8]=[CH:9][CH:10]=1)[C:5]([OH:7])=[O:6]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3-amino-benzoic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC=1C=C(C(=O)O)C=CC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H7NO2/c8-6-3-1-2-5(4-6)7(9)10/h1-4H,8H2,(H,9,10)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 279.6,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methyl isothiocyanate"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN=C=S"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H3NS/c1-3-2-4/h1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 164.1,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acetic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H4O2/c1-2(3)4/h1H3,(H,3,4)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 1000.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 82.5,
+        "precision": 2.5,
+        "units": "CELSIUS"
+      }
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture of 279.6 g of 3-amino-benzoic acid, 164.1 g of methyl isothiocyanate and 1000 g of 100% acetic acid is heated to 80-85° C. The temperature rises to 95-100° C. in the course of 20 minutes without further heating, and a clear solution from which the product slowly crystallizes out forms. The suspension is kept at 90-100° C. for 2 hours, subsequently cooled to 15-20° C. and filtered with suction and the material on the suction filter is washed with acetic acid. 404 g of the title compound result, purity: 99.5%, melting point: 190-91° C., decomposition. Yield: 95.7% of theory."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "rises to 95-100° C. in the course of 20 minutes without further heating",
+      "duration": {
+        "value": 20.0,
+        "units": "MINUTE"
+      },
+      "temperature": {
+        "setpoint": {
+          "value": 97.5,
+          "precision": 2.5,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "a clear solution from which the product slowly crystallizes out forms"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "subsequently cooled to 15-20° C.",
+      "temperature": {
+        "setpoint": {
+          "value": 17.5,
+          "precision": 2.5,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filtered with suction"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "the material on the suction filter"
+    },
+    {
+      "type": "WASH",
+      "details": "is washed with acetic acid",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "acetic acid"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C2H4O2/c1-2(3)4/h1H3,(H,3,4)"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 2.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "3-(N'-methyl-thioureido)-benzoic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "CNC(NC=1C=C(C(=O)O)C=CC1)=S"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H10N2O2S/c1-10-9(14)11-7-4-2-3-6(5-7)8(12)13/h2-5H,1H3,(H,12,13)(H2,10,11,14)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 404.0,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 95.7
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 94.2
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06002013",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:20.737658"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-6921f5b474e34612b2c3232f7635b3d4"
+}

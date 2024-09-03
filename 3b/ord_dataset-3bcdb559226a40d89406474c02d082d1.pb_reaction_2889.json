@@ -1,0 +1,298 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[Br:1][C:2]1[C:7]([Br:8])=[CH:6][N:5]=[N:4][CH:3]=1.N1NC(=[O:15])C=CC=1.[CH2:16](Br)[C:17]1[CH:22]=[CH:21][CH:20]=[CH:19][CH:18]=1.[OH-].[K+]>CN(C=O)C>[CH2:16]([N:4]1[C:3](=[O:15])[C:2]([Br:1])=[C:7]([Br:8])[CH:6]=[N:5]1)[C:17]1[CH:22]=[CH:21][CH:20]=[CH:19][CH:18]=1 |f:0.1,3.4|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m3_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4,5-dibromopyridazin 2H-pyridazin-3-one"
+            },
+            {
+              "type": "SMILES",
+              "value": "BrC1=CN=NC=C1Br.N=1NC(C=CC1)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H2Br2N2.C4H4N2O/c5-3-1-7-8-2-4(3)6;7-4-2-1-3-5-6-4/h1-2H;1-3H,(H,6,7)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 10.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "benzyl bromide"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C1=CC=CC=C1)Br"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H7Br/c8-6-7-4-2-1-3-5-7/h1-5H,6H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 6.84,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "KOH"
+            },
+            {
+              "type": "SMILES",
+              "value": "[OH-].[K+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/K.H2O/h;1H2/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 5.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "DMF"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN(C)C=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H7NO/c1-4(2)3-5/h3H,1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 40.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 50.0,
+        "units": "CELSIUS"
+      }
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture of 4,5-dibromopyridazin-2H-pyridazin-3-one (10 g, 40 mmol), benzyl bromide (6.84 g, 40 mmol), 8N KOH (5 mL, 40 mmol) and DMF (40 mL) was warmed up to 50° C. and reacted for 0.5 hr. The mixture was cooled to r.t., poured over H20 (500 mL) and extracted twice with Et2O (200 mL). The combined organic layers were washed with brine, dried with MgSO4 and the solvent was removed in vacuo to give the title compound which was used for next step without further purification."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "reacted for 0.5 hr",
+      "duration": {
+        "value": 0.5,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "The mixture was cooled to r.t.",
+      "temperature": {
+        "control": {
+          "type": "AMBIENT"
+        }
+      }
+    },
+    {
+      "type": "ADDITION",
+      "details": "poured over H20 (500 mL)"
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "extracted twice with Et2O (200 mL)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "Et2O"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 200.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "The combined organic layers were washed with brine",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "brine"
+              },
+              {
+                "type": "SMILES",
+                "value": "[Cl-].[Na+].O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH.Na.H2O/h1H;;1H2/q;+1;/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "dried with MgSO4",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "MgSO4"
+              },
+              {
+                "type": "SMILES",
+                "value": "[O-]S(=O)(=O)[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the solvent was removed in vacuo"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "2-benzyl-4.5-dibromo-2H-pyridazin-3-one"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C1=CC=CC=C1)N1N=CC(=C(C1=O)Br)Br"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C11H8Br2N2O/c12-9-6-14-15(11(16)10(9)13)7-8-4-2-1-3-5-8/h1-6H,7H2"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06004960",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:16.800165"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-712d01db5d3a44ffb703264df5dee842"
+}

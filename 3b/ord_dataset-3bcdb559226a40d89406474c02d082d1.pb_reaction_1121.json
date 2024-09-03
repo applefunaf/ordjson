@@ -1,0 +1,193 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][N:2]1[CH2:6][CH2:5][CH:4]([C:7]2[CH:12]=[CH:11][CH:10]=[CH:9][CH:8]=2)[O:3]1>CCO.[Pd]>[CH3:1][NH:2][CH2:6][CH2:5][CH:4]([C:7]1[CH:12]=[CH:11][CH:10]=[CH:9][CH:8]=1)[OH:3]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m3_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-Methyl-5-phenylisoxazolidine"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN1OC(CC1)C1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C10H13NO/c1-11-8-7-10(12-11)9-5-3-2-4-6-9/h2-6,10H,7-8H2,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 54.3,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "EtOH"
+            },
+            {
+              "type": "SMILES",
+              "value": "CCO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 55.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Pd/C"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Pd]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Pd"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 2.7,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "CATALYST"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "a stirred (700 rpm) 300-mL Hastalloy autoclave which"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "2-Methyl-5-phenylisoxazolidine (54.3 g, 333 mmol) and Pd/C (2.7 g) in EtOH (55.0 g) are heated to 60-80° C. in a stirred (700 rpm) 300-mL Hastalloy autoclave which is kept pressurized to 55 psig with H2 for 5 hours. After cooling, the mixture is filtered and the EtOH removed in vacuo to give N-methyl-3-phenyl-3-hydroxypropylamine."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "After cooling"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "the mixture is filtered"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the EtOH removed in vacuo",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "EtOH"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCO"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 5.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-methyl-3-phenyl-3-hydroxypropylamine"
+            },
+            {
+              "type": "SMILES",
+              "value": "CNCCC(O)C1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C10H15NO/c1-11-8-7-10(12)9-5-3-2-4-6-9/h2-6,10-12H,7-8H2,1H3"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998627",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:33.546058"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-79eb93c6510045ca88e8bb6bcba862aa"
+}

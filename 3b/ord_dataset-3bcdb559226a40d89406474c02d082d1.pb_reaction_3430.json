@@ -1,0 +1,340 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[Cl:1][C:2]1[CH:12]=[CH:11][C:5]([CH:6]=[CH:7][C:8]([OH:10])=[O:9])=[CH:4][CH:3]=1.[CH2:13](O)[CH3:14].S(=O)(=O)(O)O>C1C=CC=CC=1>[CH2:13]([O:9][C:8](=[O:10])[CH:7]=[CH:6][C:5]1[CH:4]=[CH:3][C:2]([Cl:1])=[CH:12][CH:11]=1)[CH3:14]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "benzene"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H6/c1-2-4-6-5-3-1/h1-6H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 1200.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-Chlorocinnamic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC1=CC=C(C=CC(=O)O)C=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H7ClO2/c10-8-4-1-7(2-5-8)3-6-9(11)12/h1-6H,(H,11,12)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 300.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 340.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sulfuric acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "S(O)(O)(=O)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O4S/c1-5(2,3)4/h(H2,1,2,3,4)"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 14.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "4-Chlorocinnamic acid (300 g) was suspended in benzene (1200 ml), and ethanol (340 g) and conc. sulfuric acid (14 ml) were added thereto, followed by reflux of the resulting mixture for 15 hours. After the reaction mixture had been washed successively with a diluted aqueous NaCl solution (500 ml), a saturated aqueous sodium hydrogencarbonate solution (500 ml) and a dilute aqueous NaCl solution (500 ml), the organic layer was dried over anhydrous magnesium sulfate. After filtration, the solvent was evaporated under reduced pressure. The residue was evaporated under reduced pressure to obtain the title compound (334 g, 97%) as a colorless liquid."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "by reflux of the resulting mixture for 15 hours",
+      "duration": {
+        "value": 15.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "After the reaction mixture had been washed successively with a diluted aqueous NaCl solution (500 ml)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "NaCl"
+              },
+              {
+                "type": "SMILES",
+                "value": "[Na+].[Cl-]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH.Na/h1H;/q;+1/p-1"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 500.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "a saturated aqueous sodium hydrogencarbonate solution (500 ml) and a dilute aqueous NaCl solution (500 ml), the organic layer was dried over anhydrous magnesium sulfate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "sodium hydrogencarbonate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(O)([O-])=O.[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2O3.Na/c2-1(3)4;/h(H2,2,3,4);/q;+1/p-1"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 500.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "NaCl"
+              },
+              {
+                "type": "SMILES",
+                "value": "[Na+].[Cl-]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH.Na/h1H;/q;+1/p-1"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 500.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "magnesium sulfate"
+              },
+              {
+                "type": "SMILES",
+                "value": "S(=O)(=O)([O-])[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "After filtration"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the solvent was evaporated under reduced pressure"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The residue was evaporated under reduced pressure"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "4-Chlorocinnamic acid ethyl ester"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)OC(C=CC1=CC=C(C=C1)Cl)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C11H11ClO2/c1-2-14-11(13)8-5-9-3-6-10(12)7-4-9/h3-8H,2H2,1H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 334.0,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 97.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 96.5
+              }
+            }
+          ],
+          "isolated_color": "colorless",
+          "texture": {
+            "type": "CUSTOM",
+            "details": "liquid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06005116",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:24.553018"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-a941244f89f74b54958785deed1f5d32"
+}

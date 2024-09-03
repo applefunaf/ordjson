@@ -1,0 +1,420 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][O:2][C:3](=[O:29])[CH2:4][C:5]1[N:6]=[CH:7][N:8](C(C2C=CC=CC=2)(C2C=CC=CC=2)C2C=CC=CC=2)[CH:9]=1.Br[C:31]1[CH:36]=[C:35]([C:37]#[N:38])[CH:34]=[CH:33][C:32]=1[CH3:39]>C(#N)C>[CH3:1][O:2][C:3](=[O:29])[CH2:4][C:5]1[N:6]([CH2:39][C:32]2[CH:33]=[CH:34][C:35]([C:37]#[N:38])=[CH:36][CH:31]=2)[CH:7]=[N:8][CH:9]=1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m3_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "product"
+            },
+            {
+              "type": "NAME",
+              "value": "1-(Triphenylmethyl)-1H-imidazol-4-ylacetic acid methyl ester"
+            },
+            {
+              "type": "SMILES",
+              "value": "COC(CC=1N=CN(C1)C(C1=CC=CC=C1)(C1=CC=CC=C1)C1=CC=CC=C1)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C25H22N2O2/c1-29-24(28)17-23-18-27(19-26-23)25(20-11-5-2-6-12-20,21-13-7-3-8-14-21)22-15-9-4-10-16-22/h2-16,18-19H,17H2,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 8.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "bromo-p-toluonitrile"
+            },
+            {
+              "type": "SMILES",
+              "value": "BrC1=C(C=CC(=C1)C#N)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H6BrN/c1-6-2-3-7(5-10)4-8(6)9/h2-4H,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 4.1,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acetonitrile"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)#N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H3N/c1-2-3/h1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 70.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 55.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "stirred at room temperature for 2 hr"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a solution of the product from Step B (8.00 g, 20.9 mmol) in acetonitrile (70 ml) was added bromo-p-toluonitrile (4.10 g, 20.92 mmol) and heated at 55° C. for 3 hr. After this time, the reaction was cooled to room temperature and the resulting imidazolium salt (white precipitate) was collected by filtration. The filtrate was heated at 55° C. for 18 hr. The reaction mixture was cooled to room temperature and evaporated in vacuo. To the residue was added EtOAc (70 ml) and the resulting precipitate collected by filtration. The precipitated imidazolium salts were combined, suspended in methanol (100 ml) and heated to reflux for 30 min. After this time, the solvent was removed in vacuo, the resulting residue was suspended in EtOAc (75 ml) and the solid isolated by filtration and washed (EtOAc). The solid was treated with sat. aq. NaHCO3 (300 ml) and CH2Cl2 (300 ml) and stirred at room temperature for 2 hr. The organic layer was separated, dried (MgSO4) and evaporated in vacuo to afford the title compound as a solid."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "After this time, the reaction was cooled to room temperature",
+      "temperature": {
+        "control": {
+          "type": "AMBIENT"
+        }
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "the resulting imidazolium salt (white precipitate) was collected by filtration",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "imidazolium"
+              },
+              {
+                "type": "SMILES",
+                "value": "[NH+]1=CNC=C1"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C3H4N2/c1-2-5-3-4-1/h1-3H,(H,4,5)/p+1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "The filtrate was heated at 55° C. for 18 hr",
+      "duration": {
+        "value": 18.0,
+        "units": "HOUR"
+      },
+      "temperature": {
+        "setpoint": {
+          "value": 55.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "The reaction mixture was cooled to room temperature",
+      "temperature": {
+        "control": {
+          "type": "AMBIENT"
+        }
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "evaporated in vacuo"
+    },
+    {
+      "type": "ADDITION",
+      "details": "To the residue was added EtOAc (70 ml)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "EtOAc"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOC(=O)C"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 70.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "the resulting precipitate collected by filtration"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "heated"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "to reflux for 30 min",
+      "duration": {
+        "value": 30.0,
+        "units": "MINUTE"
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "After this time, the solvent was removed in vacuo"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the solid isolated by filtration"
+    },
+    {
+      "type": "WASH",
+      "details": "washed (EtOAc)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "EtOAc"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOC(=O)C"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "ADDITION",
+      "details": "The solid was treated with sat. aq. NaHCO3 (300 ml) and CH2Cl2 (300 ml)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "NaHCO3"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(=O)(O)[O-].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2O3.Na/c2-1(3)4;/h(H2,2,3,4);/q;+1/p-1"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 300.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "CH2Cl2"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(Cl)Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 300.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The organic layer was separated"
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "dried (MgSO4)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "MgSO4"
+              },
+              {
+                "type": "SMILES",
+                "value": "[O-]S(=O)(=O)[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "evaporated in vacuo"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 2.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "[1-(4-cyanobenzyl)-1H-imidazol-5-yl]acetic acid methyl ester"
+            },
+            {
+              "type": "SMILES",
+              "value": "COC(CC1=CN=CN1CC1=CC=C(C=C1)C#N)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C14H13N3O2/c1-19-14(18)6-13-8-16-10-17(13)9-12-4-2-11(7-15)3-5-12/h2-5,8,10H,6,9H2,1H3"
+            }
+          ],
+          "texture": {
+            "type": "CUSTOM",
+            "details": "solid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998407",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:19.323361"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-52bc5e89f79a41179261ba1a1ceef77e"
+}

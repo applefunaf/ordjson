@@ -1,0 +1,252 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[Br:1][C:2]1[CH:3]=[C:4]2[C:8](=[CH:9][CH:10]=1)[NH:7][CH:6]=[CH:5]2.[CH3:11][N:12]1[CH2:17][CH2:16][C:15](=O)[CH2:14][CH2:13]1.N1CCCC1>C(O)C>[Br:1][C:2]1[CH:3]=[C:4]2[C:8](=[CH:9][CH:10]=1)[NH:7][CH:6]=[C:5]2[C:15]1[CH2:16][CH2:17][N:12]([CH3:11])[CH2:13][CH:14]=1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m3_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "5-Bromoindole"
+            },
+            {
+              "type": "SMILES",
+              "value": "BrC=1C=C2C=CNC2=CC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H6BrN/c9-7-1-2-8-6(5-7)3-4-10-8/h1-5,10H"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 4.31,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "1-methyl4-piperidone"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN1CCC(CC1)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H11NO/c1-7-4-2-6(8)3-5-7/h2-5H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 2.46,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "pyrrolidine"
+            },
+            {
+              "type": "SMILES",
+              "value": "N1CCCC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H9N/c1-2-4-5-3-1/h5H,1-4H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 17.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 30.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "5-Bromoindole (4.31 g, 22 mmol), 1-methyl4-piperidone (2.46 mL, 20 mmol) and pyrrolidine (17 mL, 200 mmol) were mixed in ethanol (30 mL) and refluxed for 72 hours. The mixture was cooled to room temperature and the resulting solid, collected by filtration, washed with methanol and dried to provide as 5-bromo-3-(1,2,3,6-tetrahydro-1-methyl4-pyridinyl)-1H-indole white solid (4.40 g, 76%). mp>230° C. dec."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "refluxed for 72 hours",
+      "duration": {
+        "value": 72.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "the resulting solid, collected by filtration"
+    },
+    {
+      "type": "WASH",
+      "details": "washed with methanol",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "methanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "CO"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "5-bromo-3-(1,2,3,6-tetrahydro-1-methyl4-pyridinyl)-1H-indole"
+            },
+            {
+              "type": "SMILES",
+              "value": "BrC=1C=C2C(=CNC2=CC1)C=1CCN(CC1)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C14H15BrN2/c1-17-6-4-10(5-7-17)13-9-16-14-3-2-11(15)8-12(13)14/h2-4,8-9,16H,5-7H2,1H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 4.4,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 76.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 75.6
+              }
+            }
+          ],
+          "isolated_color": "white",
+          "texture": {
+            "type": "CUSTOM",
+            "details": "solid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998438",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:19.669837"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-2234b9be39f84503b3d937c98ddbd88c"
+}

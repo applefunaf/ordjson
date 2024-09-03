@@ -1,0 +1,395 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "C(N(CC)CC)C.Br[CH2:9][C:10]1[CH:15]=[CH:14][C:13]([O:16][Si:17]([CH:24]([CH3:26])[CH3:25])([CH:21]([CH3:23])[CH3:22])[CH:18]([CH3:20])[CH3:19])=[CH:12][C:11]=1[CH2:27]Br.[NH:29]([C:31]1[CH:36]=[CH:35][CH:34]=[CH:33][N:32]=1)[NH2:30]>CN(C)C=O.O.C(OCC)(=O)C>[CH3:19][CH:18]([Si:17]([CH:24]([CH3:26])[CH3:25])([CH:21]([CH3:23])[CH3:22])[O:16][C:13]1[CH:12]=[C:11]2[C:10](=[CH:15][CH:14]=1)[CH2:9][N:30]([NH:29][C:31]1[CH:36]=[CH:35][CH:34]=[CH:33][N:32]=1)[CH2:27]2)[CH3:20]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m5_m6": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethyl acetate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)OCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m1_m2_m3_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Triethylamine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)N(CC)CC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H15N/c1-4-7(5-2)6-3/h4-6H2,1-3H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 10.9,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "1,2-dibromomethyl-4-[[tri(1-methylethyl)silyl]oxy]benzene"
+            },
+            {
+              "type": "SMILES",
+              "value": "BrCC1=C(C=C(C=C1)O[Si](C(C)C)(C(C)C)C(C)C)CBr"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C17H28Br2OSi/c1-12(2)21(13(3)4,14(5)6)20-17-8-7-15(10-18)16(9-17)11-19/h7-9,12-14H,10-11H2,1-6H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 17.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-hydrazinopyridine"
+            },
+            {
+              "type": "SMILES",
+              "value": "N(N)C1=NC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C5H7N3/c6-8-5-3-1-2-4-7-5/h1-4H,6H2,(H,7,8)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 4.3,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "dimethylformamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN(C=O)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H7NO/c1-4(2)3-5/h3H,1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 300.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "the reaction mixture was stirred, under nitrogen, at ambient temperature for about 20 mins"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "Triethylamine (10.9 ml) was added to a solution of 1,2-dibromomethyl-4-[[tri(1-methylethyl)silyl]oxy]benzene (17 g) and 2-hydrazinopyridine (4.3 g) in dimethylformamide (300 ml), and the reaction mixture was stirred, under nitrogen, at ambient temperature for about 20 mins and then diluted with water and ethyl acetate. The organic layer was separated, washed with water and brine, dried over anhydrous sodium sulfate, filtered, and the filtrate was concentrated. The residue was triturated with ethyl acetate to yield 5.7 g (38%) of product. Recrystallization of the product from ethyl acetate gave the analytical sample mp 95-96° C."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "The organic layer was separated"
+    },
+    {
+      "type": "WASH",
+      "details": "washed with water and brine",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "brine"
+              },
+              {
+                "type": "SMILES",
+                "value": "[Cl-].[Na+].O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH.Na.H2O/h1H;;1H2/q;+1;/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "dried over anhydrous sodium sulfate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "sodium sulfate"
+              },
+              {
+                "type": "SMILES",
+                "value": "S(=O)(=O)([O-])[O-].[Na+].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/2Na.H2O4S/c;;1-5(2,3)4/h;;(H2,1,2,3,4)/q2*+1;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filtered"
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "the filtrate was concentrated"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The residue was triturated with ethyl acetate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 20.0,
+        "units": "MINUTE"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "product"
+            },
+            {
+              "type": "NAME",
+              "value": "2,3-Dihydro-5-[[tris(1-methylethyl)silyl]oxy]-N-2-pyridinyl-1H-isoindol-2-amine"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC(C)[Si](OC=1C=C2CN(CC2=CC1)NC1=NC=CC=C1)(C(C)C)C(C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C22H33N3OSi/c1-16(2)27(17(3)4,18(5)6)26-21-11-10-19-14-25(15-20(19)13-21)24-22-9-7-8-12-23-22/h7-13,16-18H,14-15H2,1-6H3,(H,23,24)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 5.7,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 38.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 38.1
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06004977",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:17.663091"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-bd0c8b7df73c4a3381da1ebef8f20a02"
+}

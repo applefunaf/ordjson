@@ -1,0 +1,329 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[C-:1]#[N:2].[Na+].Br[CH2:5][C@H:6]([OH:13])[CH2:7][C:8]([O:10][CH2:11][CH3:12])=[O:9].C(OCC)(=O)C>O.C(O)C>[C:1]([CH2:5][C@@H:6]([OH:13])[CH2:7][C:8]([O:10][CH2:11][CH3:12])=[O:9])#[N:2] |f:0.1|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 40.0,
+              "units": "LITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sodium cyanide"
+            },
+            {
+              "type": "SMILES",
+              "value": "[C-]#N.[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CN.Na/c1-2;/q-1;+1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 2.2,
+              "units": "KILOGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "(S)-4-bromo-3-hydroxybutyric acid, ethyl ester"
+            },
+            {
+              "type": "NAME",
+              "value": "Ethyl (R)-4-Bromo-3-hydroxybutanoate"
+            },
+            {
+              "type": "SMILES",
+              "value": "BrC[C@@H](CC(=O)OCC)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H11BrO3/c1-2-10-6(9)3-5(8)4-7/h5,8H,2-4H2,1H3/t5-/m1/s1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 7.0,
+              "units": "KILOGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 8.0,
+              "units": "LITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Ethyl acetate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)OCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 65.0,
+              "units": "LITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "The reaction mixture was stirred for 16 hours at room temperature"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a 50 gallon reactor containing a solution of 2.2 kg (44 mol) of sodium cyanide dissolved in 40 L of demineralized water was added 7 kg (33 mol) of (S)-4-bromo-3-hydroxybutyric acid, ethyl ester (Example 3) dissolved in 8 L of ethanol. The reaction mixture was stirred for 16 hours at room temperature. Ethyl acetate (65 L) was added, the mixture agitated, and the layers were allowed to separate. The lower aqueous layer was transferred to a 50 gallon vessel containing 2.5 kg of sodium chloride and 65 L of ethyl acetate, the mixture was agitated and the layers allowed to separate, and the lower aqueous layer was cut off. The organic layers were combined and concentrated in vacuo. The residue was distilled to afford 3.1 kg of the title compound; bp 110-125° C. 0.5 mm Hg; optical rotation [α]D25 =33.1° (C=1.08, chloroform);"
+  },
+  "workups": [
+    {
+      "type": "STIRRING",
+      "details": "the mixture agitated"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to separate"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The lower aqueous layer was transferred to a 50 gallon vessel"
+    },
+    {
+      "type": "ADDITION",
+      "details": "containing 2.5 kg of sodium chloride and 65 L of ethyl acetate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "sodium chloride"
+              },
+              {
+                "type": "SMILES",
+                "value": "[Cl-].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH.Na/h1H;/q;+1/p-1"
+              }
+            ],
+            "amount": {
+              "mass": {
+                "value": 2.5,
+                "units": "KILOGRAM"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 65.0,
+                "units": "LITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "STIRRING",
+      "details": "the mixture was agitated"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to separate"
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated in vacuo"
+    },
+    {
+      "type": "DISTILLATION",
+      "details": "The residue was distilled"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 16.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "(R)-4-cyano-3-hydroxybutyric acid, ethyl ester"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(#N)C[C@H](CC(=O)OCC)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H11NO3/c1-2-11-7(10)5-6(9)3-4-8/h6,9H,2-3,5H2,1H3/t6-/m1/s1"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 3.1,
+                  "units": "KILOGRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 59.8
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998633",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:33.578789"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-a5e5910e00c0485582a652197f61f684"
+}

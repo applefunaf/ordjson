@@ -1,0 +1,452 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[C:1]([C:5]1[CH:13]=[CH:12][CH:11]=[CH:10][C:6]=1[C:7]([OH:9])=O)([CH3:4])([CH3:3])[CH3:2].S(Cl)(Cl)=O.[CH2:18]([NH:20][CH2:21][CH3:22])[CH3:19]>C(Cl)Cl>[CH2:18]([N:20]([CH2:21][CH3:22])[C:7](=[O:9])[C:6]1[CH:10]=[CH:11][CH:12]=[CH:13][C:5]=1[C:1]([CH3:2])([CH3:3])[CH3:4])[CH3:19]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m3_m6_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "diethylamine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)NCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H11N/c1-3-5-4-2/h5H,3-4H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 4.93,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ice water"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "CH2Cl2"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(Cl)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 10.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m5_m7": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acid chloride"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "CH2Cl2"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(Cl)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 35.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m1_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-tert-butylbenzoic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(C)(C)C1=C(C(=O)O)C=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C11H14O2/c1-11(2,3)9-7-5-4-6-8(9)10(12)13/h4-7H,1-3H3,(H,12,13)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 4.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "thionyl chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "S(=O)(Cl)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Cl2OS/c1-4(2)3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 8.2,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A solution of 2-tert-butylbenzoic acid (4.0 g, 22.5 mmol) in thionyl chloride (8.2 mL, 112 mmol) was stirred at RT for 2 h, then was concentrated three times from carbon tetrachloride to remove all traces of excess thionyl chloride. A solution of diethylamine (4.93 g, 67.4 mmol) in CH2Cl2 (10 mL) was added dropwise over 10 min to an ice water-cooled solution of the crude acid chloride in CH2Cl2 (35 mL). Ten min after addition was complete, the reaction was partitioned between ether and 10% HCl. The ether phase was then washed with sat aq NaHCO3, then was dried (MgSO4), and concentrated to afford a quantitative yield of N,N-diethyl-2-tert-butyl-benzamide as an off-white solid. m.p. 38.5-40.5° C."
+  },
+  "workups": [
+    {
+      "type": "CONCENTRATION",
+      "details": "was concentrated three times from carbon tetrachloride",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "carbon tetrachloride"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(Cl)(Cl)(Cl)Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CCl4/c2-1(3,4)5"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to remove all traces of excess thionyl chloride",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "thionyl chloride"
+              },
+              {
+                "type": "SMILES",
+                "value": "S(=O)(Cl)Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Cl2OS/c1-4(2)3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "ADDITION",
+      "details": "Ten min after addition"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the reaction was partitioned between ether and 10% HCl",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "HCl"
+              },
+              {
+                "type": "SMILES",
+                "value": "Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH/h1H"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "The ether phase was then washed with sat aq NaHCO3",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "NaHCO3"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(=O)(O)[O-].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2O3.Na/c2-1(3)4;/h(H2,2,3,4);/q;+1/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "was dried (MgSO4)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "MgSO4"
+              },
+              {
+                "type": "SMILES",
+                "value": "[O-]S(=O)(=O)[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N,N-diethyl-2-tert-butyl-benzamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)N(C(C1=C(C=CC=C1)C(C)(C)C)=O)CC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C15H23NO/c1-6-16(7-2)14(17)12-10-8-9-11-13(12)15(3,4)5/h8-11H,6-7H2,1-5H3"
+            }
+          ],
+          "isolated_color": "off-white",
+          "texture": {
+            "type": "CUSTOM",
+            "details": "solid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998466",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:36.960244"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-91e67da45af34552b02b2076da708c49"
+}

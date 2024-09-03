@@ -1,0 +1,342 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH:1]([C:4]1[CH:5]=[C:6]([OH:10])[CH:7]=[CH:8][CH:9]=1)([CH3:3])[CH3:2].[N+:11]([O-])([O-:13])=[O:12].[Na+].S(=O)(=O)(O)O.N([O-])=O.[Na+]>C(Cl)Cl>[N+:11]([C:7]1[CH:8]=[CH:9][C:4]([CH:1]([CH3:3])[CH3:2])=[CH:5][C:6]=1[OH:10])([O-:13])=[O:12] |f:1.2,4.5|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sodium nitrite"
+            },
+            {
+              "type": "SMILES",
+              "value": "N(=O)[O-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/HNO2.Na/c2-1-3;/h(H,2,3);/q;+1/p-1"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m6": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methylene chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(Cl)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sodium nitrate"
+            },
+            {
+              "type": "SMILES",
+              "value": "[N+](=O)([O-])[O-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/NO3.Na/c2-1(3)4;/q-1;+1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 2.06,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m1_m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3-isopropylphenol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(C)C=1C=C(C=CC1)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H12O/c1-7(2)8-4-3-5-9(10)6-8/h3-7,10H,1-2H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 3.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methylene chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(Cl)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 40.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sulfuric acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "S(O)(O)(=O)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O4S/c1-5(2,3)4/h(H2,1,2,3,4)"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 25.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "to stir"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "3-isopropylphenol (3.00 g, 22 mmol) was dissolved in methylene chloride(40 ml) followed by the addition of sodium nitrate (2.06 g, 24 mmol). The addition of sulfuric acid (25 mL/3M) is then made, followed by addition of a catalytic amount of sodium nitrite. The mixture was allowed to stir. After 24 h, the reaction mixture is diluted with methylene chloride and extracted with water. The organic layer is dried over MgSO4 and filtered. The solvent was evaporated and chromatography of the resulting solid on silica gel (4% MeOH/CH2Cl2) gave the desired product(1.09 g, 27%). 1H NMR (CD3COCD3): δ7.95 (d,1H), 7.62 (d,1H), 7.11 (d, 1H), 2.95 (m, 1H), 1.24 (d, 6H)."
+  },
+  "workups": [
+    {
+      "type": "EXTRACTION",
+      "details": "extracted with water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "The organic layer is dried over MgSO4",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "MgSO4"
+              },
+              {
+                "type": "SMILES",
+                "value": "[O-]S(=O)(=O)[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filtered"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The solvent was evaporated"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 24.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "desired product"
+            },
+            {
+              "type": "NAME",
+              "value": "2-nitro-5-isopropylphenol"
+            },
+            {
+              "type": "SMILES",
+              "value": "[N+](=O)([O-])C1=C(C=C(C=C1)C(C)C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H11NO3/c1-6(2)7-3-4-8(10(12)13)9(11)5-7/h3-6,11H,1-2H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 1.09,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 27.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 27.3
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06005008",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:21.493101"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-0363159cad004af88aa71a45410b9853"
+}

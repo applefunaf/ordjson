@@ -1,0 +1,428 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[F:1][C:2]1[CH:10]=[C:9]2[C:5]([C:6]([CH:11]3[CH2:16][CH2:15][NH:14][CH2:13][CH2:12]3)=[N:7][NH:8]2)=[CH:4][CH:3]=1.C([O-])(O)=O.[Na+].Cl[CH2:23][C:24]#[N:25].C(Cl)Cl.CCOC(C)=O>C(#N)C>[F:1][C:2]1[CH:10]=[C:9]2[C:5]([C:6]([CH:11]3[CH2:16][CH2:15][N:14]([CH2:23][C:24]#[N:25])[CH2:13][CH2:12]3)=[N:7][NH:8]2)=[CH:4][CH:3]=1 |f:1.2,4.5|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "DCM EtOAc"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(Cl)Cl.CCOC(=O)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O2.CH2Cl2/c1-3-6-4(2)5;2-1-3/h3H2,1-2H3;1H2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m1_m2_m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-(6-fluoro-1H-indazol-3-yl)piperidine"
+            },
+            {
+              "type": "SMILES",
+              "value": "FC1=CC=C2C(=NNC2=C1)C1CCNCC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C12H14FN3/c13-9-1-2-10-11(7-9)15-16-12(10)8-3-5-14-6-4-8/h1-2,7-8,14H,3-6H2,(H,15,16)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 4.95,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "NaHCO3"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(=O)(O)[O-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2O3.Na/c2-1(3)4;/h(H2,2,3,4);/q;+1/p-1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 2.1,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acetonitrile"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)#N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H3N/c1-2-3/h1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 110.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "chloroacetonitrile"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClCC#N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H2ClN/c3-1-2-4/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 1.6,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a stirred suspension of 4-(6-fluoro-1H-indazol-3-yl)piperidine (4.95 g, 22.6 mmol) and NaHCO3 (2.1 g, 24.9 mmol) in dry acetonitrile (110 ml) was added chloroacetonitrile (1.6 ml, 24.9 mmol) at room temperature, under nitrogen. The suspension was warmed to reflux for 22.5 hours, cooled to room temperature, and subsequently filtered. The remaining solids were washed with DCM and the combined filtrates were concentrated. The resulting brown oil was dissolved into EtOAc and washed with water. The organic phase was dried (MgSO4), filtered and concentrated to give a brown solid which was re-dissolved into DCM/EtOAc and flushed through alumina with DCM. The eluent was concentrated to give 5.2 g of the desired product as a solid, m.p. 149-151° C."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "The suspension was warmed"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "to reflux for 22.5 hours",
+      "duration": {
+        "value": 22.5,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "subsequently filtered"
+    },
+    {
+      "type": "WASH",
+      "details": "The remaining solids were washed with DCM",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "DCM"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(Cl)Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "the combined filtrates were concentrated"
+    },
+    {
+      "type": "DISSOLUTION",
+      "details": "The resulting brown oil was dissolved into EtOAc",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "EtOAc"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOC(=O)C"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "washed with water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "The organic phase was dried (MgSO4)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "MgSO4"
+              },
+              {
+                "type": "SMILES",
+                "value": "[O-]S(=O)(=O)[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filtered"
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to give a brown solid which"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "flushed through alumina with DCM",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "DCM"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(Cl)Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "The eluent was concentrated"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "desired product"
+            },
+            {
+              "type": "NAME",
+              "value": "[4-(6-Fluoro-1H-indazol-3-y)-1-piperidinyl]acetonitrile"
+            },
+            {
+              "type": "SMILES",
+              "value": "FC1=CC=C2C(=NNC2=C1)C1CCN(CC1)CC#N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C14H15FN4/c15-11-1-2-12-13(9-11)17-18-14(12)10-3-6-19(7-4-10)8-5-16/h1-2,9-10H,3-4,6-8H2,(H,17,18)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 5.2,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 89.1
+              }
+            }
+          ],
+          "texture": {
+            "type": "CUSTOM",
+            "details": "solid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06001834",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:23.477503"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-16d1c163c36f4b51a50c0943bde0e1ea"
+}

@@ -1,0 +1,292 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[N+:1]([C:4]1[CH:9]=[CH:8][CH:7]=[C:6]([CH2:10][CH2:11][CH3:12])[C:5]=1[OH:13])([O-])=O>CO.[Pd]>[NH2:1][C:4]1[CH:9]=[CH:8][CH:7]=[C:6]([CH2:10][CH2:11][CH3:12])[C:5]=1[OH:13]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-nitro-6-n-propylphenol"
+            },
+            {
+              "type": "SMILES",
+              "value": "[N+](=O)([O-])C1=C(C(=CC=C1)CCC)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H11NO3/c1-2-4-7-5-3-6-8(9(7)11)10(12)13/h3,5-6,11H,2,4H2,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 2.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 100.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Pd/C"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Pd]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Pd"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 200.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "CATALYST"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a solution of 2-nitro-6-n-propylphenol(2 g, 11.0 mmol) in methanol(100 mL) was added 10% Pd/C (200 mg). The mixture was flushed with argon, then hydrogen was bubbled through the solution for 10 min. and a hydrogen atmosphere was maintained at balloon pressure overnight. The mixture was filtered through celite and the celite was washed with methanol. The solvent was evaporated and chromatography of the resulting solid on silica gel (5%MeOH/CH2Cl2) gave the desired product(1.50 g, 80.2%). 1H NMR (CD3OD): δ 6.65 (m, 2H), 6.55 (t, 1H), 2.58 (t, 2H), 1.61 (m, 2H), 0.96 (t, 3H)."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "The mixture was flushed with argon"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "hydrogen was bubbled through the solution for 10 min.",
+      "duration": {
+        "value": 10.0,
+        "units": "MINUTE"
+      },
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "hydrogen"
+              },
+              {
+                "type": "SMILES",
+                "value": "[H][H]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2/h1H"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "a hydrogen atmosphere was maintained at balloon pressure overnight",
+      "duration": {
+        "value": 8.0,
+        "precision": 8.0,
+        "units": "HOUR"
+      },
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "hydrogen"
+              },
+              {
+                "type": "SMILES",
+                "value": "[H][H]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2/h1H"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "The mixture was filtered through celite"
+    },
+    {
+      "type": "WASH",
+      "details": "the celite was washed with methanol",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "methanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "CO"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The solvent was evaporated"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "desired product"
+            },
+            {
+              "type": "NAME",
+              "value": "2-amino-6-n-propylphenol"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC1=C(C(=CC=C1)CCC)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H13NO/c1-2-4-7-5-3-6-8(10)9(7)11/h3,5-6,11H,2,4,10H2,1H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 1.5,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 80.2
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 90.2
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06005008",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:21.141523"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-805bbc77cf8740d3907180942abc89ef"
+}

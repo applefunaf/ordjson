@@ -1,0 +1,289 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[F:1][C:2]1[CH:10]=[CH:9][CH:8]=[C:7]([F:11])[C:3]=1[C:4](Cl)=[O:5].[NH2:12][C:13]([CH3:17])([CH3:16])[CH2:14][OH:15]>C(Cl)Cl>[CH3:16][C:13]([NH:12][C:4](=[O:5])[C:3]1[C:2]([F:1])=[CH:10][CH:9]=[CH:8][C:7]=1[F:11])([CH3:17])[CH2:14][OH:15]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m3_m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-amino-2-methyl-1-propanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC(CO)(C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H11NO/c1-4(2,5)3-6/h6H,3,5H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 63.1,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "CH2Cl2"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(Cl)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 400.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m1_m4_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2,6-difluorobenzoyl chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "FC1=C(C(=O)Cl)C(=CC=C1)F"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H3ClF2O/c8-7(11)6-4(9)2-1-3-5(6)10/h1-3H"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 50.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ice water"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "CH2Cl2"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(Cl)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 200.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "The resulting mixture was stirred at RT"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A solution of 2,6-difluorobenzoyl chloride (50 g, 283 mmol) in CH2Cl2 (200 mL) was added rapidly dropwise to an ice water-cooled solution of 2-amino-2-methyl-1-propanol (63.1 g, 708 mmol) in CH2Cl2 (400 mL). The resulting mixture was stirred at RT and monitored to completion by GLC, then was extracted twice with 10% HCl and once with sat aq NaHCO3. The organic phase was dried (MgSO4), and concentrated to afford 61.9 g N-(1,1-dimethyl-2-hydroxyethyl)-2,6-difluorobenzamide as a white solid."
+  },
+  "workups": [
+    {
+      "type": "EXTRACTION",
+      "details": "was extracted twice with 10% HCl",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "HCl"
+              },
+              {
+                "type": "SMILES",
+                "value": "Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH/h1H"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "The organic phase was dried (MgSO4)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "MgSO4"
+              },
+              {
+                "type": "SMILES",
+                "value": "[O-]S(=O)(=O)[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-(1,1-dimethyl-2-hydroxyethyl)-2,6-difluorobenzamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC(CO)(C)NC(C1=C(C=CC=C1F)F)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C11H13F2NO2/c1-11(2,6-15)14-10(16)9-7(12)4-3-5-8(9)13/h3-5,15H,6H2,1-2H3,(H,14,16)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 61.9,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 95.4
+              }
+            }
+          ],
+          "isolated_color": "white",
+          "texture": {
+            "type": "CUSTOM",
+            "details": "solid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998466",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:36.898200"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-a1547a1b278545908b0cd00e8179087d"
+}

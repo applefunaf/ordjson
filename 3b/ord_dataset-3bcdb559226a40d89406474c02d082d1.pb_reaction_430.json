@@ -1,0 +1,357 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[F:1][C:2]1[CH:38]=[CH:37][C:5]2[C:6]([CH:9]3[CH2:14][CH2:13][N:12]([CH2:15]/[CH:16]=[CH:17]/[CH2:18][O:19][C:20]4[CH:21]=[C:22]([C:34](=[O:36])[CH3:35])[CH:23]=[CH:24][C:25]=4[O:26]CC4C=CC=CC=4)[CH2:11][CH2:10]3)=[N:7][O:8][C:4]=2[CH:3]=1.[ClH:39]>C(O)(=O)C>[ClH:39].[F:1][C:2]1[CH:38]=[CH:37][C:5]2[C:6]([CH:9]3[CH2:10][CH2:11][N:12]([CH2:15]/[CH:16]=[CH:17]/[CH2:18][O:19][C:20]4[CH:21]=[C:22]([C:34](=[O:36])[CH3:35])[CH:23]=[CH:24][C:25]=4[OH:26])[CH2:13][CH2:14]3)=[N:7][O:8][C:4]=2[CH:3]=1 |f:3.4|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m3_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "(E)-1-[3-[[4-[4-(6-fluoro-1,2-benzisoxazol-3-yl)-1-piperidinyl]-2-butenyl]oxy]-4-benzyloxyphenyl]ethanone"
+            },
+            {
+              "type": "SMILES",
+              "value": "FC1=CC2=C(C(=NO2)C2CCN(CC2)C/C=C/COC=2C=C(C=CC2OCC2=CC=CC=C2)C(C)=O)C=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C31H31FN2O4/c1-22(35)25-9-12-28(37-21-23-7-3-2-4-8-23)30(19-25)36-18-6-5-15-34-16-13-24(14-17-34)31-27-11-10-26(32)20-29(27)38-33-31/h2-12,19-20,24H,13-18,21H2,1H3/b6-5+"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 5.5,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrochloric acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/ClH/h1H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 6.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acetic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H4O2/c1-2(3)4/h1H3,(H,3,4)"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 50.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 75.0,
+        "units": "CELSIUS"
+      }
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "The mixture of (E)-1-[3-[[4-[4-(6-fluoro-1,2-benzisoxazol-3-yl)-1-piperidinyl]-2-butenyl]oxy]-4-benzyloxyphenyl]ethanone (5.5 g, 10.7 mmol), acetic acid (50 ml), and hydrochloric acid (6 ml) was heated at 75° C. for 2 hours. At the end of reaction, the solvent was reduced to about 20 ml on a rotary evaporator. The solution was poured into ice water (350 ml) and extracted with dichloromethane (3×250 ml). The dichloromethane solution was washed with brine and dried over Na2SO4. A solid formed on concentration of the solvent. This was collected by filtration (3.4 g). Recrystallization from hot methanol (40 ml) gave 1.82 g of (E)-1-[3-[[4-[4-(6-fluoro-1,2-benzisoxazol-3-yl)-1-piperidinyl]-2-butenyl]oxy]-4-hydroxyphenyl]-ethanone hydrochloride as white crystals, 37.5%, m.p.=208-210° C."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "At the end of reaction"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the solvent was reduced to about 20 ml on a rotary evaporator"
+    },
+    {
+      "type": "ADDITION",
+      "details": "The solution was poured into ice water (350 ml)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ice water"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 350.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "extracted with dichloromethane (3×250 ml)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "dichloromethane"
+              },
+              {
+                "type": "SMILES",
+                "value": "ClCCl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 250.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "The dichloromethane solution was washed with brine",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "dichloromethane"
+              },
+              {
+                "type": "SMILES",
+                "value": "ClCCl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "brine"
+              },
+              {
+                "type": "SMILES",
+                "value": "[Cl-].[Na+].O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH.Na.H2O/h1H;;1H2/q;+1;/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "dried over Na2SO4",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "Na2SO4"
+              },
+              {
+                "type": "SMILES",
+                "value": "[O-]S(=O)(=O)[O-].[Na+].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/2Na.H2O4S/c;;1-5(2,3)4/h;;(H2,1,2,3,4)/q2*+1;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "A solid formed on concentration of the solvent"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "This was collected by filtration (3.4 g)"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "Recrystallization from hot methanol (40 ml)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "methanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "CO"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 40.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "(E)-1-[3-[[4-[4-(6-fluoro-1,2-benzisoxazol-3-yl)-1-piperidinyl]-2-butenyl]oxy]-4-hydroxyphenyl]-ethanone hydrochloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl.FC1=CC2=C(C(=NO2)C2CCN(CC2)C/C=C/COC=2C=C(C=CC2O)C(C)=O)C=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C24H25FN2O4.ClH/c1-16(28)18-4-7-21(29)23(14-18)30-13-3-2-10-27-11-8-17(9-12-27)24-20-6-5-19(25)15-22(20)31-26-24;/h2-7,14-15,17,29H,8-13H2,1H3;1H/b3-2+;"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 1.82,
+                  "units": "GRAM"
+                }
+              }
+            }
+          ],
+          "isolated_color": "white",
+          "texture": {
+            "type": "CRYSTAL",
+            "details": "crystals"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998417",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:23.286039"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-3b131ed7e3ff4b2f98ab1a41207370b3"
+}

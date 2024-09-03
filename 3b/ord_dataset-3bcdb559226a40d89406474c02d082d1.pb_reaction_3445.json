@@ -1,0 +1,362 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[O:1]([C:8]1[CH:15]=[CH:14][C:11]([CH:12]=O)=[CH:10][CH:9]=1)[C:2]1[CH:7]=[CH:6][CH:5]=[CH:4][CH:3]=1.[C:16]([O-:19])(=[O:18])[CH3:17].[K+].Cl>C(OC(=O)C)(=O)C>[O:1]([C:8]1[CH:15]=[CH:14][C:11]([CH:12]=[CH:17][C:16]([OH:19])=[O:18])=[CH:10][CH:9]=1)[C:2]1[CH:7]=[CH:6][CH:5]=[CH:4][CH:3]=1 |f:1.2|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acetic anhydride"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)OC(C)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H6O3/c1-3(5)7-4(2)6/h1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 9.5,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-Phenoxybenzaldehyde"
+            },
+            {
+              "type": "SMILES",
+              "value": "O(C1=CC=CC=C1)C1=CC=C(C=O)C=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C13H10O2/c14-10-11-6-8-13(9-7-11)15-12-4-2-1-3-5-12/h1-10H"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 10.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "potassium acetate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)[O-].[K+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H4O2.K/c1-2(3)4;/h1H3,(H,3,4);/q;+1/p-1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 9.8,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrochloric acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/ClH/h1H"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 180.0,
+        "units": "CELSIUS"
+      }
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "4-Phenoxybenzaldehyde (10.0 g) and potassium acetate (9.8 g) were suspended in acetic anhydride (9.5 ml), followed by reflux at 180° C. for 5 hours. After the reaction, the pH of the reaction mixture was adjusted to a value of 2 with hydrochloric acid and the resulting mixture was extracted with ethyl acetate. The extract was washed with a saturated aqueous NaCl solution, and the organic layer was dried over anhydrous magnesium sulfate. After filtration, the solvent was evaporated under reduced pressure. The residue was purified by silica gel column chromatography (eluent: hexane/ethyl acetate=2/1) to obtain the title compound (6.5 g, 54%) as colorless crystals."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "After the reaction"
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "the resulting mixture was extracted with ethyl acetate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "The extract was washed with a saturated aqueous NaCl solution",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "NaCl"
+              },
+              {
+                "type": "SMILES",
+                "value": "[Na+].[Cl-]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH.Na/h1H;/q;+1/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "the organic layer was dried over anhydrous magnesium sulfate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "magnesium sulfate"
+              },
+              {
+                "type": "SMILES",
+                "value": "S(=O)(=O)([O-])[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "After filtration"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the solvent was evaporated under reduced pressure"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The residue was purified by silica gel column chromatography (eluent: hexane/ethyl acetate=2/1)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "hexane ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCCCCC.C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C6H14.C4H8O2/c1-3-5-6-4-2;1-3-6-4(2)5/h3-6H2,1-2H3;3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "4-Phenoxycinnamic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "O(C1=CC=CC=C1)C1=CC=C(C=CC(=O)O)C=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C15H12O3/c16-15(17)11-8-12-6-9-14(10-7-12)18-13-4-2-1-3-5-13/h1-11H,(H,16,17)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 6.5,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 54.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 53.6
+              }
+            }
+          ],
+          "isolated_color": "colorless",
+          "texture": {
+            "type": "CRYSTAL",
+            "details": "crystals"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06005116",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:24.731556"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-bac9b9e64c284b4589bc8fe1cd95a921"
+}

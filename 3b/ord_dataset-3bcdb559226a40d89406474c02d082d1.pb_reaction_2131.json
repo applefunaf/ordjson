@@ -1,0 +1,260 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[N:1]1[CH:6]=[CH:5][CH:4]=[CH:3][C:2]=1[CH2:7][CH2:8][NH:9][C:10]([C:12]1[CH:13]=[N:14][C:15]2[CH:16]=[C:17]3[O:25][CH2:24][O:23][C:18]3=[CH:19][C:20]=2[C:21]=1Cl)=[O:11].[SH2:26].[Na]>C(O)C>[N:1]1[CH:6]=[CH:5][CH:4]=[CH:3][C:2]=1[CH2:7][CH2:8][NH:9][C:10]([C:12]1[CH:13]=[N:14][C:15]2[CH:16]=[C:17]3[O:25][CH2:24][O:23][C:18]3=[CH:19][C:20]=2[C:21]=1[SH:26])=[O:11] |f:1.2,^1:26|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m3_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "8-chloro-[1,3]dioxolo [4,5-g]quinoline-7-carboxylic acid (2-pyridin-2yl-ethyl)-amide"
+            },
+            {
+              "type": "SMILES",
+              "value": "N1=C(C=CC=C1)CCNC(=O)C=1C=NC=2C=C3C(=CC2C1Cl)OCO3"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C18H14ClN3O3/c19-17-12-7-15-16(25-10-24-15)8-14(12)22-9-13(17)18(23)21-6-4-11-3-1-2-5-20-11/h1-3,5,7-9H,4,6,10H2,(H,21,23)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 10.4,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sodium hydrogensulfide"
+            },
+            {
+              "type": "SMILES",
+              "value": "S.[Na]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Na.H2S/h;1H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 7.2,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 100.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To 10.4 g (0.025 mol) of 8-chloro-[1,3]dioxolo [4,5-g]quinoline-7-carboxylic acid (2-pyridin-2yl-ethyl)-amide in 100 mL of ethanol was added 7.2 g (0.1 mol) of sodium hydrogensulfide and the mixture was heated at reflux for 3 hours. The mixture was cooled and the solids filtered, washed with ethanol, and then with water. The filtrate was concentrated and the solids were suspended in water, collected by filtration, and recrystallized from ethanol to give 6.8 g of the title compound, mp 258-260° C."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "the mixture was heated"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "at reflux for 3 hours",
+      "duration": {
+        "value": 3.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "The mixture was cooled"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "the solids filtered"
+    },
+    {
+      "type": "WASH",
+      "details": "washed with ethanol",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "The filtrate was concentrated"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "collected by filtration"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "recrystallized from ethanol",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "8-Mercapto-[1,3]dioxolo[4,5 g]quinoline-7-carboxylic acid (2-pyridin-2-yl-ethyl)-amide"
+            },
+            {
+              "type": "SMILES",
+              "value": "N1=C(C=CC=C1)CCNC(=O)C=1C=NC=2C=C3C(=CC2C1S)OCO3"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C18H15N3O3S/c22-18(20-6-4-11-3-1-2-5-19-11)13-9-21-14-8-16-15(23-10-24-16)7-12(14)17(13)25/h1-3,5,7-9H,4,6,10H2,(H,20,22)(H,21,25)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 6.8,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 77.0
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06001863",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:19.041931"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-40912572d58e484faf44f92324215029"
+}

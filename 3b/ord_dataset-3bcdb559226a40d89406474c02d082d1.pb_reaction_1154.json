@@ -1,0 +1,305 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[OH:1][CH2:2][CH2:3][NH:4][C:5](=[O:30])[CH2:6][C:7]1[C:16]2[C:11](=[CH:12][C:13]([O:17][C@@H]3O[C@H](CO)[C@H](O)[C@H](O)[C@H]3O)=[CH:14][CH:15]=2)[O:10][C:9](=[O:29])[CH:8]=1.C(CN)O>CN(C=O)C>[OH:1][CH2:2][CH2:3][NH:4][C:5](=[O:30])[CH2:6][C:7]1[C:16]2[C:11](=[CH:12][C:13]([OH:17])=[CH:14][CH:15]=2)[O:10][C:9](=[O:29])[CH:8]=1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "7-hydroxycoumarin-4-methyl ester"
+            },
+            {
+              "type": "NAME",
+              "value": "7-β-D-galactopyranosyloxycoumarin-4-acetic acid-(2-hydroxyethyl)amide"
+            },
+            {
+              "type": "SMILES",
+              "value": "OCCNC(CC1=CC(OC2=CC(=CC=C12)O[C@H]1[C@H](O)[C@@H](O)[C@@H](O)[C@H](O1)CO)=O)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C19H23NO10/c21-4-3-20-14(23)5-9-6-15(24)29-12-7-10(1-2-11(9)12)28-19-18(27)17(26)16(25)13(8-22)30-19/h1-2,6-7,13,16-19,21-22,25-27H,3-5,8H2,(H,20,23)/t13-,16+,17+,18-,19-/m1/s1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 200.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "DMF"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN(C)C=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H7NO/c1-4(2)3-5/h3H,1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 5.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethanolamine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(O)CN"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H7NO/c3-1-2-4/h4H,1-3H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.5,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "200 mg (0.85 mmole) of 7-hydroxycoumarin-4-methyl ester 2 (prepared as described in Scheme 1) was dissolved in 5 ml of dry DMF and stirred with 0.5 g (8.5 mmoles) of ethanolamine at room temperature for 52 hrs. The DMF was then evaporated from the dark brown solution. The residue obtained after further evaporation with methanol was dissolved in water and purified on a C-8 RP-HPLC column using a gradient of 5/95 CH3CN/water (0.1% TFA) to 30170 CH3CN/water (0.1% TFA) in 25.5 min. The peak eluting at 21.6 min was collected and lyophilized to give 0.16 g of an off-white powder MS: Mol. Formula, C13H13NO5 ; Calculated: 263.26, found (M+H)+ 264.2."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "The DMF was then evaporated from the dark brown solution",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "DMF"
+              },
+              {
+                "type": "SMILES",
+                "value": "CN(C)C=O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C3H7NO/c1-4(2)3-5/h3H,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The residue obtained"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "after further evaporation with methanol",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "methanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "CO"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DISSOLUTION",
+      "details": "was dissolved in water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "purified on a C-8 RP-HPLC column"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "in 25.5 min",
+      "duration": {
+        "value": 25.5,
+        "units": "MINUTE"
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "The peak eluting at 21.6 min",
+      "duration": {
+        "value": 21.6,
+        "units": "MINUTE"
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "was collected"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "off-white powder"
+            },
+            {
+              "type": "NAME",
+              "value": "7-hydroxycoumarin-4-acetic acid-(2-hydroxyethyl) amide"
+            },
+            {
+              "type": "SMILES",
+              "value": "OCCNC(CC1=CC(OC2=CC(=CC=C12)O)=O)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C13H13NO5/c15-4-3-14-12(17)5-8-6-13(18)19-11-7-9(16)1-2-10(8)11/h1-2,6-7,15-16H,3-5H2,(H,14,17)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 0.16,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 71.5
+              }
+            }
+          ],
+          "isolated_color": "off-white",
+          "texture": {
+            "type": "POWDER",
+            "details": "powder"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998593",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:34.128273"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-a7a7e2f60f05430ea93e258c5df0d7aa"
+}

@@ -1,0 +1,295 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[C:1]1(=[O:11])[NH:5][C:4](=[O:6])[C:3]2=[CH:7][CH:8]=[CH:9][CH:10]=[C:2]12.[K].[Br:13][CH2:14][CH2:15]Br>CN(C=O)C>[Br:13][CH2:14][CH2:15][N:5]1[C:1](=[O:11])[C:2]2=[CH:10][CH:9]=[CH:8][CH:7]=[C:3]2[C:4]1=[O:6] |f:0.1,^1:11|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Potassium phthalimide"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1(C=2C(C(N1)=O)=CC=CC2)=O.[K]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H5NO2.K/c10-7-5-3-1-2-4-6(5)8(11)9-7;/h1-4H,(H,9,10,11);"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 30.8,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "1,2-dibromoethane"
+            },
+            {
+              "type": "SMILES",
+              "value": "BrCCBr"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H4Br2/c3-1-2-4/h1-2H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 63.9,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "DMF"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN(C)C=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H7NO/c1-4(2)3-5/h3H,1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 374.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "Potassium phthalimide (30.8 g, 0.17 M) is stirred at room temperature for 48 hours with 1,2-dibromoethane (63.9 g, 0.34 M) and dry DMF (374 ml). (DMF is dimethyl formamide.) The precipitated KBr is filtered off, and the liquids are removed from the filtrate by distillation. The brown solid residue is recrystallized from cyclohexane-heptane (10:1) to give nearly colorless crystals (32.3 g, 72.3%, m.p. 73-75° C.)."
+  },
+  "workups": [
+    {
+      "type": "FILTRATION",
+      "details": "(DMF is dimethyl formamide.) The precipitated KBr is filtered off",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "DMF"
+              },
+              {
+                "type": "SMILES",
+                "value": "CN(C)C=O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C3H7NO/c1-4(2)3-5/h3H,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "dimethyl formamide"
+              },
+              {
+                "type": "SMILES",
+                "value": "CN(C=O)C"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C3H7NO/c1-4(2)3-5/h3H,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "KBr"
+              },
+              {
+                "type": "SMILES",
+                "value": "[K+].[Br-]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/BrH.K/h1H;/q;+1/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the liquids are removed from the filtrate by distillation"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The brown solid residue is recrystallized from cyclohexane-heptane (10:1)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "cyclohexane heptane"
+              },
+              {
+                "type": "SMILES",
+                "value": "C1CCCCC1.CCCCCCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C7H16.C6H12/c1-3-5-7-6-4-2;1-2-4-6-5-3-1/h3-7H2,1-2H3;1-6H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "crystals"
+            },
+            {
+              "type": "NAME",
+              "value": "N-(2-bromoethyl) Phthalimide"
+            },
+            {
+              "type": "SMILES",
+              "value": "BrCCN1C(C=2C(C1=O)=CC=CC2)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C10H8BrNO2/c11-5-6-12-9(13)7-3-1-2-4-8(7)10(12)14/h1-4H,5-6H2"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 32.3,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 72.3
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 76.9
+              }
+            }
+          ],
+          "texture": {
+            "type": "CRYSTAL",
+            "details": "crystals"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06004826",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:16.247175"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-18d11b949cf84a2398a76a66e3049287"
+}

@@ -1,0 +1,216 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH:1]([C:4]1[CH:5]=[C:6]([NH:10][C:11]2[C:20]3[C:15](=[CH:16][CH:17]=[C:18]([N+:21]([O-])=O)[CH:19]=3)[N:14]=[CH:13][C:12]=2[C:24]#[N:25])[CH:7]=[CH:8][CH:9]=1)([CH3:3])[CH3:2].NN>[Pd].C(O)C>[NH2:21][C:18]1[CH:19]=[C:20]2[C:15](=[CH:16][CH:17]=1)[N:14]=[CH:13][C:12]([C:24]#[N:25])=[C:11]2[NH:10][C:6]1[CH:7]=[CH:8][CH:9]=[C:4]([CH:1]([CH3:3])[CH3:2])[CH:5]=1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 250.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m1_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-[(3-isopropylphenyl)amino]-6-nitro-3-quinolinecarbonitrile"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(C)C=1C=C(C=CC1)NC1=C(C=NC2=CC=C(C=C12)[N+](=O)[O-])C#N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C19H16N4O2/c1-12(2)13-4-3-5-15(8-13)22-19-14(10-20)11-21-18-7-6-16(23(24)25)9-17(18)19/h3-9,11-12H,1-2H3,(H,21,22)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 4.818,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrazine"
+            },
+            {
+              "type": "SMILES",
+              "value": "NN"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H4N2/c1-2/h1-2H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 1.14,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "palladium on carbon"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Pd]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Pd"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.5,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "CATALYST"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "Added 0.5 g 10% palladium on carbon to a flask under N2 and covered with 250 ml ethanol. To this added 4.818 g (14.5 mmol) 4-[(3-isopropylphenyl)amino]-6-nitro-3-quinolinecarbonitrile and 1.14 ml (36.2 mmol) anhydrous hydrazine and heated to reflux. At 1.5 hours, filtered hot mixture through celite, stripped solvent, and dried in vacuo, giving 4.30 g of yellow solid: mass spectrum (electrospray m/e): M+H=303.1."
+  },
+  "workups": [
+    {
+      "type": "FILTRATION",
+      "details": "filtered hot mixture through celite"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried in vacuo"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 1.5,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "yellow solid"
+            },
+            {
+              "type": "NAME",
+              "value": "6-Amino-4-[(3-isopropylphenyl)amino]-3-quinolinecarbonitrile"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC=1C=C2C(=C(C=NC2=CC1)C#N)NC1=CC(=CC=C1)C(C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C19H18N4/c1-12(2)13-4-3-5-16(8-13)23-19-14(10-20)11-22-18-7-6-15(21)9-17(18)19/h3-9,11-12H,21H2,1-2H3,(H,22,23)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 4.3,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 98.1
+              }
+            }
+          ],
+          "isolated_color": "yellow",
+          "texture": {
+            "type": "CUSTOM",
+            "details": "solid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06002008",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:28.446358"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-7ab2fdfdb1a94626abe73fb17f827de0"
+}

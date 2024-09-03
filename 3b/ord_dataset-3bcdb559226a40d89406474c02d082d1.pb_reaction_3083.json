@@ -1,0 +1,250 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "C([O:4][C:5]1[CH:17]=[CH:16][CH:15]=[C:14]2[C:6]=1[C:7]1[CH:8]=[CH:9][C:10]([O:19][CH3:20])=[CH:11][C:12]=1[C:13]2=[O:18])(C)C.B(Cl)(Cl)Cl>C(Cl)Cl>[OH:4][C:5]1[CH:17]=[CH:16][CH:15]=[C:14]2[C:6]=1[C:7]1[CH:8]=[CH:9][C:10]([O:19][CH3:20])=[CH:11][C:12]=1[C:13]2=[O:18]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "5-isopropoxy-2-methoxy-fluoren-9-one"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(C)OC1=C2C=3C=CC(=CC3C(C2=CC=C1)=O)OC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C17H16O3/c1-10(2)20-15-6-4-5-13-16(15)12-8-7-11(19-3)9-14(12)17(13)18/h4-10H,1-3H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.78,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "boron trichloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "B(Cl)(Cl)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/BCl3/c2-1(3)4"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 6.5,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methylene chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(Cl)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 20.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "Stir"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "Combine 5-isopropoxy-2-methoxy-fluoren-9-one (0.78 g, 2.9 mmole) with boron trichloride (6.50 mL of 1.0 M in methylene chloride) in 20 mL methylene chloride at a temperature between 0° and -50° C. Stir the reaction for 1 hour at 5° C., then quench with 20 mL of water, ensuring the temperature is kept below 20° C. The solution changes from a dark brown solution to red as a flocculent solid precipitates. m.p 245°-248° C. Filter the precipitate to obtain 0.296 g of a red solid. m.p 245°-248° C."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "at a temperature between 0° and -50° C"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the reaction for 1 hour at 5° C.",
+      "duration": {
+        "value": 1.0,
+        "units": "HOUR"
+      },
+      "temperature": {
+        "setpoint": {
+          "value": 5.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "quench with 20 mL of water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 20.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "is kept below 20° C"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The solution changes from a dark brown solution to red as a flocculent solid precipitates"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "m.p 245°-248° C"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "Filter the precipitate"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "red solid"
+            },
+            {
+              "type": "NAME",
+              "value": "5-hydroxy-2-methoxy-fluoren-9-one"
+            },
+            {
+              "type": "SMILES",
+              "value": "OC1=C2C=3C=CC(=CC3C(C2=CC=C1)=O)OC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C14H10O3/c1-17-8-5-6-9-11(7-8)14(16)10-3-2-4-12(15)13(9)10/h2-7,15H,1H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 0.296,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 45.1
+              }
+            }
+          ],
+          "isolated_color": "red",
+          "texture": {
+            "type": "CUSTOM",
+            "details": "solid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06004959",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:19.757224"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-6da261f658ab495598c7057ca5c38bae"
+}

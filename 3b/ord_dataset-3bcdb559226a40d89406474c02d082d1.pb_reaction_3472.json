@@ -1,0 +1,241 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "ClC1C=CC=CC=1C([NH:6][C:7]1[N:11]([C:12]2[C:17]([Cl:18])=[CH:16][C:15]([Cl:19])=[CH:14][C:13]=2[Cl:20])[N:10]=[C:9]([CH3:21])[C:8]=1[C:22](=[O:30])[C:23]1[CH:28]=[CH:27][CH:26]=[CH:25][C:24]=1[Cl:29])=O.Br.O>C(O)(=O)C>[NH2:6][C:7]1[N:11]([C:12]2[C:17]([Cl:18])=[CH:16][C:15]([Cl:19])=[CH:14][C:13]=2[Cl:20])[N:10]=[C:9]([CH3:21])[C:8]=1[C:22](=[O:30])[C:23]1[CH:28]=[CH:27][CH:26]=[CH:25][C:24]=1[Cl:29]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m1_m4_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "product"
+            },
+            {
+              "type": "NAME",
+              "value": "5-(2-Chlorobenzamido)-4-(2-chlorobenzoyl)-3-methyl-1-(2,4,6-trichlorophenyl)pyrazole"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC1=C(C(=O)NC2=C(C(=NN2C2=C(C=C(C=C2Cl)Cl)Cl)C)C(C2=C(C=CC=C2)Cl)=O)C=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C24H14Cl5N3O2/c1-12-20(22(33)14-6-2-4-8-16(14)26)23(30-24(34)15-7-3-5-9-17(15)27)32(31-12)21-18(28)10-13(25)11-19(21)29/h2-11H,1H3,(H,30,34)"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 3.5,
+              "units": "MILLIMOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrogen bromide"
+            },
+            {
+              "type": "SMILES",
+              "value": "Br"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/BrH/h1H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 20.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acetic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H4O2/c1-2(3)4/h1H3,(H,3,4)"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 20.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "stirred"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A solution of 1.94 g (3.50 mmol of the product of Step B in 20 mL of glacial acetic acid was treated with 20 mL of 48% hydrogen bromide and stirred at reflux for 8 hours. The cooled reaction mixture was treated with water to crystallize the product which was separated by filtration, washed with water and air dried to give the title product, 1.45 g (100%), m.p. softens about 210° C. and melts at 220° C. Anal. Calcd. for C17H11ON3Cl4 : 412.9656. Found: 412.9722."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "at reflux for 8 hours",
+      "duration": {
+        "value": 8.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The cooled reaction mixture"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to crystallize the product which"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "was separated by filtration"
+    },
+    {
+      "type": "WASH",
+      "details": "washed with water and air",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title product"
+            },
+            {
+              "type": "NAME",
+              "value": "5-Amino-4(2-chlorobenzoyl)-3-methyl-1-(2,4,6-trichlorophenyl)pyrazole"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC1=C(C(=NN1C1=C(C=C(C=C1Cl)Cl)Cl)C)C(C1=C(C=CC=C1)Cl)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C17H11Cl4N3O/c1-8-14(16(25)10-4-2-3-5-11(10)19)17(22)24(23-8)15-12(20)6-9(18)7-13(15)21/h2-7H,22H2,1H3"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06005109",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:25.235312"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-c1703e5907ef48d18220c5e23fe61648"
+}

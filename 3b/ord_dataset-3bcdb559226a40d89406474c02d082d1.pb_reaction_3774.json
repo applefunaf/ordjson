@@ -1,0 +1,308 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[C:1]([C:3]1[CH:8]=[CH:7][C:6]([OH:9])=[CH:5][CH:4]=1)#[N:2].[H-].[Na+].Cl[CH2:13][CH2:14][N:15]1[CH2:20][CH2:19][O:18][CH2:17][CH2:16]1>CN(C=O)C>[N:15]1([CH2:14][CH2:13][O:9][C:6]2[CH:7]=[CH:8][C:3]([C:1]#[N:2])=[CH:4][CH:5]=2)[CH2:20][CH2:19][O:18][CH2:17][CH2:16]1 |f:1.2|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m3_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-(2-chloroethyl)morpholine"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClCCN1CCOCC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H12ClNO/c7-1-2-8-3-5-9-6-4-8/h1-6H2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrochloride salt"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 11.16,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m1_m5_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-cyanophenol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(#N)C1=CC=C(C=C1)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H5NO/c8-5-6-1-3-7(9)4-2-6/h1-4,9H"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 5.95,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "NaH"
+            },
+            {
+              "type": "SMILES",
+              "value": "[H-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Na.H/q+1;-1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 2.2,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "DMF"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN(C)C=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H7NO/c1-4(2)3-5/h3H,1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 35.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 0.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "The reaction mixture was stirred at 0° C. for 15 minutes"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a solution of 4-cyanophenol (5.95 g, 0.05 mol) in DMF (35 mL) at 0° C. was added 60% NaH (2.2 g, 0.055 mol). The reaction mixture was stirred at 0° C. for 15 minutes, then at room temperature for 15 minutes and then N-(2-chloroethyl)morpholine (prepared from 11.16 g, 0.06 mol of the hydrochloride salt) was added and the reaction mixture was stirred at room temperature for about 2 days. There was still a small amount of starting material present so the reaction mixture was heated on a steam bath for 4 hours. The reaction mixture was cooled to room temperature and then the solvent was removed. Ice-water was added to the residue and the solid which precipitated was collected by filtration and dried to afford 11.3 g (97%) of 4-[2-(4-morpholinyl)ethoxy]benzonitrile."
+  },
+  "workups": [
+    {
+      "type": "WAIT",
+      "details": "at room temperature for 15 minutes",
+      "duration": {
+        "value": 15.0,
+        "units": "MINUTE"
+      },
+      "temperature": {
+        "control": {
+          "type": "AMBIENT"
+        }
+      }
+    },
+    {
+      "type": "ADDITION",
+      "details": "was added"
+    },
+    {
+      "type": "STIRRING",
+      "details": "the reaction mixture was stirred at room temperature for about 2 days",
+      "duration": {
+        "value": 2.0,
+        "units": "DAY"
+      },
+      "temperature": {
+        "control": {
+          "type": "AMBIENT"
+        }
+      }
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "was heated on a steam bath for 4 hours",
+      "duration": {
+        "value": 4.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "The reaction mixture was cooled to room temperature",
+      "temperature": {
+        "control": {
+          "type": "AMBIENT"
+        }
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the solvent was removed"
+    },
+    {
+      "type": "ADDITION",
+      "details": "Ice-water was added to the residue",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "Ice water"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the solid which precipitated"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "was collected by filtration"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 15.0,
+        "units": "MINUTE"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-[2-(4-morpholinyl)ethoxy]benzonitrile"
+            },
+            {
+              "type": "SMILES",
+              "value": "N1(CCOCC1)CCOC1=CC=C(C#N)C=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C13H16N2O2/c14-11-12-1-3-13(4-2-12)17-10-7-15-5-8-16-9-6-15/h1-4H,5-10H2"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 11.3,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 97.0
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06008226",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:17.556236"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-69d97724e2e74d0f8404675864a1c077"
+}

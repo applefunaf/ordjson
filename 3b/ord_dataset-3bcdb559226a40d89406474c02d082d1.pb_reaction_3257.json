@@ -1,0 +1,335 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "CI.[C:3]([C:5]1[CH:10]=[CH:9][CH:8]=[CH:7][C:6]=1[C:11]1[CH:16]=[CH:15][C:14]([CH2:17][NH:18][C:19]2[C:29]([NH:30][C:31]([NH:33][CH2:34][CH3:35])=S)=[CH:28][CH:27]=[CH:26][C:20]=2[C:21]([O:23][CH2:24][CH3:25])=[O:22])=[CH:13][CH:12]=1)#[N:4].Cl>C(O)C>[C:3]([C:5]1[CH:10]=[CH:9][CH:8]=[CH:7][C:6]=1[C:11]1[CH:16]=[CH:15][C:14]([CH2:17][N:18]2[C:19]3[C:20]([C:21]([O:23][CH2:24][CH3:25])=[O:22])=[CH:26][CH:27]=[CH:28][C:29]=3[N:30]=[C:31]2[NH:33][CH2:34][CH3:35])=[CH:13][CH:12]=1)#[N:4]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Methyl iodide"
+            },
+            {
+              "type": "SMILES",
+              "value": "CI"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH3I/c1-2/h1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 4.5,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethyl 2-[[(2'-cyanobiphenyl-4-yl)methyl]amino]-3-(ethylthioureido)benzoate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(#N)C1=C(C=CC=C1)C1=CC=C(C=C1)CNC1=C(C(=O)OCC)C=CC=C1NC(=S)NCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C26H26N4O2S/c1-3-28-26(33)30-23-11-7-10-22(25(31)32-4-2)24(23)29-17-18-12-14-19(15-13-18)21-9-6-5-8-20(21)16-27/h5-15,29H,3-4,17H2,1-2H3,(H2,28,30,33)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 1.8,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 50.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "HCl"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/ClH/h1H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 60.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "the mixture was stirred at room temperature for 30 minutes"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "Methyl iodide (4.5 g) was added to a solution of ethyl 2-[[(2'-cyanobiphenyl-4-yl)methyl]amino]-3-(ethylthioureido)benzoate (1.8 g) in ethanol (50 ml), and the mixture was heated under reflux for 12 hours. To the reaction mixture was added 1N-HCl (60 ml) and the mixture was stirred at room temperature for 30 minutes. The reaction mixture was concentrated to dryness and the concentrate was dissolved in ethyl acetate. The solution was washed with an aqueous solution of sodium hydrogen carbonate and water and dried. The solvent was evaporated to dryness and the residue was purified by column chromatography on silica gel to afford yellow syrup (0.96 g, 58%)."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "the mixture was heated"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "under reflux for 12 hours",
+      "duration": {
+        "value": 12.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "The reaction mixture was concentrated to dryness"
+    },
+    {
+      "type": "DISSOLUTION",
+      "details": "the concentrate was dissolved in ethyl acetate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "The solution was washed with an aqueous solution of sodium hydrogen carbonate and water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "sodium hydrogen carbonate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(O)([O-])=O.[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2O3.Na/c2-1(3)4;/h(H2,2,3,4);/q;+1/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The solvent was evaporated to dryness"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the residue was purified by column chromatography on silica gel"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 30.0,
+        "units": "MINUTE"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "syrup"
+            },
+            {
+              "type": "NAME",
+              "value": "Ethyl 1-[(2'-cyanobiphenyl-4-yl)methyl]-2-ethylaminobenzimidazole-7-carboxylate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(#N)C1=C(C=CC=C1)C1=CC=C(C=C1)CN1C(=NC2=C1C(=CC=C2)C(=O)OCC)NCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C26H24N4O2/c1-3-28-26-29-23-11-7-10-22(25(31)32-4-2)24(23)30(26)17-18-12-14-19(15-13-18)21-9-6-5-8-20(21)16-27/h5-15H,3-4,17H2,1-2H3,(H,28,29)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 0.96,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 58.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 57.6
+              }
+            }
+          ],
+          "texture": {
+            "type": "CUSTOM",
+            "details": "syrup"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06004989",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:22.328007"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-47e33215dc2c497b8cda05e8bc4d0cd0"
+}

@@ -1,0 +1,238 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[Cl:1][C:2]1[CH:40]=[CH:39][CH:38]=[C:37]([Cl:41])[C:3]=1[C:4]([NH:6][C:7]1[CH:8]=[CH:9][CH:10]=[C:11]2[C:16]=1[N:15]=[CH:14][CH:13]=[C:12]2[N:17]=P(C1C=CC=CC=1)(C1C=CC=CC=1)C1C=CC=CC=1)=[O:5].Cl.[OH-].[Na+]>C(O)(=O)C>[NH2:17][C:12]1[C:11]2[C:16](=[C:7]([NH:6][C:4](=[O:5])[C:3]3[C:2]([Cl:1])=[CH:40][CH:39]=[CH:38][C:37]=3[Cl:41])[CH:8]=[CH:9][CH:10]=2)[N:15]=[CH:14][CH:13]=1 |f:2.3|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "8-(2,6-dichlorobenzoylamino)-4-[(triphenylphosphoranylidene)amino]quinoline"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC1=C(C(=O)NC=2C=CC=C3C(=CC=NC23)N=P(C2=CC=CC=C2)(C2=CC=CC=C2)C2=CC=CC=C2)C(=CC=C1)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C34H24Cl2N3OP/c35-28-19-11-20-29(36)32(28)34(40)38-31-21-10-18-27-30(22-23-37-33(27)31)39-41(24-12-4-1-5-13-24,25-14-6-2-7-15-25)26-16-8-3-9-17-26/h1-23H,(H,38,40)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 310.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrochloric acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/ClH/h1H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 5.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acetic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H4O2/c1-2(3)4/h1H3,(H,3,4)"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 5.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sodium hydroxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "[OH-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Na.H2O/h;1H2/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 130.0,
+        "units": "CELSIUS"
+      }
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture of 8-(2,6-dichlorobenzoylamino)-4-[(triphenylphosphoranylidene)amino]quinoline (310 mg), 6N hydrochloric acid (5 ml) and acetic acid (5 ml) was heated for 3 hours at 130° C. After cooling, the mixture was neutralized with 6N sodium hydroxide solution, and the insoluble material was collected by filtration. The residue was recrystallized from ethyl acetate to give 4-amino-8-(2,6-dichlorobenzoylamino)quinoline (174 mg)."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "After cooling"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "the insoluble material was collected by filtration"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The residue was recrystallized from ethyl acetate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-amino-8-(2,6-dichlorobenzoylamino)quinoline"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC1=CC=NC2=C(C=CC=C12)NC(C1=C(C=CC=C1Cl)Cl)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C16H11Cl2N3O/c17-10-4-2-5-11(18)14(10)16(22)21-13-6-1-3-9-12(19)7-8-20-15(9)13/h1-8H,(H2,19,20)(H,21,22)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 174.0,
+                  "units": "MILLIGRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 100.1
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06008230",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:23.041092"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-d2585a3889fd4f3a9d430e42359e0a3e"
+}

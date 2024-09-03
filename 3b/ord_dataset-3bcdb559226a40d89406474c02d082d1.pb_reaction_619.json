@@ -1,0 +1,202 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "C(OC([N:8](C(OC(C)(C)C)=O)[C:9]1[N:14]=[CH:13][C:12]([C:15]2[CH:20]=[CH:19][CH:18]=[CH:17][C:16]=2[S:21]([CH3:24])(=[O:23])=[O:22])=[CH:11][N:10]=1)=O)(C)(C)C.[ClH:32].O1CCOCC1>>[ClH:32].[NH2:8][C:9]1[N:10]=[CH:11][C:12]([C:15]2[CH:20]=[CH:19][CH:18]=[CH:17][C:16]=2[S:21]([CH3:24])(=[O:23])=[O:22])=[CH:13][N:14]=1 |f:1.2,3.4|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-[Bis(tert-butoxycarbonyl)amino]-5-(2'-methylsulfonylphenyl) pyrimidine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(C)(C)OC(=O)N(C1=NC=C(C=N1)C1=C(C=CC=C1)S(=O)(=O)C)C(=O)OC(C)(C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C21H27N3O6S/c1-20(2,3)29-18(25)24(19(26)30-21(4,5)6)17-22-12-14(13-23-17)15-10-8-9-11-16(15)31(7,27)28/h8-13H,1-7H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 1.28,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "HCl dioxane"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl.O1CCOCC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O2.ClH/c1-2-6-4-3-5-1;/h1-4H2;1H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 10.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "stirred 20 hours at room temp"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "2-[Bis(tert-butoxycarbonyl)amino]-5-(2'-methylsulfonylphenyl) pyrimidine (1.28 g, 2.8 mmol) was suspended in HCl/dioxane (10 mL, 4.0 M) and stirred 20 hours at room temp. The resulting mixture was triturated with Et2O and filtered to yield a white solid (772 mg, 95%). 1H NMR (CDCl3 + few drops MeOD): δ8.53 (s, 2H), 8.22 (dd, 1H, J=7.7, J'=1.8), 7.77 (m, 2H), 7.40 (dd, 1H, J=7.4, J'=1.5), 2.94 (s, 3H)."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "The resulting mixture was triturated with Et2O",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "Et2O"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filtered"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 20.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "solid"
+            },
+            {
+              "type": "NAME",
+              "value": "2-Amino-5-(2'-methylsulfonylphenyl)pyrimidine hydrochloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl.NC1=NC=C(C=N1)C1=C(C=CC=C1)S(=O)(=O)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C11H11N3O2S.ClH/c1-17(15,16)10-5-3-2-4-9(10)8-6-13-11(12)14-7-8;/h2-7H,1H3,(H2,12,13,14);1H"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 772.0,
+                  "units": "MILLIGRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 95.0
+              }
+            }
+          ],
+          "texture": {
+            "type": "CUSTOM",
+            "details": "solid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998424",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:26.199968"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-13df95045f9c421bb72706a51dfee70d"
+}

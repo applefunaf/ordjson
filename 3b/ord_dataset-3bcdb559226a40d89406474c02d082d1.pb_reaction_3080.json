@@ -1,0 +1,360 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[I-].[CH:2]([O:5][C:6]1[C:11]([C:12]2[CH:17]=[CH:16][C:15]([O:18][CH:19]([CH3:21])[CH3:20])=[CH:14][C:13]=2[O:22][CH3:23])=[C:10]([C:24]2[O:25]CC(C)(C)[N+]=2C)[CH:9]=[CH:8][CH:7]=1)([CH3:4])[CH3:3].[OH-:32].[Na+]>CO>[CH:2]([O:5][C:6]1[CH:7]=[CH:8][CH:9]=[C:10]([C:24]([OH:25])=[O:32])[C:11]=1[C:12]1[CH:17]=[CH:16][C:15]([O:18][CH:19]([CH3:20])[CH3:21])=[CH:14][C:13]=1[O:22][CH3:23])([CH3:4])[CH3:3] |f:0.1,2.3|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-(6,4'-diisopropyloxy-2 '-methoxy-biphenyl-2-yl)-3,4,4-trimethyl-oxazolinium iodide"
+            },
+            {
+              "type": "SMILES",
+              "value": "[I-].C(C)(C)OC1=CC=CC(=C1C1=C(C=C(C=C1)OC(C)C)OC)C=1OCC([N+]1C)(C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C25H34NO4.HI/c1-16(2)29-18-12-13-19(22(14-18)27-8)23-20(10-9-11-21(23)30-17(3)4)24-26(7)25(5,6)15-28-24;/h9-14,16-17H,15H2,1-8H3;1H/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 13.2,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "NaOH"
+            },
+            {
+              "type": "SMILES",
+              "value": "[OH-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Na.H2O/h;1H2/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 140.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 140.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "stir"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "Prepare a solution of 2-(6,4'-diisopropyloxy-2 '-methoxy-biphenyl-2-yl)-3,4,4-trimethyl-oxazolinium iodide (13.20 g, 0.0245 mole) in 20% NaOH (140 mL) and methanol (140 mL) and stir at reflux overnight. Concentrate the resulting colorless solution on the rotovap until precipitation begins. Dilute the resulting suspension to 300 mL with water and acidify with concentrated HCl to pH=1. Extract the precipitate into CH2Cl2 (400 mL), wash with brine, separate and dry over MgSO4. Filter, concentrate and recrystallize from cyclohexane (~175 mL) to obtain the title compound (7.10 g, 84%). m.p. 117-119° C."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "at reflux overnight",
+      "duration": {
+        "value": 8.0,
+        "precision": 8.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "Concentrate the resulting colorless solution on the rotovap"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "until precipitation"
+    },
+    {
+      "type": "ADDITION",
+      "details": "Dilute the resulting suspension to 300 mL with water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "Extract the precipitate into CH2Cl2 (400 mL)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "CH2Cl2"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(Cl)Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 400.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "wash with brine",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "brine"
+              },
+              {
+                "type": "SMILES",
+                "value": "[Cl-].[Na+].O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH.Na.H2O/h1H;;1H2/q;+1;/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "separate"
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "dry over MgSO4",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "MgSO4"
+              },
+              {
+                "type": "SMILES",
+                "value": "[O-]S(=O)(=O)[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "Filter"
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrate"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "recrystallize from cyclohexane (~175 mL)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "cyclohexane"
+              },
+              {
+                "type": "SMILES",
+                "value": "C1CCCCC1"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C6H12/c1-2-4-6-5-3-1/h1-6H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "6,4'-diisopropyloxy-2'-methoxy-biphenyl-2-carboxylic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(C)OC=1C=CC=C(C1C1=C(C=C(C=C1)OC(C)C)OC)C(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C20H24O5/c1-12(2)24-14-9-10-15(18(11-14)23-5)19-16(20(21)22)7-6-8-17(19)25-13(3)4/h6-13H,1-5H3,(H,21,22)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 7.1,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 84.0
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06004959",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:19.718063"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-2992bf2d570a42a48a2c5e265a51ebb1"
+}

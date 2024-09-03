@@ -1,0 +1,246 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "Cl[C:2]1[C:11]2[C:6](=[C:7]([NH:12][C:13](=[O:22])[C:14]3[C:19]([Cl:20])=[CH:18][CH:17]=[CH:16][C:15]=3[Cl:21])[CH:8]=[CH:9][CH:10]=2)[N:5]=[CH:4][CH:3]=1.[N-:23]=[N+:24]=[N-:25].[Na+]>CS(C)=O.O>[N:23]([C:2]1[C:11]2[C:6](=[C:7]([NH:12][C:13](=[O:22])[C:14]3[C:19]([Cl:20])=[CH:18][CH:17]=[CH:16][C:15]=3[Cl:21])[CH:8]=[CH:9][CH:10]=2)[N:5]=[CH:4][CH:3]=1)=[N+:24]=[N-:25] |f:1.2|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 20.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m1_m3_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-chloro-8-(2,6-dichlorobenzoylamino)quinoline"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC1=CC=NC2=C(C=CC=C12)NC(C1=C(C=CC=C1Cl)Cl)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C16H9Cl3N2O/c17-10-7-8-20-15-9(10)3-1-6-13(15)21-16(22)14-11(18)4-2-5-12(14)19/h1-8H,(H,21,22)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 659.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sodium azide"
+            },
+            {
+              "type": "SMILES",
+              "value": "[N-]=[N+]=[N-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/N3.Na/c1-3-2;/q-1;+1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 487.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "dimethyl sulfoxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "CS(=O)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6OS/c1-4(2)3/h1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 10.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 90.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "the mixture was stirred at 90° C. for 8 hours"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a solution of 4-chloro-8-(2,6-dichlorobenzoylamino)quinoline (659 mg) in dimethyl sulfoxide (10 ml) was added sodium azide (487 mg), and the mixture was stirred at 90° C. for 8 hours. The mixture was diluted with water (20 ml), and the precipitate was filtered and washed with water to give 4-azido-8-(2,6-dichlorobenzoylamino)quinoline (560 mg) as white solid."
+  },
+  "workups": [
+    {
+      "type": "FILTRATION",
+      "details": "the precipitate was filtered"
+    },
+    {
+      "type": "WASH",
+      "details": "washed with water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 8.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-azido-8-(2,6-dichlorobenzoylamino)quinoline"
+            },
+            {
+              "type": "SMILES",
+              "value": "N(=[N+]=[N-])C1=CC=NC2=C(C=CC=C12)NC(C1=C(C=CC=C1Cl)Cl)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C16H9Cl2N5O/c17-10-4-2-5-11(18)14(10)16(24)21-13-6-1-3-9-12(22-23-19)7-8-20-15(9)13/h1-8H,(H,21,24)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 560.0,
+                  "units": "MILLIGRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 83.4
+              }
+            }
+          ],
+          "isolated_color": "white",
+          "texture": {
+            "type": "CUSTOM",
+            "details": "solid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06008230",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:23.017857"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-da92863de3334e0896c98595ba95dac9"
+}

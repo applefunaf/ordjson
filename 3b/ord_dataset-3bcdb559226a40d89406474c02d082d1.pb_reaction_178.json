@@ -1,0 +1,256 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "C(OC([N:8]1[CH2:13][CH2:12][CH:11]([C:14]2[C:22]3[C:17](=[CH:18][CH:19]=[C:20]([F:23])[CH:21]=3)[N:16]([S:24]([CH2:27][CH2:28][Si:29]([CH3:32])([CH3:31])[CH3:30])(=[O:26])=[O:25])[CH:15]=2)[CH2:10][CH2:9]1)=O)(C)(C)C.FC(F)(F)C(O)=O>C(Cl)Cl>[F:23][C:20]1[CH:21]=[C:22]2[C:17](=[CH:18][CH:19]=1)[N:16]([S:24]([CH2:27][CH2:28][Si:29]([CH3:32])([CH3:31])[CH3:30])(=[O:26])=[O:25])[CH:15]=[C:14]2[CH:11]1[CH2:12][CH2:13][NH:8][CH2:9][CH2:10]1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-tert-butoxycarbonyl-4-[5-fluoro-1-(2-trimethylsilylethanesulfonyl)indol-3-yl]piperidine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(C)(C)OC(=O)N1CCC(CC1)C1=CN(C2=CC=C(C=C12)F)S(=O)(=O)CC[Si](C)(C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C23H35FN2O4SSi/c1-23(2,3)30-22(27)25-11-9-17(10-12-25)20-16-26(21-8-7-18(24)15-19(20)21)31(28,29)13-14-32(4,5)6/h7-8,15-17H,9-14H2,1-6H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 1.33,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methylene chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(Cl)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 3.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "trifluoroacetic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "FC(C(=O)O)(F)F"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2HF3O2/c3-2(4,5)1(6)7/h(H,6,7)"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 4.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a solution of N-tert-butoxycarbonyl-4-[5-fluoro-1-(2-trimethylsilylethanesulfonyl)indol-3-yl]piperidine (1.33 g, 2.73 mmol), [prepared as described in Step 2, above] in methylene chloride (3 ml), was added trifluoroacetic acid (4 ml). After 2 h, the reaction mixture was concentrated in vacuo and the residue was partitioned between methylene chloride (50 ml) and of 1M NaOH (10 ml). The organic layers were dried over MgSO4 and concentrated in vacuo to afford 4-[5-fluoro-1-(2-trimethylsilylethanesulfonyl)indol-3-yl]piperidine (100%). This material was used in the next step without further purification."
+  },
+  "workups": [
+    {
+      "type": "CONCENTRATION",
+      "details": "the reaction mixture was concentrated in vacuo"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the residue was partitioned between methylene chloride (50 ml) and of 1M NaOH (10 ml)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "methylene chloride"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(Cl)Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 50.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "NaOH"
+              },
+              {
+                "type": "SMILES",
+                "value": "[OH-].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Na.H2O/h;1H2/q+1;/p-1"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 10.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "The organic layers were dried over MgSO4",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "MgSO4"
+              },
+              {
+                "type": "SMILES",
+                "value": "[O-]S(=O)(=O)[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated in vacuo"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 2.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-[5-fluoro-1-(2-trimethylsilylethanesulfonyl)indol-3-yl]piperidine"
+            },
+            {
+              "type": "SMILES",
+              "value": "FC=1C=C2C(=CN(C2=CC1)S(=O)(=O)CC[Si](C)(C)C)C1CCNCC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C18H27FN2O2SSi/c1-25(2,3)11-10-24(22,23)21-13-17(14-6-8-20-9-7-14)16-12-15(19)4-5-18(16)21/h4-5,12-14,20H,6-11H2,1-3H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 100.0
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998412",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:18.726446"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-0dc7ee64140f453992f6f26d2754f44e"
+}

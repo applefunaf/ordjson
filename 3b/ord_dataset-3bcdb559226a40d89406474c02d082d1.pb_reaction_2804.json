@@ -1,0 +1,196 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][C:2]1[CH:6]=[CH:5][O:4][C:3]=1[C:7]([OH:9])=[O:8]>C(OCC)(=O)C.[Rh]>[CH3:1][CH:2]1[CH2:6][CH2:5][O:4][CH:3]1[C:7]([OH:9])=[O:8]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3-Methyl-2-furoic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC1=C(OC=C1)C(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H6O3/c1-4-2-3-9-5(4)6(7)8/h2-3H,1H3,(H,7,8)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 5.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethyl acetate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)OCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 100.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "rhodium"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Rh]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Rh"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "3-Methyl-2-furoic acid (5 g) in ethyl acetate (100 ml) and 5% rhodium on charcoal catalyst (0.5 g) were hydrogenated at ambient temperature and the atmosphere for 6-7 h. The catalyst was filtered off and replaced with a further quantity (1 g) of catalyst. The reaction mixture was hydrogenated for a further 7 h. This procedure was repeated again until no more hydrogen was absorbed. After filtration through kieselguhr and removal of solvent under reduced pressure, the title compound was obtained as a colourless oil (5.096 g, quant.); νmax (CH2Cl2) 3674, 3377(br), 1770 and 1722 cm-1 ; δH (CHC13) 1.08 (3 H, d, J 7.1 Hz), 1.72 (1 H, m), 2.16 (1 H, m), 2.68 (1 H, m), 3.94 (1 H, m), 4.18 (1 H, m), 4.47 (1 H, d, J 7.5 Hz) and 9.42 (1 H, v. br s, exch). [Mass spectrum: +ve ion (ammonia) MNH4+ (148)]."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "were hydrogenated at ambient temperature",
+      "temperature": {
+        "control": {
+          "type": "AMBIENT"
+        }
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "The catalyst was filtered off"
+    },
+    {
+      "type": "WAIT",
+      "details": "The reaction mixture was hydrogenated for a further 7 h",
+      "duration": {
+        "value": 7.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "was absorbed"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "After filtration"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "through kieselguhr and removal of solvent under reduced pressure"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 6.5,
+        "precision": 0.5,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "(2RS,3SR)-3-Methyl-2-Tetrahydrofuroic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC1C(OCC1)C(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H10O3/c1-4-2-3-9-5(4)6(7)8/h4-5H,2-3H2,1H3,(H,7,8)"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06001997",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:29.558203"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-a7a59f1b03b54197864b0e6355ec875e"
+}

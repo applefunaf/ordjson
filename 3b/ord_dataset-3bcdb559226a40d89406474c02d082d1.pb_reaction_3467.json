@@ -1,0 +1,285 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "C1C[O:4]CC1.[OH2:6].Cl[Si:8]1(Cl)[C:12]([Si:13]([CH3:16])([CH3:15])[CH3:14])=[C:11]([C:17]2[CH:22]=[CH:21][CH:20]=[CH:19][CH:18]=2)[C:10]([C:23]2[CH:28]=[CH:27][CH:26]=[CH:25][CH:24]=2)=[C:9]1[Si:29]([CH3:32])([CH3:31])[CH3:30]>CCOCC>[OH:6][Si:8]1([OH:4])[C:12]([Si:13]([CH3:16])([CH3:15])[CH3:14])=[C:11]([C:17]2[CH:22]=[CH:21][CH:20]=[CH:19][CH:18]=2)[C:10]([C:23]2[CH:28]=[CH:27][CH:26]=[CH:25][CH:24]=2)=[C:9]1[Si:29]([CH3:32])([CH3:31])[CH3:30]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Ether"
+            },
+            {
+              "type": "SMILES",
+              "value": "CCOCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m1_m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "THF"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1CCOC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O/c1-2-4-5-3-1/h1-4H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 2.5,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "1,1-dichloro-3,4-diphenyl-2,5-bis(trimethylsilyl)silole"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl[Si]1(C(=C(C(=C1[Si](C)(C)C)C1=CC=CC=C1)C1=CC=CC=C1)[Si](C)(C)C)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C22H28Cl2Si3/c1-25(2,3)21-19(17-13-9-7-10-14-17)20(18-15-11-8-12-16-18)22(26(4,5)6)27(21,23)24/h7-16H,1-6H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 100.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "stirring"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixed solution 2.5 ml of THF and water (4:1) was added to 100 mg of 1,1-dichloro-3,4-diphenyl-2,5-bis(trimethylsilyl)silole, and stirring was continued at room temperatures for one hour. Ether was added to the reaction mixture thus obtained to extract the product. The extract was washed with water and dried on sodium sulfate. Sodium sulfate was removed by filtering, and then the filtrate was concentrated to obtain 92 mg of 1,1-dihydroxy-3,4-diphenyl-2,5-bis(trimethylsilyl)silole. The yield was 100%."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "thus obtained"
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "to extract the product"
+    },
+    {
+      "type": "WASH",
+      "details": "The extract was washed with water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried on sodium sulfate"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "Sodium sulfate was removed",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "Sodium sulfate"
+              },
+              {
+                "type": "SMILES",
+                "value": "S(=O)(=O)([O-])[O-].[Na+].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/2Na.H2O4S/c;;1-5(2,3)4/h;;(H2,1,2,3,4)/q2*+1;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "by filtering"
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "the filtrate was concentrated"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 1.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "1,1-dihydroxy-3,4-diphenyl-2,5-bis(trimethylsilyl)silole"
+            },
+            {
+              "type": "SMILES",
+              "value": "O[Si]1(C(=C(C(=C1[Si](C)(C)C)C1=CC=CC=C1)C1=CC=CC=C1)[Si](C)(C)C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C22H30O2Si3/c1-25(2,3)21-19(17-13-9-7-10-14-17)20(18-15-11-8-12-16-18)22(26(4,5)6)27(21,23)24/h7-16,23-24H,1-6H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 92.0,
+                  "units": "MILLIGRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 100.0
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06005128",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:25.138864"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-305cbf3a193d4fcdb5225c74e688317c"
+}

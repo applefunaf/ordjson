@@ -1,0 +1,305 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[Cl:1][C:2]1[CH:22]=[CH:21][CH:20]=[C:19]([Cl:23])[C:3]=1[C:4]([NH:6][C:7]1[CH:8]=[CH:9][CH:10]=[C:11]2[C:16]=1[N:15]=[CH:14][CH:13]=[C:12]2[NH:17][CH3:18])=[O:5].C(O[C:28](=[O:30])[CH3:29])(=O)C>>[Cl:1][C:2]1[CH:22]=[CH:21][CH:20]=[C:19]([Cl:23])[C:3]=1[C:4]([NH:6][C:7]1[CH:8]=[CH:9][CH:10]=[C:11]2[C:16]=1[N:15]=[CH:14][CH:13]=[C:12]2[N:17]([CH3:18])[C:28](=[O:30])[CH3:29])=[O:5]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "8-(2,6-dichlorobenzoylamino)-4-methylaminoquinoline"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC1=C(C(=O)NC=2C=CC=C3C(=CC=NC23)NC)C(=CC=C1)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C17H13Cl2N3O/c1-20-13-8-9-21-16-10(13)4-2-7-14(16)22-17(23)15-11(18)5-3-6-12(15)19/h2-9H,1H3,(H,20,21)(H,22,23)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 130.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acetic anhydride"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)OC(C)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H6O3/c1-3(5)7-4(2)6/h1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 2.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 120.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "the mixture was stirred for 30 minutes"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A suspension of 8-(2,6-dichlorobenzoylamino)-4-methylaminoquinoline (130 mg) in acetic anhydride (2 ml) was heated at 120° C. for 3 hours. The solvent was removed in vacuo and the residue was dissolved in methanol (3 ml). To a solution was added 1N sodium hydroxide solution (0.5 ml) and the mixture was stirred for 30 minutes. The solvent was removed in vacuo and the residue was washed with hot 50% ethanol (2 ml) and filtered. The residue was washed with hot 95% ethanol (1 ml) and the filtrate was allowed to stand to ambient temperature. The resulting precipitates were collected by filtration and dried to give 8-(2,6-dichlorobenzoylamino)-4-(N-methylacetamido)quinoline (90 mg)."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "The solvent was removed in vacuo"
+    },
+    {
+      "type": "DISSOLUTION",
+      "details": "the residue was dissolved in methanol (3 ml)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "methanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "CO"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 3.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "ADDITION",
+      "details": "To a solution was added 1N sodium hydroxide solution (0.5 ml)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "sodium hydroxide"
+              },
+              {
+                "type": "SMILES",
+                "value": "[OH-].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Na.H2O/h;1H2/q+1;/p-1"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 0.5,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The solvent was removed in vacuo"
+    },
+    {
+      "type": "WASH",
+      "details": "the residue was washed with hot 50% ethanol (2 ml)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 2.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filtered"
+    },
+    {
+      "type": "WASH",
+      "details": "The residue was washed with hot 95% ethanol (1 ml)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 1.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to stand to ambient temperature",
+      "temperature": {
+        "control": {
+          "type": "AMBIENT"
+        }
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The resulting precipitates"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "were collected by filtration"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 30.0,
+        "units": "MINUTE"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "8-(2,6-dichlorobenzoylamino)-4-(N-methylacetamido)quinoline"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC1=C(C(=O)NC=2C=CC=C3C(=CC=NC23)N(C(C)=O)C)C(=CC=C1)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C19H15Cl2N3O2/c1-11(25)24(2)16-9-10-22-18-12(16)5-3-8-15(18)23-19(26)17-13(20)6-4-7-14(17)21/h3-10H,1-2H3,(H,23,26)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 90.0,
+                  "units": "MILLIGRAM"
+                }
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06008230",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:21.997346"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-e5594953ba4242c5b72d1f1b8405da50"
+}

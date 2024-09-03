@@ -1,0 +1,248 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[NH2:1][C:2]1[CH:7]=[CH:6][C:5]([CH2:8][C:9]([OH:11])=[O:10])=[CH:4][CH:3]=1.C(N(CC)CC)C.Cl[S:20][C:21]1[CH:29]=[CH:28][CH:27]=[CH:26][C:22]=1[C:23](Cl)=[O:24]>CCOCCO>[O:24]=[C:23]1[C:22]2[CH:26]=[CH:27][CH:28]=[CH:29][C:21]=2[S:20][N:1]1[C:2]1[CH:3]=[CH:4][C:5]([CH2:8][C:9]([OH:11])=[O:10])=[CH:6][CH:7]=1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-aminophenylacetic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC1=CC=C(C=C1)CC(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H9NO2/c9-7-3-1-6(2-4-7)5-8(10)11/h1-4H,5,9H2,(H,10,11)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 7.55,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "triethylamine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)N(CC)CC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H15N/c1-4-7(5-2)6-3/h4-6H2,1-3H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 15.15,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethyl cellosolve"
+            },
+            {
+              "type": "SMILES",
+              "value": "CCOCCO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H10O2/c1-2-6-4-3-5/h5H,2-4H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 25.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-chlorosulfenylbenzoyl chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClSC1=C(C(=O)Cl)C=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H4Cl2OS/c8-7(10)5-3-1-2-4-6(5)11-9/h1-4H"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 10.3,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "The mixture was stirred at room temperature for 3 hours"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a mixture of 7.55 g (0.05 mol) of 4-aminophenylacetic acid and 15.15 g (0.15 mol) of triethylamine in 25 mL of ethyl cellosolve was added 10.3 g (0.05 mol) of 2-chlorosulfenylbenzoyl chloride (Arzneimittel Forsch., 1964;14:1301). The mixture was stirred at room temperature for 3 hours, concentrated in vacuo, and water was added to the residue. The mixture was acidified with HCl and filtered to give 9.9 g of the title compound, mp 173-175° C."
+  },
+  "workups": [
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated in vacuo, and water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "ADDITION",
+      "details": "was added to the residue"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filtered"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 3.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "4-(3-Oxo-3h-benzo[d]isothiazol-2-yl) phenylacetic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "O=C1N(SC2=C1C=CC=C2)C2=CC=C(C=C2)CC(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C15H11NO3S/c17-14(18)9-10-5-7-11(8-6-10)16-15(19)12-3-1-2-4-13(12)20-16/h1-8H,9H2,(H,17,18)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 9.9,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 69.4
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06001863",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:19.142749"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-738a4c5d5278496bb9cb98d0d773692f"
+}

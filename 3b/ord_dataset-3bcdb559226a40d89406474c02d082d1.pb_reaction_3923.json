@@ -1,0 +1,236 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[C:1]([C:3]1[CH:8]=[CH:7][C:6]([C:9](=[O:22])[CH:10](Br)[CH:11]([C:13]2[CH:18]=[CH:17][C:16]([C:19]#[N:20])=[CH:15][CH:14]=2)Br)=[CH:5][CH:4]=1)#[N:2].[CH3:23][O:24][Na].O>CO>[C:1]([C:3]1[CH:8]=[CH:7][C:6]([C:9](=[O:22])[CH:10]=[C:11]([C:13]2[CH:18]=[CH:17][C:16]([C:19]#[N:20])=[CH:15][CH:14]=2)[O:24][CH3:23])=[CH:5][CH:4]=1)#[N:2]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "dibromochalcone"
+            },
+            {
+              "type": "NAME",
+              "value": "1,3-Bis(4-cyanophenyl)-2,3-dibromopropan-1-one"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(#N)C1=CC=C(C=C1)C(C(C(Br)C1=CC=C(C=C1)C#N)Br)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C17H10Br2N2O/c18-15(13-5-1-11(9-20)2-6-13)16(19)17(22)14-7-3-12(10-21)4-8-14/h1-8,15-16H"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 15.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "MeOH"
+            },
+            {
+              "type": "SMILES",
+              "value": "CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 150.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "MeONa"
+            },
+            {
+              "type": "SMILES",
+              "value": "CO[Na]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH3O.Na/c1-2;/h1H3;/q-1;+1"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 36.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 100.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "stirring"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A suspension of 15 g (35.9 mmol) dibromochalcone ii in 150 mL dry MeOH (distilled from Mg metal) was heated to reflux. Freshly prepared 3N MeONa (2.49 g Na in 36 mL MeOH) was added dropwise, and stirring was continued for min. The clear orange solution was cooled to room temperature, and poured into 100 mL water. The aqueous suspension was extracted with CH2Cl2 and the solyent was removed under reduced pressure. The oily orange residue crystallized in part, and was used for the next reaction without further purification."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "was heated to reflux"
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "The aqueous suspension was extracted with CH2Cl2",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "CH2Cl2"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(Cl)Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the solyent was removed under reduced pressure"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The oily orange residue crystallized in part"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "was used for the next reaction without further purification"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "1,3-Bis(4-cyanophenyl)-3-methoxyprop-2-en-1-one"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(#N)C1=CC=C(C=C1)C(C=C(OC)C1=CC=C(C=C1)C#N)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C18H12N2O2/c1-22-18(16-8-4-14(12-20)5-9-16)10-17(21)15-6-2-13(11-19)3-7-15/h2-10H,1H3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06008247",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:20.338355"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-2bbbe608b3334c05a323f40f1bae9680"
+}

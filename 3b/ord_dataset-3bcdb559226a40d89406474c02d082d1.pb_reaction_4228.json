@@ -1,0 +1,283 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][O:2][C:3](=[NH:8])[NH:4][N+:5]([O-:7])=[O:6].Cl.N[CH2:11][C:12]1[CH:13]=[CH:14][C:15]([Cl:18])=[N:16][CH:17]=1.[OH-].[Na+]>O>[CH3:1][O:2][C:3](=[N:4][N+:5]([O-:7])=[O:6])[NH:8][CH2:11][C:12]1[CH:17]=[N:16][C:15]([Cl:18])=[CH:14][CH:13]=1 |f:3.4|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sodium hydroxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "[OH-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Na.H2O/h;1H2/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "5-(aminomethyl)-2-chloropyridine"
+            },
+            {
+              "type": "SMILES",
+              "value": "NCC=1C=CC(=NC1)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H7ClN2/c7-6-2-1-5(3-8)4-9-6/h1-2,4H,3,8H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 1.43,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m1_m5_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "O-methyl-N-nitroisourea"
+            },
+            {
+              "type": "SMILES",
+              "value": "COC(N[N+](=O)[O-])=N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H5N3O3/c1-8-2(3)4-5(6)7/h1H3,(H2,3,4)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 1.25,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrochloric acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/ClH/h1H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 0.85,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 20.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "with stirring"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a mixture of O-methyl-N-nitroisourea (1.25 g, 10.53 mmol), water (20 ml) and concentrated hydrochloric acid (0.85 ml, 10.03 mmol) was added 5-(aminomethyl)-2-chloropyridine (1.43 g, 10.03 mmol) dropwise over 5 minutes at room temperature with stirring. The reaction mixture was neutralized with 40% aqueous sodium hydroxide solution and adjusted to pH 7.2. After 17 hours of stirring at room temperature, the resulting crystals were collected. The crystals were washed with water and dried. As a result, 1.16 g (47.3% yield) of O-methyl-N-(6-chloro-3-pyridylmethyl)-N'-nitroisourea was obtained as white crystals. M.p. 112-113° C."
+  },
+  "workups": [
+    {
+      "type": "STIRRING",
+      "details": "After 17 hours of stirring at room temperature",
+      "duration": {
+        "value": 17.0,
+        "units": "HOUR"
+      },
+      "temperature": {
+        "control": {
+          "type": "AMBIENT"
+        }
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the resulting crystals were collected"
+    },
+    {
+      "type": "WASH",
+      "details": "The crystals were washed with water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "O-methyl-N-(6-chloro-3-pyridylmethyl)-N'-nitroisourea"
+            },
+            {
+              "type": "SMILES",
+              "value": "COC(NCC=1C=NC(=CC1)Cl)=N[N+](=O)[O-]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H9ClN4O3/c1-16-8(12-13(14)15)11-5-6-2-3-7(9)10-4-6/h2-4H,5H2,1H3,(H,11,12)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 1.16,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 47.3
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 47.3
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06008363",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:25.699972"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-77edc11a8908401eab15bb05bace7992"
+}

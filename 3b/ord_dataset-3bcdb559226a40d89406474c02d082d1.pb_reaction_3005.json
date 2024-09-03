@@ -1,0 +1,397 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[NH2:1][C:2]1[C:3]([O:17][C:18]2[CH:19]=[C:20]([CH:23]=[CH:24][CH:25]=2)[C:21]#[N:22])=[N:4][C:5]([O:8][C:9]2[CH:10]=[C:11]([CH:14]=[CH:15][CH:16]=2)[C:12]#[N:13])=[CH:6][CH:7]=1.[C:26]1([N:32]=[C:33]=[O:34])[CH:31]=[CH:30][CH:29]=[CH:28][CH:27]=1>C(#N)C>[C:21]([C:20]1[CH:19]=[C:18]([CH:25]=[CH:24][CH:23]=1)[O:17][C:3]1[C:2]([NH:1][C:33]([NH:32][C:26]2[CH:31]=[CH:30][CH:29]=[CH:28][CH:27]=2)=[O:34])=[CH:7][CH:6]=[C:5]([O:8][C:9]2[CH:16]=[CH:15][CH:14]=[C:11]([C:12]#[N:13])[CH:10]=2)[N:4]=1)#[N:22]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3,3'-[3-amino-2,6-pyridinediylbis(oxy)]bis(benzonitrile)"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC=1C(=NC(=CC1)OC=1C=C(C#N)C=CC1)OC=1C=C(C#N)C=CC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C19H12N4O2/c20-11-13-3-1-5-15(9-13)24-18-8-7-17(22)19(23-18)25-16-6-2-4-14(10-16)12-21/h1-10H,22H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 3.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acetonitrile"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)#N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H3N/c1-2-3/h1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 100.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "phenyl isocyanate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1(=CC=CC=C1)N=C=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H5NO/c9-6-8-7-4-2-1-3-5-7/h1-5H"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 1.1,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To 3,3'-[3-amino-2,6-pyridinediylbis(oxy)]bis(benzonitrile) (3.0 g, 8.7 mmol) dissolved in acetonitrile (100 mL) was added phenyl isocyanate (1.1 g, 9.5 mmol). After refluxing for 4 hours, the reaction was partitioned between ether and water. The organic layer was separated, washed with water, saturated aqueous sodium bicarbonate, and brine, dried (MgSO4), and the solvent was removed in vacuo. Chromatography on silica gel with ethyl acetate/hexane (1/4) as eluent gave material which was crystallized from ethyl acetate/hexane to give N-[2,6-bis(3-cyano-phenoxy)pyridin-3-yl]-N'-phenylurea; NMR (CDCl3) 8.65 (d,1), 7.4 (m,8), 7.1-7.3 (m,6), 6.8 (s,1), 6.7 (d,1) ppm."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "After refluxing for 4 hours",
+      "duration": {
+        "value": 4.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the reaction was partitioned between ether and water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The organic layer was separated"
+    },
+    {
+      "type": "WASH",
+      "details": "washed with water, saturated aqueous sodium bicarbonate, and brine",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "sodium bicarbonate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C([O-])(O)=O.[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2O3.Na/c2-1(3)4;/h(H2,2,3,4);/q;+1/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "brine"
+              },
+              {
+                "type": "SMILES",
+                "value": "[Cl-].[Na+].O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH.Na.H2O/h1H;;1H2/q;+1;/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "dried (MgSO4)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "MgSO4"
+              },
+              {
+                "type": "SMILES",
+                "value": "[O-]S(=O)(=O)[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the solvent was removed in vacuo"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "Chromatography on silica gel with ethyl acetate/hexane (1/4) as eluent gave material which",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate hexane"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC.CCCCCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C6H14.C4H8O2/c1-3-5-6-4-2;1-3-6-4(2)5/h3-6H2,1-2H3;3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "was crystallized from ethyl acetate/hexane",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate hexane"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC.CCCCCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C6H14.C4H8O2/c1-3-5-6-4-2;1-3-6-4(2)5/h3-6H2,1-2H3;3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-[2,6-bis(3-cyano-phenoxy)pyridin-3-yl]-N'-phenylurea"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(#N)C=1C=C(OC2=NC(=CC=C2NC(=O)NC2=CC=CC=C2)OC2=CC(=CC=C2)C#N)C=CC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C26H17N5O3/c27-16-18-6-4-10-21(14-18)33-24-13-12-23(30-26(32)29-20-8-2-1-3-9-20)25(31-24)34-22-11-5-7-19(15-22)17-28/h1-15H,(H2,29,30,32)"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06004981",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:18.731975"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-86f8177a456c486d8c0db27d3fb390a4"
+}

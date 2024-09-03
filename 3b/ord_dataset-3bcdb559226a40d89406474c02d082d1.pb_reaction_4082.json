@@ -1,0 +1,185 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[C:1]([C:4]1[CH:15]=[CH:14][C:7]([CH:8]=[CH:9][C:10]([O:12][CH3:13])=[O:11])=[CH:6][CH:5]=1)([OH:3])=[O:2]>[Pd].CO>[CH3:13][O:12][C:10]([CH2:9][CH2:8][C:7]1[CH:14]=[CH:15][C:4]([C:1]([OH:3])=[O:2])=[CH:5][CH:6]=1)=[O:11]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methyl 4-carboxycinnamate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(=O)(O)C1=CC=C(C=CC(=O)OC)C=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C11H10O4/c1-15-10(12)7-4-8-2-5-9(6-3-8)11(13)14/h2-7H,1H3,(H,13,14)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 1.5,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "palladium on carbon"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Pd]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Pd"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 300.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "CATALYST"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 5.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "was stirred for 2 hours at ambient temperature under hydrogen atmosphere"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture of methyl 4-carboxycinnamate (1.5 g) and 10% palladium on carbon (300 mg) in methanol (5 ml) was stirred for 2 hours at ambient temperature under hydrogen atmosphere. Insoluble material was filtered off, and the filtrate was concentrated in vacuo to give 4-[2-(methoxycarbonyl)ethyl]benzoic acid (1.3 g)."
+  },
+  "workups": [
+    {
+      "type": "FILTRATION",
+      "details": "Insoluble material was filtered off"
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "the filtrate was concentrated in vacuo"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 2.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-[2-(methoxycarbonyl)ethyl]benzoic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "COC(=O)CCC1=CC=C(C(=O)O)C=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C11H12O4/c1-15-10(12)7-4-8-2-5-9(6-3-8)11(13)14/h2-3,5-6H,4,7H2,1H3,(H,13,14)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 1.3,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 85.8
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06008229",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:23.274903"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-921c9ca6869d492fa4a8d4fab6f6dc4e"
+}

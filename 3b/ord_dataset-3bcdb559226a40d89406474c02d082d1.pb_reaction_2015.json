@@ -1,0 +1,298 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "Cl[C:2]1[C:3]2[C:10]([C:11]3[CH:16]=[CH:15][C:14]([O:17][CH3:18])=[CH:13][CH:12]=3)=[CH:9][N:8]([CH:19]([CH3:21])[CH3:20])[C:4]=2[N:5]=[CH:6][N:7]=1.[NH3:22]>O1CCOCC1>[NH2:22][C:2]1[C:3]2[C:10]([C:11]3[CH:16]=[CH:15][C:14]([O:17][CH3:18])=[CH:13][CH:12]=3)=[CH:9][N:8]([CH:19]([CH3:21])[CH3:20])[C:4]=2[N:5]=[CH:6][N:7]=1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-chloro-7-isopropyl-5-(4-methoxyphenyl)pyrrolo-[2,3-d]pyrimidine"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC=1C2=C(N=CN1)N(C=C2C2=CC=C(C=C2)OC)C(C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C16H16ClN3O/c1-10(2)20-8-13(11-4-6-12(21-3)7-5-11)14-15(17)18-9-19-16(14)20/h4-10H,1-3H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 1.6,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ammonia"
+            },
+            {
+              "type": "SMILES",
+              "value": "N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H3N/h1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 80.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "1,4-dioxane"
+            },
+            {
+              "type": "SMILES",
+              "value": "O1CCOCC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O2/c1-2-6-4-3-5-1/h1-4H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 80.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 120.0,
+        "units": "CELSIUS"
+      }
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture of 4-chloro-7-isopropyl-5-(4-methoxyphenyl)pyrrolo-[2,3-d]pyrimidine (1.6 g), concentrated ammonia (80 ml, S.G. 0.880) and 1,4-dioxane (80 ml) was heated in a pressure vessel at 120° C. for 18 hours. The mixture was cooled to ambient temperature and the solvent was removed under reduced pressure to give a solid residue which was partitioned between ethyl acetate (100 ml) and water (100 ml). The aqueous layer was extracted with ethyl acetate and the combined organic layers were washed with water, dried, filtered and evaporated to give 4-amino-7-isopropyl-5-(4-methoxyphenyl)pyrrolo[2,3-d]-pyrimidine. The structure was confirmed by 1H nmr."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "The mixture was cooled to ambient temperature",
+      "temperature": {
+        "control": {
+          "type": "AMBIENT"
+        }
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the solvent was removed under reduced pressure"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to give a solid residue which"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "was partitioned between ethyl acetate (100 ml) and water (100 ml)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 100.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 100.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "The aqueous layer was extracted with ethyl acetate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "the combined organic layers were washed with water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filtered"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "evaporated"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-amino-7-isopropyl-5-(4-methoxyphenyl)pyrrolo[2,3-d]-pyrimidine"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC=1C2=C(N=CN1)N(C=C2C2=CC=C(C=C2)OC)C(C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C16H18N4O/c1-10(2)20-8-13(11-4-6-12(21-3)7-5-11)14-15(17)18-9-19-16(14)20/h4-10H,1-3H3,(H2,17,18,19)"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06001839",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:16.972711"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-f08c91fbda39413b92b0384fb5e6c2be"
+}

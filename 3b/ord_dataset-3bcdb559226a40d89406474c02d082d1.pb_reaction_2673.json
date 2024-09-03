@@ -1,0 +1,279 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "Cl[C:2]1[C:11]2[C:6](=[C:7]([O:12][CH3:13])[CH:8]=[CH:9][CH:10]=2)[N:5]=[CH:4][C:3]=1[C:14]#[N:15].[Br:16][C:17]1[CH:18]=[C:19]([CH:21]=[CH:22][CH:23]=1)[NH2:20].Cl.N1C=CC=CC=1>C(OCCO)C>[Br:16][C:17]1[CH:18]=[C:19]([NH:20][C:2]2[C:11]3[C:6](=[C:7]([O:12][CH3:13])[CH:8]=[CH:9][CH:10]=3)[N:5]=[CH:4][C:3]=2[C:14]#[N:15])[CH:21]=[CH:22][CH:23]=1 |f:2.3|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m3_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-chloro-8-methoxy -3-quinolinecarbonitrile"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC1=C(C=NC2=C(C=CC=C12)OC)C#N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C11H7ClN2O/c1-15-9-4-2-3-8-10(12)7(5-13)6-14-11(8)9/h2-4,6H,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 328.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3-bromoaniline"
+            },
+            {
+              "type": "SMILES",
+              "value": "BrC=1C=C(N)C=CC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H6BrN/c7-5-2-1-3-6(8)4-5/h1-4H,8H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 309.7,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "pyridine hydrochloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl.N1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C5H5N.ClH/c1-2-4-6-5-3-1;/h1-5H;1H"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 173.3,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-ethoxyethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)OCCO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H10O2/c1-2-6-4-3-5/h5H,2-4H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 15.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A solution of 328.0 mg (1.5 mmol) of 4-chloro-8-methoxy -3-quinolinecarbonitrile, 309.7 mg (1.8 mmol) of 3-bromoaniline and 173.3 mg (1.5 mmol) of pyridine hydrochloride in 15 ml of 2-ethoxyethanol was refluxed under nitrogen for 0.5 hours. The solvent was removed and the residue was diluted with water followed by neutralization to pH 7-8 with diluted sodium carbonate solution. The precipitate was collected and washed with ether and dried in vacuo to give 476.1 mg (89.6%) of the product as a yellow solid, m.p. 210-212° C.; mass spectrum (electrospray, m/e): M+H 353.8, 355.8."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "The solvent was removed"
+    },
+    {
+      "type": "ADDITION",
+      "details": "the residue was diluted with water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The precipitate was collected"
+    },
+    {
+      "type": "WASH",
+      "details": "washed with ether",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried in vacuo"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "product"
+            },
+            {
+              "type": "NAME",
+              "value": "4-[(3-Bromophenyl)amino]-8-methoxy -3-quinolinecarbonitrile"
+            },
+            {
+              "type": "SMILES",
+              "value": "BrC=1C=C(C=CC1)NC1=C(C=NC2=C(C=CC=C12)OC)C#N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C17H12BrN3O/c1-22-15-7-3-6-14-16(11(9-19)10-20-17(14)15)21-13-5-2-4-12(18)8-13/h2-8,10H,1H3,(H,20,21)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 476.1,
+                  "units": "MILLIGRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 89.6
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 89.6
+              }
+            }
+          ],
+          "isolated_color": "yellow",
+          "texture": {
+            "type": "CUSTOM",
+            "details": "solid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06002008",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:27.638715"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-b8b01c2340864c469dd21379ef6b3a13"
+}

@@ -1,0 +1,330 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "Cl[C:2]1[C:11]2[C:6](=[C:7]([NH:12][C:13](=[O:22])[C:14]3[C:19]([Cl:20])=[CH:18][CH:17]=[CH:16][C:15]=3[Cl:21])[CH:8]=[CH:9][CH:10]=2)[N:5]=[CH:4][C:3]=1[CH3:23].C([OH:26])C>C(O)(=O)C.Cl>[Cl:21][C:15]1[CH:16]=[CH:17][CH:18]=[C:19]([Cl:20])[C:14]=1[C:13]([NH:12][C:7]1[CH:8]=[CH:9][CH:10]=[C:11]2[C:6]=1[NH:5][CH:4]=[C:3]([CH3:23])[C:2]2=[O:26])=[O:22]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m3_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-chloro-8-(2,6-dichlorobenzoylamino)-3-methylquinoline"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC1=C(C=NC2=C(C=CC=C12)NC(C1=C(C=CC=C1Cl)Cl)=O)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C17H11Cl3N2O/c1-9-8-21-16-10(15(9)20)4-2-7-13(16)22-17(23)14-11(18)5-3-6-12(14)19/h2-8H,1H3,(H,22,23)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 500.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acetic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H4O2/c1-2(3)4/h1H3,(H,3,4)"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 16.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrochloric acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/ClH/h1H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 20.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 5.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A solution of 4-chloro-8-(2,6-dichlorobenzoylamino)-3-methylquinoline (500 mg) in acetic acid (16 ml) and 6N hydrochloric acid (20 ml) was heated at 130° C. for 5 days. The mixture was concentrated in vacuo and the precipitate was collected and washed with water. The residue was purified by a silica gel column chromatography (methanol:methylene chloride=1:20, V/V) to give a yellow crystal. The solid was treated with hot ethanol (5 ml), allowed to cool to ambient temperature, filtered and washed with water to give 8-(2,6-dichlorobenzoylamino)-1,4-dihydro-3-methyl-4-oxoquinoline (280 mg) as yellow crystal."
+  },
+  "workups": [
+    {
+      "type": "CONCENTRATION",
+      "details": "The mixture was concentrated in vacuo"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the precipitate was collected"
+    },
+    {
+      "type": "WASH",
+      "details": "washed with water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The residue was purified by a silica gel column chromatography (methanol:methylene chloride=1:20, V/V)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "methanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "CO"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "methylene chloride"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(Cl)Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to give a yellow crystal"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filtered"
+    },
+    {
+      "type": "WASH",
+      "details": "washed with water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "8-(2,6-dichlorobenzoylamino)-1,4-dihydro-3-methyl-4-oxoquinoline"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC1=C(C(=O)NC=2C=CC=C3C(C(=CNC23)C)=O)C(=CC=C1)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C17H12Cl2N2O2/c1-9-8-20-15-10(16(9)22)4-2-7-13(15)21-17(23)14-11(18)5-3-6-12(14)19/h2-8H,1H3,(H,20,22)(H,21,23)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 280.0,
+                  "units": "MILLIGRAM"
+                }
+              }
+            }
+          ],
+          "isolated_color": "yellow",
+          "texture": {
+            "type": "CRYSTAL",
+            "details": "crystal"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06008230",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:22.984039"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-3c488f09bb67423fa45bd4f52e7698db"
+}

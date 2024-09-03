@@ -1,0 +1,258 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[NH2:1][C:2]1[CH:10]=[C:9]([CH3:11])[CH:8]=[CH:7][C:3]=1[C:4]([OH:6])=[O:5].S(=O)(=O)(O)O.[CH3:17]O>>[NH2:1][C:2]1[CH:10]=[C:9]([CH3:11])[CH:8]=[CH:7][C:3]=1[C:4]([O:6][CH3:17])=[O:5]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-amino-4-methylbenzoic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC1=C(C(=O)O)C=CC(=C1)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H9NO2/c1-5-2-3-6(8(10)11)7(9)4-5/h2-4H,9H2,1H3,(H,10,11)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 15.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sulphuric acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "S(O)(O)(=O)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O4S/c1-5(2,3)4/h(H2,1,2,3,4)"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 20.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture of 2-amino-4-methylbenzoic acid (15.0 g) and concentrated sulphuric acid (20 ml) was heated under reflux with methanol for 18 hours. After removal of the solvent the residue was dissolved in dichloromethane, basified with sodium carbonate solution and the organic phase was washed with water, dried (anhydrous magnesium sulphate) and the solvent evaporated to give methyl 2-amino-4-methylbenzoate, m.p. 41-43° C."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "was heated"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "After removal of the solvent the residue"
+    },
+    {
+      "type": "DISSOLUTION",
+      "details": "was dissolved in dichloromethane",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "dichloromethane"
+              },
+              {
+                "type": "SMILES",
+                "value": "ClCCl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "the organic phase was washed with water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "dried (anhydrous magnesium sulphate)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "magnesium sulphate"
+              },
+              {
+                "type": "SMILES",
+                "value": "S(=O)(=O)([O-])[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the solvent evaporated"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methyl 2-amino-4-methylbenzoate"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC1=C(C(=O)OC)C=CC(=C1)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H11NO2/c1-6-3-4-7(8(10)5-6)9(11)12-2/h3-5H,10H2,1-2H3"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998653",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:35.203673"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-fb508853e26b4053b9f31d5c61b56625"
+}

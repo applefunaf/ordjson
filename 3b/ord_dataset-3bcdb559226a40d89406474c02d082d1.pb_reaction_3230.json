@@ -1,0 +1,168 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][O:2][C:3]1[CH:4]=[C:5]2[C:10](=[CH:11][CH:12]=1)[C:9](=O)[CH2:8][CH2:7][CH2:6]2.[OH:14][C:15]1[CH:21]=[CH:20][C:18]([NH2:19])=[CH:17][CH:16]=1>>[CH3:1][O:2][C:3]1[CH:4]=[C:5]2[C:10](=[CH:11][CH:12]=1)[C:9](=[N:19][C:18]1[CH:20]=[CH:21][C:15]([OH:14])=[CH:16][CH:17]=1)[CH2:8][CH2:7][CH2:6]2",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "6-methoxytetralone"
+            },
+            {
+              "type": "SMILES",
+              "value": "COC=1C=C2CCCC(C2=CC1)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C11H12O2/c1-13-9-5-6-10-8(7-9)3-2-4-11(10)12/h5-7H,2-4H2,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 25.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-hydroxyaniline"
+            },
+            {
+              "type": "SMILES",
+              "value": "OC1=CC=C(N)C=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H7NO/c7-5-1-3-6(8)4-2-5/h1-4,8H,7H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 16.3,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 180.0,
+        "units": "CELSIUS"
+      }
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture of 6-methoxytetralone (25 g, 142 mmol) and 4-hydroxyaniline (16.3 g, 149 mmol) was heated to 180° C. under a nitrogen stream for 2 h. After cooling to ambient temperature, the solid mass was recrystallized from toluene/methanol: 1NMR (300 MHz) d 8.15 (d, J=9.7 Hz, 1H), 6.5-7.9 (m, 6H), 3.80 (s, 3H), 2.84 (t, J=7.3 Hz, 2H), 2.51 (t, J=6.8 Hz, 2H), 1.85 (m, 2H)."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "After cooling to ambient temperature",
+      "temperature": {
+        "control": {
+          "type": "AMBIENT"
+        }
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the solid mass was recrystallized from toluene/methanol",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "toluene methanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "C1(=CC=CC=C1)C.CO"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C7H8.CH4O/c1-7-5-3-2-4-6-7;1-2/h2-6H,1H3;2H,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "6-Methoxy-1-[(4-hydroxy)phenyl]imino-1,2,3,4-tetrahydronaphthalene"
+            },
+            {
+              "type": "SMILES",
+              "value": "COC=1C=C2CCCC(C2=CC1)=NC1=CC=C(C=C1)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C17H17NO2/c1-20-15-9-10-16-12(11-15)3-2-4-17(16)18-13-5-7-14(19)8-6-13/h5-11,19H,2-4H2,1H3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06004971",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:21.857137"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-06fc7fdc01c24590878555c2883078d7"
+}

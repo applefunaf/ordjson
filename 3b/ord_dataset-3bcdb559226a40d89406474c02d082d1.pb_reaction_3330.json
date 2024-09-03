@@ -1,0 +1,251 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH:1]1[C:15](=[O:16])[N:14]=C2[N:3]([C@@H:4]3[O:8][C@H:7]([CH2:9][OH:10])[C@@H:6]([OH:11])[C@@H:5]3O2)[CH:2]=1.[CH3:17][SH:18].[CH3:19]N(C)C(N(C)C)=N>CN(C=O)C>[CH3:19][C@@H:5]1[C@H:6]([OH:11])[C@@H:7]([CH2:9][OH:10])[O:8][C@H:4]1[N:3]1[CH:2]=[CH:1][C:15](=[O:16])[NH:14][C:17]1=[S:18]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m3_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2,2'Anhydrouridine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1=CN2[C@H]3[C@H]([C@@H]([C@H](O3)CO)O)OC2=NC1=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H10N2O5/c12-3-4-6(14)7-8(15-4)11-2-1-5(13)10-9(11)16-7/h1-2,4,6-8,12,14H,3H2/t4-,6-,7+,8-/m1/s1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 15.5,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methanethiol"
+            },
+            {
+              "type": "SMILES",
+              "value": "CS"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH4S/c1-2/h2H,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 15.7,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "1,1,3,3-tetramethylguanidine"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN(C(=N)N(C)C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C5H13N3/c1-7(2)5(6)8(3)4/h6H,1-4H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 39.2,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "DMF"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN(C)C=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H7NO/c1-4(2)3-5/h3H,1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 150.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "2,2'Anhydrouridine (15.5 g, 68.2 mmol) [Rao and Reese, J. Chem. Soc., Chem. Commun., 997], methanethiol (15.7 g, 327 mmol), 1,1,3,3-tetramethylguanidine (39.2 g, 341 mmol) and DMF (150 mL) were heated at 60° C. After 12 hours, the reaction mixture was cooled and concentrated under reduced pressure. The residual oil was purified by flash column chromatography on silica gel (300 g). Concentration of the appropriate fractions, which were eluted with CH2Cl2 --MeOH (9:1), and drying the residue under reduced pressure gave 2'-deoxy-2'-methylthiouridine as a pale yellow solid (14.11 g, 75.4%). Attempts to crystallize the solids from EtOH-hexanes [as reported by Imazawa et al., Chem. Pharm. Bull., 23, 604 (1975)] failed and the material turned into a hygroscopic foam."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "the reaction mixture was cooled"
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated under reduced pressure"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The residual oil was purified by flash column chromatography on silica gel (300 g)"
+    },
+    {
+      "type": "WASH",
+      "details": "Concentration of the appropriate fractions, which were eluted with CH2Cl2 --MeOH (9:1)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "CH2Cl2 MeOH"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(Cl)Cl.CO"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2Cl2.CH4O/c2-1-3;1-2/h1H2;2H,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "drying the residue under reduced pressure"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 12.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2'-deoxy-2'-methylthiouridine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C[C@H]1[C@@H](O[C@@H]([C@H]1O)CO)N1C(=S)NC(=O)C=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C10H14N2O4S/c1-5-8(15)6(4-13)16-9(5)12-3-2-7(14)11-10(12)17/h2-3,5-6,8-9,13,15H,4H2,1H3,(H,11,14,17)/t5-,6-,8+,9-/m1/s1"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 14.11,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 75.4
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 80.1
+              }
+            }
+          ],
+          "isolated_color": "pale yellow",
+          "texture": {
+            "type": "CUSTOM",
+            "details": "solid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06005087",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:23.487374"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-ac71f4fd6d2e4e7baac5a2f13f31273c"
+}

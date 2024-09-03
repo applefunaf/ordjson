@@ -1,0 +1,215 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "Cl[C:2]1[CH:7]=[C:6]([C:8]2[C:17]3[C:12](=[CH:13][C:14]([O:21][CH3:22])=[C:15]([O:18][CH2:19][CH3:20])[CH:16]=3)[CH:11]=[C:10]([CH2:23][OH:24])[C:9]=2[CH2:25][OH:26])[CH:5]=[CH:4][N:3]=1.O.O.[NH2:29][NH2:30]>>[NH:29]([C:2]1[CH:7]=[C:6]([C:8]2[C:17]3[C:12](=[CH:13][C:14]([O:21][CH3:22])=[C:15]([O:18][CH2:19][CH3:20])[CH:16]=3)[CH:11]=[C:10]([CH2:23][OH:24])[C:9]=2[CH2:25][OH:26])[CH:5]=[CH:4][N:3]=1)[NH2:30] |f:2.3|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "1-(2-chloro-4-pyridyl)-2,3-bis(hydroxymethyl)-6-methoxy-7-ethoxynaphthalene"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC1=NC=CC(=C1)C1=C(C(=CC2=CC(=C(C=C12)OCC)OC)CO)CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C20H20ClNO4/c1-3-26-18-9-15-13(7-17(18)25-2)6-14(10-23)16(11-24)20(15)12-4-5-22-19(21)8-12/h4-9,23-24H,3,10-11H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 16.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrazine hydrate"
+            },
+            {
+              "type": "SMILES",
+              "value": "O.NN"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H4N2.H2O/c1-2;/h1-2H2;1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 50.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A suspension of 1-(2-chloro-4-pyridyl)-2,3-bis(hydroxymethyl)-6-methoxy-7-ethoxynaphthalene (16.0 g) in hydrazine hydrate (50 ml) is refluxed for four hours. The mixture is cooled to room temperature, and then thereto is added water. The precipitated crystals are collected by filtration, washed with water, and dried to give 1-(2-hydrazino-4-pyridyl)-2,3-bis(hydroxymethyl)-6-methoxy-7-ethoxynaphthalene (14.5 g)."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "is refluxed for four hours",
+      "duration": {
+        "value": 4.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "The precipitated crystals are collected by filtration"
+    },
+    {
+      "type": "WASH",
+      "details": "washed with water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "1-(2-hydrazino-4-pyridyl)-2,3-bis(hydroxymethyl)-6-methoxy-7-ethoxynaphthalene"
+            },
+            {
+              "type": "SMILES",
+              "value": "N(N)C1=NC=CC(=C1)C1=C(C(=CC2=CC(=C(C=C12)OCC)OC)CO)CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C20H23N3O4/c1-3-27-18-9-15-13(7-17(18)26-2)6-14(10-24)16(11-25)20(15)12-4-5-22-19(8-12)23-21/h4-9,24-25H,3,10-11,21H2,1-2H3,(H,22,23)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 14.5,
+                  "units": "GRAM"
+                }
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06005106",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:25.770576"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-96d05e891c3f4fa4bc20fbd18cc4dea9"
+}

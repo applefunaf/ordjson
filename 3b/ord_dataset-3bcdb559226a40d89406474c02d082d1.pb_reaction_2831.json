@@ -1,0 +1,219 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[N+:1]([C:4]1[CH:5]=[C:6]([C:10]2[CH:15]=[CH:14][CH:13]=[CH:12][CH:11]=2)[CH:7]=[CH:8][CH:9]=1)([O-])=O>CO.C(Cl)(Cl)Cl.[Pd]>[NH2:1][C:4]1[CH:5]=[C:6]([C:10]2[CH:11]=[CH:12][CH:13]=[CH:14][CH:15]=2)[CH:7]=[CH:8][CH:9]=1 |f:1.2|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m3_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3-nitrobiphenyl"
+            },
+            {
+              "type": "SMILES",
+              "value": "[N+](=O)([O-])C=1C=C(C=CC1)C1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C12H9NO2/c14-13(15)12-8-4-7-11(9-12)10-5-2-1-3-6-10/h1-9H"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 20.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "MeOH CHCl3"
+            },
+            {
+              "type": "SMILES",
+              "value": "CO.C(Cl)(Cl)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CHCl3.CH4O/c2-1(3)4;1-2/h1H;2H,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 300.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Pd/C"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Pd]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Pd"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 2.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "CATALYST"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture of 3-nitrobiphenyl (20 g, 100 mmol) and 10% Pd/C (2 g) in MeOH/CHCl3 (300 mL, 1:1) is hydrogenated at 40 psi for 4 hours. The mixture is suction filtered through a layer of diatomaceous earth and washed with MeOH. The filtrate is evaporated to dryness and the solid is further dried under vacuum to give 16 g (95%) of 3-aminobiphenyl."
+  },
+  "workups": [
+    {
+      "type": "FILTRATION",
+      "details": "filtered through a layer of diatomaceous earth"
+    },
+    {
+      "type": "WASH",
+      "details": "washed with MeOH",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "MeOH"
+              },
+              {
+                "type": "SMILES",
+                "value": "CO"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The filtrate is evaporated to dryness"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the solid is further dried under vacuum"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 4.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3-aminobiphenyl"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC=1C=C(C=CC1)C1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C12H11N/c13-12-8-4-7-11(9-12)10-5-2-1-3-6-10/h1-9H,13H2"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 16.0,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 95.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 94.6
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06004536",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:15.781910"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-d58c166ee3b949b489661f1f73bb36cb"
+}

@@ -1,0 +1,296 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][C:2]([NH:4][CH2:5][CH2:6][C:7]1[C:11]2[CH:12]=[C:13]([O:16][CH3:17])[CH:14]=[CH:15][C:10]=2[NH:9][CH:8]=1)=[O:3].[H-].[Na+].[C:20](Cl)(=[O:22])[CH3:21].[O:24]1CC[CH2:26][CH2:25]1>>[C:20]([N:9]1[C:10]2[C:11](=[CH:12][C:13]([O:16][CH3:17])=[CH:14][CH:15]=2)[C:7]([CH2:6][CH2:5][NH:4][C:2](=[O:3])[CH3:1])=[CH:8]1)(=[O:22])[CH3:21].[C:20]([N:9]1[C:10]2[C:11](=[CH:12][C:13]([O:16][CH3:17])=[CH:14][CH:15]=2)[C:7]([CH2:6][CH2:5][N:4]([C:25]([CH3:26])=[O:24])[C:2](=[O:3])[CH3:1])=[CH:8]1)(=[O:22])[CH3:21] |f:1.2|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acetyl chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H3ClO/c1-2(3)4/h1H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2_m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Melatonin"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC(=O)NCCC1=CNC2=C1C=C(C=C2)OC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C13H16N2O2/c1-9(16)14-6-5-10-8-15-13-4-3-11(17-2)7-12(10)13/h3-4,7-8,15H,5-6H2,1-2H3,(H,14,16)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 126.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "tetrahydrofuran"
+            },
+            {
+              "type": "SMILES",
+              "value": "O1CCCC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O/c1-2-4-5-3-1/h1-4H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 10.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sodium hydride"
+            },
+            {
+              "type": "SMILES",
+              "value": "[H-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Na.H/q+1;-1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 200.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "the mixture is kept stirring overnight (room temperature)"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "Melatonin (126 mg) is dissolved in tetrahydrofuran (10 ml) in a 50 ml round-bottomed flask, sodium hydride (200 mg) is then added and the mixture is maintained at reflux (10 min). After cooling (0° C.), acetyl chloride is added and the mixture is kept stirring overnight (room temperature). After filtration and dilution (EtOAc), the organic phase is washed with water and then separated on a silica plate. N-[2-(1-Acetyl-5-methoxyindol-3-yl)ethyl]acetamide (1) is mainly obtained, along with a side product, N-[2-(1-acetyl-5-methoxyindol-3-yl)ethyl]diacetamide (10) (cf. Example 10)."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "the mixture is maintained"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "at reflux (10 min)",
+      "duration": {
+        "value": 10.0,
+        "units": "MINUTE"
+      }
+    },
+    {
+      "type": "ADDITION",
+      "details": "is added"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "After filtration and dilution (EtOAc)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "EtOAc"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOC(=O)C"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "the organic phase is washed with water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "separated on a silica plate"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 8.0,
+        "precision": 8.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-[2-(1-Acetyl-5-methoxyindol-3-yl)ethyl]acetamide"
+            },
+            {
+              "type": "NAME",
+              "value": "N-[2-(1-acetyl-5-methoxyindol-3-yl)ethyl]acetamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)N1C=C(C2=CC(=CC=C12)OC)CCNC(C)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C15H18N2O3/c1-10(18)16-7-6-12-9-17(11(2)19)15-5-4-13(20-3)8-14(12)15/h4-5,8-9H,6-7H2,1-3H3,(H,16,18)"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-[2-(1-acetyl-5-methoxyindol-3-yl)ethyl]diacetamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)N1C=C(C2=CC(=CC=C12)OC)CCN(C(C)=O)C(=O)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C17H20N2O4/c1-11(20)18(12(2)21)8-7-14-10-19(13(3)22)17-6-5-15(23-4)9-16(14)17/h5-6,9-10H,7-8H2,1-4H3"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06004991",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:18.858245"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-e8ffc787ee6e427eb29eefa7d99e3a33"
+}

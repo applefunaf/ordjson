@@ -1,0 +1,451 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "C[O-].[Na+].C([O:7][CH2:8][CH2:9][C:10]1[CH:11]=[C:12]([S:24]([NH2:27])(=[O:26])=[O:25])[C:13]2[C:18]([C:19]=1[Br:20])=[CH:17][CH:16]=[CH:15][C:14]=2[N+:21]([O-:23])=[O:22])(=O)C>CO>[Br:20][C:19]1[C:18]2[C:13](=[C:14]([N+:21]([O-:23])=[O:22])[CH:15]=[CH:16][CH:17]=2)[C:12]([S:24]([NH2:27])(=[O:25])=[O:26])=[CH:11][C:10]=1[CH2:9][CH2:8][OH:7] |f:0.1|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m4_m2_m3_m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Sodium methoxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "C[O-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH3O.Na/c1-2;/h1H3;/q-1;+1"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "solution"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3-(2-acetoxy-ethyl)-4-bromo-8-nitronaphthalene-1-sulfonamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)OCCC=1C=C(C2=C(C=CC=C2C1Br)[N+](=O)[O-])S(=O)(=O)N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C14H13BrN2O6S/c1-8(18)23-6-5-9-7-12(24(16,21)22)13-10(14(9)15)3-2-4-11(13)17(19)20/h2-4,7H,5-6H2,1H3,(H2,16,21,22)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 4.7,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 33.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "The mixture was stirred under a nitrogen atmosphere at room temperature for 90 minutes"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "Sodium methoxide in methanol (23.7 mL of a 0.5M solution, 11.8 mmol) was added to a suspension of 3-(2-acetoxy-ethyl)-4-bromo-8-nitronaphthalene-1-sulfonamide (4.70 g, 11.3 mmol) in methanol (33 mL). The mixture was stirred under a nitrogen atmosphere at room temperature for 90 minutes, then concentrated under vacuum to approximately half volume, diluted with ethyl acetate (200 mL), and washed with 2N hydrochloric acid. The oganic solution was washed with water (100 mL) and brine (50 mL), dried over magnesium sulfate, filtered, and left to stand at room temperature. The organic solution deposited a solid which was collected by filtration, washed with ethyl acetate (2×15 mL), and vacuum dried to give the title comound (1.78 g). Additional poduct (1.88 g) was obtained from the mother liquors after concentration under vacuum and crystallization from diethyl ether."
+  },
+  "workups": [
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated under vacuum to approximately half volume"
+    },
+    {
+      "type": "ADDITION",
+      "details": "diluted with ethyl acetate (200 mL)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 200.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "washed with 2N hydrochloric acid",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "hydrochloric acid"
+              },
+              {
+                "type": "SMILES",
+                "value": "Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH/h1H"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "The oganic solution was washed with water (100 mL) and brine (50 mL)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 100.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "brine"
+              },
+              {
+                "type": "SMILES",
+                "value": "[Cl-].[Na+].O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH.Na.H2O/h1H;;1H2/q;+1;/p-1"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 50.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "dried over magnesium sulfate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "magnesium sulfate"
+              },
+              {
+                "type": "SMILES",
+                "value": "S(=O)(=O)([O-])[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filtered"
+    },
+    {
+      "type": "WAIT",
+      "details": "left"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to stand at room temperature",
+      "temperature": {
+        "control": {
+          "type": "AMBIENT"
+        }
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "was collected by filtration"
+    },
+    {
+      "type": "WASH",
+      "details": "washed with ethyl acetate (2×15 mL), and vacuum",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 15.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to give the title comound (1.78 g)"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "Additional poduct (1.88 g) was obtained from the mother liquors"
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "after concentration"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "under vacuum and crystallization from diethyl ether",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "diethyl ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 90.0,
+        "units": "MINUTE"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-Bromo-3-(2-hydroxy-ethyl)-8-nitro-naphthalene-1-sulfonamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "BrC1=C(C=C(C2=C(C=CC=C12)[N+](=O)[O-])S(=O)(=O)N)CCO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C12H11BrN2O5S/c13-12-7(4-5-16)6-10(21(14,19)20)11-8(12)2-1-3-9(11)15(17)18/h1-3,6,16H,4-5H2,(H2,14,19,20)"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06008212",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:17.080151"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-5eeaf179bdb243b39fbd8bc9d973df94"
+}

@@ -1,0 +1,372 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][O:2][CH2:3][O:4][C:5]1[CH:9]=[C:8]([C:10]2[CH:15]=[CH:14][CH:13]=[CH:12][CH:11]=2)[O:7][N:6]=1.C([Li])CCC.C1C=CC(S(N(S(C2C=CC=CC=2)(=O)=O)[F:31])(=O)=O)=CC=1>O1CCCC1>[F:31][C:9]1[C:5]([O:4][CH2:3][O:2][CH3:1])=[N:6][O:7][C:8]=1[C:10]1[CH:15]=[CH:14][CH:13]=[CH:12][CH:11]=1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3-Methoxymethoxy-5-phenylisoxazole"
+            },
+            {
+              "type": "SMILES",
+              "value": "COCOC1=NOC(=C1)C1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C11H11NO3/c1-13-8-14-11-7-10(15-12-11)9-5-3-2-4-6-9/h2-7H,8H2,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 2.05,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "tetrahydrofuran"
+            },
+            {
+              "type": "SMILES",
+              "value": "O1CCCC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O/c1-2-4-5-3-1/h1-4H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 30.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Butyllithium"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(CCC)[Li]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H9.Li/c1-3-4-2;/h1,3-4H2,2H3;"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 7.1,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-fluorobenzenesulfonimide"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1=CC=C(C=C1)S(=O)(=O)N(F)S(=O)(=O)C2=CC=CC=C2"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C12H10FNO4S2/c13-14(19(15,16)11-7-3-1-4-8-11)20(17,18)12-9-5-2-6-10-12/h1-10H"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 3.15,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": -78.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "the resulting mixture was stirred at the same temperature for 15 minutes"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "3-Methoxymethoxy-5-phenylisoxazole (2.05 g) was dissolved in anhydrous tetrahydrofuran (30 ml), and the solution was cooled to -78° C. Butyllithium (1.68M hexane solution, 7.1 ml) was added dropwise thereto, and the resulting mixture was stirred at the same temperature for 15 minutes. Then, N-fluorobenzenesulfonimide (3.15 g) was added to the reaction mixture, followed by stirring of the resulting mixture at the same temperature for 15 minutes. The cooling bath was removed and the temperature of the resulting mixture was raised to room temperature. The reaction mixture was poured into ice-cold water (200 ml) and extracted with ether (200 ml×2). The organic layer was dried over anhydrous magnesium sulfate. After filtration, the solvent was evaporated under reduced pressure. The residue was purified by silica gel column chromatography (eluent: hexane/ethyl acetate=4/1) to obtain the title compound (1.78 g, 80%) as a colorless oil."
+  },
+  "workups": [
+    {
+      "type": "STIRRING",
+      "details": "by stirring of the resulting mixture at the same temperature for 15 minutes",
+      "duration": {
+        "value": 15.0,
+        "units": "MINUTE"
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The cooling bath was removed"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "the temperature of the resulting mixture was raised to room temperature",
+      "temperature": {
+        "control": {
+          "type": "AMBIENT"
+        }
+      }
+    },
+    {
+      "type": "ADDITION",
+      "details": "The reaction mixture was poured into ice-cold water (200 ml)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ice"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 200.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "extracted with ether (200 ml×2)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 200.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "The organic layer was dried over anhydrous magnesium sulfate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "magnesium sulfate"
+              },
+              {
+                "type": "SMILES",
+                "value": "S(=O)(=O)([O-])[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "After filtration"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the solvent was evaporated under reduced pressure"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The residue was purified by silica gel column chromatography (eluent: hexane/ethyl acetate=4/1)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "hexane ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCCCCC.C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C6H14.C4H8O2/c1-3-5-6-4-2;1-3-6-4(2)5/h3-6H2,1-2H3;3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 15.0,
+        "units": "MINUTE"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "4-Fluoro-3-methoxymethoxy-5-phenylisoxazole"
+            },
+            {
+              "type": "SMILES",
+              "value": "FC=1C(=NOC1C1=CC=CC=C1)OCOC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C11H10FNO3/c1-14-7-15-11-9(12)10(16-13-11)8-5-3-2-4-6-8/h2-6H,7H2,1H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 1.78,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 80.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 79.8
+              }
+            }
+          ],
+          "isolated_color": "colorless",
+          "texture": {
+            "type": "OIL",
+            "details": "oil"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06005116",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:24.359694"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-968d31f437b147b18708bace648da188"
+}

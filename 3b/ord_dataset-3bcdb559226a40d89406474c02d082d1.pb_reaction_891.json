@@ -1,0 +1,218 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "C([O:3][CH2:4][CH3:5])=O.[CH3:6][Si:7]([CH2:10][Mg]Cl)([CH3:9])[CH3:8].Cl.[NH4+]>C(OCC)C>[CH3:6][Si:7]([CH3:10])([CH3:9])[CH2:8][CH:4]([OH:3])[CH2:5][Si:7]([CH3:9])([CH3:8])[CH3:6] |f:2.3|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "diethyl ether"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)OCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m1_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Ethyl formate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(=O)OCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H6O2/c1-2-5-3-4/h3H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.1,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "trimethylsilylmethyl magnesium chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "C[Si](C)(C)C[Mg]Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H11Si.ClH.Mg/c1-5(2,3)4;;/h1H2,2-4H3;1H;/q;;+1/p-1"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.3,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ammonium hydrochloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl.[NH4+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/ClH.H3N/h1H;1H3/p+1"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "Ethyl formate (0.1 mol) was slowly added to 0.3 mol of trimethylsilylmethyl magnesium chloride solution dissolved in diethyl ether which was contained in a 500 ml flask. The mixture was allowed to react under reflux for about 24 hours. After hydrolyzing the reactant using ammonium hydrochloride solution, the obtained reaction product was separated and purified by a vacuum distillation and a 70 percent yield was obtained. The structure of the obtained distillates was analyzed using NMR and a spectroscopic method of FT-IR spectroscopy."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "was contained in a 500 ml flask"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to react"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "under reflux for about 24 hours",
+      "duration": {
+        "value": 24.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the obtained reaction product"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "was separated"
+    },
+    {
+      "type": "DISTILLATION",
+      "details": "purified by a vacuum distillation"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "a 70 percent yield was obtained"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "1,3-bis(trimethylsilyl)-2-propanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C[Si](CC(C[Si](C)(C)C)O)(C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H24OSi2/c1-11(2,3)7-9(10)8-12(4,5)6/h9-10H,7-8H2,1-6H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 70.0
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998557",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:30.865656"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-169259283d3540b3b4ec943f1d644776"
+}

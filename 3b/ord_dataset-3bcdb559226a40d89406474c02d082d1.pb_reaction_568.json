@@ -1,0 +1,214 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[F:1][C:2]([F:16])([F:15])[CH2:3][N:4]1[C:12]2[C:7](=[CH:8][CH:9]=[CH:10][CH:11]=2)[C:6](=O)[C:5]1=[O:14].Cl(O)(=O)(=O)=O>[Pd].C(O)(=O)C>[F:16][C:2]([F:1])([F:15])[CH2:3][N:4]1[C:12]2[C:7](=[CH:8][CH:9]=[CH:10][CH:11]=2)[CH2:6][C:5]1=[O:14]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m3_m4_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "1-(2,2,2-trifluoro-ethyl)-1H-indole-2,3-dione"
+            },
+            {
+              "type": "SMILES",
+              "value": "FC(CN1C(C(C2=CC=CC=C12)=O)=O)(F)F"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C10H6F3NO2/c11-10(12,13)5-14-7-4-2-1-3-6(7)8(15)9(14)16/h1-4H,5H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 9.2,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "perchloric acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl(=O)(=O)(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/ClHO4/c2-1(3,4)5/h(H,2,3,4,5)"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 6.4,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "palladium on carbon"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Pd]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Pd"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 2.4,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "CATALYST"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acetic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H4O2/c1-2(3)4/h1H3,(H,3,4)"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 100.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture of 1-(2,2,2-trifluoro-ethyl)-1H-indole-2,3-dione (9.2 g, 40 mmol) and 10% palladium on carbon (2.4 g) in acetic acid (100 mL) and 70% perchloric acid (6.4 mL, 80 mmol) was hydrogenated in a Parr apparatus for 22 hours. The mixture was filtered through diatomaceous earth, diluted with water (1.5 L) and the precipitate was collected and dried. mp 155-162° C. Yield 7.5 g (87%)."
+  },
+  "workups": [
+    {
+      "type": "FILTRATION",
+      "details": "The mixture was filtered through diatomaceous earth"
+    },
+    {
+      "type": "ADDITION",
+      "details": "diluted with water (1.5 L)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 1.5,
+                "units": "LITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the precipitate was collected"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 22.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "1-(2,2,2-Trifluoro-ethyl)-1,3-dihydro-indol-2-one"
+            },
+            {
+              "type": "SMILES",
+              "value": "FC(CN1C(CC2=CC=CC=C12)=O)(F)F"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C10H8F3NO/c11-10(12,13)6-14-8-4-2-1-3-7(8)5-9(14)15/h1-4H,5-6H2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998463",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:25.505441"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-71726128dbff49b89aca16c8a8f66f7a"
+}

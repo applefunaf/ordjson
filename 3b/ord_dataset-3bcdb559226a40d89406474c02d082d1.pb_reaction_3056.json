@@ -1,0 +1,353 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[C:1]1([C:7]2[CH:19]=[CH:18][C:10]([C:11]([C:13]([O:15][CH2:16][CH3:17])=[O:14])=[O:12])=[CH:9][CH:8]=2)[CH:6]=[CH:5][CH:4]=[CH:3][CH:2]=1.[CH2:20]1COCC1.C[Mg]I.[NH4+].[Cl-]>CCOCC>[C:7]1([C:1]2[CH:2]=[CH:3][CH:4]=[CH:5][CH:6]=2)[CH:19]=[CH:18][C:10]([C:11]([OH:12])([CH3:20])[C:13]([O:15][CH2:16][CH3:17])=[O:14])=[CH:9][CH:8]=1 |f:3.4|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "NH4Cl"
+            },
+            {
+              "type": "SMILES",
+              "value": "[NH4+].[Cl-]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/ClH.H3N/h1H;1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 100.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m6": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ether"
+            },
+            {
+              "type": "SMILES",
+              "value": "CCOCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 200.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m1_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethyl 4-phenylbenzoylformate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1(=CC=CC=C1)C1=CC=C(C(=O)C(=O)OCC)C=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C16H14O3/c1-2-19-16(18)15(17)14-10-8-13(9-11-14)12-6-4-3-5-7-12/h3-11H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 24.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "THF"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1CCOC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O/c1-2-4-5-3-1/h1-4H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 300.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "solution"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methylmagnesium iodide"
+            },
+            {
+              "type": "SMILES",
+              "value": "C[Mg]I"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH3.HI.Mg/h1H3;1H;/q;;+1/p-1"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": -25.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "with stirring to -25° C."
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a flame dried 500 mL flask flushed with N2, was added 24 g (100 mmol) of ethyl 4-phenylbenzoylformate and 300 mL of anhydrous THF. The solution was cooled with stirring to -25° C. and 37 mL (110 mmol) of a 3.0 M solution of methylmagnesium iodide was added at a rate to maintain the reaction temperature below -10° C. The reaction progress was monitored by TLC and upon disappearance of starting material, 100 mL of saturated NH4Cl solution and 200 mL of ether were added. The organic layer was separated and washed with 2×50 mL of brine, dried (MgSO4) and concentrated leaving racemic ethyl 2-[(1,1'-biphenyl)-4-yl]-2-hydroxypropionate as an oil."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "To a flame dried 500 mL flask"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "flushed with N2",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "N2"
+              },
+              {
+                "type": "SMILES",
+                "value": "N#N"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/N2/c1-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "The solution was cooled"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "to maintain the reaction temperature below -10° C"
+    },
+    {
+      "type": "ADDITION",
+      "details": "were added"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The organic layer was separated"
+    },
+    {
+      "type": "WASH",
+      "details": "washed with 2×50 mL of brine",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "brine"
+              },
+              {
+                "type": "SMILES",
+                "value": "[Cl-].[Na+].O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH.Na.H2O/h1H;;1H2/q;+1;/p-1"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 50.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "dried (MgSO4)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "MgSO4"
+              },
+              {
+                "type": "SMILES",
+                "value": "[O-]S(=O)(=O)[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "racemic ethyl 2-[(1,1'-biphenyl)-4-yl]-2-hydroxypropionate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1(=CC=C(C=C1)C(C(=O)OCC)(C)O)C1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C17H18O3/c1-3-20-16(18)17(2,19)15-11-9-14(10-12-15)13-7-5-4-6-8-13/h4-12,19H,3H2,1-2H3"
+            }
+          ],
+          "texture": {
+            "type": "OIL",
+            "details": "oil"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06005000",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:19.440769"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-fe9e8562776d45cc960830e972f3134a"
+}

@@ -1,0 +1,338 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[O:1]1[C:5]2[CH:6]=[CH:7][CH:8]=[CH:9][C:4]=2[C:3](=O)[CH2:2]1.Cl.[CH3:12][O:13][NH2:14].C([O-])(=O)C.[Na+]>CO>[CH3:12][O:13][N:14]=[C:3]1[C:4]2[CH:9]=[CH:8][CH:7]=[CH:6][C:5]=2[O:1][CH2:2]1 |f:1.2,3.4|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m3_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "benzofuran-3-one"
+            },
+            {
+              "type": "SMILES",
+              "value": "O1CC(C2=C1C=CC=C2)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H6O2/c9-7-5-10-8-4-2-1-3-6(7)8/h1-4H,5H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 6.7,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "O-methylhydroxylamine hydrochloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl.CON"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH5NO.ClH/c1-3-2;/h2H2,1H3;1H"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 4.2,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sodium acetate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)[O-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H4O2.Na/c1-2(3)4;/h1H3,(H,3,4);/q;+1/p-1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 4.1,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 50.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "6.7 g (0.05 mol) of benzofuran-3-one together with 4.2 g (0.05 mol) of O-methylhydroxylamine hydrochloride and 4.1 g (0.05 mol) of sodium acetate in 50 ml of methanol are heated under reflux for 3 hours. The solvent is distilled off under reduced pressure and the reaction mixture is poured into water and extracted with ethyl acetate. The organic phase is washed with saturated aqueous sodium carbonate solution. The organic phase is dried over sodium sulphate and the solvent is distilled off under reduced pressure. 7.27 g (89.2% of theory) of crude benzofuran-3-one O-methyl-oxime are obtained. For analysis, the crude product is distilled at 2 torr and 70° C. using a Kugelrohr. An oil is obtained which, both according to NMR analysis and according to HPLC analysis, comprises two stereoisomers (79% of isomer B and 21% of isomer A)."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "under reflux for 3 hours",
+      "duration": {
+        "value": 3.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "DISTILLATION",
+      "details": "The solvent is distilled off under reduced pressure"
+    },
+    {
+      "type": "ADDITION",
+      "details": "the reaction mixture is poured into water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "extracted with ethyl acetate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "The organic phase is washed with saturated aqueous sodium carbonate solution",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "sodium carbonate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C([O-])([O-])=O.[Na+].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2O3.2Na/c2-1(3)4;;/h(H2,2,3,4);;/q;2*+1/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "The organic phase is dried over sodium sulphate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "sodium sulphate"
+              },
+              {
+                "type": "SMILES",
+                "value": "S(=O)(=O)([O-])[O-].[Na+].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/2Na.H2O4S/c;;1-5(2,3)4/h;;(H2,1,2,3,4)/q2*+1;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DISTILLATION",
+      "details": "the solvent is distilled off under reduced pressure"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "benzofuran-3-one O-methyl-oxime"
+            },
+            {
+              "type": "SMILES",
+              "value": "CON=C1COC2=C1C=CC=C2"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H9NO2/c1-11-10-8-6-12-9-5-3-2-4-7(8)9/h2-5H,6H2,1H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 7.27,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 89.2
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 89.1
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06005104",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:23.035354"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-9cbadb58fa8848a8bf638f3b575c76d6"
+}

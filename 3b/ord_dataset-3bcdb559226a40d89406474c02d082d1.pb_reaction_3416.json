@@ -1,0 +1,301 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "C1(P(C2C=CC=CC=2)C2C=CC=CC=2)C=CC=CC=1.C(OC([N+](C(OCC)=O)=[N-])=O)C.[OH:32][C:33]1[CH:37]=[C:36]([C:38]2[CH:43]=[CH:42][CH:41]=[CH:40][CH:39]=2)[O:35][N:34]=1.[Br:44][CH2:45][CH2:46]O>C1(C)C=CC=CC=1>[Br:44][CH2:45][CH2:46][O:32][C:33]1[CH:37]=[C:36]([C:38]2[CH:43]=[CH:42][CH:41]=[CH:40][CH:39]=2)[O:35][N:34]=1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Diethyldiazodicarboxylate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)OC(=O)[N+](=[N-])C(=O)OCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H10N2O4/c1-3-11-5(9)8(7)6(10)12-4-2/h3-4H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 10.4,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m1_m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Triphenylphosphine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1(=CC=CC=C1)P(C1=CC=CC=C1)C1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C18H15P/c1-4-10-16(11-5-1)19(17-12-6-2-7-13-17)18-14-8-3-9-15-18/h1-15H"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 15.7,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "toluene"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1(=CC=CC=C1)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H8/c1-7-5-3-2-4-6-7/h2-6H,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 200.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m3_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3-hydroxy-5-phenylisoxazole"
+            },
+            {
+              "type": "SMILES",
+              "value": "OC1=NOC(=C1)C1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H7NO2/c11-9-6-8(12-10-9)7-4-2-1-3-5-7/h1-6H,(H,10,11)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 8.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-bromoethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "BrCCO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H5BrO/c3-1-2-4/h4H,1-2H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 7.5,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 5.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "the resulting mixture was stirred at the same temperature for 10 minutes"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "Triphenylphosphine (15.7 g) was dissolved in toluene (200 ml), and the solution was cooled to 5° C. Diethyldiazodicarboxylate (10.4 g) was added to the solution, and the resulting mixture was stirred at the same temperature for 10 minutes. Then, 3-hydroxy-5-phenylisoxazole (8.0 g) and 2-bromoethanol (7.5 g) were added in this order to the reaction mixture, followed by stirring of the resulting mixture at room temperature for 10 minutes and further at room temperature for 2 hours. Insolubles were filtered off from the mixture, and the solvent was evaporated under reduced pressure. The residue was purified by silica gel column chromatography (eluent: hexane/ethyl acetate=4/1) to obtain the title compound (12.1 g, 90%) as colorless crystals."
+  },
+  "workups": [
+    {
+      "type": "STIRRING",
+      "details": "by stirring of the resulting mixture at room temperature for 10 minutes and further at room temperature for 2 hours",
+      "duration": {
+        "value": 2.0,
+        "units": "HOUR"
+      },
+      "temperature": {
+        "control": {
+          "type": "AMBIENT"
+        }
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "Insolubles were filtered off from the mixture"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the solvent was evaporated under reduced pressure"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The residue was purified by silica gel column chromatography (eluent: hexane/ethyl acetate=4/1)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "hexane ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCCCCC.C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C6H14.C4H8O2/c1-3-5-6-4-2;1-3-6-4(2)5/h3-6H2,1-2H3;3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 10.0,
+        "units": "MINUTE"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "3-(2-Bromoethoxy)-5-phenylisoxazole"
+            },
+            {
+              "type": "SMILES",
+              "value": "BrCCOC1=NOC(=C1)C1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C11H10BrNO2/c12-6-7-14-11-8-10(15-13-11)9-4-2-1-3-5-9/h1-5,8H,6-7H2"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 12.1,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 90.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 90.9
+              }
+            }
+          ],
+          "isolated_color": "colorless",
+          "texture": {
+            "type": "CRYSTAL",
+            "details": "crystals"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06005116",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:24.383916"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-bc24e459eeba469f8131e8bc7072edc3"
+}

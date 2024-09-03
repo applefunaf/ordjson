@@ -1,0 +1,297 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[NH2:1][C:2]1[C:3]([NH:12][CH2:13][C:14]2[CH:19]=[CH:18][C:17]([C:20]3[CH:25]=[CH:24][CH:23]=[CH:22][C:21]=3[C:26]#[N:27])=[CH:16][CH:15]=2)=[C:4]([CH:9]=[CH:10][CH:11]=1)[C:5]([O:7][CH3:8])=[O:6].Cl[C:29]([O:31][CH3:32])=[O:30]>N1C=CC=CC=1>[C:26]([C:21]1[CH:22]=[CH:23][CH:24]=[CH:25][C:20]=1[C:17]1[CH:18]=[CH:19][C:14]([CH2:13][NH:12][C:3]2[C:2]([NH:1][C:29]([O:31][CH3:32])=[O:30])=[CH:11][CH:10]=[CH:9][C:4]=2[C:5]([O:7][CH3:8])=[O:6])=[CH:15][CH:16]=1)#[N:27]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m3_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methyl 3-amino-2-[(2'-cyanobiphenyl-4-yl)methylamino]benzoate"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC=1C(=C(C(=O)OC)C=CC1)NCC1=CC=C(C=C1)C1=C(C=CC=C1)C#N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C22H19N3O2/c1-27-22(26)19-7-4-8-20(24)21(19)25-14-15-9-11-16(12-10-15)18-6-3-2-5-17(18)13-23/h2-12,25H,14,24H2,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 10.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methyl chloroformate"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC(=O)OC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H3ClO2/c1-5-2(3)4/h1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 9.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "pyridine"
+            },
+            {
+              "type": "SMILES",
+              "value": "N1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C5H5N/c1-2-4-6-5-3-1/h1-5H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 50.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "The mixture was stirred at room temperature for 3 hours"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a stirred solution of methyl 3-amino-2-[(2'-cyanobiphenyl-4-yl)methylamino]benzoate (10 g) in pyridine (50 ml) was added dropwise methyl chloroformate (9.0 ml) under ice-cooling. The mixture was stirred at room temperature for 3 hours and concentrated. The residue was extracted with ethyl acetate. The extract was washed with water, dried and evaporated. The residue was recrystallized from ethyl acetate--hexane to afford pale yellow needles (10.5 g, 90%), m.p. 113-115° C."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "cooling"
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated"
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "The residue was extracted with ethyl acetate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "The extract was washed with water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "evaporated"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The residue was recrystallized from ethyl acetate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 3.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "needles"
+            },
+            {
+              "type": "NAME",
+              "value": "Methyl 2-[(2'-cyanobiphenyl-4-yl)methylamino]-3-methoxycarbonylaminobenzoate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(#N)C1=C(C=CC=C1)C1=CC=C(C=C1)CNC1=C(C(=O)OC)C=CC=C1NC(=O)OC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C24H21N3O4/c1-30-23(28)20-8-5-9-21(27-24(29)31-2)22(20)26-15-16-10-12-17(13-11-16)19-7-4-3-6-18(19)14-25/h3-13,26H,15H2,1-2H3,(H,27,29)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 10.5,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 90.0
+              }
+            }
+          ],
+          "texture": {
+            "type": "CRYSTAL",
+            "details": "needles"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06004989",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:22.427610"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-29b7534be6844abb803eda5a27d19766"
+}

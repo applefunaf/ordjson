@@ -1,0 +1,344 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[Cl:1][CH2:2][CH2:3][CH2:4][N:5]1[C:9]2[CH:10]=[CH:11][CH:12]=[CH:13][C:8]=2[O:7][C:6]1=[O:14].[C:15](O)(=[O:17])[CH3:16]>>[Cl:1][CH2:2][CH2:3][CH2:4][N:5]1[C:9]2[CH:10]=[CH:11][C:12]([C:15](=[O:17])[CH3:16])=[CH:13][C:8]=2[O:7][C:6]1=[O:14]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ice water"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m1_m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-(3-chloropropyl)-2-benzoxazolinone"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClCCCN1C(OC2=C1C=CC=C2)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C10H10ClNO2/c11-6-3-7-12-8-4-1-2-5-9(8)14-10(12)13/h1-2,4-5H,3,6-7H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 8.5,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "polyphosphoric acid"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 100.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acetic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H4O2/c1-2(3)4/h1H3,(H,3,4)"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 2.3,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 100.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "was stirred"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture of N-(3-chloropropyl)-2-benzoxazolinone (8.5 g, 40 mmol), polyphosphoric acid (100 g), and acetic acid (2.4 g, 2.3 ml, 40 mmol), was stirred and heated at 100° C. for 2 hours. The hot solution was poured into ice-water to deposit a yellow gum. The mixture was extracted with dichloromethane, and insolubles were filtered. The dichloromethane extract was washed with water, dried (K2CO3), and concentrated to afford 6.4 g of a slightly green solid. This was recrystallized from ethanol (95%) to yield N-(3-chloropropyl)-6-acetyl-2-benzoxazolinone as a brown solid, 3.5 g, m.p.=100-103° C."
+  },
+  "workups": [
+    {
+      "type": "EXTRACTION",
+      "details": "The mixture was extracted with dichloromethane, and insolubles",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "dichloromethane"
+              },
+              {
+                "type": "SMILES",
+                "value": "ClCCl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "were filtered"
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "The dichloromethane extract",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "dichloromethane"
+              },
+              {
+                "type": "SMILES",
+                "value": "ClCCl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "was washed with water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "dried (K2CO3)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "K2CO3"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(=O)([O-])[O-].[K+].[K+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2O3.2K/c2-1(3)4;;/h(H2,2,3,4);;/q;2*+1/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to afford 6.4 g of a slightly green solid"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "This was recrystallized from ethanol (95%)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-(3-chloropropyl)-6-acetyl-2-benzoxazolinone"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClCCCN1C(OC2=C1C=CC(=C2)C(C)=O)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C12H12ClNO3/c1-8(15)9-3-4-10-11(7-9)17-12(16)14(10)6-2-5-13/h3-4,7H,2,5-6H2,1H3"
+            }
+          ],
+          "isolated_color": "brown",
+          "texture": {
+            "type": "CUSTOM",
+            "details": "solid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06001834",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:22.411053"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-c5ab8b88b4c84359bd5c0baa8093a8a5"
+}

@@ -1,0 +1,211 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[F:1][C:2]1[CH:13]=[CH:12][C:5]([CH:6]=[C:7]([CH3:11])[C:8]([OH:10])=[O:9])=[CH:4][CH:3]=1>[Pd].C(O)C>[F:1][C:2]1[CH:3]=[CH:4][C:5]([CH2:6][CH:7]([CH3:11])[C:8]([OH:10])=[O:9])=[CH:12][CH:13]=1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m4_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "p-fluoro-α-methylcinnamic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "FC1=CC=C(C=C(C(=O)O)C)C=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C10H9FO2/c1-7(10(12)13)6-8-2-4-9(11)5-3-8/h2-6H,1H3,(H,12,13)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 177.9,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Pd/C"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Pd]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Pd"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 11.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "CATALYST"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "40"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To p-fluoro-α-methylcinnamic acid (177.9 g, 0.987 mol) in 3.61 ethanol is added 11.0 g of 5% Pd/C. The mixture is reduced at room temperature under a hydrogen pressure of 40 p.s.i. When hydrogen uptake ceases, the catalyst is filtered off, and the filtrate is concentrated in vacuo to give the product, p-fluoro-α-methylhydrocinnamic acid, which was used without weighing in the next step."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "is reduced at room temperature under a hydrogen",
+      "temperature": {
+        "control": {
+          "type": "AMBIENT"
+        }
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "When hydrogen uptake ceases, the catalyst is filtered off",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "hydrogen"
+              },
+              {
+                "type": "SMILES",
+                "value": "[H][H]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2/h1H"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "the filtrate is concentrated in vacuo"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "p-fluoro-α-methylhydrocinnamic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "FC1=CC=C(CC(C(=O)O)C)C=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C10H11FO2/c1-7(10(12)13)6-8-2-4-9(11)5-3-8/h2-5,7H,6H2,1H3,(H,12,13)"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998477",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:25.597176"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-b719b1d106364308aef476975b02f877"
+}

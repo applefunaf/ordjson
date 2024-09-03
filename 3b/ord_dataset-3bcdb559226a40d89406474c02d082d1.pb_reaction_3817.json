@@ -1,0 +1,360 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[Br:1][C:2]1[CH:11]=[CH:10][C:9]2[C:4](=[CH:5][CH:6]=[CH:7][CH:8]=2)[CH:3]=1.[Cl-].[Al+3].[Cl-].[Cl-].[C:16](Cl)(=[O:18])[CH3:17]>[N+](C1C=CC=CC=1)([O-])=O>[C:16]([C:7]1[CH:6]=[CH:5][C:4]2[C:9](=[CH:10][CH:11]=[C:2]([Br:1])[CH:3]=2)[CH:8]=1)(=[O:18])[CH3:17] |f:1.2.3.4|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-bromonaphthalene"
+            },
+            {
+              "type": "SMILES",
+              "value": "BrC1=CC2=CC=CC=C2C=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C10H7Br/c11-10-6-5-8-3-1-2-4-9(8)7-10/h1-7H"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 44.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "aluminum chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Cl-].[Al+3].[Cl-].[Cl-]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Al.3ClH/h;3*1H/q+3;;;/p-3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 34.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "nitrobenzene"
+            },
+            {
+              "type": "SMILES",
+              "value": "[N+](=O)([O-])C1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H5NO2/c8-7(9)6-4-2-1-3-5-6/h1-5H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 400.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acetyl chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H3ClO/c1-2(3)4/h1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 21.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a cold (10° C.) mixture of 44.0 g (0.212 mol) of 2-bromonaphthalene and 34.0 g (0.255 mol) of aluminum chloride in 400 ml of nitrobenzene was added 21.0 g (267 mmol) of acetyl chloride. The mechanically stirred reaction mixture was warmed to room temperature, and heated to 40° C. for 18 hours. After cooling to 0° C. in an ice bath, the reaction was quenched by the addition of 12M HCl (70 ml). The layers were separated and the organic phase was washed with water and dilute aqueous Na2CO3. Kugelrohr distillation, followed by recrystallization from 10% EtOAc-hexane yielded 23 g of the title compound as a tan solid. 1H NMR (CDCl3): δ 8.44 (1H, br s), 8.04-8.10 (2H, m), 7.85 (1H, d, J=8.5 Hz), 7.82 (1H, d, J=8.8 Hz), 7.64 (1H, d, J=8.8 Hz), 2.73 (3H, s)."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "The mechanically stirred reaction mixture"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "heated to 40° C. for 18 hours",
+      "duration": {
+        "value": 18.0,
+        "units": "HOUR"
+      },
+      "temperature": {
+        "setpoint": {
+          "value": 40.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "After cooling to 0° C. in an ice bath",
+      "temperature": {
+        "setpoint": {
+          "value": 0.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the reaction was quenched by the addition of 12M HCl (70 ml)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "HCl"
+              },
+              {
+                "type": "SMILES",
+                "value": "Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH/h1H"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 70.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The layers were separated"
+    },
+    {
+      "type": "WASH",
+      "details": "the organic phase was washed with water and dilute aqueous Na2CO3",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "Na2CO3"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(=O)([O-])[O-].[Na+].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2O3.2Na/c2-1(3)4;;/h(H2,2,3,4);;/q;2*+1/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DISTILLATION",
+      "details": "Kugelrohr distillation"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "followed by recrystallization from 10% EtOAc-hexane",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "EtOAc hexane"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOC(=O)C.CCCCCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C6H14.C4H8O2/c1-3-5-6-4-2;1-3-6-4(2)5/h3-6H2,1-2H3;3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "2-acetyl-6-bromonaphthalene"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)C1=CC2=CC=C(C=C2C=C1)Br"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C12H9BrO/c1-8(14)9-2-3-11-7-12(13)5-4-10(11)6-9/h2-7H,1H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 23.0,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 43.6
+              }
+            }
+          ],
+          "isolated_color": "tan",
+          "texture": {
+            "type": "CUSTOM",
+            "details": "solid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06008204",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:18.483576"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-d0de1e96c64b488fa9258184b0743f82"
+}

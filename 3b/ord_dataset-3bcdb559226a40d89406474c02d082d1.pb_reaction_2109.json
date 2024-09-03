@@ -1,0 +1,284 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[NH2:1][C:2]1[CH:7]=[CH:6][C:5]([Br:8])=[CH:4][N:3]=1.C(N(CC)C(C)C)(C)C.Cl[C:19]([O:21][CH3:22])=[O:20]>C(Cl)(Cl)Cl>[CH3:22][O:21][C:19](=[O:20])[NH:1][C:2]1[CH:7]=[CH:6][C:5]([Br:8])=[CH:4][N:3]=1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m4_m3_m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-amino-5-bromopyridine"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC1=NC=C(C=C1)Br"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C5H5BrN2/c6-4-1-2-5(7)8-3-4/h1-3H,(H2,7,8)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 9.46,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N,N-diisopropylethylamine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(C)N(C(C)C)CC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H19N/c1-6-9(7(2)3)8(4)5/h7-8H,6H2,1-5H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 3.1,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methyl chloroformate"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC(=O)OC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H3ClO2/c1-5-2(3)4/h1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 2.3,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "chloroform"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(Cl)(Cl)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CHCl3/c2-1(3)4/h1H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 20.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "chloroform"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(Cl)(Cl)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CHCl3/c2-1(3)4/h1H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 25.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 0.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "with stirring at 0° C"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A solution of 2-amino-5-bromopyridine (9.46 g, 20 mmol) and N,N-diisopropylethylamine (3.10 g) in chloroform (20 ml) was added to a solution of methyl chloroformate (2.30 g, 24 mmol) in chloroform (25 ml) dropwise with stirring at 0° C. The reaction mixture was stirred for 20 minutes, filtered and the precipitate was washed with chloroform and dried to afford 1.71 g (37%) of the title product as a white solid. mp 191-192° C. 1H NMR (CDCl3): δ=8.42 (d, 1 H); 8.30 (d, 1 H); 7.91 (d, 1 H); 7.77 (d of d, 1 H); 3.79 (s, 3 H). MS (El): m/z=230, 232 (M+, Br isotopes)."
+  },
+  "workups": [
+    {
+      "type": "STIRRING",
+      "details": "The reaction mixture was stirred for 20 minutes",
+      "duration": {
+        "value": 20.0,
+        "units": "MINUTE"
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filtered"
+    },
+    {
+      "type": "WASH",
+      "details": "the precipitate was washed with chloroform",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "chloroform"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(Cl)(Cl)Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CHCl3/c2-1(3)4/h1H"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title product"
+            },
+            {
+              "type": "NAME",
+              "value": "N-(5-Bromo-pyridin-2-yl)-carbamic acid methyl ester"
+            },
+            {
+              "type": "SMILES",
+              "value": "COC(NC1=NC=C(C=C1)Br)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H7BrN2O2/c1-12-7(11)10-6-3-2-5(8)4-9-6/h2-4H,1H3,(H,9,10,11)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 1.71,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 37.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 37.0
+              }
+            }
+          ],
+          "isolated_color": "white",
+          "texture": {
+            "type": "CUSTOM",
+            "details": "solid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06001856",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:18.688908"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-4a6fe7aff47b4c51a876b153eaf40386"
+}

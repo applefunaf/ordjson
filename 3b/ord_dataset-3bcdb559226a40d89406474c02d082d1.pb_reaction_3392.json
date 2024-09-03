@@ -1,0 +1,212 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "C(OC([NH:8][CH2:9][CH2:10][O:11][C:12]1[C:16]([C:17](O)([CH3:19])[CH3:18])=[C:15]([C:21]2[CH:26]=[CH:25][CH:24]=[CH:23][CH:22]=2)[O:14][N:13]=1)=O)(C)(C)C.[ClH:27].O1CCOCC1>>[ClH:27].[NH2:8][CH2:9][CH2:10][O:11][C:12]1[C:16]([C:17]([CH3:19])=[CH2:18])=[C:15]([C:21]2[CH:22]=[CH:23][CH:24]=[CH:25][CH:26]=2)[O:14][N:13]=1 |f:1.2,3.4|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3-(2-(N-tert-Butoxycarbonylamino)ethoxy)-4-(1-hydroxyisopropyl)-5-phenylisoxazole"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(C)(C)OC(=O)NCCOC1=NOC(=C1C(C)(C)O)C1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C19H26N2O5/c1-18(2,3)25-17(22)20-11-12-24-16-14(19(4,5)23)15(26-21-16)13-9-7-6-8-10-13/h6-10,23H,11-12H2,1-5H3,(H,20,22)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.13,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrochloric acid 1,4-dioxane"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl.O1CCOCC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O2.ClH/c1-2-6-4-3-5-1;/h1-4H2;1H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 10.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 100.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "the solution was stirred at 100° C. for one hour"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "3-(2-(N-tert-Butoxycarbonylamino)ethoxy)-4-(1-hydroxyisopropyl)-5-phenylisoxazole (0.13 g) was dissolved in a 4N hydrochloric acid/1,4-dioxane solution (10 ml), and the solution was stirred at 100° C. for one hour. After the reaction, the reaction mixture was left to be cooled, followed by evaporation of the solvent under reduced pressure. The residue was washed with ethyl acetate to obtain the title compound (0.10 g, 83%) as colorless crystals."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "After the reaction"
+    },
+    {
+      "type": "WAIT",
+      "details": "the reaction mixture was left"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "to be cooled"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "followed by evaporation of the solvent under reduced pressure"
+    },
+    {
+      "type": "WASH",
+      "details": "The residue was washed with ethyl acetate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 1.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "3-(2-Aminoethoxy)-4-isopropenyl-5-phenylisoxazole hydrochloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl.NCCOC1=NOC(=C1C(=C)C)C1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C14H16N2O2.ClH/c1-10(2)12-13(11-6-4-3-5-7-11)18-16-14(12)17-9-8-15;/h3-7H,1,8-9,15H2,2H3;1H"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 0.1,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 83.0
+              }
+            }
+          ],
+          "isolated_color": "colorless",
+          "texture": {
+            "type": "CRYSTAL",
+            "details": "crystals"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06005116",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:24.149627"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-f493ffc7cc574ba689329d75364963ae"
+}

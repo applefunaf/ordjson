@@ -1,0 +1,380 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[NH2:1][C:2]1[CH:10]=[CH:9][C:8]([Cl:11])=[CH:7][C:3]=1[C:4]([OH:6])=[O:5].[Br:12]Br>CC(O)=O>[NH2:1][C:2]1[C:10]([Br:12])=[CH:9][C:8]([Cl:11])=[CH:7][C:3]=1[C:4]([OH:6])=[O:5]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m3_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-amino-5-chlorobenzoic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC1=C(C(=O)O)C=C(C=C1)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H6ClNO2/c8-4-1-2-6(9)5(3-4)7(10)11/h1-3H,9H2,(H,10,11)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 200.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Br2"
+            },
+            {
+              "type": "SMILES",
+              "value": "BrBr"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Br2/c1-2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 184.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "HOAc"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H4O2/c1-2(3)4/h1H3,(H,3,4)"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 3.4,
+              "units": "LITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 15.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "The mixture was stirred at 15° C. for 4 hrs"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a solution of 200 g (1.05 mol) of 2-amino-5-chlorobenzoic acid in 3.4 L of HOAc at 15° C. was added dropwise 184 g (1.15 mol) of Br2. The mixture was stirred at 15° C. for 4 hrs, quenched slowly into 8 L of water, and extracted with 2×2 L of t-BuOMe. The combined extract was washed with water, dried over MgSO4 and concentrated. The crude product was treated with hot hexane, filtered and dried to give 210 g (80%) of 2-amino-3-bromo-5-chlorobenzoic acid as white solid. Mp. 225-2280° C. 1H NMR (DMSO-d6): δ7.70 (d, J=2.6 Hz, 1 H), 7.69 (d, J=2.6 Hz, 1 H), 6.8 (bs, 2 H). 13C NMR (DMSO-d6): δ168.16, 147.06, 136.25, 130.19, 118.22, 112.35,110.34. IR:3480 (m), 3350 (m), 2920 (s), 1670 (s) cm-1. Analysis calcd. for C7H5BrClNO2 : C, 33.53, H, 2.00, N, 5.59; Found: C, 33.63, H, 2.12, N, 5.70. ##STR22##"
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "quenched slowly into 8 L of water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 8.0,
+                "units": "LITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "extracted with 2×2 L of t-BuOMe",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "t-BuOMe"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(C)(C)OC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C5H12O/c1-5(2,3)6-4/h1-4H3"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 2.0,
+                "units": "LITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "The combined extract"
+    },
+    {
+      "type": "WASH",
+      "details": "was washed with water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "dried over MgSO4",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "MgSO4"
+              },
+              {
+                "type": "SMILES",
+                "value": "[O-]S(=O)(=O)[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated"
+    },
+    {
+      "type": "ADDITION",
+      "details": "The crude product was treated with hot hexane",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "crude product"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "hexane"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCCCCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C6H14/c1-3-5-6-4-2/h3-6H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filtered"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 4.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-amino-3-bromo-5-chlorobenzoic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC1=C(C(=O)O)C=C(C=C1Br)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H5BrClNO2/c8-5-2-3(9)1-4(6(5)10)7(11)12/h1-2H,10H2,(H,11,12)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 210.0,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 80.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 79.8
+              }
+            }
+          ],
+          "isolated_color": "white",
+          "texture": {
+            "type": "CUSTOM",
+            "details": "solid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998620",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:32.174010"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-56f61c2643744556b13e83e21a40d69f"
+}

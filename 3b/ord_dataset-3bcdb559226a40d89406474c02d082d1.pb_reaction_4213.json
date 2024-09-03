@@ -1,0 +1,239 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "CO[C:3](=[N:12][N+:13]([O-:15])=[O:14])[NH:4][CH2:5][C:6]1[S:10][C:9]([Cl:11])=[N:8][CH:7]=1.[CH3:16][NH2:17].Cl>O>[Cl:11][C:9]1[S:10][C:6]([CH2:5][NH:4][C:3]([NH:17][CH3:16])=[N:12][N+:13]([O-:15])=[O:14])=[CH:7][N:8]=1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrochloric acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/ClH/h1H"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 14.3,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "aqueous solution"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methylamine"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH5N/c1-2/h2H2,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 25.5,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m1_m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "O-methyl-N-(2-chloro-5-thiazolylmethyl)-N'-nitroisourea"
+            },
+            {
+              "type": "SMILES",
+              "value": "COC(NCC1=CN=C(S1)Cl)=N[N+](=O)[O-]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H7ClN4O3S/c1-14-6(10-11(12)13)9-3-4-2-8-5(7)15-4/h2H,3H2,1H3,(H,9,10)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 47.2,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 410.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "After 2 hours of stirring at room temperature"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a suspension of O-methyl-N-(2-chloro-5-thiazolylmethyl)-N'-nitroisourea (87% purity, 47.2 g, 0.164 mol) in water (410 ml) was added 40% aqueous solution of methylamine (25.5 g, 0.328 mol, 2.0 equivalents) dropwise at 23° C. After 2 hours of stirring at room temperature, the mixture was allowed to stand under ice-cooling and then, 36% hydrochloric acid (14.3 mol, 0.168 mol) was added dropwise at 13-20° C. The resulting crystals were collected by filtration to provide 39.1 g (95.6% yield) of 1-(2-chloro-5-thiazolylmethyl)-3-methyl-2-nitroguanidine."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "cooling"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "The resulting crystals were collected by filtration"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 2.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "1-(2-chloro-5-thiazolylmethyl)-3-methyl-2-nitroguanidine"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC=1SC(=CN1)CNC(=N[N+](=O)[O-])NC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H8ClN5O2S/c1-8-6(11-12(13)14)10-3-4-2-9-5(7)15-4/h2H,3H2,1H3,(H2,8,10,11)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 39.1,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 95.6
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 95.5
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06008363",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:25.529552"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-7debdd5a929142888b6032fd2465c490"
+}

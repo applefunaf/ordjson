@@ -1,0 +1,246 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[NH2:1][C:2]1[CH:7]=[C:6]([CH3:8])[CH:5]=[CH:4][N:3]=1.Cl[S:10][C:11]1[CH:19]=[CH:18][CH:17]=[CH:16][C:12]=1[C:13](Cl)=[O:14]>N1C=CC=CC=1>[CH3:8][C:6]1[CH:5]=[CH:4][N:3]=[C:2]([N:1]2[C:13](=[O:14])[C:12]3[CH:16]=[CH:17][CH:18]=[CH:19][C:11]=3[S:10]2)[CH:7]=1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-amino-4-methylpyridine"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC1=NC=CC(=C1)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H8N2/c1-5-2-3-8-6(7)4-5/h2-4H,1H3,(H2,7,8)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 5.4,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-chlorosulfenylbenzoyl chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClSC1=C(C(=O)Cl)C=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H4Cl2OS/c8-7(10)5-3-1-2-4-6(5)11-9/h1-4H"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 10.3,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "pyridine"
+            },
+            {
+              "type": "SMILES",
+              "value": "N1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C5H5N/c1-2-4-6-5-3-1/h1-5H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 50.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 50.0,
+        "units": "CELSIUS"
+      }
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "Using the method of Fischer and Hurni (Arzneimittel Forsch., 1964;14:1301) 5.4 g (0.05 mol) of 2-amino-4-methylpyridine in 50 mL of pyridine at 10° C. was reacted with 10.3 g (0.05 mol) of 2-chlorosulfenylbenzoyl chloride. The mixture was heated to 50° C. and maintained at that temperature for 2 hours. The mixture was cooled to 25° C. and filtered. The solid was recrystallized from benzene to give 4.5 g of the title compound, mp 195-196.5° C."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "at 10° C.",
+      "temperature": {
+        "setpoint": {
+          "value": 10.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "maintained at that temperature for 2 hours",
+      "duration": {
+        "value": 2.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "The mixture was cooled to 25° C.",
+      "temperature": {
+        "setpoint": {
+          "value": 25.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filtered"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The solid was recrystallized from benzene",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "benzene"
+              },
+              {
+                "type": "SMILES",
+                "value": "C1=CC=CC=C1"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C6H6/c1-2-4-6-5-3-1/h1-6H"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "2-(4-Methylpyridin-2-yl)-3-oxo-3h-benzo[d]isothiazole"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC1=CC(=NC=C1)N1SC2=C(C1=O)C=CC=C2"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C13H10N2OS/c1-9-6-7-14-12(8-9)15-13(16)10-4-2-3-5-11(10)17-15/h2-8H,1H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 4.5,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 37.1
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06001863",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:19.130878"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-6d10aa935e0b4b80a4cdae5442daf0a1"
+}

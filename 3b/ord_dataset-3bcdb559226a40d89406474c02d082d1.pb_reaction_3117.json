@@ -1,0 +1,305 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[N+:1]([C:4]1[CH:9]=[CH:8][C:7]([C:10]([F:13])([F:12])[F:11])=[CH:6][C:5]=1[OH:14])([O-])=O.Cl[Sn]Cl>CCO>[NH2:1][C:4]1[CH:9]=[CH:8][C:7]([C:10]([F:11])([F:12])[F:13])=[CH:6][C:5]=1[OH:14]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-nitro-5-trifluoromethylphenol"
+            },
+            {
+              "type": "SMILES",
+              "value": "[N+](=O)([O-])C1=C(C=C(C=C1)C(F)(F)F)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H4F3NO3/c8-7(9,10)4-1-2-5(11(13)14)6(12)3-4/h1-3,12H"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 500.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "SnCl2"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl[Sn]Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/2ClH.Sn/h2*1H;/q;;+2/p-2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 3.5,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "EtOH"
+            },
+            {
+              "type": "SMILES",
+              "value": "CCO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "2-Amino-5-trifluoromethylphenol was prepared by treating 2-nitro-5-trifluoromethylphenol (500 mg, 2.41 mmol) with a solution of SnCl2 (3.5 g, mmol) in EtOH at 23° C. for 12 h. The mixture was concentrated to 50 mL and adjusted to pH 7 using saturated sodium bicarbonate. The reaction mixture was partitioned between H2O and EtOAc. The aqueous layer was separated and extracted with EtOAc. The combined organic extracts were dried over sodium sulfate, filtered and concentrated in vacuo. The resulting colorless oil (370 mg, 87%) was used without further purification. 1H NMR (CDCl3); 7.6 (s, 1H), 7.39 (d, 1H, J=8.5 Hz), 7.08 (d, 1H, J=8.5 Hz)"
+  },
+  "workups": [
+    {
+      "type": "CONCENTRATION",
+      "details": "The mixture was concentrated to 50 mL"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The reaction mixture was partitioned between H2O and EtOAc",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "H2O"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "EtOAc"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOC(=O)C"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The aqueous layer was separated"
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "extracted with EtOAc",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "EtOAc"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOC(=O)C"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "The combined organic extracts were dried over sodium sulfate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "sodium sulfate"
+              },
+              {
+                "type": "SMILES",
+                "value": "S(=O)(=O)([O-])[O-].[Na+].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/2Na.H2O4S/c;;1-5(2,3)4/h;;(H2,1,2,3,4)/q2*+1;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filtered"
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated in vacuo"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The resulting colorless oil (370 mg, 87%) was used without further purification",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "oil"
+              }
+            ],
+            "amount": {
+              "mass": {
+                "value": 370.0,
+                "units": "MILLIGRAM"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-Amino-5-trifluoromethylphenol"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC1=C(C=C(C=C1)C(F)(F)F)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H6F3NO/c8-7(9,10)4-1-2-5(11)6(12)3-4/h1-3,12H,11H2"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06005008",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:20.290089"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-eac29e9713904d379542def69d024258"
+}

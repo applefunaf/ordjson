@@ -1,0 +1,190 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[C:1]1([CH2:7][NH:8][C:9](=[O:19])[C:10]2[CH:15]=[CH:14][CH:13]=[C:12]([N+:16]([O-])=O)[CH:11]=2)[CH:6]=[CH:5][CH:4]=[CH:3][CH:2]=1.[H][H]>CO.[Pd]>[C:1]1([CH2:7][NH:8][C:9](=[O:19])[C:10]2[CH:15]=[CH:14][CH:13]=[C:12]([NH2:16])[CH:11]=2)[CH:2]=[CH:3][CH:4]=[CH:5][CH:6]=1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m3_m4_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "product"
+            },
+            {
+              "type": "NAME",
+              "value": "N-phenylmethyl-3-nitrobenzamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1(=CC=CC=C1)CNC(C1=CC(=CC=C1)[N+](=O)[O-])=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C14H12N2O3/c17-14(15-10-11-5-2-1-3-6-11)12-7-4-8-13(9-12)16(18)19/h1-9H,10H2,(H,15,17)"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrogen"
+            },
+            {
+              "type": "SMILES",
+              "value": "[H][H]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2/h1H"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 100.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "palladium on carbon"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Pd]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Pd"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.4,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "CATALYST"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A sample of the product of step (a), 8.8 g, was dissolved in 100 ml of methanol and hydrogenated with 0.4 g of 10% palladium on carbon and 50 PSI hydrogen. After 90 minutes, the mix was filtered and evaporated. The solid residue was slurried in ethyl ether, and filtered to provide crude N-phenylmethyl-3-aminobenzamide, mp 95-100° C, m.s. (M+H)+ =227"
+  },
+  "workups": [
+    {
+      "type": "FILTRATION",
+      "details": "the mix was filtered"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "evaporated"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filtered"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 90.0,
+        "units": "MINUTE"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-phenylmethyl-3-aminobenzamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1(=CC=CC=C1)CNC(C1=CC(=CC=C1)N)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C14H14N2O/c15-13-8-4-7-12(9-13)14(17)16-10-11-5-2-1-3-6-11/h1-9H,10,15H2,(H,16,17)"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998399",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:16.925015"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-06a9e500ffbf42d2b1e976035826e0c8"
+}

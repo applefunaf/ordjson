@@ -1,0 +1,290 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[NH2:1][C:2]1[CH:7]=[CH:6][C:5]([S:8]([NH:11][C:12]2[CH:17]=[C:16](Cl)[N:15]=[C:14]([NH:19][CH3:20])[N:13]=2)(=[O:10])=[O:9])=[CH:4][CH:3]=1.[NH:21]1[CH2:25][CH2:24][CH2:23][CH2:22]1>C(O)C>[NH2:1][C:2]1[CH:7]=[CH:6][C:5]([S:8]([NH:11][C:12]2[CH:17]=[C:16]([N:21]3[CH2:25][CH2:24][CH2:23][CH2:22]3)[N:15]=[C:14]([NH:19][CH3:20])[N:13]=2)(=[O:10])=[O:9])=[CH:4][CH:3]=1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 5.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m1_m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-amino-N-(6-chloro-2-methylamino-pyrimidin-4-yl)-benzenesulfonamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC1=CC=C(C=C1)S(=O)(=O)NC1=NC(=NC(=C1)Cl)NC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C11H12ClN5O2S/c1-14-11-15-9(12)6-10(16-11)17-20(18,19)8-4-2-7(13)3-5-8/h2-6H,13H2,1H3,(H2,14,15,16,17)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.314,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "pyrrolidine"
+            },
+            {
+              "type": "SMILES",
+              "value": "N1CCCC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H9N/c1-2-4-5-3-1/h5H,1-4H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 2.5,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 20.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "0.314 g (0.001 mol) of 4-amino-N-(6-chloro-2-methylamino-pyrimidin-4-yl)-benzenesulfonamide and 2.5 ml (0.15 mol) of pyrrolidine were stirred in 20 ml of ethanol in an autoclave at 130° C. for 4 hours. The reaction mixture was freed from solvent, the residue was suspended in 5 ml of ethanol and treated in an ultrasound bath for 15 min. The precipitate was filtered off, dissolved in 150 ml of 1N NaOH and filtered. The filtrate was adjusted to pH 6 with 1N HCl. The precipitate was filtered off under suction, washed with water and dried. There was obtained 0.22 g (63%) of 4-amino-N-(2-methylamino-6-pyrrolidin-1-yl-pyrimidin-4-yl)-benzenesulfonamide as beige crystals; m.p.: >300° C."
+  },
+  "workups": [
+    {
+      "type": "ADDITION",
+      "details": "treated in an ultrasound bath for 15 min",
+      "duration": {
+        "value": 15.0,
+        "units": "MINUTE"
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "The precipitate was filtered off"
+    },
+    {
+      "type": "DISSOLUTION",
+      "details": "dissolved in 150 ml of 1N NaOH",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "NaOH"
+              },
+              {
+                "type": "SMILES",
+                "value": "[OH-].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Na.H2O/h;1H2/q+1;/p-1"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 150.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filtered"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "The precipitate was filtered off under suction"
+    },
+    {
+      "type": "WASH",
+      "details": "washed with water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-amino-N-(2-methylamino-6-pyrrolidin-1-yl-pyrimidin-4-yl)-benzenesulfonamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC1=CC=C(C=C1)S(=O)(=O)NC1=NC(=NC(=C1)N1CCCC1)NC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C15H20N6O2S/c1-17-15-18-13(10-14(19-15)21-8-2-3-9-21)20-24(22,23)12-6-4-11(16)5-7-12/h4-7,10H,2-3,8-9,16H2,1H3,(H2,17,18,19,20)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 0.22,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 63.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 63.1
+              }
+            }
+          ],
+          "isolated_color": "beige",
+          "texture": {
+            "type": "CRYSTAL",
+            "details": "crystals"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998665",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:35.933570"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-5bd55ab325f74e6687151098bcd73866"
+}

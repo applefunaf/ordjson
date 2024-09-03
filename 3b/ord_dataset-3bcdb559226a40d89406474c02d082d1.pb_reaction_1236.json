@@ -1,0 +1,394 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "Br[C:2]1[CH:7]=[CH:6][CH:5]=[CH:4][CH:3]=1.[Li]CCCC.[C:13]([C:16]1[CH:17]=[C:18]([C:26](=[O:28])[CH3:27])[CH:19]=[C:20]([C:22]([CH3:25])([CH3:24])[CH3:23])[CH:21]=1)(=[O:15])[CH3:14]>C1COCC1>[C:22]([C:20]1[CH:21]=[C:16]([C:13](=[O:15])[CH3:14])[CH:17]=[C:18]([C:26]([OH:28])([C:2]2[CH:7]=[CH:6][CH:5]=[CH:4][CH:3]=2)[CH3:27])[CH:19]=1)([CH3:23])([CH3:25])[CH3:24]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m3_m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "diketone"
+            },
+            {
+              "type": "NAME",
+              "value": "1-(3-Acetyl-5-t-butyl-phenyl)-ethanone"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)C=1C=C(C=C(C1)C(C)(C)C)C(C)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C14H18O2/c1-9(15)11-6-12(10(2)16)8-13(7-11)14(3,4)5/h6-8H,1-5H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 400.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "THF"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1CCOC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O/c1-2-4-5-3-1/h1-4H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 2.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m1_m4_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "bromobenzene"
+            },
+            {
+              "type": "SMILES",
+              "value": "BrC1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H5Br/c7-6-4-2-1-3-5-6/h1-5H"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 288.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "n-BuLi"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Li]CCCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H9.Li/c1-3-4-2;/h1,3-4H2,2H3;"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 734.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "THF"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1CCOC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O/c1-2-4-5-3-1/h1-4H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 8.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "The reaction was stirred for 10 min"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To 288.0 mg (1.83 mmol) of bromobenzene in 8 ml of dry THF at -78° C. was added 734 ml (1.83 mmol) of n-BuLi (2.5 M in hexanes). The reaction was stirred for 10 min followed by addition of 400 mg (1.83 mmol) of diketone 14 in 2 ml of dry THF. After stirring for 30 min, the mixture was quenched with saturated aqueous NH4Cl and the products were extracted with EtOAc. The EtOAc extracts were washed with water, brine, dried, filtered, and concentrated to give 420 mg of crude compound 15 which was used in the next step without further purification. TLC (20% EtOAC-80% hexanes) Rf 0.7."
+  },
+  "workups": [
+    {
+      "type": "STIRRING",
+      "details": "After stirring for 30 min",
+      "duration": {
+        "value": 30.0,
+        "units": "MINUTE"
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the mixture was quenched with saturated aqueous NH4Cl",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "NH4Cl"
+              },
+              {
+                "type": "SMILES",
+                "value": "[NH4+].[Cl-]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH.H3N/h1H;1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "the products were extracted with EtOAc",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "EtOAc"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOC(=O)C"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "The EtOAc extracts were washed with water, brine",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "EtOAc"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOC(=O)C"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "brine"
+              },
+              {
+                "type": "SMILES",
+                "value": "[Cl-].[Na+].O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH.Na.H2O/h1H;;1H2/q;+1;/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filtered"
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 10.0,
+        "units": "MINUTE"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "crude compound 15"
+            },
+            {
+              "type": "NAME",
+              "value": "1-[3-t-butyl-5-(1-hydroxyl-1-phenyl-ethyl)-phenyl]-ethanone"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(C)(C)C=1C=C(C=C(C1)C(C)(C1=CC=CC=C1)O)C(C)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C20H24O2/c1-14(21)15-11-17(19(2,3)4)13-18(12-15)20(5,22)16-9-7-6-8-10-16/h6-13,22H,1-5H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 420.0,
+                  "units": "MILLIGRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 77.4
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998654",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:34.947960"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-e6863d0549204a81a504b6a6be2057b3"
+}

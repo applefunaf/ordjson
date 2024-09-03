@@ -1,0 +1,273 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[Cl:1][C:2]1[CH:7]=[C:6]([NH:8][S:9]([C:12]2[CH:17]=[CH:16][C:15]([NH:18]C(=O)C)=[CH:14][CH:13]=2)(=[O:11])=[O:10])[CH:5]=[C:4]([Cl:22])[N:3]=1.Cl>[OH-].[Na+]>[NH2:18][C:15]1[CH:16]=[CH:17][C:12]([S:9]([NH:8][C:6]2[CH:7]=[C:2]([Cl:1])[N:3]=[C:4]([Cl:22])[CH:5]=2)(=[O:11])=[O:10])=[CH:13][CH:14]=1 |f:2.3|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-[4-(2,6-dichloro-pyridin-4-yl-sulfamoyl)-phenyl]-acetamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC1=NC(=CC(=C1)NS(=O)(=O)C1=CC=C(C=C1)NC(C)=O)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C13H11Cl2N3O3S/c1-8(19)16-9-2-4-11(5-3-9)22(20,21)18-10-6-12(14)17-13(15)7-10/h2-7H,1H3,(H,16,19)(H,17,18)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 1.25,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "NaOH"
+            },
+            {
+              "type": "SMILES",
+              "value": "[OH-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Na.H2O/h;1H2/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 35.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "HCl"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/ClH/h1H"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "1.25 g (0.0035 mol) of N-[4-(2,6-dichloro-pyridin-4-yl-sulfamoyl)-phenyl]-acetamide were dissolved in 35 ml of 1N NaOH and boiled at reflux for 2 hours. After cooling the mixture was adjusted to pH 6 with 2N HCl and the precipitate which separated was filtered off. The material on the suction filter was washed well with water and dried. It was subsequently chromatographed on silica gel with ethyl acetate/hexane 1:2→1:1. There were obtained 1.04 g (93%) of 4-amino-N-(2,6-dichloro-pyridin-4-yl)-benzenesulfonamide as white crystals; m.p.: 209-211° C. (dec.)."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "at reflux for 2 hours",
+      "duration": {
+        "value": 2.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "After cooling the mixture"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the precipitate which separated"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "was filtered off"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "The material on the suction filter"
+    },
+    {
+      "type": "WASH",
+      "details": "was washed well with water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "It was subsequently chromatographed on silica gel with ethyl acetate/hexane 1:2→1:1",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate hexane"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC.CCCCCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C6H14.C4H8O2/c1-3-5-6-4-2;1-3-6-4(2)5/h3-6H2,1-2H3;3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-amino-N-(2,6-dichloro-pyridin-4-yl)-benzenesulfonamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC1=CC=C(C=C1)S(=O)(=O)NC1=CC(=NC(=C1)Cl)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C11H9Cl2N3O2S/c12-10-5-8(6-11(13)15-10)16-19(17,18)9-3-1-7(14)2-4-9/h1-6H,14H2,(H,15,16)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 1.04,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 93.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 93.4
+              }
+            }
+          ],
+          "isolated_color": "white",
+          "texture": {
+            "type": "CRYSTAL",
+            "details": "crystals"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998665",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:36.400386"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-cbc86a3f774f429a8d2dd0843ad77f30"
+}

@@ -1,0 +1,242 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[NH2:1][CH2:2][C:3]([OH:5])=[O:4].[C:6]([O-])(=O)[CH3:7].[Na+].[F:11][C:12]1[CH:19]=[CH:18][C:15]([CH:16]=O)=[CH:14][CH:13]=1.O>C(OC(=O)C)(=O)C>[CH3:6][C:7]1[O:4][C:3](=[O:5])[C:2](=[CH:16][C:15]2[CH:18]=[CH:19][C:12]([F:11])=[CH:13][CH:14]=2)[N:1]=1 |f:1.2|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m1_m2_m3_m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "glycine"
+            },
+            {
+              "type": "SMILES",
+              "value": "NCC(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H5NO2/c3-1-2(4)5/h1,3H2,(H,4,5)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 7.5,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sodium acetate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)[O-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H4O2.Na/c1-2(3)4;/h1H3,(H,3,4);/q;+1/p-1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 6.2,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "p-fluorobenzaldehyde"
+            },
+            {
+              "type": "SMILES",
+              "value": "FC1=CC=C(C=O)C=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H5FO/c8-7-3-1-6(5-9)2-4-7/h1-5H"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 18.6,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acetic anhydride"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)OC(C)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H6O3/c1-3(5)7-4(2)6/h1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 60.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "With stirring"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "With stirring, 7.5 g (0.1 mol) of glycine with 6.2 g (0.075 mol) of anhydrous sodium acetate and 18.6 g (0.15 mol) of p-fluorobenzaldehyde in 60 ml of acetic anhydride are heated to 100° C. After 2 hours, the reaction is cooled and poured into water. The resulting precipitate is filtered off with suction and dried under reduced pressure. 12.1 g (59% of theory) of 2-methyl-4-(4-fluorobenzylidene)-oxazol-5-one of mp. 156° C. are obtained."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "the reaction is cooled"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "The resulting precipitate is filtered off with suction"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried under reduced pressure"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 2.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-methyl-4-(4-fluorobenzylidene)-oxazol-5-one"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC=1OC(C(N1)=CC1=CC=C(C=C1)F)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C11H8FNO2/c1-7-13-10(11(14)15-7)6-8-2-4-9(12)5-3-8/h2-6H,1H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 12.1,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 59.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 78.6
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06004992",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:18.595002"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-6a124d6a9c454b1db81f3ca950d6acaf"
+}

@@ -1,0 +1,236 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][C:2]([CH3:18])([CH3:17])[CH2:3][C:4]1[C:8]2[CH:9]=[CH:10][C:11]([O:13]CC=C)=[CH:12][C:7]=2[O:6][CH:5]=1.Cl[C:20]1[CH:25]=CC=C[C:21]=1Cl>>[CH3:18][C:2]([CH3:1])([CH3:17])[CH2:3][C:4]1[C:8]2[CH:9]=[CH:10][C:11]([OH:13])=[C:12]([CH2:25][CH:20]=[CH2:21])[C:7]=2[O:6][CH:5]=1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "product"
+            },
+            {
+              "type": "NAME",
+              "value": "3-(2,2-dimethylpropyl)-6-allyloxybenzofuran"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC(CC1=COC2=C1C=CC(=C2)OCC=C)(C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C16H20O2/c1-5-8-17-13-6-7-14-12(10-16(2,3)4)11-18-15(14)9-13/h5-7,9,11H,1,8,10H2,2-4H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 3.226,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "1,2-dichlorobenzene"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC1=C(C=CC=C1)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H4Cl2/c7-5-3-1-2-4-6(5)8/h1-4H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 65.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 50.0,
+        "units": "CELSIUS"
+      }
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A solution prepared from 1,2-dichlorobenzene (65 mL) and the product of Step F (3.226 grams) was refluxed for 8 hours. The reaction, cooled to approx. 50° C., was subjected to high vacuum, removing the solvent by distillation. The remaining solid was digested in refluxing cyclohexane, cooled to ambient and filtered. The mother liquor was evaporated and chromatographed over silica gel (2.5:1 hex/ethyl acetate), producing more solid which was added to the previous, providing all the available title compound."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "The reaction"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "removing the solvent"
+    },
+    {
+      "type": "DISTILLATION",
+      "details": "by distillation"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "in refluxing cyclohexane",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "cyclohexane"
+              },
+              {
+                "type": "SMILES",
+                "value": "C1CCCCC1"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C6H12/c1-2-4-6-5-3-1/h1-6H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "cooled"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filtered"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The mother liquor was evaporated"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "chromatographed over silica gel (2.5:1 hex/ethyl acetate)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "producing more solid which"
+    },
+    {
+      "type": "ADDITION",
+      "details": "was added to the previous,"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "3-(2,2-dimethylpropyl)-6-hydroxy-7-allyl benzofuran"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC(CC1=COC2=C1C=CC(=C2CC=C)O)(C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C16H20O2/c1-5-6-13-14(17)8-7-12-11(9-16(2,3)4)10-18-15(12)13/h5,7-8,10,17H,1,6,9H2,2-4H3"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06008237",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:20.210013"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-ce56e01605d14a2e812ed3d535cdddaa"
+}

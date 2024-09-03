@@ -1,0 +1,330 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[C:1]([C:9]1[CH:25]=[CH:24][C:12]([C:13]([N:15]2[CH2:20][CH2:19][C:18]3[CH:21]=[CH:22][O:23][C:17]=3[CH2:16]2)=[O:14])=[CH:11][CH:10]=1)(=[O:8])[C:2]1[CH:7]=[CH:6][CH:5]=[CH:4][CH:3]=1.[CH2:26]([NH:28][CH2:29][CH3:30])[CH3:27].[CH2:31]=O>C(O)(=O)C>[CH2:26]([N:28]([CH2:31][C:22]1[O:23][C:17]2[CH2:16][N:15]([C:13](=[O:14])[C:12]3[CH:11]=[CH:10][C:9]([C:1](=[O:8])[C:2]4[CH:3]=[CH:4][CH:5]=[CH:6][CH:7]=4)=[CH:25][CH:24]=3)[CH2:20][CH2:19][C:18]=2[CH:21]=1)[CH2:29][CH3:30])[CH3:27]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m4_m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "6-(4-benzoylbenzoyl)-4,5,6,7-tetrahydrofuro[2,3-c]pyridine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C1=CC=CC=C1)(=O)C1=CC=C(C(=O)N2CC3=C(CC2)C=CO3)C=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C21H17NO3/c23-20(16-4-2-1-3-5-16)17-6-8-18(9-7-17)21(24)22-12-10-15-11-13-25-19(15)14-22/h1-9,11,13H,10,12,14H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.527,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "diethylamine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)NCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H11N/c1-3-5-4-2/h5H,3-4H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 0.2,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "formaldehyde"
+            },
+            {
+              "type": "SMILES",
+              "value": "C=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2O/c1-2/h1H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.15,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acetic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H4O2/c1-2(3)4/h1H3,(H,3,4)"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 20.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 100.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "by stirring at 100° C. for 1 hour"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a solution of 0.527 g (1.590 mmol) of 6-(4-benzoylbenzoyl)-4,5,6,7-tetrahydrofuro[2,3-c]pyridine in 20 ml of acetic acid, 0.20 ml (1.9 mmol) of diethylamine and 0.15 g (1.9 mmol) of 37% aqueous formaldehyde were added, followed by stirring at 100° C. for 1 hour. After the solvent was distilled off under reduced pressure, the residual solution was alkalified with aqueous sodium hydroxide and extracted with dichloromethane 3 times. The combined organic layer was dried over anhydrous magnesium sulfate; the solvent was distilled off under reduced pressure. The resulting crude product was purified by silica gel column chromatography (ethyl acetate to ethyl acetate/methanol=9/1) to yield the desired product."
+  },
+  "workups": [
+    {
+      "type": "DISTILLATION",
+      "details": "After the solvent was distilled off under reduced pressure"
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "extracted with dichloromethane 3 times",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "dichloromethane"
+              },
+              {
+                "type": "SMILES",
+                "value": "ClCCl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "The combined organic layer was dried over anhydrous magnesium sulfate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "magnesium sulfate"
+              },
+              {
+                "type": "SMILES",
+                "value": "S(=O)(=O)([O-])[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DISTILLATION",
+      "details": "the solvent was distilled off under reduced pressure"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The resulting crude product was purified by silica gel column chromatography (ethyl acetate to ethyl acetate/methanol=9/1)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "crude product"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate methanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC.CO"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2.CH4O/c1-3-6-4(2)5;1-2/h3H2,1-2H3;2H,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 1.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "desired product"
+            },
+            {
+              "type": "NAME",
+              "value": "N,N-diethyl-[6-(4-benzoylbenzoyl)-4,5,6,7-tetrahydrofuro[2,3-c]pyridin-2-ylmethyl]amine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)N(CC)CC1=CC2=C(CN(CC2)C(C2=CC=C(C=C2)C(C2=CC=CC=C2)=O)=O)O1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C26H28N2O3/c1-3-27(4-2)17-23-16-22-14-15-28(18-24(22)31-23)26(30)21-12-10-20(11-13-21)25(29)19-8-6-5-7-9-19/h5-13,16H,3-4,14-15,17-18H2,1-2H3"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998433",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:42.029957"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-51206d665f6c4691bf97e538b0108c00"
+}

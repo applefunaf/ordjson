@@ -1,0 +1,348 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "Br[C:2]1[CH:7]=[CH:6][C:5]([C:8]2[CH:13]=[CH:12][CH:11]=[CH:10][CH:9]=2)=[CH:4][CH:3]=1.C([Li])CCC.C([O:22][B:23](OC(C)C)[O:24]C(C)C)(C)C>C1COCC1>[C:5]1([C:8]2[CH:13]=[CH:12][CH:11]=[CH:10][CH:9]=2)[CH:6]=[CH:7][C:2]([B:23]([OH:24])[OH:22])=[CH:3][CH:4]=1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "triisopropylborate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(C)OB(OC(C)C)OC(C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H21BO3/c1-7(2)11-10(12-8(3)4)13-9(5)6/h7-9H,1-6H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 3.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m1_m4_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-bromobiphenyl"
+            },
+            {
+              "type": "SMILES",
+              "value": "BrC1=CC=C(C=C1)C1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C12H9Br/c13-12-8-6-11(7-9-12)10-4-2-1-3-5-10/h1-9H"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 2.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "n-butyllithium"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(CCC)[Li]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H9.Li/c1-3-4-2;/h1,3-4H2,2H3;"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 4.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "THF"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1CCOC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O/c1-2-4-5-3-1/h1-4H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 20.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "4-Biphenylboronic acid was prepared differently than described in the literature (see Yabroff, D. L.; Branch, G. E.; Bettman, B. J. Am. Chem. Soc. 1934, 56, 1850-1857). To a solution of 4-bromobiphenyl (2.00 g, 8.58 mmol) in THF (20 mL) at -78° C. was added n-butyllithium (4.0 mL of 2.5 M in hexanes) in a slow stream via syringe. After 15 minutes, triisopropylborate (3.0 mL, 13 mmol) was added in a slow stream via syringe. After 10 minutes, the resultant homogeneous solution was allowed to warm to ambient temperature over 45 minutes and partitioned between EtOAc (50 mL) and 10% aqueous HCI (50 mL). The aqueous layer was separated and extracted with more EtOAc. The combined organic layers were washed with brine, dried over Na2SO4 and concentrated to give a crude product which was triturated with hexanes to yield 1.53 g (90%) of 4-biphenylboronic acid as a white solid. 1H NMR (DMSO-d6): δ 8.05 (s, 2H), 7.83 (d, 2H, J=8.5 Hz), 7.65 (d, 2H, J=7.0 Hz), 7.60 (d, 2H, J=8.1 Hz), 7.43 (t, 2H, J=7.4 Hz), 7.33 (t, 1H, J=7.2 Hz). Anal. C12H11BO2 : C, 72.78; H, 560. Found: C, 72.51; H, 5.62."
+  },
+  "workups": [
+    {
+      "type": "WAIT",
+      "details": "After 10 minutes",
+      "duration": {
+        "value": 10.0,
+        "units": "MINUTE"
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "partitioned between EtOAc (50 mL) and 10% aqueous HCI (50 mL)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "EtOAc"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOC(=O)C"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 50.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The aqueous layer was separated"
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "extracted with more EtOAc",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "EtOAc"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOC(=O)C"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "The combined organic layers were washed with brine",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "brine"
+              },
+              {
+                "type": "SMILES",
+                "value": "[Cl-].[Na+].O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH.Na.H2O/h1H;;1H2/q;+1;/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "dried over Na2SO4",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "Na2SO4"
+              },
+              {
+                "type": "SMILES",
+                "value": "[O-]S(=O)(=O)[O-].[Na+].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/2Na.H2O4S/c;;1-5(2,3)4/h;;(H2,1,2,3,4)/q2*+1;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to give a crude product which",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "crude product"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 15.0,
+        "units": "MINUTE"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-Biphenylboronic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1(=CC=C(C=C1)B(O)O)C1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C12H11BO2/c14-13(15)12-8-6-11(7-9-12)10-4-2-1-3-5-10/h1-9,14-15H"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06008243",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:27.353572"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-8feefe12186e45daa1305d5de090b428"
+}

@@ -1,0 +1,304 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[N+:1]([C:4]1[CH:12]=[CH:11][CH:10]=[C:6]([C:7]([OH:9])=[O:8])[C:5]=1[C:13]([OH:15])=[O:14])([O-:3])=[O:2].[CH:16]([O-])([O-])OC.S(=O)(=O)(O)O>CO>[C:13]([C:5]1[C:4]([N+:1]([O-:3])=[O:2])=[CH:12][CH:11]=[CH:10][C:6]=1[C:7]([O:9][CH3:16])=[O:8])([OH:15])=[O:14]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3-nitrophthalic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "[N+](=O)([O-])C1=C(C(C(=O)O)=CC=C1)C(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H5NO6/c10-7(11)4-2-1-3-5(9(14)15)6(4)8(12)13/h1-3H,(H,10,11)(H,12,13)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 211.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methyl orthoformate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(OC)([O-])[O-]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H4O3/c1-5-2(3)4/h2H,1H3/q-2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 127.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 420.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sulfuric acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "S(O)(O)(=O)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O4S/c1-5(2,3)4/h(H2,1,2,3,4)"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 20.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "with stirring"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a suspension of 3-nitrophthalic acid (211 g) and methyl orthoformate (127 g) in methanol (420 ml) was added conc. sulfuric acid (20 ml) dropwise with stirring. The reaction mixture was heated under reflux for 18 hours and concentrated to dryness. After addition of water (30 ml) to the residue, the mixture was stirred at 3-10° C. for one hour. The precipitated crystals were recrystallized from ethyl acetate--hexane to give pale yellow prisms (185 g, 82%), m.p. 166-168° C."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "The reaction mixture was heated"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "under reflux for 18 hours",
+      "duration": {
+        "value": 18.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated to dryness"
+    },
+    {
+      "type": "ADDITION",
+      "details": "After addition of water (30 ml) to the residue",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 30.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "STIRRING",
+      "details": "the mixture was stirred at 3-10° C. for one hour",
+      "duration": {
+        "value": 1.0,
+        "units": "HOUR"
+      },
+      "temperature": {
+        "setpoint": {
+          "value": 6.5,
+          "precision": 3.5,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The precipitated crystals were recrystallized from ethyl acetate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "prisms"
+            },
+            {
+              "type": "NAME",
+              "value": "Methyl 2-carboxy-3-nitrobenzoate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(=O)(O)C1=C(C(=O)OC)C=CC=C1[N+](=O)[O-]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H7NO6/c1-16-9(13)5-3-2-4-6(10(14)15)7(5)8(11)12/h2-4H,1H3,(H,11,12)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 185.0,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 82.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 82.2
+              }
+            }
+          ],
+          "texture": {
+            "type": "CRYSTAL",
+            "details": "prisms"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06004989",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:22.510040"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-0ed202264fe34dbb8b06ac1b192f7f7f"
+}

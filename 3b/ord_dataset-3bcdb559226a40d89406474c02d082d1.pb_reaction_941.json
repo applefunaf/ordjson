@@ -1,0 +1,214 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][C:2]1[CH2:22][S:21][C@@H:5]2[C@H:6]([NH:9][C:10]([C@H:12]([NH2:20])[C:13]3[CH:14]=[CH:15][C:16]([OH:19])=[CH:17][CH:18]=3)=[O:11])[C:7](=[O:8])[N:4]2[C:3]=1[C:23]([OH:25])=[O:24].Cl>>[CH3:1][C:2]1[CH2:22][S:21][C@@H:5]2[C@H:6]([NH:9][C:10]([C@H:12]([NH2:20])[C:13]3[CH:14]=[CH:15][C:16]([OH:19])=[CH:17][CH:18]=3)=[O:11])[C:7](=[O:8])[N:4]2[C:3]=1[C:23]([OH:25])=[O:24].[CH3:3][N:4]([CH3:5])[CH:7]=[O:8] |f:2.3|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "resultant crude mixture"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "cefadroxil"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC1=C(N2[C@@H]([C@@H](C2=O)NC(=O)[C@@H](C=3C=CC(=CC3)O)N)SC1)C(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C16H17N3O5S/c1-7-6-25-15-11(14(22)19(15)12(7)16(23)24)18-13(21)10(17)8-2-4-9(20)5-3-8/h2-5,10-11,15,20H,6,17H2,1H3,(H,18,21)(H,23,24)/t10-,11-,15-/m1/s1"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ice water"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "HCl"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/ClH/h1H"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "The resultant crude mixture containing protected cefadroxil is worked up by treatment with a mixture of ice water and concentrated HCl. The phases are separated and Reextraction with water/HCl is carried out. The combined aqueous phases are treated with additional DMF, the solution is filtered and left overnight in a refrigerator. Crystalline cefadroxil dimethylformamide solvate is obtained, filtered off, washed with acetone and dried. Yield: 83%."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "The phases are separated"
+    },
+    {
+      "type": "ADDITION",
+      "details": "The combined aqueous phases are treated with additional DMF",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "DMF"
+              },
+              {
+                "type": "SMILES",
+                "value": "CN(C)C=O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C3H7NO/c1-4(2)3-5/h3H,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "the solution is filtered"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 8.0,
+        "precision": 8.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "cefadroxil dimethylformamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC1=C(N2[C@@H]([C@@H](C2=O)NC(=O)[C@@H](C=3C=CC(=CC3)O)N)SC1)C(=O)O.CN(C=O)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C16H17N3O5S.C3H7NO/c1-7-6-25-15-11(14(22)19(15)12(7)16(23)24)18-13(21)10(17)8-2-4-9(20)5-3-8;1-4(2)3-5/h2-5,10-11,15,20H,6,17H2,1H3,(H,18,21)(H,23,24);3H,1-2H3/t10-,11-,15-;/m1./s1"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 83.0
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998610",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:31.847218"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-5633b7250586482490bd8c9a3ba0be4e"
+}

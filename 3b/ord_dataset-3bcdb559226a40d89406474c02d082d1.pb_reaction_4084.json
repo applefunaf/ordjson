@@ -1,0 +1,219 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[N:1]1[CH:6]=[CH:5][CH:4]=[CH:3][C:2]=1[CH2:7][NH:8][C:9]([C:11]1[CH:16]=[CH:15][C:14]([CH2:17][CH2:18][C:19]([O:21]C)=[O:20])=[CH:13][CH:12]=1)=[O:10].[OH-].[Na+]>CO>[N:1]1[CH:6]=[CH:5][CH:4]=[CH:3][C:2]=1[CH2:7][NH:8][C:9]([C:11]1[CH:12]=[CH:13][C:14]([CH2:17][CH2:18][C:19]([OH:21])=[O:20])=[CH:15][CH:16]=1)=[O:10] |f:1.2|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m3_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methyl 3-[4-(2-pyridylmethylcarbamoyl)phenyl]propionate"
+            },
+            {
+              "type": "SMILES",
+              "value": "N1=C(C=CC=C1)CNC(=O)C1=CC=C(C=C1)CCC(=O)OC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C17H18N2O3/c1-22-16(20)10-7-13-5-8-14(9-6-13)17(21)19-12-15-4-2-3-11-18-15/h2-6,8-9,11H,7,10,12H2,1H3,(H,19,21)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 212.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sodium hydroxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "[OH-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Na.H2O/h;1H2/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 1.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 50.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "the mixture was stirred for 5 hours at 50° C"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a solution of methyl 3-[4-(2-pyridylmethylcarbamoyl)phenyl]propionate (212 mg) in methanol was added 1N sodium hydroxide solution (1 ml), and the mixture was stirred for 5 hours at 50° C. The mixture was concentrated in vacuo, and the residue was dissolved in water and was adjusted to pH 6 with 1N hydrochloric acid. The resulting precipitate was collected by filtration to give 3-[4-(2-pyridylmethylcarbamoyl)phenyl]propionic acid (162 mg)."
+  },
+  "workups": [
+    {
+      "type": "CONCENTRATION",
+      "details": "The mixture was concentrated in vacuo"
+    },
+    {
+      "type": "DISSOLUTION",
+      "details": "the residue was dissolved in water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "The resulting precipitate was collected by filtration"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 5.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3-[4-(2-pyridylmethylcarbamoyl)phenyl]propionic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "N1=C(C=CC=C1)CNC(=O)C1=CC=C(C=C1)CCC(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C16H16N2O3/c19-15(20)9-6-12-4-7-13(8-5-12)16(21)18-11-14-3-1-2-10-17-14/h1-5,7-8,10H,6,9,11H2,(H,18,21)(H,19,20)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 162.0,
+                  "units": "MILLIGRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 80.2
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06008229",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:23.306354"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-3ad9c6d26a94413d8d0d183e62999046"
+}

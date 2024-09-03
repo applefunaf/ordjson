@@ -1,0 +1,313 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[Cl:1][C:2]1[CH:3]=[C:4]([NH:15][C:16]2[C:25]3[C:20](=[CH:21][CH:22]=[C:23]([N+:26]([O-])=O)[CH:24]=3)[N:19]=[CH:18][C:17]=2[C:29]#[N:30])[CH:5]=[CH:6][C:7]=1[S:8][C:9]1[CH:14]=[CH:13][CH:12]=[CH:11][CH:10]=1>C(O)C>[NH2:26][C:23]1[CH:24]=[C:25]2[C:20](=[CH:21][CH:22]=1)[N:19]=[CH:18][C:17]([C:29]#[N:30])=[C:16]2[NH:15][C:4]1[CH:5]=[CH:6][C:7]([S:8][C:9]2[CH:14]=[CH:13][CH:12]=[CH:11][CH:10]=2)=[C:2]([Cl:1])[CH:3]=1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m3_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-[(3-chloro-4thiophenoxyphenyl)amino]-6-nitro-3-quinolinecarbonitrile"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC=1C=C(C=CC1SC1=CC=CC=C1)NC1=C(C=NC2=CC=C(C=C12)[N+](=O)[O-])C#N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C22H13ClN4O2S/c23-19-10-15(6-9-21(19)30-17-4-2-1-3-5-17)26-22-14(12-24)13-25-20-8-7-16(27(28)29)11-18(20)22/h1-11,13H,(H,25,26)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 6.753,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "SnCl2 dihydrate"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 17.66,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 250.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "Stirred for 2 hours and with mixture still basic"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture of 6.753 g (15.6 mmol) 4-[(3-chloro-4thiophenoxyphenyl)amino]-6-nitro-3-quinolinecarbonitrile, 250 ml ethanol, and 17.66 g (78.0 mmol) SnCl2 dihydrate was heated to reflux under N2. Removed heat at 2 hours, added large volume of ice water, and made basic with sodium bicarbonate. Stirred for 2 hours and with mixture still basic, extracted with chloroform. Stirred organic layer with Darco, dried with sodium sulfate, filtered, stripped solvent and dried in vacuo, giving 5.996 g of yellow-brown solid: mass spectrum (electrospray m/e): M+H=403.1, 405.1."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "was heated"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "to reflux under N2"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "Removed"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "heat at 2 hours",
+      "duration": {
+        "value": 2.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "ADDITION",
+      "details": "added large volume of ice water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ice water"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "extracted with chloroform",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "chloroform"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(Cl)(Cl)Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CHCl3/c2-1(3)4/h1H"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "Stirred organic layer with Darco, dried with sodium sulfate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "Darco"
+              },
+              {
+                "type": "SMILES",
+                "value": "C"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH4/h1H4"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "sodium sulfate"
+              },
+              {
+                "type": "SMILES",
+                "value": "S(=O)(=O)([O-])[O-].[Na+].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/2Na.H2O4S/c;;1-5(2,3)4/h;;(H2,1,2,3,4)/q2*+1;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filtered"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried in vacuo"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 2.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "yellow-brown solid"
+            },
+            {
+              "type": "NAME",
+              "value": "6-Amino-4-[(3-chloro-4thiophenoxyphenyl)amino]-3-quinolinecarbonitrile"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC=1C=C2C(=C(C=NC2=CC1)C#N)NC1=CC(=C(C=C1)SC1=CC=CC=C1)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C22H15ClN4S/c23-19-11-16(7-9-21(19)28-17-4-2-1-3-5-17)27-22-14(12-24)13-26-20-8-6-15(25)10-18(20)22/h1-11,13H,25H2,(H,26,27)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 5.996,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 95.4
+              }
+            }
+          ],
+          "isolated_color": "yellow-brown",
+          "texture": {
+            "type": "CUSTOM",
+            "details": "solid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06002008",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:26.291231"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-5009ec096393419992a4f5cf1b42063e"
+}

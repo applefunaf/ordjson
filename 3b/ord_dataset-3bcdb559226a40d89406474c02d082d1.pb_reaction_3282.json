@@ -1,0 +1,238 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH2:1]([O:3][C:4]1[N:8]([CH2:9][C:10]2[CH:15]=[CH:14][C:13]([C:16]3[CH:21]=[CH:20][CH:19]=[CH:18][C:17]=3[C:22]([O:24]C)=[O:23])=[CH:12][CH:11]=2)[C:7]2[C:26]([C:30]([O:32]C)=[O:31])=[CH:27][CH:28]=[CH:29][C:6]=2[N:5]=1)[CH3:2]>CO>[CH2:1]([O:3][C:4]1[N:8]([CH2:9][C:10]2[CH:11]=[CH:12][C:13]([C:16]3[CH:21]=[CH:20][CH:19]=[CH:18][C:17]=3[C:22]([OH:24])=[O:23])=[CH:14][CH:15]=2)[C:7]2[C:26]([C:30]([OH:32])=[O:31])=[CH:27][CH:28]=[CH:29][C:6]=2[N:5]=1)[CH3:2]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methyl 2-ethoxy-1-[(2'-methoxycarbonylbiphenyl-4-yl)methyl]benzimidazole-7-carboxylate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)OC1=NC2=C(N1CC1=CC=C(C=C1)C1=C(C=CC=C1)C(=O)OC)C(=CC=C2)C(=O)OC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C26H24N2O5/c1-4-33-26-27-22-11-7-10-21(25(30)32-3)23(22)28(26)16-17-12-14-18(15-13-17)19-8-5-6-9-20(19)24(29)31-2/h5-15H,4,16H2,1-3H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.7,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 10.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 80.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "the mixture was stirred at 80° C. for 3 hours"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a solution of methyl 2-ethoxy-1-[(2'-methoxycarbonylbiphenyl-4-yl)methyl]benzimidazole-7-carboxylate (0.7 g) in methanol (10 ml) was added 1N NAOH (5 ml) and the mixture was stirred at 80° C. for 3 hours. After evaporation of the methanol, the aqueous residue was neutralized with 1N hydrochloric acid to give crystals. The crystals were recrystallized from methanol--chloroform to afford colorless crystals (0.54 g, 83%), m.p. 213-215° C."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "After evaporation of the methanol",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "methanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "CO"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to give crystals"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The crystals were recrystallized from methanol",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "methanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "CO"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 3.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "crystals"
+            },
+            {
+              "type": "NAME",
+              "value": "2-Ethoxy-1-[(2'-carboxybiphenyl-4-yl]methyl]benzimidazole-7-carboxylic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)OC1=NC2=C(N1CC1=CC=C(C=C1)C1=C(C=CC=C1)C(=O)O)C(=CC=C2)C(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C24H20N2O5/c1-2-31-24-25-20-9-5-8-19(23(29)30)21(20)26(24)14-15-10-12-16(13-11-15)17-6-3-4-7-18(17)22(27)28/h3-13H,2,14H2,1H3,(H,27,28)(H,29,30)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 0.54,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 83.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 82.3
+              }
+            }
+          ],
+          "texture": {
+            "type": "CRYSTAL",
+            "details": "crystals"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06004989",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:22.757647"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-d9b25ee06c7f4343a481a44b188ce0d1"
+}

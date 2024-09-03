@@ -1,0 +1,248 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "C([N:4]([CH2:8][CH3:9])[CH:5]([CH3:7])[CH3:6])(C)C.[C:10]1(C)[CH:15]=CC=C[CH:11]=1.O>CO>[NH:4]1[C:5]2[C:6](=[CH:11][CH:10]=[CH:15][CH:7]=2)[CH:9]=[CH:8]1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m1_m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "IV"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N,N-diisopropylethylamine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(C)N(C(C)C)CC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H19N/c1-6-9(7(2)3)8(4)5/h7-8H,6H2,1-5H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "toluene"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1(=CC=CC=C1)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H8/c1-7-5-3-2-4-6-7/h2-6H,1H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "In Scheme VIII, Step 4, 4-Benzyloxypropiophenone is brominated in acetic acid with bromine. When the reaction is complete the mixture can be quenched with water and the resulting precipitate is washed with dilute acetic acid, water and heptane. The resulting solid is dried to give IV, 4-benzyloxyaniline hydrochloride. In Step 5, a mixture of IV, N,N-diisopropylethylamine and toluene is heated under reflux with removal of water. When the reaction is complete the mixture may be cooled and diluted with methanol. The solids produced can be collected, washed with methanol and dried to give compound indole V. A mixture of compounds V and III can be mixed in Step 6 with sodium tert-butoxide in N,N-dimethylformrnamide and stirred until the reaction is complete. Then the mixture may be quenched with brine and extracted with toluene. The extracts are concentrated and the residue diluted with methanol. The resulting solids may be collected, dissolved in ethyl acetate, clarified, and diluted with methanol. The solids may be collected from this dilution and dried to give compound VI."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "is heated"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "may be cooled"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The solids produced can"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "be collected"
+    },
+    {
+      "type": "WASH",
+      "details": "washed with methanol",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "methanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "CO"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "indole"
+            },
+            {
+              "type": "SMILES",
+              "value": "N1C=CC2=CC=CC=C12"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H7N/c1-2-4-8-7(3-1)5-6-9-8/h1-6,9H"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06005102",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:23.143980"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-21547996f55f4cf9a1c9ab59f879e087"
+}

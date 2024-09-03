@@ -1,0 +1,221 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "Cl[C:2]1[C:11]2[C:6](=[C:7]([NH:12][C:13](=O)[C:14]3[C:19]([Cl:20])=[CH:18][CH:17]=[CH:16][C:15]=3[Cl:21])[CH:8]=[CH:9][CH:10]=2)[N:5]=[CH:4][C:3]=1[C:23]#[N:24].[OH2:25].[NH2:26][NH2:27].O>CN1CCCC1=O>[NH2:24][C:23]1[C:3]2[CH:4]=[N:5][C:6]3[C:7]([NH:12][C:13](=[O:25])[C:14]4[C:15]([Cl:21])=[CH:16][CH:17]=[CH:18][C:19]=4[Cl:20])=[CH:8][CH:9]=[CH:10][C:11]=3[C:2]=2[NH:27][N:26]=1 |f:1.2|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-methylpyrrolidone"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN1C(CCC1)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C5H9NO/c1-6-4-2-3-5(6)7/h2-4H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 6.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-chloro-8-(2,6-dichlorobenzoylamino)-3-cyanoquinoline"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC1=C(C=NC2=C(C=CC=C12)NC(C1=C(C=CC=C1Cl)Cl)=O)C#N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C17H8Cl3N3O/c18-11-4-2-5-12(19)14(11)17(24)23-13-6-1-3-10-15(20)9(7-21)8-22-16(10)13/h1-6,8H,(H,23,24)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 300.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrazine monohydrate"
+            },
+            {
+              "type": "SMILES",
+              "value": "O.NN"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H4N2.H2O/c1-2;/h1-2H2;1H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 399.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 15.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 90.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "the mixture was stirred for 2 hours at 90° C"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a solution of 4-chloro-8-(2,6-dichlorobenzoylamino)-3-cyanoquinoline (300 mg) in N-methylpyrrolidone (6 ml) was dropwise added hydrazine monohydrate (399 mg), and the mixture was stirred for 2 hours at 90° C. Water (15 ml) was added thereto, the resulting precipitates were collected by filtration to give 3-amino-6-(2,6-dichlorobenzoylamino)-1H-pyrazolo[4,3-c]quinoline (260 mg)."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "the resulting precipitates"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "were collected by filtration"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 2.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3-amino-6-(2,6-dichlorobenzoylamino)-1H-pyrazolo[4,3-c]quinoline"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC1=NNC2=C1C=NC=1C(=CC=CC21)NC(C2=C(C=CC=C2Cl)Cl)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C17H11Cl2N5O/c18-10-4-2-5-11(19)13(10)17(25)22-12-6-1-3-8-14-9(7-21-15(8)12)16(20)24-23-14/h1-7H,(H,22,25)(H3,20,23,24)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 260.0,
+                  "units": "MILLIGRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 87.7
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06008230",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:22.807725"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-3e8dc47371334364adcb45cf229f0fe8"
+}

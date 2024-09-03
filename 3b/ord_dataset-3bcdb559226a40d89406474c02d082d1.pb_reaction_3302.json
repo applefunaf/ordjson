@@ -1,0 +1,281 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[Br:1][CH:2](O)[C:3]([C:5]1[CH:10]=[CH:9][CH:8]=[CH:7][CH:6]=1)=O.Cl.[CH3:13][O:14][NH2:15].C[OH:17]>>[CH3:13][O:14][N:15]=[C:3]([C:5]1[CH:10]=[CH:9][CH:8]=[CH:7][C:6]=1[OH:17])[CH2:2][Br:1] |f:1.2|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m3_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ω-bromo-2-hydroxy-acetophenone"
+            },
+            {
+              "type": "SMILES",
+              "value": "BrC(C(=O)C1=CC=CC=C1)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H7BrO2/c9-8(11)7(10)6-4-2-1-3-5-6/h1-5,8,11H"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 107.5,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "O-methylhydroxylamine hydrochloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl.CON"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH5NO.ClH/c1-3-2;/h2H2,1H3;1H"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 41.75,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 500.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 0.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "At 0° C. , the residue is stirred with petroleum ether"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "107.5 g (0.5 mol) of ω-bromo-2-hydroxy-acetophenone in 500 ml of methanol together with 41.75 g (0.5 mol) of O-methylhydroxylamine hydrochloride are heated under reflux for 4 hours. The methanol is distilled off under reduced pressure and the residue is admixed with 500 ml of water and extracted with 4 times 100 ml of ethyl acetate. The organic phase is dried over sodium sulphate and the solvent is distilled off under reduced pressure. At 0° C. , the residue is stirred with petroleum ether, affording 74 g (52% of theory) of crystalline 2-bromo-1-(2-hydroxy-phenyl)-ethanone O-methyl-oxime as a mixture of two stereoisomers (53% of isomer B and 33% of isomer A)."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "under reflux for 4 hours",
+      "duration": {
+        "value": 4.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "DISTILLATION",
+      "details": "The methanol is distilled off under reduced pressure",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "methanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "CO"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "extracted with 4 times 100 ml of ethyl acetate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 100.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "The organic phase is dried over sodium sulphate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "sodium sulphate"
+              },
+              {
+                "type": "SMILES",
+                "value": "S(=O)(=O)([O-])[O-].[Na+].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/2Na.H2O4S/c;;1-5(2,3)4/h;;(H2,1,2,3,4)/q2*+1;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DISTILLATION",
+      "details": "the solvent is distilled off under reduced pressure"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-bromo-1-(2-hydroxy-phenyl)-ethanone O-methyl-oxime"
+            },
+            {
+              "type": "SMILES",
+              "value": "CON=C(CBr)C1=C(C=CC=C1)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H10BrNO2/c1-13-11-8(6-10)7-4-2-3-5-9(7)12/h2-5,12H,6H2,1H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 74.0,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 52.0
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06005104",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:23.065386"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-3ee08129f065433d838fca38966f2c19"
+}

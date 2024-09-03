@@ -1,0 +1,215 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "C(OC([N:11]1[CH2:16][CH2:15][CH:14]([C:17]2[C:25]3[C:20](=[C:21]([F:29])[C:22]([F:28])=[C:23]([F:27])[C:24]=3[F:26])[NH:19][CH:18]=2)[CH2:13][CH2:12]1)=O)C1C=CC=CC=1>[Pd].C(O)C.O1CCCC1>[F:26][C:24]1[C:23]([F:27])=[C:22]([F:28])[C:21]([F:29])=[C:20]2[C:25]=1[C:17]([CH:14]1[CH2:15][CH2:16][NH:11][CH2:12][CH2:13]1)=[CH:18][NH:19]2 |f:2.3|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-benzyloxycarbonyl-4-(4,5,6,7-tetrafluoroindol-3-yl)piperidine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C1=CC=CC=C1)OC(=O)N1CCC(CC1)C1=CNC2=C(C(=C(C(=C12)F)F)F)F"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C21H18F4N2O2/c22-16-15-14(10-26-20(15)19(25)18(24)17(16)23)13-6-8-27(9-7-13)21(28)29-11-12-4-2-1-3-5-12/h1-5,10,13,26H,6-9,11H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 20.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethanol tetrahydrofuran"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)O.O1CCCC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O.C2H6O/c1-2-4-5-3-1;1-2-3/h1-4H2;3H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 800.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Pd-C"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Pd]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Pd"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 5.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "CATALYST"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "the resulting mixture was stirred under a hydrogen atmosphere (1 atm) for 3 h"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a solution of N-benzyloxycarbonyl-4-(4,5,6,7-tetrafluoroindol-3-yl)piperidine (20.0 g, 49.21 mmol) [prepared as described in Step 1 above] in argon deoxygenated 80% ethanol/tetrahydrofuran (800 ml) was added 10% Pd-C (5 g), and the resulting mixture was stirred under a hydrogen atmosphere (1 atm) for 3 h. The mixture was degassed under argon, filtered through Celite, and concentrated in vacuo. The solid residue was recrystallized from methylene chloride/hexane to afford 4-(4,5,6,7-tetrafluoroindol-3-yl)piperidine (90%) as a white solid."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "The mixture was degassed under argon"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filtered through Celite"
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated in vacuo"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The solid residue was recrystallized from methylene chloride/hexane",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "methylene chloride hexane"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(Cl)Cl.CCCCCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C6H14.CH2Cl2/c1-3-5-6-4-2;2-1-3/h3-6H2,1-2H3;1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 3.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-(4,5,6,7-tetrafluoroindol-3-yl)piperidine"
+            },
+            {
+              "type": "SMILES",
+              "value": "FC1=C2C(=CNC2=C(C(=C1F)F)F)C1CCNCC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C13H12F4N2/c14-9-8-7(6-1-3-18-4-2-6)5-19-13(8)12(17)11(16)10(9)15/h5-6,18-19H,1-4H2"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 90.0
+              }
+            }
+          ],
+          "isolated_color": "white",
+          "texture": {
+            "type": "CUSTOM",
+            "details": "solid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998412",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:18.800956"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-e7423c88d07a4634bafb2a34980e7ae6"
+}

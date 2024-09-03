@@ -1,0 +1,346 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "BrBr.[CH3:3][NH:4][C:5](=[S:16])[NH:6][C:7]1[CH:8]=[C:9]([CH:13]=[CH:14][CH:15]=1)[C:10]([OH:12])=[O:11]>C(O)(=O)C>[CH3:3][NH:4][C:5]1[S:16][C:8]2[C:9]([C:10]([OH:12])=[O:11])=[CH:13][CH:14]=[CH:15][C:7]=2[N:6]=1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m4_m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "bromine"
+            },
+            {
+              "type": "SMILES",
+              "value": "BrBr"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Br2/c1-2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 163.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3-(N'-methylthioureido)-benzoic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "CNC(NC=1C=C(C(=O)O)C=CC1)=S"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H10N2O2S/c1-10-9(14)11-7-4-2-3-6(5-7)8(12)13/h2-5H,1H3,(H,12,13)(H2,10,11,14)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 212.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acetic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H4O2/c1-2(3)4/h1H3,(H,3,4)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 500.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acetic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H4O2/c1-2(3)4/h1H3,(H,3,4)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 50.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 95.0,
+        "precision": 5.0,
+        "units": "CELSIUS"
+      }
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A solution of 163 g of bromine and 50 g of 100% acetic acid is added dropwise to a suspension of 212 g of 3-(N'-methylthioureido)-benzoic acid and 500 g of 100% acetic acid at 45-50° C. in the course of 2 hours. The mixture is then heated to 90-100° C. in the course of 2.5 hours and is allowed to react for a further 2 hours until the release of the gas has ended. After 150 g of acetic acid have been distilled off at 80-85° C. under reduced pressure, 200 g of water are added and the mixture is brought to pH 2 by dropwise addition of 30% sodium hydroxide solution. Filtration with suction at 70-80° C. and washing with water gives 179.2 g of the title compound of melting point: >330° C. HPLC analysis shows a content of 94.6% of the title compound, in addition to 3-4% of isomeric 2-methylamino-benzothiazole-5-carboxylic acid. Yield: 81.5% of theory."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "to react for a further 2 hours until the release of the gas",
+      "duration": {
+        "value": 2.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "DISTILLATION",
+      "details": "After 150 g of acetic acid have been distilled off at 80-85° C. under reduced pressure, 200 g of water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "acetic acid"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C2H4O2/c1-2(3)4/h1H3,(H,3,4)"
+              }
+            ],
+            "amount": {
+              "mass": {
+                "value": 150.0,
+                "units": "GRAM"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "mass": {
+                "value": 200.0,
+                "units": "GRAM"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      },
+      "temperature": {
+        "setpoint": {
+          "value": 82.5,
+          "precision": 2.5,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "ADDITION",
+      "details": "are added"
+    },
+    {
+      "type": "ADDITION",
+      "details": "the mixture is brought to pH 2 by dropwise addition of 30% sodium hydroxide solution",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "sodium hydroxide"
+              },
+              {
+                "type": "SMILES",
+                "value": "[OH-].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Na.H2O/h;1H2/q+1;/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "Filtration with suction at 70-80° C.",
+      "temperature": {
+        "setpoint": {
+          "value": 75.0,
+          "precision": 5.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "washing with water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "2-methylamino-benzothiazole-7-carboxylic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "CNC=1SC2=C(N1)C=CC=C2C(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H8N2O2S/c1-10-9-11-6-4-2-3-5(8(12)13)7(6)14-9/h2-4H,1H3,(H,10,11)(H,12,13)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 179.2,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 85.3
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06002013",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:20.747439"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-e72e1c2fc74e4c44beef873b99d1810d"
+}

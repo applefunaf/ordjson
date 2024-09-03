@@ -1,0 +1,224 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][O:2][C:3]1[CH:4]=[C:5]([NH:9][C:10]2[C:19]3[C:14](=[CH:15][CH:16]=[C:17]([N+:20]([O-])=O)[CH:18]=3)[N:13]=[CH:12][C:11]=2[C:23]#[N:24])[CH:6]=[CH:7][CH:8]=1.NN>[Pd].C(O)C>[NH2:20][C:17]1[CH:18]=[C:19]2[C:14](=[CH:15][CH:16]=1)[N:13]=[CH:12][C:11]([C:23]#[N:24])=[C:10]2[NH:9][C:5]1[CH:6]=[CH:7][CH:8]=[C:3]([O:2][CH3:1])[CH:4]=1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 165.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m1_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-[(3-methoxyphenyl)-amino]-6-nitro-3-quinolinecarbonitrile"
+            },
+            {
+              "type": "SMILES",
+              "value": "COC=1C=C(C=CC1)NC1=C(C=NC2=CC=C(C=C12)[N+](=O)[O-])C#N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C17H12N4O3/c1-24-14-4-2-3-12(7-14)20-17-11(9-18)10-19-16-6-5-13(21(22)23)8-15(16)17/h2-8,10H,1H3,(H,19,20)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 3.29,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrazine"
+            },
+            {
+              "type": "SMILES",
+              "value": "NN"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H4N2/c1-2/h1-2H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 800.0,
+              "units": "MICROLITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "palladium on carbon"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Pd]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Pd"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 325.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "CATALYST"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "325 mg of 10% palladium on carbon was added to a round bottom flask under N2 and covered with 165 ml ethanol. Added 3.29 g (10.3 mmol) 4-[(3-methoxyphenyl)-amino]-6-nitro-3-quinolinecarbonitrile and 800μl anhydrous hydrazine and heated mixture to reflux. At 1.5 hours, filtered hot through celite, stripped solvent and dried in vacuo, giving 2.876 g of yellow solid: mass spectrum (electrospray m/e): M+H=291.2."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "heated mixture"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "to reflux"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filtered hot through celite"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried in vacuo"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 1.5,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "yellow solid"
+            },
+            {
+              "type": "NAME",
+              "value": "6-Amino-4-[(3-methoxyphenyl)amino]-3-quinolinecarbonitrile"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC=1C=C2C(=C(C=NC2=CC1)C#N)NC1=CC(=CC=C1)OC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C17H14N4O/c1-22-14-4-2-3-13(8-14)21-17-11(9-18)10-20-16-6-5-12(19)7-15(16)17/h2-8,10H,19H2,1H3,(H,20,21)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 2.876,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 96.2
+              }
+            }
+          ],
+          "isolated_color": "yellow",
+          "texture": {
+            "type": "CUSTOM",
+            "details": "solid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06002008",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:25.995184"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-b509a43d09a44288bac9a1c396d7774f"
+}

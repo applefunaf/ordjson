@@ -1,0 +1,281 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[SH:1][C:2]1[NH:3][C:4]2[CH:10]=[CH:9][CH:8]=[CH:7][C:5]=2[N:6]=1.Cl.[Cl:12][CH2:13][CH2:14][O:15][C:16]1[CH:21]=[CH:20][N:19]=[C:18]([CH2:22]Cl)[C:17]=1[CH3:24].[OH-].[Na+]>C(O)C>[Cl:12][CH2:13][CH2:14][O:15][C:16]1[CH:21]=[CH:20][N:19]=[C:18]([CH2:22][S:1][C:2]2[NH:6][C:5]3[CH:7]=[CH:8][CH:9]=[CH:10][C:4]=3[N:3]=2)[C:17]=1[CH3:24] |f:1.2,3.4|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m3_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-mercaptobenzimidazole"
+            },
+            {
+              "type": "SMILES",
+              "value": "SC=1NC2=C(N1)C=CC=C2"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H6N2S/c10-7-8-5-3-1-2-4-6(5)9-7/h1-4H,(H2,8,9,10)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 12.3,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-(2-chloroethoxy)-2-chloromethyl-3-methylpyridine hydrochloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl.ClCCOC1=C(C(=NC=C1)CCl)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H11Cl2NO.ClH/c1-7-8(6-11)12-4-2-9(7)13-5-3-10;/h2,4H,3,5-6H2,1H3;1H"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 20.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sodium hydroxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "[OH-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Na.H2O/h;1H2/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 11.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 300.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 60.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "This solution was stirred at 60° C. for 2 hours"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "12.3 g of crude 2-mercaptobenzimidazole, 20 g of 4-(2-chloroethoxy)-2-chloromethyl-3-methylpyridine hydrochloride and 11 g of sodium hydroxide were dissolved in 300 ml of ethanol to obtain a solution. This solution was stirred at 60° C. for 2 hours and distilled under a reduced pressure to remove the ethanol. The obtained residue was chromatographed over a silica gel column and eluted with 40% ethyl acetate in hexane and then with ethyl acetate to obtaine 15.5 g of the title compound as a white solid."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "to obtain a solution"
+    },
+    {
+      "type": "DISTILLATION",
+      "details": "distilled under a reduced pressure"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to remove the ethanol",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The obtained residue was chromatographed over a silica gel column"
+    },
+    {
+      "type": "WASH",
+      "details": "eluted with 40% ethyl acetate in hexane",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "hexane"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCCCCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C6H14/c1-3-5-6-4-2/h3-6H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 2.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-[{4-(2-Chloroethoxy)-3-methylpyridine-2-yl}methylthio]-1H-benzimidazole"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClCCOC1=C(C(=NC=C1)CSC1=NC2=C(N1)C=CC=C2)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C16H16ClN3OS/c1-11-14(18-8-6-15(11)21-9-7-17)10-22-16-19-12-4-2-3-5-13(12)20-16/h2-6,8H,7,9-10H2,1H3,(H,19,20)"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998445",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:21.349973"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-790a7c298d9844368bf9d179d4445eba"
+}

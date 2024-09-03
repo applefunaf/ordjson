@@ -1,0 +1,221 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[B:1]([Cl:4])([Cl:3])[Cl:2].B#B.[O:7]1[CH2:12][CH2:11][O:10][CH2:9][CH2:8]1>>[B:1]([Cl:4])([Cl:3])[Cl:2].[O:7]1[CH2:12][CH2:11][O:10][CH2:9][CH2:8]1.[BH2:1][Cl:2] |f:4.5|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "BCl3"
+            },
+            {
+              "type": "SMILES",
+              "value": "B(Cl)(Cl)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/BCl3/c2-1(3)4"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "diborane"
+            },
+            {
+              "type": "SMILES",
+              "value": "B#B"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/B2/c1-2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "dioxane"
+            },
+            {
+              "type": "SMILES",
+              "value": "O1CCOCC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O2/c1-2-6-4-3-5-1/h1-4H2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "dioxane"
+            },
+            {
+              "type": "SMILES",
+              "value": "O1CCOCC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O2/c1-2-6-4-3-5-1/h1-4H2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "BCl3 was prepared by passing BCl3 gas slowly into dioxane at 0° C. The adduct thus obtained is a solid which melts at 56° C. (with decomposition), but is stable at 0° C. for several weeks. Reaction of this adduct with diborane in dioxane produces dioxane-BH2Cl as outlined in the following equation. ##STR1##"
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "at 0° C",
+      "temperature": {
+        "setpoint": {
+          "value": 0.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The adduct thus obtained"
+    },
+    {
+      "type": "WAIT",
+      "details": "is stable at 0° C. for several weeks",
+      "temperature": {
+        "setpoint": {
+          "value": 0.0,
+          "units": "CELSIUS"
+        }
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "BCl3"
+            },
+            {
+              "type": "SMILES",
+              "value": "B(Cl)(Cl)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/BCl3/c2-1(3)4"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "dioxane BH2Cl"
+            },
+            {
+              "type": "SMILES",
+              "value": "O1CCOCC1.BCl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O2.BClH2/c1-2-6-4-3-5-1;1-2/h1-4H2;1H2"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06008414",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:27.059094"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-7d13df6b427545efa3b3350d4f05d134"
+}

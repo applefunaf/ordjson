@@ -1,0 +1,375 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][C:2]([NH:4][CH2:5][CH2:6][C:7]1[C:11]2[CH:12]=[C:13]([O:16][CH3:17])[CH:14]=[CH:15][C:10]=2[NH:9][CH:8]=1)=[O:3].B.[OH-].[K+].[C:21](OC(=O)C)(=[O:23])[CH3:22]>FC(F)(F)C(O)=O.N1C=CC=CC=1.O>[C:21]([N:9]1[C:10]2[C:11](=[CH:12][C:13]([O:16][CH3:17])=[CH:14][CH:15]=2)[CH:7]([CH2:6][CH2:5][NH:4][C:2](=[O:3])[CH3:1])[CH2:8]1)(=[O:23])[CH3:22] |f:2.3|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acetic anhydride"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)OC(C)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H6O3/c1-3(5)7-4(2)6/h1-2H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m6": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "pyridine"
+            },
+            {
+              "type": "SMILES",
+              "value": "N1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C5H5N/c1-2-4-6-5-3-1/h1-5H"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m7": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 1.5,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "borane"
+            },
+            {
+              "type": "SMILES",
+              "value": "B"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/BH3/h1H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m1_m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "melatonin"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC(=O)NCCC1=CNC2=C1C=C(C=C2)OC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C13H16N2O2/c1-9(16)14-6-5-10-8-15-13-4-3-11(17-2)7-12(10)13/h3-4,7-8,15H,5-6H2,1-2H3,(H,14,16)"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 1.0,
+              "units": "MILLIMOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "trifluoroacetic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "FC(C(=O)O)(F)F"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2HF3O2/c3-2(4,5)1(6)7/h(H,6,7)"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 2.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "potassium hydroxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "[OH-].[K+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/K.H2O/h;1H2/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 0.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "The mixture is stirred for 30 min at 0° C."
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a solution, cooled to 0° C., of melatonin (1 mmol) in trifluoroacetic acid (2 ml) is added dropwise borane (2 eq, 1M solution in THF) . The mixture is stirred for 30 min at 0° C. followed by dropwise addition of water (1.5 ml), and the medium is left stirring for 1 h at room temperature. The mixture is then brought to pH=10 using 2N potassium hydroxide solution and is then extracted with dichloromethane. The crude product is separated on a column of flash silica (25/75/5 acetone/dichloromethane/methanol) and 110 mg of N-[2-(5-methoxyindolin-3-yl)ethyl]acetamide are obtained, which product is then acetylated with acetic anhydride in pyridine to give N-[2-(1-acetyl-5-methoxyindolin-3-yl)ethyl]acetamide."
+  },
+  "workups": [
+    {
+      "type": "WAIT",
+      "details": "the medium is left"
+    },
+    {
+      "type": "STIRRING",
+      "details": "stirring for 1 h at room temperature",
+      "duration": {
+        "value": 1.0,
+        "units": "HOUR"
+      },
+      "temperature": {
+        "control": {
+          "type": "AMBIENT"
+        }
+      }
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "is then extracted with dichloromethane",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "dichloromethane"
+              },
+              {
+                "type": "SMILES",
+                "value": "ClCCl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The crude product is separated on a column of flash silica (25/75/5 acetone/dichloromethane/methanol) and 110 mg of N-[2-(5-methoxyindolin-3-yl)ethyl]acetamide",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "crude product"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "N-[2-(5-methoxyindolin-3-yl)ethyl]acetamide"
+              },
+              {
+                "type": "SMILES",
+                "value": "COC=1C=C2C(CNC2=CC1)CCNC(C)=O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C13H18N2O2/c1-9(16)14-6-5-10-8-15-13-4-3-11(17-2)7-12(10)13/h3-4,7,10,15H,5-6,8H2,1-2H3,(H,14,16)"
+              }
+            ],
+            "amount": {
+              "mass": {
+                "value": 110.0,
+                "units": "MILLIGRAM"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "are obtained"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 30.0,
+        "units": "MINUTE"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-[2-(1-acetyl-5-methoxyindolin-3-yl)ethyl]acetamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)N1CC(C2=CC(=CC=C12)OC)CCNC(C)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C15H20N2O3/c1-10(18)16-7-6-12-9-17(11(2)19)15-5-4-13(20-3)8-14(12)15/h4-5,8,12H,6-7,9H2,1-3H3,(H,16,18)"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06004991",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:18.931882"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-6772556b0a354ecaad31a1198c92fd86"
+}

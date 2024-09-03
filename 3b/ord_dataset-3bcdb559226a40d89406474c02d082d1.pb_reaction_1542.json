@@ -1,0 +1,330 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][S:2]([CH2:4][S:5][CH3:6])=[O:3].[OH-].[Na+].[O:9]1[CH:13]=[CH:12][C:11]([CH:14]=O)=[CH:10]1>O>[O:9]1[CH:13]=[CH:12][C:11]([CH:14]=[C:4]([S:2]([CH3:1])=[O:3])[S:5][CH3:6])=[CH:10]1 |f:1.2|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m1_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methyl methylsulfinylmethyl sulfide"
+            },
+            {
+              "type": "SMILES",
+              "value": "CS(=O)CSC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H8OS2/c1-5-3-6(2)4/h3H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 20.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sodium hydroxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "[OH-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Na.H2O/h;1H2/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 1.34,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3-furaldehyde"
+            },
+            {
+              "type": "SMILES",
+              "value": "O1C=C(C=C1)C=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C5H4O2/c6-3-5-1-2-7-4-5/h1-4H"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 9.627,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 80.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "by stirring at 80° C. for 30 minutes"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To 20 ml of methyl methylsulfinylmethyl sulfide, 1.34 g (33.5 mmol) of powdered sodium hydroxide was added, followed by stirring at 80° C. for 30 minutes. This mixture was added to 9.627 g (100.2 mmol) of 3-furaldehyde, followed by stirring at 80° C. for 3 hours. After this was cooled to room temperature, water was added, followed by 3 extractions with dichloromethane. The combined organic layer was dried over anhydrous magnesium sulfate; the solvent was distilled off under reduced pressure. The resulting crude product was purified by silica gel column chromatography (hexane/ethyl acetate=3/1 to 1/2) to yield 2-(3-furyl)-1-(methylsulfinyl)-1-(methylthio)ethylene."
+  },
+  "workups": [
+    {
+      "type": "STIRRING",
+      "details": "by stirring at 80° C. for 3 hours",
+      "duration": {
+        "value": 3.0,
+        "units": "HOUR"
+      },
+      "temperature": {
+        "setpoint": {
+          "value": 80.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "After this was cooled to room temperature",
+      "temperature": {
+        "control": {
+          "type": "AMBIENT"
+        }
+      }
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "followed by 3 extractions with dichloromethane",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "dichloromethane"
+              },
+              {
+                "type": "SMILES",
+                "value": "ClCCl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "The combined organic layer was dried over anhydrous magnesium sulfate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "magnesium sulfate"
+              },
+              {
+                "type": "SMILES",
+                "value": "S(=O)(=O)([O-])[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DISTILLATION",
+      "details": "the solvent was distilled off under reduced pressure"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The resulting crude product was purified by silica gel column chromatography (hexane/ethyl acetate=3/1 to 1/2)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "crude product"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "hexane ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCCCCC.C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C6H14.C4H8O2/c1-3-5-6-4-2;1-3-6-4(2)5/h3-6H2,1-2H3;3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 30.0,
+        "units": "MINUTE"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-(3-furyl)-1-(methylsulfinyl)-1-(methylthio)ethylene"
+            },
+            {
+              "type": "SMILES",
+              "value": "O1C=C(C=C1)C=C(SC)S(=O)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H10O2S2/c1-11-8(12(2)9)5-7-3-4-10-6-7/h3-6H,1-2H3"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998433",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:39.774605"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-d44b04581d904829be8032796c8f84b8"
+}

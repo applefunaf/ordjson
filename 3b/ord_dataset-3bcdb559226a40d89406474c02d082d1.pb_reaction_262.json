@@ -1,0 +1,359 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[C:1]([O:5][C:6]([N:8]1[CH2:13][CH2:12][CH:11]([OH:14])[CH2:10][CH2:9]1)=[O:7])([CH3:4])([CH3:3])[CH3:2].[H-].[Na+].[CH2:17](Br)[C:18]1[CH:23]=[CH:22][CH:21]=[CH:20][CH:19]=1.O>C1COCC1>[CH2:17]([O:14][CH:11]1[CH2:12][CH2:13][N:8]([C:6]([O:5][C:1]([CH3:4])([CH3:2])[CH3:3])=[O:7])[CH2:9][CH2:10]1)[C:18]1[CH:23]=[CH:22][CH:21]=[CH:20][CH:19]=1 |f:1.2|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 50.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m1_m5_m2_m6": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-tert-butoxycarbonylpiperidin-4-ol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(C)(C)OC(=O)N1CCC(CC1)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C10H19NO3/c1-10(2,3)14-9(13)11-6-4-8(12)5-7-11/h8,12H,4-7H2,1-3H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 25.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sodium hydride"
+            },
+            {
+              "type": "SMILES",
+              "value": "[H-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Na.H/q+1;-1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 5.96,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "THF"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1CCOC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O/c1-2-4-5-3-1/h1-4H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 100.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "THF"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1CCOC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O/c1-2-4-5-3-1/h1-4H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 100.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m3_m7": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "benzyl bromide"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C1=CC=CC=C1)Br"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H7Br/c8-6-7-4-2-1-3-5-7/h1-5H,6H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 25.65,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "THF"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1CCOC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O/c1-2-4-5-3-1/h1-4H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 20.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 0.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "The reaction was stirred at 0° C. for 1 hour"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A solution of N-tert-butoxycarbonylpiperidin-4-ol (25 g, 0.124 mol) in 100 ml anhydrous THF was added to a suspension of sodium hydride (5.96 g, 0.15 mol, pentane washed) in 100 ml anhydrous THF at 0° C. The reaction was stirred at 0° C. for 1 hour, then treated with a solution of benzyl bromide (25.65 g, 0.15 mol) in 20 ml anhydrous THF. The reaction was allowed to stand for 20 h at room temperature, cooled to 0° C., and 50 ml water was added cautiously. The product was extracted using ethyl acetate, the combined organic extracts were washed with water, dried (MgSO4) and concentrated. Chromatography using petroleum ether→20% ethyl acetate-petroleum ether gave 4-benzyloxy-1-tert-butoxycarbonyl-piperidine as a colourless solid. δH (250 MHz, CDCl3) 1.45 (9H, s), 1.51-1.65 (2H, m), 1.80-1.94 (2H, m), 3.04-3.15 (2H, m), 3.51-3.61 (1H, m), 3.70-3.84 (2H, m), 4.56 (2H, m), 7.26-7.35 (5H, m). m/e (ES) 292."
+  },
+  "workups": [
+    {
+      "type": "WAIT",
+      "details": "to stand for 20 h at room temperature",
+      "duration": {
+        "value": 20.0,
+        "units": "HOUR"
+      },
+      "temperature": {
+        "control": {
+          "type": "AMBIENT"
+        }
+      }
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "cooled to 0° C.",
+      "temperature": {
+        "setpoint": {
+          "value": 0.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "The product was extracted"
+    },
+    {
+      "type": "WASH",
+      "details": "the combined organic extracts were washed with water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "dried (MgSO4)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "MgSO4"
+              },
+              {
+                "type": "SMILES",
+                "value": "[O-]S(=O)(=O)[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 1.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-benzyloxy-1-tert-butoxycarbonyl-piperidine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C1=CC=CC=C1)OC1CCN(CC1)C(=O)OC(C)(C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C17H25NO3/c1-17(2,3)21-16(19)18-11-9-15(10-12-18)20-13-14-7-5-4-6-8-14/h4-8,15H,9-13H2,1-3H3"
+            }
+          ],
+          "isolated_color": "colourless",
+          "texture": {
+            "type": "CUSTOM",
+            "details": "solid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998440",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:20.206273"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-e921a7804eea47ffa65ec061b3dca03f"
+}

@@ -1,0 +1,286 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "CN1CCCC1=O.[F:8][C:9]1[C:10]([NH:17][CH3:18])=[N:11][C:12](F)=[C:13]([F:15])[CH:14]=1.[CH2:19]([NH2:26])[C:20]1[CH:25]=[CH:24][CH:23]=[CH:22][CH:21]=1>C(Cl)(Cl)Cl>[CH2:19]([NH:26][C:12]1[C:13]([F:15])=[CH:14][C:9]([F:8])=[C:10]([NH:17][CH3:18])[N:11]=1)[C:20]1[CH:25]=[CH:24][CH:23]=[CH:22][CH:21]=1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "chloroform"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(Cl)(Cl)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CHCl3/c2-1(3)4/h1H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 50.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m1_m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-methylpyrrolidone"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN1C(CCC1)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C5H9NO/c1-6-4-2-3-5(6)7/h2-4H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 20.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3,5,6-trifluoro-2-(methylamino)-pyridine"
+            },
+            {
+              "type": "SMILES",
+              "value": "FC=1C(=NC(=C(C1)F)F)NC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H5F3N2/c1-10-6-4(8)2-3(7)5(9)11-6/h2H,1H3,(H,10,11)"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "benzylamine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C1=CC=CC=C1)N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H9N/c8-6-7-4-2-1-3-5-7/h1-5H,6,8H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 10.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 140.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "the mixture was stirred at 140° C. for 19 hours"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To 20 ml of N-methylpyrrolidone were added all amount of the above-described 3,5,6-trifluoro-2-(methylamino)-pyridine together with 10 g of benzylamine, and the mixture was stirred at 140° C. for 19 hours and allowed to cool. To the solution was added 50 ml of chloroform and the mixture was washed six times with 200 ml of distilled water. The chloroform layer was dried over anhydrous magnesium sulfate and concentrated under reduced pressure to obtain the title compound as a crude oil."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "to cool"
+    },
+    {
+      "type": "WASH",
+      "details": "the mixture was washed six times with 200 ml of distilled water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 200.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "The chloroform layer was dried over anhydrous magnesium sulfate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "chloroform"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(Cl)(Cl)Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CHCl3/c2-1(3)4/h1H"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "magnesium sulfate"
+              },
+              {
+                "type": "SMILES",
+                "value": "S(=O)(=O)([O-])[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated under reduced pressure"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 19.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "2-benzylamino-3,5-difluoro-6-(methylamino) pyridine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C1=CC=CC=C1)NC1=NC(=C(C=C1F)F)NC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C13H13F2N3/c1-16-12-10(14)7-11(15)13(18-12)17-8-9-5-3-2-4-6-9/h2-7H,8H2,1H3,(H2,16,17,18)"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998436",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:27.135726"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-0ace7895221046928cae60b40bb4af94"
+}

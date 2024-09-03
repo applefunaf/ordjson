@@ -1,0 +1,309 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[Br:1][C:2]1[CH:7]=[CH:6][C:5]([OH:8])=[CH:4][CH:3]=1.C(=O)([O-])[O-].[K+].[K+].[CH:15](O)([CH3:17])[CH3:16]>>[Br:1][C:2]1[CH:7]=[CH:6][C:5]([O:8][CH2:16][CH2:15][CH3:17])=[CH:4][CH:3]=1 |f:1.2.3|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-bromo-phenol"
+            },
+            {
+              "type": "SMILES",
+              "value": "BrC1=CC=C(C=C1)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H5BrO/c7-5-1-3-6(8)4-2-5/h1-4,8H"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 17.3,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "potassium carbonate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C([O-])([O-])=O.[K+].[K+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2O3.2K/c2-1(3)4;;/h(H2,2,3,4);;/q;2*+1/p-2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 13.8,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "isopropanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H8O/c1-3(2)4/h3-4H,1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 175.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "stir overnight"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "Prepare a solution of 4-bromo-phenol (17.30 g, 0.10 mol) and potassium carbonate (13.80 g, 0.1 mole) in isopropanol (175 mL). Heat the resulting mixture at reflux and stir overnight. Cool to ambient temperature, filter and condense the filtrate on a rotary evaporator. Dissolve the residual oil in ethyl acetate (250 mL) and extract twice with 5% sodium hydroxide (100 mL), separate and wash with brine. Kugelrohr distillation at 100°-120°, 0.05 mm, gives the title compound (12.86 g, 60%) as a clear liquid."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "Heat the resulting mixture"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "at reflux"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filter"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "condense the filtrate"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "on a rotary evaporator"
+    },
+    {
+      "type": "DISSOLUTION",
+      "details": "Dissolve the residual oil in ethyl acetate (250 mL)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 250.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "extract twice with 5% sodium hydroxide (100 mL)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "sodium hydroxide"
+              },
+              {
+                "type": "SMILES",
+                "value": "[OH-].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Na.H2O/h;1H2/q+1;/p-1"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 100.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "separate"
+    },
+    {
+      "type": "WASH",
+      "details": "wash with brine",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "brine"
+              },
+              {
+                "type": "SMILES",
+                "value": "[Cl-].[Na+].O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH.Na.H2O/h1H;;1H2/q;+1;/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DISTILLATION",
+      "details": "Kugelrohr distillation at 100°-120°"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 8.0,
+        "precision": 8.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "1-bromo-4-propoxy-benzene"
+            },
+            {
+              "type": "SMILES",
+              "value": "BrC1=CC=C(C=C1)OCCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H11BrO/c1-2-7-11-9-5-3-8(10)4-6-9/h3-6H,2,7H2,1H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 12.86,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 60.0
+              }
+            }
+          ],
+          "isolated_color": "clear",
+          "texture": {
+            "type": "CUSTOM",
+            "details": "liquid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06004959",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:19.838978"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-2243f16082e944429680783b4475a7a0"
+}

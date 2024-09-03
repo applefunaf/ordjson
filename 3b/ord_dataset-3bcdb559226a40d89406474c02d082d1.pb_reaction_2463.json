@@ -1,0 +1,331 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][O:2][C:3]1[CH:12]=[C:11]2[C:6]([C:7](=O)[C:8]([C:13]#[N:14])=[CH:9][NH:10]2)=[CH:5][CH:4]=1.P(Cl)(Cl)(Cl)(Cl)[Cl:17]>>[Cl:17][C:7]1[C:6]2[C:11](=[CH:12][C:3]([O:2][CH3:1])=[CH:4][CH:5]=2)[N:10]=[CH:9][C:8]=1[C:13]#[N:14]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "1,4-dihydro-7-methoxy-4-oxo-3-quinolinecarbonitrile"
+            },
+            {
+              "type": "SMILES",
+              "value": "COC1=CC=C2C(C(=CNC2=C1)C#N)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C11H8N2O2/c1-15-8-2-3-9-10(4-8)13-6-7(5-12)11(9)14/h2-4,6H,1H3,(H,13,14)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 4.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "phosphorous pentachloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "P(Cl)(Cl)(Cl)(Cl)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Cl5P/c1-6(2,3,4)5"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 8.3,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hexanes"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 165.0,
+        "units": "CELSIUS"
+      }
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture of 4.0 g (20 mmol) of 1,4-dihydro-7-methoxy-4-oxo-3-quinolinecarbonitrile and 8.3 g (40 mmol) of phosphorous pentachloride was heated at 165° C. for 3 hours. The mixture was diluted with hexanes and the solid was collected. The solid was mixed with brine and dilute sodium hydroxide solution and extracted several times with a mixture of tetrahydrofuran and ethyl acetate. The solution was dried over magnesium sulfate and filtered through a pad of silica gel giving 3.7 g of 4-chloro-7-methoxy -3-quinolinecarbonitrile as a white solid: mass spectrum (electrospray, m/e): M+H 218.9."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "the solid was collected"
+    },
+    {
+      "type": "ADDITION",
+      "details": "The solid was mixed with brine and dilute sodium hydroxide solution",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "brine"
+              },
+              {
+                "type": "SMILES",
+                "value": "[Cl-].[Na+].O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH.Na.H2O/h1H;;1H2/q;+1;/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "sodium hydroxide"
+              },
+              {
+                "type": "SMILES",
+                "value": "[OH-].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Na.H2O/h;1H2/q+1;/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "extracted several times"
+    },
+    {
+      "type": "ADDITION",
+      "details": "with a mixture of tetrahydrofuran and ethyl acetate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "tetrahydrofuran"
+              },
+              {
+                "type": "SMILES",
+                "value": "O1CCCC1"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O/c1-2-4-5-3-1/h1-4H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "The solution was dried over magnesium sulfate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "magnesium sulfate"
+              },
+              {
+                "type": "SMILES",
+                "value": "S(=O)(=O)([O-])[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filtered through a pad of silica gel giving 3.7 g of 4-chloro-7-methoxy -3-quinolinecarbonitrile as a white solid",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "4-chloro-7-methoxy -3-quinolinecarbonitrile"
+              },
+              {
+                "type": "SMILES",
+                "value": "ClC1=C(C=NC2=CC(=CC=C12)OC)C#N"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C11H7ClN2O/c1-15-8-2-3-9-10(4-8)14-6-7(5-13)11(9)12/h2-4,6H,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-Chloro-7-methoxy -3-quinolinecarbonitrile"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC1=C(C=NC2=CC(=CC=C12)OC)C#N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C11H7ClN2O/c1-15-8-2-3-9-10(4-8)14-6-7(5-13)11(9)12/h2-4,6H,1H3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06002008",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:24.225748"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-5307b2bf940c4dc6bff41318846f124e"
+}

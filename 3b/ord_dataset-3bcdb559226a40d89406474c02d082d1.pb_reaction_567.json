@@ -1,0 +1,278 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[NH:1]1[C:11]2[C:6](=[CH:7][CH:8]=[CH:9][CH:10]=2)[C:4](=[O:5])[C:2]1=[O:3].[F:12][C:13]([F:17])([F:16])[CH2:14]I>O>[F:12][C:13]([F:17])([F:16])[CH2:14][N:1]1[C:11]2[C:6](=[CH:7][CH:8]=[CH:9][CH:10]=2)[C:4](=[O:5])[C:2]1=[O:3]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Isatin"
+            },
+            {
+              "type": "SMILES",
+              "value": "N1C(=O)C(=O)C2=CC=CC=C12"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H5NO2/c10-7-5-3-1-2-4-6(5)9-8(7)11/h1-4H,(H,9,10,11)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 29.4,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2,2,2-trifluoroethyl iodide"
+            },
+            {
+              "type": "SMILES",
+              "value": "FC(CI)(F)F"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H2F3I/c3-2(4,5)1-6/h1H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 46.2,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 1.0,
+              "units": "LITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 55.0,
+        "units": "CELSIUS"
+      }
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "Sodium hydride (8.65 g of a 60% oil dispersion, 0.22 mol) was washed with hexane and suspended in hexamethylphosphoramide (200 mL). Isatin (29.4 g, 0.20 mol)) was added carefully. After the gas evolution subsided, 2,2,2-trifluoroethyl iodide (46.2 g, 0.22 mol) was added and the mixture was heated to 55° C. for 4 hours. The solution was cooled, diluted with water (1 L), and the precipitate was collected. The filtrate was acidified with 6 N HCl and a new precipitate formed and was collected. The combined solids were recrystallized from 95% ethanol. Yield 22.5 g (49%). mp 161-163° C."
+  },
+  "workups": [
+    {
+      "type": "WASH",
+      "details": "Sodium hydride (8.65 g of a 60% oil dispersion, 0.22 mol) was washed with hexane",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "Sodium hydride"
+              },
+              {
+                "type": "SMILES",
+                "value": "[H-].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Na.H/q+1;-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "oil"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "hexane"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCCCCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C6H14/c1-3-5-6-4-2/h3-6H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "The solution was cooled"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the precipitate was collected"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "a new precipitate formed"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "was collected"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The combined solids were recrystallized from 95% ethanol",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "1-(2,2,2-Trifluoro-ethyl)-1H-indole-2.3-dione"
+            },
+            {
+              "type": "SMILES",
+              "value": "FC(CN1C(C(C2=CC=CC=C12)=O)=O)(F)F"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C10H6F3NO2/c11-10(12,13)5-14-7-4-2-1-3-6(7)8(15)9(14)16/h1-4H,5H2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998463",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:25.493895"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-75715625ac8c4c20a15efd9d6974e6d7"
+}

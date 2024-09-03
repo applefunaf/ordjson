@@ -1,0 +1,239 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][O:2][N:3]=[C:4]([C:9]1[CH:14]=[CH:13][CH:12]=[CH:11][C:10]=1[OH:15])[CH2:5][N+:6]([O-])=[O:7].C(=O)(O)[O-].[Na+]>O>[CH3:1][O:2][N:3]=[C:4]1[C:9]2[CH:14]=[CH:13][CH:12]=[CH:11][C:10]=2[O:15][C:5]1=[N:6][OH:7] |f:1.2|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "1-(2-hydroxy-phenyl)-2-nitro-ethanone O-methyl-oxime"
+            },
+            {
+              "type": "SMILES",
+              "value": "CON=C(C[N+](=O)[O-])C1=C(C=CC=C1)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H10N2O4/c1-15-10-8(6-11(13)14)7-4-2-3-5-9(7)12/h2-5,12H,6H2,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 71.8,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sodium bicarbonate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C([O-])(O)=O.[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2O3.Na/c2-1(3)4;/h(H2,2,3,4);/q;+1/p-1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 121.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 700.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 92.5,
+        "precision": 2.5,
+        "units": "CELSIUS"
+      }
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "71.8 g of 1-(2-hydroxy-phenyl)-2-nitro-ethanone O-methyl-oxime are added to a solution of 121 g (0.342 mol) of sodium bicarbonate in 700 ml of water. Within 30 minutes, the mixture is heated to 90-95° C., on which undissolved starting material melts and reacts and the product crystallizes out. The mixture is cooled to 20° C. and the product is filtered off, washed with 500 ml of water a little at a time and air-dried. 57.4 g (91.3% of theory) of benzofuran-2,3-dione 3-(O-methyl-oxime) 2-oxime are obtained as a mixture of two stereoisomers."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "reacts"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the product crystallizes out"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "The mixture is cooled to 20° C.",
+      "temperature": {
+        "setpoint": {
+          "value": 20.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "the product is filtered off"
+    },
+    {
+      "type": "WASH",
+      "details": "washed with 500 ml of water a little at a time",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 500.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "air-dried"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 30.0,
+        "units": "MINUTE"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "benzofuran-2,3-dione 3-(O-methyl-oxime) 2-oxime"
+            },
+            {
+              "type": "SMILES",
+              "value": "CON=C1C(OC2=C1C=CC=C2)=NO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H8N2O3/c1-13-11-8-6-4-2-3-5-7(6)14-9(8)10-12/h2-5,12H,1H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 57.4,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 91.3
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 87.4
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06005104",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:22.966086"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-0166b897cf9c44beb7a86688ea651d45"
+}

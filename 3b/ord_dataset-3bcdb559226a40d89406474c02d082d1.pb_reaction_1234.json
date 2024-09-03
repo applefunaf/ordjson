@@ -1,0 +1,219 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[C:1]([OH:12])(=[O:11])[C:2]1[CH:10]=[CH:9][C:5]([C:6]([OH:8])=[O:7])=[CH:4][CH:3]=1.C([O-])(=O)C.[Mo+4:17].C([O-])(=O)C.C([O-])(=O)C.C([O-])(=O)C>CO>[Mo:17].[C:1]([OH:12])(=[O:11])[C:2]1[CH:10]=[CH:9][C:5]([C:6]([OH:8])=[O:7])=[CH:4][CH:3]=1 |f:1.2.3.4.5,7.8|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "terephthalic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C1=CC=C(C(=O)O)C=C1)(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H6O4/c9-7(10)5-1-2-6(4-3-5)8(11)12/h1-4H,(H,9,10)(H,11,12)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.854,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "molybdenum acetate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)[O-].[Mo+4].C(C)(=O)[O-].C(C)(=O)[O-].C(C)(=O)[O-]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/4C2H4O2.Mo/c4*1-2(3)4;/h4*1H3,(H,3,4);/q;;;;+4/p-4"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 2.34,
+              "units": "MILLIMOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 900.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "After this was stirred for three days at the room temperature"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "0.854 g (5.14 mmol) of terephthalic acid and 1,000 g (2.34 mmol) of molybdenum acetate were dissolved in 900 ml of methanol. After this was stirred for three days at the room temperature, this was kept still for a few days. Thereafter, its precipitation product was suction-filtered, rinsed sufficiently with methanol and then vacuum-dried for 60° C./4 hours, whereby 1.387 g of target substance was obtained. This substance had the specific surface area of 519 m2 /g. And, a measurement according to the HK method using argon revealed that the substance had the pore diameter of 5.7 Å."
+  },
+  "workups": [
+    {
+      "type": "WAIT",
+      "details": "this was kept still for a few days"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "Thereafter, its precipitation product"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "was suction-filtered"
+    },
+    {
+      "type": "WASH",
+      "details": "rinsed sufficiently with methanol",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "methanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "CO"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "vacuum-dried for 60° C./4 hours, whereby 1.387 g of target substance",
+      "duration": {
+        "value": 4.0,
+        "units": "HOUR"
+      },
+      "temperature": {
+        "setpoint": {
+          "value": 60.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "was obtained"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 3.0,
+        "units": "DAY"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "terephthalic acid molybdenum"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Mo].C(C1=CC=C(C(=O)O)C=C1)(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H6O4.Mo/c9-7(10)5-1-2-6(4-3-5)8(11)12;/h1-4H,(H,9,10)(H,11,12);"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998647",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:34.922747"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-6e4e1df6a863451f8c5b9a9ef6cbea78"
+}

@@ -1,0 +1,247 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[C:1]1(=[O:11])[O:6][C:4](=O)[C:3]2=[CH:7][CH:8]=[CH:9][CH:10]=[C:2]12.[NH2:12][CH2:13][CH2:14][O:15][CH2:16][CH2:17][OH:18]>C1C=CC=CC=1.CC1C=CC(S(O)(=O)=O)=CC=1.O>[C:4]1(=[O:6])[N:12]([CH2:13][CH2:14][O:15][CH2:16][CH2:17][OH:18])[C:1](=[O:11])[C:2]2=[CH:10][CH:9]=[CH:8][CH:7]=[C:3]12 |f:3.4|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "TsOH.H2O"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC=1C=CC(=CC1)S(=O)(=O)O.O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H8O3S.H2O/c1-6-2-4-7(5-3-6)11(8,9)10;/h2-5H,1H3,(H,8,9,10);1H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.01,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "CATALYST"
+        }
+      ]
+    },
+    "m1_m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "phthalic anhydride"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1(C=2C(C(=O)O1)=CC=CC2)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H4O3/c9-7-5-3-1-2-4-6(5)8(10)11-7/h1-4H"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 30.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-(2-aminoethoxy)-ethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "NCCOCCO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H11NO2/c5-1-3-7-4-2-6/h6H,1-5H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 20.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "benzene"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H6/c1-2-4-6-5-3-1/h1-6H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 400.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A suspension of 30.0 g (202.5 mmol) of phthalic anhydride, 20 mL (21.0 g, 199.4 mmol) of 2-(2-aminoethoxy)-ethanol in 400 mL of benzene was added 1.0×10-2 g (5.3×10-5 mmol) of TsOH.H2O. The reaction flask was connected to a Dean-Stark condenser and then heated to reflux for 14 h. The solvent was removed at reduced pressure and the residue was purified by SiO2 column chromatography (hexanes/AcOEt 1:1 then CHCl3 /MeOH 20:1) gave 43.7 g (93.1%) of 13 as a light yellow syrup. This syrup slowly crystallized on standing at room temperature overnight as needle-like crystals. mp 66-66.5° C. Rf (hexanes/AcOEt 1:1) 0.17. 1H NMR (CDCl3) d 2.41 (t, 1H, J=6.2 Hz, OH), 3.57-3.93 (m, 8 H), 7.69-7.87 (m, 4H). 13C NMR (CDCl3) d 37.52, 61.62, 68.24, 72.24, 123.36, 131.97, 134.00, 168.38 (C=O). Anal Calcd for C12H13NO4 : C, 61.28; H, 5.53; N, 5.96. Found: C, 61.34; H, 5.62; N, 5.94."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "heated"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "to reflux for 14 h",
+      "duration": {
+        "value": 14.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The solvent was removed at reduced pressure"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the residue was purified by SiO2 column chromatography (hexanes/AcOEt 1:1",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "hexanes AcOEt"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "13"
+            },
+            {
+              "type": "NAME",
+              "value": "2-(2-Phthalimidoethoxy)ethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1(C=2C(C(N1CCOCCO)=O)=CC=CC2)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C12H13NO4/c14-6-8-17-7-5-13-11(15)9-3-1-2-4-10(9)12(13)16/h1-4,14H,5-8H2"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 43.7,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 93.1
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 93.2
+              }
+            }
+          ],
+          "isolated_color": "light yellow",
+          "texture": {
+            "type": "CUSTOM",
+            "details": "syrup"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998603",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:32.068488"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-f0f3dc64ca53489397e1c5b33a56024e"
+}

@@ -1,0 +1,262 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "C([O:3][C:4]([CH2:6][C:7]1[C:16]2[C:11](=[C:12]([NH:17][C:18](=[O:27])[C:19]3[C:24]([Cl:25])=[CH:23][CH:22]=[CH:21][C:20]=3[Cl:26])[CH:13]=[CH:14][CH:15]=2)[N:10]=[CH:9][CH:8]=1)=[O:5])C.[OH-].[Na+]>C(O)C>[C:4]([CH2:6][C:7]1[C:16]2[C:11](=[C:12]([NH:17][C:18](=[O:27])[C:19]3[C:24]([Cl:25])=[CH:23][CH:22]=[CH:21][C:20]=3[Cl:26])[CH:13]=[CH:14][CH:15]=2)[N:10]=[CH:9][CH:8]=1)([OH:5])=[O:3] |f:1.2|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-ethoxycarbonylmethyl-8-(2,6-dichlorobenzoylamino)quinoline"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)OC(=O)CC1=CC=NC2=C(C=CC=C12)NC(C1=C(C=CC=C1Cl)Cl)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C20H16Cl2N2O3/c1-2-27-17(25)11-12-9-10-23-19-13(12)5-3-8-16(19)24-20(26)18-14(21)6-4-7-15(18)22/h3-10H,2,11H2,1H3,(H,24,26)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 1.03,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 6.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sodium hydroxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "[OH-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Na.H2O/h;1H2/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 3.83,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 50.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "the mixture was stirred at 50° C. for two hours"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a suspension of 4-ethoxycarbonylmethyl-8-(2,6-dichlorobenzoylamino)quinoline (1.03 g) in ethanol (6 ml) was added 1N-aqueous sodium hydroxide solution (3.83 ml), and the mixture was stirred at 50° C. for two hours. The organic solvent was removed in vacuo and the aqueous residue was neutralized with 1N hydrochloric acid and extracted with ethyl acetate. The extract was dried and evaporated. The residue was crystallized spontaneously and it was triturated with ethyl acetate to give 4-carboxymethyl-8-(2,6-dichlorobenzoylamino)quinoline (703 mg)."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "The organic solvent was removed in vacuo"
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "extracted with ethyl acetate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The extract was dried"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "evaporated"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The residue was crystallized spontaneously"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "it was triturated with ethyl acetate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 2.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-carboxymethyl-8-(2,6-dichlorobenzoylamino)quinoline"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(=O)(O)CC1=CC=NC2=C(C=CC=C12)NC(C1=C(C=CC=C1Cl)Cl)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C18H12Cl2N2O3/c19-12-4-2-5-13(20)16(12)18(25)22-14-6-1-3-11-10(9-15(23)24)7-8-21-17(11)14/h1-8H,9H2,(H,22,25)(H,23,24)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 703.0,
+                  "units": "MILLIGRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 73.4
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06008230",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:21.973858"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-0a402c16ac8a4e06bfe6e85683b8d03b"
+}

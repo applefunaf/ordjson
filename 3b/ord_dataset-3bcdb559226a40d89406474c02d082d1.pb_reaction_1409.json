@@ -1,0 +1,384 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "Br[C:2]1[CH:17]=[CH:16][CH:15]=[C:14]([Si:18]([CH3:21])([CH3:20])[CH3:19])[C:3]=1[C:4]([NH:6][C:7]1[CH:12]=[CH:11][CH:10]=[CH:9][C:8]=1[CH3:13])=[O:5].C1COCC1.[Li]C(CC)C.C(O)(=O)CC(CC(O)=O)(C(O)=O)O>C1CCCCC1>[CH3:13][C:8]1[CH:9]=[CH:10][CH:11]=[CH:12][C:7]=1[NH:6][C:4](=[O:5])[C:3]1[CH:2]=[CH:17][CH:16]=[CH:15][C:14]=1[Si:18]([CH3:21])([CH3:20])[CH3:19]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "citric acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(CC(O)(C(=O)O)CC(=O)O)(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H8O7/c7-3(8)1-6(13,5(11)12)2-4(9)10/h13H,1-2H2,(H,7,8)(H,9,10)(H,11,12)"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 25.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3_m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "s-BuLi"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Li]C(C)CC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H9.Li/c1-3-4-2;/h3H,4H2,1-2H3;"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 2.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "cyclohexane"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1CCCCC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H12/c1-2-4-6-5-3-1/h1-6H2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m1_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "compound"
+            },
+            {
+              "type": "NAME",
+              "value": "2-Bromo-N-(2-methylphenyl)-6-(trimethylsilyl)benzamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "BrC1=C(C(=O)NC2=C(C=CC=C2)C)C(=CC=C1)[Si](C)(C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C17H20BrNOSi/c1-12-8-5-6-10-14(12)19-17(20)16-13(18)9-7-11-15(16)21(2,3)4/h5-11H,1-4H3,(H,19,20)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.75,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "THF"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1CCOC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O/c1-2-4-5-3-1/h1-4H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 50.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "After stirring for 30 min"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "The compound of Example 120 (0.0021 mol, 0.75 g) and 50 mL THF were cooled to -78° C. in a nitrogen atmosphere with magnetic stirring. 1.3M s-BuLi (0.0026 mol, 2 mL) in cyclohexane was added dropwise. After stirring for 30 min, 25 mL of 25% citric acid were added. The mixture was then extracted three times with ethyl acetate, the extracts combined and washed with brine and twice with water, dried (MgSO4) and concentrated. The title compound was recrystallized as a white solid from ethyl acetate/hexanes in 54% yield. m.p. 117-119° C."
+  },
+  "workups": [
+    {
+      "type": "EXTRACTION",
+      "details": "The mixture was then extracted three times with ethyl acetate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "washed with brine and twice with water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "brine"
+              },
+              {
+                "type": "SMILES",
+                "value": "[Cl-].[Na+].O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH.Na.H2O/h1H;;1H2/q;+1;/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "dried (MgSO4)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "MgSO4"
+              },
+              {
+                "type": "SMILES",
+                "value": "[O-]S(=O)(=O)[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The title compound was recrystallized as a white solid from ethyl acetate/hexanes in 54% yield",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "title compound"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate hexanes"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 30.0,
+        "units": "MINUTE"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-(2-Methylphenyl)-2-(trimethylsilyl)benzamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC1=C(C=CC=C1)NC(C1=C(C=CC=C1)[Si](C)(C)C)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C17H21NOSi/c1-13-9-5-7-11-15(13)18-17(19)14-10-6-8-12-16(14)20(2,3)4/h5-12H,1-4H3,(H,18,19)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 54.0
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998466",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:37.634977"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-a746049019b44a398d10eea69805cf97"
+}

@@ -1,0 +1,311 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[Br:1][C:2]1[C:7]([F:8])=[C:6](F)[N:5]=[C:4]([F:10])[C:3]=1[Cl:11].[C:12]([NH2:16])([CH3:15])([CH3:14])[CH3:13]>C(#N)C>[Br:1][C:2]1[C:3]([Cl:11])=[C:4]([F:10])[N:5]=[C:6]([NH:16][C:12]([CH3:15])([CH3:14])[CH3:13])[C:7]=1[F:8]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m3_m1_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-bromo-3-chloro-2,5,6-trifluoropyridine"
+            },
+            {
+              "type": "SMILES",
+              "value": "BrC1=C(C(=NC(=C1F)F)F)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C5BrClF3N/c6-1-2(7)4(9)11-5(10)3(1)8"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 10.2,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "t-butylamine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(C)(C)N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H11N/c1-4(2,3)5/h5H2,1-3H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 10.5,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acetonitrile"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)#N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H3N/c1-2-3/h1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 40.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To 40 ml of acetonitrile was dissolved 10.2 g of 4-bromo-3-chloro-2,5,6-trifluoropyridine and 10.5 g of t-butylamine, and the mixture was heated under reflux for 1 hour and the solvent and the like were distilled off under reduced pressure. To the residue was added 80 ml of chloroform and the mixture was washed with 50 ml of distilled water. The chloroform layer was dried over anhydrous magnesium sulfate and concentrated under reduced pressure to obtain 12.8 g of the title compound as reddish orange oil."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "the mixture was heated"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "under reflux for 1 hour",
+      "duration": {
+        "value": 1.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "DISTILLATION",
+      "details": "the solvent and the like were distilled off under reduced pressure"
+    },
+    {
+      "type": "ADDITION",
+      "details": "To the residue was added 80 ml of chloroform",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "chloroform"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(Cl)(Cl)Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CHCl3/c2-1(3)4/h1H"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 80.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "the mixture was washed with 50 ml of distilled water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 50.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "The chloroform layer was dried over anhydrous magnesium sulfate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "chloroform"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(Cl)(Cl)Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CHCl3/c2-1(3)4/h1H"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "magnesium sulfate"
+              },
+              {
+                "type": "SMILES",
+                "value": "S(=O)(=O)([O-])[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated under reduced pressure"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "4-bromo-2-(t-butylamino)-5-chloro-3,6-difluoropyridine"
+            },
+            {
+              "type": "SMILES",
+              "value": "BrC1=C(C(=NC(=C1Cl)F)NC(C)(C)C)F"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H10BrClF2N2/c1-9(2,3)15-8-6(12)4(10)5(11)7(13)14-8/h1-3H3,(H,14,15)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 12.8,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 103.2
+              }
+            }
+          ],
+          "isolated_color": "reddish orange",
+          "texture": {
+            "type": "OIL",
+            "details": "oil"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998436",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:27.740777"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-87af505b8e9a475690822ec90b895d08"
+}

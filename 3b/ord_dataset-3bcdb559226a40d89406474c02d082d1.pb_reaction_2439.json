@@ -1,0 +1,351 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[Cl:1][CH2:2][CH2:3][CH2:4][O:5][C:6]1[CH:11]=[CH:10][C:9]([C:12](=[O:14])[CH3:13])=[CH:8][C:7]=1[O:15][CH3:16].FC(F)(F)C(OI(C1C=CC=CC=1)OC(=O)C(F)(F)F)=[O:20].O.C(C(O)=O)(F)(F)F>CC#N>[Cl:1][CH2:2][CH2:3][CH2:4][O:5][C:6]1[CH:11]=[CH:10][C:9]([C:12](=[O:14])[CH2:13][OH:20])=[CH:8][C:7]=1[O:15][CH3:16]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m3_m4_m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "1-[4-(3-chloropropoxy)-3-methoxyphenyl]ethanone"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClCCCOC1=C(C=C(C=C1)C(C)=O)OC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C12H15ClO3/c1-9(14)10-4-5-11(12(8-10)15-2)16-7-3-6-13/h4-5,8H,3,6-7H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 4.3,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "[bis(trifluoroacetoxy)iodo]benzene"
+            },
+            {
+              "type": "SMILES",
+              "value": "FC(C(=O)OI(OC(C(F)(F)F)=O)C1=CC=CC=C1)(F)F"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C10H5F6IO4/c11-9(12,13)7(18)20-17(6-4-2-1-3-5-6)21-8(19)10(14,15)16/h1-5H"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 15.6,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "H2O"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 18.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "CF3CO2H"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(F)(F)(F)C(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2HF3O2/c3-2(4,5)1(6)7/h(H,6,7)"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 2.8,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "CH3CN"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC#N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H3N/c1-2-3/h1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 90.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A solution of 1-[4-(3-chloropropoxy)-3-methoxyphenyl]ethanone (4.3 g, 17.7 mmol), [bis(trifluoroacetoxy)iodo]benzene (15.6 g, 36.2 mmol), H2O (18 ml), CF3CO2H (2.8 ml) and CH3CN (90 ml) was refluxed for 3 hours. The CH3CN was removed under reduced pressure and the resulting yellow liquid was partitioned between H2O and CH2Cl2. The biphasic mixture was filtered, the organic phase collected, washed with saturated NaHCO3 solution and concentrated to afford 1.5 g of an amorphous brown solid. The solid was flash chromatographed on silica gel, eluting the column with 5% EtOAc/CH2Cl2. Concentration of similar fractions afforded 0.7 g of the compound as a pale yellow solid, m.p. 99-101° C."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "The CH3CN was removed under reduced pressure",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "CH3CN"
+              },
+              {
+                "type": "SMILES",
+                "value": "CC#N"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C2H3N/c1-2-3/h1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the resulting yellow liquid was partitioned between H2O and CH2Cl2",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "H2O"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "CH2Cl2"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(Cl)Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "The biphasic mixture was filtered"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the organic phase collected"
+    },
+    {
+      "type": "WASH",
+      "details": "washed with saturated NaHCO3 solution",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "NaHCO3"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(=O)(O)[O-].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2O3.Na/c2-1(3)4;/h(H2,2,3,4);/q;+1/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "amorphous brown solid"
+            },
+            {
+              "type": "NAME",
+              "value": "1-[4-(3-Chloropropoxy)-3-methoxyphenyl]-2-hydroxyethanone"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClCCCOC1=C(C=C(C=C1)C(CO)=O)OC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C12H15ClO4/c1-16-12-7-9(10(15)8-14)3-4-11(12)17-6-2-5-13/h3-4,7,14H,2,5-6,8H2,1H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 1.5,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 32.8
+              }
+            }
+          ],
+          "isolated_color": "amorphous brown",
+          "texture": {
+            "type": "CUSTOM",
+            "details": "solid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06001834",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:23.886954"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-86b6db647f5f481ba16d6771bb07f563"
+}

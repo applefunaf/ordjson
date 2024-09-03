@@ -1,0 +1,385 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "C([O:4][C:5]1[CH:17]=[CH:16][CH:15]=[C:14]2[C:6]=1[C:7]1[C:8]([O:21][CH3:22])=[CH:9][C:10]([O:19][CH3:20])=[CH:11][C:12]=1[C:13]2=[O:18])(C)C.B(Cl)(Cl)Cl>C(Cl)Cl>[CH3:20][O:19][C:10]1[CH:9]=[C:8]([O:21][CH3:22])[C:7]2[C:6]3[C:14](=[CH:15][CH:16]=[CH:17][C:5]=3[OH:4])[C:13](=[O:18])[C:12]=2[CH:11]=1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "5-isopropoxy-2,4-dimethoxy-fluoren-9-one"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(C)OC1=C2C=3C(=CC(=CC3C(C2=CC=C1)=O)OC)OC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C18H18O4/c1-10(2)22-14-7-5-6-12-16(14)17-13(18(12)19)8-11(20-3)9-15(17)21-4/h5-10H,1-4H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.48,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "CH2Cl2"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(Cl)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 25.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "boron trichloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "B(Cl)(Cl)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/BCl3/c2-1(3)4"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 1.8,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 0.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "stir at 0° C. under argon"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "Prepare a solution of 5-isopropoxy-2,4-dimethoxy-fluoren-9-one (0.48 g, 1.6 mmole) in 25 mL CH2Cl2 and stir at 0° C. under argon. Dropwise, add boron trichloride (1.0 M in 1.8 mL CH2Cl2, 1.8 mmole) and stir the reaction for 1 hour. Quench with 20 mL water and stir vigorously. Filter and wash twice the resulting precipitate with 100 mL methylene chloride. Separate the organic layer from the filtrate and wash with brine. Dry with MgSO4, filter and strip off the solvent. Recrystallize the solid from CH2Cl2 /hexane (4:6) to obtain the title compound (0.28 g, 1.1 mmole, 69%). Rf =0.3."
+  },
+  "workups": [
+    {
+      "type": "STIRRING",
+      "details": "stir"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the reaction for 1 hour",
+      "duration": {
+        "value": 1.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "Quench with 20 mL water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 20.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "STIRRING",
+      "details": "stir vigorously"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "Filter"
+    },
+    {
+      "type": "WASH",
+      "details": "wash twice the resulting precipitate with 100 mL methylene chloride",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "methylene chloride"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(Cl)Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 100.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "Separate the organic layer from the filtrate"
+    },
+    {
+      "type": "WASH",
+      "details": "wash with brine",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "brine"
+              },
+              {
+                "type": "SMILES",
+                "value": "[Cl-].[Na+].O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH.Na.H2O/h1H;;1H2/q;+1;/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "Dry with MgSO4",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "MgSO4"
+              },
+              {
+                "type": "SMILES",
+                "value": "[O-]S(=O)(=O)[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filter"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "Recrystallize the solid from CH2Cl2 /hexane (4:6)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "CH2Cl2 hexane"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(Cl)Cl.CCCCCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C6H14.CH2Cl2/c1-3-5-6-4-2;2-1-3/h3-6H2,1-2H3;1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "2,4-dimethoxy-5-hydroxy-fluoren-9-one"
+            },
+            {
+              "type": "SMILES",
+              "value": "COC1=CC=2C(C3=CC=CC(=C3C2C(=C1)OC)O)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C15H12O4/c1-18-8-6-10-14(12(7-8)19-2)13-9(15(10)17)4-3-5-11(13)16/h3-7,16H,1-2H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "AMOUNT",
+              "amount": {
+                "moles": {
+                  "value": 1.1,
+                  "units": "MILLIMOLE"
+                }
+              }
+            },
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 0.28,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 69.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 68.8
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06004959",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:19.948275"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-8676933ae4144598b7ca53c5abe1d437"
+}

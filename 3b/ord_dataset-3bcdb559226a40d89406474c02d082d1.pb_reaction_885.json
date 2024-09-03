@@ -1,0 +1,211 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][O:2][C:3]1[CH:12]=[C:11]2[C:6]([CH2:7][CH2:8][CH2:9][C:10]2=[O:13])=[CH:5][CH:4]=1.[Br:14]Br>CCOCC>[Br:14][CH:9]1[CH2:8][CH2:7][C:6]2[C:11](=[CH:12][C:3]([O:2][CH3:1])=[CH:4][CH:5]=2)[C:10]1=[O:13]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m3_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "7-methoxy-3,4-dihydro-1(2 H)-naphthalenone"
+            },
+            {
+              "type": "SMILES",
+              "value": "COC1=CC=C2CCCC(C2=C1)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C11H12O2/c1-13-9-6-5-8-3-2-4-11(12)10(8)7-9/h5-7H,2-4H2,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 25.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "bromine"
+            },
+            {
+              "type": "SMILES",
+              "value": "BrBr"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Br2/c1-2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 37.9,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ether"
+            },
+            {
+              "type": "SMILES",
+              "value": "CCOCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 1.0,
+              "units": "LITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a 10° C. solution of 25 g (0.142 mol) of 7-methoxy-3,4-dihydro-1(2 H)-naphthalenone in 1 liter ether was added dropwise (maintaining reaction temperature at about 10° C.) 37.9 g (0.237 mol) of bromine. The reaction solution was concentrated on a rotating evaporator and the residue crystallized from ether to give 31.6 g (81%) of present title compound, m.p. 79-80° C."
+  },
+  "workups": [
+    {
+      "type": "CONCENTRATION",
+      "details": "The reaction solution was concentrated on a rotating evaporator"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the residue crystallized from ether",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "present title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "2-Bromo-3,4-dihydro-7-methoxy-1(2 H)-naphthalenone"
+            },
+            {
+              "type": "SMILES",
+              "value": "BrC1C(C2=CC(=CC=C2CC1)OC)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C11H11BrO2/c1-14-8-4-2-7-3-5-10(12)11(13)9(7)6-8/h2,4,6,10H,3,5H2,1H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 31.6,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 81.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 87.2
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998451",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:30.768353"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-4dabd2c475d042b0948df530302726ac"
+}

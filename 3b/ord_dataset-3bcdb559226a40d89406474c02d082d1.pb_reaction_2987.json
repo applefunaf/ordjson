@@ -1,0 +1,316 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][O:2][C:3]1[C:8]([O:9][CH3:10])=[CH:7][CH:6]=[CH:5][C:4]=1[CH2:11][CH:12]([C:14]1[CH:19]=[CH:18][N:17]=[CH:16][CH:15]=1)[OH:13]>C(O)(=O)C.O=[Pt]=O>[CH3:1][O:2][C:3]1[C:8]([O:9][CH3:10])=[CH:7][CH:6]=[CH:5][C:4]=1[CH2:11][CH:12]([CH:14]1[CH2:19][CH2:18][NH:17][CH2:16][CH2:15]1)[OH:13]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-[2-(2,3-dimethoxyphenyl)-1-hydroxyethyl]pyridine"
+            },
+            {
+              "type": "SMILES",
+              "value": "COC1=C(C=CC=C1OC)CC(O)C1=CC=NC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C15H17NO3/c1-18-14-5-3-4-12(15(14)19-2)10-13(17)11-6-8-16-9-7-11/h3-9,13,17H,10H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 20.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acetic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H4O2/c1-2(3)4/h1H3,(H,3,4)"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 170.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "PtO2"
+            },
+            {
+              "type": "SMILES",
+              "value": "O=[Pt]=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/2O.Pt"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 1.5,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "CATALYST"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "4-[2-(2,3-dimethoxyphenyl)-1-hydroxyethyl]pyridine (20.0 g, 0.077 mol) in acetic acid (170 ml) over 1.5 g of PtO2 was hydrogenated for 45 minutes on a Parr shaker. The reaction was filtered through Celite and filtrate combined with another run of 21.0 g (0.08 mol). The combined filtrates were concentrated in vacuo and the resulting oil was diluted with water. The aqueous solution was made basic with 50% aqueous NaOH, and the basic mixture extracted with EtOAc. The organic extract was washed with water, dried (magnesium sulfate) and then concentrated to afford 34.3 g of an oil that solidified upon standing. The solid was removed and recrystallized twice from isopropyl ether at 5° C. to afford the piperidine as a white solid, mp 82-84° C."
+  },
+  "workups": [
+    {
+      "type": "FILTRATION",
+      "details": "The reaction was filtered through Celite and filtrate"
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "The combined filtrates were concentrated in vacuo"
+    },
+    {
+      "type": "ADDITION",
+      "details": "the resulting oil was diluted with water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "the basic mixture extracted with EtOAc",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "EtOAc"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOC(=O)C"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "The organic extract"
+    },
+    {
+      "type": "WASH",
+      "details": "was washed with water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "dried (magnesium sulfate)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "magnesium sulfate"
+              },
+              {
+                "type": "SMILES",
+                "value": "S(=O)(=O)([O-])[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "oil"
+            },
+            {
+              "type": "NAME",
+              "value": "4-[2-(2,3-Dimethoxyphenyl)-1-hydroxyethyl]piperidine"
+            },
+            {
+              "type": "SMILES",
+              "value": "COC1=C(C=CC=C1OC)CC(O)C1CCNCC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C15H23NO3/c1-18-14-5-3-4-12(15(14)19-2)10-13(17)11-6-8-16-9-7-11/h3-5,11,13,16-17H,6-10H2,1-2H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 34.3,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 167.9
+              }
+            }
+          ],
+          "texture": {
+            "type": "OIL",
+            "details": "oil"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06004982",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:18.472323"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-ddd6eab9792c4a5c9512eee3cafd1035"
+}

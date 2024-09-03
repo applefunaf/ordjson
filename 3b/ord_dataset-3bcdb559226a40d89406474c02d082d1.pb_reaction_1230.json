@@ -1,0 +1,248 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[C:1]([OH:8])(=[O:7])/[CH:2]=[CH:3]/[C:4]([OH:6])=[O:5].C(O)=O.[Cu:12].C(O)=O>CO>[Cu:12].[C:1]([OH:8])(=[O:7])/[CH:2]=[CH:3]/[C:4]([OH:6])=[O:5] |f:2.3,5.6|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "fumaric acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(\\C=C\\C(=O)O)(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H4O4/c5-3(6)1-2-4(7)8/h1-2H,(H,5,6)(H,7,8)/b2-1+"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 1.74,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "formic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2O2/c2-1-3/h1H,(H,2,3)"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 8.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "formic acid copper"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Cu].C(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2O2.Cu/c2-1-3;/h1H,(H,2,3);"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 3.38,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 100.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 100.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "Then, under stirring at the normal temperature, into the above solution"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "1.74 g of fumaric acid was dissolved in a mixture solvent having 100 cm3 of methanol and 8 cm3 of formic acid. Then, under stirring at the normal temperature, into the above solution, a further solution in which 3.38 g of formic acid copper was dissolved in 100 cm3 of methanol was dripped. After this solution was left still for one day, the precipitation product was suction-filtered and dried for 120° C./4 hours, whereby 1.23 g of fumaric acid copper was obtained. This substance had the specific surface area of 480 m2 /g."
+  },
+  "workups": [
+    {
+      "type": "FILTRATION",
+      "details": "the precipitation product was suction-filtered"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried for 120° C./4 hours",
+      "duration": {
+        "value": 4.0,
+        "units": "HOUR"
+      },
+      "temperature": {
+        "setpoint": {
+          "value": 120.0,
+          "units": "CELSIUS"
+        }
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 1.0,
+        "units": "DAY"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "fumaric acid copper"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Cu].C(\\C=C\\C(=O)O)(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H4O4.Cu/c5-3(6)1-2-4(7)8;/h1-2H,(H,5,6)(H,7,8);/b2-1+;"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 1.23,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 45.7
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998647",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:34.879487"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-21a082554bda4c8aa72de52a862ed41f"
+}

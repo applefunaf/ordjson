@@ -1,0 +1,274 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[F:1][C:2]1[CH:29]=[CH:28][C:5]2[C:6]([CH:9]3[CH2:14][CH2:13][N:12]([CH2:15][CH2:16][N:17]4[C:21](=[O:22])[C:20]5=[CH:23][CH:24]=[CH:25][CH:26]=[C:19]5[C:18]4=[O:27])[CH2:11][CH2:10]3)=[N:7][O:8][C:4]=2[CH:3]=1.[BH4-].[Na+]>CO.C(Cl)Cl>[F:1][C:2]1[CH:29]=[CH:28][C:5]2[C:6]([CH:9]3[CH2:14][CH2:13][N:12]([CH2:15][CH2:16][N:17]4[CH:21]([OH:22])[C:20]5[C:19](=[CH:26][CH:25]=[CH:24][CH:23]=5)[C:18]4=[O:27])[CH2:11][CH2:10]3)=[N:7][O:8][C:4]=2[CH:3]=1 |f:1.2|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m3_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-[2-[4-(6-fluoro-1,2-benzisoxazol-3-yl)-1-piperidinyl]ethyl]phthalimide"
+            },
+            {
+              "type": "SMILES",
+              "value": "FC1=CC2=C(C(=NO2)C2CCN(CC2)CCN2C(C=3C(C2=O)=CC=CC3)=O)C=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C22H20FN3O3/c23-15-5-6-18-19(13-15)29-24-20(18)14-7-9-25(10-8-14)11-12-26-21(27)16-3-1-2-4-17(16)22(26)28/h1-6,13-14H,7-12H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 7.8,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 250.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "DCM"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(Cl)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 30.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "NaBH4"
+            },
+            {
+              "type": "SMILES",
+              "value": "[BH4-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/BH4.Na/h1H4;/q-1;+1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 1.7,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "After stirring for 0.5 hours the homogeneous reaction mixture"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a suspension of N-[2-[4-(6-fluoro-1,2-benzisoxazol-3-yl)-1-piperidinyl]ethyl]phthalimide (7.8 g, 19.8 mmol) in methanol (250 ml) and DCM (30 ml) was added NaBH4 (1.7 g, 45.5 mmol) at room temperature under nitrogen. After stirring for 0.5 hours the homogeneous reaction mixture was concentrated. The remaining solid was purified on a flash chromatography column (SiO2, 1:1 EtOAc/DCM, increased to 10% MeOH) to give 7.0 g (90%) of the desired product as a solid which was recrystallized from EtOAc, m.p.=172-173° C."
+  },
+  "workups": [
+    {
+      "type": "CONCENTRATION",
+      "details": "was concentrated"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The remaining solid was purified on a flash chromatography column (SiO2, 1:1 EtOAc/DCM, increased to 10% MeOH)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "EtOAc DCM"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOC(=O)C.C(Cl)Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2.CH2Cl2/c1-3-6-4(2)5;2-1-3/h3H2,1-2H3;1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "MeOH"
+              },
+              {
+                "type": "SMILES",
+                "value": "CO"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 0.5,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "desired product"
+            },
+            {
+              "type": "NAME",
+              "value": "2,3-dihydro-2-[2-[4-(6-Fluoro-1,2-benzisoxazol-3-yl)-1-piperidinyl]ethyl]-3-hydroxy-1H-isoindol-1-one"
+            },
+            {
+              "type": "SMILES",
+              "value": "FC1=CC2=C(C(=NO2)C2CCN(CC2)CCN2C(C3=CC=CC=C3C2O)=O)C=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C22H22FN3O3/c23-15-5-6-18-19(13-15)29-24-20(18)14-7-9-25(10-8-14)11-12-26-21(27)16-3-1-2-4-17(16)22(26)28/h1-6,13-14,21,27H,7-12H2"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 7.0,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 90.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 89.4
+              }
+            }
+          ],
+          "texture": {
+            "type": "CUSTOM",
+            "details": "solid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06001834",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:23.086790"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-9c39a07782ed4192aaa43ffe84dc5d1f"
+}

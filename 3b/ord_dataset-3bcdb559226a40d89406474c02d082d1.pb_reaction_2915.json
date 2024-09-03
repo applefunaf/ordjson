@@ -1,0 +1,170 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "CC(OC([N:8]1[CH2:13][CH2:12][CH:11]([C:14](=O)[C:15]2[CH:20]=[CH:19][CH:18]=[C:17]([O:21][CH3:22])C=2OC)[CH2:10][CH2:9]1)=O)(C)C.FC(F)(F)[C:28]([OH:30])=O.C[CH2:34][O:35]CC>>[CH3:22][O:21][C:17]1[C:18]([O:35][CH3:34])=[CH:19][CH:20]=[CH:15][C:14]=1[C:11]1([CH:28]=[O:30])[CH2:10][CH2:9][NH:8][CH2:13][CH2:12]1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-(2,3-Dimethoxybenzoyl)-1-piperidinecarboxylic acid 1,1-dimethylethyl ester"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC(C)(C)OC(=O)N1CCC(CC1)C(C1=C(C(=CC=C1)OC)OC)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C19H27NO5/c1-19(2,3)25-18(22)20-11-9-13(10-12-20)16(21)14-7-6-8-15(23-4)17(14)24-5/h6-8,13H,9-12H2,1-5H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 7.75,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "trifluoroacetic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "FC(C(=O)O)(F)F"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2HF3O2/c3-2(4,5)1(6)7/h(H,6,7)"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 50.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ether"
+            },
+            {
+              "type": "SMILES",
+              "value": "CCOCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 900.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "stirred for 45 minutes"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "4-(2,3-Dimethoxybenzoyl)-1-piperidinecarboxylic acid 1,1-dimethylethyl ester (7.75 g, 22.2 mmol) was dissolved in trifluoroacetic acid (50 mL, 650 mmol) and stirred for 45 minutes. The entire solution was poured into ether (900 mL) and allowed to stand overnight. Filtration yielded 4-(2,3-dimethoxyphenyl)-4-piperidinylmethanone trieluoroacetate as fine white needles, m.p. 123° C. Anal. Calcd for C14H19NO3.CF3CO2H: C, 52.89; H, 5.55; N, 3.86. Found: C, 52.77; H, 5.62; N, 3.82."
+  },
+  "workups": [
+    {
+      "type": "WAIT",
+      "details": "to stand overnight",
+      "duration": {
+        "value": 8.0,
+        "precision": 8.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "Filtration"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 45.0,
+        "units": "MINUTE"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-(2,3-dimethoxyphenyl)-4-piperidinylmethanone"
+            },
+            {
+              "type": "SMILES",
+              "value": "COC1=C(C=CC=C1OC)C1(CCNCC1)C=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C14H19NO3/c1-17-12-5-3-4-11(13(12)18-2)14(10-16)6-8-15-9-7-14/h3-5,10,15H,6-9H2,1-2H3"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06004980",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:17.235750"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-e5863beb19384a178c9f5e81f9dac2a3"
+}

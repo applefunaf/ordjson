@@ -1,0 +1,282 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "Br[CH:2](Br)[C:3]1[CH:8]=[CH:7][C:6]([C:9]2[CH:22]=[CH:21][C:20]3[C:11](=[C:12]4[C:17](=[CH:18][CH:19]=3)[CH:16]=[CH:15][C:14]([C:23]3[CH:28]=CC(C(Br)Br)=[CH:25][CH:24]=3)=[N:13]4)[N:10]=2)=[CH:5][CH:4]=1.[OH-:33].[Na+].[C:35]([OH:39])(=O)[CH2:36][CH3:37]>>[CH:2]([C:3]1[CH:8]=[CH:7][C:6]([C:9]2[CH:22]=[CH:21][C:20]3[C:11](=[C:12]4[C:17](=[CH:18][CH:19]=3)[CH:16]=[CH:15][C:14]([C:23]3[CH:28]=[CH:37][C:36]([CH:35]=[O:39])=[CH:25][CH:24]=3)=[N:13]4)[N:10]=2)=[CH:5][CH:4]=1)=[O:33] |f:1.2|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Compound ( 3 )"
+            },
+            {
+              "type": "NAME",
+              "value": "2,9-bis(4-(dibromomethyl)phenyl)-1,10-phenanthroline"
+            },
+            {
+              "type": "SMILES",
+              "value": "BrC(C1=CC=C(C=C1)C1=NC2=C3N=C(C=CC3=CC=C2C=C1)C1=CC=C(C=C1)C(Br)Br)Br"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C26H16Br4N2/c27-25(28)19-7-1-15(2-8-19)21-13-11-17-5-6-18-12-14-22(32-24(18)23(17)31-21)16-3-9-20(10-4-16)26(29)30/h1-14,25-26H"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 2.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "NaOH"
+            },
+            {
+              "type": "SMILES",
+              "value": "[OH-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Na.H2O/h;1H2/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.71,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "propionic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(CC)(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H6O2/c1-2-3(4)5/h2H2,1H3,(H,4,5)"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 15.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "The solution was stirred for 1 h"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "Compound (3) (2.00 g, 2.96 mmol) and powdered NaOH (0.71 g, 17.7 mmol) were refluxed in propionic acid (15 mL) for 6 h under argon. The propionic acid was evaporated under reduced pressure and replaced with THF (25 mL) and 2M NaOH (5 mL). The solution was stirred for 1 h, and then the THF was evaporated. Water (20 mL) was added and the pH adjusted to ~8 with HCl. The solution was extracted with CH2Cl2 (3×100 mL). Yield 0.92 g (80%). 1H NMR (CDCl3) δ8.38 (s, 2H), 8.64 (d, J=8.4 Hz, 4H), 8.42 (d, J=8.4 Hz, 2H), 8.25 (d, J=8.4 Hz, 2H), 8.13 (d, J=8.4 Hz, 4H), 7.89 (s, 2H)."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "The propionic acid was evaporated under reduced pressure",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "propionic acid"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(CC)(=O)O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C3H6O2/c1-2-3(4)5/h2H2,1H3,(H,4,5)"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the THF was evaporated",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "THF"
+              },
+              {
+                "type": "SMILES",
+                "value": "C1CCOC1"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O/c1-2-4-5-3-1/h1-4H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "ADDITION",
+      "details": "Water (20 mL) was added",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "Water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 20.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "The solution was extracted with CH2Cl2 (3×100 mL)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "CH2Cl2"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(Cl)Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 100.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 1.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2,9-bis(4-formylphenyl)-1,10-phenanthroline"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(=O)C1=CC=C(C=C1)C1=NC2=C3N=C(C=CC3=CC=C2C=C1)C1=CC=C(C=C1)C=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C26H16N2O2/c29-15-17-1-5-19(6-2-17)23-13-11-21-9-10-22-12-14-24(28-26(22)25(21)27-23)20-7-3-18(16-30)4-8-20/h1-16H"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998594",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:32.159313"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-1c56bd9942ad4c61a3673d3493e152fa"
+}

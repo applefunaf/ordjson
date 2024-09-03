@@ -1,0 +1,207 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "C(OC([N:6]1[CH2:10][CH2:9][CH:8]([C:11]2[C:15]3[CH:16]=[CH:17][C:18]([F:20])=[CH:19][C:14]=3[O:13][N:12]=2)[CH2:7]1)=O)=C.[ClH:21]>C(O)(C)C>[ClH:21].[F:20][C:18]1[CH:17]=[CH:16][C:15]2[C:11]([CH:8]3[CH2:9][CH2:10][NH:6][CH2:7]3)=[N:12][O:13][C:14]=2[CH:19]=1 |f:3.4|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3-(6fluoro-1,2-benzisoxazol-3-yl)-1-pyrrolidinylcarboxylic acid ethenyl ester"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(=C)OC(=O)N1CC(CC1)C1=NOC2=C1C=CC(=C2)F"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C14H13FN2O3/c1-2-19-14(18)17-6-5-9(8-17)13-11-4-3-10(15)7-12(11)20-16-13/h2-4,7,9H,1,5-6,8H2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrochloric acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/ClH/h1H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 5.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "isopropyl alcohol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H8O/c1-3(2)4/h3-4H,1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 50.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 0.0,
+        "units": "CELSIUS"
+      }
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture of 3-(6fluoro-1,2-benzisoxazol-3-yl)-1-pyrrolidinylcarboxylic acid ethenyl ester (5.1 g, 18.4 mmol, hydrochloric acid (5 ml), and isopropyl alcohol (50 ml) was heated at reflux for 3.5 hours. At the end of the reaction, the solvent was reduced to about 30 ml on a rotary evaporator and the mixture was cooled to 0° C. for 2 hours. The crystals were collected by filtration and rinsed with cold isopropyl alcohol. The 6-fluoro-3-(3-pyrrolidinyl)-1,2-benzisoxazole hydrochloride product weighed 3.09 g (69%), m.p.=225-227° C."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "was heated"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "at reflux for 3.5 hours",
+      "duration": {
+        "value": 3.5,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "At the end of the reaction"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the solvent was reduced to about 30 ml on a rotary evaporator"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "The crystals were collected by filtration"
+    },
+    {
+      "type": "WASH",
+      "details": "rinsed with cold isopropyl alcohol",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "isopropyl alcohol"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(C)O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C3H8O/c1-3(2)4/h3-4H,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "6-Fluoro-3-(3-pyrrolidinyl)-1,2-benzisoxazole hydrochloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl.FC1=CC2=C(C(=NO2)C2CNCC2)C=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C11H11FN2O.ClH/c12-8-1-2-9-10(5-8)15-14-11(9)7-3-4-13-6-7;/h1-2,5,7,13H,3-4,6H2;1H"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06001834",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:22.748290"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-c6ea92e680374b319260d29281cc353d"
+}

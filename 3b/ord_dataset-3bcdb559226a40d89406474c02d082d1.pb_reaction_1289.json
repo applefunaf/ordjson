@@ -1,0 +1,237 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[Cl:1][C:2]1[N:7]=[C:6]([NH:8][CH2:9][CH3:10])[N:5]=[C:4]([NH:11][S:12]([C:15]2[CH:20]=[CH:19][C:18]([NH:21]C(=O)C)=[CH:17][CH:16]=2)(=[O:14])=[O:13])[CH:3]=1>[OH-].[Na+]>[NH2:21][C:18]1[CH:19]=[CH:20][C:15]([S:12]([NH:11][C:4]2[CH:3]=[C:2]([Cl:1])[N:7]=[C:6]([NH:8][CH2:9][CH3:10])[N:5]=2)(=[O:13])=[O:14])=[CH:16][CH:17]=1 |f:1.2|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-[4-(6-chloro-2-ethylamino-pyrimidin-4-ylsulfamoyl)-phenyl]-acetamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC1=CC(=NC(=N1)NCC)NS(=O)(=O)C1=CC=C(C=C1)NC(C)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C14H16ClN5O3S/c1-3-16-14-18-12(15)8-13(19-14)20-24(22,23)11-6-4-10(5-7-11)17-9(2)21/h4-8H,3H2,1-2H3,(H,17,21)(H2,16,18,19,20)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 2.88,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "NaOH"
+            },
+            {
+              "type": "SMILES",
+              "value": "[OH-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Na.H2O/h;1H2/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 76.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "2.88 g (0.0075 mol) of N-[4-(6-chloro-2-ethylamino-pyrimidin-4-ylsulfamoyl)-phenyl]-acetamide were dissolved in 76 ml of 1N NaOH and boiled at reflux for 3 hours. The mixture was extracted with ethyl acetate, the aqueous phase was saturated with sodium chloride and the residual ethyl acetate was distilled on a rotary evaporator. Then, the aqueous phase was made acid with 3N HCl and the precipitate which separated was filtered off under suction. After drying there were obtained 2.2 g (90%) of 4-amino-N-(6-chloro-2-ethylamino-pyrimidin-4-yl)-benzenesulfonamide as white crystals; m.p.: 172-173° C."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "at reflux for 3 hours",
+      "duration": {
+        "value": 3.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "The mixture was extracted with ethyl acetate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DISTILLATION",
+      "details": "the residual ethyl acetate was distilled on a rotary evaporator",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the precipitate which separated"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "was filtered off under suction"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "After drying there"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-amino-N-(6-chloro-2-ethylamino-pyrimidin-4-yl)-benzenesulfonamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC1=CC=C(C=C1)S(=O)(=O)NC1=NC(=NC(=C1)Cl)NCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C12H14ClN5O2S/c1-2-15-12-16-10(13)7-11(17-12)18-21(19,20)9-5-3-8(14)4-6-9/h3-7H,2,14H2,1H3,(H2,15,16,17,18)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 2.2,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 90.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 89.5
+              }
+            }
+          ],
+          "isolated_color": "white",
+          "texture": {
+            "type": "CRYSTAL",
+            "details": "crystals"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998665",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:35.969487"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-883f6ed0b6a34fff9dbb83351bdd7581"
+}

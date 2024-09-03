@@ -1,0 +1,222 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[OH-].[Na+].[C:3]1([C:16]2[CH:21]=[CH:20][CH:19]=[CH:18][CH:17]=2)[CH:8]=[CH:7][CH:6]=[CH:5][C:4]=1[CH2:9][CH:10]([CH2:14][CH3:15])[C:11](O)=[O:12].S(Cl)([Cl:24])=O>>[C:3]1([C:16]2[CH:21]=[CH:20][CH:19]=[CH:18][CH:17]=2)[CH:8]=[CH:7][CH:6]=[CH:5][C:4]=1[CH2:9][CH:10]([CH2:14][CH3:15])[C:11]([Cl:24])=[O:12] |f:0.1|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "NaOH"
+            },
+            {
+              "type": "SMILES",
+              "value": "[OH-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Na.H2O/h;1H2/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3-(2-biphenylyl)-2-ethylpropionic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1(=C(C=CC=C1)CC(C(=O)O)CC)C1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C17H18O2/c1-2-13(17(18)19)12-15-10-6-7-11-16(15)14-8-4-3-5-9-14/h3-11,13H,2,12H2,1H3,(H,18,19)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 13.3,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "thionyl chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "S(=O)(Cl)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Cl2OS/c1-4(2)3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 25.9,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a 100-ml three-necked round flask (equipped with a stirrer tip, a Dimroth condenser, a thermometer and a trap of NaOH) were introduced 13.3 g (52.4 mmol) of 3-(2-biphenylyl)-2-ethylpropionic acid and 25.9 ml (355 mmol) of thionyl chloride, and they were refluxed for 2.5 hours with heating in a nitrogen atmosphere. After the reaction was completed, the unreacted thionyl chloride was distilled off under reduced pressure to obtain 15.2 g of a crude product as a yellow orange liquid. This acid chloride was used for the next reaction without further purification. The properties of the product thus obtained are described below."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "To a 100-ml three-necked round flask (equipped with a stirrer tip"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "were refluxed for 2.5 hours",
+      "duration": {
+        "value": 2.5,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "with heating in a nitrogen atmosphere"
+    },
+    {
+      "type": "DISTILLATION",
+      "details": "the unreacted thionyl chloride was distilled off under reduced pressure",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "thionyl chloride"
+              },
+              {
+                "type": "SMILES",
+                "value": "S(=O)(Cl)Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Cl2OS/c1-4(2)3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "crude product"
+            },
+            {
+              "type": "NAME",
+              "value": "3-(2-biphenylyl)-2-ethylpropionyl chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1(=C(C=CC=C1)CC(C(=O)Cl)CC)C1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C17H17ClO/c1-2-13(17(18)19)12-15-10-6-7-11-16(15)14-8-4-3-5-9-14/h3-11,13H,2,12H2,1H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 15.2,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 106.3
+              }
+            }
+          ],
+          "isolated_color": "yellow orange",
+          "texture": {
+            "type": "CUSTOM",
+            "details": "liquid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998039",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:15.983012"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-e4cffc689b074805beb42db5135341c2"
+}

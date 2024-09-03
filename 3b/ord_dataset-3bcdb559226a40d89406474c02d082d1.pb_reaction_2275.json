@@ -1,0 +1,324 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "O.[O:2]=[C:3]1[CH2:11][CH2:10][CH2:9][C:8]2[N:7]([CH2:12][CH:13]([OH:15])[CH3:14])[CH:6]=[CH:5][C:4]1=2>COCCOCCOC.[Pd]>[OH:2][C:3]1[CH:11]=[CH:10][CH:9]=[C:8]2[C:4]=1[CH:5]=[CH:6][N:7]2[CH2:12][CH:13]([OH:15])[CH3:14]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-oxo4,5,6,7-tetrahydro-1-N-(β-hydroxy-propyl)indole"
+            },
+            {
+              "type": "SMILES",
+              "value": "O=C1C=2C=CN(C2CCC1)CC(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C11H15NO2/c1-8(13)7-12-6-5-9-10(12)3-2-4-11(9)14/h5-6,8,13H,2-4,7H2,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 19.3,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m4_m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "palladium-on-charcoal"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Pd]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Pd"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "CATALYST"
+        }
+      ]
+    },
+    "m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "diglyme"
+            },
+            {
+              "type": "SMILES",
+              "value": "COCCOCCOC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H14O3/c1-7-3-5-9-6-4-8-2/h3-6H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "diglyme"
+            },
+            {
+              "type": "SMILES",
+              "value": "COCCOCCOC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H14O3/c1-7-3-5-9-6-4-8-2/h3-6H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 300.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "10 g of 5% by weight palladium-on-charcoal, containing 50% of water, were added to a solution of 19.3 g of 4-oxo4,5,6,7-tetrahydro-1-N-(β-hydroxy-propyl)indole, obtained in the preceding stage, in 300 cm3 of diglyme. The temperature of the reaction mixture was brought to the reflux temperature of the diglyme for 5 hours, after removal of the water by azeotropic distillation. The catalyst was then filtered off on Celite and the diglyme was then evaporated. 17 g of crude product were obtained. After chromatography on silica gel (heptane/ethyl acetate=1/4), 15 g of a viscous product were obtained, which product crystallized on addition of 15 cm3 of dichloromethane. After filtering, washing with petroleum ether and drying under vacuum and over phosphorus pentoxide, 10 g of 4-hydroxy-1-N-(β-hydroxypropyl)indole were recovered, the melting point of which was between 93 and 95° C."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "after removal of the water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DISTILLATION",
+      "details": "by azeotropic distillation"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "The catalyst was then filtered off on Celite"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the diglyme was then evaporated",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "diglyme"
+              },
+              {
+                "type": "SMILES",
+                "value": "COCCOCCOC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C6H14O3/c1-7-3-5-9-6-4-8-2/h3-6H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "17 g of crude product were obtained",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "crude product"
+              }
+            ],
+            "amount": {
+              "mass": {
+                "value": 17.0,
+                "units": "GRAM"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "viscous product"
+            },
+            {
+              "type": "NAME",
+              "value": "4-hydroxy-1-N-(β-hydroxypropyl)indole"
+            },
+            {
+              "type": "SMILES",
+              "value": "OC1=C2C=CN(C2=CC=C1)CC(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C11H13NO2/c1-8(13)7-12-6-5-9-10(12)3-2-4-11(9)14/h2-6,8,13-14H,7H2,1H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 15.0,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 78.5
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06002018",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:20.789438"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-0b614126baba4a59bf285b83819e0410"
+}

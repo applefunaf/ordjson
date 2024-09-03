@@ -1,0 +1,348 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[C:1]([CH2:3][C:4]([NH2:6])=[NH:5])#[N:2].Cl.C(CC(=N)OCC)#N.Br[CH:17]([CH3:27])[C:18]([C:20]1[CH:25]=[CH:24][CH:23]=[CH:22][C:21]=1[F:26])=O.O>C(O)C>[NH2:5][C:4]1[NH:6][C:18]([C:20]2[CH:25]=[CH:24][CH:23]=[CH:22][C:21]=2[F:26])=[C:17]([CH3:27])[C:3]=1[C:1]#[N:2] |f:1.2|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 500.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3_m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-bromo-2'- fluoropropiophenone"
+            },
+            {
+              "type": "SMILES",
+              "value": "BrC(C(=O)C1=C(C=CC=C1)F)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H8BrFO/c1-6(10)9(12)7-4-2-3-5-8(7)11/h2-6H,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 7.6,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m1_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-cyanoacetamidine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(#N)CC(=N)N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H5N3/c4-2-1-3(5)6/h1H2,(H3,5,6)"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethyl 2-cyanoacetimidate hydrochloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl.C(#N)CC(OCC)=N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C5H8N2O.ClH/c1-2-8-5(7)3-4-6;/h7H,2-3H2,1H3;1H"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 10.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "with stirring"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To an ethanolic solution of 2-cyanoacetamidine prepared from 10 g of ethyl 2-cyanoacetimidate hydrochloride as in Reference Example 2 was added a solution of 2-bromo-2'- fluoropropiophenone (7.6 g) in ethanol dropwise under ice-cooling with stirring, and the mixture was then stirred at room temperature overnight. This reaction mixture was poured into iced water (500 g) and the resulting crystals were collected by filtration. The crude crystal crop was washed well with n-hexane, air-dried, and purified by flash chromatography (Kieselgel 60H, 90 g; eluent: 30% ethyl acetate/n-hexane). Recrystallization from benzene-n-hexane (1:1) yielded the title compound as colorless crystals (4.67 g). the physical constants of this product were in agreement with those of the product obtained in Example 5-(1)."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "cooling"
+    },
+    {
+      "type": "STIRRING",
+      "details": "the mixture was then stirred at room temperature overnight",
+      "duration": {
+        "value": 8.0,
+        "precision": 8.0,
+        "units": "HOUR"
+      },
+      "temperature": {
+        "control": {
+          "type": "AMBIENT"
+        }
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "the resulting crystals were collected by filtration"
+    },
+    {
+      "type": "WASH",
+      "details": "The crude crystal crop was washed well with n-hexane",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "n-hexane"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCCCCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C6H14/c1-3-5-6-4-2/h3-6H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "air-dried"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "purified by flash chromatography (Kieselgel 60H, 90 g; eluent: 30% ethyl acetate/n-hexane)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate n-hexane"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC.CCCCCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C6H14.C4H8O2/c1-3-5-6-4-2;1-3-6-4(2)5/h3-6H2,1-2H3;3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "Recrystallization from benzene-n-hexane (1:1)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "benzene n-hexane"
+              },
+              {
+                "type": "SMILES",
+                "value": "C1=CC=CC=C1.CCCCCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C6H6.C6H14/c1-2-4-6-5-3-1;1-3-5-6-4-2/h1-6H;3-6H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "2-Amino-3-cyano-4-methyl-5-(2-fluorophenyl)pyrrole"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC=1NC(=C(C1C#N)C)C1=C(C=CC=C1)F"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C12H10FN3/c1-7-9(6-14)12(15)16-11(7)8-4-2-3-5-10(8)13/h2-5,16H,15H2,1H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 4.67,
+                  "units": "GRAM"
+                }
+              }
+            }
+          ],
+          "isolated_color": "colorless",
+          "texture": {
+            "type": "CRYSTAL",
+            "details": "crystals"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998459",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:25.118770"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-f3916edcc9ed4fd1879ba938e3fe64bb"
+}

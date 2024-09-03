@@ -1,0 +1,274 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[Na].Cl[C:3]1[CH:8]=[CH:7][N+:6]([O-:9])=[C:5]([CH3:10])[C:4]=1[CH3:11].[CH2:12]([OH:15])[CH2:13][OH:14]>>[OH:14][CH2:13][CH2:12][O:15][C:3]1[CH:8]=[CH:7][N+:6]([O-:9])=[C:5]([CH3:10])[C:4]=1[CH3:11] |^1:0|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sodium"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Na]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Na"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 4.6,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethylene glycol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(CO)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6O2/c3-1-2-4/h3-4H,1-2H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 80.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-chloro-2,3-dimethylpyridine N-oxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC1=C(C(=[N+](C=C1)[O-])C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H8ClNO/c1-5-6(2)9(10)4-3-7(5)8/h3-4H,1-2H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 15.76,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 100.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "This solution was stirred in a nitrogen atmosphere at 100° C. for one hour"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "4.60 g (0.2 mol) of metallic sodium was dissolved in 80 ml of ethylene glycol under cooling with ice to obtain a solution. This solution was stirred in a nitrogen atmosphere at 100° C. for one hour, followed by the addition of 15.76 g (0.1 mol) of 4-chloro-2,3-dimethylpyridine N-oxide at a room temperature. The obtained mixture was stirred at 120° C. for 2 hours. After the completion of the reaction, the reaction mixture was distilled to dryness to remove the ethylene glycol. The obtained residue was purified by silica gel column chromatography (solvent: chloroform/methanol=19:1) to obtain 13.28 g of 4-(2-hydroxyethoxy)-2,3-dimethylpyridine N-oxide as a white crystal."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "under cooling with ice"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to obtain a solution"
+    },
+    {
+      "type": "STIRRING",
+      "details": "The obtained mixture was stirred at 120° C. for 2 hours",
+      "duration": {
+        "value": 2.0,
+        "units": "HOUR"
+      },
+      "temperature": {
+        "setpoint": {
+          "value": 120.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "After the completion of the reaction"
+    },
+    {
+      "type": "DISTILLATION",
+      "details": "the reaction mixture was distilled to dryness"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to remove the ethylene glycol",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethylene glycol"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(CO)O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C2H6O2/c3-1-2-4/h3-4H,1-2H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The obtained residue was purified by silica gel column chromatography (solvent: chloroform/methanol=19:1)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "chloroform methanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(Cl)(Cl)Cl.CO"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CHCl3.CH4O/c2-1(3)4;1-2/h1H;2H,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 1.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-(2-hydroxyethoxy)-2,3-dimethylpyridine N-oxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "OCCOC1=C(C(=[N+](C=C1)[O-])C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H13NO3/c1-7-8(2)10(12)4-3-9(7)13-6-5-11/h3-4,11H,5-6H2,1-2H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 13.28,
+                  "units": "GRAM"
+                }
+              }
+            }
+          ],
+          "isolated_color": "white",
+          "texture": {
+            "type": "CRYSTAL",
+            "details": "crystal"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998445",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:21.132703"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-44f074bf066e4663b209c109a0eb9f2a"
+}

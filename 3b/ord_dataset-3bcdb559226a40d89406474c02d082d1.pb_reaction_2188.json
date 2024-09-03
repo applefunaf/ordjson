@@ -1,0 +1,336 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[OH:1][C:2]1([C:11]([OH:13])=[O:12])[CH:10]=[CH:9][CH:8]=[CH:7][CH:3]1[C:4]([OH:6])=[O:5].[C:14](O)(=[O:16])C.[BH4-].[Na+].Cl>O1CCCC1>[CH3:14][O:1][C:2]1([C:11]([OH:13])=[O:12])[CH:10]=[CH:9][CH:8]=[CH:7][CH:3]1[C:4]([OH:6])=[O:5].[CH3:14][O:16][C:10]1[CH:9]=[CH:8][CH:7]=[C:3]2[C:2]=1[CH2:11][O:13][C:4]2=[O:6] |f:2.3|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m6": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "tetrahydrofuran"
+            },
+            {
+              "type": "SMILES",
+              "value": "O1CCCC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O/c1-2-4-5-3-1/h1-4H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 20.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m0_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-hydroxyphthalic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "OC1(C(C(=O)O)C=CC=C1)C(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H8O5/c9-6(10)5-3-1-2-4-8(5,13)7(11)12/h1-5,13H,(H,9,10)(H,11,12)"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Acetic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H4O2/c1-2(3)4/h1H3,(H,3,4)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 430.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sodium borohydride"
+            },
+            {
+              "type": "SMILES",
+              "value": "[BH4-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/BH4.Na/h1H4;/q-1;+1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 135.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrochloric acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/ClH/h1H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 7.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "The mixture was stirred for 30 min. at room temperature and for 2 hr"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "Anhydrous 2-methoxyphthalic acid (640 mg), which was prepared with using anhydrous 2-hydroxyphthalic acid by the same procedure as reference example 12, was suspended in tetrahydrofuran (20 ml). Acetic acid (430 mg) and sodium borohydride (135 mg) were added to the suspension. The mixture was stirred for 30 min. at room temperature and for 2 hr. at 50°C. The reaction solution was cooled. 1N hydrochloric acid (7 ml) was added to the cooled solution. The solution was stirred for 15 min. The reaction solution was evaporated. The residue was purified by column chromatography on silica gel (n-hexane:ethyl acetate=2:1→1:1) to give the title compound (314 mg) having the following physical data."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "at 50°C",
+      "temperature": {
+        "setpoint": {
+          "value": 50.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "The reaction solution was cooled"
+    },
+    {
+      "type": "STIRRING",
+      "details": "The solution was stirred for 15 min",
+      "duration": {
+        "value": 15.0,
+        "units": "MINUTE"
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The reaction solution was evaporated"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The residue was purified by column chromatography on silica gel (n-hexane:ethyl acetate=2:1→1:1)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "n-hexane"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCCCCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C6H14/c1-3-5-6-4-2/h3-6H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 2.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-methoxyphthalic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "COC1(C(C(=O)O)C=CC=C1)C(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H10O5/c1-14-9(8(12)13)5-3-2-4-6(9)7(10)11/h2-6H,1H3,(H,10,11)(H,12,13)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 640.0,
+                  "units": "MILLIGRAM"
+                }
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "4-methoxyphthalide"
+            },
+            {
+              "type": "SMILES",
+              "value": "COC1=C2COC(=O)C2=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H8O3/c1-11-8-4-2-3-6-7(8)5-12-9(6)10/h2-4H,5H2,1H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 314.0,
+                  "units": "MILLIGRAM"
+                }
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06001877",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:19.572201"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-56a00d8192ab4605a1032be47cd64ec9"
+}

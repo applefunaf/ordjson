@@ -1,0 +1,372 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "C([Li])CCC.Br[C:7]1[CH:12]=[CH:11][C:10]([F:13])=[CH:9][CH:8]=1.[F:14][C:15]1[CH:20]=[CH:19][CH:18]=[C:17](F)[N:16]=1>C(OCC)C>[F:14][C:15]1[CH:20]=[CH:19][CH:18]=[C:17]([C:7]2[CH:12]=[CH:11][C:10]([F:13])=[CH:9][CH:8]=2)[N:16]=1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Butyl lithium"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(CCC)[Li]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H9.Li/c1-3-4-2;/h1,3-4H2,2H3;"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 105.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "1-bromo-4-fluoro benzene"
+            },
+            {
+              "type": "SMILES",
+              "value": "BrC1=CC=C(C=C1)F"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H4BrF/c7-5-1-3-6(8)4-2-5/h1-4H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 34.3,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "diethyl ether"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)OCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 200.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2,6-Difluoropyridine"
+            },
+            {
+              "type": "SMILES",
+              "value": "FC1=NC(=CC=C1)F"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C5H3F2N/c6-4-2-1-3-5(7)8-4/h1-3H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 22.7,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": -40.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "The mixture is stirred for 60 min"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "Butyl lithium (105.0 ml, 0.26 mol, 2.5M solution in hexane) is added to a solution of 1-bromo-4-fluoro benzene (34.3 ml, 0.31 mol) in anhydrous diethyl ether (200 ml) at -20° C. The mixture is stirred for 60 min and then chilled to -40° C. 2,6-Difluoropyridine (22.7 ml, 0.25 mol) is added and the reaction mixture is allowed to warm to ambient temperature. Subsequently, the mixture is washed with saturated aqueous ammonium chloride (300 ml). The layers are separated and the aqueous layer is washed with diethyl ether 3 times (100 ml each). After drying of the combined organic layers with anhydrous magnesium sulphate, the solvent is removed in vacuo. The crude product is purified by flash column chromatography (silica gel, hexane/AcOEt 8/2) yielding colorless crystals of 2-fluoro-6-(4'-fluorophenyl)-pyridine (19.8 g, 41.0% of th.) with mp 34° C."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "to warm to ambient temperature",
+      "temperature": {
+        "control": {
+          "type": "AMBIENT"
+        }
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "Subsequently, the mixture is washed with saturated aqueous ammonium chloride (300 ml)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ammonium chloride"
+              },
+              {
+                "type": "SMILES",
+                "value": "[Cl-].[NH4+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH.H3N/h1H;1H3"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 300.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The layers are separated"
+    },
+    {
+      "type": "WASH",
+      "details": "the aqueous layer is washed with diethyl ether 3 times (100 ml each)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "diethyl ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "After drying of the combined organic layers with anhydrous magnesium sulphate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "magnesium sulphate"
+              },
+              {
+                "type": "SMILES",
+                "value": "S(=O)(=O)([O-])[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the solvent is removed in vacuo"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The crude product is purified by flash column chromatography (silica gel, hexane/AcOEt 8/2)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "crude product"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "hexane AcOEt"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCCCCC.CCOC(=O)C"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C6H14.C4H8O2/c1-3-5-6-4-2;1-3-6-4(2)5/h3-6H2,1-2H3;3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 60.0,
+        "units": "MINUTE"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-fluoro-6-(4'-fluorophenyl)-pyridine"
+            },
+            {
+              "type": "SMILES",
+              "value": "FC1=NC(=CC=C1)C1=CC=C(C=C1)F"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C11H7F2N/c12-9-6-4-8(5-7-9)10-2-1-3-11(13)14-10/h1-7H"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 19.8,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 41.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 41.4
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06008161",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:16.570129"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-bdb1ee5ff61b4b19a7fc83435e0d85e4"
+}

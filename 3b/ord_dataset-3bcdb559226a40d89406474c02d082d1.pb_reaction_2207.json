@@ -1,0 +1,291 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][C:2]1[C:7]([C:8]([O:10]CC)=[O:9])=[C:6]([O:13][CH3:14])[CH:5]=[CH:4][CH:3]=1.O.[OH-].[Na+]>C(O)C>[CH3:1][C:2]1[C:7]([C:8]([OH:10])=[O:9])=[C:6]([O:13][CH3:14])[CH:5]=[CH:4][CH:3]=1 |f:2.3|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m4_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethyl 6-methyl-2-methoxybenzoate"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC1=CC=CC(=C1C(=O)OCC)OC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C11H14O3/c1-4-14-11(12)10-8(2)6-5-7-9(10)13-3/h5-7H,4H2,1-3H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 642.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 2.5,
+              "units": "LITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sodium hydroxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "[OH-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Na.H2O/h;1H2/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 270.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 4.0,
+              "units": "LITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "with stirring for 20 hours"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture of ethyl 6-methyl-2-methoxybenzoate (642.0 g, 3.3 mol), water (2.5 l), ethanol (4.0 l) and sodium hydroxide (270 g, 6.6 mol) is heated under reflux with stirring for 20 hours. Subsequently, ethanol is distilled off and the reaction mixture is diluted with water, acidified with concentrated hydrochloric acid. The solid material is collected by vacuum filtration, washed with water and dried yielding off-white crystals, 460.0 g (83.9%)."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "is heated"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "under reflux"
+    },
+    {
+      "type": "DISTILLATION",
+      "details": "Subsequently, ethanol is distilled off",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "ADDITION",
+      "details": "the reaction mixture is diluted with water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "The solid material is collected by vacuum filtration"
+    },
+    {
+      "type": "WASH",
+      "details": "washed with water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "yielding off-white crystals, 460.0 g (83.9%)"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 20.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "6-methyl-2-methoxybenzoic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC1=CC=CC(=C1C(=O)O)OC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H10O3/c1-6-4-3-5-7(12-2)8(6)9(10)11/h3-5H,1-2H3,(H,10,11)"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06001883",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:19.818376"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-52785138e4334a1d99244b55c52f6e0d"
+}

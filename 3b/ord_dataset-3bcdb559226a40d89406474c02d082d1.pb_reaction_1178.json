@@ -1,0 +1,336 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "C([O:3][C:4]([CH:6]([CH2:12][CH2:13][CH2:14][CH2:15][CH2:16][CH2:17][CH2:18][O:19][C:20]1[CH:25]=[CH:24][CH:23]=[CH:22][CH:21]=1)C(OCC)=O)=[O:5])C>[OH-].[Na+]>[O:19]([CH2:18][CH2:17][CH2:16][CH2:15][CH2:14][CH2:13][CH2:12][CH2:6][C:4]([OH:5])=[O:3])[C:20]1[CH:25]=[CH:24][CH:23]=[CH:22][CH:21]=1 |f:1.2|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethyl 2-ethoxycarbonyl-9-phenoxynonanoate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)OC(=O)C(C(=O)OCC)CCCCCCCOC1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C20H30O5/c1-3-23-19(21)18(20(22)24-4-2)15-11-6-5-7-12-16-25-17-13-9-8-10-14-17/h8-10,13-14,18H,3-7,11-12,15-16H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 1.84,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "NaOH"
+            },
+            {
+              "type": "SMILES",
+              "value": "[OH-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Na.H2O/h;1H2/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 20.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 190.0,
+        "precision": 10.0,
+        "units": "CELSIUS"
+      }
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A solution of ethyl 2-ethoxycarbonyl-9-phenoxynonanoate (1.84 g, 5.3 mmol) in 20% NaOH (20 mL) was refluxed for 10 h. The solution was acidified with HCl(pH=2) and extracted with ethyl acetate (3×50 mL). The organic phase was washed with water (2×30 mL), and brine (30 mL), and dried over Na2SO4. After removal of the solvent in vacuo, the residue was heated on an oil bath at 180-200° C. for 10 min. The crude product was distilled (Kugelrohr) followed by crystallization (hexane) to give the product (1.14 g, 85%), mp 66.5-67.5° C. (lit.3 68-69° C.). IR: 3450-2500, 1720 cm-1 ; 1H-NMR: 1.26-1.39 (m, 8H), 1.61 (q, 2H), 1.75 (q, 2H), 2.34 (t, 2H), 3.93 (t, 2H), 6.83-6.96 (m, 3H), 7.28 (t, 2H), 10.8 (bs, 1H)."
+  },
+  "workups": [
+    {
+      "type": "EXTRACTION",
+      "details": "extracted with ethyl acetate (3×50 mL)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 50.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "The organic phase was washed with water (2×30 mL), and brine (30 mL)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 30.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "brine"
+              },
+              {
+                "type": "SMILES",
+                "value": "[Cl-].[Na+].O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH.Na.H2O/h1H;;1H2/q;+1;/p-1"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 30.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "dried over Na2SO4",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "Na2SO4"
+              },
+              {
+                "type": "SMILES",
+                "value": "[O-]S(=O)(=O)[O-].[Na+].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/2Na.H2O4S/c;;1-5(2,3)4/h;;(H2,1,2,3,4)/q2*+1;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "After removal of the solvent in vacuo"
+    },
+    {
+      "type": "DISTILLATION",
+      "details": "The crude product was distilled (Kugelrohr)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "crude product"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "followed by crystallization (hexane)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "hexane"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCCCCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C6H14/c1-3-5-6-4-2/h3-6H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "product"
+            },
+            {
+              "type": "NAME",
+              "value": "9-Phenoxynonanoic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "O(C1=CC=CC=C1)CCCCCCCCC(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C15H22O3/c16-15(17)12-8-3-1-2-4-9-13-18-14-10-6-5-7-11-14/h5-7,10-11H,1-4,8-9,12-13H2,(H,16,17)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 1.14,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 85.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 85.9
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998642",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:34.390018"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-69620aa2cad0493483935a9071917837"
+}

@@ -1,0 +1,292 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[NH2:1][C:2]1[CH:3]=[C:4]2[C:9](=[CH:10][CH:11]=1)[N:8]=[CH:7][C:6]([C:12]#[N:13])=[C:5]2[NH:14][C:15]1[CH:20]=[CH:19][CH:18]=[C:17]([F:21])[CH:16]=1.C(N(CC)CC)C.[C:29](Cl)(=[O:32])[CH:30]=[CH2:31]>C1COCC1>[C:12]([C:6]1[CH:7]=[N:8][C:9]2[C:4]([C:5]=1[NH:14][C:15]1[CH:20]=[CH:19][CH:18]=[C:17]([F:21])[CH:16]=1)=[CH:3][C:2]([NH:1][C:29](=[O:32])[CH:30]=[CH2:31])=[CH:11][CH:10]=2)#[N:13]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "6-amino-4-(3-fluorophenylamino)quinoline-3-carbonitrile"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC=1C=C2C(=C(C=NC2=CC1)C#N)NC1=CC(=CC=C1)F"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C16H11FN4/c17-11-2-1-3-13(6-11)21-16-10(8-18)9-20-15-5-4-12(19)7-14(15)16/h1-7,9H,19H2,(H,20,21)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 1.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "THF"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1CCOC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O/c1-2-4-5-3-1/h1-4H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 12.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Triethylamine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)N(CC)CC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H15N/c1-4-7(5-2)6-3/h4-6H2,1-3H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.436,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acryloyl chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C=C)(=O)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H3ClO/c1-2-3(4)5/h2H,1H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.393,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 25.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "the reaction was stirred at 25° C. overnight"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A solution of 1.00 g (3.60 mmol) of 6-amino-4-(3-fluorophenylamino)quinoline-3-carbonitrile in 12 mL of THF under N2 was chilled in ice. Triethylamine (0.436 g, 4.32 mmol) was added followed by 0.393 g (4.32 mmol) of acryloyl chloride and the reaction was stirred at 25° C. overnight. The solvent was removed and the residue was slurried with water and filtered. The crude product was washed with water, dried, washed with hot ethyl acetate and dried in vacuo (50° C.). This yielded 0.862 g of N-[3-cyano-4-(3-fluorophenylamino)quinolin-6-yl]acrylamide as a brown solid: mass spectrum (electrospray, m/e): M+H 333.1."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "The solvent was removed"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filtered"
+    },
+    {
+      "type": "WASH",
+      "details": "The crude product was washed with water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "crude product"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried"
+    },
+    {
+      "type": "WASH",
+      "details": "washed with hot ethyl acetate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried in vacuo (50° C.)",
+      "temperature": {
+        "setpoint": {
+          "value": 50.0,
+          "units": "CELSIUS"
+        }
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 8.0,
+        "precision": 8.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-[3-Cyano-4-(3-fluorophenylamino)quinolin-6-yl]acrylamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(#N)C=1C=NC2=CC=C(C=C2C1NC1=CC(=CC=C1)F)NC(C=C)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C19H13FN4O/c1-2-18(25)23-15-6-7-17-16(9-15)19(12(10-21)11-22-17)24-14-5-3-4-13(20)8-14/h2-9,11H,1H2,(H,22,24)(H,23,25)"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06002008",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:25.472784"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-54c606811bbd413ea12c5ef60d3aedfc"
+}

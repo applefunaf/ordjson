@@ -1,0 +1,326 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH:1]([C:3]1[CH:8]=[CH:7][N:6]=[CH:5][CH:4]=1)=[CH2:2].[Cl-].[NH4+:10]>CO>[N:6]1[CH:7]=[CH:8][C:3]([CH2:1][CH2:2][NH:10][CH2:2][CH2:1][C:3]2[CH:8]=[CH:7][N:6]=[CH:5][CH:4]=2)=[CH:4][CH:5]=1 |f:1.2|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-vinylpyridine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(=C)C1=CC=NC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H7N/c1-2-7-3-5-8-6-4-7/h2-6H,1H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 10.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ammonium chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Cl-].[NH4+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/ClH.H3N/h1H;1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 5.1,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "MeOH"
+            },
+            {
+              "type": "SMILES",
+              "value": "CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 90.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture of 4-vinylpyridine (10.0 g, 95.1 mmole) and ammonium chloride (5.1 g, 95.1 mmole) in MeOH (90 mL) was heated to reflux under argon for 27 h. The resulting mixture was filtered and the filtrate was concentrated on the rotavap. The residue was dissolved in H2O (200 mL), and the solution was basified to pH 10.5 using 2 N NaOH. CH2Cl2 extraction (3×100 mL), drying (MgSO4), and concentration gave a yellow oil (5.73 g, 49% crude). 2.9 g of this oil was chromatographed on silica gel (12% MeOH/CH2Cl2) to afford the title compound as a yellow oil (1.81 g, 16%). MS (ES) m/e 228 (M+H)+."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "was heated"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "to reflux under argon for 27 h",
+      "duration": {
+        "value": 27.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "The resulting mixture was filtered"
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "the filtrate was concentrated on the rotavap"
+    },
+    {
+      "type": "DISSOLUTION",
+      "details": "The residue was dissolved in H2O (200 mL)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "H2O"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 200.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "CH2Cl2 extraction (3×100 mL)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "CH2Cl2"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(Cl)Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "drying"
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "(MgSO4), and concentration",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "MgSO4"
+              },
+              {
+                "type": "SMILES",
+                "value": "[O-]S(=O)(=O)[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "gave a yellow oil (5.73 g, 49% crude)"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "2.9 g of this oil was chromatographed on silica gel (12% MeOH/CH2Cl2)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "oil"
+              }
+            ],
+            "amount": {
+              "mass": {
+                "value": 2.9,
+                "units": "GRAM"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "Bis [2-(4-pyridyl)ethyl]amine"
+            },
+            {
+              "type": "SMILES",
+              "value": "N1=CC=C(C=C1)CCNCCC1=CC=NC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C14H17N3/c1-7-15-8-2-13(1)5-11-17-12-6-14-3-9-16-10-4-14/h1-4,7-10,17H,5-6,11-12H2"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 1.81,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 16.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 16.7
+              }
+            }
+          ],
+          "isolated_color": "yellow",
+          "texture": {
+            "type": "OIL",
+            "details": "oil"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06008214",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:19.094929"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-4e64e160491042c1993bbf039cff0387"
+}

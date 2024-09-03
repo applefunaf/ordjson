@@ -1,0 +1,241 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[SH:1][C:2]1[NH:3][C:4]2[CH:10]=[CH:9][CH:8]=[CH:7][C:5]=2[N:6]=1.Br[CH2:12][CH2:13][CH2:14][CH2:15][CH2:16][C:17]([OH:19])=[O:18].O.C(=O)([O-])[O-].[Na+].[Na+].[CH2:27](O)[CH3:28]>>[N:3]1[C:4]2[CH:10]=[CH:9][CH:8]=[CH:7][C:5]=2[NH:6][C:2]=1[S:1][CH2:12][CH2:13][CH2:14][CH2:15][CH2:16][C:17]([O:19][CH2:27][CH3:28])=[O:18] |f:3.4.5|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sodium carbonate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C([O-])([O-])=O.[Na+].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2O3.2Na/c2-1(3)4;;/h(H2,2,3,4);;/q;2*+1/p-2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m1_m2_m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-Mercaptobenzimidazole"
+            },
+            {
+              "type": "SMILES",
+              "value": "SC=1NC2=C(N1)C=CC=C2"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H6N2S/c10-7-8-5-3-1-2-4-6(5)9-7/h1-4H,(H2,8,9,10)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 6.3,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "6-bromocaproic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "BrCCCCCC(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H11BrO2/c7-5-3-1-2-4-6(8)9/h1-5H2,(H,8,9)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 7.8,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 35.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "2-Mercaptobenzimidazole (6.3 g) and 6-bromocaproic acid (7.8 g) were dissolved in ethanol (35 ml), and the solution ws heated under reflux for 12 hours. After cooling, the reaction was added with water, and the mixture was adjusted to pH 8 with aqueous sodium carbonate. The deposited crystals were collected by filtration, and dried to obtain 11.2 g of the title compound."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "the solution ws heated"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "under reflux for 12 hours",
+      "duration": {
+        "value": 12.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "After cooling"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "The deposited crystals were collected by filtration"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "ethyl 6-(2-benzimidazolylthio)caproate"
+            },
+            {
+              "type": "SMILES",
+              "value": "N1=C(NC2=C1C=CC=C2)SCCCCCC(=O)OCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C15H20N2O2S/c1-2-19-14(18)10-4-3-7-11-20-15-16-12-8-5-6-9-13(12)17-15/h5-6,8-9H,2-4,7,10-11H2,1H3,(H,16,17)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 11.2,
+                  "units": "GRAM"
+                }
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998456",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:24.849876"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-7b171e35f35b4a2b8173ae3837c37287"
+}

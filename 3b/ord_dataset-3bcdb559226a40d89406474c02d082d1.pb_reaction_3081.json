@@ -1,0 +1,236 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[I:1][CH3:2].[CH:3]([O:6][C:7]1[C:12]([C:13]2[CH:18]=[CH:17][C:16]([O:19][CH:20]([CH3:22])[CH3:21])=[CH:15][C:14]=2[O:23][CH3:24])=[C:11]([C:25]2[O:26][CH2:27][C:28]([CH3:31])([CH3:30])[N:29]=2)[CH:10]=[CH:9][CH:8]=1)([CH3:5])[CH3:4]>CS(C)=O.CCOCC>[I-:1].[CH:3]([O:6][C:7]1[C:12]([C:13]2[CH:18]=[CH:17][C:16]([O:19][CH:20]([CH3:22])[CH3:21])=[CH:15][C:14]=2[O:23][CH3:24])=[C:11]([C:25]2[O:26][CH2:27][C:28]([CH3:31])([CH3:30])[N+:29]=2[CH3:2])[CH:10]=[CH:9][CH:8]=1)([CH3:5])[CH3:4] |f:4.5|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ether"
+            },
+            {
+              "type": "SMILES",
+              "value": "CCOCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 600.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m1_m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "iodomethane"
+            },
+            {
+              "type": "SMILES",
+              "value": "IC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH3I/c1-2/h1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 12.43,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-(6,4'-diisopropyloxy-2'-methoxy-biphenyl-2-yl)-4,4-dimethyloxazoline"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(C)OC1=CC=CC(=C1C1=C(C=C(C=C1)OC(C)C)OC)C=1OCC(N1)(C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C24H31NO4/c1-15(2)28-17-11-12-18(21(13-17)26-7)22-19(23-25-24(5,6)14-27-23)9-8-10-20(22)29-16(3)4/h8-13,15-16H,14H2,1-7H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 5.8,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "DMSO"
+            },
+            {
+              "type": "SMILES",
+              "value": "CS(=O)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6OS/c1-4(2)3/h1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 30.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "Stir the resulting mixture for about 72 hours"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "Add iodomethane (12.43 g, 0.0875 mole) to a stirred solution of 2-(6,4'-diisopropyloxy-2'-methoxy-biphenyl-2-yl)-4,4-dimethyloxazoline (5.80 g, 0.0146 mole) in dry DMSO (30 mL). Stir the resulting mixture for about 72 hours, then dilute with ether (600 mL). Collect the precipitated solid by filtration, then triturate with CHCl3 (400 mL) and filter. Discard the insoluble solid and concentrate the filtrate to obtain the title compound as an off-white solid. m.p. 213°-214° C."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "Collect the precipitated solid"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "by filtration"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "triturate with CHCl3 (400 mL)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "CHCl3"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(Cl)(Cl)Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CHCl3/c2-1(3)4/h1H"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 400.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filter"
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrate the filtrate"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 72.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "2-(6,4'-diisopropyloxy-2'-methoxy-biphenyl-2-yl)-3,4,4-trimethyl-oxazolinium iodide"
+            },
+            {
+              "type": "SMILES",
+              "value": "[I-].C(C)(C)OC1=CC=CC(=C1C1=C(C=C(C=C1)OC(C)C)OC)C=1OCC([N+]1C)(C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C25H34NO4.HI/c1-16(2)29-18-12-13-19(22(14-18)27-8)23-20(10-9-11-21(23)30-17(3)4)24-26(7)25(5,6)15-28-24;/h9-14,16-17H,15H2,1-8H3;1H/q+1;/p-1"
+            }
+          ],
+          "isolated_color": "off-white",
+          "texture": {
+            "type": "CUSTOM",
+            "details": "solid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06004959",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:19.736490"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-5438423233f949a99dc18dcbc72f0ed8"
+}

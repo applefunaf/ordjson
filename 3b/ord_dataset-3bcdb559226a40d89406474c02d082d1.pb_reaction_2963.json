@@ -1,0 +1,382 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[Cl:1][C:2]1[CH:3]=[CH:4][C:5](OC)=[C:6]([CH2:8][CH2:9][N:10]([C:12]2C=CN=CC=2)[NH2:11])[CH:7]=1.C[O:21][CH2:22]Cl.[OH-].[Na+].[C:26](O)(=O)[CH3:27]>>[Cl:1][C:2]1[CH:3]=[CH:4][CH:5]=[C:6]2[C:7]=1[CH2:12][N:10]([NH:11][C:27]1[CH:26]=[CH:12][N:10]=[CH:9][CH:8]=1)[CH2:9][CH:8]2[O:21][CH3:22] |f:2.3|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-[2-(5-chloro-2-methoxyphenyl)ethyl]-N-pyridine-4-ylhydrazine"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC=1C=CC(=C(C1)CCN(N)C1=CC=NC=C1)OC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C14H16ClN3O/c1-19-14-3-2-12(15)10-11(14)6-9-18(16)13-4-7-17-8-5-13/h2-5,7-8,10H,6,9,16H2,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 11.8,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "chloromethyl methyl ether"
+            },
+            {
+              "type": "SMILES",
+              "value": "COCCl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H5ClO/c1-4-2-3/h2H2,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 3.8,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acetic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H4O2/c1-2(3)4/h1H3,(H,3,4)"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 170.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Sodium hydroxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "[OH-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Na.H2O/h;1H2/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 0.0,
+        "units": "CELSIUS"
+      }
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "Lithium aluminum hydride (3.3 g) was added portionwise to a suspension of N-[2-(5-chloro-2-methoxyphenyl)ethylidine]-N-pyridin-4-ylhydrazine hydrochloride (13.4 g) in tetrahydrofuran (215 mL) at 0° C. The reaction mixture was stirred at ambient temperature for 2 hrs, and sodium sulfate decahydrate was added. The mixture was filtered, and the filtrate was concentrated to provide 11.8 g of N-[2-(5-chloro-2-methoxyphenyl)ethyl]-N-pyridine-4-ylhydrazine, as an oil. A solution of N-[2-(5-chloro-2-methoxyphenyl)ethyl]-N-pyridine-4-ylhydrazine (11.8 g) and chloromethyl methyl ether (3.8 g) in acetic acid (170 mL) was heated under reflux for 2 hrs and then cooled to 0° C. Sodium hydroxide solution (50%) was added, and the mixture was extracted with ethyl acetate. The combined organic layers were washed with water and brine, dried over anhydrous magnesium sulfate, filtered, and the filtrate was concentrated. The residue was chromatographed on silica gel, eluting with 10% methanol/ethyl acetate. The appropriate fractions were collected and concentrated to provide 6.54 g (52%) of product. Recrystallization from ethyl acetate provided the analytical sample, mp 152-154° C. (dec)."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "under reflux for 2 hrs",
+      "duration": {
+        "value": 2.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "the mixture was extracted with ethyl acetate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "The combined organic layers were washed with water and brine",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "brine"
+              },
+              {
+                "type": "SMILES",
+                "value": "[Cl-].[Na+].O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH.Na.H2O/h1H;;1H2/q;+1;/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "dried over anhydrous magnesium sulfate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "magnesium sulfate"
+              },
+              {
+                "type": "SMILES",
+                "value": "S(=O)(=O)([O-])[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filtered"
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "the filtrate was concentrated"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The residue was chromatographed on silica gel"
+    },
+    {
+      "type": "WASH",
+      "details": "eluting with 10% methanol/ethyl acetate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "methanol ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "CO.C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2.CH4O/c1-3-6-4(2)5;1-2/h3H2,1-2H3;2H,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The appropriate fractions were collected"
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "product"
+            },
+            {
+              "type": "NAME",
+              "value": "(8-Chloro-4-methoxy-3,4-dihydro-1H-isoquinolin-2-yl)-4-pyridinylamine"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC=1C=CC=C2C(CN(CC12)NC1=CC=NC=C1)OC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C15H16ClN3O/c1-20-15-10-19(18-11-5-7-17-8-6-11)9-13-12(15)3-2-4-14(13)16/h2-8,15H,9-10H2,1H3,(H,17,18)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 6.54,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 52.0
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06004977",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:18.039783"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-263444bc94f144faba64f1171443e1b1"
+}

@@ -1,0 +1,197 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[F:1][C:2]1[CH:7]=[CH:6][CH:5]=[CH:4][C:3]=1[NH:8][C:9]([NH2:11])=[S:10].CI.[CH2:14]1CCCCC1>CC(C)=O>[F:1][C:2]1[CH:7]=[CH:6][CH:5]=[CH:4][C:3]=1[NH:8][C:9](=[NH:11])[S:10][CH3:14]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "cyclohexane"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1CCCCC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H12/c1-2-4-6-5-3-1/h1-6H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 20.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m1_m4_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-(2-fluorophenyl)thiourea"
+            },
+            {
+              "type": "SMILES",
+              "value": "FC1=C(C=CC=C1)NC(=S)N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H7FN2S/c8-5-3-1-2-4-6(5)10-7(9)11/h1-4H,(H3,9,10,11)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 3.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methyl iodide"
+            },
+            {
+              "type": "SMILES",
+              "value": "CI"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH3I/c1-2/h1H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acetone"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC(=O)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H6O/c1-3(2)4/h1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 75.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "to stir over night"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a stirred solution of 3.0 g (0.017 mol) of N-(2-fluorophenyl)thiourea in 75 ml of acetone was added an excess of methyl iodide. The reaction was allowed to stir over night. To the solution was then added 20 ml of cyclohexane; a white solid crystallized and was collected by filtration to yield 4.3 g of N-(2-fluorophenyl)-S-methylisothiourea."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "a white solid crystallized"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "was collected by filtration"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-(2-fluorophenyl)-S-methylisothiourea"
+            },
+            {
+              "type": "SMILES",
+              "value": "FC1=C(C=CC=C1)NC(SC)=N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H9FN2S/c1-12-8(10)11-7-5-3-2-4-6(7)9/h2-5H,1H3,(H2,10,11)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 4.3,
+                  "units": "GRAM"
+                }
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998399",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:16.886106"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-bd303794242f40028971177bc69def0d"
+}

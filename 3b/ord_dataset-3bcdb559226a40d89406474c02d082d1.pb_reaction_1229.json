@@ -1,0 +1,244 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[C:1]([OH:8])(=[O:7])/[CH:2]=[CH:3]/[C:4]([OH:6])=[O:5].C([O-])(=O)C.C([O-])(=O)C.[Cu+2:17].C([O-])(=O)C>CO>[Cu:17].[C:1]([OH:8])(=[O:7])/[CH:2]=[CH:3]/[C:4]([OH:6])=[O:5] |f:2.3.4,6.7|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 100.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m5_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "copper acetate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)[O-].[Cu+2].C(C)(=O)[O-]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/2C2H4O2.Cu/c2*1-2(3)4;/h2*1H3,(H,3,4);/q;;+2/p-2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 2.98,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 100.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m1_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "fumaric acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(\\C=C\\C(=O)O)(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H4O4/c5-3(6)1-2-4(7)8/h1-2H,(H,5,6)(H,7,8)/b2-1+"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 1.74,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acetate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)[O-]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H4O2/c1-2(3)4/h1H3,(H,3,4)/p-1"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 40.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "1.74 g of fumaric acid and 40 cm3 of acetate were dissolved under heating in 100 cm3 of methanol, and into this solution, 100 cm3 of methanol solution containing 2.98 g of copper acetate dissolved therein was dripped. After this solution was left still for two days at the room temperature, the precipitation product was suction-filtered and dried for 110° C./3 hours, whereby 1.37 g of fumaric acid copper was obtained. In this case too, the obtained substance had a large specific surface area and exhibited adsorption capacity for methane."
+  },
+  "workups": [
+    {
+      "type": "DISSOLUTION",
+      "details": "dissolved"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "the precipitation product was suction-filtered"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried for 110° C./3 hours",
+      "duration": {
+        "value": 3.0,
+        "units": "HOUR"
+      },
+      "temperature": {
+        "setpoint": {
+          "value": 110.0,
+          "units": "CELSIUS"
+        }
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 2.0,
+        "units": "DAY"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "fumaric acid copper"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Cu].C(\\C=C\\C(=O)O)(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H4O4.Cu/c5-3(6)1-2-4(7)8;/h1-2H,(H,5,6)(H,7,8);/b2-1+;"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 1.37,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 50.9
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998647",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:34.865938"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-281ef2a5ecf6427fbf6fceb071357575"
+}

@@ -1,0 +1,380 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][C:2]1([CH3:24])[S:6][C@@H:5]2[C@H:7]([NH:10][C:11]([C@H:13]([NH2:20])[C:14]3[CH:15]=[CH:16][CH:17]=[CH:18][CH:19]=3)=[O:12])[C:8](=[O:9])[N:4]2[C@H:3]1[C:21]([OH:23])=[O:22].Cl>>[CH3:1][C:2]1([CH3:24])[S:6][C@@H:5]2[C@H:7]([NH:10][C:11]([C@H:13]([NH2:20])[C:14]3[CH:19]=[CH:18][CH:17]=[CH:16][CH:15]=3)=[O:12])[C:8](=[O:9])[N:4]2[C@H:3]1[C:21]([OH:23])=[O:22].[OH2:9].[OH2:9].[OH2:9] |f:2.3.4.5|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ampicillin"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC1([C@@H](N2[C@H](S1)[C@@H](C2=O)NC(=O)[C@@H](C=3C=CC=CC3)N)C(=O)O)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C16H19N3O4S/c1-16(2)11(15(22)23)19-13(21)10(14(19)24-16)18-12(20)9(17)8-6-4-3-5-7-8/h3-7,9-11,14H,17H2,1-2H3,(H,18,20)(H,22,23)/t9-,10-,11+,14-/m1/s1"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m5_m6": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ice water"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrochloric acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/ClH/h1H"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m1_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "mixture"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "mixture"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "resultant mixture"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "stirred for 20 minutes"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "The mixture obtained in step a) is added dropwise to the mixture obtained in step b) at a temperature of -45/-35°. The resultant mixture is stirred for 2 hours at a temperature of -15/-35°. The resultant crude protected ampicillin mixture is worked up by treating with a mixture of ice-water and concentrated hydrochloric acid and stirred for 20 minutes while cooling with ice. The aqueous phase is separated off and the organic phase is reextracted with a mixture of water and concentrated hydrochloric acid. The combined aqueous phases are treated with concentrated aqueous sodium hydroxide to a pH of 4.5/5.5. Ampicillin trihydrate crystallizes out of the reaction mixture overnight in a refrigerator, the crystals are isolated, washed with IPA 88% and dried. Yield 89.0%, Purity 98.4%."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "while cooling with ice"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The aqueous phase is separated off"
+    },
+    {
+      "type": "ADDITION",
+      "details": "the organic phase is reextracted with a mixture of water and concentrated hydrochloric acid",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "hydrochloric acid"
+              },
+              {
+                "type": "SMILES",
+                "value": "Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH/h1H"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "ADDITION",
+      "details": "The combined aqueous phases are treated with concentrated aqueous sodium hydroxide to a pH of 4.5/5.5",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "sodium hydroxide"
+              },
+              {
+                "type": "SMILES",
+                "value": "[OH-].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Na.H2O/h;1H2/q+1;/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "Ampicillin trihydrate crystallizes out of the reaction mixture overnight in a refrigerator",
+      "duration": {
+        "value": 8.0,
+        "precision": 8.0,
+        "units": "HOUR"
+      },
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "Ampicillin trihydrate"
+              },
+              {
+                "type": "SMILES",
+                "value": "CC1([C@@H](N2[C@H](S1)[C@@H](C2=O)NC(=O)[C@@H](C=3C=CC=CC3)N)C(=O)O)C.O.O.O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C16H19N3O4S.3H2O/c1-16(2)11(15(22)23)19-13(21)10(14(19)24-16)18-12(20)9(17)8-6-4-3-5-7-8;;;/h3-7,9-11,14H,17H2,1-2H3,(H,18,20)(H,22,23);3*1H2/t9-,10-,11+,14-;;;/m1.../s1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the crystals are isolated"
+    },
+    {
+      "type": "WASH",
+      "details": "washed with IPA 88%",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "IPA"
+              },
+              {
+                "type": "SMILES",
+                "value": "CC(C)O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C3H8O/c1-3(2)4/h3-4H,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 20.0,
+        "units": "MINUTE"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Ampicillin Trihydrate"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC1([C@@H](N2[C@H](S1)[C@@H](C2=O)NC(=O)[C@@H](C=3C=CC=CC3)N)C(=O)O)C.O.O.O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C16H19N3O4S.3H2O/c1-16(2)11(15(22)23)19-13(21)10(14(19)24-16)18-12(20)9(17)8-6-4-3-5-7-8;;;/h3-7,9-11,14H,17H2,1-2H3,(H,18,20)(H,22,23);3*1H2/t9-,10-,11+,14-;;;/m1.../s1"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998610",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:31.856654"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-29d57cd435354d7bbcdd88b43453a9d6"
+}

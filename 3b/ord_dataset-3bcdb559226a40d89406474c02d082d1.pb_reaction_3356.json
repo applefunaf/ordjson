@@ -1,0 +1,223 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "C(OC([NH:8][CH2:9][CH2:10][O:11][C:12]1[CH:16]=[C:15]([C:17]2[CH:22]=[CH:21][CH:20]=[CH:19][C:18]=2[O:23][CH3:24])[O:14][N:13]=1)=O)(C)(C)C.[ClH:25].O1CCOCC1>>[ClH:25].[NH2:8][CH2:9][CH2:10][O:11][C:12]1[CH:16]=[C:15]([C:17]2[CH:22]=[CH:21][CH:20]=[CH:19][C:18]=2[O:23][CH3:24])[O:14][N:13]=1 |f:1.2,3.4|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3-(2-(N-tert-Butoxycarbonylamino)ethoxy)-5-(2-methoxyphenyl)isoxazole"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(C)(C)OC(=O)NCCOC1=NOC(=C1)C1=C(C=CC=C1)OC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C17H22N2O5/c1-17(2,3)23-16(20)18-9-10-22-15-11-14(24-19-15)12-7-5-6-8-13(12)21-4/h5-8,11H,9-10H2,1-4H3,(H,18,20)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.31,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrochloric acid 1,4-dioxane"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl.O1CCOCC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O2.ClH/c1-2-6-4-3-5-1;/h1-4H2;1H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 2.3,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "the solution was stirred at room temperature for 30 minutes"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "3-(2-(N-tert-Butoxycarbonylamino)ethoxy)-5-(2-methoxyphenyl)isoxazole (0.31 g) was dissolved in a solution of 4N hydrochloric acid/1,4-dioxane (2.3 ml), and the solution was stirred at room temperature for 30 minutes. The solvent was evaporated under reduced pressure and the residue was recrystallized from a mixture of ethanol and isopropanol to obtain the title compound (0.21 g, 84%) as colorless crystals."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "The solvent was evaporated under reduced pressure"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the residue was recrystallized from a mixture of ethanol and isopropanol",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "isopropanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(C)O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C3H8O/c1-3(2)4/h3-4H,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 30.0,
+        "units": "MINUTE"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "3-(2-Aminoethoxy)-5-(2-methoxyphenyl)isoxazole hydrochloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl.NCCOC1=NOC(=C1)C1=C(C=CC=C1)OC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C12H14N2O3.ClH/c1-15-10-5-3-2-4-9(10)11-8-12(14-17-11)16-7-6-13;/h2-5,8H,6-7,13H2,1H3;1H"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 0.21,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 84.0
+              }
+            }
+          ],
+          "isolated_color": "colorless",
+          "texture": {
+            "type": "CRYSTAL",
+            "details": "crystals"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06005116",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:23.831153"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-1ed9c36371bf446ba8592bb4cd2d875f"
+}

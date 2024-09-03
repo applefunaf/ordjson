@@ -1,0 +1,205 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[OH:1][C:2]1[CH:8]=[C:7]([CH3:9])[CH:6]=[CH:5][C:3]=1[NH2:4].[Br:10][C:11]1[CH:16]=[CH:15][CH:14]=[CH:13][C:12]=1[N:17]=[C:18]=[O:19]>>[OH:1][C:2]1[CH:8]=[C:7]([CH3:9])[CH:6]=[CH:5][C:3]=1[NH:4][C:18]([NH:17][C:12]1[CH:13]=[CH:14][CH:15]=[CH:16][C:11]=1[Br:10])=[O:19]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m0_m1_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-hydroxy 4-methyl aniline"
+            },
+            {
+              "type": "SMILES",
+              "value": "OC1=C(N)C=CC(=C1)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H9NO/c1-5-2-3-6(8)7(9)4-5/h2-4,9H,8H2,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.274,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-bromo phenyl isocyanate"
+            },
+            {
+              "type": "SMILES",
+              "value": "BrC1=C(C=CC=C1)N=C=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H4BrNO/c8-6-3-1-2-4-7(6)9-5-10/h1-4H"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.4,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "The urea was prepared from 2-hydroxy 4-methyl aniline (0.274 g, 2 mmol) and 2-bromo phenyl isocyanate (0.40 g, 2 mmol) by general Method B. It was purified by dilution of the DMF solution with methylene chloride and precipitation with hexane (249 mg. 39%) EI-MS m/z 319 (M+)+"
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "It was purified by dilution of the DMF solution with methylene chloride and precipitation with hexane (249 mg. 39%) EI-MS m/z 319",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "DMF"
+              },
+              {
+                "type": "SMILES",
+                "value": "CN(C)C=O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C3H7NO/c1-4(2)3-5/h3H,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "methylene chloride"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(Cl)Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "hexane"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCCCCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C6H14/c1-3-5-6-4-2/h3-6H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "mass": {
+                "value": 249.0,
+                "units": "MILLIGRAM"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "urea"
+            },
+            {
+              "type": "NAME",
+              "value": "N-(2-hydroxy 4-methyl phenyl ) N'-(2-bromo phenyl) urea"
+            },
+            {
+              "type": "SMILES",
+              "value": "OC1=C(C=CC(=C1)C)NC(=O)NC1=C(C=CC=C1)Br"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C14H13BrN2O2/c1-9-6-7-12(13(18)8-9)17-14(19)16-11-5-3-2-4-10(11)15/h2-8,18H,1H3,(H2,16,17,19)"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06005008",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:20.795138"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-d5b0087d69124dc083adc02f11c3994b"
+}

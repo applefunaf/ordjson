@@ -1,0 +1,274 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "Cl.[CH3:2][O:3][NH2:4].[OH:5][C:6]1[CH:11]=[CH:10][CH:9]=[CH:8][C:7]=1[C:12](=O)[CH2:13][N+:14]([O-:16])=[O:15]>CO>[CH3:2][O:3][N:4]=[C:12]([C:7]1[CH:8]=[CH:9][CH:10]=[CH:11][C:6]=1[OH:5])[CH2:13][N+:14]([O-:16])=[O:15] |f:0.1|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methoxyamine hydrochloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl.CON"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH5NO.ClH/c1-3-2;/h2H2,1H3;1H"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 73.5,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "o-hydroxy-ω-nitroacetophenone"
+            },
+            {
+              "type": "SMILES",
+              "value": "OC1=C(C=CC=C1)C(C[N+](=O)[O-])=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H7NO4/c10-7-4-2-1-3-6(7)8(11)5-9(12)13/h1-4,10H,5H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 80.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 500.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ice water"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 47.5,
+        "precision": 2.5,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "the mixture is stirred at 45 to 50° C. for 8 to 12 hours"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "At 20° C., 73.5 g (0.88 mol) of methoxyamine hydrochloride are added to a solution of 80.0 g (0.44 mol) of o-hydroxy-ω-nitroacetophenone in 500 ml of methanol, and the mixture is stirred at 45 to 50° C. for 8 to 12 hours. The solution is cooled to 20° C., poured into 1 1 of ice-water and stirred for one hour. The crystalline product is filtered off and washed with 500 ml of water a little at a time and dried at 40° C. in a vacuum drying cabinet. 72 g (74.6% of theory) of 1-(2-hydroxyphenyl)-2-nitro-ethanone O-methyl-oxime are obtained as a mixture of stereoisomers."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "The solution is cooled to 20° C.",
+      "temperature": {
+        "setpoint": {
+          "value": 20.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "STIRRING",
+      "details": "stirred for one hour",
+      "duration": {
+        "value": 1.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "The crystalline product is filtered off"
+    },
+    {
+      "type": "WASH",
+      "details": "washed with 500 ml of water a little at a time",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 500.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried at 40° C. in a vacuum",
+      "temperature": {
+        "setpoint": {
+          "value": 40.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "drying cabinet"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 10.0,
+        "precision": 2.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "1-(2-hydroxyphenyl)-2-nitro-ethanone O-methyl-oxime"
+            },
+            {
+              "type": "SMILES",
+              "value": "CON=C(C[N+](=O)[O-])C1=C(C=CC=C1)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H10N2O4/c1-15-10-8(6-11(13)14)7-4-2-3-5-9(7)12/h2-5,12H,6H2,1H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 72.0,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 74.6
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 77.9
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06005104",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:22.957540"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-611c81724e3e41e6b7ec3353af526aa5"
+}

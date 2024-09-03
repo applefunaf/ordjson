@@ -1,0 +1,292 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH:1]1[C:6]2=[C:7]3[C:16](=[CH:17][CH:18]=[C:5]2C=[CH:3][CH:2]=1)[N:15]=[C:14]1[C:9]([CH:10]=[CH:11][CH:12]=[CH:13]1)=[N:8]3.[K].[Na].I[CH3:22].[CH2:23]([CH2:26]OC)OC>>[CH3:5][CH:18]1[CH:17]=[C:16]2[C:7](=[N:8][C:9]3[C:14](=[N:15]2)[CH:13]=[CH:12][CH:11]([CH3:22])[CH:10]=3)[C:6]2[CH:1]=[CH:2][CH:3]=[CH:23][C:26]1=2 |f:1.2,^1:18,19|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "iodomethane"
+            },
+            {
+              "type": "SMILES",
+              "value": "IC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH3I/c1-2/h1H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "phenazine"
+            },
+            {
+              "type": "NAME",
+              "value": "Benzo(A)phenazine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1=CC=CC=2C1=C1N=C3C=CC=CC3=NC1=CC2"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C16H10N2/c1-2-6-12-11(5-1)9-10-15-16(12)18-14-8-4-3-7-13(14)17-15/h1-10H"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "potassium sodium"
+            },
+            {
+              "type": "SMILES",
+              "value": "[K].[Na]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/K.Na"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "dimethoxyethane"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(OC)COC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H10O2/c1-5-3-4-6-2/h3-4H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "alkali metal"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "This phenazine was reduced with a 3:1 potassium/sodium metal alloy in dimethoxyethane, to the brick red alkali metal adduct. Alkylation occurred over 1 hour with addition of iodomethane. Residual K/Na alloy was quenched with addition of ethanol. The product was isolated with column chromatography and was recrystallized from ethylacetate/hexane. 2.0 grams of product was isolated for a 38% overall yield."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "Residual K/Na alloy was quenched with addition of ethanol",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The product was isolated with column chromatography"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "was recrystallized from ethylacetate/hexane",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethylacetate hexane"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)OC(C)=O.CCCCCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C6H14.C4H8O2/c1-3-5-6-4-2;1-3-6-4(2)5/h3-6H2,1-2H3;3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "product"
+            },
+            {
+              "type": "NAME",
+              "value": "5,10-dimethyl-5,10-dihydrobenzo(A)phenazine"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC1C2=C(C3=NC4=CC(C=CC4=NC3=C1)C)C=CC=C2"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C18H16N2/c1-11-7-8-15-16(9-11)20-18-14-6-4-3-5-13(14)12(2)10-17(18)19-15/h3-12H,1-2H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 2.0,
+                  "units": "GRAM"
+                }
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998617",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:35.491003"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-bb72a135d70d48caadedb279b2a04a7e"
+}

@@ -1,0 +1,246 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[F:1][C:2]([F:10])([F:9])[C:3](=O)[CH2:4][C:5](=O)[CH3:6].[CH3:11][O:12][C:13]1[CH:18]=[CH:17][C:16]([NH:19][NH2:20])=[CH:15][CH:14]=1.Cl>COCCO.C(O)(=O)C>[F:1][C:2]([F:10])([F:9])[C:3]1[CH:4]=[C:5]([CH3:6])[N:19]([C:16]2[CH:17]=[CH:18][C:13]([O:12][CH3:11])=[CH:14][CH:15]=2)[N:20]=1 |f:1.2|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m3_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "1,1,1-trifluoro-2,4-pentanedione"
+            },
+            {
+              "type": "SMILES",
+              "value": "FC(C(CC(C)=O)=O)(F)F"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C5H5F3O2/c1-3(9)2-4(10)5(6,7)8/h2H2,1H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.02,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-methoxyphenyl hydrazine.HCl"
+            },
+            {
+              "type": "SMILES",
+              "value": "COC1=CC=C(C=C1)NN.Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H10N2O.ClH/c1-10-7-4-2-6(9-8)3-5-7;/h2-5,9H,8H2,1H3;1H"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 4.54,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2 -methoxyethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "COCCO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H8O2/c1-5-3-2-4/h4H,2-3H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 100.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acetic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H4O2/c1-2(3)4/h1H3,(H,3,4)"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 30.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture of 1,1,1-trifluoro-2,4-pentanedione (0.02 mol, 2.4 ML) and 4-methoxyphenyl hydrazine.HCl (4.54 g, 1.3 eq.) in 2 -methoxyethanol (100 mL) and acetic acid (30 mL) was refluxed for 6 h. The reaction mixture was evaporated and purified by flash chromatography on a silica gel column (400 g) eluted with 4:1 hexane:ethyl acetate to give 4.5 g of pure product (88%)"
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "was refluxed for 6 h",
+      "duration": {
+        "value": 6.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The reaction mixture was evaporated"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "purified by flash chromatography on a silica gel column (400 g)"
+    },
+    {
+      "type": "WASH",
+      "details": "eluted with 4:1 hexane",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "hexane"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCCCCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C6H14/c1-3-5-6-4-2/h3-6H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "pure product"
+            },
+            {
+              "type": "NAME",
+              "value": "3-Trifluoromethyl-5-methyl-1-(4-methoxyphenyl)-1H-pyrazole"
+            },
+            {
+              "type": "SMILES",
+              "value": "FC(C1=NN(C(=C1)C)C1=CC=C(C=C1)OC)(F)F"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C12H11F3N2O/c1-8-7-11(12(13,14)15)16-17(8)9-3-5-10(18-2)6-4-9/h3-7H,1-2H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 4.5,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 88.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 87.8
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998424",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:25.911632"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-2a1f52b8091a46298353d71cbc31751e"
+}

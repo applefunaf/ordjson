@@ -1,0 +1,243 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[ClH:1].C([NH:9][CH2:10][CH2:11][NH:12][C:13]1[CH:18]=[CH:17][CH:16]=[CH:15][N:14]=1)(OC(C)(C)C)=O>O1CCOCC1.C(Cl)Cl>[ClH:1].[ClH:1].[NH2:9][CH2:10][CH2:11][NH:12][C:13]1[CH:18]=[CH:17][CH:16]=[CH:15][N:14]=1 |f:4.5.6|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m3_m2_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "HCl"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/ClH/h1H"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-[[2-(Boc-amino)ethyl]amino]pyridine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(=O)(OC(C)(C)C)NCCNC1=NC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C12H19N3O2/c1-12(2,3)17-11(16)15-9-8-14-10-6-4-5-7-13-10/h4-7H,8-9H2,1-3H3,(H,13,14)(H,15,16)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 148.4,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "dioxane"
+            },
+            {
+              "type": "SMILES",
+              "value": "O1CCOCC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O2/c1-2-6-4-3-5-1/h1-4H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 3.2,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "CH2Cl2"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(Cl)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 3.2,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "4N HCl in dioxane (3.2 mL) was added in a stream to a solution of 2-[[2-(Boc-amino)ethyl]amino]pyridine (148.4 mg, 0.63 mmole) in anhydrous CH2Cl2 (3.2 mL) at 0° C., then the reaction was warmed to RT. After 2 hr, the mixture was suction filtered to collect the precipitated solid, which was washed with anhydrous Et2O and dried to afford the title compound (132.8 mg, quantitative) as a yellow solid: 1H NMR (400, CD3OD) δ 7.99-8.07 (m, 1 H), 7.92-7.98 (m, 1 H), 7.19 (d, J=9.1 Hz, 1 H), 6.98-7.04 (m, 1 H) 3.76 (t, J=6.2 Hz, 2 H), 3.27 (t, J=6.2 Hz, 2 H, partially obscured by residual solvent signal); MS (ES) m/e 138 (M+H)+."
+  },
+  "workups": [
+    {
+      "type": "FILTRATION",
+      "details": "filtered"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to collect the precipitated solid, which"
+    },
+    {
+      "type": "WASH",
+      "details": "was washed with anhydrous Et2O",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "Et2O"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 2.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "2-[(2-Aminoethyl)amino]pyridine dihydrochloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl.Cl.NCCNC1=NC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H11N3.2ClH/c8-4-6-10-7-3-1-2-5-9-7;;/h1-3,5H,4,6,8H2,(H,9,10);2*1H"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 132.8,
+                  "units": "MILLIGRAM"
+                }
+              }
+            }
+          ],
+          "isolated_color": "yellow",
+          "texture": {
+            "type": "CUSTOM",
+            "details": "solid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06008213",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:19.564256"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-2661eff718354a20b19e66885093c22b"
+}

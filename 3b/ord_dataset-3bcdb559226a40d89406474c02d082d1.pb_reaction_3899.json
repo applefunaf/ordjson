@@ -1,0 +1,267 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][C:2]1[CH:16]=[CH:15][C:5]([O:6][C:7]2[CH:14]=[CH:13][C:10](C=O)=[CH:9][CH:8]=2)=[CH:4][CH:3]=1.ClC1C=CC=C(C(OO)=[O:25])C=1>C(Cl)(Cl)Cl>[CH3:1][C:2]1[CH:16]=[CH:15][C:5]([O:6][C:7]2[CH:14]=[CH:13][C:10]([OH:25])=[CH:9][CH:8]=2)=[CH:4][CH:3]=1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m3_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-(4'-methylphenoxy)benzaldehyde"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC1=CC=C(OC2=CC=C(C=O)C=C2)C=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C14H12O2/c1-11-2-6-13(7-3-11)16-14-8-4-12(10-15)5-9-14/h2-10H,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 9.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "m-chloroperbenzoic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC1=CC(=CC=C1)C(=O)OO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H5ClO3/c8-6-3-1-2-5(4-6)7(9)11-10/h1-4,10H"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 15.8,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "CHCl3"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(Cl)(Cl)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CHCl3/c2-1(3)4/h1H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 75.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "stirred for 3 h at room temperature"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A solution of 4-(4'-methylphenoxy)benzaldehyde (9.00 g, 41.63 mmol) in CHCl3 (75 mL) was treated with m-chloroperbenzoic acid (46-85%, 15.80 g, 52.00 mmol) and stirred for 3 h at room temperature. The reaction was washed with sat. aq. NaHSO3, sat. aq. NaHCO3, and water. The organic layer is concentrated and the residual oil taken up in MeOH (10 mL) containing a few drops of conc. HCL and stirred for 1 h at room temperature. The solvent is removed in vacuo and the resulting oil was chromatographed on silica gel (20% ethyl acetate/hexane) to afford 4-(4'-methylphenoxy)phenol."
+  },
+  "workups": [
+    {
+      "type": "WASH",
+      "details": "The reaction was washed with sat. aq. NaHSO3, sat. aq. NaHCO3, and water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "NaHSO3"
+              },
+              {
+                "type": "SMILES",
+                "value": "OS(=O)[O-].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Na.H2O3S/c;1-4(2)3/h;(H2,1,2,3)/q+1;/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "NaHCO3"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(=O)(O)[O-].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2O3.Na/c2-1(3)4;/h(H2,2,3,4);/q;+1/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "The organic layer is concentrated"
+    },
+    {
+      "type": "ADDITION",
+      "details": "containing a few drops of conc. HCL"
+    },
+    {
+      "type": "STIRRING",
+      "details": "stirred for 1 h at room temperature",
+      "duration": {
+        "value": 1.0,
+        "units": "HOUR"
+      },
+      "temperature": {
+        "control": {
+          "type": "AMBIENT"
+        }
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The solvent is removed in vacuo"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the resulting oil was chromatographed on silica gel (20% ethyl acetate/hexane)"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 3.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-(4'-methylphenoxy)phenol"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC1=CC=C(OC2=CC=C(C=C2)O)C=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C13H12O2/c1-10-2-6-12(7-3-10)15-13-8-4-11(14)5-9-13/h2-9,14H,1H3"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06008237",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:20.043807"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-c44d678a2596438fa1bc71df2fd88669"
+}

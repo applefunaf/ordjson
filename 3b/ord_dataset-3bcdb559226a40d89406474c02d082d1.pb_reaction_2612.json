@@ -1,0 +1,192 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[Cl:1][C:2]1[CH:3]=[C:4]([NH:9][C:10]2[C:19]3[C:14](=[CH:15][CH:16]=[C:17]([NH:20][C:21](=[O:27])[C:22]#[C:23][CH2:24][O:25][CH3:26])[CH:18]=3)[N:13]=[CH:12][C:11]=2[C:28]#[N:29])[CH:5]=[CH:6][C:7]=1[F:8]>[Pd].CC([O-])=O.CC([O-])=O.[Pb+2].CO>[Cl:1][C:2]1[CH:3]=[C:4]([NH:9][C:10]2[C:19]3[C:14](=[CH:15][CH:16]=[C:17]([NH:20][C:21](=[O:27])/[CH:22]=[CH:23]\\[CH2:24][O:25][CH3:26])[CH:18]=3)[N:13]=[CH:12][C:11]=2[C:28]#[N:29])[CH:5]=[CH:6][C:7]=1[F:8] |f:1.2.3.4|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-[4[(3-chloro-4-fluorophenyl)amino]-3-cyano-6-quinolinyl]-4-methoxy-2-butynamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC=1C=C(C=CC1F)NC1=C(C=NC2=CC=C(C=C12)NC(C#CCOC)=O)C#N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C21H14ClFN4O2/c1-29-8-2-3-20(28)26-14-5-7-19-16(9-14)21(13(11-24)12-25-19)27-15-4-6-18(23)17(22)10-15/h4-7,9-10,12H,8H2,1H3,(H,25,27)(H,26,28)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.05,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Lindlar catalyst"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Pd].CC(=O)[O-].CC(=O)[O-].[Pb+2]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/2C2H4O2.Pb.Pd/c2*1-2(3)4;;/h2*1H3,(H,3,4);;/q;;+2;/p-2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 6.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "CATALYST"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 15.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture of 0.05 g (0.1 18 mmol) N-[4[(3-chloro-4-fluorophenyl)amino]-3-cyano-6-quinolinyl]-4-methoxy-2-butynamide and 6 mg of Lindlar catalyst in 15 mL of methanol was hydrogenated at room temperature for 5.5 hrs. The mixture was filtered through a pad of Celite. The solvent was removed to give 0.05 g (99.7%) yellow solid; HRMS m/z 410.0928 (M+.)."
+  },
+  "workups": [
+    {
+      "type": "FILTRATION",
+      "details": "The mixture was filtered through a pad of Celite"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The solvent was removed"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 5.5,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "yellow solid"
+            },
+            {
+              "type": "NAME",
+              "value": "N-[4-[(3-Chloro-4-fluorophenyl)amino]-3-cyano-6-quinolinyl]-4-methoxy-(Z)-2-butenamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC=1C=C(C=CC1F)NC1=C(C=NC2=CC=C(C=C12)NC(\\C=C/COC)=O)C#N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C21H16ClFN4O2/c1-29-8-2-3-20(28)26-14-5-7-19-16(9-14)21(13(11-24)12-25-19)27-15-4-6-18(23)17(22)10-15/h2-7,9-10,12H,8H2,1H3,(H,25,27)(H,26,28)/b3-2-"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 0.05,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 99.7
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 0.7
+              }
+            }
+          ],
+          "isolated_color": "yellow",
+          "texture": {
+            "type": "CUSTOM",
+            "details": "solid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06002008",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:26.726622"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-f3fb10f92c854ce3926796b8cf953350"
+}

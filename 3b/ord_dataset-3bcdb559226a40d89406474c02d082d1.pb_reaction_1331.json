@@ -1,0 +1,312 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[Cl:1][C:2]1[CH:7]=[C:6]([NH:8][S:9]([C:12]2[CH:17]=[CH:16][C:15]([NH:18]C(=O)C)=[CH:14][CH:13]=2)(=[O:11])=[O:10])[CH:5]=[C:4]([C:22]([F:25])([F:24])[F:23])[N:3]=1>[OH-].[Na+].O1CCOCC1>[NH2:18][C:15]1[CH:16]=[CH:17][C:12]([S:9]([NH:8][C:6]2[CH:5]=[C:4]([C:22]([F:24])([F:25])[F:23])[N:3]=[C:2]([Cl:1])[CH:7]=2)(=[O:10])=[O:11])=[CH:13][CH:14]=1 |f:1.2|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "dioxan"
+            },
+            {
+              "type": "SMILES",
+              "value": "O1CCOCC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O2/c1-2-6-4-3-5-1/h1-4H2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m1_m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-[4-(2-chloro-6-trifluoromethyl-pyridin-4-ylsulfamoyl)-phenyl]-acetamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC1=NC(=CC(=C1)NS(=O)(=O)C1=CC=C(C=C1)NC(C)=O)C(F)(F)F"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C14H11ClF3N3O3S/c1-8(22)19-9-2-4-11(5-3-9)25(23,24)21-10-6-12(14(16,17)18)20-13(15)7-10/h2-7H,1H3,(H,19,22)(H,20,21)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.2,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "NaOH"
+            },
+            {
+              "type": "SMILES",
+              "value": "[OH-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Na.H2O/h;1H2/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 5.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "dioxan"
+            },
+            {
+              "type": "SMILES",
+              "value": "O1CCOCC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O2/c1-2-6-4-3-5-1/h1-4H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 5.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "0.20 g (0.0005 mol) of N-[4-(2-chloro-6-trifluoromethyl-pyridin-4-ylsulfamoyl)-phenyl]-acetamide was dissolved in a mixture of 5 ml of 1N NaOH and 5 ml of dioxan and boiled at reflux for 5 hours. After cooling the dioxan was distilled off, the residue was adjusted to pH 6 with 0.1 N HCl, the aqueous phase was extracted with ethyl acetate, back-washed with saturated sodium chloride solution and the organic phase was dried over Na2SO4. Subsequently, chromatography was carried out on silica gel with ethyl acetate/hexane 1:4. There was obtained 0.06 g (34%) of 4-amino-N-(2-chloro-6-trifluoromethyl-pyridin-4-yl)-benzenesulfonamide as pale yellow crystals; m.p.: 179-181° C."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "at reflux for 5 hours",
+      "duration": {
+        "value": 5.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "DISTILLATION",
+      "details": "was distilled off"
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "the aqueous phase was extracted with ethyl acetate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "back-washed with saturated sodium chloride solution",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "sodium chloride"
+              },
+              {
+                "type": "SMILES",
+                "value": "[Cl-].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH.Na/h1H;/q;+1/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "the organic phase was dried over Na2SO4",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "Na2SO4"
+              },
+              {
+                "type": "SMILES",
+                "value": "[O-]S(=O)(=O)[O-].[Na+].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/2Na.H2O4S/c;;1-5(2,3)4/h;;(H2,1,2,3,4)/q2*+1;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-amino-N-(2-chloro-6-trifluoromethyl-pyridin-4-yl)-benzenesulfonamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC1=CC=C(C=C1)S(=O)(=O)NC1=CC(=NC(=C1)C(F)(F)F)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C12H9ClF3N3O2S/c13-11-6-8(5-10(18-11)12(14,15)16)19-22(20,21)9-3-1-7(17)2-4-9/h1-6H,17H2,(H,18,19)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 0.06,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 34.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 34.1
+              }
+            }
+          ],
+          "isolated_color": "pale yellow",
+          "texture": {
+            "type": "CRYSTAL",
+            "details": "crystals"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998665",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:36.503165"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-c083e7286b4240d3829b047796767fae"
+}

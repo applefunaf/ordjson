@@ -1,0 +1,217 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[C:1]([NH2:5])([CH3:4])([CH3:3])[CH3:2].Br[CH2:7][C:8]([C:10]1[CH:15]=[CH:14][C:13]([O:16][C:17]2[CH:22]=[CH:21][CH:20]=[CH:19][CH:18]=2)=[CH:12][CH:11]=1)=[O:9].[ClH:23]>CC(O)C>[ClH:23].[O:16]([C:13]1[CH:12]=[CH:11][C:10]([C:8](=[O:9])[CH2:7][NH:5][C:1]([CH3:4])([CH3:3])[CH3:2])=[CH:15][CH:14]=1)[C:17]1[CH:22]=[CH:21][CH:20]=[CH:19][CH:18]=1 |f:4.5|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Tert-butylamine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(C)(C)N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H11N/c1-4(2,3)5/h5H2,1-3H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 15.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-bromo-4'-phenoxyacetophenone"
+            },
+            {
+              "type": "SMILES",
+              "value": "BrCC(=O)C1=CC=C(C=C1)OC1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C14H11BrO2/c15-10-14(16)11-6-8-13(9-7-11)17-12-4-2-1-3-5-12/h1-9H,10H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 12.7,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "propan-2-ol"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H8O/c1-3(2)4/h3-4H,1-2H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrochloric acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/ClH/h1H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 10.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 80.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "The suspension was stirred at ambient temperature for 18 hours"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "Tert-butylamine (15 ml) was added with stirring to a solution of 2-bromo-4'-phenoxyacetophenone (12.7 g, prepared by bromination of 4'-phenoxyacetophenone according to Tetrahedron Letters, 1993, 34, 3177) in propan-2-ol and the mixture heated at 80° C. for 3 hours. The mixture was cooled to 0° C. and concentrated hydrochloric acid (10 ml) added. The suspension was stirred at ambient temperature for 18 hours and the solid collected by filtration to give 4'-phenoxy-2-(tert-butylamino)acetophenone hydrochloride (3.75 g), m.p. 210-212° C."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "The mixture was cooled to 0° C.",
+      "temperature": {
+        "setpoint": {
+          "value": 0.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "the solid collected by filtration"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 18.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4'-phenoxy-2-(tert-butylamino)acetophenone hydrochloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl.O(C1=CC=CC=C1)C1=CC=C(C=C1)C(CNC(C)(C)C)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C18H21NO2.ClH/c1-18(2,3)19-13-17(20)14-9-11-16(12-10-14)21-15-7-5-4-6-8-15;/h4-12,19H,13H2,1-3H3;1H"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 3.75,
+                  "units": "GRAM"
+                }
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06001839",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:16.874414"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-da62db2f822d4311ba27c4fe859df401"
+}

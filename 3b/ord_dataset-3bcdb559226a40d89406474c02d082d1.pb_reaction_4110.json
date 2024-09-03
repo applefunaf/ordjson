@@ -1,0 +1,249 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "C([O:4][C:5]1[C:6]2[N:7]([C:11]([Br:15])=[C:12]([CH3:14])[N:13]=2)[CH:8]=[CH:9][CH:10]=1)(=O)C.[OH-].[Na+].Cl>CO>[Br:15][C:11]1[N:7]2[CH:8]=[CH:9][CH:10]=[C:5]([OH:4])[C:6]2=[N:13][C:12]=1[CH3:14] |f:1.2|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrochloric acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/ClH/h1H"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m1_m4_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "8 -acetoxy-3-bromo-2-methylimidazo[1,2-a]pyridine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)OC=1C=2N(C=CC1)C(=C(N2)C)Br"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C10H9BrN2O2/c1-6-9(11)13-5-3-4-8(10(13)12-6)15-7(2)14/h3-5H,1-2H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 235.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sodium hydroxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "[OH-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Na.H2O/h;1H2/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 2.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 2.5,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "the mixture was stirred for 30 minutes at the same temperature"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a solution of 8 -acetoxy-3-bromo-2-methylimidazo[1,2-a]pyridine (235 mg) in methanol (2.5 ml) was added 1N sodium hydroxide solution (2.0 ml) under ice-cooling, and the mixture was stirred for 30 minutes at the same temperature. The mixture was neutralized with 1N hydrochloric acid, and the resulting precipitates were collected by filtration and washed with water to give 3-bromo-8-hydroxy-2-methylimidazo[1,2-a]pyridine (150 mg) as brown powder."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "cooling"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the resulting precipitates"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "were collected by filtration"
+    },
+    {
+      "type": "WASH",
+      "details": "washed with water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 30.0,
+        "units": "MINUTE"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3-bromo-8-hydroxy-2-methylimidazo[1,2-a]pyridine"
+            },
+            {
+              "type": "SMILES",
+              "value": "BrC1=C(N=C2N1C=CC=C2O)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H7BrN2O/c1-5-7(9)11-4-2-3-6(12)8(11)10-5/h2-4,12H,1H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 150.0,
+                  "units": "MILLIGRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 75.6
+              }
+            }
+          ],
+          "isolated_color": "brown",
+          "texture": {
+            "type": "POWDER",
+            "details": "powder"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06008229",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:23.765902"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-fcb8a08985eb4b4f9663ae54a94945aa"
+}

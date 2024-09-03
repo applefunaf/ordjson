@@ -1,0 +1,369 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][C:2]1([C:8]2[CH:13]=[CH:12][C:11]([O:14][CH3:15])=[C:10]([O:16][CH2:17][CH3:18])[CH:9]=2)[O:6][C:5](=[O:7])[NH:4][CH2:3]1.[H-].[Na+].Br[CH2:22][CH:23]1[CH2:25][CH2:24]1.O>CN(C)C=O>[CH3:1][C:2]1([C:8]2[CH:13]=[CH:12][C:11]([O:14][CH3:15])=[C:10]([O:16][CH2:17][CH3:18])[CH:9]=2)[O:6][C:5](=[O:7])[N:4]([CH2:22][CH:23]2[CH2:25][CH2:24]2)[CH2:3]1 |f:1.2|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 50.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m1_m2_m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "5-methyl-5-(3-ethoxy-4-methoxyphenyl)-2-oxazolidinone"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC1(CNC(O1)=O)C1=CC(=C(C=C1)OC)OCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C13H17NO4/c1-4-17-11-7-9(5-6-10(11)16-3)13(2)8-14-12(15)18-13/h5-7H,4,8H2,1-3H3,(H,14,15)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 500.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sodium hydride"
+            },
+            {
+              "type": "SMILES",
+              "value": "[H-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Na.H/q+1;-1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 60.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "dimethylformamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN(C=O)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H7NO/c1-4(2)3-5/h3H,1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 14.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "(bromomethyl)cyclopropane"
+            },
+            {
+              "type": "SMILES",
+              "value": "BrCC1CC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H7Br/c5-3-4-1-2-4/h4H,1-3H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 0.26,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "500 mg (2.0 mmol) of 5-methyl-5-(3-ethoxy-4-methoxyphenyl)-2-oxazolidinone was first stirred with 60 mg (2.5 mmol) of sodium hydride in 14 ml of dimethylformamide for 30 minutes and, after addition of 0.26 ml (3.0 mmol) of (bromomethyl)cyclopropane for 17 hours at room temperature. The reaction mixture was combined with 50 ml of water and then extracted with ethyl acetate. The ethyl acetate phase was washed with water, dried over sodium sulfate, filtered, and concentrated (766 mg of a yellow oil). Chromatography on silica gel with methylene chloride/ether (1:1) yielded 438 mg of 5-methyl-5-(3-ethoxy-4-methoxyphenyl)-3-cyclopropylmethyl-2-oxazolidinone as an oil."
+  },
+  "workups": [
+    {
+      "type": "EXTRACTION",
+      "details": "extracted with ethyl acetate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "The ethyl acetate phase was washed with water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "dried over sodium sulfate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "sodium sulfate"
+              },
+              {
+                "type": "SMILES",
+                "value": "S(=O)(=O)([O-])[O-].[Na+].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/2Na.H2O4S/c;;1-5(2,3)4/h;;(H2,1,2,3,4)/q2*+1;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filtered"
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated (766 mg of a yellow oil)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "yellow oil"
+              }
+            ],
+            "amount": {
+              "mass": {
+                "value": 766.0,
+                "units": "MILLIGRAM"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "5-methyl-5-(3-ethoxy-4-methoxyphenyl)-3-cyclopropylmethyl-2-oxazolidinone"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC1(CN(C(O1)=O)CC1CC1)C1=CC(=C(C=C1)OC)OCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C17H23NO4/c1-4-21-15-9-13(7-8-14(15)20-3)17(2)11-18(16(19)22-17)10-12-5-6-12/h7-9,12H,4-6,10-11H2,1-3H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 438.0,
+                  "units": "MILLIGRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 71.7
+              }
+            }
+          ],
+          "texture": {
+            "type": "OIL",
+            "details": "oil"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998453",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:21.997324"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-2b96733aec574ee5bb4d591736da6332"
+}

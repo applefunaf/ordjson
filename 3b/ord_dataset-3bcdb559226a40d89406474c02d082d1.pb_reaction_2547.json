@@ -1,0 +1,212 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][C:2]1[CH:8]=[C:7]([N+:9]([O-:11])=[O:10])[CH:6]=[CH:5][C:3]=1N.C(O[CH:15]=[C:16]([C:22]#[N:23])[C:17]([O:19][CH2:20][CH3:21])=[O:18])C>C1(C)C=CC=CC=1>[CH2:20]([O:19][C:17](=[O:18])[C:16]([C:22]#[N:23])=[CH:15][C:3]1[CH:5]=[CH:6][C:7]([N+:9]([O-:11])=[O:10])=[CH:8][C:2]=1[CH3:1])[CH3:21]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-methyl-4-nitroaniline"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC1=C(N)C=CC(=C1)[N+](=O)[O-]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H8N2O2/c1-5-4-6(9(10)11)2-3-7(5)8/h2-4H,8H2,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 38.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethyl (ethoxymethylene)-cyanoacetate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)OC=C(C(=O)OCC)C#N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H11NO3/c1-3-11-6-7(5-9)8(10)12-4-2/h6H,3-4H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 50.8,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "toluene"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1(=CC=CC=C1)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H8/c1-7-5-3-2-4-6-7/h2-6H,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 200.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ether-hexane"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture of 2-methyl-4-nitroaniline (38.0 g, 250 mmol), ethyl (ethoxymethylene)-cyanoacetate (50.8 g, 300 mmol), and 200 ml of toluene was refluxed for 24 h, cooled, diluted with 1:1 ether-hexane, and filtered. The resulting white solid was washed with hexane-ether and dried to give 63.9 g, mp 180-210° C."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "was refluxed for 24 h",
+      "duration": {
+        "value": 24.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "cooled"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filtered"
+    },
+    {
+      "type": "WASH",
+      "details": "The resulting white solid was washed with hexane-ether",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "hexane-ether"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to give 63.9 g, mp 180-210° C."
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-Cyano-3-(2-methyl-4-nitrophenyl)acrylic Acid Ethyl Ester"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)OC(C(=CC1=C(C=C(C=C1)[N+](=O)[O-])C)C#N)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C13H12N2O4/c1-3-19-13(16)11(8-14)7-10-4-5-12(15(17)18)6-9(10)2/h4-7H,3H2,1-2H3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06002008",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:25.628707"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-0f65c7ca188d43fea82c1e23360867dd"
+}

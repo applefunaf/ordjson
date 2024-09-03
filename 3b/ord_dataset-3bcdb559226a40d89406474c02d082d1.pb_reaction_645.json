@@ -1,0 +1,276 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][O:2][C:3]1[CH:8]=[CH:7][C:6]([N:9]2[CH:13]=[CH:12][C:11](/[CH:14]=[CH:15]/[C:16]([O:18][CH3:19])=[O:17])=[N:10]2)=[CH:5][CH:4]=1.[H][H]>C(O)C.[Pd]>[CH3:1][O:2][C:3]1[CH:4]=[CH:5][C:6]([N:9]2[CH:13]=[CH:12][C:11]([CH2:14][CH2:15][C:16]([O:18][CH3:19])=[O:17])=[N:10]2)=[CH:7][CH:8]=1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m3_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "1-[(4-methoxy)phenyl]-3-[E-2-(methoxycarbonyl) ethenyl]-1H-pyrazole"
+            },
+            {
+              "type": "SMILES",
+              "value": "COC1=CC=C(C=C1)N1N=C(C=C1)\\C=C\\C(=O)OC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C14H14N2O3/c1-18-13-6-4-12(5-7-13)16-10-9-11(15-16)3-8-14(17)19-2/h3-10H,1-2H3/b8-3+"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 35.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 20.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "palladium on carbon"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Pd]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Pd"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 3.5,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "CATALYST"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrogen"
+            },
+            {
+              "type": "SMILES",
+              "value": "[H][H]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2/h1H"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a solution of 1-[(4-methoxy)phenyl]-3-[E-2-(methoxycarbonyl) ethenyl]-1H-pyrazole-5-[(2'-aminosulfonyl-[1,1']-biphen-4-yl) carboxyamide (35 mg, 0.065 mmol) in 20 mL of absolute ethanol at ambient temperature was added 10% palladium on carbon catalyst (3.5 mg). This mixture was stirred under 1 atm of hydrogen gas for 3 h and then was filtered through a pad of celite and concentrated in vacuo. The residue was purified by prep HPLC (C18 reverse phase column, elution with a H2O/CH3CN gradient with 0.5% TFA) and lyophilized to afford 15 mg (42%) of the title compound as a white powder. LRMS (ES+): 534.9 (M+H)+."
+  },
+  "workups": [
+    {
+      "type": "FILTRATION",
+      "details": "was filtered through a pad of celite"
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated in vacuo"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The residue was purified by prep HPLC ("
+    },
+    {
+      "type": "WASH",
+      "details": "C18 reverse phase column, elution with a H2O/CH3CN gradient with 0.5% TFA) and",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "H2O CH3CN"
+              },
+              {
+                "type": "SMILES",
+                "value": "O.CC#N"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C2H3N.H2O/c1-2-3;/h1H3;1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "TFA"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(=O)(C(F)(F)F)O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C2HF3O2/c3-2(4,5)1(6)7/h(H,6,7)"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "1-[(4-Methoxy)phenyl]-3-[2-(methoxycarbonyl)ethyl]-1H-pyrazole"
+            },
+            {
+              "type": "SMILES",
+              "value": "COC1=CC=C(C=C1)N1N=C(C=C1)CCC(=O)OC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C14H16N2O3/c1-18-13-6-4-12(5-7-13)16-10-9-11(15-16)3-8-14(17)19-2/h4-7,9-10H,3,8H2,1-2H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 15.0,
+                  "units": "MILLIGRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 42.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 88.7
+              }
+            }
+          ],
+          "isolated_color": "white",
+          "texture": {
+            "type": "POWDER",
+            "details": "powder"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998424",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:26.644787"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-01fabb2662ee4e44ae3e3f3a428108c7"
+}

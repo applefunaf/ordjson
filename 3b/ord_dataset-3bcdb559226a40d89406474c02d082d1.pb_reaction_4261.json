@@ -1,0 +1,311 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[C:1]1(=[O:11])[O:6][C:4](=O)[C:3]2=[CH:7][CH:8]=[CH:9][CH:10]=[C:2]12.[CH2:12]([NH2:16])[CH2:13][CH2:14][CH3:15]>O>[CH2:12]([N:16]1[C:1](=[O:11])[C:2]2=[CH:10][CH:9]=[CH:8][CH:7]=[C:3]2[C:4]1=[O:6])[CH2:13][CH2:14][CH3:15]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m6": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "phthalic anhydride"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1(C=2C(C(=O)O1)=CC=CC2)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H4O3/c9-7-5-3-1-2-4-6(5)8(10)11-7/h1-4H"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 15.335,
+              "units": "KILOGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-butylamine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(CCC)N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H11N/c1-2-3-4-5/h2-5H2,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 7.663,
+              "units": "KILOGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "amine"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "phthalic anhydride"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1(C=2C(C(=O)O1)=CC=CC2)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H4O3/c9-7-5-3-1-2-4-6(5)8(10)11-7/h1-4H"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "amine"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 200.0,
+        "units": "CELSIUS"
+      }
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A 10-gallon stainless steel reactor equipped with a turbine blade impeller, cooling coil, distilling condenser, azeotropic separator, thermocouple probe and means to maintain a nitrogen atmosphere, was charged with 15.335 kg (103.53 moles) phthalic anhydride. N-butylamine (7.663 kg, 104.57 moles) from a pressure vessel was slowly added to the reactor which was at room temperature, e.g., about 25° C. The resulting exothermic reaction between the amine and phthalic anhydride was continued until the temperature in the reactor rose to 90° C., at which time addition of amine was complete. The reaction mixture was then heated, with removal of water, for a 5 hour period until the temperature of the mixture reached 200° C. The reaction mixture then was maintained at 200° C. for 2 hours. The resulting product was vacuum distilled at a temperature ranging from 150-155° C. and at a pressure of 20 mm, to afford a liquid which solidified. The melting point of the solid was about 34 to 35° C. and was produced at a 95% yield."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "A 10-gallon stainless steel reactor equipped with a turbine blade impeller"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "cooling coil"
+    },
+    {
+      "type": "DISTILLATION",
+      "details": "distilling condenser"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "to maintain a nitrogen atmosphere"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "was at room temperature",
+      "temperature": {
+        "control": {
+          "type": "AMBIENT"
+        }
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "e.g., about 25° C",
+      "temperature": {
+        "setpoint": {
+          "value": 25.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "reached 200° C",
+      "temperature": {
+        "setpoint": {
+          "value": 200.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "DISTILLATION",
+      "details": "distilled at a temperature"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "ranging from 150-155° C. and at a pressure of 20 mm",
+      "temperature": {
+        "setpoint": {
+          "value": 152.5,
+          "precision": 2.5,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to afford a liquid which"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "was about 34 to 35° C.",
+      "temperature": {
+        "setpoint": {
+          "value": 34.5,
+          "precision": 0.5,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "was produced at a 95% yield"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-Butylphthalimide"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(CCC)N1C(C=2C(C1=O)=CC=CC2)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C12H13NO2/c1-2-3-8-13-11(14)9-6-4-5-7-10(9)12(13)15/h4-7H,2-3,8H2,1H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 95.0
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06008374",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:26.311266"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-1ae88dd44503406c8ffbb17d1ef54972"
+}

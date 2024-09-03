@@ -1,0 +1,255 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[Cl:1][C:2]([Cl:11])([Cl:10])[C:3]([C:5]1[NH:6][CH:7]=[CH:8][CH:9]=1)=[O:4].[N+:12]([O-:15])(O)=[O:13].[CH:16](O)(C)C>C(OC(=O)C)(=O)C>[N+:12]([C:8]1[CH:9]=[C:5]([C:3](=[O:4])[C:2]([Cl:1])([Cl:10])[Cl:11])[N:6]([CH3:16])[CH:7]=1)([O-:15])=[O:13]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-(trichloroacetyl) pyrrole"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC(C(=O)C=1NC=CC1)(Cl)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H4Cl3NO/c7-6(8,9)5(11)4-2-1-3-10-4/h1-3,10H"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 1.2,
+              "units": "KILOGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acetic anhydride"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)OC(C)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H6O3/c1-3(5)7-4(2)6/h1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 6.0,
+              "units": "LITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "nitric acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "[N+](=O)(O)[O-]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/HNO3/c2-1(3)4/h(H,2,3,4)"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "isopropyl alcohol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H8O/c1-3(2)4/h3-4H,1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 6.0,
+              "units": "LITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": -40.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "stir an additional 4 h"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a well stirred solution of trichloroacetyl chloride (1 kg, 5.5 mole) in 1.5 liter ethyl ether in a 12 liter flask was added dropwise over a period of 3 h a solution of N-methylpyrrole (0.45 kg, 5.5 mole) in 1.5 liter anhydrous ethyl ether. The reaction was stirred for an additional 3 hours and quenched by the dropwise addition of a solution of 400 g potassium carbonate in 1.5 liters water. The layers were separated and the ether layer concentrated in vacuo to provide 2-(trichloroacetyl)pyrrole (1.2 kg, 5.1 mol) as a yellow crystalline solid sufficiently pure to be used without further purification. To a cooled (-40° C.) solution of 2-(trichloroacetyl) pyrrole (1.2 kg, 5.1 mol) in acetic anhydride (6 L) in a 12 L flask equipped with a mechanical stirrer was added 440 mL fuming nitric acid over a period of 1 hour while maintaining a temperature of (-40° C.). The reaction was carefully allowed to warm to room temperature and stir an additional 4 h. The mixture was cooled to -30° C., and isopropyl alcohol (6 L) added. The solution was stirred at -20° C. for 30 min during which time a white precipitate forms. The solution was allowed to stand for 15 min and the resulting precipitate collected by vacuum filtration."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "to be used without further purification"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "equipped with a mechanical stirrer"
+    },
+    {
+      "type": "ADDITION",
+      "details": "was added 440 mL"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "of 1 hour",
+      "duration": {
+        "value": 1.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "to warm to room temperature",
+      "temperature": {
+        "control": {
+          "type": "AMBIENT"
+        }
+      }
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "The mixture was cooled to -30° C.",
+      "temperature": {
+        "setpoint": {
+          "value": -30.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "STIRRING",
+      "details": "The solution was stirred at -20° C. for 30 min during which time a white precipitate forms",
+      "duration": {
+        "value": 30.0,
+        "units": "MINUTE"
+      },
+      "temperature": {
+        "setpoint": {
+          "value": -20.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "WAIT",
+      "details": "to stand for 15 min",
+      "duration": {
+        "value": 15.0,
+        "units": "MINUTE"
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "the resulting precipitate collected by vacuum filtration"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 4.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-Nitro-2-trichloroacetyl-1-methylpyrrole"
+            },
+            {
+              "type": "SMILES",
+              "value": "[N+](=O)([O-])C=1C=C(N(C1)C)C(C(Cl)(Cl)Cl)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H5Cl3N2O3/c1-11-3-4(12(14)15)2-5(11)6(13)7(8,9)10/h2-3H,1H3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998140",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:16.166208"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-7a2d021b4ee043629e55d896c95a5c9d"
+}

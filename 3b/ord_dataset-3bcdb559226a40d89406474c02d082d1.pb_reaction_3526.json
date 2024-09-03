@@ -1,0 +1,293 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[O:1]=[CH:2][C:3]1[CH:11]=[CH:10][C:7]([O:8][CH3:9])=[C:5]([OH:6])[CH:4]=1.C(=O)([O-])[O-].[K+].[K+].[CH2:18](Br)[C:19]1[CH:24]=[CH:23][CH:22]=[CH:21][CH:20]=1>CN(C)C=O>[CH2:18]([O:6][C:5]1[CH:4]=[C:3]([CH:11]=[CH:10][C:7]=1[O:8][CH3:9])[CH:2]=[O:1])[C:19]1[CH:24]=[CH:23][CH:22]=[CH:21][CH:20]=1 |f:1.2.3|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "benzyl bromide"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C1=CC=CC=C1)Br"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H7Br/c8-6-7-4-2-1-3-5-7/h1-5H,6H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 203.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m1_m4_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "isovanillin"
+            },
+            {
+              "type": "SMILES",
+              "value": "O=CC1=CC(O)=C(OC)C=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H8O3/c1-11-8-3-2-6(5-9)4-7(8)10/h2-5,10H,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 200.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "potassium carbonate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C([O-])([O-])=O.[K+].[K+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2O3.2K/c2-1(3)4;;/h(H2,2,3,4);;/q;2*+1/p-2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 236.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "dimethylformamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN(C=O)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H7NO/c1-4(2)3-5/h3H,1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 500.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "the mixture is stirred overnight"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a solution of isovanillin (200 g) in dimethylformamide (500 ml) is added potassium carbonate (236 g) under ice-cooling, and thereto is added dropwise benzyl bromide (203 ml), and the mixture is stirred overnight. The insoluble materials in the resulting residue are removed by filtration, and washed with acetone, and the filtrate is concentrated under reduced pressure to remove the solvent. The residue is washed again with ether and water, and concentrated under reduced pressure to remove the solvent to give 3-benzyloxy-4-methoxybenzaldehyde as an oily product."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "cooling"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The insoluble materials in the resulting residue are removed by filtration"
+    },
+    {
+      "type": "WASH",
+      "details": "washed with acetone",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "acetone"
+              },
+              {
+                "type": "SMILES",
+                "value": "CC(=O)C"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C3H6O/c1-3(2)4/h1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "the filtrate is concentrated under reduced pressure"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to remove the solvent"
+    },
+    {
+      "type": "WASH",
+      "details": "The residue is washed again with ether and water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated under reduced pressure"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to remove the solvent"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 8.0,
+        "precision": 8.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3-benzyloxy-4-methoxybenzaldehyde"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C1=CC=CC=C1)OC=1C=C(C=O)C=CC1OC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C15H14O3/c1-17-14-8-7-13(10-16)9-15(14)18-11-12-5-3-2-4-6-12/h2-10H,11H2,1H3"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06005106",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:26.086406"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-277e0e9eb5074a76b09fd7116039aed8"
+}

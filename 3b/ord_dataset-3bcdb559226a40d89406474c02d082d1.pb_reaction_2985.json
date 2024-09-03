@@ -1,0 +1,250 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][O:2][C:3]1[C:8]([O:9][CH3:10])=[CH:7][CH:6]=[CH:5][C:4]=1[CH:11]=[C:12](NC=O)[C:13]1[CH:18]=[CH:17][N:16]=[CH:15][CH:14]=1.Cl.[OH-:23].[Na+].O>CO>[CH3:1][O:2][C:3]1[C:8]([O:9][CH3:10])=[CH:7][CH:6]=[CH:5][C:4]=1[CH2:11][C:12]([C:13]1[CH:18]=[CH:17][N:16]=[CH:15][CH:14]=1)=[O:23] |f:2.3|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "HCl"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/ClH/h1H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 120.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m1_m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-[2-(2,3-dimethoxyphenyl)-1-(4-pyridinyl)vinyl]formamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "COC1=C(C=CC=C1OC)C=C(C1=CC=NC=C1)NC=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C16H16N2O3/c1-20-15-5-3-4-13(16(15)21-2)10-14(18-11-19)12-6-8-17-9-7-12/h3-11H,1-2H3,(H,18,19)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 45.2,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 400.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "NaOH"
+            },
+            {
+              "type": "SMILES",
+              "value": "[OH-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Na.H2O/h;1H2/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 0.0,
+        "units": "CELSIUS"
+      }
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a stirred suspension of N-[2-(2,3-dimethoxyphenyl)-1-(4-pyridinyl)vinyl]formamide (45.2 g, 0.16 mol) in methanol (400 ml), cooled to 0° C., was added, dropwise, concentrated HCl (120 ml). After complete addition, the temperature was raised to between 35-40° C. for 2 h. The reaction was allowed to stand at ambient temperature for 1 h, and after cooling it in an ice bath, 50% aqueous NaOH was added dropwise until the mixture was basic. Water was added and the resulting white precipitate was collected to yield the desired ketone which was removed and recrystallized twice from isopropanol to afford the titled compound as a white solid, mp 99-101° C."
+  },
+  "workups": [
+    {
+      "type": "ADDITION",
+      "details": "was added"
+    },
+    {
+      "type": "ADDITION",
+      "details": "After complete addition"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "the temperature was raised to between 35-40° C. for 2 h",
+      "duration": {
+        "value": 2.0,
+        "units": "HOUR"
+      },
+      "temperature": {
+        "setpoint": {
+          "value": 37.5,
+          "precision": 2.5,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "after cooling it in an ice bath"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the resulting white precipitate was collected"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 1.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ketone"
+            },
+            {
+              "type": "NAME",
+              "value": "2-(2,3-Dimethoxyphenyl)-1-(4-pyridinyl)ethanone"
+            },
+            {
+              "type": "SMILES",
+              "value": "COC1=C(C=CC=C1OC)CC(=O)C1=CC=NC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C15H15NO3/c1-18-14-5-3-4-12(15(14)19-2)10-13(17)11-6-8-16-9-7-11/h3-9H,10H2,1-2H3"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06004982",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:18.433755"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-ed94faed73d04371a3726218742dacbe"
+}

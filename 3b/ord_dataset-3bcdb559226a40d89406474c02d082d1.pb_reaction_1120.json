@@ -1,0 +1,238 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][N:2]1[CH2:6][CH2:5][CH:4]([C:7]2[CH:12]=[CH:11][CH:10]=[CH:9][CH:8]=2)[O:3]1.C(O)C>C1S(=O)(=O)CCC1.[Pd]>[CH3:1][NH:2][CH2:6][CH2:5][CH:4]([C:7]1[CH:12]=[CH:11][CH:10]=[CH:9][CH:8]=1)[OH:3]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Pd/C"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Pd]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Pd"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 1.9,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "CATALYST"
+        }
+      ]
+    },
+    "m1_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-Methyl-5-phenylisoxazolidine"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN1OC(CC1)C1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C10H13NO/c1-11-8-7-10(12-11)9-5-3-2-4-6-9/h2-6,10H,7-8H2,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 38.1,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "tetramethylene sulfone"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1CCCS1(=O)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O2S/c5-7(6)3-1-2-4-7/h1-4H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 38.1,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Ethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 38.1,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 50.0,
+        "units": "CELSIUS"
+      }
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "2-Methyl-5-phenylisoxazolidine (38.1 g, 234 mmol) dissolved in tetramethylene sulfone (38.1 g) is mixed with 5% Pd/C (1.9 g) in a glass pressure reactor. The reactor is warmed to 50° C. and the pressure is maintained at 40 psig with H2 for 24 hours. Ethanol (38.1 g) is added and heating is continued for 48 hours. After cooling, the mixture is filtered and the EtOH is removed to give a solution of N-methyl-3-phenyl-3-hydroxypropylamine in tetramethylene sulfone."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "the pressure is maintained at 40 psig with H2 for 24 hours",
+      "duration": {
+        "value": 24.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "heating"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "After cooling"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "the mixture is filtered"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the EtOH is removed",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "EtOH"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCO"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 48.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-methyl-3-phenyl-3-hydroxypropylamine"
+            },
+            {
+              "type": "SMILES",
+              "value": "CNCCC(O)C1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C10H15NO/c1-11-8-7-10(12)9-5-3-2-4-6-9/h2-6,10-12H,7-8H2,1H3"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998627",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:33.537887"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-a74ade672e0c4b3f9e2735af20885959"
+}

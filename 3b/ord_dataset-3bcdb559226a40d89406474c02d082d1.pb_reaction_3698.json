@@ -1,0 +1,267 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[C:1]([C:5]1[CH:10]=[CH:9][C:8]([OH:11])=[CH:7][CH:6]=1)([CH3:4])([CH3:3])[CH3:2].[N+:12]([O-])([OH:14])=[O:13].N([O-])=O.[Na+]>C(OCC)(=O)C>[N+:12]([C:9]1[CH:10]=[C:5]([C:1]([CH3:4])([CH3:2])[CH3:3])[CH:6]=[CH:7][C:8]=1[OH:11])([O-:14])=[O:13] |f:2.3|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-t-butyl phenol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(C)(C)C1=CC=C(C=C1)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C10H14O/c1-10(2,3)8-4-6-9(11)7-5-8/h4-7,11H,1-3H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 30.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethyl acetate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)OCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 200.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "nitric acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "[N+](=O)(O)[O-]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/HNO3/c2-1(3)4/h(H,2,3,4)"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 13.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "NaNO2"
+            },
+            {
+              "type": "SMILES",
+              "value": "N(=O)[O-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/HNO2.Na/c2-1-3;/h(H,2,3);/q;+1/p-1"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 0.0,
+        "units": "CELSIUS"
+      }
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "Commercially available 4-t-butyl phenol (30 g, 0.2 mole) was dissolved in 200 mL ethyl acetate in a 600-mL round-bottomed flask fitted with a mechanical stirrer, and cooled to 0° C. The mixture was treated with nitric acid (13 mL, in 13 mL water) dropwise over 10 min and then a catalytic amount of NaNO2. After 45 min the reaction was washed with excess 1N HCl and the organic layer was dried over MgSO4 and stripped to yield 37 g of 2-nitro-4-t-butyl phenol. This nitrophenol (37 g, 0.19 mole) was dissolved in 100 mL ethyl acetate and placed into a Parr bottle with a teaspoon of 10% Pd/C. The mixture was placed on a hydrogenator under 50 psi hydrogen with agitation for 1 hr. The catalyst was filtered off through celite, and the ethyl acetate was stripped off under vacuum. The material crystallized with the addition of about 200 mL heptane to give 25.6 g of the corresponding amine (2-amino-4-t-butyl phenol)."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "fitted with a mechanical stirrer"
+    },
+    {
+      "type": "WASH",
+      "details": "After 45 min the reaction was washed with excess 1N HCl",
+      "duration": {
+        "value": 45.0,
+        "units": "MINUTE"
+      },
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "HCl"
+              },
+              {
+                "type": "SMILES",
+                "value": "Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH/h1H"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "the organic layer was dried over MgSO4",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "MgSO4"
+              },
+              {
+                "type": "SMILES",
+                "value": "[O-]S(=O)(=O)[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-nitro-4-t-butyl phenol"
+            },
+            {
+              "type": "SMILES",
+              "value": "[N+](=O)([O-])C1=C(C=CC(=C1)C(C)(C)C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C10H13NO3/c1-10(2,3)7-4-5-9(12)8(6-7)11(13)14/h4-6,12H,1-3H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 37.0,
+                  "units": "GRAM"
+                }
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06007973",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:16.286908"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-1810989357024d50a67177fb9b005512"
+}

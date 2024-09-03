@@ -1,0 +1,369 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "C[O:2][C:3]1[CH:15]=[CH:14][C:13]2[C:12]3[C:7](=[CH:8][CH:9]=[CH:10][C:11]=3[O:16]C)[C:6](=[O:18])[C:5]=2[CH:4]=1.C1(=O)C2C(C3C(C=2)=CC=CC=3)=CC=C1.Br>C(O)(=O)C.C(Cl)Cl>[OH:2][C:3]1[CH:15]=[CH:14][C:13]2[C:12]3[C:7](=[CH:8][CH:9]=[CH:10][C:11]=3[OH:16])[C:6](=[O:18])[C:5]=2[CH:4]=1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2,5-dimethoxy-fluoren-9-one"
+            },
+            {
+              "type": "SMILES",
+              "value": "COC1=CC=2C(C3=CC=CC(=C3C2C=C1)OC)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C15H12O3/c1-17-9-6-7-10-12(8-9)15(16)11-4-3-5-13(18-2)14(10)11/h3-8H,1-2H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 7.5,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acetic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H4O2/c1-2(3)4/h1H3,(H,3,4)"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 50.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "fluorenone"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1(C=CC=C2C3=CC=CC=C3C=C12)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C13H8O/c14-13-7-3-6-11-10-5-2-1-4-9(10)8-12(11)13/h1-8H"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methylene chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(Cl)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrogen bromide"
+            },
+            {
+              "type": "SMILES",
+              "value": "Br"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/BrH/h1H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 150.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 80.0,
+        "units": "CELSIUS"
+      }
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "Prepare a solution of 2,5-dimethoxy-fluoren-9-one (7.5 g, 0.031 mmole) in 50 mL glacial acetic acid and warm to 80° C. Once all of the fluorenone goes into solution, add 150 mL hydrogen bromide (48% solution). Continue heating to reflux, redissolving any precipitate formed, and reflux overnight. Cool to room temperature and filter. Wash the filtrate with water. Take-up the solids in ethyl acetate and dissolve by heating in a steam bath. Filter through a short column of silica, eluting with hot ethyl acetate. Condense the ethyl acetate eluent on a rotary evaporatory to obtain a dark red solid. Heat in hot methylene chloride to dissolve undesired solid and filter to obtain 2,5-dihydroxy-fluoren-9-one. m.p. 298-301 dec. (Yield 9.4 g, 97%)."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "Continue heating"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "to reflux"
+    },
+    {
+      "type": "DISSOLUTION",
+      "details": "redissolving any precipitate"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "formed"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "reflux overnight",
+      "duration": {
+        "value": 8.0,
+        "precision": 8.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "Cool to room temperature",
+      "temperature": {
+        "control": {
+          "type": "AMBIENT"
+        }
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filter"
+    },
+    {
+      "type": "WASH",
+      "details": "Wash the filtrate with water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DISSOLUTION",
+      "details": "dissolve"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "by heating in a steam bath"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "Filter through a short column of silica"
+    },
+    {
+      "type": "WASH",
+      "details": "eluting with hot ethyl acetate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "Condense the ethyl acetate eluent on a rotary evaporatory",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to obtain a dark red solid"
+    },
+    {
+      "type": "DISSOLUTION",
+      "details": "to dissolve undesired solid"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filter"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2,5-dihydroxy-fluoren-9-one"
+            },
+            {
+              "type": "SMILES",
+              "value": "OC1=CC=2C(C3=CC=CC(=C3C2C=C1)O)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C13H8O3/c14-7-4-5-8-10(6-7)13(16)9-2-1-3-11(15)12(8)9/h1-6,14-15H"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06004959",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:19.657407"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-5e2a1ac631fa4b2cb05b6313f1d5e9f6"
+}

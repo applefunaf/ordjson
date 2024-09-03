@@ -1,0 +1,331 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[P:1](Cl)([O:6][CH2:7][CH3:8])([O:3][CH2:4][CH3:5])=[O:2].[CH2:10]([NH2:12])[CH3:11]>ClC(Cl)C>[CH2:10]([NH:12][P:1](=[O:2])([O:6][CH2:7][CH3:8])[O:3][CH2:4][CH3:5])[CH3:11]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "diethyl chlorophosphate"
+            },
+            {
+              "type": "SMILES",
+              "value": "P(=O)(OCC)(OCC)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H10ClO3P/c1-3-7-9(5,6)8-4-2/h3-4H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 5.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "dichloroethane"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC(C)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H4Cl2/c1-2(3)4/h2H,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 70.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethylamine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H7N/c1-2-3/h2-3H2,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 4.1,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "to stir at RT for 30 min"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a solution of 5.0 g (29.0 mmol) of diethyl chlorophosphate in 70 mL dichloroethane cooled on an ice bath was added 4.1 g (63.8 mmol) of ethylamine (70% aq). The mixture was allowed to stir at RT for 30 min and was then partitioned between ether and water. The organic layer was washed with brine, dried (MgSO4), and was filtered. The filtrate was evaporated in vacuo and the residue was kugelrohr distilled (0.8 torr, 90° C.) to yield 2.7 g (52%) of diethyl N-ethylphosphoramidate as a colorless oil."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "was then partitioned between ether and water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "The organic layer was washed with brine",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "brine"
+              },
+              {
+                "type": "SMILES",
+                "value": "[Cl-].[Na+].O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH.Na.H2O/h1H;;1H2/q;+1;/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "dried (MgSO4)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "MgSO4"
+              },
+              {
+                "type": "SMILES",
+                "value": "[O-]S(=O)(=O)[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "was filtered"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The filtrate was evaporated in vacuo"
+    },
+    {
+      "type": "DISTILLATION",
+      "details": "distilled (0.8 torr, 90° C.)",
+      "temperature": {
+        "setpoint": {
+          "value": 90.0,
+          "units": "CELSIUS"
+        }
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 30.0,
+        "units": "MINUTE"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "diethyl N-ethylphosphoramidate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)NP(OCC)(OCC)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H16NO3P/c1-4-7-11(8,9-5-2)10-6-3/h4-6H2,1-3H3,(H,7,8)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 2.7,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 52.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 51.4
+              }
+            }
+          ],
+          "isolated_color": "colorless",
+          "texture": {
+            "type": "OIL",
+            "details": "oil"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998466",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:38.709901"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-348d8c6e162d414db1e7019cd3d733fa"
+}

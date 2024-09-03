@@ -1,0 +1,254 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][O:2][N:3]=[C:4]1[C:8]2[CH:9]=[CH:10][CH:11]=[CH:12][C:7]=2[O:6][C:5]1=[N:13][O:14][CH2:15][CH2:16][OH:17].[OH-].[K+].C(O)(=O)C>O>[CH3:1][O:2]/[N:3]=[C:4](/[C:5]1[O:17][CH2:16][CH2:15][O:14][N:13]=1)\\[C:8]1[CH:9]=[CH:10][CH:11]=[CH:12][C:7]=1[OH:6] |f:1.2|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "benzofuran-2,3-dione 2-[O-(2-hydroxy-ethyl)-oxime] 3-(O-methyl-oxime)"
+            },
+            {
+              "type": "SMILES",
+              "value": "CON=C1C(OC2=C1C=CC=C2)=NOCCO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C11H12N2O4/c1-15-12-10-8-4-2-3-5-9(8)17-11(10)13-16-7-6-14/h2-5,14H,6-7H2,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 25.6,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "potassium hydroxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "[OH-].[K+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/K.H2O/h;1H2/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 14.2,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 250.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acetic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H4O2/c1-2(3)4/h1H3,(H,3,4)"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 10.0,
+        "units": "CELSIUS"
+      }
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A solution of 25.6 g (0.1084 mol) of benzofuran-2,3-dione 2-[O-(2-hydroxy-ethyl)-oxime] 3-(O-methyl-oxime) and 14.2 g (0.216 mol) of potassium hydroxide pellets in 250 ml of water is stirred at 60° C. for 195 minutes. The solution is cooled to 10° C. and acidified to pH 5-6 with glacial acetic acid. The crystalline product is filtered off with suction, washed with 200 ml of water a little at a time and dried at 45° C. in a vacuum drying oven. 17.7 g (67.7% of theory) of E-(5,6-dihydro-[1,4,2]dioxazin-3-yl)-(2-hydroxy-phenyl)-methanone O-methyl-oxime are obtained."
+  },
+  "workups": [
+    {
+      "type": "FILTRATION",
+      "details": "The crystalline product is filtered off with suction"
+    },
+    {
+      "type": "WASH",
+      "details": "washed with 200 ml of water a little at a time",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 200.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried at 45° C. in a vacuum",
+      "temperature": {
+        "setpoint": {
+          "value": 45.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "drying oven"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "E-(5,6-dihydro-[1,4,2]dioxazin-3-yl)-(2-hydroxy-phenyl)-methanone O-methyl-oxime"
+            },
+            {
+              "type": "SMILES",
+              "value": "CO\\N=C(/C1=C(C=CC=C1)O)\\C1=NOCCO1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C11H12N2O4/c1-15-12-10(11-13-17-7-6-16-11)8-4-2-3-5-9(8)14/h2-5,14H,6-7H2,1H3/b12-10+"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 17.7,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 67.7
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 69.1
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06005104",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:22.984457"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-e3014bdecf934152abdecd13d15b5d45"
+}

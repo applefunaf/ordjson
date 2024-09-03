@@ -1,0 +1,210 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "CO.C([NH:10][C:11]1[C:16]([F:17])=[C:15]([CH3:18])[C:14]([F:19])=[C:13]([F:20])[N:12]=1)C1C=CC=CC=1>[Pd].C(O)(=O)C>[NH2:10][C:11]1[C:16]([F:17])=[C:15]([CH3:18])[C:14]([F:19])=[C:13]([F:20])[N:12]=1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acetic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H4O2/c1-2(3)4/h1H3,(H,3,4)"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 2.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m1_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 4.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-benzylamino-3,5,6-trifluoro-4-methylpyridine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C1=CC=CC=C1)NC1=NC(=C(C(=C1F)C)F)F"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C13H11F3N2/c1-8-10(14)12(16)18-13(11(8)15)17-7-9-5-3-2-4-6-9/h2-6H,7H2,1H3,(H,17,18)"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "palladium on carbon"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Pd]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Pd"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.18,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "CATALYST"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To 4 ml of methanol were added all amount of the crude 2-benzylamino-3,5,6-trifluoro-4-methylpyridine as described above together with 0.18 g of 10% palladium on carbon and 2 ml of acetic acid, and the mixture was hydrogenated at 50° C. for one day. The catalyst was separated by filtration, and the solvent and the like were distilled off under reduced pressure to obtain 1.35 g of the title compound as a colorless solid."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "The catalyst was separated by filtration"
+    },
+    {
+      "type": "DISTILLATION",
+      "details": "the solvent and the like were distilled off under reduced pressure"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 1.0,
+        "units": "DAY"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "2-amino-3,5,6-trifluoro-4-methylpyridine"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC1=NC(=C(C(=C1F)C)F)F"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H5F3N2/c1-2-3(7)5(9)11-6(10)4(2)8/h1H3,(H2,10,11)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 1.35,
+                  "units": "GRAM"
+                }
+              }
+            }
+          ],
+          "isolated_color": "colorless",
+          "texture": {
+            "type": "CUSTOM",
+            "details": "solid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998436",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:27.236557"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-33fb23e7438f4ce4aa9d4e4ca323c6c0"
+}

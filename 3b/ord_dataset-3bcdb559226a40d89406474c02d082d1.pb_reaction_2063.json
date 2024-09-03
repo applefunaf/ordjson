@@ -1,0 +1,317 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[Cl:1][C:2]1[CH:3]=[CH:4][C:5]([OH:8])=[N:6][CH:7]=1.C([O-])([O-])=O.[Na+].[Na+].[I:15]I>O>[Cl:1][C:2]1[CH:3]=[C:4]([I:15])[C:5]([OH:8])=[N:6][CH:7]=1 |f:1.2.3|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "iodine"
+            },
+            {
+              "type": "SMILES",
+              "value": "II"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/I2/c1-2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m1_m2_m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "5-chloro-2-pyridinol"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC=1C=CC(=NC1)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C5H4ClNO/c6-4-1-2-5(8)7-3-4/h1-3H,(H,7,8)"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Na2CO3"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(=O)([O-])[O-].[Na+].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2O3.2Na/c2-1(3)4;;/h(H2,2,3,4);;/q;2*+1/p-2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 10.8,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 250.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "I2"
+            },
+            {
+              "type": "SMILES",
+              "value": "II"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/I2/c1-2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 12.73,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A 6.48 g sample of 5-chloro-2-pyridinol (Aldrich) and 10.8 g of Na2CO3 were dissolved in 250 mL of water. To this solution was added 12.73 g of I2, and the mixture was stirred until the iodine color disappeared. The reaction mixture was then adjusted to pH 7 and extracted with EtOAc. The extract was dried over MgSO4, and the solvent was removed. The residue was recrystallized from ethanol/water to afford 4 g of the title compound: 1H NMR (DMSO-d6, 300 MHz) δ 7.71 (d,1H), 8.18 (d, 1H); MS m/z: 256 (M+H)+, 273 (M+NH4)+."
+  },
+  "workups": [
+    {
+      "type": "EXTRACTION",
+      "details": "extracted with EtOAc",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "EtOAc"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOC(=O)C"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "The extract was dried over MgSO4",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "MgSO4"
+              },
+              {
+                "type": "SMILES",
+                "value": "[O-]S(=O)(=O)[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the solvent was removed"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The residue was recrystallized from ethanol/water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethanol water"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)O.O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C2H6O.H2O/c1-2-3;/h3H,2H2,1H3;1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "5-chloro-3-iodo-2-pyridinol"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC=1C=C(C(=NC1)O)I"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C5H3ClINO/c6-3-1-4(7)5(9)8-2-3/h1-2H,(H,8,9)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 4.0,
+                  "units": "GRAM"
+                }
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06001849",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:17.788657"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-6604563e5ace40f88fb9440e2678f04a"
+}

@@ -1,0 +1,402 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][O:2][C:3]1[C:8]([O:9][CH3:10])=[CH:7][CH:6]=[CH:5][C:4]=1[C:11]([CH:13]1[CH2:18][CH2:17][N:16]([CH2:19][CH2:20][C:21]2[CH:26]=[CH:25][C:24]([F:27])=[CH:23][CH:22]=2)[CH2:15][CH2:14]1)=[O:12].[BH4-].[Na+]>CO>[CH3:1][O:2][C:3]1[C:8]([O:9][CH3:10])=[CH:7][CH:6]=[CH:5][C:4]=1[CH:11]([CH:13]1[CH2:14][CH2:15][N:16]([CH2:19][CH2:20][C:21]2[CH:26]=[CH:25][C:24]([F:27])=[CH:23][CH:22]=2)[CH2:17][CH2:18]1)[OH:12] |f:1.2|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m3_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "(2,3-dimethoxyphenyl)[1-[2-(4-fluorophenyl)ethyl]-4-piperidinyl]methanone"
+            },
+            {
+              "type": "SMILES",
+              "value": "COC1=C(C=CC=C1OC)C(=O)C1CCN(CC1)CCC1=CC=C(C=C1)F"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C22H26FNO3/c1-26-20-5-3-4-19(22(20)27-2)21(25)17-11-14-24(15-12-17)13-10-16-6-8-18(23)9-7-16/h3-9,17H,10-15H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 6.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "NaBH4"
+            },
+            {
+              "type": "SMILES",
+              "value": "[BH4-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/BH4.Na/h1H4;/q-1;+1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 1240.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "MeOH"
+            },
+            {
+              "type": "SMILES",
+              "value": "CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 100.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "After stirring overnight"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a stirred solution of (2,3-dimethoxyphenyl)[1-[2-(4-fluorophenyl)ethyl]-4-piperidinyl]methanone (6.0 g, 16.2 mmol) in MeOH (100 mL) at 0° C. was added NaBH4 (1240 mg, 32.8 mmol) in two portions, over a one hour period. After stirring overnight, the solution was concentrated to a solid. The solid was partitioned between water and ether. The layers were separated and the aqueous layer was extracted with ether. The combined organic layers were washed with brine, dried (MgSO4), filtered, and evaporated to a solid. The solid was chromatographed on silica gel, eluting with acetone. The appropriate fractions were combined and evaporated to afford a white solid. The solid was recrystallized from cyclohexane to afford (±)-α-(2,3-dimethoxyphenyl)-1-[2-(4-fluorophenyl)-ethyl]-4-piperidinemethanol as white needles, m.p. 126-127° C. Anal. Calcd for C22H28FNO3 : C, 70.75; H, 7.56; N, 3.75. Found: C, 70.86; H, 7.72; N, 3.93."
+  },
+  "workups": [
+    {
+      "type": "CONCENTRATION",
+      "details": "the solution was concentrated to a solid"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The solid was partitioned between water and ether",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The layers were separated"
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "the aqueous layer was extracted with ether",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "The combined organic layers were washed with brine",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "brine"
+              },
+              {
+                "type": "SMILES",
+                "value": "[Cl-].[Na+].O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH.Na.H2O/h1H;;1H2/q;+1;/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "dried (MgSO4)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "MgSO4"
+              },
+              {
+                "type": "SMILES",
+                "value": "[O-]S(=O)(=O)[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filtered"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "evaporated to a solid"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The solid was chromatographed on silica gel"
+    },
+    {
+      "type": "WASH",
+      "details": "eluting with acetone",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "acetone"
+              },
+              {
+                "type": "SMILES",
+                "value": "CC(=O)C"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C3H6O/c1-3(2)4/h1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "evaporated"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to afford a white solid"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The solid was recrystallized from cyclohexane",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "cyclohexane"
+              },
+              {
+                "type": "SMILES",
+                "value": "C1CCCCC1"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C6H12/c1-2-4-6-5-3-1/h1-6H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 1.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "(±)-α-(2,3-dimethoxyphenyl)-1-[2-(4-fluorophenyl)-ethyl]-4-piperidinemethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "COC1=C(C=CC=C1OC)C(O)C1CCN(CC1)CCC1=CC=C(C=C1)F"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C22H28FNO3/c1-26-20-5-3-4-19(22(20)27-2)21(25)17-11-14-24(15-12-17)13-10-16-6-8-18(23)9-7-16/h3-9,17,21,25H,10-15H2,1-2H3"
+            }
+          ],
+          "isolated_color": "white",
+          "texture": {
+            "type": "CRYSTAL",
+            "details": "needles"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06004980",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:17.257366"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-0e0d65819c684811b290ff98c0688332"
+}

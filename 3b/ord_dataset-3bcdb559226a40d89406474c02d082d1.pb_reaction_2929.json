@@ -1,0 +1,261 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH:1]#[C:2][CH2:3][CH2:4][CH2:5][CH3:6].I[C:8]1[CH:14]=[CH:13][CH:12]=[CH:11][C:9]=1[NH2:10]>C(N(CC)CC)C.[Cu](I)I>[C:1]([C:8]1[CH:14]=[CH:13][CH:12]=[CH:11][C:9]=1[NH2:10])#[C:2][CH2:3][CH2:4][CH2:5][CH3:6]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m5_m1_m2_m3_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "bistriphenyl phosphine palladium choride"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 140.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "1-hexyne"
+            },
+            {
+              "type": "SMILES",
+              "value": "C#CCCCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H10/c1-3-5-6-4-2/h1H,4-6H2,2H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-iodo aniline"
+            },
+            {
+              "type": "SMILES",
+              "value": "IC1=C(N)C=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H6IN/c7-5-3-1-2-4-6(5)8/h1-4H,8H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 4.4,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "triethylamine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)N(CC)CC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H15N/c1-4-7(5-2)6-3/h4-6H2,1-3H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 100.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "copper iodide"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Cu](I)I"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Cu.2HI/h;2*1H/q+2;;/p-2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 32.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "CATALYST"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "the mixture was stirred for 15 hours at ambient temperature"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "32 mg of copper iodide and 140 mg of bistriphenyl phosphine palladium choride and 2.3 of 1-hexyne were added to a solution of 4.4 g of 2-iodo aniline in 100 ml of triethylamine and the mixture was stirred for 15 hours at ambient temperature, then evaporated to dryness. The residue was taken up in ether and the insoluble part was filtered out, wash with ether and the ethereal fractions were evaporated to dryness. The residue was chromatographed on silica (eluant: hexane-ethyl acetate (9-1)) to obtain 3.27 g of the desired product."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "evaporated to dryness"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "the insoluble part was filtered out"
+    },
+    {
+      "type": "WASH",
+      "details": "wash with ether",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the ethereal fractions were evaporated to dryness"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The residue was chromatographed on silica (eluant: hexane-ethyl acetate (9-1))"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 15.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "desired product"
+            },
+            {
+              "type": "NAME",
+              "value": "2-(1-hexynyl)benzeneamine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(#CCCCC)C1=C(C=CC=C1)N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C12H15N/c1-2-3-4-5-8-11-9-6-7-10-12(11)13/h6-7,9-10H,2-4,13H2,1H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 3.27,
+                  "units": "GRAM"
+                }
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06004979",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:17.487418"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-7dbfd8fe317d4580a65e0117eabea4e4"
+}

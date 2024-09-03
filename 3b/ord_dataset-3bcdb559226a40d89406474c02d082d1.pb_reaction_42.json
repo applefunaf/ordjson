@@ -1,0 +1,178 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "NC1[S:3][C:4]2[CH:10]=[C:9]([O:11][CH3:12])[CH:8]=[CH:7][C:5]=2[N:6]=1.[OH-].[K+]>C(O)(=O)C>[NH2:6][C:5]1[CH:7]=[CH:8][C:9]([O:11][CH3:12])=[CH:10][C:4]=1[SH:3] |f:1.2|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-amino-6-methoxybenzothiazole"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC=1SC2=C(N1)C=CC(=C2)OC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H8N2OS/c1-11-5-2-3-6-7(4-5)12-8(9)10-6/h2-4H,1H3,(H2,9,10)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 36.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "potassium hydroxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "[OH-].[K+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/K.H2O/h;1H2/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 400.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acetic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H4O2/c1-2(3)4/h1H3,(H,3,4)"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "stirred for 1 h"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A solution of 2-amino-6-methoxybenzothiazole (36 g, 200 mmol; Aldrich Chemical Co.) and 400 ml 30% aqueous potassium hydroxide was refluxed for 16 h. The dark solution was cooled to 0° C. and neutralized to pH 6 with 50% aqueous acetic acid and stirred for 1 h. The resulting slurry was filtered and the product collected on the filter paper and dried (25.29 g, 81% yield). 1H NMR (DMSO-d6) δ 6.91-6.44 (m, 3H), 5.90 (br s, 2H). 3.52 (s, 3H). MS Da/e=154 (M-H)."
+  },
+  "workups": [
+    {
+      "type": "FILTRATION",
+      "details": "The resulting slurry was filtered"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the product collected on the filter paper"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried (25.29 g, 81% yield)"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 1.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-Amino-5-methoxythiophenol"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC1=C(C=C(C=C1)OC)S"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H9NOS/c1-9-5-2-3-6(8)7(10)4-5/h2-4,10H,8H2,1H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 81.0
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998400",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:16.527237"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-afad695efa244848983107e8e347b6bc"
+}

@@ -1,0 +1,191 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "Cl[CH2:2][C:3]1[C:12](=[O:13])[C:11]2[C:6](=[C:7]([N+:14]([O-:16])=[O:15])[CH:8]=[CH:9][CH:10]=2)[NH:5][CH:4]=1.[OH2:17]>>[OH:17][CH2:2][C:3]1[C:12](=[O:13])[C:11]2[C:6](=[C:7]([N+:14]([O-:16])=[O:15])[CH:8]=[CH:9][CH:10]=2)[NH:5][CH:4]=1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3-chloromethyl-1,4-dihydro-8-nitro-4-oxoquinoline"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClCC1=CNC2=C(C=CC=C2C1=O)[N+](=O)[O-]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C10H7ClN2O3/c11-4-6-5-12-9-7(10(6)14)2-1-3-8(9)13(15)16/h1-3,5H,4H2,(H,12,14)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 2.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 30.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A suspension of 3-chloromethyl-1,4-dihydro-8-nitro-4-oxoquinoline (2.0 g) in water (30 ml) was refluxed for 15 minutes and allowed to stand to ambient temperature. The resulting precipitates were collected by filtration and washed with water to give 1,4-dihydro-3-hydroxymethyl-8-nitro-4-oxoquinoline (1.82 g). mpD 182-184° C. NMR (DMSO-d6, δ): 4.41 (2H, s), 5.14 (1H, br), 7.49 (1H, t, J=7 Hz), 8.00 (1H, s), 8.59 (1H, d, J=7 Hz), 8.66 (1H, d, J=7 Hz)"
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "was refluxed for 15 minutes",
+      "duration": {
+        "value": 15.0,
+        "units": "MINUTE"
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to stand to ambient temperature",
+      "temperature": {
+        "control": {
+          "type": "AMBIENT"
+        }
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The resulting precipitates"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "were collected by filtration"
+    },
+    {
+      "type": "WASH",
+      "details": "washed with water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "1,4-dihydro-3-hydroxymethyl-8-nitro-4-oxoquinoline"
+            },
+            {
+              "type": "SMILES",
+              "value": "OCC1=CNC2=C(C=CC=C2C1=O)[N+](=O)[O-]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C10H8N2O4/c13-5-6-4-11-9-7(10(6)14)2-1-3-8(9)12(15)16/h1-4,13H,5H2,(H,11,14)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 1.82,
+                  "units": "GRAM"
+                }
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06008230",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:22.110760"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-02d3499255634d5eb5aa8e19d1b27560"
+}

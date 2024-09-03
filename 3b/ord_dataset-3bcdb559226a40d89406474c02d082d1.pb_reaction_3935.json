@@ -1,0 +1,209 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "C([O:8][C:9]1[CH:10]=[C:11]2[C:16](=[CH:17][CH:18]=1)[O:15][C:14]([CH3:20])([CH3:19])[C@@H:13]([OH:21])[C@@H:12]2[N:22]([CH3:27])[S:23]([CH3:26])(=[O:25])=[O:24])C1C=CC=CC=1.[H][H]>C1COCC1.CO.[Pd]>[OH:21][CH:13]1[CH:12]([N:22]([CH3:27])[S:23]([CH3:26])(=[O:24])=[O:25])[C:11]2[C:16](=[CH:17][CH:18]=[C:9]([OH:8])[CH:10]=2)[O:15][C:14]1([CH3:20])[CH3:19] |f:2.3|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "palladium/carbon"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Pd]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Pd"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "CATALYST"
+        }
+      ]
+    },
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "(±)-trans-N-(6-benzyloxy-3-hydroxy-2,2-dimethylchroman-4-yl)-N-methyl-methanesulfonamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C1=CC=CC=C1)OC=1C=C2[C@H]([C@@H](C(OC2=CC1)(C)C)O)N(S(=O)(=O)C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C20H25NO5S/c1-20(2)19(22)18(21(3)27(4,23)24)16-12-15(10-11-17(16)26-20)25-13-14-8-6-5-7-9-14/h5-12,18-19,22H,13H2,1-4H3/t18-,19+/m1/s1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 1.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrogen"
+            },
+            {
+              "type": "SMILES",
+              "value": "[H][H]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2/h1H"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "THF methanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1CCOC1.CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O.CH4O/c1-2-4-5-3-1;1-2/h1-4H2;2H,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 100.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "1.0 g (2.6 mmol) of (±)-trans-N-(6-benzyloxy-3-hydroxy-2,2-dimethylchroman-4-yl)-N-methyl-methanesulfonamide (Example 1) was hydrogenated in 100 ml of THF/methanol (1:1) in the presence of palladium/carbon until the uptake of hydrogen had ended. The catalyst was filtered off and the filtrate was concentrated, giving 0.7 g of N-(3,6-dihydroxy-2,2-dimethylchroman-4-yl)-N-methyl-methanesulfonamide; m.p. 204-206° C."
+  },
+  "workups": [
+    {
+      "type": "FILTRATION",
+      "details": "The catalyst was filtered off"
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "the filtrate was concentrated"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-(3,6-dihydroxy-2,2-dimethylchroman-4-yl)-N-methyl-methanesulfonamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "OC1C(OC2=CC=C(C=C2C1N(S(=O)(=O)C)C)O)(C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C13H19NO5S/c1-13(2)12(16)11(14(3)20(4,17)18)9-7-8(15)5-6-10(9)19-13/h5-7,11-12,15-16H,1-4H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 0.7,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 89.3
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06008245",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:20.521422"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-223e9d1110014041abb6235b10f6f176"
+}

@@ -1,0 +1,273 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[F:1][C:2]1[CH:13]=[C:12]([F:14])[CH:11]=[CH:10][C:3]=1[CH:4]=[C:5]([CH3:9])[C:6]([OH:8])=[O:7].[H][H]>CO.[Pt]=O>[F:1][C:2]1[CH:13]=[C:12]([F:14])[CH:11]=[CH:10][C:3]=1[CH2:4][CH:5]([CH3:9])[C:6]([OH:8])=[O:7]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4_m1_m5_m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2,4-difluoro-α-methylcinnamic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "FC1=C(C=C(C(=O)O)C)C=CC(=C1)F"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C10H8F2O2/c1-6(10(13)14)4-7-2-3-8(11)5-9(7)12/h2-5H,1H3,(H,13,14)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 60.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrogen"
+            },
+            {
+              "type": "SMILES",
+              "value": "[H][H]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2/h1H"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrogen"
+            },
+            {
+              "type": "SMILES",
+              "value": "[H][H]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2/h1H"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 800.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "platinum oxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Pt]=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/O.Pt"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 1.5,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "CATALYST"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "In 800 ml of methanol, 60 g (0.3 mol) of 2,4-difluoro-α-methylcinnamic acid with 1.5 g of platinum oxide catalyst is shaken under an initial pressure of 42 lbs of hydrogen until one equivalent of hydrogen is absorbed. The reaction time is 30 minutes. The catalyst is removed by filtration and washed with methanol. The methanol, when evaporated off, leaves near colorless 2,4-difluoro-α-methyldihydrocinnamic acid as an oil which is used in the next step without further purification."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "is absorbed"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The catalyst is removed by filtration"
+    },
+    {
+      "type": "WASH",
+      "details": "washed with methanol",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "methanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "CO"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The methanol, when evaporated off",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "methanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "CO"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 30.0,
+        "units": "MINUTE"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2,4-difluoro-α-methyldihydrocinnamic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "FC1=C(CC(C(=O)O)C)C=CC(=C1)F"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C10H10F2O2/c1-6(10(13)14)4-7-2-3-8(11)5-9(7)12/h2-3,5-6H,4H2,1H3,(H,13,14)"
+            }
+          ],
+          "texture": {
+            "type": "OIL",
+            "details": "oil"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998477",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:25.828874"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-535b3dcd27604aadac74512a06c3b12c"
+}

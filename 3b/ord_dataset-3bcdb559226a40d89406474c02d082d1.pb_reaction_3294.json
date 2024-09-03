@@ -1,0 +1,272 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH2:1]1[O:3][CH2:2]1.[CH3:4][O:5][N:6]=[C:7]1[C:11]2[CH:12]=[CH:13][CH:14]=[CH:15][C:10]=2[O:9][C:8]1=[N:16][OH:17].[OH-].[Na+]>O>[CH3:4][O:5][N:6]=[C:7]1[C:11]2[CH:12]=[CH:13][CH:14]=[CH:15][C:10]=2[O:9][C:8]1=[N:16][O:17][CH2:1][CH2:2][OH:3] |f:2.3|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethylene oxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1CO1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H4O/c1-2-3-1/h1-2H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 264.3,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "benzofuran-2,3-dione 3-(O-methyl-oxime) 2-oxime"
+            },
+            {
+              "type": "SMILES",
+              "value": "CON=C1C(OC2=C1C=CC=C2)=NO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H8N2O3/c1-13-11-8-6-4-2-3-5-7(6)14-9(8)10-12/h2-5,12H,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 192.2,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sodium hydroxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "[OH-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Na.H2O/h;1H2/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 70.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 5.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "The mixture is stirred"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "At 20° C., 264.3 g (6.0 mol) of ethylene oxide are passed into a solution of 192.2 g (1.0 mol) of benzofuran-2,3-dione 3-(O-methyl-oxime) 2-oxime in 2 1 of water over a period of 85 minutes. The solution is cooled to 5° C. and 70 g (1.06 mol) of sodium hydroxide pellets are added, on which the temperature increases to 10° C. The mixture is stirred without further cooling for another 165 minutes and the precipitate that has formed is filtered off with suction, washed with 500 ml of ice-water a little at a time and dried at 40° C. in a vacuum drying cabinet. 143.0 g (61% of theory) of benzofuran-2,3-dione 2-[O-(2-hydroxy-ethyl)-oxime] 3-(O-methyl-oxime) are obtained as a mixture of two stereoisomers."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "increases to 10° C",
+      "temperature": {
+        "setpoint": {
+          "value": 10.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "without further cooling for another 165 minutes",
+      "duration": {
+        "value": 165.0,
+        "units": "MINUTE"
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the precipitate that has formed"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "is filtered off with suction"
+    },
+    {
+      "type": "WASH",
+      "details": "washed with 500 ml of ice-water a little at a time",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ice water"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 500.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried at 40° C. in a vacuum",
+      "temperature": {
+        "setpoint": {
+          "value": 40.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "drying cabinet"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "benzofuran-2,3-dione 2-[O-(2-hydroxy-ethyl)-oxime] 3-(O-methyl-oxime)"
+            },
+            {
+              "type": "SMILES",
+              "value": "CON=C1C(OC2=C1C=CC=C2)=NOCCO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C11H12N2O4/c1-15-12-10-8-4-2-3-5-9(8)17-11(10)13-16-7-6-14/h2-5,14H,6-7H2,1H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 143.0,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 61.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 60.5
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06005104",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:22.975851"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-e59cf239f7a2405990129c97cec9eaec"
+}

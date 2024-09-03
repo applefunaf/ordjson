@@ -1,0 +1,193 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[N+:1]([C:4]1[C:5]([O:19][C:20]2[CH:21]=[C:22]([CH:25]=[CH:26][CH:27]=2)[C:23]#[N:24])=[N:6][C:7]([O:10][C:11]2[CH:12]=[C:13]([CH:16]=[CH:17][CH:18]=2)[C:14]#[N:15])=[CH:8][CH:9]=1)([O-])=O.[H][H]>C(O)C.C(OCC)(=O)C.[Pd]>[NH2:1][C:4]1[C:5]([O:19][C:20]2[CH:21]=[C:22]([CH:25]=[CH:26][CH:27]=2)[C:23]#[N:24])=[N:6][C:7]([O:10][C:11]2[CH:12]=[C:13]([CH:16]=[CH:17][CH:18]=2)[C:14]#[N:15])=[CH:8][CH:9]=1 |f:2.3|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "palladium on carbon"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Pd]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Pd"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 1.8,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "CATALYST"
+        }
+      ]
+    },
+    "m1_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3,3'-[3-nitro-2,6-pyridinediylbis(oxy)]bis(benzonitrile)"
+            },
+            {
+              "type": "SMILES",
+              "value": "[N+](=O)([O-])C=1C(=NC(=CC1)OC=1C=C(C#N)C=CC1)OC=1C=C(C#N)C=CC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C19H10N4O4/c20-11-13-3-1-5-15(9-13)26-18-8-7-17(23(24)25)19(22-18)27-16-6-2-4-14(10-16)12-21/h1-10H"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 18.5,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethanol ethyl acetate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)O.C(C)(=O)OCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O2.C2H6O/c1-3-6-4(2)5;1-2-3/h3H2,1-2H3;3H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 500.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrogen"
+            },
+            {
+              "type": "SMILES",
+              "value": "[H][H]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2/h1H"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To 3,3'-[3-nitro-2,6-pyridinediylbis(oxy)]bis(benzonitrile)(18.5 g, 50 mmol) dissolved in ethanol/ethyl acetate (500 mL, 2/3) was added 10% palladium on carbon (1.8 g). After subjecting the mixture to hydrogen at 15 psi for 2 hours, the reaction was suction filtered through celite. The solvent was removed in vacuo to give 3,3'-[3-amino-2,6-pyridinediylbis(oxy)]-bis(benzonitrile); NMR (CDCl3) 7.5 (m,7), 7.2 (m,2), 6.6 (d,1), 3.8 (br,2) ppm."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "for 2 hours",
+      "duration": {
+        "value": 2.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filtered through celite"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The solvent was removed in vacuo"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3,3'-[3-amino-2,6-pyridinediylbis(oxy)]-bis(benzonitrile)"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC=1C(=NC(=CC1)OC=1C=C(C#N)C=CC1)OC=1C=C(C#N)C=CC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C19H12N4O2/c20-11-13-3-1-5-15(9-13)24-18-8-7-17(22)19(23-18)25-16-6-2-4-14(10-16)12-21/h1-10H,22H2"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06004981",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:18.723258"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-9f9774c512434ce584ef7f8a986db37f"
+}

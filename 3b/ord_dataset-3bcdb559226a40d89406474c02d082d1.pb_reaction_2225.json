@@ -1,0 +1,405 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH2:1]([Li])[CH2:2][CH2:3][CH3:4].[CH:6]1[CH:7]=[CH:8][C:9]2[S:14]C=[CH:12][C:10]=2[CH:11]=1.C(Br)C=C.[NH4+].[Cl-]>C1COCC1>[CH3:4][CH:3]=[CH:2][C:1]1[S:14][C:9]2[CH:8]=[CH:7][CH:6]=[CH:11][C:10]=2[CH:12]=1 |f:3.4|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "NH4Cl"
+            },
+            {
+              "type": "SMILES",
+              "value": "[NH4+].[Cl-]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/ClH.H3N/h1H;1H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m1_m2_m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "n-Butyl lithium"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(CCC)[Li]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H9.Li/c1-3-4-2;/h1,3-4H2,2H3;"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 16.7,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "thianaphthene"
+            },
+            {
+              "type": "SMILES",
+              "value": "C=1C=CC2=C(C1)C=CS2"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H6S/c1-2-4-8-7(3-1)5-6-9-8/h1-6H"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 5.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "THF"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1CCOC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O/c1-2-4-5-3-1/h1-4H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 80.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Allylbromide"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C=C)Br"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H5Br/c1-2-3-4/h2H,1,3H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 16.1,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 0.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "stirred at 0° C. for 30 min"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "n-Butyl lithium (16.7 ml, 2.5 N in hexanes) was added dropwise to a stirred solution of thianaphthene (5.0 g, 37.3 mmol) in THF (80 mL) at -78° C. under a dry N2 atmosphere. After the addition wascompleted, the mixture was warmed up and stirred at 0° C. for 30 min. Allylbromide (16.1 mL, 186.5 mmol ) was added. After an additional 3.5 h., sat. aq. NH4Cl was added and the reaction mixture was partitioned between water and ether. The ether phase was washed with brine and dried. Silica gel (120 mL) was added. Solvents were removed and the silica adsorbate was flash chromatographed (eluent petroleum ether) to provide the title compound as an oil (3.74 g, 58%): NMR (CDCl3); δ 7.76 (d, J=9 Hz, 1H), 7.66 (d, J=9 Hz, 1H), 7.36-7.20 (m, 2H), 7.02 (s, 1H), 6.14-5.96 (m, 1H), 5.22 (dd, J=2, 17 Hz, 1H), 5.16 (dd, J=2, 17 Hz, 1H), 3.66 (d, J=8 Hz, 2H); MS (EI): [M+] 174 (100%); Anal. Calc. for C11H10S: C, 75.82, H, 5.78, N, 0.00. Found: C, 72.88, H, 5.56, N, 0.13."
+  },
+  "workups": [
+    {
+      "type": "ADDITION",
+      "details": "After the addition"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "the mixture was warmed up"
+    },
+    {
+      "type": "WAIT",
+      "details": "After an additional 3.5 h.",
+      "duration": {
+        "value": 3.5,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the reaction mixture was partitioned between water and ether",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "The ether phase was washed with brine",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "brine"
+              },
+              {
+                "type": "SMILES",
+                "value": "[Cl-].[Na+].O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH.Na.H2O/h1H;;1H2/q;+1;/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried"
+    },
+    {
+      "type": "ADDITION",
+      "details": "Silica gel (120 mL) was added"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "Solvents were removed"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "chromatographed (eluent petroleum ether)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "petroleum ether"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 30.0,
+        "units": "MINUTE"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "2-All-3-yl-benzo[b]thiophene"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC=CC1=CC2=C(S1)C=CC=C2"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C11H10S/c1-2-5-10-8-9-6-3-4-7-11(9)12-10/h2-8H,1H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 3.74,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 58.0
+              }
+            }
+          ],
+          "texture": {
+            "type": "OIL",
+            "details": "oil"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06001867",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:20.026373"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-7a01ea31049240f8bbfb40bcc8231783"
+}

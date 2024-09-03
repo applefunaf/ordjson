@@ -1,0 +1,255 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[Cl:1][C:2]1[CH:17]=[CH:16][C:5]2[O:6][CH2:7][O:8][C:9]3[CH:15]=[CH:14][CH:13]=[CH:12][C:10]=3[NH:11][C:4]=2[CH:3]=1.[Cl:18][CH2:19][CH2:20][C:21](Cl)=[O:22]>C1(C)C=CC=CC=1>[Cl:1][C:2]1[CH:17]=[CH:16][C:5]2[O:6][CH2:7][O:8][C:9]3[CH:15]=[CH:14][CH:13]=[CH:12][C:10]=3[N:11]([C:21](=[O:22])[CH2:20][CH2:19][Cl:18])[C:4]=2[CH:3]=1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-chloro-12H-dibenzo[d,g][1,3,6]dioxazocine"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC1=CC2=C(OCOC3=C(N2)C=CC=C3)C=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C13H10ClNO2/c14-9-5-6-13-11(7-9)15-10-3-1-2-4-12(10)16-8-17-13/h1-7,15H,8H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 10.65,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3-chloropropionyl chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClCCC(=O)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H4Cl2O/c4-2-1-3(5)6/h1-2H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 6.55,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "toluene"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1(=CC=CC=C1)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H8/c1-7-5-3-2-4-6-7/h2-6H,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 100.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A suspension of 2-chloro-12H-dibenzo[d,g][1,3,6]dioxazocine (10.65 g, 43 mmol, described in J.Mol.Struct., 131, 1985, 131-140) and 3-chloropropionyl chloride (6.55 g, 51.6 mmol) in dry toluene (100 ml) was heated at reflux temperature for 5 h. After cooling to room temperature, the reaction mixture was washed with a saturated solution of sodium bicarbonate (50 ml). The organic layer was dried (MgSO4), and evaporated in vacuo, affording 2-chloro-12-(3-chloropropionyl)-12H-dibenzo[d,g][1,3,6]dioxazocine (12.85 g , 88%)."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "was heated"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "at reflux temperature for 5 h",
+      "duration": {
+        "value": 5.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "the reaction mixture was washed with a saturated solution of sodium bicarbonate (50 ml)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "sodium bicarbonate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C([O-])(O)=O.[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2O3.Na/c2-1(3)4;/h(H2,2,3,4);/q;+1/p-1"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 50.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "The organic layer was dried (MgSO4)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "MgSO4"
+              },
+              {
+                "type": "SMILES",
+                "value": "[O-]S(=O)(=O)[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "evaporated in vacuo"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-chloro-12-(3-chloropropionyl)-12H-dibenzo[d,g][1,3,6]dioxazocine"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC1=CC2=C(OCOC3=C(N2C(CCCl)=O)C=CC=C3)C=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C16H13Cl2NO3/c17-8-7-16(20)19-12-3-1-2-4-14(12)21-10-22-15-6-5-11(18)9-13(15)19/h1-6,9H,7-8,10H2"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 12.85,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 88.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 88.4
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06004961",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:16.976665"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-09195684c2a343ed9bc6fd8afc20e018"
+}

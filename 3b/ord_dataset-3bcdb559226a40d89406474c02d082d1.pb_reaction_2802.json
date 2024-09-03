@@ -1,0 +1,246 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[C:1]([O:4][CH2:5][C:6]1[O:10][C:9]([C:11]([OH:13])=[O:12])=[CH:8][CH:7]=1)(=[O:3])[CH3:2].C>C(OCC)(=O)C>[C:1]([O:4][CH2:5][CH:6]1[O:10][CH:9]([C:11]([OH:13])=[O:12])[CH2:8][CH2:7]1)(=[O:3])[CH3:2]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m3_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "5-acetoxymethylfuran-2-carboxylic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)OCC1=CC=C(O1)C(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H8O5/c1-5(9)12-4-6-2-3-7(13-6)8(10)11/h2-3H,4H2,1H3,(H,10,11)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 5.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "charcoal"
+            },
+            {
+              "type": "SMILES",
+              "value": "C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH4/h1H4"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 5.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethyl acetate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)OCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 250.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A solution of 5-acetoxymethylfuran-2-carboxylic acid (5.00 g) in ethyl acetate (250 ml) was stirred with decolourising charcoal (5.0 g) for 10 mins. The mixture was filtered through Kieselguhr and the residue was washed with ethyl acetate (30 ml). The combined filtrates were hydrogenated over 5% rhodium on carbon (2.5 g) until hydrogen uptake ceased. The mixture was filtered through Kieselguhr and the residue was washed with ethyl acetate (30 ml). The combined filtrates were evaporated to give the title acid as an oil (3.64 g); νmax (Film) 3700-2800 and 1742 cm-1 ; δH [(CD3)2CO] 1.4-2.5 and 2.00 (7 H, m+s), 3.9-4.55 (4 H, m) and 7.52 (1 H, br s). (Mass spectrum: M+ (188), MH+ (189)]."
+  },
+  "workups": [
+    {
+      "type": "FILTRATION",
+      "details": "The mixture was filtered through Kieselguhr"
+    },
+    {
+      "type": "WASH",
+      "details": "the residue was washed with ethyl acetate (30 ml)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 30.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "The mixture was filtered through Kieselguhr"
+    },
+    {
+      "type": "WASH",
+      "details": "the residue was washed with ethyl acetate (30 ml)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 30.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The combined filtrates were evaporated"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title acid"
+            },
+            {
+              "type": "NAME",
+              "value": "(2RS,5SR)-5-Acetoxymethyltetrahydrofuran-2-carboxylic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)OCC1CCC(O1)C(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H12O5/c1-5(9)12-4-6-2-3-7(13-6)8(10)11/h6-7H,2-4H2,1H3,(H,10,11)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 3.64,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 71.2
+              }
+            }
+          ],
+          "texture": {
+            "type": "OIL",
+            "details": "oil"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06001997",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:29.521535"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-b00a95cc044149e483cb87214e3282ee"
+}

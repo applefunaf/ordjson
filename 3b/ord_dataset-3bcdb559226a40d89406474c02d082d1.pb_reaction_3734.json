@@ -1,0 +1,237 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[N+:1]([C:4]1[CH:18]=[CH:17][CH:16]=[CH:15][C:5]=1[NH:6][C:7]1[S:8][C:9]([CH3:14])=[CH:10][C:11]=1[C:12]#[N:13])([O-])=O.[ClH:19]>C(O)C>[ClH:19].[NH2:13][C:12]1[C:11]2[CH:10]=[C:9]([CH3:14])[S:8][C:7]=2[NH:6][C:5]2[CH:15]=[CH:16][CH:17]=[CH:18][C:4]=2[N:1]=1 |f:3.4|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-(2-nitroanilino)-5-methyl-thiophene-3-carbonitrile"
+            },
+            {
+              "type": "SMILES",
+              "value": "[N+](=O)([O-])C1=C(NC=2SC(=CC2C#N)C)C=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C12H9N3O2S/c1-8-6-9(7-13)12(18-8)14-10-4-2-3-5-11(10)15(16)17/h2-6,14H,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 3.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 35.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "stannous chloride"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 6.95,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrochloric acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/ClH/h1H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 26.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "The mixture was stirred"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a stirred slurry of 2-(2-nitroanilino)-5-methyl-thiophene-3-carbonitrile (3 g, 0.011 mol) in ethanol (35 mL) at 50° C. was added, over 10 minutes, a solution of anhydrous stannous chloride (6.95 g, 0.037 mol) in hydrochloric acid (26 mL, 5M). The mixture was stirred under reflux for 1 hour, concentrated under reduced pressure and allowed to crystallize over night at 5° C. The salt was filtered, washed with a small amount of water, dried (4.3 g) m.p. >250° C., and used without further purification in the next stage."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "under reflux for 1 hour",
+      "duration": {
+        "value": 1.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated under reduced pressure"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to crystallize over night at 5° C",
+      "temperature": {
+        "setpoint": {
+          "value": 5.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "The salt was filtered"
+    },
+    {
+      "type": "WASH",
+      "details": "washed with a small amount of water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried (4.3 g) m.p. >250° C."
+    },
+    {
+      "type": "CUSTOM",
+      "details": "used without further purification in the next stage"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-Amino-2-methyl-10H-thieno[2.3-b][1,5]benzodiazepine, hydrochloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl.NC=1C2=C(NC3=C(N1)C=CC=C3)SC(=C2)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C12H11N3S.ClH/c1-7-6-8-11(13)14-9-4-2-3-5-10(9)15-12(8)16-7;/h2-6,15H,1H3,(H2,13,14);1H"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06008216",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:16.878423"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-d716f2b059914058a5eab7ef04e28b78"
+}

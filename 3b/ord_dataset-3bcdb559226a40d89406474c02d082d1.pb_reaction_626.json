@@ -1,0 +1,263 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[C:1]([CH:5]1[CH2:9][CH2:8][CH2:7][NH:6]1)([O:3][CH3:4])=[O:2].N1C=CC=CC=1.[N+:16]([C:19]1[CH:27]=[CH:26][C:22]([C:23](Cl)=[O:24])=[CH:21][CH:20]=1)([O-:18])=[O:17]>C(Cl)Cl>[N+:16]([C:19]1[CH:20]=[CH:21][C:22]([C:23]([N:6]2[CH2:7][CH2:8][CH2:9][CH:5]2[C:1]([O:3][CH3:4])=[O:2])=[O:24])=[CH:26][CH:27]=1)([O-:18])=[O:17]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m4_m3_m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-carbomethoxypyrrolidine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(=O)(OC)C1NCCC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H11NO2/c1-9-6(8)5-3-2-4-7-5/h5,7H,2-4H2,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 1.64,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "pyridine"
+            },
+            {
+              "type": "SMILES",
+              "value": "N1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C5H5N/c1-2-4-6-5-3-1/h1-5H"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 10.1,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-nitrobenzoyl chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "[N+](=O)([O-])C1=CC=C(C(=O)Cl)C=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H4ClNO3/c8-7(10)5-1-3-6(4-2-5)9(11)12/h1-4H"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 2.36,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "CH2Cl2"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(Cl)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 100.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "CH2Cl2"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(Cl)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 25.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "stirred 18 h"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To 2-carbomethoxypyrrolidine (d,1-proline methylester, 1.64 g, 12.7 mmol) with pyridine (10.1 g, 12.7 mmol) in CH2Cl2 (100 mL) at 0° C. was added 4-nitrobenzoyl chloride (2.36 g, 12.7 mmol) in CH2Cl2 (25 mL) dropwise. The reaction was allowed to warm to ambient temperature and stirred 18 h. The reaction was evaporated and applied to a silica gel flash column and eluted with a gradient of 2:1 Hexane:EtOAc to 1:2 Hexane:EtOAc. There was isolated 1.3 g of the title compound; LRMS (M+H)+ m/z=279."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "The reaction was evaporated"
+    },
+    {
+      "type": "WASH",
+      "details": "eluted with a gradient of 2:1 Hexane",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "Hexane"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCCCCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C6H14/c1-3-5-6-4-2/h3-6H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 18.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "N-(4-Nitrobenzoyl)-2-carbomethoxypyrrolidine"
+            },
+            {
+              "type": "SMILES",
+              "value": "[N+](=O)([O-])C1=CC=C(C(=O)N2C(CCC2)C(=O)OC)C=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C13H14N2O5/c1-20-13(17)11-3-2-8-14(11)12(16)9-4-6-10(7-5-9)15(18)19/h4-7,11H,2-3,8H2,1H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 1.3,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 36.8
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998424",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:26.305071"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-87a6d197e65f4d3bbf537df3d3e59311"
+}

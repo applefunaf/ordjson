@@ -1,0 +1,249 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "Cl.[C@@H:2]1([N:10]2[CH:17]=[CH:16][C:14]([NH2:15])=[N:13][C:11]2=[O:12])[O:9][C@H:6]([CH2:7][OH:8])[C@@H:4]([OH:5])[CH2:3]1.[CH2:18](N)[C:19]1[CH:24]=[CH:23][CH:22]=[CH:21][CH:20]=1>>[CH2:18]([NH:15][C:14]1[CH:16]=[CH:17][N:10]([C@@H:2]2[O:9][C@H:6]([CH2:7][OH:8])[C@@H:4]([OH:5])[CH2:3]2)[C:11](=[O:12])[N:13]=1)[C:19]1[CH:24]=[CH:23][CH:22]=[CH:21][CH:20]=1 |f:0.1|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2'-deoxycytidine hydrochloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl.[C@@H]1(C[C@H](O)[C@@H](CO)O1)N1C(=O)N=C(N)C=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H13N3O4.ClH/c10-7-1-2-12(9(15)11-7)8-3-5(14)6(4-13)16-8;/h1-2,5-6,8,13-14H,3-4H2,(H2,10,11,15);1H/t5-,6+,8+;/m0./s1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 5.28,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "benzylamine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C1=CC=CC=C1)N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H9N/c8-6-7-4-2-1-3-5-7/h1-5H,6,8H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 20.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 150.0,
+        "units": "CELSIUS"
+      }
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To 2'-deoxycytidine hydrochloride (5.28g, 20 mmol, U.S. Biochemical Corp., Cleveland, Ohio) was added benzylamine (20 ml), and the mixture was heated at 150° C. for 3 hours under an argon atmosphere. The solution was concentrated under vacuum to yield a viscous yellow oil, which was partitioned between water (100 ml) and ethyl acetate (100 ml). The aqueous phase was washed with ethyl acetate (100 ml) and separated. The aqueous phase was concentrated under vacuum to yield a yellow syrup (13 g), which was purified by silica gel column chromatography with 15:1 methylene chloride:methanol as eluant, to yield the desired product (5.8 g, 91.5%), as a colorless syrup."
+  },
+  "workups": [
+    {
+      "type": "CONCENTRATION",
+      "details": "The solution was concentrated under vacuum"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to yield a viscous yellow oil, which"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "was partitioned between water (100 ml) and ethyl acetate (100 ml)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 100.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 100.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "The aqueous phase was washed with ethyl acetate (100 ml)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 100.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "separated"
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "The aqueous phase was concentrated under vacuum"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "syrup"
+            },
+            {
+              "type": "NAME",
+              "value": "N4 -benzyl-2'-deoxycytidine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C1=CC=CC=C1)NC1=NC(N([C@H]2C[C@H](O)[C@@H](CO)O2)C=C1)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C16H19N3O4/c20-10-13-12(21)8-15(23-13)19-7-6-14(18-16(19)22)17-9-11-4-2-1-3-5-11/h1-7,12-13,15,20-21H,8-10H2,(H,17,18,22)/t12-,13+,15+/m0/s1"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 13.0,
+                  "units": "GRAM"
+                }
+              }
+            }
+          ],
+          "texture": {
+            "type": "CUSTOM",
+            "details": "syrup"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06001611",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:16.092744"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-b8d3db90d1494a97b3a91288e18195a4"
+}

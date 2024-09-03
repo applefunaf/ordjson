@@ -1,0 +1,271 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "Cl[C:2]1[C:6]2[CH:7]=[CH:8][C:9]([O:11][CH3:12])=[CH:10][C:5]=2[O:4][N:3]=1.[NH:13]1[CH2:18][CH2:17][NH:16][CH2:15][CH2:14]1>CO.CCOC(C)=O>[OH2:4].[CH3:12][O:11][C:9]1[CH:8]=[CH:7][C:6]2[C:2]([N:13]3[CH2:18][CH2:17][NH:16][CH2:15][CH2:14]3)=[N:3][O:4][C:5]=2[CH:10]=1.[CH3:12][O:11][C:9]1[CH:8]=[CH:7][C:6]2[C:2]([N:13]3[CH2:18][CH2:17][NH:16][CH2:15][CH2:14]3)=[N:3][O:4][C:5]=2[CH:10]=1 |f:4.5.6|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "EtOAc"
+            },
+            {
+              "type": "SMILES",
+              "value": "CCOC(=O)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 1.0,
+              "units": "LITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m1_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3-chloro-6-methoxy-1,2-benzisoxazole"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC1=NOC2=C1C=CC(=C2)OC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H6ClNO2/c1-11-5-2-3-6-7(4-5)12-10-8(6)9/h2-4H,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 3.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "piperazine"
+            },
+            {
+              "type": "SMILES",
+              "value": "N1CCNCC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H10N2/c1-2-6-4-3-5-1/h5-6H,1-4H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 6.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "MeOH"
+            },
+            {
+              "type": "SMILES",
+              "value": "CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 140.0,
+        "units": "CELSIUS"
+      }
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture of 3-chloro-6-methoxy-1,2-benzisoxazole (3.0 g) and piperazine (6.0 g) was heated to 140° C. over 4 hours in a sealed tube and then cooled to room temperature. The contents of the tube were dissolved in MeOH and further diluted with EtOAc (1 L). The precipitate was filtered and the filtrate dried over MgSO4 and concentrated in vacuo. Flash chromatography (silica gel) eluting with 30% MeOH/EtOAc provided a residue upon evaporation (3.6 g, m.p. 79-80 C.)."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "cooled to room temperature",
+      "temperature": {
+        "control": {
+          "type": "AMBIENT"
+        }
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "The precipitate was filtered"
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "the filtrate dried over MgSO4",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "MgSO4"
+              },
+              {
+                "type": "SMILES",
+                "value": "[O-]S(=O)(=O)[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated in vacuo"
+    },
+    {
+      "type": "WASH",
+      "details": "Flash chromatography (silica gel) eluting with 30% MeOH/EtOAc",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "MeOH EtOAc"
+              },
+              {
+                "type": "SMILES",
+                "value": "CO.CCOC(=O)C"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2.CH4O/c1-3-6-4(2)5;1-2/h3H2,1-2H3;2H,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "provided a residue"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "upon evaporation (3.6 g, m.p. 79-80 C.)"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "6-Methoxy-3-(1-piperazinyl)-1,2-benzisoxazole hemihydrate"
+            },
+            {
+              "type": "SMILES",
+              "value": "O.COC1=CC2=C(C(=NO2)N2CCNCC2)C=C1.COC1=CC2=C(C(=NO2)N2CCNCC2)C=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/2C12H15N3O2.H2O/c2*1-16-9-2-3-10-11(8-9)17-14-12(10)15-6-4-13-5-7-15;/h2*2-3,8,13H,4-7H2,1H3;1H2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06008348",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:24.600702"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-10c0d819910d4fedb5bc3beac0171f8a"
+}

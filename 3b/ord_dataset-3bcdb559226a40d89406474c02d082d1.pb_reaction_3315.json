@@ -1,0 +1,285 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH2:1]([O:3][C:4]1[CH:9]=[CH:8][C:7]([CH3:10])=[CH:6][CH:5]=1)[CH3:2].[Cl:11][S:12](O)(=[O:14])=[O:13]>ClCCl>[CH2:1]([O:3][C:4]1[CH:9]=[CH:8][C:7]([CH3:10])=[CH:6][C:5]=1[S:12]([Cl:11])(=[O:14])=[O:13])[CH3:2]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m4_m2_m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-ethoxytoluene"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)OC1=CC=C(C=C1)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H12O/c1-3-10-9-6-4-8(2)5-7-9/h4-7H,3H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 6.8,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "chlorosulfonic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClS(=O)(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/ClHO3S/c1-5(2,3)4/h(H,2,3,4)"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 10.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "dichloromethane"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClCCl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 20.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "dichloromethane"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClCCl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 10.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ice water"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 200.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "stirring"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A solution of 6.8 g (50 mmol) of 4-ethoxytoluene in 20 mL of dichloromethane was added to a solution of 10 mL (150 mmol) of chlorosulfonic acid in 10 mL of dichloromethane at 0° C. with cooling and stirring. The mixture was stirred 1 hour at 0° C. and was then warmed to ambient temperature and stirred another hour. The resulting tan solution was poured into 200 mL of ice water and the mixture was extracted with dichloromethane. The extract was dried over magnesium sulfate and concentrated by evaporation under reduced pressure. The residual 7.9 g (68 percent of theory) of light tan solid melting at 59-61° C. was the title compound."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "with cooling"
+    },
+    {
+      "type": "STIRRING",
+      "details": "The mixture was stirred 1 hour at 0° C.",
+      "duration": {
+        "value": 1.0,
+        "units": "HOUR"
+      },
+      "temperature": {
+        "setpoint": {
+          "value": 0.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "STIRRING",
+      "details": "stirred another hour"
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "the mixture was extracted with dichloromethane",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "dichloromethane"
+              },
+              {
+                "type": "SMILES",
+                "value": "ClCCl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "The extract was dried over magnesium sulfate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "magnesium sulfate"
+              },
+              {
+                "type": "SMILES",
+                "value": "S(=O)(=O)([O-])[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated by evaporation under reduced pressure"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-Ethoxy-5-methylbenzenesulfonyl Chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)OC1=C(C=C(C=C1)C)S(=O)(=O)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H11ClO3S/c1-3-13-8-5-4-7(2)6-9(8)14(10,11)12/h4-6H,3H2,1-2H3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06005108",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:23.274733"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-d218ff59d0fd44dc83cf5b1eb0aa6ff4"
+}

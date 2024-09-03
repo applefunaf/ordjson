@@ -1,0 +1,483 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[C:1]1([NH2:8])[CH:6]=[CH:5][CH:4]=[CH:3][C:2]=1[NH2:7].[C:9]([N:16]([CH2:18][C:19](O)=[O:20])[CH3:17])([O:11][C:12]([CH3:15])([CH3:14])[CH3:13])=[O:10].C1CCC(N=C=NC2CCCCC2)CC1>CN(C=O)C.C(Cl)Cl>[C:12]([O:11][C:9]([N:16]([CH2:18][C:19]([NH:7][C:2]1[CH:3]=[CH:4][CH:5]=[CH:6][C:1]=1[NH2:8])=[O:20])[CH3:17])=[O:10])([CH3:15])([CH3:14])[CH3:13]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m3_m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "DCC"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1CCC(CC1)N=C=NC2CCCCC2"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C13H22N2/c1-3-7-12(8-4-1)14-11-15-13-9-5-2-6-10-13/h12-13H,1-10H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 190.8,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "CH2Cl2"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(Cl)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 1750.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m1_m2_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "phenylenediamine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1(=C(C=CC=C1)N)N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H8N2/c7-5-3-1-2-4-6(5)8/h1-4H,7-8H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 100.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Boc-sarcosine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(=O)(OC(C)(C)C)N(C)CC(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H15NO4/c1-8(2,3)13-7(12)9(4)5-6(10)11/h5H2,1-4H3,(H,10,11)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 175.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "DMF"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN(C)C=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H7NO/c1-4(2)3-5/h3H,1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 1750.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "The reaction was stirred overnight while the temperature"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A solution of phenylenediamine (100 g, 0.924 mole) and Boc-sarcosine (175 g, 0.924 mole) in DMF (1750 mL) was cooled to -10° C. under argon, and a solution of DCC (190.8 g, 0.924 mole) in CH2Cl2 (1750 mL) was added in a slow stream over 1 hr. The temperature rose to 0° C. during the addition. The reaction was stirred overnight while the temperature was allowed to rise to RT. The white precipitate was removed by filtration, and the filtrate was diluted with H2O (3.5 L) and saturated brine (1 L). The CH2Cl2 layer was separated and the aqueous phase was extracted with EtOAc (2×1 L). The combined organic layers were washed with H2O (1 L) and brine (0.5 L), then were concentrated to a yellow residue (341 g). This was triturated with EtOAc to afford the title compound (179.4 g, 70%): mp 134-136° C."
+  },
+  "workups": [
+    {
+      "type": "ADDITION",
+      "details": "The temperature rose to 0° C. during the addition",
+      "temperature": {
+        "setpoint": {
+          "value": 0.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to rise to RT",
+      "temperature": {
+        "control": {
+          "type": "AMBIENT"
+        }
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The white precipitate was removed by filtration"
+    },
+    {
+      "type": "ADDITION",
+      "details": "the filtrate was diluted with H2O (3.5 L) and saturated brine (1 L)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "H2O"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 3.5,
+                "units": "LITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "brine"
+              },
+              {
+                "type": "SMILES",
+                "value": "[Cl-].[Na+].O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH.Na.H2O/h1H;;1H2/q;+1;/p-1"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 1.0,
+                "units": "LITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The CH2Cl2 layer was separated",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "CH2Cl2"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(Cl)Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "the aqueous phase was extracted with EtOAc (2×1 L)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "EtOAc"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOC(=O)C"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 1.0,
+                "units": "LITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "The combined organic layers were washed with H2O (1 L) and brine (0.5 L)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "H2O"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 1.0,
+                "units": "LITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "brine"
+              },
+              {
+                "type": "SMILES",
+                "value": "[Cl-].[Na+].O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH.Na.H2O/h1H;;1H2/q;+1;/p-1"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 0.5,
+                "units": "LITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "were concentrated to a yellow residue (341 g)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "residue"
+              }
+            ],
+            "amount": {
+              "mass": {
+                "value": 341.0,
+                "units": "GRAM"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "This was triturated with EtOAc",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "EtOAc"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOC(=O)C"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 8.0,
+        "precision": 8.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "2-[(tert-Butoxycarbonyl)sarcosyl]aminoaniline"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(C)(C)OC(=O)N(C)CC(=O)NC1=C(N)C=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C14H21N3O3/c1-14(2,3)20-13(19)17(4)9-12(18)16-11-8-6-5-7-10(11)15/h5-8H,9,15H2,1-4H3,(H,16,18)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 179.4,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 70.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 69.5
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06008213",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:19.515660"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-6433222bd8744f239ac1d3a6525d6e58"
+}

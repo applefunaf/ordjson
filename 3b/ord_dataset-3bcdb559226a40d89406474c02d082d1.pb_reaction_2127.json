@@ -1,0 +1,331 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[N+:1]([C:4]1[CH:5]=[CH:6][C:7]([S:13][S:14][C:15]2[CH:23]=[CH:22][C:21]([N+:24]([O-])=O)=[CH:20][C:16]=2[C:17]([NH2:19])=[O:18])=[C:8]([CH:12]=1)[C:9]([NH2:11])=[O:10])([O-])=O.C(O)(=O)C.[OH-].[Na+]>O>[NH2:24][C:21]1[CH:22]=[CH:23][C:15]([S:14][S:13][C:7]2[CH:6]=[CH:5][C:4]([NH2:1])=[CH:12][C:8]=2[C:9]([NH2:11])=[O:10])=[C:16]([CH:20]=1)[C:17]([NH2:19])=[O:18] |f:2.3|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "NaOH"
+            },
+            {
+              "type": "SMILES",
+              "value": "[OH-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Na.H2O/h;1H2/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 14.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m1_m2_m5_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2,2'-Dithiobis(5-nitrobenzamide)"
+            },
+            {
+              "type": "SMILES",
+              "value": "[N+](=O)([O-])C=1C=CC(=C(C(=O)N)C1)SSC1=C(C(=O)N)C=C(C=C1)[N+](=O)[O-]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C14H10N4O6S2/c15-13(19)9-5-7(17(21)22)1-3-11(9)25-26-12-4-2-8(18(23)24)6-10(12)14(16)20/h1-6H,(H2,15,19)(H2,16,20)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 2.6,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "reduced iron"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 8.7,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acetic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H4O2/c1-2(3)4/h1H3,(H,3,4)"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 65.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "2,2'-Dithiobis(5-nitrobenzamide) (2.6 g, 7.0 mmol) was added portion-wise to a refluxing slurry of reduced iron (8.7 g) in 65 mL of water containing 0.1 mL of acetic acid. The resulting slurry was heated at reflux for 2.0 hours, then cooled to room temperature. The slurry was made strongly basic (pH 11) by the addition of 14 mL of 1 N NaOH. The alkaline mixture was filtered, and acetic acid was added to the solution to adjust the pH to 7.0. While bubbling oxygen into the solution, a pH=6-7 was maintained with the addition of acetic acid. A solid gradually formed as the pH begins to stabilize. The product (1.1 g) was recovered by filtration, mp 188-190° C."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "The resulting slurry was heated"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "at reflux for 2.0 hours",
+      "duration": {
+        "value": 2.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "The alkaline mixture was filtered"
+    },
+    {
+      "type": "ADDITION",
+      "details": "acetic acid was added to the solution",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "acetic acid"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C2H4O2/c1-2(3)4/h1H3,(H,3,4)"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "While bubbling oxygen into the solution",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "oxygen"
+              },
+              {
+                "type": "SMILES",
+                "value": "O=O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/O2/c1-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "a pH=6-7 was maintained with the addition of acetic acid",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "acetic acid"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C2H4O2/c1-2(3)4/h1H3,(H,3,4)"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "A solid gradually formed as the pH"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "The product (1.1 g) was recovered by filtration, mp 188-190° C.",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "product"
+              }
+            ],
+            "amount": {
+              "mass": {
+                "value": 1.1,
+                "units": "GRAM"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2,2'-Dithiobis(5-aminobenzamide)"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC=1C=CC(=C(C(=O)N)C1)SSC1=C(C(=O)N)C=C(C=C1)N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C14H14N4O2S2/c15-7-1-3-11(9(5-7)13(17)19)21-22-12-4-2-8(16)6-10(12)14(18)20/h1-6H,15-16H2,(H2,17,19)(H2,18,20)"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06001863",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:18.996032"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-bd5a9bd4deca4e8f8443acfa4824a8e3"
+}

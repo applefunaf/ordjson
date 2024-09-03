@@ -1,0 +1,249 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][CH:2]([CH3:19])[CH2:3][NH:4][C:5]1[C:14]2[C:9](=[CH:10][CH:11]=[CH:12][CH:13]=2)[N:8]2[N:15]=[N:16][N:17]=[C:7]2[C:6]=1[NH2:18].[C:20](OC(OCC)OCC)(=O)C.[OH-].[Na+]>O>[CH3:1][CH:2]([CH3:19])[CH2:3][N:4]1[C:5]2[C:14]3[C:9](=[CH:10][CH:11]=[CH:12][CH:13]=3)[N:8]3[N:15]=[N:16][N:17]=[C:7]3[C:6]=2[N:18]=[CH:20]1 |f:2.3|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sodium hydroxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "[OH-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Na.H2O/h;1H2/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 2.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 10.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N5 -(2-Methylpropyl)tetrazolo[1,5-a]quinoline-4,5-diamine"
+            },
+            {
+              "type": "NAME",
+              "value": "N5 -(2-methylpropyl)tetrazolo[1,5-a]quinoline-4,5-diamine"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC(CNC1=C(C=2N(C3=CC=CC=C13)N=NN2)N)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C13H16N6/c1-8(2)7-15-12-9-5-3-4-6-10(9)19-13(11(12)14)16-17-18-19/h3-6,8,15H,7,14H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.2,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "diethoxymethyl acetate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)OC(OCC)OCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H14O4/c1-4-9-7(10-5-2)11-6(3)8/h7H,4-5H2,1-3H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 2.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "N5 -(2-Methylpropyl)tetrazolo[1,5-a]quinoline-4,5-diamine (0.2 g, 0.78 mmole, Example 16) was combined with diethoxymethyl acetate (2 mL) and heated on a steam bath for 3 hours. Water (10 mL) and 10% sodium hydroxide (2 mL) were added and the reaction mixture was heated on a steam bath for 1 hour. A solid was isolated by filtration then recrystallized from methanol/ethyl acetate to provide 0.16 g of 6-(2-methylpropyl)-6H-imidazo[4,5-c]tetrazolo[1,5-a]quinoline as a white crystalline solid, m.p. 210-212° C. Analysis: Calculated for C14H14N6 : % C, 63.14; % H, 5.30; % N, 31.56; Found: % C, 63.12; % H, 5.32; % N, 31.61."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "heated on a steam bath for 3 hours",
+      "duration": {
+        "value": 3.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "the reaction mixture was heated on a steam bath for 1 hour",
+      "duration": {
+        "value": 1.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "A solid was isolated by filtration"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "then recrystallized from methanol/ethyl acetate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "methanol ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "CO.C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2.CH4O/c1-3-6-4(2)5;1-2/h3H2,1-2H3;2H,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "6-(2-methylpropyl)-6H-imidazo[4,5-c]tetrazolo[1,5-a]quinoline"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC(CN1C=NC=2C=3N(C4=CC=CC=C4C21)N=NN3)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C14H14N6/c1-9(2)7-19-8-15-12-13(19)10-5-3-4-6-11(10)20-14(12)16-17-18-20/h3-6,8-9H,7H2,1-2H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 0.16,
+                  "units": "GRAM"
+                }
+              }
+            }
+          ],
+          "isolated_color": "white crystalline",
+          "texture": {
+            "type": "CUSTOM",
+            "details": "solid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998619",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:32.314244"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-e0cf60bf9eee4361a8e6c49754a05aed"
+}

@@ -1,0 +1,197 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[Br:1][C:2]1[CH:3]=[CH:4][C:5]([O:12][CH3:13])=[C:6]([C:10]=1[Cl:11])[C:7](O)=[O:8].C(Cl)(=O)C([Cl:17])=O>ClCCl>[Br:1][C:2]1[CH:3]=[CH:4][C:5]([O:12][CH3:13])=[C:6]([C:10]=1[Cl:11])[C:7]([Cl:17])=[O:8]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m3_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4B"
+            },
+            {
+              "type": "NAME",
+              "value": "5-Bromo-6-chloro-2-methoxybenzoic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "BrC=1C=CC(=C(C(=O)O)C1Cl)OC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H6BrClO3/c1-13-5-3-2-4(9)7(10)6(5)8(11)12/h2-3H,1H3,(H,11,12)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 1.2,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "oxalyl chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C(=O)Cl)(=O)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2Cl2O2/c3-1(5)2(4)6"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 1.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "dichloromethane"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClCCl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 15.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "is stirred at room temperature for 2 hours"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture of 4B (1.2 g, 4.6 mmol), dichloromethane (15 ml) and oxalyl chloride (1 ml) is stirred at room temperature for 2 hours. The mixture is concentrated and the resulting benzoylchloride is used without further purification."
+  },
+  "workups": [
+    {
+      "type": "CONCENTRATION",
+      "details": "The mixture is concentrated"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the resulting benzoylchloride is used without further purification",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "benzoylchloride"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C1=CC=CC=C1)(=O)Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C7H5ClO/c8-7(9)6-4-2-1-3-5-6/h1-5H"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 2.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "5-Bromo-6-chloro-2-methoxybenzoyl chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "BrC=1C=CC(=C(C(=O)Cl)C1Cl)OC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H5BrCl2O2/c1-13-5-3-2-4(9)7(10)6(5)8(11)12/h2-3H,1H3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06001883",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:19.737891"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-9bc39c3aa4e54477b2a4587843e940a9"
+}

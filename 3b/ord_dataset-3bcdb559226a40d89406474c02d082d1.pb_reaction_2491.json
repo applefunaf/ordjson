@@ -1,0 +1,231 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][O:2][C:3]1[CH:4]=[C:5]2[C:10](=[CH:11][C:12]=1[O:13][CH3:14])[NH:9][CH:8]=[C:7]([C:15]#[N:16])[C:6]2=O.P(Cl)(Cl)([Cl:20])=O>>[Cl:20][C:6]1[C:5]2[C:10](=[CH:11][C:12]([O:13][CH3:14])=[C:3]([O:2][CH3:1])[CH:4]=2)[N:9]=[CH:8][C:7]=1[C:15]#[N:16]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "1,4-dihydro-6,7-dimethoxy-4-oxo-3-quinolinecarbonitrile"
+            },
+            {
+              "type": "SMILES",
+              "value": "COC=1C=C2C(C(=CNC2=CC1OC)C#N)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C12H10N2O3/c1-16-10-3-8-9(4-11(10)17-2)14-6-7(5-13)12(8)15/h3-4,6H,1-2H3,(H,14,15)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 20.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "phosphorous oxychloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "P(=O)(Cl)(Cl)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Cl3OP/c1-5(2,3)4"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 87.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 0.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "The residue was stirred at 0° C. with dichloromethane-water as solid sodium carbonate"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A stirred mixture of 20 g of 1,4-dihydro-6,7-dimethoxy-4-oxo-3-quinolinecarbonitrile and 87 ml of phosphorous oxychloride was refluxed for 2 h, cooled, and evaporated free of volatile matter. The residue was stirred at 0° C. with dichloromethane-water as solid sodium carbonate was added until the aqueous layer was pH 8. The organic layer was separated, washed with water, dried and concentrated. Recrystallization from dichloromethane gave a solid, mp 220-223° C."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "was refluxed for 2 h",
+      "duration": {
+        "value": 2.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "cooled"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "evaporated free of volatile matter"
+    },
+    {
+      "type": "ADDITION",
+      "details": "was added until the aqueous layer"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The organic layer was separated"
+    },
+    {
+      "type": "WASH",
+      "details": "washed with water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried"
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "Recrystallization from dichloromethane",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "dichloromethane"
+              },
+              {
+                "type": "SMILES",
+                "value": "ClCCl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "gave a solid, mp 220-223° C."
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-Chloro-6,7-dimethoxy-3-quinolinecarbonitrile"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC1=C(C=NC2=CC(=C(C=C12)OC)OC)C#N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C12H9ClN2O2/c1-16-10-3-8-9(4-11(10)17-2)15-6-7(5-14)12(8)13/h3-4,6H,1-2H3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06002008",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:24.621863"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-901035b513ea4cdea1764b5dc30cbcd7"
+}

@@ -1,0 +1,258 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "Cl[C:2]1([F:11])[C:7](F)([F:8])[CH2:6][C:5]([CH3:10])=[CH:4][CH2:3]1.ClC1(F)CC(C)=CCC1(F)F.[OH-].[Na+]>[Cl-].C([N+](CC)(CC)CC)C1C=CC=CC=1>[F:8][C:7]1[CH:6]=[C:5]([CH3:10])[CH:4]=[CH:3][C:2]=1[F:11] |f:2.3,4.5|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "benzyltriethylammonium chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Cl-].C(C1=CC=CC=C1)[N+](CC)(CC)CC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C13H22N.ClH/c1-4-14(5-2,6-3)12-13-10-8-7-9-11-13;/h7-11H,4-6,12H2,1-3H3;1H/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 42.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "CATALYST"
+        }
+      ]
+    },
+    "m1_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-chloro-1-methyl-4,5,5-trifluorocyclohexene"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC1(CC=C(CC1(F)F)C)F"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H8ClF3/c1-5-2-3-6(8,9)7(10,11)4-5/h2H,3-4H2,1H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "5-chloro-1-methyl-4,4,5-trifluorocyclohexene"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC1(C(CC=C(C1)C)(F)F)F"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H8ClF3/c1-5-2-3-7(10,11)6(8,9)4-5/h2H,3-4H2,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 1.2,
+              "units": "KILOGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sodium hydroxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "[OH-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Na.H2O/h;1H2/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 2.15,
+              "units": "KILOGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 85.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "The reaction mixture was stirred for an additional 1.5 hours at 90° C."
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a stirred mixture of 4-chloro-1-methyl-4,5,5-trifluorocyclohexene and 5-chloro-1-methyl-4,4,5-trifluorocyclohexene (1.20 kg) prepared in Example 1 was added 42 g of benzyltriethylammonium chloride, and then the reaction mixture was heated to 85° C. followed by slowly adding 2.15 kg of 50% aqueous sodium hydroxide solution over 4.5 hours. The reaction mixture was stirred for an additional 1.5 hours at 90° C. and then the resultant was purified by steam distillation followed by separating the aqueous layer. The organic layer was dried with 32 g of calcium chloride, and then 0.64 kg of the desired product was collected by fractional distillation at temperature range of 112° C. as a colorless liquid."
+  },
+  "workups": [
+    {
+      "type": "DISTILLATION",
+      "details": "the resultant was purified by steam distillation"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "by separating the aqueous layer"
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "The organic layer was dried with 32 g of calcium chloride",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "calcium chloride"
+              },
+              {
+                "type": "SMILES",
+                "value": "[Cl-].[Ca+2].[Cl-]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Ca.2ClH/h;2*1H/q+2;;/p-2"
+              }
+            ],
+            "amount": {
+              "mass": {
+                "value": 32.0,
+                "units": "GRAM"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DISTILLATION",
+      "details": "0.64 kg of the desired product was collected by fractional distillation at temperature range of 112° C. as a colorless liquid",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "desired product"
+              }
+            ],
+            "amount": {
+              "mass": {
+                "value": 0.64,
+                "units": "KILOGRAM"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      },
+      "temperature": {
+        "setpoint": {
+          "value": 112.0,
+          "units": "CELSIUS"
+        }
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 1.5,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3,4-difluorotoluene"
+            },
+            {
+              "type": "SMILES",
+              "value": "FC=1C=C(C=CC1F)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H6F2/c1-5-2-3-6(8)7(9)4-5/h2-4H,1H3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06008407",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:26.820323"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-bbdd0207161441e1b95cce84a0b655fa"
+}

@@ -1,0 +1,404 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH2:1]([N:3]([CH2:27][CH3:28])[CH2:4][CH2:5][O:6][C:7]1[CH:19]=[CH:18][CH:17]=[C:16]2[C:8]=1[C:9]1[C:10]([O:25][CH3:26])=[CH:11][C:12]([O:21][CH2:22][CH2:23][CH3:24])=[CH:13][C:14]=1[C:15]2=[O:20])[CH3:2].F[B-](F)(F)F.[O:34]=[N+:35]=[O:36]>C(Cl)Cl>[CH2:27]([N:3]([CH2:1][CH3:2])[CH2:4][CH2:5][O:6][C:7]1[CH:19]=[CH:18][CH:17]=[C:16]2[C:8]=1[C:9]1[C:10]([O:25][CH3:26])=[CH:11][C:12]([O:21][CH2:22][CH2:23][CH3:24])=[C:13]([N+:35]([O-:36])=[O:34])[C:14]=1[C:15]2=[O:20])[CH3:28] |f:1.2|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "5-(2-diethylamino-ethoxy)-4-methoxy-2-propoxy-fluoren-9-one"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)N(CCOC1=C2C=3C(=CC(=CC3C(C2=CC=C1)=O)OCCC)OC)CC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C23H29NO4/c1-5-12-27-16-14-18-22(20(15-16)26-4)21-17(23(18)25)9-8-10-19(21)28-13-11-24(6-2)7-3/h8-10,14-15H,5-7,11-13H2,1-4H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 1.1,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methylene chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(Cl)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 100.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "nitronium tetrafluoroborate"
+            },
+            {
+              "type": "SMILES",
+              "value": "F[B-](F)(F)F.O=[N+]=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/BF4.NO2/c2-1(3,4)5;2-1-3/q-1;+1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.42,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "while stirring"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "Prepare a solution of 5-(2-diethylamino-ethoxy)-4-methoxy-2-propoxy-fluoren-9-one (1.1 g, 2.9 mmole) in 100 mL anhydrous methylene chloride at -72° C. under argon while stirring. Add nitronium tetrafluoroborate (0.42 g, 3.2 mmole) in one continuous portion. Allow the mixture to warm to room temperature for 3 hours while the solution darkens. Stir an additional 2 hours, then check reaction progress with an aliquot by thin layer chromatography. Quench the reaction with water and transfer to a seperatory funnel. Retain the organic layer and filter off an insoluble red solid from the interface. Wash with water and methylene chloride. Take up the solid into 5% sodium hydroxide and stir vigorously. Extract with methylene chloride and chromatotron the organics, combine the CH2Cl2 fractions and dry over MgSO4, filter and concentrate on the rotary evaporator. Chromatograph the resulting residue, eluting with methanol/CH2Cl2 (5:95) to obtain 0.52 g (52%) of the title compound."
+  },
+  "workups": [
+    {
+      "type": "STIRRING",
+      "details": "Stir an additional 2 hours",
+      "duration": {
+        "value": 2.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "reaction progress with an aliquot by thin layer chromatography"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "Quench"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the reaction with water and transfer to a seperatory funnel",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "Retain the organic layer and filter off an insoluble red solid from the interface"
+    },
+    {
+      "type": "WASH",
+      "details": "Wash with water and methylene chloride",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "methylene chloride"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(Cl)Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "STIRRING",
+      "details": "stir vigorously"
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "Extract with methylene chloride and chromatotron the organics,",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "methylene chloride"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(Cl)Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "dry over MgSO4",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "MgSO4"
+              },
+              {
+                "type": "SMILES",
+                "value": "[O-]S(=O)(=O)[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filter"
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrate on the rotary evaporator"
+    },
+    {
+      "type": "WASH",
+      "details": "Chromatograph the resulting residue, eluting with methanol/CH2Cl2 (5:95)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "methanol CH2Cl2"
+              },
+              {
+                "type": "SMILES",
+                "value": "CO.C(Cl)Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2Cl2.CH4O/c2-1-3;1-2/h1H2;2H,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "5-(2-diethylamino-ethoxy)-4-methoxy-1-nitro-2-propoxy-fluoren-9-one"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)N(CCOC1=C2C=3C(=CC(=C(C3C(C2=CC=C1)=O)[N+](=O)[O-])OCCC)OC)CC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C23H28N2O6/c1-5-12-30-18-14-17(29-4)20-19-15(23(26)21(20)22(18)25(27)28)9-8-10-16(19)31-13-11-24(6-2)7-3/h8-10,14H,5-7,11-13H2,1-4H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 0.52,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 52.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 41.8
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06004959",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:20.060656"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-ef6f3fd43847489998c1ed58d045db7f"
+}

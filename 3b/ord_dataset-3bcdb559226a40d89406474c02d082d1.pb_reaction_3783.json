@@ -1,0 +1,409 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "O=P12OP3(OP(OP(O3)(O1)=O)(=O)O2)=O.O[C:16]([CH3:27])([CH2:18][CH2:19][CH2:20][C:21]1[CH:26]=[CH:25][CH:24]=[CH:23][CH:22]=1)[CH3:17]>CS(O)(=O)=O>[CH3:17][C:16]1([CH3:27])[C:26]2[C:21](=[CH:22][CH:23]=[CH:24][CH:25]=2)[CH2:20][CH2:19][CH2:18]1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "P2O5"
+            },
+            {
+              "type": "SMILES",
+              "value": "O=P12OP3(=O)OP(=O)(O1)OP(=O)(O2)O3"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/O10P4/c1-11-5-12(2)8-13(3,6-11)10-14(4,7-11)9-12"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 55.3,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methanesulfonic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "CS(=O)(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH4O3S/c1-5(2,3)4/h1H3,(H,2,3,4)"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 400.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-hydroxy-2-methyl-5-phenylpentane"
+            },
+            {
+              "type": "SMILES",
+              "value": "OC(C)(CCCC1=CC=CC=C1)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C12H18O/c1-12(2,13)10-6-9-11-7-4-3-5-8-11/h3-5,7-8,13H,6,9-10H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 63.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 105.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "with stirring"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture of P2O5 (55.3 g, 0.390 mol) in 400 ml of methanesulfonic acid was heated to 105° C. under argon until all of the solid had dissolved. The resulting solution was cooled to room temperature and 2-hydroxy-2-methyl-5-phenylpentane (63.0 g, 0.354 mol) added slowly with stirring. After 4 hours the reaction was quenched by carefully pouring the solution onto 1 L of ice. The resulting mixture was extracted with Et2O (4×125 ml)and the combined organic layers washed with water, saturated aqueous NaHCO3, water, and saturated aqueous NaCl before being dried over MgSO4. Concentration of the solution under reduced pressure, followed by distillation afforded 51.0 g (90%) of the product as a clear colorless oil, bp. 65-67° C./1.1 mmHg. 1H NMR (CDCl3): δ 7.32 (1H, d, J=7.4 Hz), 7.16-7.05 (3H, m), 2.77 (2H, t, J=6.3 Hz), 1.80 (2H, m), 1.66 (2H, m), 1.28 (6H, s)."
+  },
+  "workups": [
+    {
+      "type": "DISSOLUTION",
+      "details": "had dissolved"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "The resulting solution was cooled to room temperature",
+      "temperature": {
+        "control": {
+          "type": "AMBIENT"
+        }
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "After 4 hours the reaction was quenched",
+      "duration": {
+        "value": 4.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "ADDITION",
+      "details": "by carefully pouring the solution onto 1 L of ice",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ice"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 1.0,
+                "units": "LITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "The resulting mixture was extracted with Et2O (4×125 ml)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "Et2O"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 125.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "the combined organic layers washed with water, saturated aqueous NaHCO3, water, and saturated aqueous NaCl",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "NaHCO3"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(=O)(O)[O-].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2O3.Na/c2-1(3)4;/h(H2,2,3,4);/q;+1/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "NaCl"
+              },
+              {
+                "type": "SMILES",
+                "value": "[Na+].[Cl-]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH.Na/h1H;/q;+1/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "before being dried over MgSO4",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "MgSO4"
+              },
+              {
+                "type": "SMILES",
+                "value": "[O-]S(=O)(=O)[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DISTILLATION",
+      "details": "Concentration of the solution under reduced pressure, followed by distillation"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "product"
+            },
+            {
+              "type": "NAME",
+              "value": "1,2,3,4-tetrahydro-1,1-dimethylnaphthalene"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC1(CCCC2=CC=CC=C12)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C12H16/c1-12(2)9-5-7-10-6-3-4-8-11(10)12/h3-4,6,8H,5,7,9H2,1-2H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 51.0,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 90.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 89.9
+              }
+            }
+          ],
+          "isolated_color": "clear colorless",
+          "texture": {
+            "type": "OIL",
+            "details": "oil"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06008204",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:17.707040"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-77ca0e0664644832bc1ab1258c26121b"
+}

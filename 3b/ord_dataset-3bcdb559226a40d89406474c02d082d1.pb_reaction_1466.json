@@ -1,0 +1,322 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH2:1]([NH:3][C:4]([C:6]1[S:7][C:8]([CH2:15][OH:16])=[CH:9][C:10]=1[Si:11]([CH3:14])([CH3:13])[CH3:12])=[O:5])[CH3:2].[Cr](Cl)([O-])(=O)=O.[NH+]1C=CC=CC=1>C(Cl)Cl>[CH2:1]([NH:3][C:4]([C:6]1[S:7][C:8]([CH:15]=[O:16])=[CH:9][C:10]=1[Si:11]([CH3:14])([CH3:13])[CH3:12])=[O:5])[CH3:2] |f:1.2|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m3_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "compound"
+            },
+            {
+              "type": "NAME",
+              "value": "N-ethyl-5-(hydroxymethyl)-3-(trimethylsilyl)-2-thiophenecarboxamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)NC(=O)C=1SC(=CC1[Si](C)(C)C)CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C11H19NO2SSi/c1-5-12-11(14)10-9(16(2,3)4)6-8(7-13)15-10/h6,13H,5,7H2,1-4H3,(H,12,14)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 1.3,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "pyridinium chlorochromate"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Cr](=O)(=O)([O-])Cl.[NH+]1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C5H5N.ClH.Cr.3O/c1-2-4-6-5-3-1;;;;;/h1-5H;1H;;;;/q;;+1;;;-1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 2.4,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "CH2Cl2"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(Cl)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 40.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "was stirred at RT for 2 h"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To the compound of step b (1.3 g, 5 mmol) in 40 mL CH2Cl2 containing 1.8 g celite was added 2.4 g pyridinium chlorochromate and the resulting reaction mixture was stirred at RT for 2 h. The CH2Cl2 solution was filtered through celite, washed with water, brine, dried and concentrated in vacuo. The residue was purified by flash chromatography with 10% ethyl acetate-hexane to give 1.1 g of the desired product as a light yellow solid, m.p. 62-65° C."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "the resulting reaction mixture"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "The CH2Cl2 solution was filtered through celite",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "CH2Cl2"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(Cl)Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "washed with water, brine",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "brine"
+              },
+              {
+                "type": "SMILES",
+                "value": "[Cl-].[Na+].O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH.Na.H2O/h1H;;1H2/q;+1;/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried"
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated in vacuo"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The residue was purified by flash chromatography with 10% ethyl acetate-hexane",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate hexane"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC.CCCCCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C6H14.C4H8O2/c1-3-5-6-4-2;1-3-6-4(2)5/h3-6H2,1-2H3;3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 2.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "desired product"
+            },
+            {
+              "type": "NAME",
+              "value": "N-Ethyl-5-formyl-3-(trimethylsilyl)-2-thiophenecarboxamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)NC(=O)C=1SC(=CC1[Si](C)(C)C)C=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C11H17NO2SSi/c1-5-12-11(14)10-9(16(2,3)4)6-8(7-13)15-10/h6-7H,5H2,1-4H3,(H,12,14)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 1.1,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 86.1
+              }
+            }
+          ],
+          "isolated_color": "light yellow",
+          "texture": {
+            "type": "CUSTOM",
+            "details": "solid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998466",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:38.540742"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-7d1a5e1bcf204263bcb5fd693761e1bd"
+}

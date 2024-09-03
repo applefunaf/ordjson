@@ -1,0 +1,287 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[Cl:1][C:2]1[CH:10]=[CH:9][C:8]([N+:11]([O-:13])=[O:12])=[CH:7][C:3]=1[C:4](O)=[O:5].ClCCl.C(Cl)(=O)C(Cl)=O.C[N:24](C)C=O>>[Cl:1][C:2]1[CH:10]=[CH:9][C:8]([N+:11]([O-:13])=[O:12])=[CH:7][C:3]=1[C:4]([NH2:24])=[O:5]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "dimethylformamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN(C=O)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H7NO/c1-4(2)3-5/h3H,1-2H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m1_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-chloro-5-nitrobenzoic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC1=C(C(=O)O)C=C(C=C1)[N+](=O)[O-]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H4ClNO4/c8-6-2-1-4(9(12)13)3-5(6)7(10)11/h1-3H,(H,10,11)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 15.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "dichloromethane"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClCCl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 200.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "oxalyl chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C(=O)Cl)(=O)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2Cl2O2/c3-1(5)2(4)6"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 16.2,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 25.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "The mixture was stirred at 25° C. for 3 hours"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture of 2-chloro-5-nitrobenzoic acid (15.0 g, 74.0 mmol) and 200 mL of dichloromethane was reacted with oxalyl chloride (16.2 mL, 186.0 mmol) and a catalytic amount of dimethylformamide. The mixture was stirred at 25° C. for 3 hours. The solvent was removed in vacuo, and the residue was redissolved in 200 mL of dichloromethane. The solution was cooled to 0° C., and ammonia was bubbled through the cold solution for 5 minutes, whereupon the product precipitated to form solution. The product was collected by filtration to yield 6.8 g, mp 174-175° C."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "The solvent was removed in vacuo"
+    },
+    {
+      "type": "DISSOLUTION",
+      "details": "the residue was redissolved in 200 mL of dichloromethane",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "dichloromethane"
+              },
+              {
+                "type": "SMILES",
+                "value": "ClCCl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 200.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "The solution was cooled to 0° C.",
+      "temperature": {
+        "setpoint": {
+          "value": 0.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "ammonia was bubbled through the cold solution for 5 minutes, whereupon the product",
+      "duration": {
+        "value": 5.0,
+        "units": "MINUTE"
+      },
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ammonia"
+              },
+              {
+                "type": "SMILES",
+                "value": "N"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H3N/h1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "precipitated"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to form solution"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "The product was collected by filtration"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to yield 6.8 g, mp 174-175° C."
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 3.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-Chloro-5-nitrobenzamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC1=C(C(=O)N)C=C(C=C1)[N+](=O)[O-]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H5ClN2O3/c8-6-2-1-4(10(12)13)3-5(6)7(9)11/h1-3H,(H2,9,11)"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06001863",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:18.982501"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-eb245cd1661d47b2b28125fbb102985b"
+}

@@ -1,0 +1,274 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[C:1]([O:12][CH3:13])(=[O:11])[C:2]1[CH:10]=[CH:9][C:7]([OH:8])=[C:4]([O:5][CH3:6])[CH:3]=1.C(=O)([O-])[O-].[K+].[K+].[CH2:20](I)[CH3:21]>CN(C=O)C>[CH2:20]([O:8][C:7]1[CH:9]=[CH:10][C:2]([C:1]([O:12][CH3:13])=[O:11])=[CH:3][C:4]=1[O:5][CH3:6])[CH3:21] |f:1.2.3|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m4_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methyl vanillate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C1=CC(OC)=C(O)C=C1)(=O)OC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H10O4/c1-12-8-5-6(9(11)13-2)3-4-7(8)10/h3-5,10H,1-2H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 25.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "potassium carbonate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C([O-])([O-])=O.[K+].[K+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2O3.2K/c2-1(3)4;;/h(H2,2,3,4);;/q;2*+1/p-2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 38.87,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethyl iodide"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)I"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H5I/c1-2-3/h2H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 16.5,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "DMF"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN(C)C=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H7NO/c1-4(2)3-5/h3H,1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 500.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 100.0,
+        "units": "CELSIUS"
+      }
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture of 25.0 g (137 mmol) methyl vanillate, 38.87 g (274 mmol) potassium carbonate, 500 ml DMF, and 16.5 ml (206 mmol) ethyl iodide was heated to 100° C. under N2. At 2.5 hours, cooled and removed solids. Stripped solvent, and partitioned between water and methylene chloride. Stripped solvent and dried in vacuo, giving 25.85 g of white solid: mass spectrum (EI m/e): M=210.0."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "cooled"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "removed solids"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "Stripped solvent, and partitioned between water and methylene chloride",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "methylene chloride"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(Cl)Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried in vacuo"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 2.5,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "white solid"
+            },
+            {
+              "type": "NAME",
+              "value": "Methyl 4-ethoxy-3-methoxybenzoate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)OC1=C(C=C(C(=O)OC)C=C1)OC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C11H14O4/c1-4-15-9-6-5-8(11(12)14-3)7-10(9)13-2/h5-7H,4H2,1-3H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 25.85,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 89.8
+              }
+            }
+          ],
+          "isolated_color": "white",
+          "texture": {
+            "type": "CUSTOM",
+            "details": "solid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06002008",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:26.701644"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-32b0b8b26aaf4d6fb2720a564ed87758"
+}

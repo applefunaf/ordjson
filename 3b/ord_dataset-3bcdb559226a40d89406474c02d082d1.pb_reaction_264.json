@@ -1,0 +1,343 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "N1C=CN=C1.[Si:6](Cl)([C:9]([CH3:12])([CH3:11])[CH3:10])([CH3:8])[CH3:7].[Br:14][CH2:15][CH2:16][OH:17]>CN(C)C=O>[Si:6]([O:17][CH2:16][CH2:15][Br:14])([C:9]([CH3:12])([CH3:11])[CH3:10])([CH3:8])[CH3:7]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "dimethylformamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN(C=O)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H7NO/c1-4(2)3-5/h3H,1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 300.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "imidazole"
+            },
+            {
+              "type": "SMILES",
+              "value": "N1C=NC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H4N2/c1-2-5-3-4-1/h1-3H,(H,4,5)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 59.9,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "t-butyldimethylsilyl chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Si](C)(C)(C(C)(C)C)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H15ClSi/c1-6(2,3)8(4,5)7/h1-5H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 60.3,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-bromoethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "BrCCO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H5BrO/c3-1-2-4/h4H,1-2H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 50.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 0.0,
+        "units": "CELSIUS"
+      }
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "Combine imidazole (59.9 g, 880 mmol), t-butyldimethylsilyl chloride (60.3 g, 400 mmol), and dimethylformamide (300 mL). Cool to 0° C. in a salt-ice bath. Add dropwise 2-bromoethanol (50.0 g, 400 mmol) at such a rate that the temperature of the reaction mixture does not rise above 0° C. After 2 hours, warm to ambient temperature. After 18 hours, extract the reaction mixture three times with hexane. Combine the hexane layers and extract three times with a saturated aqueous solution of ammonium chloride, three times with a saturated aqueous solution of sodium bicarbonate, and then brine. Dry the organic layer over Na2SO4, filter, and evaporate in vacuo to give the title compound."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "does not rise above 0° C"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "warm to ambient temperature",
+      "temperature": {
+        "control": {
+          "type": "AMBIENT"
+        }
+      }
+    },
+    {
+      "type": "WAIT",
+      "details": "After 18 hours",
+      "duration": {
+        "value": 18.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "extract the reaction mixture three times with hexane",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "hexane"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCCCCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C6H14/c1-3-5-6-4-2/h3-6H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "extract three times with a saturated aqueous solution of ammonium chloride, three times with a saturated aqueous solution of sodium bicarbonate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ammonium chloride"
+              },
+              {
+                "type": "SMILES",
+                "value": "[Cl-].[NH4+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH.H3N/h1H;1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "sodium bicarbonate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C([O-])(O)=O.[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2O3.Na/c2-1(3)4;/h(H2,2,3,4);/q;+1/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "Dry the organic layer over Na2SO4",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "Na2SO4"
+              },
+              {
+                "type": "SMILES",
+                "value": "[O-]S(=O)(=O)[O-].[Na+].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/2Na.H2O4S/c;;1-5(2,3)4/h;;(H2,1,2,3,4)/q2*+1;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filter"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "evaporate in vacuo"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 2.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "1-(t-butyldimethylsilyloxy)-2-bromoethane"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Si](C)(C)(C(C)(C)C)OCCBr"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H19BrOSi/c1-8(2,3)11(4,5)10-7-6-9/h6-7H2,1-5H3"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998439",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:20.252029"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-cf86489096b248f0b5ba555f069230f3"
+}

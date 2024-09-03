@@ -1,0 +1,241 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[Br:1][C:2]1[CH:7]=[C:6]([NH:8][S:9]([C:12]2[CH:17]=[CH:16][C:15]([NH:18]C(=O)C)=[CH:14][CH:13]=2)(=[O:11])=[O:10])[CH:5]=[C:4]([CH3:22])[N:3]=1.Cl>[OH-].[Na+]>[NH2:18][C:15]1[CH:16]=[CH:17][C:12]([S:9]([NH:8][C:6]2[CH:5]=[C:4]([CH3:22])[N:3]=[C:2]([Br:1])[CH:7]=2)(=[O:11])=[O:10])=[CH:13][CH:14]=1 |f:2.3|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-[4-(2-bromo-6-methyl-pyridin-4-ylsulfamoyl)-phenyl]-acetamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "BrC1=NC(=CC(=C1)NS(=O)(=O)C1=CC=C(C=C1)NC(C)=O)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C14H14BrN3O3S/c1-9-7-12(8-14(15)16-9)18-22(20,21)13-5-3-11(4-6-13)17-10(2)19/h3-8H,1-2H3,(H,16,18)(H,17,19)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 1.15,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "NaOH"
+            },
+            {
+              "type": "SMILES",
+              "value": "[OH-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Na.H2O/h;1H2/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 15.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "HCl"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/ClH/h1H"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "1.15 g (0.003 mol) of N-[4-(2-bromo-6-methyl-pyridin-4-ylsulfamoyl)-phenyl]-acetamide were dissolved in 15 ml of 2N NaOH and boiled at reflux for 1 hour. After cooling the mixture was acidified to pH 5 with 2N HCl and the colourless precipitate which separated was filtered off. The material on the suction filter was washed with copious water and dried. There was obtained 0.95 g (93%) of 4-amino-N-(2-bromo-6-methyl-pyridin-4-yl)-benzenesulfonamide as colorless crystals; m.p.: >110° C. (dec.)."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "at reflux for 1 hour",
+      "duration": {
+        "value": 1.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "After cooling the mixture"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the colourless precipitate which separated"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "was filtered off"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "The material on the suction filter"
+    },
+    {
+      "type": "WASH",
+      "details": "was washed with copious water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-amino-N-(2-bromo-6-methyl-pyridin-4-yl)-benzenesulfonamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC1=CC=C(C=C1)S(=O)(=O)NC1=CC(=NC(=C1)C)Br"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C12H12BrN3O2S/c1-8-6-10(7-12(13)15-8)16-19(17,18)11-4-2-9(14)3-5-11/h2-7H,14H2,1H3,(H,15,16)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 0.95,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 93.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 92.5
+              }
+            }
+          ],
+          "isolated_color": "colorless",
+          "texture": {
+            "type": "CRYSTAL",
+            "details": "crystals"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998665",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:36.471435"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-c1b9d9e710d040f19e4361ae5249ba0a"
+}

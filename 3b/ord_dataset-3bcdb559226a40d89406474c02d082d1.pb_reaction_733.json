@@ -1,0 +1,304 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "CN1CCCC1=O.[C:8]([NH:12][C:13]1[C:22]([F:23])=[CH:21][C:16]([C:17]([O:19][CH3:20])=[O:18])=[C:15](F)[N:14]=1)([CH3:11])([CH3:10])[CH3:9].[CH3:25][C:26]([NH2:33])([CH3:32])[CH2:27][C:28]([CH3:31])([CH3:30])[CH3:29]>C(Cl)(Cl)Cl>[C:8]([NH:12][C:13]1[C:22]([F:23])=[CH:21][C:16]([C:17]([O:19][CH3:20])=[O:18])=[C:15]([NH:33][C:26]([CH3:32])([CH3:25])[CH2:27][C:28]([CH3:31])([CH3:30])[CH3:29])[N:14]=1)([CH3:11])([CH3:10])[CH3:9]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "chloroform"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(Cl)(Cl)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CHCl3/c2-1(3)4/h1H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 50.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m1_m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-methylpyrrolidone"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN1C(CCC1)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C5H9NO/c1-6-4-2-3-5(6)7/h2-4H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 7.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methyl 6-t-butylamino-2,5-difluoronicotinate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(C)(C)NC1=NC(=C(C(=O)OC)C=C1F)F"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C11H14F2N2O2/c1-11(2,3)15-9-7(12)5-6(8(13)14-9)10(16)17-4/h5H,1-4H3,(H,14,15)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 2.44,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "1,1,3,3-tetramethylbutylamine"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC(CC(C)(C)C)(C)N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H19N/c1-7(2,3)6-8(4,5)9/h6,9H2,1-5H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 4.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 140.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "the mixture was stirred at 140° C. for 16 hours"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To 7 ml N-methylpyrrolidone were added 2.44 g of methyl 6-t-butylamino-2,5-difluoronicotinate and 4.0 g of 1,1,3,3-tetramethylbutylamine, and the mixture was stirred at 140° C. for 16 hours and allowed to cool. After adding 50 ml of chloroform, the mixture was washed three times with 300 ml of distilled water. The chloroform layer was dried over anhydrous magnesium sulfate and concentrated under reduced pressure. The brown oily residue was subjected to column chromatography (silica gel, 40 g; eluent:chloroform:n-hexane, 1:1) to obtain 2.90 g of the title compound as a colorless oily residue."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "to cool"
+    },
+    {
+      "type": "WASH",
+      "details": "the mixture was washed three times with 300 ml of distilled water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 300.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "The chloroform layer was dried over anhydrous magnesium sulfate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "chloroform"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(Cl)(Cl)Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CHCl3/c2-1(3)4/h1H"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "magnesium sulfate"
+              },
+              {
+                "type": "SMILES",
+                "value": "S(=O)(=O)([O-])[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated under reduced pressure"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 16.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "methyl 6-t-butylamino-5-fluoro-2-(1,1,3,3-tetramethylbutylamino)nicotinate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(C)(C)NC1=NC(=C(C(=O)OC)C=C1F)NC(CC(C)(C)C)(C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C19H32FN3O2/c1-17(2,3)11-19(7,8)23-14-12(16(24)25-9)10-13(20)15(21-14)22-18(4,5)6/h10H,11H2,1-9H3,(H2,21,22,23)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 2.9,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 82.1
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998436",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:28.098519"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-60a3da056a764183a629e70618335e23"
+}

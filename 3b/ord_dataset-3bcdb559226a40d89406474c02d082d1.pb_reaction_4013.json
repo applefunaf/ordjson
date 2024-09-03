@@ -1,0 +1,193 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "C(O[C:4]([CH:6]([C:28]([O:30]CC)=O)[C:7]1[C:16]2[C:11](=[C:12]([NH:17][C:18](=[O:27])[C:19]3[C:24]([Cl:25])=[CH:23][CH:22]=[CH:21][C:20]=3[Cl:26])[CH:13]=[CH:14][CH:15]=2)[N:10]=[CH:9][CH:8]=1)=[O:5])C.O.[NH2:34][NH2:35]>C(O)C>[Cl:26][C:20]1[CH:21]=[CH:22][CH:23]=[C:24]([Cl:25])[C:19]=1[C:18]([NH:17][C:12]1[CH:13]=[CH:14][CH:15]=[C:16]2[C:11]=1[N:10]=[CH:9][CH:8]=[C:7]2[C:6]1[C:28]([OH:30])=[N:34][NH:35][C:4]=1[OH:5])=[O:27] |f:1.2|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-[bis(ethoxycarbonyl)methyl]-8-(2,6-dichlorobenzoylamino)quinoline"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)OC(=O)C(C1=CC=NC2=C(C=CC=C12)NC(C1=C(C=CC=C1Cl)Cl)=O)C(=O)OCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C23H20Cl2N2O5/c1-3-31-22(29)18(23(30)32-4-2)13-11-12-26-20-14(13)7-5-10-17(20)27-21(28)19-15(24)8-6-9-16(19)25/h5-12,18H,3-4H2,1-2H3,(H,27,28)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 200.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrazine monohydrate"
+            },
+            {
+              "type": "SMILES",
+              "value": "O.NN"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H4N2.H2O/c1-2;/h1-2H2;1H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 211.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 2.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture or 4-[bis(ethoxycarbonyl)methyl]-8-(2,6-dichlorobenzoylamino)quinoline (200 mg) and hydrazine monohydrate (211 mg) in ethanol (2 ml) was refluxed overnight. After cooling, the resulting precipitates were collected by the filtration, and the residue was washed with ethanol to give 8-(2,6-dichlorobenzoylamino)-4-(3,5-dihydroxypyrazol-4-yl)quinoline as a solid. The obtained solid was treated with ethanol solution of hydrogen chloride, and the precipitates were collected and recrystallized from isopropyl alcohol to give 8-(2,6-dichlorobenzoylamino)-4-(3,5-dihydroxypyrazol-4-yl)quinoline hydrochloride (95 mg)."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "After cooling"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the resulting precipitates"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "were collected by the filtration"
+    },
+    {
+      "type": "WASH",
+      "details": "the residue was washed with ethanol",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "8-(2,6-dichlorobenzoylamino)-4-(3,5-dihydroxypyrazol-4-yl)quinoline"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC1=C(C(=O)NC=2C=CC=C3C(=CC=NC23)C=2C(=NNC2O)O)C(=CC=C1)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C19H12Cl2N4O3/c20-11-4-2-5-12(21)15(11)17(26)23-13-6-1-3-10-9(7-8-22-16(10)13)14-18(27)24-25-19(14)28/h1-8H,(H,23,26)(H3,24,25,27,28)"
+            }
+          ],
+          "texture": {
+            "type": "CUSTOM",
+            "details": "solid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06008230",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:21.986011"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-1b73928adf1f4713916f0d036c66e927"
+}

@@ -1,0 +1,254 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][N:2]([CH3:25])[C:3]1[CH:8]=[CH:7][C:6]([NH:9][C:10]2[C:19]3[C:14](=[CH:15][CH:16]=[C:17]([N+:20]([O-])=O)[CH:18]=3)[N:13]=[CH:12][C:11]=2[C:23]#[N:24])=[CH:5][CH:4]=1.NN>[Pd]>[NH2:20][C:17]1[CH:18]=[C:19]2[C:14](=[CH:15][CH:16]=1)[N:13]=[CH:12][C:11]([C:23]#[N:24])=[C:10]2[NH:9][C:6]1[CH:7]=[CH:8][C:3]([N:2]([CH3:25])[CH3:1])=[CH:4][CH:5]=1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Pd/C"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Pd]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Pd"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.5,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "CATALYST"
+        }
+      ]
+    },
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-(4-dimethylaminophenylamino)-6-nitroquinoline-3-carbonitrile"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN(C1=CC=C(C=C1)NC1=C(C=NC2=CC=C(C=C12)[N+](=O)[O-])C#N)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C18H15N5O2/c1-22(2)14-5-3-13(4-6-14)21-18-12(10-19)11-20-17-8-7-15(23(24)25)9-16(17)18/h3-9,11H,1-2H3,(H,20,21)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 5.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrazine"
+            },
+            {
+              "type": "SMILES",
+              "value": "NN"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H4N2/c1-2/h1-2H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 1.2,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Example 388 155179"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "Prepared from 4-(4-dimethylaminophenylamino)-6-nitroquinoline-3-carbonitrile (5.00 g), 1.20 g of anhyd hydrazine and 0.500 g of 10% Pd/C in the same manner as Example 388 155179. After washing first with MeOH (discarded), the product was eluted with DMF. The latter solvent was collected separately, evaporated and the residue was dried in vacuo (50° C.). The yield of 6-amino-4-(4-dimethylaminophenylamino)quinoline-3-carbonitrile was 4.00 g as a yellow solid: mass spectrum (electrospray, m/e): M+H 303.9."
+  },
+  "workups": [
+    {
+      "type": "WASH",
+      "details": "After washing first with MeOH (discarded)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "MeOH"
+              },
+              {
+                "type": "SMILES",
+                "value": "CO"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "the product was eluted with DMF",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "DMF"
+              },
+              {
+                "type": "SMILES",
+                "value": "CN(C)C=O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C3H7NO/c1-4(2)3-5/h3H,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The latter solvent was collected separately"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "evaporated"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the residue was dried in vacuo (50° C.)",
+      "temperature": {
+        "setpoint": {
+          "value": 50.0,
+          "units": "CELSIUS"
+        }
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "6-Amino-4-(4-dimethylaminophenylamino)quinoline-3-carbonitrile"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC=1C=C2C(=C(C=NC2=CC1)C#N)NC1=CC=C(C=C1)N(C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C18H17N5/c1-23(2)15-6-4-14(5-7-15)22-18-12(10-19)11-21-17-8-3-13(20)9-16(17)18/h3-9,11H,20H2,1-2H3,(H,21,22)"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06002008",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:28.834363"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-b223ef843df1475da37888a631c9b979"
+}

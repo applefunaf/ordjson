@@ -1,0 +1,263 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[NH2:1][C:2]1[N:7]=[C:6]([NH2:8])[N:5]=[C:4](Cl)[N:3]=1.[CH2:10]([NH2:14])[CH2:11][CH2:12][CH3:13]>O>[NH2:1][C:2]1[N:7]=[C:6]([NH2:8])[N:5]=[C:4]([NH:14][CH2:10][CH2:11][CH2:12][CH3:13])[N:3]=1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m4_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2,4-diamino-6-chloro-1,3,5-triazine"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC1=NC(=NC(=N1)N)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H4ClN5/c4-1-7-2(5)9-3(6)8-1/h(H4,5,6,7,8,9)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 14.5,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "( a )"
+            },
+            {
+              "type": "NAME",
+              "value": "2,4-diamino-6-chloro-1,3,5-triazine"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC1=NC(=NC(=N1)N)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H4ClN5/c4-1-7-2(5)9-3(6)8-1/h(H4,5,6,7,8,9)"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "butylamine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(CCC)N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H11N/c1-2-3-4-5/h2-5H2,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 29.2,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 100.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "while stirring"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixed solution of 14.5 g (0.1 mol) of 2,4-diamino-6-chloro-1,3,5-triazine prepared in the (a), 100 mL of water and 29.2 g (0.4 mol) of butylamine was heated while stirring, followed by being finally reacted for 6 hours at reflux temperature. After cooling reaction liquid, a product was filtered, followed by washing with a large quantity of water and then with toluene. The product was dried at 70° C. in vacuo for 6 hours to obtain 17.5 g (a yield of 96%) of the above-identified compound. Melting point: 167° C."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "was heated"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "by being finally reacted for 6 hours",
+      "duration": {
+        "value": 6.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "at reflux temperature"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "After cooling"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "reaction liquid"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "a product was filtered"
+    },
+    {
+      "type": "WASH",
+      "details": "by washing with a large quantity of water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The product was dried at 70° C. in vacuo for 6 hours",
+      "duration": {
+        "value": 6.0,
+        "units": "HOUR"
+      },
+      "temperature": {
+        "setpoint": {
+          "value": 70.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to obtain 17.5 g (a yield of 96%) of the above-identified compound"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2,4-diamino-6-normalbutylamino-1,3,5-triazine"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC1=NC(=NC(=N1)N)NCCCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H14N6/c1-2-3-4-10-7-12-5(8)11-6(9)13-7/h2-4H2,1H3,(H5,8,9,10,11,12,13)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 96.0
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998573",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:30.881537"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-b3c0e54d8b7d45e4b9ff894f6bd86380"
+}

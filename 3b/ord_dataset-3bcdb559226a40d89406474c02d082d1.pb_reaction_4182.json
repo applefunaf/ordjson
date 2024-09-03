@@ -1,0 +1,260 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[C:1]([C:3]([C:12]1[CH:17]=[CH:16][C:15]([Cl:18])=[C:14]([Cl:19])[CH:13]=1)([CH2:8]CC#N)[CH2:4][C:5](O)=[O:6])#[N:2].S(=O)(=O)(O)[OH:21].[OH2:25].[C:26]([OH:29])(=O)[CH3:27]>>[C:5]([CH2:4][C:3]1([C:12]2[CH:17]=[CH:16][C:15]([Cl:18])=[C:14]([Cl:19])[CH:13]=2)[CH2:8][CH2:27][C:26](=[O:29])[NH:2][C:1]1=[O:21])([OH:6])=[O:25]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acetic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H4O2/c1-2(3)4/h1H3,(H,3,4)"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 80.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "( a )"
+            },
+            {
+              "type": "NAME",
+              "value": "3,5-dicyano-3-(3,4-dichlorophenyl)pentanoic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(#N)C(CC(=O)O)(CCC#N)C1=CC(=C(C=C1)Cl)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C13H10Cl2N2O2/c14-10-3-2-9(6-11(10)15)13(8-17,4-1-5-16)7-12(18)19/h2-3,6H,1,4,7H2,(H,18,19)"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sulphuric acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "S(O)(O)(=O)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O4S/c1-5(2,3)4/h(H2,1,2,3,4)"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 6.75,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 240.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 80.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "After stirring at 10° C. for 30 minutes"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "20 g of the derivative prepared according to (a) in 80 ml of acetic acid are introduced into a round-bottomed flask. 6.75 ml of 80% sulphuric acid are then added dropwise and the reaction mixture is heated to 80° C. and then under reflux for 1 hour and 30 minutes. The reaction mixture is then left to return to room temperature and 240 ml of iced water are added to it. After stirring at 10° C. for 30 minutes, the precipitate is separated off by filtration. The precipitate is taken up into 130 ml of acetic acid which is then distilled off in order to obtain a residue which crystallises providing 17 g of the expected product (Formula (I), X=CH2, Ar=3,4-dichlorophenyl); M. Pt.=203° C."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "20 g of the derivative prepared"
+    },
+    {
+      "type": "ADDITION",
+      "details": "are introduced into a round-bottomed flask"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "under reflux for 1 hour and 30 minutes",
+      "duration": {
+        "value": 30.0,
+        "units": "MINUTE"
+      }
+    },
+    {
+      "type": "WAIT",
+      "details": "The reaction mixture is then left"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to return to room temperature",
+      "temperature": {
+        "control": {
+          "type": "AMBIENT"
+        }
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the precipitate is separated off by filtration"
+    },
+    {
+      "type": "DISTILLATION",
+      "details": "is then distilled off in order"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to obtain a residue which"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "crystallises"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 30.0,
+        "units": "MINUTE"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "expected product"
+            },
+            {
+              "type": "NAME",
+              "value": "3-Carboxymethyl-3-(3,4-dichlorophenyl)-2,6-dioxopiperidine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(=O)(O)CC1(C(NC(CC1)=O)=O)C1=CC(=C(C=C1)Cl)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C13H11Cl2NO4/c14-8-2-1-7(5-9(8)15)13(6-11(18)19)4-3-10(17)16-12(13)20/h1-2,5H,3-4,6H2,(H,18,19)(H,16,17,20)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 17.0,
+                  "units": "GRAM"
+                }
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06008360",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:25.130712"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-c4adced8fa1d42cc9270d74eb35d50e4"
+}

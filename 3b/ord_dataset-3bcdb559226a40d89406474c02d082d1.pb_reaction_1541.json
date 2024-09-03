@@ -1,0 +1,264 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[O:1]1[CH:5]=[CH:4][C:3]([CH:6]=O)=[CH:2]1.[N+:8]([CH3:11])([O-:10])=[O:9].Cl>C(O)C.[OH-].[Na+]>[O:1]1[CH:5]=[CH:4][C:3]([CH:6]=[CH:11][N+:8]([O-:10])=[O:9])=[CH:2]1 |f:4.5|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m4_m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3-furaldehyde"
+            },
+            {
+              "type": "SMILES",
+              "value": "O1C=C(C=C1)C=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C5H4O2/c6-3-5-1-2-7-4-5/h1-4H"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 10.035,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "nitromethane"
+            },
+            {
+              "type": "SMILES",
+              "value": "[N+](=O)([O-])C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH3NO2/c1-2(3)4/h1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 6.37,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 200.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sodium hydroxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "[OH-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Na.H2O/h;1H2/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 11.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrochloric acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/ClH/h1H"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a solution of 10.035 g (104.43 mmol) of 3-furaldehyde and 6.37 g (104 mmol) of nitromethane in 200 ml of ethanol, 11.0 ml of 10 N aqueous sodium hydroxide was added dropwise under ice-cooling, after which the reaction mixture was added dropwise to about 15% aqueous hydrochloric acid; the resulting precipitate was collected by filtration, washed with water and dried to yield 2-(3-furyl)-1-nitroethylene as a brown powder (yield 9.320 g). This crude product, without purification, was used for the next reaction."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "cooling"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "the resulting precipitate was collected by filtration"
+    },
+    {
+      "type": "WASH",
+      "details": "washed with water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-(3-furyl)-1-nitroethylene"
+            },
+            {
+              "type": "SMILES",
+              "value": "O1C=C(C=C1)C=C[N+](=O)[O-]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H5NO3/c8-7(9)3-1-6-2-4-10-5-6/h1-5H"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 9.32,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 64.4
+              }
+            }
+          ],
+          "isolated_color": "brown",
+          "texture": {
+            "type": "POWDER",
+            "details": "powder"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998433",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:39.755797"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-d9f9052be37a4bb694477e1835375491"
+}

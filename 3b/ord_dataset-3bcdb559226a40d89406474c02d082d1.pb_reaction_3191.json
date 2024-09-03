@@ -1,0 +1,325 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[N+:1]([C:4]1[CH:17]=[CH:16][C:7]([C:8]([C:10]2[CH:15]=[CH:14][CH:13]=[CH:12][CH:11]=2)=[O:9])=[CH:6][C:5]=1[OH:18])([O-])=O.[Sn](Cl)Cl.[OH-].[Na+]>C(O)C>[NH2:1][C:4]1[CH:17]=[CH:16][C:7]([C:8]([C:10]2[CH:15]=[CH:14][CH:13]=[CH:12][CH:11]=2)=[O:9])=[CH:6][C:5]=1[OH:18] |f:2.3|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-nitro-3-hydroxybenzophenone"
+            },
+            {
+              "type": "SMILES",
+              "value": "[N+](=O)([O-])C1=C(C=C(C(=O)C2=CC=CC=C2)C=C1)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C13H9NO4/c15-12-8-10(6-7-11(12)14(17)18)13(16)9-4-2-1-3-5-9/h1-8,15H"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 900.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "tin (II) chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Sn](Cl)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/2ClH.Sn/h2*1H;/q;;+2/p-2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 2.5,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 50.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "NaOH"
+            },
+            {
+              "type": "SMILES",
+              "value": "[OH-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Na.H2O/h;1H2/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 80.0,
+        "units": "CELSIUS"
+      }
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture of 4-nitro-3-hydroxybenzophenone (900 mg, 3.7 mmol) and tin (II) chloride (2.5 g, 11.1 mmol) in ethanol(50 mL) was heated at 80° C. under argon. After 2 hours, the starting material has disappeared and the solution was allowed to cool down and then poured into ice. The pH was made slightly basic (pH7-8), by addition of solid NaOH, before being extracted with ethyl acetate. The organic phase was washed with brine, dried over MgSO4 and filtered. The solvent was evaporated and chromatography of the resulting solid on silica gel (4% MeOH/CH2Cl2) gave the desired product (685 mg, 87%). 1H NMR (CD3OD): δ7.65 (d, 2H), 7.55 (d,1H), 7.49 (t, 2H), 7.26 (s, 1H), 7.16 (dd, 1H), 6.68 (d, 1H)."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "to cool down"
+    },
+    {
+      "type": "ADDITION",
+      "details": "poured into ice"
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "before being extracted with ethyl acetate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "The organic phase was washed with brine",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "brine"
+              },
+              {
+                "type": "SMILES",
+                "value": "[Cl-].[Na+].O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH.Na.H2O/h1H;;1H2/q;+1;/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "dried over MgSO4",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "MgSO4"
+              },
+              {
+                "type": "SMILES",
+                "value": "[O-]S(=O)(=O)[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filtered"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The solvent was evaporated"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 2.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "desired product"
+            },
+            {
+              "type": "NAME",
+              "value": "4-amino-3-hydroxybenzophenone"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC1=C(C=C(C(=O)C2=CC=CC=C2)C=C1)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C13H11NO2/c14-11-7-6-10(8-12(11)15)13(16)9-4-2-1-3-5-9/h1-8,15H,14H2"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 685.0,
+                  "units": "MILLIGRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 87.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 86.8
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06005008",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:21.226981"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-0122b910a34a45b09bd7db452cb83221"
+}

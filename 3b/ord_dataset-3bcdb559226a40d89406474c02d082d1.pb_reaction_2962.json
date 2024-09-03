@@ -1,0 +1,342 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "B(Br)(Br)[Br:2].[F:5][C:6]1[CH:7]=[C:8]2[C:13](=[CH:14][C:15]=1[O:16]C)[CH2:12][N:11]([NH:18][C:19]1[CH:24]=[CH:23][N:22]=[CH:21][CH:20]=1)[CH2:10][CH2:9]2>ClCCl>[BrH:2].[F:5][C:6]1[CH:7]=[C:8]2[C:13](=[CH:14][C:15]=1[OH:16])[CH2:12][N:11]([NH:18][C:19]1[CH:20]=[CH:21][N:22]=[CH:23][CH:24]=1)[CH2:10][CH2:9]2 |f:3.4|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Boron tribromide"
+            },
+            {
+              "type": "SMILES",
+              "value": "B(Br)(Br)Br"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/BBr3/c2-1(3)4"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 8.8,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "6-fluoro-7-methoxy-2-(4-pyridinylamino)-1,2,3,4-tetrahydroisoquinoline"
+            },
+            {
+              "type": "SMILES",
+              "value": "FC=1C=C2CCN(CC2=CC1OC)NC1=CC=NC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C15H16FN3O/c1-20-15-9-12-10-19(7-4-11(12)8-14(15)16)18-13-2-5-17-6-3-13/h2-3,5-6,8-9H,4,7,10H2,1H3,(H,17,18)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 2.9,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "dichloromethane"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClCCl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 200.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "the suspension was stirred at ambient temperature for 3 hrs"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "Boron tribromide (8.8 g) was added dropwise to a solution of 6-fluoro-7-methoxy-2-(4-pyridinylamino)-1,2,3,4-tetrahydroisoquinoline (2.9 g) in dichloromethane (200 mL) at -78° C. The dry ice bath was removed, and the suspension was stirred at ambient temperature for 3 hrs. The reaction mixture was cooled to -78° C., and methanol (100 mL) was added. The mixture was stirred at ambient temperature for 1 hr and concentrated in vacuo. The residue was washed with methanol/ethyl ether and recrystallized from 2-propanol/ethyl acetate to give 0.61 g (17%) of product, mp 244-245° C. (dec)."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "The dry ice bath was removed",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "dry ice"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(=O)=O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CO2/c2-1-3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "The reaction mixture was cooled to -78° C.",
+      "temperature": {
+        "setpoint": {
+          "value": -78.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "ADDITION",
+      "details": "methanol (100 mL) was added",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "methanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "CO"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 100.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "STIRRING",
+      "details": "The mixture was stirred at ambient temperature for 1 hr",
+      "duration": {
+        "value": 1.0,
+        "units": "HOUR"
+      },
+      "temperature": {
+        "control": {
+          "type": "AMBIENT"
+        }
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated in vacuo"
+    },
+    {
+      "type": "WASH",
+      "details": "The residue was washed with methanol/ethyl ether",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "methanol ethyl ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "CO.C(C)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O.CH4O/c1-3-5-4-2;1-2/h3-4H2,1-2H3;2H,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "recrystallized from 2-propanol/ethyl acetate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "2-propanol ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "CC(C)O.C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2.C3H8O/c1-3-6-4(2)5;1-3(2)4/h3H2,1-2H3;3-4H,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 3.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "product"
+            },
+            {
+              "type": "NAME",
+              "value": "6-Fluoro-2-(4-pyridinylamino)-1,2,3,4-tetrahydroisoquinolin-7-ol hydrobromide"
+            },
+            {
+              "type": "SMILES",
+              "value": "Br.FC=1C=C2CCN(CC2=CC1O)NC1=CC=NC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C14H14FN3O.BrH/c15-13-7-10-3-6-18(9-11(10)8-14(13)19)17-12-1-4-16-5-2-12;/h1-2,4-5,7-8,19H,3,6,9H2,(H,16,17);1H"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 0.61,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 17.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 16.9
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06004977",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:18.024286"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-6b5bd79ca8b543018d8dfc7005c109a2"
+}

@@ -1,0 +1,248 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[C:1]1([CH:7]([N:9]2[CH2:14][CH2:13][N:12](C(OC(C)(C)C)=O)[CH2:11][C:10]2=[O:22])[CH3:8])[CH:6]=[CH:5][CH:4]=[CH:3][CH:2]=1.FC(F)(F)C(O)=O>C(Cl)Cl>[C:1]1([CH:7]([N:9]2[CH2:14][CH2:13][NH:12][CH2:11][C:10]2=[O:22])[CH3:8])[CH:6]=[CH:5][CH:4]=[CH:3][CH:2]=1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "1-(1-phenylethyl)-4-(tert-butyloxycarbonyl)piperazin-2-one"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1(=CC=CC=C1)C(C)N1C(CN(CC1)C(=O)OC(C)(C)C)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C17H24N2O3/c1-13(14-8-6-5-7-9-14)19-11-10-18(12-15(19)20)16(21)22-17(2,3)4/h5-9,13H,10-12H2,1-4H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 673.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "trifluoroacetic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "FC(C(=O)O)(F)F"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2HF3O2/c3-2(4,5)1(6)7/h(H,6,7)"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 4.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "CH2Cl2"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(Cl)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 40.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "Prepared in the same manner as that described in Example 5, Step 2, using 1-(1-phenylethyl)-4-(tert-butyloxycarbonyl)piperazin-2-one (673 mg, 2.2 mmol), trifluoroacetic acid (4 mL) and CH2Cl2 (40 mL). The crude product was chromatographed on silica gel, eluting with CH2Cl2 :MeOH (90:10), to afford the amine (307 mg, 68%) as a colourless oil. 1H NMR (250 MHz, CDCl3) δ1.53 (3H, d, J=7.2 Hz), 2.75-2.94 (2H, m), 2.98-3.07 (1H, m), 3.12-3.21 (1H, m), 3.62 (2H, s), 6.13 (1H, q, J=7.2 Hz), 7.24-7.39 (5H, m)."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "Prepared in the same manner as"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The crude product was chromatographed on silica gel",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "crude product"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "eluting with CH2Cl2 :MeOH (90:10)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "CH2Cl2 MeOH"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(Cl)Cl.CO"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2Cl2.CH4O/c2-1-3;1-2/h1H2;2H,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "amine"
+            },
+            {
+              "type": "NAME",
+              "value": "1-(1-Phenylethyl)piperazin-2-one"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1(=CC=CC=C1)C(C)N1C(CNCC1)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C12H16N2O/c1-10(11-5-3-2-4-6-11)14-8-7-13-9-12(14)15/h2-6,10,13H,7-9H2,1H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 307.0,
+                  "units": "MILLIGRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 68.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 68.3
+              }
+            }
+          ],
+          "isolated_color": "colourless",
+          "texture": {
+            "type": "OIL",
+            "details": "oil"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998415",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:18.181382"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-917abd0e89f946129d38a0f212983a5a"
+}

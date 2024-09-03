@@ -1,0 +1,327 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[NH2:1][C:2]1[CH:7]=[CH:6][C:5]([CH2:8][C:9]([O:11][CH3:12])=[O:10])=[CH:4][CH:3]=1.[N:13]([O-])=O.[Na+].[Cl:17][Sn]Cl>Cl.O>[ClH:17].[NH:1]([C:2]1[CH:3]=[CH:4][C:5]([CH2:8][C:9]([O:11][CH3:12])=[O:10])=[CH:6][CH:7]=1)[NH2:13] |f:1.2,6.7|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m7": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 50.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m1_m4_m2_m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methyl 4-aminophenylacetate"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC1=CC=C(C=C1)CC(=O)OC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H11NO2/c1-12-9(11)6-7-2-4-8(10)5-3-7/h2-5H,6,10H2,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 5.5,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "NaNO2"
+            },
+            {
+              "type": "SMILES",
+              "value": "N(=O)[O-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/HNO2.Na/c2-1-3;/h(H,2,3);/q;+1/p-1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 2.3,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "HCl"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/ClH/h1H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 35.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 10.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m3_m6": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "SnCl2"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl[Sn]Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/2ClH.Sn/h2*1H;/q;;+2/p-2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 19.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "HCl"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/ClH/h1H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 10.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 2.5,
+        "precision": 2.5,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "After stirring for 30 minutes"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a solution of methyl 4-aminophenylacetate (5.5 g, 33.3 mmol) in concentrated HCl (35 mL) at 0° C. is added a solution of NaNO2 (2.3 g, 33.3 mmol) in water (10 mL). The temperature of the reaction is maintained at 0-5° C. After stirring for 30 minutes, a solution of SnCl2 (19 g, 99.9 mmol) in concentrated HCl (10 mL) is added and the mixture is vigorously stirred with a stirring rod. The mixture is then diluted with water (50 mL), and the resulting precipitate is collected by suction filtration and washed with water. The solid is dried under vacuum to give 5 g of 18, which is used without further purification."
+  },
+  "workups": [
+    {
+      "type": "STIRRING",
+      "details": "the mixture is vigorously stirred with a stirring rod"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "the resulting precipitate is collected by suction filtration"
+    },
+    {
+      "type": "WASH",
+      "details": "washed with water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The solid is dried under vacuum"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 30.0,
+        "units": "MINUTE"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "18"
+            },
+            {
+              "type": "NAME",
+              "value": "methyl 4-hydrazinophenylacetate hydrochloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl.N(N)C1=CC=C(C=C1)CC(=O)OC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H12N2O2.ClH/c1-13-9(12)6-7-2-4-8(11-10)5-3-7;/h2-5,11H,6,10H2,1H3;1H"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 5.0,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 69.3
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06004536",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:15.818498"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-507f2ffd486e4ce1927227d526c2bc5b"
+}

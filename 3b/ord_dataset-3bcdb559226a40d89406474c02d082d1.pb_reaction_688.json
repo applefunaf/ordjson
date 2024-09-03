@@ -1,0 +1,357 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "O.Cl.[Cl:3][C:4]1[C:9]([N+:10]([O-])=O)=[CH:8][C:7]([N+:13]([O-])=O)=[CH:6][N:5]=1>C(O)C.[Fe]>[NH2:10][C:9]1[C:4]([Cl:3])=[N:5][CH:6]=[C:7]([NH2:13])[CH:8]=1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrochloric acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/ClH/h1H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 1.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-chloro-3,5-dinitropyridine"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC1=NC=C(C=C1[N+](=O)[O-])[N+](=O)[O-]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C5H2ClN3O4/c6-5-4(9(12)13)1-3(2-7-5)8(10)11/h1-2H"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 1.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 5.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m5_m1_m6": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 5.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "iron"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Fe]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Fe"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 2.19,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "CATALYST"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 10.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 80.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "was stirred at 80° C. for 2 minutes"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "The mixture of 2.19 g of iron powder, 5 ml of water, and 10 ml of ethanol was stirred at 80° C. for 2 minutes. After incremental addition of 1 ml concentrated hydrochloric acid, the mixture was stirred at the same temperature until the solution became neutral. To the reaction solution was incrementally added suspension of 1 g 2-chloro-3,5-dinitropyridine in 5 ml ethanol, and the mixture was stirred at 80° C. for 40 minutes. The reaction solution was allowed to cool, and the iron was removed by filtration with celite, and the solvent of the filtrate was distilled off. Ethanol was added to the residue to disperse the solid content, and the solid content was collected by filtration to obtain 360 mg of the title compound."
+  },
+  "workups": [
+    {
+      "type": "STIRRING",
+      "details": "the mixture was stirred at the same temperature until the solution"
+    },
+    {
+      "type": "STIRRING",
+      "details": "the mixture was stirred at 80° C. for 40 minutes",
+      "duration": {
+        "value": 40.0,
+        "units": "MINUTE"
+      },
+      "temperature": {
+        "setpoint": {
+          "value": 80.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "to cool"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the iron was removed by filtration with celite",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "iron"
+              },
+              {
+                "type": "SMILES",
+                "value": "[Fe]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Fe"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DISTILLATION",
+      "details": "the solvent of the filtrate was distilled off"
+    },
+    {
+      "type": "ADDITION",
+      "details": "Ethanol was added to the residue",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "Ethanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "ADDITION",
+      "details": "to disperse the solid content"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "the solid content was collected by filtration"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 2.0,
+        "units": "MINUTE"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "3,5-diamino-2-chloropyridine"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC=1C(=NC=C(C1)N)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C5H6ClN3/c6-5-4(8)1-3(7)2-9-5/h1-2H,7-8H2"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 360.0,
+                  "units": "MILLIGRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 51.0
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998436",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:27.386001"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-eaa903b12e97445e984ac3ca8d4591e7"
+}

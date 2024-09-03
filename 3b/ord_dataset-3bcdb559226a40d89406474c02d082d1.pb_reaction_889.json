@@ -1,0 +1,408 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][N:2]([CH3:6])[CH2:3][CH2:4][OH:5].C(N([CH2:12][CH3:13])CC)C.[C:14](Cl)(=[O:18])[CH:15](C)C>O1CCCC1>[C:14]([O:5][CH2:4][CH2:3][N:2]([CH3:6])[CH3:1])(=[O:18])[CH2:15][CH2:12][CH3:13]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m3_m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "isobutyryl chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C(C)C)(=O)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H7ClO/c1-3(2)4(5)6/h3H,1-2H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 5.5,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "tetrahydrofuran"
+            },
+            {
+              "type": "SMILES",
+              "value": "O1CCCC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O/c1-2-4-5-3-1/h1-4H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 10.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m1_m4_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N,N-dimethyl ethanolamine"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN(CCO)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H11NO/c1-5(2)3-4-6/h6H,3-4H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 4.45,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "triethylamine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)N(CC)CC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H15N/c1-4-7(5-2)6-3/h4-6H2,1-3H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 5.05,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "tetrahydrofuran"
+            },
+            {
+              "type": "SMILES",
+              "value": "O1CCCC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O/c1-2-4-5-3-1/h1-4H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 140.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 0.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "stirred for 15 min"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a solution of N,N-dimethyl ethanolamine (4.45 g, 0.05 mol) in 140 mL of anhydrous tetrahydrofuran at room temperature under nitrogen was added triethylamine (5.05 g, 0.05 mol) and stirred for 15 min. The reaction mixture was then cooled at 0° C. and isobutyryl chloride (5.5 g, 0.05 mol) in 10 mL of tetrahydrofuran was added dropwise over 20 min. The resulting suspension was allowed to warm to room temperature and stirred overnight. The resulting solution was filtered and the solvent evaporated. The resulting product was then diluted by adding 200 mL of ether and subsequently washed with 10% aqueous NaOH solution, water and brine. After removal of the solvent, the crude product was chromatographed on a silica gel column using chloroform as the eluent to give liquid product (1.44 g, 50%). 1H NMR (CDCI3): δ 4.10 (t, J=5.82 Hz, 2H), 2.50 (m, 3H), 2.21 (s, 6H), 1.11 (s, 3H), 1.08 (s, 3H); MS m/z 159 (M+), 115, 71, 58 (100%), 42."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "to warm to room temperature",
+      "temperature": {
+        "control": {
+          "type": "AMBIENT"
+        }
+      }
+    },
+    {
+      "type": "STIRRING",
+      "details": "stirred overnight",
+      "duration": {
+        "value": 8.0,
+        "precision": 8.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "The resulting solution was filtered"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the solvent evaporated"
+    },
+    {
+      "type": "ADDITION",
+      "details": "The resulting product was then diluted"
+    },
+    {
+      "type": "ADDITION",
+      "details": "by adding 200 mL of ether",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 200.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "subsequently washed with 10% aqueous NaOH solution, water and brine",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "NaOH"
+              },
+              {
+                "type": "SMILES",
+                "value": "[OH-].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Na.H2O/h;1H2/q+1;/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "brine"
+              },
+              {
+                "type": "SMILES",
+                "value": "[Cl-].[Na+].O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH.Na.H2O/h1H;;1H2/q;+1;/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "After removal of the solvent"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the crude product was chromatographed on a silica gel column",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "crude product"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 15.0,
+        "units": "MINUTE"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "product"
+            },
+            {
+              "type": "NAME",
+              "value": "2-(Dimethylamino)ethyl butyrate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(CCC)(=O)OCCN(C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H17NO2/c1-4-5-8(10)11-7-6-9(2)3/h4-7H2,1-3H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 1.44,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 50.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 18.1
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998496",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:30.835388"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-a56716896401455bba2aa217efc348f2"
+}

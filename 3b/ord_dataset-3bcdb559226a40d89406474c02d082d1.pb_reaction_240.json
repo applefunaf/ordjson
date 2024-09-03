@@ -1,0 +1,391 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][N:2]1[CH2:6][CH2:5][CH:4]([OH:7])[CH2:3]1.C([Li])CCC.[CH2:13]([O:17][C:18]1[C:22](S(C)(=O)=O)=[N:21][S:20][N:19]=1)[CH2:14][CH2:15][CH3:16]>C1COCC1.CCCCCC>[CH2:13]([O:17][C:18]1[C:22]([O:7][CH:4]2[CH2:5][CH2:6][N:2]([CH3:1])[CH2:3]2)=[N:21][S:20][N:19]=1)[CH2:14][CH2:15][CH3:16]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m4_m2_m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "1-methyl-3-pyrrolidinol"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN1CC(CC1)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C5H11NO/c1-6-3-2-5(7)4-6/h5,7H,2-4H2,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.6,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "n-butyllithium"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(CCC)[Li]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H9.Li/c1-3-4-2;/h1,3-4H2,2H3;"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "THF"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1CCOC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O/c1-2-4-5-3-1/h1-4H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 20.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hexane"
+            },
+            {
+              "type": "SMILES",
+              "value": "CCCCCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H14/c1-3-5-6-4-2/h3-6H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 3.1,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3-butyloxy-4-methanesulfonyl-1,2,5-thiadiazole"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(CCC)OC1=NSN=C1S(=O)(=O)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H12N2O3S2/c1-3-4-5-12-6-7(9-13-8-6)14(2,10)11/h3-5H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 1.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A solution of 1-methyl-3-pyrrolidinol (0.6 g, 0.0059 mol) in THF (20 mL) was treated with 1.6 M n-butyllithium in hexane (3.1 mL), 0.005 mol). To the solution was added 3-butyloxy-4-methanesulfonyl-1,2,5-thiadiazole (1.0 g, 0.0042 mol) and the reaction heated to reflux overnight. The solvent was evaporated, the residue acidified with cold 1 N HCl, and the mixture extracted with ether. The aqueous fraction was made basic, extracted with EtOAc, and the extracts washed with water. The extracts were dried and the solvent evaporated to give a liquid. The HCl salt (0.7 g) crystallized from EtOAc, m.p. 157-158° C. (Compound 28)."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "the reaction heated"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "to reflux overnight",
+      "duration": {
+        "value": 8.0,
+        "precision": 8.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The solvent was evaporated"
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "the mixture extracted with ether",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "extracted with EtOAc",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "EtOAc"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOC(=O)C"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "the extracts washed with water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The extracts were dried"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the solvent evaporated"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to give a liquid"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The HCl salt (0.7 g) crystallized from EtOAc, m.p. 157-158° C. (Compound 28)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "HCl"
+              },
+              {
+                "type": "SMILES",
+                "value": "Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH/h1H"
+              }
+            ],
+            "amount": {
+              "mass": {
+                "value": 0.7,
+                "units": "GRAM"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "EtOAc"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOC(=O)C"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "Compound 28"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "(±)-3-Butyloxy-4-(1-methyl-3-pyrrolidinyloxy)-1,2,5-thiadiazole"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(CCC)OC1=NSN=C1OC1CN(CC1)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C11H19N3O2S/c1-3-4-7-15-10-11(13-17-12-10)16-9-5-6-14(2)8-9/h9H,3-8H2,1-2H3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998434",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:19.741713"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-7d2888548d7b4be78bd15a8dfec3389e"
+}

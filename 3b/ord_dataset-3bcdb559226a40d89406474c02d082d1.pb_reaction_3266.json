@@ -1,0 +1,306 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][C:2]1[CH:7]=[CH:6][C:5]([C:8]2[C:9]([CH:14]=O)=[CH:10][CH:11]=[CH:12][CH:13]=2)=[CH:4][CH:3]=1.Cl.O[NH2:18].C(OC(=O)C)(=O)C>N1C=CC=CC=1>[C:14]([C:9]1[CH:10]=[CH:11][CH:12]=[CH:13][C:8]=1[C:5]1[CH:6]=[CH:7][C:2]([CH3:1])=[CH:3][CH:4]=1)#[N:18] |f:1.2|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4'-methyl-2-biphenylcarbaldehyde"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC1=CC=C(C=C1)C=1C(=CC=CC1)C=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C14H12O/c1-11-6-8-12(9-7-11)14-5-3-2-4-13(14)10-15/h2-10H,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 2.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydroxyamine hydrochloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl.ON"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/ClH.H3NO/c;1-2/h1H;2H,1H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 1.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "pyridine"
+            },
+            {
+              "type": "SMILES",
+              "value": "N1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C5H5N/c1-2-4-6-5-3-1/h1-5H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 10.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acetic anhydride"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)OC(C)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H6O3/c1-3(5)7-4(2)6/h1-2H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 4.1,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "was stirred at room temperature for 15 min."
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture of 4'-methyl-2-biphenylcarbaldehyde (2.0 g) and hydroxyamine hydrochloride (1.0 g) in pyridine (10 ml) was stirred at room temperature for 15 min., followed by addition of acetic anhydride (4.1 g). The reaction mixture was stirred at 90-100° C. for 1 hr. and concentrated to dryness. After addition of water to the residue, the precipitated crystals were collected by filtration. Recrystallization from hexane gave colorless needles (1.5 g, 79%)."
+  },
+  "workups": [
+    {
+      "type": "STIRRING",
+      "details": "The reaction mixture was stirred at 90-100° C. for 1 hr",
+      "duration": {
+        "value": 1.0,
+        "units": "HOUR"
+      },
+      "temperature": {
+        "setpoint": {
+          "value": 95.0,
+          "precision": 5.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "and concentrated to dryness"
+    },
+    {
+      "type": "ADDITION",
+      "details": "After addition of water to the residue",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "the precipitated crystals were collected by filtration"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "Recrystallization from hexane",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "hexane"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCCCCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C6H14/c1-3-5-6-4-2/h3-6H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 15.0,
+        "units": "MINUTE"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "needles"
+            },
+            {
+              "type": "NAME",
+              "value": "2-Cyano-4'-methylbiphenyl"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(#N)C1=C(C=CC=C1)C1=CC=C(C=C1)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C14H11N/c1-11-6-8-12(9-7-11)14-5-3-2-4-13(14)10-15/h2-9H,1H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 1.5,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 79.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 76.2
+              }
+            }
+          ],
+          "texture": {
+            "type": "CRYSTAL",
+            "details": "needles"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06004989",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:22.498342"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-95aa2bbab7ea41ec844b7ebf36a740d9"
+}

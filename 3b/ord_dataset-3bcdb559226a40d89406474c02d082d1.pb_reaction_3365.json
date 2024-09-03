@@ -1,0 +1,318 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[C:1]([O:5][C:6]([NH:8][CH2:9][CH2:10][O:11][C:12]1[C:16]([C:17](O)=[O:18])=[C:15]([C:20]2[CH:25]=[CH:24][CH:23]=[CH:22][CH:21]=2)[O:14][N:13]=1)=[O:7])([CH3:4])([CH3:3])[CH3:2].C(N1C=CN=C1)([N:28]1C=CN=C1)=O.N>O1CCCC1>[C:1]([O:5][C:6]([NH:8][CH2:9][CH2:10][O:11][C:12]1[C:16]([C:17](=[O:18])[NH2:28])=[C:15]([C:20]2[CH:25]=[CH:24][CH:23]=[CH:22][CH:21]=2)[O:14][N:13]=1)=[O:7])([CH3:4])([CH3:3])[CH3:2]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3-(2-(N-tert-Butoxycarbonylamino)ethoxy)-4-carboxy-5-phenylisoxazole"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(C)(C)OC(=O)NCCOC1=NOC(=C1C(=O)O)C1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C17H20N2O6/c1-17(2,3)24-16(22)18-9-10-23-14-12(15(20)21)13(25-19-14)11-7-5-4-6-8-11/h4-8H,9-10H2,1-3H3,(H,18,22)(H,20,21)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.6,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "tetrahydrofuran"
+            },
+            {
+              "type": "SMILES",
+              "value": "O1CCCC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O/c1-2-4-5-3-1/h1-4H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 6.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "carbonyldiimidazole"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(=O)(N1C=NC=C1)N1C=NC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H6N4O/c12-7(10-3-1-8-5-10)11-4-2-9-6-11/h1-6H"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.31,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ammonia"
+            },
+            {
+              "type": "SMILES",
+              "value": "N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H3N/h1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 1.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "with stirring"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "3-(2-(N-tert-Butoxycarbonylamino)ethoxy)-4-carboxy-5-phenylisoxazole (0.6 g) was dissolved in tetrahydrofuran (6 ml) and carbonyldiimidazole (0.31 g) was added thereto under ice-cooling with stirring, followed by stirring of the mixture at room temperature for 30 minutes. Aqueous ammonia (1 ml) was added dropwise to the reaction mixture and the mixture was stirred at room temperature for one hour. The reaction mixture was poured into ice-cold water and extracted with ethyl acetate. The organic layer was washed with a saturated aqueous NaCl solution and dried using anhydrous magnesium sulfate. After filtration, the solvent was evaporated under reduced pressure to obtain the title compound (0.60 g, quantitative) as a colorless powder."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "under ice-cooling"
+    },
+    {
+      "type": "STIRRING",
+      "details": "by stirring of the mixture at room temperature for 30 minutes",
+      "duration": {
+        "value": 30.0,
+        "units": "MINUTE"
+      },
+      "temperature": {
+        "control": {
+          "type": "AMBIENT"
+        }
+      }
+    },
+    {
+      "type": "STIRRING",
+      "details": "the mixture was stirred at room temperature for one hour",
+      "duration": {
+        "value": 1.0,
+        "units": "HOUR"
+      },
+      "temperature": {
+        "control": {
+          "type": "AMBIENT"
+        }
+      }
+    },
+    {
+      "type": "ADDITION",
+      "details": "The reaction mixture was poured into ice-cold water"
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "extracted with ethyl acetate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "The organic layer was washed with a saturated aqueous NaCl solution",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "NaCl"
+              },
+              {
+                "type": "SMILES",
+                "value": "[Na+].[Cl-]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH.Na/h1H;/q;+1/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "After filtration"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the solvent was evaporated under reduced pressure"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "3-(2-(N-tert-Butoxycarbonylamino)ethoxy)-4-carbamoyl-5-phenylisoxazole"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(C)(C)OC(=O)NCCOC1=NOC(=C1C(N)=O)C1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C17H21N3O5/c1-17(2,3)24-16(22)19-9-10-23-15-12(14(18)21)13(25-20-15)11-7-5-4-6-8-11/h4-8H,9-10H2,1-3H3,(H2,18,21)(H,19,22)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 0.6,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 100.3
+              }
+            }
+          ],
+          "isolated_color": "colorless",
+          "texture": {
+            "type": "POWDER",
+            "details": "powder"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06005116",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:23.913240"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-736f8bb1880540ebac0e045ea27e2098"
+}

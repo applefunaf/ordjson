@@ -1,0 +1,251 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][O:2][C:3]1[CH:4]=[C:5]2[C:9](=[CH:10][CH:11]=1)[NH:8][CH:7]=[C:6]2[CH2:12][CH2:13][N:14]1[C:19](=[O:20])[CH2:18][CH2:17][CH2:16][C:15]1=[O:21].Cl.N.CS(C)=[O:26]>>[CH3:1][O:2][C:3]1[CH:4]=[C:5]2[C:9](=[CH:10][CH:11]=1)[NH:8][C:7](=[O:26])[CH:6]2[CH2:12][CH2:13][N:14]1[C:15](=[O:21])[CH2:16][CH2:17][CH2:18][C:19]1=[O:20]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "NH3"
+            },
+            {
+              "type": "SMILES",
+              "value": "N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H3N/h1H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "HCl"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/ClH/h1H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 72.0,
+              "units": "MICROLITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m1_m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-[2-(5-methoxyindol-3-yl)ethyl]glutarimide"
+            },
+            {
+              "type": "SMILES",
+              "value": "COC=1C=C2C(=CNC2=CC1)CCN1C(CCCC1=O)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C16H18N2O3/c1-21-12-5-6-14-13(9-12)11(10-17-14)7-8-18-15(19)3-2-4-16(18)20/h5-6,9-10,17H,2-4,7-8H2,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 145.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "DMSO"
+            },
+            {
+              "type": "SMILES",
+              "value": "CS(=O)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6OS/c1-4(2)3/h1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 30.0,
+              "units": "MICROLITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "crude product"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "with stirring"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "145 mg of N-[2-(5-methoxyindol-3-yl)ethyl]glutarimide are dissolved in DMSO (30 μl) in a round-bottomed flask and concentrated HCl (72 μl) is added with stirring. The mixture is stirred overnight at room temperature. The crude product is neutralized with NH3 and then extracted with EtOAc. After separation on a silica plate, N-[2-(5-methoxy-2-oxo-2,3-dihydroindol-3-yl)ethyl]-glutarimide is obtained."
+  },
+  "workups": [
+    {
+      "type": "STIRRING",
+      "details": "The mixture is stirred overnight at room temperature",
+      "duration": {
+        "value": 8.0,
+        "precision": 8.0,
+        "units": "HOUR"
+      },
+      "temperature": {
+        "control": {
+          "type": "AMBIENT"
+        }
+      }
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "extracted with EtOAc",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "EtOAc"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOC(=O)C"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "After separation on a silica plate"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-[2-(5-methoxy-2-oxo-2,3-dihydroindol-3-yl)ethyl]-glutarimide"
+            },
+            {
+              "type": "SMILES",
+              "value": "COC=1C=C2C(C(NC2=CC1)=O)CCN1C(CCCC1=O)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C16H18N2O4/c1-22-10-5-6-13-12(9-10)11(16(21)17-13)7-8-18-14(19)3-2-4-15(18)20/h5-6,9,11H,2-4,7-8H2,1H3,(H,17,21)"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06004991",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:18.915347"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-04bb05f90d0e4b4bb7ac766b843e09e1"
+}

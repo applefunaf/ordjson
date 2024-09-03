@@ -1,0 +1,322 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[Cl:1][C:2]1[C:12]([CH:13]=O)=[CH:11][CH:10]=[C:9]([Si:15]([CH3:18])([CH3:17])[CH3:16])[C:3]=1[C:4]([NH:6][CH2:7][CH3:8])=[O:5].Cl.[NH2:20]O.C(OC(=O)C)(=O)C>N1C=CC=CC=1>[Cl:1][C:2]1[C:12]([C:13]#[N:20])=[CH:11][CH:10]=[C:9]([Si:15]([CH3:18])([CH3:17])[CH3:16])[C:3]=1[C:4]([NH:6][CH2:7][CH3:8])=[O:5] |f:1.2|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "compound"
+            },
+            {
+              "type": "NAME",
+              "value": "2-Chloro-N-ethyl-3-formyl-6-(trimethylsilyl)benzamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC1=C(C(=O)NCC)C(=CC=C1C=O)[Si](C)(C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C13H18ClNO2Si/c1-5-15-13(17)11-10(18(2,3)4)7-6-9(8-16)12(11)14/h6-8H,5H2,1-4H3,(H,15,17)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.28,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydroxylamine hydrochloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl.NO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/ClH.H3NO/c;1-2/h1H;2H,1H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.12,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "pyridine"
+            },
+            {
+              "type": "SMILES",
+              "value": "N1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C5H5N/c1-2-4-6-5-3-1/h1-5H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 10.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Acetic anhydride"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)OC(C)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H6O3/c1-3(5)7-4(2)6/h1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 0.75,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 100.0,
+        "units": "CELSIUS"
+      }
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A solution of the compound of Example 223 (0.28 g, 1.0 mmol) and hydroxylamine hydrochloride (0.12 g, 1.7 mmol) in pyridine (10 mL) was stirred at RT for 2 h. Acetic anhydride (0.75 mL, 8.0 mmol) was added and the solution was heated at 100° C. for 1.5 h. The mixture was concentrated, water added and the mixture extracted with ether. The organic layers were washed with 0.5 N HCl, sat NaHCO3, brine, dried (MgSO4) and concentrated to afford the title compound. The crude product was purified by recrystallization from ethyl acetate/hexanes to afford 0.21 g of white needles (74%). m.p. 111-112° C."
+  },
+  "workups": [
+    {
+      "type": "CONCENTRATION",
+      "details": "The mixture was concentrated"
+    },
+    {
+      "type": "ADDITION",
+      "details": "water added",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "the mixture extracted with ether",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "The organic layers were washed with 0.5 N HCl",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "HCl"
+              },
+              {
+                "type": "SMILES",
+                "value": "Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH/h1H"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "dried (MgSO4)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "MgSO4"
+              },
+              {
+                "type": "SMILES",
+                "value": "[O-]S(=O)(=O)[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "2-Chloro-3-cyano-N-ethyl-6-(trimethylsilyl)benzamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC1=C(C(=O)NCC)C(=CC=C1C#N)[Si](C)(C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C13H17ClN2OSi/c1-5-16-13(17)11-10(18(2,3)4)7-6-9(8-15)12(11)14/h6-7H,5H2,1-4H3,(H,16,17)"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998466",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:38.364629"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-7df1d13ba34945f899f5b55258a3e908"
+}

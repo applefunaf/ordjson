@@ -1,0 +1,337 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[F:1][C:2]1[CH:15]=[CH:14][CH:13]=[C:12]([F:16])[C:3]=1[C:4]([NH:6][C@H:7]([C:9]([OH:11])=[O:10])[CH3:8])=[O:5].[OH-].[Na+].[F:19][C:20](=[C:24]([F:26])[F:25])[CH2:21][CH2:22]Br>CS(C)=O.O>[F:1][C:2]1[CH:15]=[CH:14][CH:13]=[C:12]([F:16])[C:3]=1[C:4]([NH:6][C@H:7]([C:9]([O:11][CH2:22][CH2:21][C:20]([F:19])=[C:24]([F:26])[F:25])=[O:10])[CH3:8])=[O:5] |f:1.2|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m6": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m1_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-(2,6-difluorobenzoyl)alanine"
+            },
+            {
+              "type": "SMILES",
+              "value": "FC1=C(C(=O)N[C@@H](C)C(=O)O)C(=CC=C1)F"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C10H9F2NO3/c1-5(10(15)16)13-9(14)8-6(11)3-2-4-7(8)12/h2-5H,1H3,(H,13,14)(H,15,16)/t5-/m0/s1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 6.4,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "dimethyl sulphoxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "CS(=O)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6OS/c1-4(2)3/h1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 50.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sodium hydroxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "[OH-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Na.H2O/h;1H2/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 1.2,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3,4,4-trifluorobut-3-enyl bromide"
+            },
+            {
+              "type": "SMILES",
+              "value": "FC(CCBr)=C(F)F"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H4BrF3/c5-2-1-3(6)4(7)8/h1-2H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 5.7,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 20.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "the mixture is stirred at 20° C. overnight"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "6.4 g (28 mmol) of N-(2,6-difluorobenzoyl)alanine are dissolved in 50 ml of dimethyl sulphoxide (DMSO) and admixed with 1.2 g (31 mmol) of sodium hydroxide dissolved in a little water. 5.7 g (30 mmol) of 3,4,4-trifluorobut-3-enyl bromide are subsequently added, and the mixture is stirred at 20° C. overnight. The mixture is then poured into water and the product is extracted with ethyl acetate and subsequently purified by column chromatography over silica gel using the system ethyl acetate. In this manner, 2.5 g (26.5% of theory) of 3,4,4-trifluorobut-3-enyl N-(2,6-difluorobenzoyl)-alaninate are obtained as an oil. log p (pH 2)=2.42."
+  },
+  "workups": [
+    {
+      "type": "EXTRACTION",
+      "details": "the product is extracted with ethyl acetate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "subsequently purified by column chromatography over silica gel using the system ethyl acetate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 8.0,
+        "precision": 8.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3,4,4-trifluorobut-3-enyl N-(2,6-difluorobenzoyl)-alaninate"
+            },
+            {
+              "type": "SMILES",
+              "value": "FC1=C(C(=O)N[C@@H](C)C(=O)OCCC(=C(F)F)F)C(=CC=C1)F"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C14H12F5NO3/c1-7(14(22)23-6-5-10(17)12(18)19)20-13(21)11-8(15)3-2-4-9(11)16/h2-4,7H,5-6H2,1H3,(H,20,21)/t7-/m0/s1"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 2.5,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 26.5
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 26.5
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06004992",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:18.579697"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-918bd8a489714441be3dc8671bc37b0f"
+}

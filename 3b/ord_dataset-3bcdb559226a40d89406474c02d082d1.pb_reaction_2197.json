@@ -1,0 +1,325 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH2:1](O)[CH2:2][CH2:3]C.[H-].[Na+].[CH3:8][C:9]1[C:14]([C:15]([C:17]2[C:22]([CH3:23])=[CH:21][C:20]([O:24][CH3:25])=[C:19]([O:26][CH3:27])[C:18]=2[O:28][CH3:29])=[O:16])=[C:13]([O:30][CH3:31])[CH:12]=[CH:11][CH:10]=1.C(COC)OC>C(OCC)(=O)C.O>[CH3:8][C:9]1[C:14]([C:15]([C:17]2[C:22]([CH3:23])=[CH:21][C:20]([O:24][CH3:25])=[C:19]([O:26][CH3:27])[C:18]=2[O:28][CH2:29][CH2:1][CH2:2][CH3:3])=[O:16])=[C:13]([O:30][CH3:31])[CH:12]=[CH:11][CH:10]=1 |f:1.2|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m6_m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethyl acetate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)OCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 100.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m1_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "n-butanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(CCC)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 5.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sodium hydride"
+            },
+            {
+              "type": "SMILES",
+              "value": "[H-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Na.H/q+1;-1"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 10.0,
+              "units": "MILLIMOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "1C"
+            },
+            {
+              "type": "NAME",
+              "value": "6,6'-dimethyl-2,2',3',4'-tetramethoxy-benzophenone"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC1=CC=CC(=C1C(=O)C1=C(C(=C(C=C1C)OC)OC)OC)OC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C19H22O5/c1-11-8-7-9-13(21-3)15(11)17(20)16-12(2)10-14(22-4)18(23-5)19(16)24-6/h7-10H,1-6H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.7,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "dimethoxyethane"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(OC)COC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H10O2/c1-5-3-4-6-2/h3-4H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 15.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "is stirred until the formation of H2 gas ceases"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture of n-butanol (5 ml) and sodium hydride (60% in oil, 10 mmol) is stirred until the formation of H2 gas ceases. A mixture of 1C (0.7 g, 2.2 mmol) and dimethoxyethane (15 ml) is added to the resulting reaction mixture. Subsequently, the reaction mixture is heated under reflux with stirring for 24 hours. A mixture of water and ethyl acetate (1:1 v/v; 100 ml) is then slowly added at room temperature. The organic phase is separated, concentrated and the residue is purified by column chromatography (petrol ether:ethyl acetate, 95:5 v/v) yielding the pure product as a yellow oil, 0.2 g, (24.4%)."
+  },
+  "workups": [
+    {
+      "type": "ADDITION",
+      "details": "is added to the resulting reaction mixture"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "Subsequently, the reaction mixture is heated"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "under reflux"
+    },
+    {
+      "type": "STIRRING",
+      "details": "with stirring for 24 hours",
+      "duration": {
+        "value": 24.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "ADDITION",
+      "details": "is then slowly added at room temperature",
+      "temperature": {
+        "control": {
+          "type": "AMBIENT"
+        }
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The organic phase is separated"
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the residue is purified by column chromatography (petrol ether:ethyl acetate, 95:5 v/v)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "petrol ether"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "product"
+            },
+            {
+              "type": "NAME",
+              "value": "6,6'-dimethyl-2'-n-butoxy-2,3',4'-trimethoxy-benzophenone"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC1=CC=CC(=C1C(=O)C1=C(C(=C(C=C1C)OC)OC)OCCCC)OC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C22H28O5/c1-7-8-12-27-22-19(15(3)13-17(25-5)21(22)26-6)20(23)18-14(2)10-9-11-16(18)24-4/h9-11,13H,7-8,12H2,1-6H3"
+            }
+          ],
+          "isolated_color": "yellow",
+          "texture": {
+            "type": "OIL",
+            "details": "oil"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06001883",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:19.692379"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-7edf6c5fb39646c1a177b241bb6272f8"
+}

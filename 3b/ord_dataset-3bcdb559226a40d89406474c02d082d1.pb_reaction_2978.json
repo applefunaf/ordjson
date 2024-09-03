@@ -1,0 +1,213 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "Cl.[Cl:2][C:3]1[CH:11]=[CH:10][C:9]([O:12]C)=[C:8]2[C:4]=1[CH2:5][N:6]([NH:14][C:15]1[CH:20]=[CH:19][N:18]=[CH:17][CH:16]=1)[CH2:7]2.B(Br)(Br)[Br:22].CO>ClCCl>[BrH:22].[BrH:22].[Cl:2][C:3]1[CH:11]=[CH:10][C:9]([OH:12])=[C:8]2[C:4]=1[CH2:5][N:6]([NH:14][C:15]1[CH:20]=[CH:19][N:18]=[CH:17][CH:16]=1)[CH2:7]2 |f:0.1,5.6.7|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Methanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m1_m4_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2,3-dihydro-4-chloro-7-methoxy-N-(4-pyridinyl)-1H-isoindol-2-amine hydrochloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl.ClC1=C2CN(CC2=C(C=C1)OC)NC1=CC=NC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C14H14ClN3O.ClH/c1-19-14-3-2-13(15)11-8-18(9-12(11)14)17-10-4-6-16-7-5-10;/h2-7H,8-9H2,1H3,(H,16,17);1H"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 1.12,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "boron tribromide"
+            },
+            {
+              "type": "SMILES",
+              "value": "B(Br)(Br)Br"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/BBr3/c2-1(3)4"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 1.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "dichloromethane"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClCCl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 10.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "stirred for 3 days"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a solution of 2,3-dihydro-4-chloro-7-methoxy-N-(4-pyridinyl)-1H-isoindol-2-amine hydrochloride (1.12 g) in dichloromethane (10 mL) was added boron tribromide (1.0 mL ) at 0° C. The solution was warmed to ambient temperature and stirred for 3 days. Methanol was added, and the mixture was filtered to give 1.2 g (79%) of product, mp>240° C. (decomp)."
+  },
+  "workups": [
+    {
+      "type": "FILTRATION",
+      "details": "the mixture was filtered"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 3.0,
+        "units": "DAY"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "product"
+            },
+            {
+              "type": "NAME",
+              "value": "2,3-Dihydro-4-chloro-2-(4-pyridinylamino)-1H-isoindol-7-ol dihydrobromide"
+            },
+            {
+              "type": "SMILES",
+              "value": "Br.Br.ClC1=C2CN(CC2=C(C=C1)O)NC1=CC=NC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C13H12ClN3O.2BrH/c14-12-1-2-13(18)11-8-17(7-10(11)12)16-9-3-5-15-6-4-9;;/h1-6,18H,7-8H2,(H,15,16);2*1H"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 1.2,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 79.0
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06004977",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:18.335362"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-1076dda6310c4e818b8790e4dcdcd45a"
+}

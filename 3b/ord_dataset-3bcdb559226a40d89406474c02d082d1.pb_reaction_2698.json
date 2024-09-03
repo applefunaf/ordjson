@@ -1,0 +1,212 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[Br:1][C:2]1[CH:3]=[C:4]([NH:8][C:9]2[C:18]3[C:13](=[CH:14][C:15]([O:21]C)=[C:16]([O:19]C)[CH:17]=3)[N:12]=[CH:11][C:10]=2[C:23]#[N:24])[CH:5]=[CH:6][CH:7]=1.Cl.N1C=CC=CC=1>[OH-].[NH4+]>[Br:1][C:2]1[CH:3]=[C:4]([NH:8][C:9]2[C:18]3[C:13](=[CH:14][C:15]([OH:21])=[C:16]([OH:19])[CH:17]=3)[N:12]=[CH:11][C:10]=2[C:23]#[N:24])[CH:5]=[CH:6][CH:7]=1 |f:1.2,3.4|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-(3-bromophenylamino)-6,7-dimethoxy-3-quinolinecarbonitrile"
+            },
+            {
+              "type": "SMILES",
+              "value": "BrC=1C=C(C=CC1)NC1=C(C=NC2=CC(=C(C=C12)OC)OC)C#N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C18H14BrN3O2/c1-23-16-7-14-15(8-17(16)24-2)21-10-11(9-20)18(14)22-13-5-3-4-12(19)6-13/h3-8,10H,1-2H3,(H,21,22)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 15.4,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "pyridine hydrochloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl.N1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C5H5N.ClH/c1-2-4-6-5-3-1;/h1-5H;1H"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 100.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ammonium hydroxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "[OH-].[NH4+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H3N.H2O/h1H3;1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 100.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 210.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "The residue was stirred with 1 L of water"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A stirred mixture of 4-(3-bromophenylamino)-6,7-dimethoxy-3-quinolinecarbonitrile (15.4 g, 40 mmol) and 100 g of pyridine hydrochloride was heated at 210° C. for 20 m, cooled to 0° C., treated with 100 ml of concentrated ammonium hydroxide, and concentrated to dryness. The residue was stirred with 1 L of water, and the resulting amber solid was filtered off, washed with water, and dried; mass spectrum (electrospray, m/e) M+H 356.1, 358.1."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "cooled to 0° C.",
+      "temperature": {
+        "setpoint": {
+          "value": 0.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated to dryness"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "the resulting amber solid was filtered off"
+    },
+    {
+      "type": "WASH",
+      "details": "washed with water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-(3-Bromophenylamino)-6,7-dihydroxy-3-quinolinecarbonitrile"
+            },
+            {
+              "type": "SMILES",
+              "value": "BrC=1C=C(C=CC1)NC1=C(C=NC2=CC(=C(C=C12)O)O)C#N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C16H10BrN3O2/c17-10-2-1-3-11(4-10)20-16-9(7-18)8-19-13-6-15(22)14(21)5-12(13)16/h1-6,8,21-22H,(H,19,20)"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06002008",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:27.895823"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-abebf9e05d9447de9311cd0ed6bd32ba"
+}

@@ -1,0 +1,361 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[Br:1][C:2]1[CH:3]=[C:4]2[C:9](=[CH:10][CH:11]=1)[CH2:8][C:7](=[O:12])[CH2:6][CH2:5]2.C(OC)(OC)OC.[CH2:20](O)[CH2:21][OH:22]>ClCCl.C1(C)C=CC(S(O)(=O)=O)=CC=1>[CH2:21]1[O:22][C:7]2([CH2:6][CH2:5][C:4]3[C:9](=[CH:10][CH:11]=[C:2]([Br:1])[CH:3]=3)[CH2:8]2)[O:12][CH2:20]1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m3_m5_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "6-bromo-2-tetralone"
+            },
+            {
+              "type": "SMILES",
+              "value": "BrC=1C=C2CCC(CC2=CC1)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C10H9BrO/c11-9-3-1-8-6-10(12)4-2-7(8)5-9/h1,3,5H,2,4,6H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 8.8,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "trimethyl orthoformate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(OC)(OC)OC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H10O3/c1-5-4(6-2)7-3/h4H,1-3H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 17.2,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethylene glycol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(CO)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6O2/c3-1-2-4/h3-4H,1-2H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 16.2,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "dichloromethane"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClCCl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 200.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "p-toluenesulfonic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1(=CC=C(C=C1)S(=O)(=O)O)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H8O3S/c1-6-2-4-7(5-3-6)11(8,9)10/h2-5H,1H3,(H,8,9,10)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.07,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "CATALYST"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "was stirred at room temperature for 18 h"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture of 6-bromo-2-tetralone (8.80 g, 39 mmol), trimethyl orthoformate (17.2 ml, 157 mmol), ethylene glycol (16.2 ml, 290 mmol) and p-toluenesulfonic acid (0.07 g, 0.37 mmol) in dry dichloromethane (200 ml) was stirred at room temperature for 18 h, then partitioned between saturated aqueous NaHCO3 (100 ml) and dichloromethane (2×50 ml). The combined organic extracts were dried (Na2SO4) then evaporated in vacuo to give an oil. Column chromatography on silica with 0-10% diethyl ether-hexane gradient elution gave 6-bromo-2-tetralone ethylene ketal as a yellow oil (8.84 g, 84%)."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "partitioned between saturated aqueous NaHCO3 (100 ml) and dichloromethane (2×50 ml)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "NaHCO3"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(=O)(O)[O-].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2O3.Na/c2-1(3)4;/h(H2,2,3,4);/q;+1/p-1"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 100.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "dichloromethane"
+              },
+              {
+                "type": "SMILES",
+                "value": "ClCCl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 50.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "The combined organic extracts were dried (Na2SO4)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "Na2SO4"
+              },
+              {
+                "type": "SMILES",
+                "value": "[O-]S(=O)(=O)[O-].[Na+].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/2Na.H2O4S/c;;1-5(2,3)4/h;;(H2,1,2,3,4)/q2*+1;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "then evaporated in vacuo"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to give an oil"
+    },
+    {
+      "type": "WASH",
+      "details": "Column chromatography on silica with 0-10% diethyl ether-hexane gradient elution",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "diethyl ether hexane"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)OCC.CCCCCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C6H14.C4H10O/c1-3-5-6-4-2;1-3-5-4-2/h3-6H2,1-2H3;3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 18.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "6-bromo-2-tetralone ethylene ketal"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1COC2(CC3=CC=C(C=C3CC2)Br)O1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C12H13BrO2/c13-11-2-1-10-8-12(14-5-6-15-12)4-3-9(10)7-11/h1-2,7H,3-6,8H2"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 8.84,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 84.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 84.2
+              }
+            }
+          ],
+          "isolated_color": "yellow",
+          "texture": {
+            "type": "OIL",
+            "details": "oil"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06008219",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:17.185579"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-9d6123ec528341dca5bb19624afc85c6"
+}

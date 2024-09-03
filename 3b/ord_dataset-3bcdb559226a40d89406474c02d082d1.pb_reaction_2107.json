@@ -1,0 +1,299 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[NH2:1][C:2]1[CH:7]=[CH:6][C:5]([Br:8])=[CH:4][N:3]=1.O.[OH-].[Na+].[C:12](O)(=[O:14])[CH3:13]>CC(OCC1C2C(=CC=CC=2)C(COC(C)=O)=C2C=1C=CC=C2)=O>[Br:8][C:5]1[CH:6]=[CH:7][C:2]([NH:1][C:12](=[O:14])[CH3:13])=[N:3][CH:4]=1 |f:2.3|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sodium hydroxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "[OH-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Na.H2O/h;1H2/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 750.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m1_m5_m6_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-amino-5-bromopyridine"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC1=NC=C(C=C1)Br"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C5H5BrN2/c6-4-1-2-5(7)8-3-4/h1-3H,(H2,7,8)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 25.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "anhydride"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 250.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acetic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H4O2/c1-2(3)4/h1H3,(H,3,4)"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 50.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acetic"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC(=O)OCC1=C2C=CC=CC2=C(C3=CC=CC=C31)COC(=O)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C20H18O4/c1-13(21)23-11-19-15-7-3-5-9-17(15)20(12-24-14(2)22)18-10-6-4-8-16(18)19/h3-10H,11-12H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "with stirring"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A solution of 2-amino-5-bromopyridine (25.0 g, 144 mmol) in acetic acid (50 ml) and acetic (25.0 g, anhydride (250 ml) was heated at reflux for two hours. The reaction mixture was then cooled and poured into water (750 ml) with stirring. After one hour, the solution was adjusted to pH 10 with 50% sodium hydroxide and the precipitate was filtered, washed with water and dried to give 26.5 g (85%) of the title product as a white flaky solid. mp 175-176° C. 1H NMR (CDCl3): δ=8.29 (d, 1 H); 8.12 (d, 1 H); 7.96 (br, 1 H); 7.78 (d of d, 1 H); 2.19 (s, 3 H). MS (El): m/z=214, 216 (M+, Br isotopes)."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "at reflux for two hours",
+      "duration": {
+        "value": 2.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "The reaction mixture was then cooled"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "the precipitate was filtered"
+    },
+    {
+      "type": "WASH",
+      "details": "washed with water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 1.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title product"
+            },
+            {
+              "type": "NAME",
+              "value": "N-(5-Bromo-pyridin-2-yl)-acetamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "BrC=1C=CC(=NC1)NC(C)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H7BrN2O/c1-5(11)10-7-3-2-6(8)4-9-7/h2-4H,1H3,(H,9,10,11)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 26.5,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 85.0
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06001856",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:18.665731"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-c343778534e04e3f8b9181d4e61e6c13"
+}

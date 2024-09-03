@@ -1,0 +1,158 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][O:2][C:3]1[CH:4]=[C:5]([S:11](Cl)(=[O:13])=[O:12])[CH:6]=[CH:7][C:8]=1[O:9][CH3:10].[C:15]1([NH2:22])[CH:20]=[CH:19][CH:18]=[CH:17][C:16]=1[NH2:21]>>[CH3:1][O:2][C:3]1[CH:4]=[C:5]([S:11]([NH:21][C:16]2[CH:17]=[CH:18][CH:19]=[CH:20][C:15]=2[NH:22][C:3]2[CH:4]=[CH:5][CH:6]=[CH:7][CH:8]=2)(=[O:13])=[O:12])[CH:6]=[CH:7][C:8]=1[O:9][CH3:10]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m0_m1_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3,4-dimethoxy phenyl sulfonyl chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "COC=1C=C(C=CC1OC)S(=O)(=O)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H9ClO4S/c1-12-7-4-3-6(14(9,10)11)5-8(7)13-2/h3-5H,1-2H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.01,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "o-phenylene diamine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1(=C(C=CC=C1)N)N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H8N2/c7-5-3-1-2-4-6(5)8/h1-4H,7-8H2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "The sulfonamide was synthesized from 3,4-dimethoxy phenyl sulfonyl chloride (0.01 mol) and o-phenylene diamine by general Method C. It was purified by recrystallization from EtOH (0.65 g, 21%). EI-MS m/z 309 (M+H)+."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "It was purified by recrystallization from EtOH (0.65 g, 21%)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "EtOH"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCO"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+              }
+            ],
+            "amount": {
+              "mass": {
+                "value": 0.65,
+                "units": "GRAM"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sulfonamide"
+            },
+            {
+              "type": "NAME",
+              "value": "2-[(3,4-dimethoxyphenyl)sulfonyl amino]phenyl aniline"
+            },
+            {
+              "type": "SMILES",
+              "value": "COC=1C=C(C=CC1OC)S(=O)(=O)NC1=C(C=CC=C1)NC1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C20H20N2O4S/c1-25-19-13-12-16(14-20(19)26-2)27(23,24)22-18-11-7-6-10-17(18)21-15-8-4-3-5-9-15/h3-14,21-22H,1-2H3"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06005008",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:20.829247"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-a0ebb195d873406ea1238f52aeade86b"
+}

@@ -1,0 +1,267 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "C([O:8][C:9]1[CH:10]=[C:11]2[C:16](=[CH:17][CH:18]=1)[O:15][CH2:14][CH:13]([O:19][C:20]1[CH:25]=[CH:24][CH:23]=[CH:22][CH:21]=1)[C:12]2=[O:26])C1C=CC=CC=1.CO>[Pd].O1CCCC1>[O:19]([C@H:13]1[C@@H:12]([OH:26])[C:11]2[C:16](=[CH:17][CH:18]=[C:9]([OH:8])[CH:10]=2)[O:15][CH2:14]1)[C:20]1[CH:21]=[CH:22][CH:23]=[CH:24][CH:25]=1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m4_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title product"
+            },
+            {
+              "type": "NAME",
+              "value": "6-Benzyloxy-3-phenoxy-4-chromanone"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C1=CC=CC=C1)OC=1C=C2C(C(COC2=CC1)OC1=CC=CC=C1)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C22H18O4/c23-22-19-13-18(24-14-16-7-3-1-4-8-16)11-12-20(19)25-15-21(22)26-17-9-5-2-6-10-17/h1-13,21H,14-15H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 10.04,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 200.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Pd/C"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Pd]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Pd"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 1.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "CATALYST"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "tetrahydrofuran"
+            },
+            {
+              "type": "SMILES",
+              "value": "O1CCCC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O/c1-2-4-5-3-1/h1-4H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 100.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture of 10.04 g of the title product of Example 9, 200 ml of methanol, 100 ml of tetrahydrofuran and 1 g 10% Pd/C catalyst was hydrogenated at 44 psig for 24 hours. The catalyst was recovered by filtration and the filtrate was evaporated in vacuo to obtain the crude product, which was triturated with dichloromethane and filtered to give 4.9 g of title product having properties identical to those of the cis-title product of the preceding Example."
+  },
+  "workups": [
+    {
+      "type": "FILTRATION",
+      "details": "The catalyst was recovered by filtration"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the filtrate was evaporated in vacuo"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to obtain the crude product, which",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "crude product"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "was triturated with dichloromethane",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "dichloromethane"
+              },
+              {
+                "type": "SMILES",
+                "value": "ClCCl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filtered"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 24.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title product"
+            },
+            {
+              "type": "NAME",
+              "value": "cis-3-Phenoxychroman-4,6-diol"
+            },
+            {
+              "type": "SMILES",
+              "value": "O(C1=CC=CC=C1)[C@@H]1COC2=CC=C(C=C2[C@@H]1O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C15H14O4/c16-10-6-7-13-12(8-10)15(17)14(9-18-13)19-11-4-2-1-3-5-11/h1-8,14-17H,9H2/t14-,15+/m1/s1"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 4.9,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 65.5
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998451",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:30.223297"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-5c9983661ba248edba0470c19acd9d27"
+}

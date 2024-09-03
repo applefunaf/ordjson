@@ -1,0 +1,289 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][C:2]1[CH:3]=[C:4]2[C:8](=[CH:9][CH:10]=1)[NH:7][CH:6]=[CH:5]2.[CH3:11][CH2:12][OH:13]>CCOC(C)=O.[Pd]>[NH3:7].[CH3:1][C:2]1[CH:3]=[C:4]2[C:8](=[CH:9][CH:10]=1)[NH:7][CH:6]=[C:5]2[C:12]([C@H:11]1[CH2:4][CH2:5][CH2:6][NH:7]1)=[O:13]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m2_m4_m3_m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "5-methyl-1H-indole"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC=1C=C2C=CNC2=CC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H9N/c1-7-2-3-9-8(6-7)4-5-10-9/h2-6,10H,1H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "EtOH"
+            },
+            {
+              "type": "SMILES",
+              "value": "CCO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 10.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "EtOAc"
+            },
+            {
+              "type": "SMILES",
+              "value": "CCOC(=O)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 10.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Pd/C"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Pd]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Pd"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 1.3,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "CATALYST"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "The reaction mixture was stirred at room temperature under a hydrogen atmosphere until the starting material"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a stirred solution of (R)-3-[(N-benzyloxycarbonylpyrrolidin-2-yl)carbonyl)]-5-methyl-1H-indole (Example 5b) in EtOAc (10 mL) was added EtOH (10 mL) and Pd/C (1.3 g). The reaction mixture was stirred at room temperature under a hydrogen atmosphere until the starting material was consumed. At this time, the reaction mixture was filtered through celite and the solvent was evaporated. The crude product was purified by column chromatography (4:1 CHCl3 : NH3 (2M in MeOH) to yield the title compound (121.5 mg, 15%) as a white solid (mp 194-196° C.)."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "was consumed"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "At this time, the reaction mixture was filtered through celite"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the solvent was evaporated"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The crude product was purified by column chromatography (4:1 CHCl3",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "crude product"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "CHCl3"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(Cl)(Cl)Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CHCl3/c2-1(3)4/h1H"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "NH3"
+            },
+            {
+              "type": "SMILES",
+              "value": "N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H3N/h1H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MOLARITY"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "(R)-5-Methyl-3-[(pyrrolidin-2-yl)carbonyl]-1H-indole"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC=1C=C2C(=CNC2=CC1)C(=O)[C@@H]1NCCC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C14H16N2O/c1-9-4-5-12-10(7-9)11(8-16-12)14(17)13-3-2-6-15-13/h4-5,7-8,13,15-16H,2-3,6H2,1H3/t13-/m1/s1"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 121.5,
+                  "units": "MILLIGRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 15.0
+              }
+            }
+          ],
+          "isolated_color": "white",
+          "texture": {
+            "type": "CUSTOM",
+            "details": "solid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998462",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:25.267136"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-d62deb98251646318f3c6835cfcebfff"
+}

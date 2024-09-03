@@ -1,0 +1,325 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[NH2:1][C:2]1[CH:3]=[CH:4][C:5]([Si:13]([CH3:16])([CH3:15])[CH3:14])=[C:6]([CH:12]=1)[C:7]([NH:9][CH2:10][CH3:11])=[O:8].[NH:17]1[C:21]2[CH:22]=[CH:23][CH:24]=[CH:25][C:20]=2[N:19]=[N:18]1.[CH2:26]=O>C(O)C>[N:17]1([CH2:26][NH:1][C:2]2[CH:3]=[CH:4][C:5]([Si:13]([CH3:15])([CH3:14])[CH3:16])=[C:6]([CH:12]=2)[C:7]([NH:9][CH2:10][CH3:11])=[O:8])[C:21]2[CH:22]=[CH:23][CH:24]=[CH:25][C:20]=2[N:19]=[N:18]1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m4_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "compound"
+            },
+            {
+              "type": "NAME",
+              "value": "5-Amino-N-ethyl-2-(trimethylsilyl)benzamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC=1C=CC(=C(C(=O)NCC)C1)[Si](C)(C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C12H20N2OSi/c1-5-14-12(15)10-8-9(13)6-7-11(10)16(2,3)4/h6-8H,5,13H2,1-4H3,(H,14,15)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.29,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "benzotriazole"
+            },
+            {
+              "type": "SMILES",
+              "value": "N1N=NC2=C1C=CC=C2"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H5N3/c1-2-4-6-5(3-1)7-9-8-6/h1-4H,(H,7,8,9)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.143,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "formaldehyde"
+            },
+            {
+              "type": "SMILES",
+              "value": "C=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2O/c1-2/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 0.09,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 5.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "was stirred at RT overnight"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a solution of the compound of Example 217 (0.29 g, 1.2 mmol) and benzotriazole (0.143 g, 1.2 mmol) in absolute ethanol (5 mL) at RT was added 37% aq formaldehyde (0.090 mL, 1.2 mmol). An aliquot was induced to precipitate by cooling and addition of a small amount of water. The precipitate was added back into the reaction which was stirred at RT overnight and cooled in a refrigerator for 6 h. The resultant mixture was filtered and dried under vacuum (P2O5) to afford 5-[(1H-benzotriazol-1-ylmethyl)amino]-N-ethyl-2-(trimethylsilyl)benzamide as a white solid (0.308 g, 70%). m.p. 207-208° C."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "to precipitate"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "by cooling"
+    },
+    {
+      "type": "ADDITION",
+      "details": "addition of a small amount of water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "ADDITION",
+      "details": "The precipitate was added back into the reaction which"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "cooled in a refrigerator for 6 h",
+      "duration": {
+        "value": 6.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "The resultant mixture was filtered",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "resultant mixture"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "dried under vacuum (P2O5)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "P2O5"
+              },
+              {
+                "type": "SMILES",
+                "value": "O=P12OP3(=O)OP(=O)(O1)OP(=O)(O2)O3"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/O10P4/c1-11-5-12(2)8-13(3,6-11)10-14(4,7-11)9-12"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 8.0,
+        "precision": 8.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "5-[(1H-benzotriazol-1-ylmethyl)amino]-N-ethyl-2-(trimethylsilyl)benzamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "N1(N=NC2=C1C=CC=C2)CNC=2C=CC(=C(C(=O)NCC)C2)[Si](C)(C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C19H25N5OSi/c1-5-20-19(25)15-12-14(10-11-18(15)26(2,3)4)21-13-24-17-9-7-6-8-16(17)22-23-24/h6-12,21H,5,13H2,1-4H3,(H,20,25)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 0.308,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 70.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 69.8
+              }
+            }
+          ],
+          "isolated_color": "white",
+          "texture": {
+            "type": "CUSTOM",
+            "details": "solid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998466",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:38.648590"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-f20126d69f8a4e6781ce0435a190f96c"
+}

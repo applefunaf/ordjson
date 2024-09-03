@@ -1,0 +1,267 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "C(N(CC)CC)C.[Cl:8][CH2:9][C:10](Cl)=[O:11].[NH2:13][C:14]1[CH:15]=[C:16]2[C:21](=[CH:22][CH:23]=1)[N:20]=[CH:19][C:18]([C:24]#[N:25])=[C:17]2[NH:26][C:27]1[CH:32]=[CH:31][CH:30]=[C:29]([Br:33])[CH:28]=1>O1CCCC1>[Br:33][C:29]1[CH:28]=[C:27]([NH:26][C:17]2[C:16]3[C:21](=[CH:22][CH:23]=[C:14]([NH:13][C:10](=[O:11])[CH2:9][Cl:8])[CH:15]=3)[N:20]=[CH:19][C:18]=2[C:24]#[N:25])[CH:32]=[CH:31][CH:30]=1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m3_m4_m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Triethylamine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)N(CC)CC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H15N/c1-4-7(5-2)6-3/h4-6H2,1-3H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.359,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "chloroacetyl chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClCC(=O)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H2Cl2O/c3-1-2(4)5/h1H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.402,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ice"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "6-amino-4-[(3-bromophenyl)amino]-3-quinolinecarbonitrile"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC=1C=C2C(=C(C=NC2=CC1)C#N)NC1=CC(=CC=C1)Br"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C16H11BrN4/c17-11-2-1-3-13(6-11)21-16-10(8-18)9-20-15-5-4-12(19)7-14(15)16/h1-7,9H,19H2,(H,20,21)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 1.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "tetrahydrofuran"
+            },
+            {
+              "type": "SMILES",
+              "value": "O1CCCC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O/c1-2-4-5-3-1/h1-4H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 12.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 25.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "After stirring overnight at 25° C."
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "Triethylamine(0.359 g, 3.55 mmol) and chloroacetyl chloride (0.402 g, 3.55 mmol) were added to an ice cold solution of 1.00 g (2.96 mmol) of 6-amino-4-[(3-bromophenyl)amino]-3-quinolinecarbonitrile in 12 mL of tetrahydrofuran under N2. After stirring overnight at 25° C., volatile material was removed and the residue was slurried in water and collected. Recrystallization from methanol gave 0.540 g of tan solid: mass spectrum (electrospray, m/e): M+H 415, 417."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "volatile material was removed"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "collected"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "Recrystallization from methanol",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "methanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "CO"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 8.0,
+        "precision": 8.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "tan solid"
+            },
+            {
+              "type": "NAME",
+              "value": "N-[4-[(3-Bromophenyl)amino]-3-cyano-6-quinolinyl]-2-chloroacetamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "BrC=1C=C(C=CC1)NC1=C(C=NC2=CC=C(C=C12)NC(CCl)=O)C#N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C18H12BrClN4O/c19-12-2-1-3-13(6-12)24-18-11(9-21)10-22-16-5-4-14(7-15(16)18)23-17(25)8-20/h1-7,10H,8H2,(H,22,24)(H,23,25)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 0.54,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 43.9
+              }
+            }
+          ],
+          "isolated_color": "tan",
+          "texture": {
+            "type": "CUSTOM",
+            "details": "solid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06002008",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:24.439137"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-67e7184988b1403ea870e40260bee0be"
+}

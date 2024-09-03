@@ -1,0 +1,409 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[H-].[Na+].[CH2:3]([O:5][C:6]([CH2:8][CH2:9][CH2:10][CH2:11][O:12][C:13]1[CH:14]=[C:15]2[C:20](=[CH:21][CH:22]=1)[O:19][C:18](=[O:23])[CH:17]=[CH:16]2)=[O:7])[CH3:4].[C:24](O)(=O)[CH3:25].C([OH:30])C>>[OH:19][C:20]1[CH:21]=[CH:22][C:13]([O:12][CH2:11][CH2:10][CH2:9][CH2:8][C:6]([O:5][CH2:3][CH3:4])=[O:7])=[CH:14][C:15]=1/[CH:16]=[CH:17]/[C:18]([O:23][CH2:24][CH3:25])=[O:30] |f:0.1|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Sodium hydride"
+            },
+            {
+              "type": "SMILES",
+              "value": "[H-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Na.H/q+1;-1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 60.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 10.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ester"
+            },
+            {
+              "type": "NAME",
+              "value": "6-(4-ethoxycarbonylbutyl)oxycoumarin"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)OC(=O)CCCCOC=1C=C2C=CC(OC2=CC1)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C16H18O5/c1-2-19-15(17)5-3-4-10-20-13-7-8-14-12(11-13)6-9-16(18)21-14/h6-9,11H,2-5,10H2,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 314.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 1.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acetic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H4O2/c1-2(3)4/h1H3,(H,3,4)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 210.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "The mixture was stirred for 4 hr"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "Sodium hydride (content: 62%; 60 mg) was gradually added to anhydrous ethanol (10 ml) and dissolved. A solution of the ester (314 mg; prepared in reference example 26) in anhydrous ethanol (1 ml) was added to the solution. The mixture was stirred for 4 hr. at 70° C. and then for 30 min at 80° C. Glacial acetic acid (210 mg) was added to the reaction solution with ice-cooling to stop the reaction. The solvent was removed from the reaction solution under reduced pressure. The residue was diluted with ether. The mixture was washed with water. Aqueous layer was removed. Ethereal layer was dried over anhydrous magnesium sulfate and then evaporated. The residue was purified by column chromatography on silica gel (n-hexane:ethyl acetate=2:1) to give the title compound (122 mg) having the following physical data."
+  },
+  "workups": [
+    {
+      "type": "DISSOLUTION",
+      "details": "dissolved"
+    },
+    {
+      "type": "WAIT",
+      "details": "at 70° C. and then for 30 min at 80° C",
+      "duration": {
+        "value": 30.0,
+        "units": "MINUTE"
+      },
+      "temperature": {
+        "setpoint": {
+          "value": 80.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "cooling"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the reaction"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The solvent was removed from the reaction solution under reduced pressure"
+    },
+    {
+      "type": "ADDITION",
+      "details": "The residue was diluted with ether",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "The mixture was washed with water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "Aqueous layer was removed"
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "Ethereal layer was dried over anhydrous magnesium sulfate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "magnesium sulfate"
+              },
+              {
+                "type": "SMILES",
+                "value": "S(=O)(=O)([O-])[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "evaporated"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The residue was purified by column chromatography on silica gel (n-hexane:ethyl acetate=2:1)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "n-hexane"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCCCCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C6H14/c1-3-5-6-4-2/h3-6H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 4.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "Ethyl 3-[1-hydroxy-4-(4-ethoxycarbonylbutoxy)benzen-2-yl]prop-2E-enoate"
+            },
+            {
+              "type": "SMILES",
+              "value": "OC1=C(C=C(C=C1)OCCCCC(=O)OCC)/C=C/C(=O)OCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C18H24O6/c1-3-22-17(20)7-5-6-12-24-15-9-10-16(19)14(13-15)8-11-18(21)23-4-2/h8-11,13,19H,3-7,12H2,1-2H3/b11-8+"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 122.0,
+                  "units": "MILLIGRAM"
+                }
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06001877",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:19.554665"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-9c84f9e5b0494a1f8e6dabf0fd28bb8d"
+}

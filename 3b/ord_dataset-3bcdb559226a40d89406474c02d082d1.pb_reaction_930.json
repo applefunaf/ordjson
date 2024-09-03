@@ -1,0 +1,373 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[N:1]([C:4]1[CH:9]=[CH:8][C:7]([CH3:10])=[CH:6][C:5]=1[Cl:11])=[N+:2]=[N-:3].[Br:12]N1C(=O)CCC1=O.CC(N=NC(C#N)(C)C)(C#N)C.O>C1C=CC=CC=1>[N:1]([C:4]1[CH:9]=[CH:8][C:7]([CH2:10][Br:12])=[CH:6][C:5]=1[Cl:11])=[N+:2]=[N-:3]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 100.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-bromosuccinimide"
+            },
+            {
+              "type": "SMILES",
+              "value": "BrN1C(CCC1=O)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H4BrNO2/c5-6-3(7)1-2-4(6)8/h1-2H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 19.6,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "AIBN"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC(C)(C#N)N=NC(C)(C)C#N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H12N4/c1-7(2,5-9)11-12-8(3,4)6-10/h1-4H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 1.64,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m1_m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-Azido-3-chlorotoluene"
+            },
+            {
+              "type": "SMILES",
+              "value": "N(=[N+]=[N-])C1=C(C=C(C=C1)C)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H6ClN3/c1-5-2-3-7(10-11-9)6(8)4-5/h2-4H,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 17.14,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "benzene"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H6/c1-2-4-6-5-3-1/h1-6H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 80.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "4-Azido-3-chlorotoluene (17.14 g, 0.1 mol) was dissolved in dry benzene (80 ml) and thereto were added N-bromosuccinimide (19.6 g, 0.11 mol) and AIBN (1.64 g, 0.01 mol). The resulting mixture was refluxed in the shade in a nitrogen stream for 10 hr. Water (100 ml) was added and the mixture was filtrated. The aqueous layer of the filtrate was taken and extracted with ether. The organic layers were combined, washed with brine and dried over anhydrous sodium sulfate. The solvent was evaporated under reduced pressure and the obtained brown oil was purified by silica gel column chromatography (eluent; hexane) to give the title compound (14.2 g, yield 58%). m.p.: 75-77° C."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "The resulting mixture was refluxed in the shade in a nitrogen stream for 10 hr",
+      "duration": {
+        "value": 10.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "the mixture was filtrated"
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "extracted with ether",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "washed with brine",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "brine"
+              },
+              {
+                "type": "SMILES",
+                "value": "[Cl-].[Na+].O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH.Na.H2O/h1H;;1H2/q;+1;/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "dried over anhydrous sodium sulfate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "sodium sulfate"
+              },
+              {
+                "type": "SMILES",
+                "value": "S(=O)(=O)([O-])[O-].[Na+].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/2Na.H2O4S/c;;1-5(2,3)4/h;;(H2,1,2,3,4)/q2*+1;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The solvent was evaporated under reduced pressure"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the obtained brown oil was purified by silica gel column chromatography (eluent; hexane)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "hexane"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCCCCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C6H14/c1-3-5-6-4-2/h3-6H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "4-azido-3-chlorobenzyl bromide"
+            },
+            {
+              "type": "SMILES",
+              "value": "N(=[N+]=[N-])C1=C(C=C(CBr)C=C1)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H5BrClN3/c8-4-5-1-2-7(11-12-10)6(9)3-5/h1-3H,4H2"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 14.2,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 58.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 57.6
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998595",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:31.605666"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-4bc15961e8e341c2973c4a48ecfcfe72"
+}

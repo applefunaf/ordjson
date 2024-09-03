@@ -1,0 +1,261 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[N+:1]([C:4]1[CH:5]=[C:6]2[C:11](=[CH:12][CH:13]=1)[NH:10][CH:9]=[C:8]([C:14]#[N:15])[C:7]2=O)([O-:3])=[O:2].P(Cl)(Cl)([Cl:19])=O>>[Cl:19][C:7]1[C:6]2[C:11](=[CH:12][CH:13]=[C:4]([N+:1]([O-:3])=[O:2])[CH:5]=2)[N:10]=[CH:9][C:8]=1[C:14]#[N:15]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "6-nitro-4-oxo-1,4-dihydro-3-quinolinecarbonitrile"
+            },
+            {
+              "type": "SMILES",
+              "value": "[N+](=O)([O-])C=1C=C2C(C(=CNC2=CC1)C#N)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C10H5N3O3/c11-4-6-5-12-9-2-1-7(13(15)16)3-8(9)10(6)14/h1-3,5H,(H,12,14)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 31.3,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "phosphorous oxychloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "P(=O)(Cl)(Cl)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Cl3OP/c1-5(2,3)4"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 160.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture of 31.3 g (0.147 mol) of 6-nitro-4-oxo-1,4-dihydro-3-quinolinecarbonitrile and 160 mL of phosphorous oxychloride was refluxed for 5.5 h. The phosphorous oxychloride was removed in vacuo and the residue was poured over ice and neutralized with sodium bicarbonate. The product was collected, washed with water and dried in vacuo (50° C.). There was obtained 33.5 g of tan solid; solid: mass spectrum (electrospray, m/e): M+H 234."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "was refluxed for 5.5 h",
+      "duration": {
+        "value": 5.5,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The phosphorous oxychloride was removed in vacuo",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "phosphorous oxychloride"
+              },
+              {
+                "type": "SMILES",
+                "value": "P(=O)(Cl)(Cl)Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Cl3OP/c1-5(2,3)4"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "ADDITION",
+      "details": "the residue was poured over ice and neutralized with sodium bicarbonate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "sodium bicarbonate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C([O-])(O)=O.[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2O3.Na/c2-1(3)4;/h(H2,2,3,4);/q;+1/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The product was collected"
+    },
+    {
+      "type": "WASH",
+      "details": "washed with water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried in vacuo (50° C.)",
+      "temperature": {
+        "setpoint": {
+          "value": 50.0,
+          "units": "CELSIUS"
+        }
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "tan solid"
+            },
+            {
+              "type": "NAME",
+              "value": "4-Chloro-6-nitro-3-quinolinecarbonitrile"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC1=C(C=NC2=CC=C(C=C12)[N+](=O)[O-])C#N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C10H4ClN3O2/c11-10-6(4-12)5-13-9-2-1-7(14(15)16)3-8(9)10/h1-3,5H"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 33.5,
+                  "units": "GRAM"
+                }
+              }
+            }
+          ],
+          "isolated_color": "tan",
+          "texture": {
+            "type": "CUSTOM",
+            "details": "solid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06002008",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:24.360503"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-402bc1f83699463cb168c6342c6f90be"
+}

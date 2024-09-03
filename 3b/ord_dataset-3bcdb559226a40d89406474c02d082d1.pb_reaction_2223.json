@@ -1,0 +1,205 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH:1](=O)[C:2]1[C:3](=[CH:5][CH:6]=[CH:7][CH:8]=1)[OH:4].[NH2:10][NH:11][C:12]([NH2:14])=[S:13]>O>[CH:1](=[N:10][NH:11][C:12]([NH2:14])=[S:13])[C:2]1[C:3](=[CH:5][CH:6]=[CH:7][CH:8]=1)[OH:4]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Salicylaldehyde"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C=1C(O)=CC=CC1)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H6O2/c8-5-6-3-1-2-4-7(6)9/h1-5,9H"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "thiosemicarbazide"
+            },
+            {
+              "type": "SMILES",
+              "value": "NNC(=S)N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH5N3S/c2-1(5)4-3/h3H2,(H3,2,4,5)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 5.47,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 75.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 75.0,
+        "units": "CELSIUS"
+      }
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "Salicylaldehyde was added dropwise over 5 min. to a solution of thiosemicarbazide (5.47 g, 60 mmol) in 75 mL water maintained at 75° C. A white solid began to precipitate immediately. The resulting mixture was heated to reflux for 2 hours, then cooled to room temperature and filtered to give salicylaldehyde thiosemicarbazone (11.5 g, 98%) as a white crystalline solid."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "to precipitate immediately"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "The resulting mixture was heated"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "to reflux for 2 hours",
+      "duration": {
+        "value": 2.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "cooled to room temperature",
+      "temperature": {
+        "control": {
+          "type": "AMBIENT"
+        }
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filtered"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "salicylaldehyde thiosemicarbazone"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C=1C(O)=CC=CC1)=NNC(=S)N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H9N3OS/c9-8(13)11-10-5-6-3-1-2-4-7(6)12/h1-5,12H,(H3,9,11,13)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 11.5,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 98.0
+              }
+            }
+          ],
+          "isolated_color": "white crystalline",
+          "texture": {
+            "type": "CUSTOM",
+            "details": "solid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06001937",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:20.012271"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-af9ebb1461984442be34e62bb2a33691"
+}

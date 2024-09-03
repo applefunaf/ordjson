@@ -1,0 +1,209 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "C(OC=[C:5]([C:11]#[N:12])[C:6]([O:8][CH2:9][CH3:10])=[O:7])C.[CH3:13][NH:14][NH2:15].[CH2:16](O)C>>[NH2:12][C:11]1[N:15]([CH3:16])[N:14]=[CH:13][C:5]=1[C:6]([O:8][CH2:9][CH3:10])=[O:7]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethyl (ethoxymethylene)cyanoacetate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)OC=C(C(=O)OCC)C#N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H11NO3/c1-3-11-6-7(5-9)8(10)12-4-2/h6H,3-4H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 68.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methylhydrazine"
+            },
+            {
+              "type": "SMILES",
+              "value": "CNN"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH6N2/c1-3-2/h3H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 18.5,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 200.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A solution of ethyl (ethoxymethylene)cyanoacetate (68 g, 0.4 mol) and methylhydrazine (18.5 g, 0.4 mol) in 200 mL absolute ethanol was refluxed for 1.5 h, then cooled to RT and filtered. The filtrate was concentrated in vacuo and the residue was triturated with ether to give 54 g of crude ethyl 5-amino-1-methyl-1H-pyrazole-4-carboxylate in 75.4% yield."
+  },
+  "workups": [
+    {
+      "type": "FILTRATION",
+      "details": "filtered"
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "The filtrate was concentrated in vacuo"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the residue was triturated with ether",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethyl 5-amino-1-methyl-1H-pyrazole-4-carboxylate"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC1=C(C=NN1C)C(=O)OCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H11N3O2/c1-3-12-7(11)5-4-9-10(2)6(5)8/h4H,3,8H2,1-2H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 54.0,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 75.4
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998466",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:38.893116"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-2af8627f3f14470ebf9d37548925b1ba"
+}

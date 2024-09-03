@@ -1,0 +1,361 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "C1(S([N:10]2[C:18]3[C:13](=[CH:14][CH:15]=[CH:16][CH:17]=3)[C:12]([N:19]3[CH2:24][CH2:23][N:22](C(OC4C=CC=CC=4)=O)[CH2:21][CH2:20]3)=[N:11]2)(=O)=O)C=CC=CC=1.[OH-].[K+].Cl>C(O)C>[N:19]1([C:12]2[C:13]3[C:18](=[CH:17][CH:16]=[CH:15][CH:14]=3)[NH:10][N:11]=2)[CH2:24][CH2:23][NH:22][CH2:21][CH2:20]1 |f:1.2|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "1-benzenesulfonyl-3-(1-phenoxycarbonyl-4-piperazinyl)-1H-indazole"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1(=CC=CC=C1)S(=O)(=O)N1N=C(C2=CC=CC=C12)N1CCN(CC1)C(=O)OC1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C24H22N4O4S/c29-24(32-19-9-3-1-4-10-19)27-17-15-26(16-18-27)23-21-13-7-8-14-22(21)28(25-23)33(30,31)20-11-5-2-6-12-20/h1-14H,15-18H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 31.3,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 500.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "KOH"
+            },
+            {
+              "type": "SMILES",
+              "value": "[OH-].[K+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/K.H2O/h;1H2/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 100.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "HCl"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/ClH/h1H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 120.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a suspension of 1-benzenesulfonyl-3-(1-phenoxycarbonyl-4-piperazinyl)-1H-indazole (31.3 g, 67.7 mmol) in ethanol (500 ml) was added 50% KOH (aq.) (100 g of KOH in 100 g H2O) at room temperature. The reaction mixture was warmed to reflux for 6.5 hours and cooled to room temperature. After adjusting the pH to about two using HCl (con., 120 ml), the volatiles were removed under reduced pressure. The remaining residue was diluted with water and removed via filtration. The aqueous filtrate was washed with EtOAc and basified to pH=8 using 50% NaOH (aq.). The product was extracted into 10:1 dichloromethane/isopropylalcohol. The combined organics were dried (MgSO4), filtered, and concentrated to give 13.0 g of desired 3-piperazin-1-yl-1H-indazole as a brown solid which was used without further purification."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "The reaction mixture was warmed"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "to reflux for 6.5 hours",
+      "duration": {
+        "value": 6.5,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the volatiles were removed under reduced pressure"
+    },
+    {
+      "type": "ADDITION",
+      "details": "The remaining residue was diluted with water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "removed via filtration"
+    },
+    {
+      "type": "WASH",
+      "details": "The aqueous filtrate was washed with EtOAc and basified to pH=8",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "EtOAc"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOC(=O)C"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "The product was extracted into 10:1 dichloromethane/isopropylalcohol",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "dichloromethane isopropylalcohol"
+              },
+              {
+                "type": "SMILES",
+                "value": "ClCCl.C(C)(C)O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C3H8O.CH2Cl2/c1-3(2)4;2-1-3/h3-4H,1-2H3;1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "The combined organics were dried (MgSO4)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "MgSO4"
+              },
+              {
+                "type": "SMILES",
+                "value": "[O-]S(=O)(=O)[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filtered"
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3-piperazin-1-yl-1H-indazole"
+            },
+            {
+              "type": "SMILES",
+              "value": "N1(CCNCC1)C1=NNC2=CC=CC=C12"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C11H14N4/c1-2-4-10-9(3-1)11(14-13-10)15-7-5-12-6-8-15/h1-4,12H,5-8H2,(H,13,14)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 13.0,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 94.9
+              }
+            }
+          ],
+          "isolated_color": "brown",
+          "texture": {
+            "type": "CUSTOM",
+            "details": "solid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06001834",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:23.538385"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-0fdc6f794819475a9319a97acf2cf466"
+}

@@ -1,0 +1,253 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[C:1]([O:4][CH2:5][CH2:6][C:7]1[CH:8]=[C:9]([S:21](Cl)(=[O:23])=[O:22])[C:10]2[C:15]([C:16]=1[Br:17])=[CH:14][CH:13]=[CH:12][C:11]=2[N+:18]([O-:20])=[O:19])(=[O:3])[CH3:2].[NH3:25].O1CCOCC1>>[C:1]([O:4][CH2:5][CH2:6][C:7]1[CH:8]=[C:9]([S:21]([NH2:25])(=[O:23])=[O:22])[C:10]2[C:15]([C:16]=1[Br:17])=[CH:14][CH:13]=[CH:12][C:11]=2[N+:18]([O-:20])=[O:19])(=[O:3])[CH3:2]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3-(2-acetoxy-ethyl)-4-bromo-8-nitro-naphthalene-1-sulfonyl chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)OCCC=1C=C(C2=C(C=CC=C2C1Br)[N+](=O)[O-])S(=O)(=O)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C14H11BrClNO6S/c1-8(18)23-6-5-9-7-12(24(16,21)22)13-10(14(9)15)3-2-4-11(13)17(19)20/h2-4,7H,5-6H2,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 5.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ammonia"
+            },
+            {
+              "type": "SMILES",
+              "value": "N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H3N/h1H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "dioxane"
+            },
+            {
+              "type": "SMILES",
+              "value": "O1CCOCC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O2/c1-2-6-4-3-5-1/h1-4H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 92.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "After stirring at room temperature for 40 minutes"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "Solid 3-(2-acetoxy-ethyl)-4-bromo-8-nitro-naphthalene-1-sulfonyl chloride (5.00 g, 11.45 mmol) was added at room temperature to 0.5M ammonia in dioxane (92 mL, 46 mmol). After stirring at room temperature for 40 minutes, the mixture was evaporated under vacuum to a residue which was mixed with water (100 mL), sonicated, and filtered. The collected pale-yellow solid was washed with water (2×20 mL) and vacuum dried to afford the title compound (4.75 g)."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "the mixture was evaporated under vacuum to a residue which"
+    },
+    {
+      "type": "ADDITION",
+      "details": "was mixed with water (100 mL)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 100.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "sonicated"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filtered"
+    },
+    {
+      "type": "WASH",
+      "details": "The collected pale-yellow solid was washed with water (2×20 mL) and vacuum",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 20.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 40.0,
+        "units": "MINUTE"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "3-(2-Acetoxy-ethyl)-4-bromo-8-nitro-naphthalene-1-sulfonamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)OCCC=1C=C(C2=C(C=CC=C2C1Br)[N+](=O)[O-])S(=O)(=O)N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C14H13BrN2O6S/c1-8(18)23-6-5-9-7-12(24(16,21)22)13-10(14(9)15)3-2-4-11(13)17(19)20/h2-4,7H,5-6H2,1H3,(H2,16,21,22)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 4.75,
+                  "units": "GRAM"
+                }
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06008212",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:17.069460"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-7b659c1b6050474695ee0397837aa2fd"
+}

@@ -1,0 +1,299 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][O:2][C:3]1[CH:12]=[CH:11][C:10]([N:13]2[CH:17]=[N:16][N:15]=[N:14]2)=[CH:9][C:4]=1[C:5]([O:7]C)=[O:6].CO.[OH-].[Na+]>O>[CH3:1][O:2][C:3]1[CH:12]=[CH:11][C:10]([N:13]2[CH:17]=[N:16][N:15]=[N:14]2)=[CH:9][C:4]=1[C:5]([OH:7])=[O:6] |f:2.3|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methyl 2-methoxy-5-(1H-tetrazol-1-yl)benzoate"
+            },
+            {
+              "type": "SMILES",
+              "value": "COC1=C(C(=O)OC)C=C(C=C1)N1N=NN=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C10H10N4O3/c1-16-9-4-3-7(14-6-11-12-13-14)5-8(9)10(15)17-2/h3-6H,1-2H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 13.3,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 150.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m5_m6": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 50.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 50.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m3_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "aqueous solution"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sodium hydroxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "[OH-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Na.H2O/h;1H2/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 62.5,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "Alternately, combine methyl 2-methoxy-5-(1H-tetrazol-1-yl)benzoate (13.3 g, 56.8 mmol) and methanol (150 mL). Add 1 M aqueous solution of sodium hydroxide (62.5 mL, 62.5 mmol). Heat to reflux. After 30 minutes, add methanol (50 mL) and water (50 mL) and continue the heat at reflux. After 1 hour, concentrate in vacuo to remove most of the solvent. Adjust the pH to about 1 to 2 using a 1 M aqueous hydrochloric acid solution to give a solid. Collect the solid by filtration, rinse with water, and dry to give 2-methoxy-5-(1H-tetrazol-1-yl)benzoic acid."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "Heat to reflux"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "heat"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "at reflux"
+    },
+    {
+      "type": "WAIT",
+      "details": "After 1 hour",
+      "duration": {
+        "value": 1.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrate in vacuo"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to remove most of the solvent"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to give a solid"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "Collect the solid"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "by filtration"
+    },
+    {
+      "type": "WASH",
+      "details": "rinse with water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dry"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 30.0,
+        "units": "MINUTE"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-methoxy-5-(1H-tetrazol-1-yl)benzoic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "COC1=C(C(=O)O)C=C(C=C1)N1N=NN=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H8N4O3/c1-16-8-3-2-6(4-7(8)9(14)15)13-5-10-11-12-13/h2-5H,1H3,(H,14,15)"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998439",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:20.611335"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-1e7cb89e4e364e2fb1413e5b5550a69a"
+}

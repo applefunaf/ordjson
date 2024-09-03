@@ -1,0 +1,247 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[C:1]([C:3]1[CH:4]=[C:5]([CH:33]=[CH:34][CH:35]=1)[O:6][C:7]1[N:12]=[C:11]([O:13][C:14]2[CH:15]=[C:16]([C:25]([O:27]CC)=[O:26])[CH:17]=[C:18]([C:20]([O:22]CC)=[O:21])[CH:19]=2)[C:10]([F:30])=[C:9]([CH3:31])[C:8]=1[F:32])#[N:2].[OH-].[Li+]>O1CCCC1.O>[C:1]([C:3]1[CH:4]=[C:5]([CH:33]=[CH:34][CH:35]=1)[O:6][C:7]1[N:12]=[C:11]([O:13][C:14]2[CH:15]=[C:16]([C:25]([OH:27])=[O:26])[CH:17]=[C:18]([C:20]([OH:22])=[O:21])[CH:19]=2)[C:10]([F:30])=[C:9]([CH3:31])[C:8]=1[F:32])#[N:2] |f:1.2,3.4|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m3_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "5-[(6-(3-cyanophenoxy)-3,5-difluoro-4-methylpyridin-2-yl)oxy]benzene-1,3-dicarboxylic acid, diethyl ester"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(#N)C=1C=C(OC2=C(C(=C(C(=N2)OC=2C=C(C=C(C2)C(=O)OCC)C(=O)OCC)F)C)F)C=CC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C25H20F2N2O6/c1-4-32-24(30)16-10-17(25(31)33-5-2)12-19(11-16)35-23-21(27)14(3)20(26)22(29-23)34-18-8-6-7-15(9-18)13-28/h6-12H,4-5H2,1-3H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.97,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "lithium hydroxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "[OH-].[Li+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Li.H2O/h;1H2/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.42,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "tetrahydrofuran water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O1CCCC1.O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O.H2O/c1-2-4-5-3-1;/h1-4H2;1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 20.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 60.0,
+        "units": "CELSIUS"
+      }
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To 5-[(6-(3-cyanophenoxy)-3,5-difluoro-4-methylpyridin-2-yl)oxy]benzene-1,3-dicarboxylic acid, diethyl ester (0.97 g, 2.0 mmol) in tetrahydrofuran/water (20 mL, 1/1) was added lithium hydroxide (0.42 g, 10 mmol). After heating at 60° C. for 90 minutes, the material was partitioned between ethyl acetate and 2 N HCl. The organic layer was separated, dried (MgSO4), and the solvent removed in vacuo to give 5-[(6-(3-cyanophenoxy)-3,5-difluoro-4-methyl-pyridin-2-yl)oxy]benzene-1,3-dicarboxylic acid; NMR (DMSO) 8.25 (s,1), 7.85 (s,2), 7.4-7.7 (m,3), 7.3 (m,3), 2.4 (s,3) ppm."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "the material was partitioned between ethyl acetate and 2 N HCl",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "HCl"
+              },
+              {
+                "type": "SMILES",
+                "value": "Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH/h1H"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The organic layer was separated"
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "dried (MgSO4)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "MgSO4"
+              },
+              {
+                "type": "SMILES",
+                "value": "[O-]S(=O)(=O)[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the solvent removed in vacuo"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "5-[(6-(3-cyanophenoxy)-3,5-difluoro-4-methyl-pyridin-2-yl)oxy]benzene-1,3-dicarboxylic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(#N)C=1C=C(OC2=C(C(=C(C(=N2)OC=2C=C(C=C(C2)C(=O)O)C(=O)O)F)C)F)C=CC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C21H12F2N2O6/c1-10-16(22)18(30-14-4-2-3-11(5-14)9-24)25-19(17(10)23)31-15-7-12(20(26)27)6-13(8-15)21(28)29/h2-8H,1H3,(H,26,27)(H,28,29)"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06004981",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:18.708442"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-524ed5dd4403485e9543fdb124c426e5"
+}

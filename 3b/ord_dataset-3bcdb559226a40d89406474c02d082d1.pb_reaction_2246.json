@@ -1,0 +1,348 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH:1]1[CH:2]=[CH:3][C:4]([C@@H:7]([NH2:24])[C:8]([NH:10][C@@H:11]2[C:18](=[O:19])[N:17]3[C@@H:12]2[CH2:13][CH2:14][C:15]([Cl:23])=[C:16]3[C:20]([OH:22])=[O:21])=[O:9])=[CH:5][CH:6]=1.C(OC(C1C=CC(O)=CC=1)=O)C.Cl.C(N(CC)CC)C>CN(C=O)C.O>[CH:1]1[CH:2]=[CH:3][C:4]([C@@H:7]([NH2:24])[C:8]([NH:10][C@@H:11]2[C:18](=[O:19])[N:17]3[C@@H:12]2[CH2:13][CH2:14][C:15]([Cl:23])=[C:16]3[C:20]([OH:22])=[O:21])=[O:9])=[CH:5][CH:6]=1.[CH3:16][N:17]([CH:18]=[O:19])[CH3:12] |f:6.7|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "triethylamine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)N(CC)CC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H15N/c1-4-7(5-2)6-3/h4-6H2,1-3H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "loracarbef"
+            },
+            {
+              "type": "SMILES",
+              "value": "C=1C=CC(=CC1)[C@H](C(=O)N[C@H]2[C@H]3CCC(=C(N3C2=O)C(=O)O)Cl)N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C16H16ClN3O4/c17-9-6-7-10-12(15(22)20(10)13(9)16(23)24)19-14(21)11(18)8-4-2-1-3-5-8/h1-5,10-12H,6-7,18H2,(H,19,21)(H,23,24)/t10-,11-,12+/m1/s1"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2_m5_m6_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethyl paraben"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)OC(=O)C1=CC=C(O)C=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H10O3/c1-2-12-9(11)7-3-5-8(10)6-4-7/h3-6,10H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 1.34,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrochloric acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/ClH/h1H"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "DMF"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN(C)C=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H7NO/c1-4(2)3-5/h3H,1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 18.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "H2O"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 1.8,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "The mixture was stirred for 1 hour at room temperature"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a mixture of loracarbef: ethyl paraben (1.34 g, 65.5% potency as loracarbef) in 18 ml of DMF and 1.8 ml of H2O was added concentrated hydrochloric acid sufficient to obtain a clear solution. The pH of the solution was slowly raised to 6.9 with triethylamine, and the crystallization of the titled product occurred quickly. The mixture was stirred for 1 hour at room temperature, filtered, washed with a solution of 10:1/DMF:H2O, and dried under a vacuum at 40° C. HPLC analysis indicated that no ethyl paraben was present. The actual yield was 1.01 g, 73.9% potency as loracarbef, the theoretical yield was 0.87 g as loracarbef, and the percent yield was 85.3%."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "to obtain a clear solution"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the crystallization of the titled product",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "titled product"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filtered"
+    },
+    {
+      "type": "WASH",
+      "details": "washed with a solution of 10:1/DMF",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "DMF"
+              },
+              {
+                "type": "SMILES",
+                "value": "CN(C)C=O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C3H7NO/c1-4(2)3-5/h3H,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "H2O, and dried under a vacuum at 40° C",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "H2O"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      },
+      "temperature": {
+        "setpoint": {
+          "value": 40.0,
+          "units": "CELSIUS"
+        }
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 1.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Loracarbef DMF"
+            },
+            {
+              "type": "SMILES",
+              "value": "C=1C=CC(=CC1)[C@H](C(=O)N[C@H]2[C@H]3CCC(=C(N3C2=O)C(=O)O)Cl)N.CN(C)C=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C16H16ClN3O4.C3H7NO/c17-9-6-7-10-12(15(22)20(10)13(9)16(23)24)19-14(21)11(18)8-4-2-1-3-5-8;1-4(2)3-5/h1-5,10-12H,6-7,18H2,(H,19,21)(H,23,24);3H,1-2H3/t10-,11-,12+;/m1./s1"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 85.3
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06001996",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:20.402457"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-08015a3dd2a340ec80da5f5f664226e3"
+}

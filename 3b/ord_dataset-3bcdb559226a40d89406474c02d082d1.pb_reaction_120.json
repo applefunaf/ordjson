@@ -1,0 +1,357 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[Br:1][C:2]1[CH:7]=[CH:6][C:5]([O:8]C)=[CH:4][CH:3]=1.[Cl:10][CH2:11][C:12](Cl)=[O:13].[Cl-].[Al+3].[Cl-].[Cl-]>ClCCl>[Br:1][C:2]1[CH:3]=[CH:4][C:5]([OH:8])=[C:6]([C:12](=[O:13])[CH2:11][Cl:10])[CH:7]=1 |f:2.3.4.5|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "aluminium chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Cl-].[Al+3].[Cl-].[Cl-]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Al.3ClH/h;3*1H/q+3;;;/p-3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 60.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2_m6_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-bromoanisole"
+            },
+            {
+              "type": "SMILES",
+              "value": "BrC1=CC=C(C=C1)OC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H7BrO/c1-9-7-4-2-6(8)3-5-7/h2-5H,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 17.4,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "chloroacetyl chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClCC(=O)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H2Cl2O/c3-1-2(4)5/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 32.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "dichloromethane"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClCCl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 150.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ice water"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a solution of 4-bromoanisole (17.4 ml, 138 mmol) in dichloromethane (150 ml) was added chloroacetyl chloride (32 ml, 400 mmol) followed by aluminium chloride (60 g, 450 mmol) keeping the temperature below 30° C. The yellow solution was heated to reflux for 8 hours, cooled down to ambient temperature, then ice water was added very carefully. The organic layer was separated and the aqueous extracted once with dichloromethane. The combined organics were dried (sodium sulphate) then evaporated to give an oil which was purified by crystallisation from hexane. The title compound was obtained as a yellow solid (18 g, 52%), mp 80-82° C. 1H NMR (250MHz, CDCl3) δ4.69 (2H, s), 6.95 (1H, d, J=9 Hz), 7.60 (1H, dd, J=1 and 9 Hz), 7.80 (1H, d, J=2 Hz), 11.60 (1H, s)."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "the temperature below 30° C"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "The yellow solution was heated"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "to reflux for 8 hours",
+      "duration": {
+        "value": 8.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The organic layer was separated"
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "the aqueous extracted once with dichloromethane",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "dichloromethane"
+              },
+              {
+                "type": "SMILES",
+                "value": "ClCCl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "The combined organics were dried (sodium sulphate)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "sodium sulphate"
+              },
+              {
+                "type": "SMILES",
+                "value": "S(=O)(=O)([O-])[O-].[Na+].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/2Na.H2O4S/c;;1-5(2,3)4/h;;(H2,1,2,3,4)/q2*+1;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "then evaporated"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to give an oil which"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "was purified by crystallisation from hexane",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "hexane"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCCCCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C6H14/c1-3-5-6-4-2/h3-6H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "1-(5-Bromo-2-hydroxyphenyl)-2-chloroethanone"
+            },
+            {
+              "type": "SMILES",
+              "value": "BrC=1C=CC(=C(C1)C(CCl)=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H6BrClO2/c9-5-1-2-7(11)6(3-5)8(12)4-10/h1-3,11H,4H2"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "solid"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 18.0,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 52.0
+              }
+            }
+          ],
+          "texture": {
+            "type": "CUSTOM",
+            "details": "solid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998416",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:17.782322"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-9ee067a2ba3142d3b78b28ce912a5e46"
+}

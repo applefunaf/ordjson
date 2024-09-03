@@ -1,0 +1,235 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "C([O:8][C:9]1[C:10]([O:27][CH3:28])=[CH:11][C:12]([Br:26])=[C:13]2[C:18]=1[CH2:17][N:16]([NH:19][C:20]1[CH:25]=[CH:24][N:23]=[CH:22][CH:21]=1)[CH2:15][CH2:14]2)C1C=CC=CC=1>C(O)C.[Pd]>[BrH:26].[CH3:28][O:27][C:10]1[C:9]([OH:8])=[C:18]2[C:13]([CH2:14][CH2:15][N:16]([NH:19][C:20]3[CH:21]=[CH:22][N:23]=[CH:24][CH:25]=3)[CH2:17]2)=[CH:12][CH:11]=1 |f:3.4|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "(8-Benzyloxy-5-bromo-3,4-dihydro-7-methoxy-1H-isoquinolin-2-yl)-4-pyridinylamine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C1=CC=CC=C1)OC=1C(=CC(=C2CCN(CC12)NC1=CC=NC=C1)Br)OC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C22H22BrN3O2/c1-27-21-13-20(23)18-9-12-26(25-17-7-10-24-11-8-17)14-19(18)22(21)28-15-16-5-3-2-4-6-16/h2-8,10-11,13H,9,12,14-15H2,1H3,(H,24,25)"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 250.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "palladium-on-carbon"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Pd]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Pd"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 2.2,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "CATALYST"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "(8-Benzyloxy-5-bromo-3,4-dihydro-7-methoxy-1H-isoquinolin-2-yl)-4-pyridinylamine) (11 g) was dissolved in ethanol (250 ml) and slowly added to 5% palladium-on-carbon (2.2 g). The mixture was hydrogenated at 55 psi overnight in a parr shaker at ambient temperature. The reaction mixture was filtered through a pad of Celite, and the pad was washed well with methanol. The filtrate was concentrated, and the precipitate was collected and dried to give 8.3 g, 94.6% of product, mp 235-236° C."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "was hydrogenated at 55 psi overnight in a parr shaker at ambient temperature",
+      "duration": {
+        "value": 8.0,
+        "precision": 8.0,
+        "units": "HOUR"
+      },
+      "temperature": {
+        "control": {
+          "type": "AMBIENT"
+        }
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "The reaction mixture was filtered through a pad of Celite"
+    },
+    {
+      "type": "WASH",
+      "details": "the pad was washed well with methanol",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "methanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "CO"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "The filtrate was concentrated"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the precipitate was collected"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "product"
+            },
+            {
+              "type": "NAME",
+              "value": "7-Methoxy-2-(4-pyridinylamino)-1,2,3,4-tetrahydroisoquinolin-8-ol hydrobromide"
+            },
+            {
+              "type": "SMILES",
+              "value": "Br.COC1=CC=C2CCN(CC2=C1O)NC1=CC=NC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C15H17N3O2.BrH/c1-20-14-3-2-11-6-9-18(10-13(11)15(14)19)17-12-4-7-16-8-5-12;/h2-5,7-8,19H,6,9-10H2,1H3,(H,16,17);1H"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 8.3,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 94.6
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06004977",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:18.200527"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-f074aad0e36349f08b50290662fc4f2b"
+}

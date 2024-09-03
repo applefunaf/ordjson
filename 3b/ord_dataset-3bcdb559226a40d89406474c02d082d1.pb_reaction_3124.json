@@ -1,0 +1,319 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][O:2][C:3]1[CH:7]=[CH:6][S:5][CH:4]=1.C([Li])CCC.[C:13](=[O:15])=[O:14].Cl>CCOCC>[CH3:1][O:2][C:3]1[CH:7]=[CH:6][S:5][C:4]=1[C:13]([OH:15])=[O:14]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "dry ice"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(=O)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CO2/c2-1-3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m5_m6": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ice"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 10.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "HCl"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/ClH/h1H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 24.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m1_m7_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3-methoxythiophene"
+            },
+            {
+              "type": "SMILES",
+              "value": "COC1=CSC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C5H6OS/c1-6-5-2-3-7-4-5/h2-4H,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 4.81,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "butyllithium"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(CCC)[Li]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H9.Li/c1-3-4-2;/h1,3-4H2,2H3;"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 17.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ether"
+            },
+            {
+              "type": "SMILES",
+              "value": "CCOCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 20.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "dry ice"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(=O)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CO2/c2-1-3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 14.5,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": -78.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "The reaction mixture was stirred at -78° C. for 1 hour"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a solution of 3-methoxythiophene (4.81 g, 42.1 mmol) in ether (20 mL) at -78° C., butyllithium (17 mL, 47.6 mmol) was added. The reaction mixture was stirred at -78° C. for 1 hour, then it was warmed to 0° C. for 3 hours. After to recooling -78° C. the reaction mixture was poured into a beaker filled with crushed dry ice (14.5 g) and allowed to stand until the excess dry ice had completely sublimed. Then the reaction mixture was poured into a mixture of ice (10 g) to which conc. HCl (24 mL) had been added. The product was purified by precipitation from ether and filtering (6.42 g, 96%). EI-MS m/z 159 (M+H)+."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "it was warmed to 0° C. for 3 hours",
+      "duration": {
+        "value": 3.0,
+        "units": "HOUR"
+      },
+      "temperature": {
+        "setpoint": {
+          "value": 0.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "ADDITION",
+      "details": "After to recooling -78° C. the reaction mixture was poured into a beaker",
+      "temperature": {
+        "setpoint": {
+          "value": -78.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "ADDITION",
+      "details": "had been added"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The product was purified by precipitation from ether",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filtering (6.42 g, 96%)"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 1.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3-methoxy-2-thienylcarboxlic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "COC1=C(SC=C1)C(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H6O3S/c1-9-4-2-3-10-5(4)6(7)8/h2-3H,1H3,(H,7,8)"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06005008",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:20.407909"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-0dd0501eddcc4f1ea6bf91c8a51eec40"
+}

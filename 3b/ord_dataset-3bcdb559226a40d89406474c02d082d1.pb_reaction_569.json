@@ -1,0 +1,259 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[F:1][C:2]([F:15])([F:14])[CH2:3][N:4]1[C:12]2[C:7](=[CH:8][CH:9]=[CH:10][CH:11]=2)[CH2:6][C:5]1=[O:13].[C:16](Cl)(=[O:18])[CH3:17].[Cl-].[Cl-].[Cl-].[Al+3]>C(=S)=S>[C:16]([C:9]1[CH:8]=[C:7]2[C:12](=[CH:11][CH:10]=1)[N:4]([CH2:3][C:2]([F:1])([F:14])[F:15])[C:5](=[O:13])[CH2:6]2)(=[O:18])[CH3:17] |f:2.3.4.5|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m4_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "1-(2,2,2-trifluoro-ethyl)-1,3-dihydro-indol-2-one"
+            },
+            {
+              "type": "SMILES",
+              "value": "FC(CN1C(CC2=CC=CC=C12)=O)(F)F"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C10H8F3NO/c11-10(12,13)6-14-8-4-2-1-3-7(8)5-9(14)15/h1-4H,5-6H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 2.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acetyl chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H3ClO/c1-2(3)4/h1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 0.86,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "aluminum trichloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Cl-].[Cl-].[Cl-].[Al+3]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Al.3ClH/h;3*1H/q+3;;;/p-3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 7.4,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "carbon disulfide"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(=S)=S"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CS2/c2-1-3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 40.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a solution of 1-(2,2,2-trifluoro-ethyl)-1,3-dihydro-indol-2-one (2.0 g, 9.3 mmol) and acetyl chloride (0.86 mL, 12 mmol) in carbon disulfide (40 mL) was added aluminum trichloride (7.4 g, 56 mmol) by portions. The mixture was heated to reflux for 3 hours, then cooled. The liquid phase was decanted and the residue was quenched carefully with ice, then water. The solids were filtered, washed with water, dried and recrystallized from acetone/hexanes to give a pale pink solid, mp 170-171° C. Yield 1.23 g (51%)."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "The mixture was heated"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "to reflux for 3 hours",
+      "duration": {
+        "value": 3.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "cooled"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The liquid phase was decanted"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the residue was quenched carefully with ice"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "The solids were filtered"
+    },
+    {
+      "type": "WASH",
+      "details": "washed with water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "recrystallized from acetone/hexanes",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "acetone hexanes"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to give a pale pink solid, mp 170-171° C"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "5-Acetyl-1-(2,2,2-trifluoro-ethyl)-1,3-dihydro-indol-2-one"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)C=1C=C2CC(N(C2=CC1)CC(F)(F)F)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C12H10F3NO2/c1-7(17)8-2-3-10-9(4-8)5-11(18)16(10)6-12(13,14)15/h2-4H,5-6H2,1H3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998463",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:25.513980"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-5c6b02960a8a422ca3d010efc9cecdb6"
+}

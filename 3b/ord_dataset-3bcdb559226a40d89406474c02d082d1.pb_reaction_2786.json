@@ -1,0 +1,249 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][O:2][CH2:3][C:4]1[O:8][C:7]([C:9]([OH:11])=[O:10])=[CH:6][CH:5]=1.[H][H]>C(OCC)(=O)C.[Rh]>[CH3:1][O:2][CH2:3][CH:4]1[O:8][CH:7]([C:9]([OH:11])=[O:10])[CH2:6][CH2:5]1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "rhodium on carbon"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Rh]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Rh"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 200.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "CATALYST"
+        }
+      ]
+    },
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "5-methoxymethylfuran-2-carboxylic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "COCC1=CC=C(O1)C(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H8O4/c1-10-4-5-2-3-6(11-5)7(8)9/h2-3H,4H2,1H3,(H,8,9)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 3.1,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrogen"
+            },
+            {
+              "type": "SMILES",
+              "value": "[H][H]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2/h1H"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethyl acetate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)OCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 40.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A solution of 5-methoxymethylfuran-2-carboxylic acid (3.10 g) in ethyl acetate (40 ml) was hydrogenated over 5% rhodium on carbon (200 mg) until hydrogen uptake ceased. The catalyst was filtered off and washed with ethyl acetate. The combined filtrates were evaporated to give the title compound as a colourless oil (3.26 g); νmax (film) 1750 cm-1 ; δH (CDCl3) 1.75-2.1 (2 H,m), 2.1-2.6(2 H,m,), 3.45 (3 H,s), 3.47 (1 H,dd, J 3 and 10 Hz), 3.74 (1 H,dd, J 4 and 10 Hz), 4.15-4.43 (1 H,m) and 4.43-4.63 (1 H,m)."
+  },
+  "workups": [
+    {
+      "type": "FILTRATION",
+      "details": "The catalyst was filtered off"
+    },
+    {
+      "type": "WASH",
+      "details": "washed with ethyl acetate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The combined filtrates were evaporated"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "(2RS,5SR)-5-Methoxymethyltetrahydrofuran-2-carboxylic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "COCC1CCC(O1)C(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H12O4/c1-10-4-5-2-3-6(11-5)7(8)9/h5-6H,2-4H2,1H3,(H,8,9)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 3.26,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 102.5
+              }
+            }
+          ],
+          "isolated_color": "colourless",
+          "texture": {
+            "type": "OIL",
+            "details": "oil"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06001997",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:29.270073"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-5e86d55688514f5187e9eae1cbea9c97"
+}

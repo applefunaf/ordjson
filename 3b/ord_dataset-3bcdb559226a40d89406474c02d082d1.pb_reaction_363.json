@@ -1,0 +1,201 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "CC1(C)[N:7]([C:8]2[N:13]=[CH:12][C:11]([C:14]([CH3:21])([CH3:20])[C:15]([O:17]CC)=[O:16])=[CH:10][CH:9]=2)C(=O)C2C=CC=CC=2O1.[ClH:28]>>[ClH:28].[NH2:7][C:8]1[N:13]=[CH:12][C:11]([C:14]([CH3:21])([CH3:20])[C:15]([OH:17])=[O:16])=[CH:10][CH:9]=1 |f:2.3|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethyl 2-[6-(2,2-dimethyl-4-oxo-4H-1,3-benzoxazin-3-yl)-pyridin-3-yl]-2-methylpropanoate"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC1(OC2=C(C(N1C1=CC=C(C=N1)C(C(=O)OCC)(C)C)=O)C=CC=C2)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C21H24N2O4/c1-6-26-19(25)20(2,3)14-11-12-17(22-13-14)23-18(24)15-9-7-8-10-16(15)27-21(23,4)5/h7-13H,6H2,1-5H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 13.3,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "HCl"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/ClH/h1H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 50.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 100.0,
+        "units": "CELSIUS"
+      }
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A stirred mixture of ethyl 2-[6-(2,2-dimethyl-4-oxo-4H-1,3-benzoxazin-3-yl)-pyridin-3-yl]-2-methylpropanoate (13.3 g, 36.1 mmol) in concentrated HCl (50 mL) was heated at 100° C. overnight. After cooling to ambient temperature, the reaction mixture was concentrated in vacuo and the residue washed exhaustively with chloroform to give the title compound as a colourless solid (6.90 g, 88%)."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "After cooling to ambient temperature",
+      "temperature": {
+        "control": {
+          "type": "AMBIENT"
+        }
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "the reaction mixture was concentrated in vacuo"
+    },
+    {
+      "type": "WASH",
+      "details": "the residue washed exhaustively with chloroform",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "chloroform"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(Cl)(Cl)Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CHCl3/c2-1(3)4/h1H"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "2-(6-Aminopyridin-3-yl)-2-methylpropanoic acid hydrochloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl.NC1=CC=C(C=N1)C(C(=O)O)(C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H12N2O2.ClH/c1-9(2,8(12)13)6-3-4-7(10)11-5-6;/h3-5H,1-2H3,(H2,10,11)(H,12,13);1H"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 6.9,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 88.0
+              }
+            }
+          ],
+          "isolated_color": "colourless",
+          "texture": {
+            "type": "CUSTOM",
+            "details": "solid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998432",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:21.917675"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-8f98ce3ea096446299513cfaa59d0dd2"
+}

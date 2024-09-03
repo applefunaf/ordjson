@@ -1,0 +1,269 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[NH2:1][NH:2][C:3]([NH2:5])=[S:4].[Cl:6][CH2:7][CH2:8][CH2:9][C:10]([C:12]1[CH:17]=[CH:16][CH:15]=[CH:14][CH:13]=1)=O>CO.Cl.O>[Cl:6][CH2:7][CH2:8][CH2:9][C:10](=[N:1][NH:2][C:3](=[S:4])[NH2:5])[C:12]1[CH:17]=[CH:16][CH:15]=[CH:14][CH:13]=1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m3_m4_m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Thiosemicarbazide"
+            },
+            {
+              "type": "SMILES",
+              "value": "NNC(=S)N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH5N3S/c2-1(5)4-3/h3H2,(H3,2,4,5)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 9.11,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-chlorobutyrophenone"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClCCCC(=O)C1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C10H11ClO/c11-8-4-7-10(12)9-5-2-1-3-6-9/h1-3,5-6H,4,7-8H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 16.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 350.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "HCl"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/ClH/h1H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 27.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 25.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "After approximately 30 minutes of stirring at room temperature"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "Thiosemicarbazide (9.11 g, 0.1 mol) was added under nitrogen to a solution of 4-chlorobutyrophenone (16 mL, 0.1 mol) in 350 mL of methanol plus 27 mL of 1 N HCl plus 25 mL of water. After approximately 30 minutes of stirring at room temperature, all of the solid had dissolved. The reaction was then stirred at room temperature for 24 hours (overnight). The solid that had formed was collected by filtration and dried under high vacuum to give 17.41 g (68%) of the title compound as a white solid, mp 128-130° C."
+  },
+  "workups": [
+    {
+      "type": "DISSOLUTION",
+      "details": "all of the solid had dissolved"
+    },
+    {
+      "type": "STIRRING",
+      "details": "The reaction was then stirred at room temperature for 24 hours (overnight)",
+      "duration": {
+        "value": 8.0,
+        "precision": 8.0,
+        "units": "HOUR"
+      },
+      "temperature": {
+        "control": {
+          "type": "AMBIENT"
+        }
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The solid that had formed"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "was collected by filtration"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried under high vacuum"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 30.0,
+        "units": "MINUTE"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "2-(4-Chloro-1-phenyl-butylidene)-hydrazinecarbothioamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClCCCC(C1=CC=CC=C1)=NNC(N)=S"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C11H14ClN3S/c12-8-4-7-10(14-15-11(13)16)9-5-2-1-3-6-9/h1-3,5-6H,4,7-8H2,(H3,13,15,16)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 17.41,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 68.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 68.1
+              }
+            }
+          ],
+          "isolated_color": "white",
+          "texture": {
+            "type": "CUSTOM",
+            "details": "solid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06008362",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:25.044396"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-8c30833b289d4bc48a4990f341d6cbe5"
+}

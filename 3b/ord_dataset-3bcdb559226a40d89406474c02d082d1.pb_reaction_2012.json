@@ -1,0 +1,387 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[C:1]([NH2:5])([CH3:4])([CH3:3])[CH3:2].[Cl:6][CH2:7][C:8]([C:10]1[CH:15]=[CH:14][C:13]([I:16])=[CH:12][CH:11]=1)=[O:9]>C(#N)C>[ClH:6].[I:16][C:13]1[CH:14]=[CH:15][C:10]([C:8](=[O:9])[CH2:7][NH:5][C:1]([CH3:4])([CH3:3])[CH3:2])=[CH:11][CH:12]=1 |f:3.4|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m3_m2_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "tert-butylamine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(C)(C)N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H11N/c1-4(2,3)5/h5H2,1-3H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 154.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-chloro-4'-iodoacetophenone"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClCC(=O)C1=CC=C(C=C1)I"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H6ClIO/c9-5-8(11)6-1-3-7(10)4-2-6/h1-4H,5H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 158.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acetonitrile"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)#N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H3N/c1-2-3/h1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 100.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acetonitrile"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)#N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H3N/c1-2-3/h1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 700.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 20.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "with stirring under nitrogen at 20° C"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A solution of tert-butylamine (154 ml) in acetonitrile (100 ml) was added over 10 minutes to a solution of 2-chloro-4'-iodoacetophenone (158.0 g, prepared as described in Organic Magnetic Resonance 12 (12), 1979 pages 691-695) in acetonitrile (700 ml) with stirring under nitrogen at 20° C. The mixture was warmed to 30° C. whereupon a solution was formed, then a slight exotherm occurred and tert-butylamine hydrochloride precipitated. The mixture was kept below 37° C. by occasional cooling. The mixture was left stirring at ambient temperature for 18 hours then filtered and the residue washed with acetonitrile. The combined filtrate and washings were reduced in volume and then taken up in a mixture of ether (700 ml) and water (500 ml). The mixture was stirred while the pH was adjusted to 9 using dilute hydrochloric acid. The mixture was filtered to remove tert-butylamine hydrochloride. The filtrate was acidified with dilute hydrochloric acid to give 4'-iodo-2-(tert-butylamino)acetophenone hydrochloride (102.0 g). This product was reacted with malononitrile (29.9 g) and potassium hydroxide (52.3 g) in methanol (1.5 l) and water (100 ml) in a similar manner to Example 2, to give 2-amino-3-cyano-4-(4-iodophenyl)-1-(tert-butyl)pyrrole (63.2 g), m.p. 166.5-167° C."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "The mixture was warmed to 30° C. whereupon a solution",
+      "temperature": {
+        "setpoint": {
+          "value": 30.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "was formed"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "tert-butylamine hydrochloride precipitated",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "tert-butylamine hydrochloride"
+              },
+              {
+                "type": "SMILES",
+                "value": "Cl.C(C)(C)(C)N"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H11N.ClH/c1-4(2,3)5;/h5H2,1-3H3;1H"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "was kept below 37° C. by occasional cooling"
+    },
+    {
+      "type": "WAIT",
+      "details": "The mixture was left"
+    },
+    {
+      "type": "STIRRING",
+      "details": "stirring at ambient temperature for 18 hours",
+      "duration": {
+        "value": 18.0,
+        "units": "HOUR"
+      },
+      "temperature": {
+        "control": {
+          "type": "AMBIENT"
+        }
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "then filtered"
+    },
+    {
+      "type": "WASH",
+      "details": "the residue washed with acetonitrile",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "acetonitrile"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)#N"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C2H3N/c1-2-3/h1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "ADDITION",
+      "details": "taken up in a mixture of ether (700 ml) and water (500 ml)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 700.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 500.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "STIRRING",
+      "details": "The mixture was stirred while the pH"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "The mixture was filtered"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to remove tert-butylamine hydrochloride",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "tert-butylamine hydrochloride"
+              },
+              {
+                "type": "SMILES",
+                "value": "Cl.C(C)(C)(C)N"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H11N.ClH/c1-4(2,3)5;/h5H2,1-3H3;1H"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4'-iodo-2-(tert-butylamino)acetophenone hydrochloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl.IC1=CC=C(C=C1)C(CNC(C)(C)C)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C12H16INO.ClH/c1-12(2,3)14-8-11(15)9-4-6-10(13)7-5-9;/h4-7,14H,8H2,1-3H3;1H"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 102.0,
+                  "units": "GRAM"
+                }
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06001839",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:16.919180"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-f507b89f906b4edebc884844000d4211"
+}

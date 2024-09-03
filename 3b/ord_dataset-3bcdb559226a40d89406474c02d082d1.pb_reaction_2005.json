@@ -1,0 +1,260 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][C:2]1([CH3:14])[C:6]2[CH:7]=[CH:8][CH:9]=[C:10]([N+:11]([O-:13])=[O:12])[C:5]=2[Se:4][NH:3]1.[C:15](OC(=O)C)(=[O:17])[CH3:16]>N1C=CC=CC=1>[C:15]([N:3]1[C:2]([CH3:14])([CH3:1])[C:6]2[CH:7]=[CH:8][CH:9]=[C:10]([N+:11]([O-:13])=[O:12])[C:5]=2[Se:4]1)(=[O:17])[CH3:16]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3,3-dimethyl-7-nitrobenzisoselenazoline"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC1(N[Se]C2=C1C=CC=C2[N+](=O)[O-])C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H10N2O2Se/c1-9(2)6-4-3-5-7(11(12)13)8(6)14-10-9/h3-5,10H,1-2H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Example 1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 130.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acetic anhydride"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)OC(C)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H6O3/c1-3(5)7-4(2)6/h1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 1.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "pyridine"
+            },
+            {
+              "type": "SMILES",
+              "value": "N1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C5H5N/c1-2-4-6-5-3-1/h1-5H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 1.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "The 3,3-dimethyl-7-nitrobenzisoselenazoline described in Example 1 (130 mg, 0.5 mmol) is treated with 1 ml of acetic anhydride and 1 ml of pyridine at 60° C. for 1.5 hours. The mixture is then evaporated to dryness. The residue is triturated with a mixture of ethyl acetate and cyclohexane (1:2). The red solid is filtered and rinsed to provide the expected amide (140 mg, 93%)."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "The mixture is then evaporated to dryness"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The residue is triturated with a mixture of ethyl acetate and cyclohexane (1:2)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "cyclohexane"
+              },
+              {
+                "type": "SMILES",
+                "value": "C1CCCCC1"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C6H12/c1-2-4-6-5-3-1/h1-6H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "The red solid is filtered"
+    },
+    {
+      "type": "WASH",
+      "details": "rinsed"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "amide"
+            },
+            {
+              "type": "NAME",
+              "value": "N-acetyl-3,3-dimethyl-7-nitrobenzisoselenazoline"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)N1[Se]C2=C(C1(C)C)C=CC=C2[N+](=O)[O-]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C11H12N2O3Se/c1-7(14)12-11(2,3)8-5-4-6-9(13(15)16)10(8)17-12/h4-6H,1-3H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 140.0,
+                  "units": "MILLIGRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 93.0
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06001825",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:16.822632"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-95050963d8284e83b52e15820d33ba49"
+}

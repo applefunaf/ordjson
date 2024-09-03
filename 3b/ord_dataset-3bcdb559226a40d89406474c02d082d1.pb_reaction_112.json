@@ -1,0 +1,256 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][C:2]1[N:6]2[C:7]3[CH:8]=[CH:9][CH:10]=[CH:11][C:12]=3[C:13]([C:14](=[O:19])C(F)(F)F)=[C:5]2[S:4][CH:3]=1.[OH-:20].[Na+]>C(O)C>[CH3:1][C:2]1[N:6]2[C:7]3[CH:8]=[CH:9][CH:10]=[CH:11][C:12]=3[C:13]([C:14]([OH:19])=[O:20])=[C:5]2[S:4][CH:3]=1 |f:1.2|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3-Methyl-9-trifluoroacetylthiazolo[3,2-a]indole"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC1=CSC=2N1C=1C=CC=CC1C2C(C(F)(F)F)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C13H8F3NOS/c1-7-6-19-12-10(11(18)13(14,15)16)8-4-2-3-5-9(8)17(7)12/h2-6H,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 370.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "NaOH"
+            },
+            {
+              "type": "SMILES",
+              "value": "[OH-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Na.H2O/h;1H2/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 15.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 15.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "3-Methyl-9-trifluoroacetylthiazolo[3,2-a]indole (370 mg, 0.0013 mole) was treated with 20% NaOH solution (15 ml) and ethanol (15 ml) and heated under reflux for 6 h. The mixture was concentrated in vacuo to half its volume and the residue acidified with 2M HCl acid and then extracted with ethyl acetate (2×30 ml). The combined extracts were dried (Na2SO4) and concentrated in vacuo to afford the title compound (D13) as a brown solid (300 mg, 100%)."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "heated"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "under reflux for 6 h",
+      "duration": {
+        "value": 6.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "The mixture was concentrated in vacuo to half its volume"
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "extracted with ethyl acetate (2×30 ml)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 30.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "The combined extracts were dried (Na2SO4)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "Na2SO4"
+              },
+              {
+                "type": "SMILES",
+                "value": "[O-]S(=O)(=O)[O-].[Na+].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/2Na.H2O4S/c;;1-5(2,3)4/h;;(H2,1,2,3,4)/q2*+1;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated in vacuo"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "3-Methylthiazolo[3,2-a]indole-9-carboxylic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC1=CSC=2N1C=1C=CC=CC1C2C(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C12H9NO2S/c1-7-6-16-11-10(12(14)15)8-4-2-3-5-9(8)13(7)11/h2-6H,1H3,(H,14,15)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 300.0,
+                  "units": "MILLIGRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 100.0
+              }
+            }
+          ],
+          "isolated_color": "brown",
+          "texture": {
+            "type": "CUSTOM",
+            "details": "solid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998409",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:17.647133"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-0551d217325f40cc8ae6ce9b7395ca2d"
+}

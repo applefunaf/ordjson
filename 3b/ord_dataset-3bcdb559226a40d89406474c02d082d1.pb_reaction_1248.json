@@ -1,0 +1,408 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[Cl:1][C:2]1[CH:3]=[C:4]([CH:8]=[CH:9][C:10]=1[F:11])[C:5]([OH:7])=[O:6].[Br:12]C(Cl)(Cl)C(Cl)(Cl)Br.O>O1CCCC1>[Br:12][C:3]1[C:2]([Cl:1])=[C:10]([F:11])[CH:9]=[CH:8][C:4]=1[C:5]([OH:7])=[O:6]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3-chloro-4-fluorobenzoic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC=1C=C(C(=O)O)C=CC1F"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H4ClFO2/c8-5-3-4(7(10)11)1-2-6(5)9/h1-3H,(H,10,11)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 14.4,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "THF"
+            },
+            {
+              "type": "SMILES",
+              "value": "O1CCCC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O/c1-2-4-5-3-1/h1-4H2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m2_m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "1,2-dibromotetrachloroethane"
+            },
+            {
+              "type": "SMILES",
+              "value": "BrC(C(Br)(Cl)Cl)(Cl)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2Br2Cl4/c3-1(5,6)2(4,7)8"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 42.77,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "THF"
+            },
+            {
+              "type": "SMILES",
+              "value": "O1CCCC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O/c1-2-4-5-3-1/h1-4H2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": -75.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "stirring"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "n-Butyl lithium (2.5M solution, 76 ml) was added to a stirred solution of diisopropylamine (28 ml) in dry tetrahydrofuran (THF) at -75° C., and maintained at -30° C. for a further 1 hour, to produce lithium diisopropylamide (LDA). After re-cooling to -75° C., a solution of 3-chloro-4-fluorobenzoic acid (14.4 g) in dry THF was added over 1 hour, and stirring was continued overnight at -75° C. A solution of 1,2-dibromotetrachloroethane (42.77 g) in dry THF was then added over 20 minutes, stirring was continued for 2 hours at -70° C. then at room temperature for 4 hours. Water was added, the organic and aqueous phases were separated and the aqueous phase was washed with ether, then acidified with hydrochloric acid solution and extracted with dichloromethane. The dichloromethane extract was dried (anhydrous magnesium sulphate) and the solvent evaporated to give 2-bromo-3-chloro-4-fluorobenzoic acid (19.54 g) as a beige solid, NMR (DMSO-D6) 7.55(t,1H), 7.75(dd,1H), 13.8(brs,1H)."
+  },
+  "workups": [
+    {
+      "type": "STIRRING",
+      "details": "stirring"
+    },
+    {
+      "type": "WAIT",
+      "details": "was continued for 2 hours at -70° C.",
+      "duration": {
+        "value": 2.0,
+        "units": "HOUR"
+      },
+      "temperature": {
+        "setpoint": {
+          "value": -70.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "WAIT",
+      "details": "at room temperature for 4 hours",
+      "duration": {
+        "value": 4.0,
+        "units": "HOUR"
+      },
+      "temperature": {
+        "control": {
+          "type": "AMBIENT"
+        }
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the organic and aqueous phases were separated"
+    },
+    {
+      "type": "WASH",
+      "details": "the aqueous phase was washed with ether",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "extracted with dichloromethane",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "dichloromethane"
+              },
+              {
+                "type": "SMILES",
+                "value": "ClCCl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "The dichloromethane extract",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "dichloromethane"
+              },
+              {
+                "type": "SMILES",
+                "value": "ClCCl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "was dried (anhydrous magnesium sulphate)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "magnesium sulphate"
+              },
+              {
+                "type": "SMILES",
+                "value": "S(=O)(=O)([O-])[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the solvent evaporated"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 8.0,
+        "precision": 8.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-bromo-3-chloro-4-fluorobenzoic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "BrC1=C(C(=O)O)C=CC(=C1Cl)F"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H3BrClFO2/c8-5-3(7(11)12)1-2-4(10)6(5)9/h1-2H,(H,11,12)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 19.54,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 93.5
+              }
+            }
+          ],
+          "isolated_color": "beige",
+          "texture": {
+            "type": "CUSTOM",
+            "details": "solid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998653",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:35.141211"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-aa36558528b249aaa7e1526ba4bfdd26"
+}

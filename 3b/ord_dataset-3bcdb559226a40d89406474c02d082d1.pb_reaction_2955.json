@@ -1,0 +1,255 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "C([O:8][C:9]1[CH:10]=[C:11]2[C:16](=[CH:17][CH:18]=1)[CH2:15][N:14]([N:19]([C:21]1[CH:26]=[CH:25][N:24]=[CH:23][CH:22]=1)[CH3:20])[CH2:13][CH2:12]2)C1C=CC=CC=1>CO.[Pd]>[CH3:20][N:19]([C:21]1[CH:22]=[CH:23][N:24]=[CH:25][CH:26]=1)[N:14]1[CH2:13][CH2:12][C:11]2[C:16](=[CH:17][CH:18]=[C:9]([OH:8])[CH:10]=2)[CH2:15]1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "catalyst"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 1.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "CATALYST"
+        }
+      ]
+    },
+    "m1_m4_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "6-benzyloxy-3,4-dihydro-1H-isoquinoline-2-yl-N-methyl-4-pyridinylamine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C1=CC=CC=C1)OC=1C=C2CCN(CC2=CC1)N(C)C1=CC=NC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C22H23N3O/c1-24(21-9-12-23-13-10-21)25-14-11-19-15-22(8-7-20(19)16-25)26-17-18-5-3-2-4-6-18/h2-10,12-13,15H,11,14,16-17H2,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 5.1,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 75.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "palladium-on-carbon"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Pd]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Pd"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 1.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "CATALYST"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "was shaken on a Parr hydrogenation apparatus at ambient temperature"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture of 6-benzyloxy-3,4-dihydro-1H-isoquinoline-2-yl-N-methyl-4-pyridinylamine (5.1 g) and 5% palladium-on-carbon (1.0 g) in methanol (75 ml) was shaken on a Parr hydrogenation apparatus at ambient temperature and an initial pressure of 55 psi for 2 hrs. An additional 1 g of catalyst was added, and the mixture was shaken for an additional 4 hrs at an initial pressure of 55 psi. The reaction mixture was filtered through a pad of celite, the pad was washed with methanol, and the filtrate was concentrated to give 3.45 g (92%) of product. Recrystallization from methanol provided the analytical sample, mp 263-266° C."
+  },
+  "workups": [
+    {
+      "type": "STIRRING",
+      "details": "the mixture was shaken for an additional 4 hrs at an initial pressure of 55 psi",
+      "duration": {
+        "value": 4.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "The reaction mixture was filtered through a pad of celite"
+    },
+    {
+      "type": "WASH",
+      "details": "the pad was washed with methanol",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "methanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "CO"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "the filtrate was concentrated"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 2.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "product"
+            },
+            {
+              "type": "NAME",
+              "value": "2-[Methyl(pyridin-4-yl)amino]-1,2,3,4-tetrahydro-isoquinolin-6-ol"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN(N1CC2=CC=C(C=C2CC1)O)C1=CC=NC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C15H17N3O/c1-17(14-4-7-16-8-5-14)18-9-6-12-10-15(19)3-2-13(12)11-18/h2-5,7-8,10,19H,6,9,11H2,1H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 3.45,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 92.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 91.5
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06004977",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:17.919096"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-975e530580a84d548428a74a5aca0081"
+}

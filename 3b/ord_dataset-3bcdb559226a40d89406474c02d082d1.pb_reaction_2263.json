@@ -1,0 +1,259 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][C:2]1[NH:7][C:6](=[O:8])[NH:5][C:4](=[O:9])[CH:3]=1.O=P12OP3(OP(OP(O3)(O1)=O)(=O)O2)=O.[N+:24]([O-])([OH:26])=[O:25]>>[N+:24]([C:3]1[C:4](=[O:9])[NH:5][C:6](=[O:8])[NH:7][C:2]=1[CH3:1])([O-:26])=[O:25]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "phosphorus pentoxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "O=P12OP3(=O)OP(=O)(O1)OP(=O)(O2)O3"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/O10P4/c1-11-5-12(2)8-13(3,6-11)10-14(4,7-11)9-12"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 50.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "nitric acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "[N+](=O)(O)[O-]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/HNO3/c2-1(3)4/h(H,2,3,4)"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 200.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "6-methyluracil"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC1=CC(NC(N1)=O)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C5H6N2O2/c1-3-2-4(8)7-5(9)6-3/h2H,1H3,(H2,6,7,8,9)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 50.5,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ice water"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 1.0,
+              "units": "KILOGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "the mixture is stirred at +5° C. for a further 5 hours"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "50.5 g (0.40 mol) of 6-methyluracil (Merck) are introduced in portions over the course of one hour with stirring at 0 to +5° C. into a solution of 200 ml of 100% nitric acid (fuming) and 50 g of phosphorus pentoxide. When the exothermic reaction is complete, the mixture is stirred at +5° C. for a further 5 hours. The reaction mixture is subsequently poured into 1 kg of ice-water. The resultant precipitate is filtered, washed with water and then dried to constant weight, giving 37 g (54%) of 5-nitro-6-methyluracil, pale-yellow powder, m.p. 281° C. with decomposition."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "When the exothermic reaction"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "The resultant precipitate is filtered",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "resultant precipitate"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "washed with water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried to constant weight"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 5.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "5-nitro-6-methyluracil"
+            },
+            {
+              "type": "SMILES",
+              "value": "[N+](=O)([O-])C=1C(NC(NC1C)=O)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C5H5N3O4/c1-2-3(8(11)12)4(9)7-5(10)6-2/h1H3,(H2,6,7,9,10)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 37.0,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 54.0
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06002004",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:20.643345"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-c44882e9a2c7483eb6a272f9bf5edce5"
+}

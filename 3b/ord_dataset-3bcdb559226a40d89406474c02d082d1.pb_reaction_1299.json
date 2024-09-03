@@ -1,0 +1,244 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[NH2:1][C:2]1[CH:7]=[CH:6][C:5]([S:8]([NH:11][C:12]2[CH:17]=[C:16](Cl)[N:15]=[C:14]([N:19]3[CH2:22][CH2:21][CH2:20]3)[N:13]=2)(=[O:10])=[O:9])=[CH:4][CH:3]=1.Cl.CN.[CH2:26]([N:28](CC)CC)C>C(O)C>[NH2:1][C:2]1[CH:7]=[CH:6][C:5]([S:8]([NH:11][C:12]2[CH:17]=[C:16]([NH:28][CH3:26])[N:15]=[C:14]([N:19]3[CH2:22][CH2:21][CH2:20]3)[N:13]=2)(=[O:10])=[O:9])=[CH:4][CH:3]=1 |f:1.2|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-amino-N-(2-azetidin-1-yl-6-chloro-pyrimidin-4-yl)-benzenesulfonamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC1=CC=C(C=C1)S(=O)(=O)NC1=NC(=NC(=C1)Cl)N1CCC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C13H14ClN5O2S/c14-11-8-12(17-13(16-11)19-6-1-7-19)18-22(20,21)10-4-2-9(15)3-5-10/h2-5,8H,1,6-7,15H2,(H,16,17,18)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.2,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 20.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methylamine hydrochloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl.CN"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH5N.ClH/c1-2;/h2H2,1H3;1H"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.4,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "triethylamine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)N(CC)CC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H15N/c1-4-7(5-2)6-3/h4-6H2,1-3H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 2.28,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 130.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "stirred in an autoclave at 130° C. for 8 hours"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "0.20 g (0.00059 mol) of 4-amino-N-(2-azetidin-1-yl-6-chloro-pyrimidin-4-yl)-benzenesulfonamide was dissolved in 20 ml of ethanol, treated with 0.4 g (0.00588 mol) of methylamine hydrochloride and 2.28 ml (0.0176 mol) of triethylamine and stirred in an autoclave at 130° C. for 8 hours. The reaction mixture was freed from solvent and the residue was chromatographed on silica gel with methanol/dichloromethane 1:19. There was obtained 0.053 g (27%) of 4-amino-N-(2-azetidin-1-yl-6-methylamino-pyrimidin-4-yl)-benzenesulfonamide as light beige crystals; m.p.: >260° C. (dec.)"
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "the residue was chromatographed on silica gel with methanol/dichloromethane 1:19",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "methanol dichloromethane"
+              },
+              {
+                "type": "SMILES",
+                "value": "CO.ClCCl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2Cl2.CH4O/c2-1-3;1-2/h1H2;2H,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 8.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-amino-N-(2-azetidin-1-yl-6-methylamino-pyrimidin-4-yl)-benzenesulfonamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC1=CC=C(C=C1)S(=O)(=O)NC1=NC(=NC(=C1)NC)N1CCC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C14H18N6O2S/c1-16-12-9-13(18-14(17-12)20-7-2-8-20)19-23(21,22)11-5-3-10(15)4-6-11/h3-6,9H,2,7-8,15H2,1H3,(H2,16,17,18,19)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 0.053,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 27.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 26.9
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998665",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:36.082273"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-f79b2f9f01b94abba4ec57dfe2348662"
+}

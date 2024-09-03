@@ -1,0 +1,332 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "OS(O)(=O)=O.[NH2:6][C:7]1[CH:8]=[C:9]([OH:16])[C:10](=[CH:14][CH:15]=1)[C:11]([OH:13])=[O:12].[CH3:17]O>>[NH2:6][C:7]1[CH:8]=[C:9]([OH:16])[C:10](=[CH:14][CH:15]=1)[C:11]([O:13][CH3:17])=[O:12]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m3_m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "H2SO4"
+            },
+            {
+              "type": "SMILES",
+              "value": "OS(=O)(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O4S/c1-5(2,3)4/h(H2,1,2,3,4)"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 100.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-Aminosalicylic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC=1C=C(C(C(=O)O)=CC1)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H7NO3/c8-4-1-2-5(7(10)11)6(9)3-4/h1-3,9H,8H2,(H,10,11)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 10.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "with continuous stirring (exothermic)"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "Absolute methanol (100 mL) and fresh concentrated H2SO4 are carefully combined in a 250 mL round botton flask with continuous stirring (exothermic). 4-Aminosalicylic acid (10.0 grams, 65.4 mmol) is added to produce a dark solution, which is heated under reflux for 6 hours. The product is allowed to cool and then concentrated on a rotary evaporator to approximately half the original volume. At this point a solid precipitate appears. The concentrate is poured into 400 mL of water, and the resulting suspension titrated to approximately pH 3, by stepwise addition of 5 N NaOH (to pH 6.5), followed by solid Na2CO3, with evolution of CO2 gas. The concentrate was chilled on ice, and the resulting precipitate collected by filtration. The filtrate is washed with cold water, and then dried in vacuo over NaOH pellets, to afford 9.6 grams (88% yield) of methyl 4-aminosalicylate, a pale lavendar powder (m.p. 115-117° C.). The structure was confirmed by 1H NMR spectrometry in d6 -acetone."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "to produce a dark solution, which"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "is heated"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "under reflux for 6 hours",
+      "duration": {
+        "value": 6.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "to cool"
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated on a rotary evaporator to approximately half the original volume"
+    },
+    {
+      "type": "ADDITION",
+      "details": "The concentrate is poured into 400 mL of water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 400.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "ADDITION",
+      "details": "the resulting suspension titrated to approximately pH 3, by stepwise addition of 5 N NaOH (to pH 6.5)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "NaOH"
+              },
+              {
+                "type": "SMILES",
+                "value": "[OH-].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Na.H2O/h;1H2/q+1;/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "The concentrate was chilled on ice"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "the resulting precipitate collected by filtration"
+    },
+    {
+      "type": "WASH",
+      "details": "The filtrate is washed with cold water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "dried in vacuo over NaOH pellets",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "NaOH"
+              },
+              {
+                "type": "SMILES",
+                "value": "[OH-].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Na.H2O/h;1H2/q+1;/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methyl 4-aminosalicylate"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC=1C=C(C(C(=O)OC)=CC1)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H9NO3/c1-12-8(11)6-3-2-5(9)4-7(6)10/h2-4,10H,9H2,1H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 9.6,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 88.0
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06008406",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:26.865092"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-77eac9b344f14e8cbf5fbce644a7a2cd"
+}

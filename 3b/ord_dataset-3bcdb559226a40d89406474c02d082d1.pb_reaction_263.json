@@ -1,0 +1,215 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "C(OC([N:8]1[CH2:13][CH2:12][CH:11]([C:14]([C:16]2[N:20]([CH2:21][C:22]3[CH:27]=[CH:26][CH:25]=[CH:24][N:23]=3)[C:19]3[CH:28]=[CH:29][CH:30]=[CH:31][C:18]=3[N:17]=2)=[O:15])[CH2:10][CH2:9]1)=O)(C)(C)C.[IH:32]>ClCCl>[IH:32].[N:23]1[CH:24]=[CH:25][CH:26]=[CH:27][C:22]=1[CH2:21][N:20]1[C:19]2[CH:28]=[CH:29][CH:30]=[CH:31][C:18]=2[N:17]=[C:16]1[C:14]([CH:11]1[CH2:12][CH2:13][NH:8][CH2:9][CH2:10]1)=[O:15] |f:3.4|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "dichloromethane"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClCCl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 150.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "1-(t-butoxycarbonyl)-4-(1-(pyrid-2-ylmethyl)-1H-benzimidazole-2-carbonyl)piperidine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(C)(C)OC(=O)N1CCC(CC1)C(=O)C1=NC2=C(N1CC1=NC=CC=C1)C=CC=C2"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C24H28N4O3/c1-24(2,3)31-23(30)27-14-11-17(12-15-27)21(29)22-26-19-9-4-5-10-20(19)28(22)16-18-8-6-7-13-25-18/h4-10,13,17H,11-12,14-16H2,1-3H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 1.96,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydriodic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "I"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/HI/h1H"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydriodic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "I"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/HI/h1H"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 0.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "stir"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "Combine 1-(t-butoxycarbonyl)-4-(1-(pyrid-2-ylmethyl)-1H-benzimidazole-2-carbonyl)piperidine (1.96 g, 4.7 mmol) and dichloromethane (150 mL). Cool to 0° C. using an ice bath. Add hydriodic acid (gas) until the solution is saturated and stir. After 30 minutes, again add hydriodic acid (gas) until the solution is saturated. After 2 hours, evaporate in vacuo to give, after drying, the title compound: mp 165-167° C."
+  },
+  "workups": [
+    {
+      "type": "WAIT",
+      "details": "After 2 hours",
+      "duration": {
+        "value": 2.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "evaporate in vacuo"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to give"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "after drying"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 30.0,
+        "units": "MINUTE"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-(1-(pyrid-2-ylmethyl)-1H-benzimidazole-2-carbonyl)piperidine hydriodic acid salt"
+            },
+            {
+              "type": "SMILES",
+              "value": "I.N1=C(C=CC=C1)CN1C(=NC2=C1C=CC=C2)C(=O)C2CCNCC2"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C19H20N4O.HI/c24-18(14-8-11-20-12-9-14)19-22-16-6-1-2-7-17(16)23(19)13-15-5-3-4-10-21-15;/h1-7,10,14,20H,8-9,11-13H2;1H"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998439",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:20.242622"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-64bd7cb31d8a40ecb44920cb66abf349"
+}

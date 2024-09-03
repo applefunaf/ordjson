@@ -1,0 +1,507 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[C:1]([NH:11][C@H:12]([C:15]([OH:17])=[O:16])[CH2:13][OH:14])([O:3][CH2:4][C:5]1[CH:10]=[CH:9][CH:8]=[CH:7][CH:6]=1)=[O:2].[F:18][C:19]1[C:24](O)=[C:23]([F:26])[C:22]([F:27])=[C:21]([F:28])[C:20]=1[F:29].C1CCC(N=C=NC2CCCCC2)CC1.O>CN(C=O)C>[F:18][C:19]1[C:24]([O:16][C:15](=[O:17])[C@H:12]([CH2:13][OH:14])[NH:11][C:1]([O:3][CH2:4][C:5]2[CH:10]=[CH:9][CH:8]=[CH:7][CH:6]=2)=[O:2])=[C:23]([F:26])[C:22]([F:27])=[C:21]([F:28])[C:20]=1[F:29]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 3.76,
+              "units": "LITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m1_m2_m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-Cbz-L-serine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(=O)(OCC1=CC=CC=C1)N[C@@H](CO)C(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C11H13NO5/c13-6-9(10(14)15)12-11(16)17-7-8-4-2-1-3-5-8/h1-5,9,13H,6-7H2,(H,12,16)(H,14,15)/t9-/m0/s1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 100.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "pentafluorophenol"
+            },
+            {
+              "type": "SMILES",
+              "value": "FC1=C(C(=C(C(=C1O)F)F)F)F"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6HF5O/c7-1-2(8)4(10)6(12)5(11)3(1)9/h12H"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 84.7,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "DMF"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN(C)C=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H7NO/c1-4(2)3-5/h3H,1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 250.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m3_m6": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "DCC"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1CCC(CC1)N=C=NC2CCCCC2"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C13H22N2/c1-3-7-12(8-4-1)14-11-15-13-9-5-2-6-10-13/h12-13H,1-10H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 95.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "DMF"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN(C)C=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H7NO/c1-4(2)3-5/h3H,1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 125.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": -10.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "with stirring under nitrogen to -10° C"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture of N-Cbz-L-serine (Novabiochem) (100 g, 0.42 mol) and pentafluorophenol (Aldrich) (84.7 g, 0.46 mol) in anhydrous DMF (250 ml) are cooled with stirring under nitrogen to -10° C. To this solution, a solution of DCC (95.0 g, 0.46 mol) in anhydrous DMF (125 ml) is added over 30 min while keeping the reaction temperature at -10° C. The reaction mixture is stirred at -10 to -5° C. for an additional 30 min and then at room temperature for 3 hours. The reaction mixture is poured into water (3.76 L). After stirring for 15 min, the solid that precipitated out is filtered, washed over the filter with water (3×500 ml) and air dried at room temperature. The solid is then taken up in EtOAc (1 L) and the residual solid (mainly dicyclohexylurea) is filtered off and washed with more EtOAc (3×150 ml). The combined EtOAc solutions are evaporated to dryness under reduced pressure. The residual solid is dissolved in hot CH2Cl2 (3.2 L). The hot solution is gravity filtered and the solvent is boiled off until solid began to crystallize. The solid which crystallized is filtered and air dried to ambient temperature to give N-Cbz-L-serine pentafluorophenyl ester (130.8 g, 77% yield) as a white solid."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "are cooled"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "at -10° C",
+      "temperature": {
+        "setpoint": {
+          "value": -10.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "STIRRING",
+      "details": "The reaction mixture is stirred at -10 to -5° C. for an additional 30 min",
+      "duration": {
+        "value": 30.0,
+        "units": "MINUTE"
+      },
+      "temperature": {
+        "setpoint": {
+          "value": -7.5,
+          "precision": 2.5,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "STIRRING",
+      "details": "After stirring for 15 min",
+      "duration": {
+        "value": 15.0,
+        "units": "MINUTE"
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the solid that precipitated out"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "is filtered"
+    },
+    {
+      "type": "WASH",
+      "details": "washed over the"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filter with water (3×500 ml) and air",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 500.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried at room temperature",
+      "temperature": {
+        "control": {
+          "type": "AMBIENT"
+        }
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "the residual solid (mainly dicyclohexylurea) is filtered off",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "dicyclohexylurea"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(=O)(NC1CCCCC1)NC1CCCCC1"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C13H24N2O/c16-13(14-11-7-3-1-4-8-11)15-12-9-5-2-6-10-12/h11-12H,1-10H2,(H2,14,15,16)"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "washed with more EtOAc (3×150 ml)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "EtOAc"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOC(=O)C"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 150.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The combined EtOAc solutions are evaporated to dryness under reduced pressure",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "EtOAc"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOC(=O)C"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DISSOLUTION",
+      "details": "The residual solid is dissolved in hot CH2Cl2 (3.2 L)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "CH2Cl2"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(Cl)Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 3.2,
+                "units": "LITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filtered"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to crystallize"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The solid which crystallized"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "is filtered"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "air dried to ambient temperature",
+      "temperature": {
+        "control": {
+          "type": "AMBIENT"
+        }
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 3.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-Cbz-L-serine pentafluorophenyl ester"
+            },
+            {
+              "type": "SMILES",
+              "value": "FC1=C(C(=C(C(=C1OC([C@@H](NC(=O)OCC1=CC=CC=C1)CO)=O)F)F)F)F"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C17H12F5NO5/c18-10-11(19)13(21)15(14(22)12(10)20)28-16(25)9(6-24)23-17(26)27-7-8-4-2-1-3-5-8/h1-5,9,24H,6-7H2,(H,23,26)/t9-/m0/s1"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 130.8,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 77.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 76.8
+              }
+            }
+          ],
+          "isolated_color": "white",
+          "texture": {
+            "type": "CUSTOM",
+            "details": "solid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06008225",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:17.218082"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-0430182dc037423ba52c74aa10da47a7"
+}

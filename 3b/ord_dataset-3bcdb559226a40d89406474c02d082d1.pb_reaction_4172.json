@@ -1,0 +1,217 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[Cl:1][CH2:2][CH2:3][CH2:4][C:5]([C:7]1[CH:8]=[N:9][CH:10]=[CH:11][CH:12]=1)=O.[CH3:13][NH:14][C:15](=[S:18])[NH:16][NH2:17]>C(O)C>[Cl:1][CH2:2][CH2:3][CH2:4][C:5](=[N:17][NH:16][C:15](=[S:18])[NH:14][CH3:13])[C:7]1[CH:8]=[N:9][CH:10]=[CH:11][CH:12]=1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-chloro-1-(3-pyridinyl)-1-butanone"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClCCCC(=O)C=1C=NC=CC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H10ClNO/c10-5-1-4-9(12)8-3-2-6-11-7-8/h2-3,6-7H,1,4-5H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 4.4,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-methylthiosemicarbazide"
+            },
+            {
+              "type": "SMILES",
+              "value": "CNC(NN)=S"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H7N3S/c1-4-2(6)5-3/h3H2,1H3,(H2,4,5,6)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 2.5,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 150.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "to stir at room temperature overnight"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture of 4-chloro-1-(3-pyridinyl)-1-butanone (4.4 g, 24 mmol) and 4-methylthiosemicarbazide (2.5 g, 24 mmol) in 150 mL of ethanol under a nitrogen atmosphere was warmed to dissolve all the solids and then allowed to stir at room temperature overnight. By TLC the reaction was not complete. The reaction was then heated at 70° C. for 5 hours and overnight at room temperature. The solvent was removed under reduced pressure to give 7.29 g of a yellow oil. Purification of this oil on 700 g of silica gel (230-400 mesh) using 50-70% EtOAc-hexane as the eluent gave 4.14 g (64%) of the title compound as a white solid, mp 100-102° C."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "was warmed"
+    },
+    {
+      "type": "DISSOLUTION",
+      "details": "to dissolve all the solids"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "The reaction was then heated at 70° C. for 5 hours and overnight at room temperature",
+      "duration": {
+        "value": 8.0,
+        "precision": 8.0,
+        "units": "HOUR"
+      },
+      "temperature": {
+        "control": {
+          "type": "AMBIENT"
+        },
+        "setpoint": {
+          "value": 70.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The solvent was removed under reduced pressure"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 8.0,
+        "precision": 8.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "yellow oil"
+            },
+            {
+              "type": "NAME",
+              "value": "2-[4-Chloro-1-(pyridin-3-yl)-butylidene]-N-methyl-hydrazinecarbothioamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClCCCC(C=1C=NC=CC1)=NNC(NC)=S"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C11H15ClN4S/c1-13-11(17)16-15-10(5-2-6-12)9-4-3-7-14-8-9/h3-4,7-8H,2,5-6H2,1H3,(H2,13,16,17)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 7.29,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 112.2
+              }
+            }
+          ],
+          "isolated_color": "yellow",
+          "texture": {
+            "type": "OIL",
+            "details": "oil"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06008362",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:25.012983"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-0b3210bde09d4528a1999574f3a04593"
+}

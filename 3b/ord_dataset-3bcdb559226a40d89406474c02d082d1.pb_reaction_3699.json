@@ -1,0 +1,236 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[N+:1]([C:4]1[CH:9]=[C:8]([C:10]([CH3:13])([CH3:12])[CH3:11])[CH:7]=[CH:6][C:5]=1[OH:14])([O-])=O.[H][H]>C(OCC)(=O)C.[Pd]>[NH2:1][C:4]1[CH:9]=[C:8]([C:10]([CH3:12])([CH3:11])[CH3:13])[CH:7]=[CH:6][C:5]=1[OH:14]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Pd/C"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Pd]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Pd"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "CATALYST"
+        }
+      ]
+    },
+    "m1_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "nitrophenol"
+            },
+            {
+              "type": "NAME",
+              "value": "2-nitro-4-t-butyl phenol"
+            },
+            {
+              "type": "SMILES",
+              "value": "[N+](=O)([O-])C1=C(C=CC(=C1)C(C)(C)C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C10H13NO3/c1-10(2,3)7-4-5-9(12)8(6-7)11(13)14/h4-6,12H,1-3H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 37.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethyl acetate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)OCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 100.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrogen"
+            },
+            {
+              "type": "SMILES",
+              "value": "[H][H]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2/h1H"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "Commercially available 4-t-butyl phenol (30 g, 0.2 mole) was dissolved in 200 mL ethyl acetate in a 600-mL round-bottomed flask fitted with a mechanical stirrer, and cooled to 0° C. The mixture was treated with nitric acid (13 mL, in 13 mL water) dropwise over 10 min and then a catalytic amount of NaNO2. After 45 min the reaction was washed with excess 1N HCl and the organic layer was dried over MgSO4 and stripped to yield 37 g of 2-nitro-4-t-butyl phenol. This nitrophenol (37 g, 0.19 mole) was dissolved in 100 mL ethyl acetate and placed into a Parr bottle with a teaspoon of 10% Pd/C. The mixture was placed on a hydrogenator under 50 psi hydrogen with agitation for 1 hr. The catalyst was filtered off through celite, and the ethyl acetate was stripped off under vacuum. The material crystallized with the addition of about 200 mL heptane to give 25.6 g of the corresponding amine (2-amino-4-t-butyl phenol)."
+  },
+  "workups": [
+    {
+      "type": "FILTRATION",
+      "details": "The catalyst was filtered off through celite"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The material crystallized with the addition of about 200 mL heptane",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "heptane"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCCCCCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C7H16/c1-3-5-7-6-4-2/h3-7H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 200.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "amine"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC1=C(C=CC(=C1)C(C)(C)C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C10H15NO/c1-10(2,3)7-4-5-9(12)8(11)6-7/h4-6,12H,11H2,1-3H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 25.6,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 81.5
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06007973",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:16.298506"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-5a785d0f788f4e72a78966f06d5051a7"
+}

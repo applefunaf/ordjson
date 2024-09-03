@@ -1,0 +1,280 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][O:2][CH2:3][CH2:4][CH2:5][OH:6].[H-].[Na+].Cl[C:10]1[CH:15]=[CH:14][N+:13]([O-:16])=[C:12]([CH3:17])[C:11]=1[CH3:18]>CS(C)=O>[CH3:1][O:2][CH2:3][CH2:4][CH2:5][O:6][C:10]1[CH:15]=[CH:14][N+:13]([O-:16])=[C:12]([CH3:17])[C:11]=1[CH3:18] |f:1.2|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3-methoxypropanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "COCCCO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H10O2/c1-6-4-2-3-5/h5H,2-4H2,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 2.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "dimethyl sulfoxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "CS(=O)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6OS/c1-4(2)3/h1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 50.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sodium hydride"
+            },
+            {
+              "type": "SMILES",
+              "value": "[H-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Na.H/q+1;-1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 2.7,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-chloro-2,3-dimethylpyridine N-oxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC1=C(C(=[N+](C=C1)[O-])C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H8ClNO/c1-5-6(2)9(10)4-3-7(5)8/h3-4H,1-2H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 3.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 60.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "The obtained mixture was stirred at 60° C. for one hour"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "2.0 g (22 mmol) of 3-methoxypropanol was dissolved in 50 ml of dimethyl sulfoxide to obtain a solution. 2.7 g (66 mmol) of sodium hydride was added to this solution at a room temperature. The obtained mixture was stirred at 60° C. for one hour and cooled to a room temperature by allowing to stand, followed by the addition of 3.0 g (19 mmol) of 4-chloro-2,3-dimethylpyridine N-oxide. The obtained mixture was stirred at 40° C. for one hour. After the completion of the reaction, the reaction mixture was distilled to remove the dimethyl sulfoxide. The obtained residue was purified by silica gel column chromatography to obtain 760 mg of 4-(3-methoxypropoxy)-2,3-dimethyl-pyridine N-oxide."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "to obtain a solution"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "cooled to a room temperature",
+      "temperature": {
+        "control": {
+          "type": "AMBIENT"
+        }
+      }
+    },
+    {
+      "type": "STIRRING",
+      "details": "The obtained mixture was stirred at 40° C. for one hour",
+      "duration": {
+        "value": 1.0,
+        "units": "HOUR"
+      },
+      "temperature": {
+        "setpoint": {
+          "value": 40.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "After the completion of the reaction"
+    },
+    {
+      "type": "DISTILLATION",
+      "details": "the reaction mixture was distilled"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to remove the dimethyl sulfoxide",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "dimethyl sulfoxide"
+              },
+              {
+                "type": "SMILES",
+                "value": "CS(=O)C"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C2H6OS/c1-4(2)3/h1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The obtained residue was purified by silica gel column chromatography"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 1.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-(3-methoxypropoxy)-2,3-dimethyl-pyridine N-oxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "COCCCOC1=C(C(=[N+](C=C1)[O-])C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C11H17NO3/c1-9-10(2)12(13)6-5-11(9)15-8-4-7-14-3/h5-6H,4,7-8H2,1-3H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 760.0,
+                  "units": "MILLIGRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 18.9
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998445",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:21.270627"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-587aa44822454a5f84f794e15d2c9f6d"
+}

@@ -1,0 +1,236 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[Cl:1][C:2]1[CH:10]=[CH:9][CH:8]=[C:7]([Si:11]([CH3:14])([CH3:13])[CH3:12])[C:3]=1[C:4](Cl)=[O:5].[CH2:15]([O:17][CH2:18][CH2:19][NH2:20])[CH3:16]>C1(C)C=CC=CC=1>[CH2:15]([O:17][CH2:18][CH2:19][NH:20][C:4](=[O:5])[C:3]1[C:7]([Si:11]([CH3:14])([CH3:13])[CH3:12])=[CH:8][CH:9]=[CH:10][C:2]=1[Cl:1])[CH3:16]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "compound"
+            },
+            {
+              "type": "NAME",
+              "value": "2-Chloro-6-(trimethylsilyl)benzoyl chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC1=C(C(=O)Cl)C(=CC=C1)[Si](C)(C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C10H12Cl2OSi/c1-14(2,3)8-6-4-5-7(11)9(8)10(12)13/h4-6H,1-3H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 4.94,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-ethoxyethyl amine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)OCCN"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H11NO/c1-2-6-4-3-5/h2-5H2,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 3.92,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "toluene"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1(=CC=CC=C1)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H8/c1-7-5-3-2-4-6-7/h2-6H,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 35.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "The compound of Example b (4.94 g, 20 mmol), 2-ethoxyethyl amine (3.92 g, 44 mmol), and toluene (35 mL) were combined according to General Method E1. The crude product was recrystallized from aq ethanol to afford 3.97 g of N-(2-ethoxyethyl)-2-chloro-6-(trimethylsilyl)benzamide as white solid, a 66% yield. m.p. 71-73° C."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "The crude product was recrystallized from aq ethanol",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "crude product"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-(2-ethoxyethyl)-2-chloro-6-(trimethylsilyl)benzamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)OCCNC(C1=C(C=CC=C1[Si](C)(C)C)Cl)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C14H22ClNO2Si/c1-5-18-10-9-16-14(17)13-11(15)7-6-8-12(13)19(2,3)4/h6-8H,5,9-10H2,1-4H3,(H,16,17)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 3.97,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 66.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 66.2
+              }
+            }
+          ],
+          "isolated_color": "white",
+          "texture": {
+            "type": "CUSTOM",
+            "details": "solid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998466",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:37.679414"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-11bdb410e15f46c197bd5eca00e3a31b"
+}

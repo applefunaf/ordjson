@@ -1,0 +1,272 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "CO[C:3](=[N:13][N+:14]([O-:16])=[O:15])[NH:4][CH2:5][C:6]1[CH:7]=[N:8][C:9]([Cl:12])=[CH:10][CH:11]=1.[CH3:17][NH2:18]>O>[Cl:12][C:9]1[N:8]=[CH:7][C:6]([CH2:5][NH:4][C:3]([NH:18][CH3:17])=[N:13][N+:14]([O-:16])=[O:15])=[CH:11][CH:10]=1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "O-methyl-N-(6-chloro-3-pyridylmethyl)-N'-nitroisourea"
+            },
+            {
+              "type": "SMILES",
+              "value": "COC(NCC=1C=NC(=CC1)Cl)=N[N+](=O)[O-]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H9ClN4O3/c1-16-8(12-13(14)15)11-5-6-2-3-7(9)10-4-6/h2-4H,5H2,1H3,(H,11,12)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 970.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 30.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "aqueous solution"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methylamine"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH5N/c1-2/h2H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 0.7,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "with stirring"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a mixture of O-methyl-N-(6-chloro-3-pyridylmethyl)-N'-nitroisourea (970 mg, 3.96 mmol) and water (30 ml) was added 40% aqueous solution of methylamine (0.7 ml, 7.92 mmol, 2.0 equivalents) at room temperature with stirring. After 1.5 hours of stirring at room temperature, the resulting crystals were collected. The crystals were washed with water and methanol, and dried. As a result, 860 mg (89.1% yield) of 1-(6-chloro-3-pyridylmethyl)-3-methyl-2-nitroguanidine."
+  },
+  "workups": [
+    {
+      "type": "STIRRING",
+      "details": "After 1.5 hours of stirring at room temperature",
+      "duration": {
+        "value": 1.5,
+        "units": "HOUR"
+      },
+      "temperature": {
+        "control": {
+          "type": "AMBIENT"
+        }
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the resulting crystals were collected"
+    },
+    {
+      "type": "WASH",
+      "details": "The crystals were washed with water and methanol",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "methanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "CO"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "1-(6-chloro-3-pyridylmethyl)-3-methyl-2-nitroguanidine"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC1=CC=C(C=N1)CNC(=N[N+](=O)[O-])NC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H10ClN5O2/c1-10-8(13-14(15)16)12-5-6-2-3-7(9)11-4-6/h2-4H,5H2,1H3,(H2,10,12,13)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 860.0,
+                  "units": "MILLIGRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 89.1
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 89.1
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06008363",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:25.710003"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-64525da0b4bf42b5b82636483c8b654c"
+}

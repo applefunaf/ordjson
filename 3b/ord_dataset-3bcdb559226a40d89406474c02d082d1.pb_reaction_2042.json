@@ -1,0 +1,329 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[Br-].[CH2:2]([O:4][C:5]([CH2:7][N+:8]1[CH:13]=[CH:12][CH:11]=[C:10]([CH:14]([C:21]2[CH:26]=[CH:25][CH:24]=[CH:23][CH:22]=2)[C:15]2[CH:20]=[CH:19][CH:18]=[CH:17][CH:16]=2)[CH:9]=1)=[O:6])[CH3:3].[BH4-].[Na+]>>[CH2:2]([O:4][C:5](=[O:6])[CH2:7][N:8]1[CH2:13][CH:12]=[CH:11][CH:10]([CH:14]([C:21]2[CH:26]=[CH:25][CH:24]=[CH:23][CH:22]=2)[C:15]2[CH:20]=[CH:19][CH:18]=[CH:17][CH:16]=2)[CH2:9]1)[CH3:3] |f:0.1,2.3|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ice"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "1-ethoxycarbonylmethyl-3-diphenylmethylpyridinium bromide"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Br-].C(C)OC(=O)C[N+]1=CC(=CC=C1)C(C1=CC=CC=C1)C1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C22H22NO2.BrH/c1-2-25-21(24)17-23-15-9-14-20(16-23)22(18-10-5-3-6-11-18)19-12-7-4-8-13-19;/h3-16,22H,2,17H2,1H3;1H/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.206,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sodium borohydride"
+            },
+            {
+              "type": "SMILES",
+              "value": "[BH4-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/BH4.Na/h1H4;/q-1;+1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.034,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "with stirring over one hour"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To an ice cooled solution of 0.206 g (0.5 mmol) 1-ethoxycarbonylmethyl-3-diphenylmethylpyridinium bromide (from step 1) was added 0.034 g (0.92 mmol) sodium borohydride in small portions with stirring over one hour. The solvent was evaporated, the residue dissolved in diethyl ether, washed with water and dried with magnesium sulphate. After evaporation of the solvent, the residue was chromatographed on silica gel column with 30% ethyl acetate in hexanes to give 0.107 g (64%) 3-diphenylmethyl-1,2,3,6-tetrahydropyridin-1-yl acetic acid ethyl ester (compound C1) as a pale yellow oil. NMR spectra showed: 1H NMR (CDCl3, 300 MHz) δ 7.40-7.10 (m, 10 H), 5.22 (br. s,1 H), 4.61 (s, 1 H), 4.12 (q, 2 H), 3.25 (s, 2 H), 3.03 (s, 2 H), 2.68 (t, 2 H), 2.22 (br. s, 2 H), 1.19 (t, 3 H); 13C NMR (CDCl3 75 MHz) δ 170.24, 141.86, 137.89, 129.11, 128.10, 126.19, 123.24, 60.31, 58.79, 56.24, 55.13, 49.51, 25.64, 14.05. El-MS: 335 (10, M+, C22H25NO2), 262 (50)."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "The solvent was evaporated"
+    },
+    {
+      "type": "DISSOLUTION",
+      "details": "the residue dissolved in diethyl ether",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "diethyl ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "washed with water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "dried with magnesium sulphate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "magnesium sulphate"
+              },
+              {
+                "type": "SMILES",
+                "value": "S(=O)(=O)([O-])[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "After evaporation of the solvent"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the residue was chromatographed on silica gel column with 30% ethyl acetate in hexanes",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "hexanes"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 1.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3-diphenylmethyl-1,2,3,6-tetrahydropyridin-1-yl acetic acid ethyl ester"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)OC(CN1CC(C=CC1)C(C1=CC=CC=C1)C1=CC=CC=C1)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C22H25NO2/c1-2-25-21(24)17-23-15-9-14-20(16-23)22(18-10-5-3-6-11-18)19-12-7-4-8-13-19/h3-14,20,22H,2,15-17H2,1H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 0.107,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 64.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 63.8
+              }
+            }
+          ],
+          "isolated_color": "pale yellow",
+          "texture": {
+            "type": "OIL",
+            "details": "oil"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06001854",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:17.348567"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-c0f9efb40b0142d8a4b970f37bfb110f"
+}

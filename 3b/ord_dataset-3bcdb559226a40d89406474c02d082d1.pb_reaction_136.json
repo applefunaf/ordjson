@@ -1,0 +1,336 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "Cl.[C:2]1([CH2:8][CH2:9][NH2:10])[CH:7]=[CH:6][CH:5]=[CH:4][CH:3]=1.BrC([C:15]([O:17][C:18]([CH3:21])([CH3:20])[CH3:19])=[O:16])CN.[C:22]([O-])([O-])=O.[K+].[K+].C[N:29]([CH:31]=O)C>>[C:18]([O:17][C:15](=[O:16])[NH:29][CH2:31][CH2:22][NH:10][CH2:9][CH2:8][C:2]1[CH:7]=[CH:6][CH:5]=[CH:4][CH:3]=1)([CH3:19])([CH3:20])[CH3:21] |f:0.1,3.4.5|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m4_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "phenylethylamine hydrochloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl.C1(=CC=CC=C1)CCN"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H11N.ClH/c9-7-6-8-4-2-1-3-5-8;/h1-5H,6-7,9H2;1H"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 2.88,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-bromo-N-tert-butyloxycarbonylethylamine"
+            },
+            {
+              "type": "SMILES",
+              "value": "BrC(CN)C(=O)OC(C)(C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H14BrNO2/c1-7(2,3)11-6(10)5(8)4-9/h5H,4,9H2,1-3H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 4.1,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "K2CO3"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(=O)([O-])[O-].[K+].[K+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2O3.2K/c2-1(3)4;;/h(H2,2,3,4);;/q;2*+1/p-2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 5.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "DMF"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN(C)C=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H7NO/c1-4(2)3-5/h3H,1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 50.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 60.0,
+        "units": "CELSIUS"
+      }
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A solution of phenylethylamine hydrochloride (2.88 g, 0.018 mol) and 2-bromo-N-tert-butyloxycarbonylethylamine (4.1 g, 0.018 mmol) in DMF (50 mL), containing K2CO3 (5.0 g, 0.036 mol), was heated at 60° C. for 4 h. The solution was filtered, evaporated and the residue partitioned between CH2Cl2 (2×100 mL) and water (100 mL). The combined organic layers were dried (Na2SO4) and evaporated. The residue was chromatographed on silica gel, eluting with CH2Cl2 :MeOH (90:10), to afford the title compound (1.44 g, 30%) as a colourless oil. 1H NMR (250 MHz, CDCl3) δ 1.44 (9H, s), 2.74 (2H, t, J=6.0Hz), 2.79 (2H, m), 2.88 (2H, m), 3.19 (2H, m), 4.87 (1H, br s), 7.19-7.22 (3H, m), 7.26-7.31 (2H, m). MS (ES+) (265, M+1)."
+  },
+  "workups": [
+    {
+      "type": "FILTRATION",
+      "details": "The solution was filtered"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "evaporated"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the residue partitioned between CH2Cl2 (2×100 mL) and water (100 mL)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "CH2Cl2"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(Cl)Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 100.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 100.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "The combined organic layers were dried (Na2SO4)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "Na2SO4"
+              },
+              {
+                "type": "SMILES",
+                "value": "[O-]S(=O)(=O)[O-].[Na+].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/2Na.H2O4S/c;;1-5(2,3)4/h;;(H2,1,2,3,4)/q2*+1;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "evaporated"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The residue was chromatographed on silica gel"
+    },
+    {
+      "type": "WASH",
+      "details": "eluting with CH2Cl2 :MeOH (90:10)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "CH2Cl2 MeOH"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(Cl)Cl.CO"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2Cl2.CH4O/c2-1-3;1-2/h1H2;2H,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "2-(Phenylethylamino)ethyl carbamic acid tert-butyl ester"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(C)(C)OC(NCCNCCC1=CC=CC=C1)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C15H24N2O2/c1-15(2,3)19-14(18)17-12-11-16-10-9-13-7-5-4-6-8-13/h4-8,16H,9-12H2,1-3H3,(H,17,18)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 1.44,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 30.0
+              }
+            }
+          ],
+          "isolated_color": "colourless",
+          "texture": {
+            "type": "OIL",
+            "details": "oil"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998415",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:18.004541"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-f7ea5cef18154907ae67c1cadfe6df8c"
+}

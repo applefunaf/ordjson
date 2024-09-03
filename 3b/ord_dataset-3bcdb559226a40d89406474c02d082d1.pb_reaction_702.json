@@ -1,0 +1,280 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "Cl.C(O)(=O)C.[Br:6][C:7]1[C:8]([F:37])=[C:9]([F:36])[CH:10]=[C:11]2[C:16]=1[N:15]([C:17]1[C:22]([F:23])=[CH:21][C:20]([F:24])=[C:19]([NH:25]C(C)(C)C)[N:18]=1)[CH:14]=[C:13]([C:30]([O:32]CC)=[O:31])[C:12]2=[O:35]>O>[NH2:25][C:19]1[N:18]=[C:17]([N:15]2[C:16]3[C:11](=[CH:10][C:9]([F:36])=[C:8]([F:37])[C:7]=3[Br:6])[C:12](=[O:35])[C:13]([C:30]([OH:32])=[O:31])=[CH:14]2)[C:22]([F:23])=[CH:21][C:20]=1[F:24]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 5.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m1_m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrochloric acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/ClH/h1H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 3.5,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acetic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H4O2/c1-2(3)4/h1H3,(H,3,4)"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 3.5,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethyl 8-bromo-1-[6-(t-butylamino)-3,5-difluoropyridin-2-yl]-6,7-difluoro-4-oxo-1,4-dihydroquinoline-3-carboxylate"
+            },
+            {
+              "type": "SMILES",
+              "value": "BrC=1C(=C(C=C2C(C(=CN(C12)C1=NC(=C(C=C1F)F)NC(C)(C)C)C(=O)OCC)=O)F)F"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C21H18BrF4N3O3/c1-5-32-20(31)10-8-29(16-9(17(10)30)6-11(23)15(26)14(16)22)19-13(25)7-12(24)18(27-19)28-21(2,3)4/h6-8H,5H2,1-4H3,(H,27,28)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 1.38,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "with stirring for 5 hours"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a mixed solution of 3.5 ml of 4N hydrochloric acid and 3.5 ml of acetic acid was added 1.38 g of ethyl 8-bromo-1-[6-(t-butylamino)-3,5-difluoropyridin-2-yl]-6,7-difluoro-4-oxo-1,4-dihydroquinoline-3-carboxylate, and the mixture was heated under reflux with stirring for 5 hours. After adding 5 ml of distilled water, the mixture was allowed to cool, and the precipitate was collected by filtration and washed with ethanol and diisopropylether successively to obtain 1.10 g of the title compound as a colorless powder."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "the mixture was heated"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "under reflux"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "to cool"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "the precipitate was collected by filtration"
+    },
+    {
+      "type": "WASH",
+      "details": "washed with ethanol and diisopropylether successively",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "diisopropylether"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(C)OC(C)C"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C6H14O/c1-5(2)7-6(3)4/h5-6H,1-4H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 5.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "1-(6-amino-3,5-difluoropyridin-2-yl)-8-bromo-6,7-difluoro-4-oxo-1,4-dihydroquinoline-3-carboxylic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC1=C(C=C(C(=N1)N1C=C(C(C2=CC(=C(C(=C12)Br)F)F)=O)C(=O)O)F)F"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C15H6BrF4N3O3/c16-9-10(20)6(17)1-4-11(9)23(3-5(12(4)24)15(25)26)14-8(19)2-7(18)13(21)22-14/h1-3H,(H2,21,22)(H,25,26)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 1.1,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 95.2
+              }
+            }
+          ],
+          "isolated_color": "colorless",
+          "texture": {
+            "type": "POWDER",
+            "details": "powder"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998436",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:27.611658"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-831114d72c70430ea656426c9b499fee"
+}

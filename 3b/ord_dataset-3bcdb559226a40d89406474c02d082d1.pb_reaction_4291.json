@@ -1,0 +1,240 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[Cl:1][C:2]([F:6])=[C:3]([F:5])[F:4].[CH2:7]=[CH:8][CH:9]=[CH:10][CH3:11]>>[Cl:1][C:2]1([F:6])[C:3]([F:5])([F:4])[CH2:7][CH:8]=[CH:9][CH:10]1[CH3:11]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Chlorotrifluoroethylene"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC(=C(F)F)F"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2ClF3/c3-1(4)2(5)6"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "1,3-pentadiene"
+            },
+            {
+              "type": "SMILES",
+              "value": "C=CC=CC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C5H8/c1-3-5-4-2/h3-5H,1H2,2H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A flow reactor equipped with dual tubes having 20 mm of inner diameter of the outer tube, 16 mm of outer diameter of the inner tube, and 60 cm of length of the tubes was employed. The temperature in the reactor was kept at 520° C. Chlorotrifluoroethylene (CTFE), 1,3-pentadiene and nitrogen gas were continuously injected into the flow reactor at the rates of 36.1 g/hr, 20.4 g/hr, and 0.4 mol/hr, respectively, and the vapor phase condensation was carried out for 1 hour. Then, 4.7 g of unreacted chlorotrifluoroethylene (CTFE) was recovered. The resultant was purified by steam distillation, and then the water layer was removed to give 32.1 g of the mixture (GC%=52%)."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "A flow reactor equipped with dual tubes"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "was kept at 520° C",
+      "temperature": {
+        "setpoint": {
+          "value": 520.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "respectively, and the vapor phase condensation"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "Then, 4.7 g of unreacted chlorotrifluoroethylene (CTFE) was recovered",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "chlorotrifluoroethylene"
+              },
+              {
+                "type": "SMILES",
+                "value": "ClC(=C(F)F)F"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C2ClF3/c3-1(4)2(5)6"
+              }
+            ],
+            "amount": {
+              "mass": {
+                "value": 4.7,
+                "units": "GRAM"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DISTILLATION",
+      "details": "The resultant was purified by steam distillation"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the water layer was removed",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 1.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "mixture"
+            },
+            {
+              "type": "NAME",
+              "value": "4-chloro-3-methyl-4,5,5-trifluorocyclohexene"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC1(C(C=CCC1(F)F)C)F"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H8ClF3/c1-5-3-2-4-6(9,10)7(5,8)11/h2-3,5H,4H2,1H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 32.1,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 52.0
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06008407",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:26.788847"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-56e97af30ff44b729c8c1d17932aef13"
+}

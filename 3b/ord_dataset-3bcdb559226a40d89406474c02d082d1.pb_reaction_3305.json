@@ -1,0 +1,375 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[OH:1][C:2]1[CH:9]=[CH:8][C:5]([CH2:6][OH:7])=[CH:4][CH:3]=1.C1(C)C=CC=CC=1.Cl.Cl[CH2:19][CH2:20][N:21]1[CH2:26][CH2:25][CH2:24][CH2:23][CH2:22]1>[OH-].[Na+].[Br-].C([N+](CC)(CC)CC)C1C=CC=CC=1>[N:21]1([CH2:20][CH2:19][O:1][C:2]2[CH:9]=[CH:8][C:5]([CH2:6][OH:7])=[CH:4][CH:3]=2)[CH2:26][CH2:25][CH2:24][CH2:23][CH2:22]1 |f:2.3,4.5,6.7|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-hydroxybenzyl alcohol"
+            },
+            {
+              "type": "SMILES",
+              "value": "OC1=CC=C(CO)C=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H8O2/c8-5-6-1-3-7(9)4-2-6/h1-4,8-9H,5H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 6.2,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sodium hydroxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "[OH-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Na.H2O/h;1H2/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 30.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Toluene"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1(=CC=CC=C1)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H8/c1-7-5-3-2-4-6-7/h2-6H,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 30.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "benzyltriethylammonium bromide"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Br-].C(C1=CC=CC=C1)[N+](CC)(CC)CC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C13H22N.BrH/c1-4-14(5-2,6-3)12-13-10-8-7-9-11-13;/h7-11H,4-6,12H2,1-3H3;1H/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.3,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "CATALYST"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "1-(2-chloroethyl) piperidine hydrochloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl.ClCCN1CCCCC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H14ClN.ClH/c8-4-7-9-5-2-1-3-6-9;/h1-7H2;1H"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 9.29,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "with vigorous stirring for 1.5 h"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "4-hydroxybenzyl alcohol (6.2 g, 0.0.05 mol) was dissolved in aqueus sodium hydroxide (SN, 30 mL). Toluene (30 mL) was added followed by 1-(2-chloroethyl) piperidine hydrochloride (9.29 g, 0.05 mol) and benzyltriethylammonium bromide (0.3 g). The reaction mixture was heated with vigorous stirring for 1.5 h. The layers were separated, the aqueous layer was extracted with toluene (2×15 mL). Combined organic extracts and organic layer was washed with water (50 mL), brine (50 mL), dried over sodium sulfate, and concentrated on a rotary evaporator to give 8.725 g (75%) of alcohol (3a) as a yellowish brown oil."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "The reaction mixture was heated"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The layers were separated"
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "the aqueous layer was extracted with toluene (2×15 mL)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "toluene"
+              },
+              {
+                "type": "SMILES",
+                "value": "C1(=CC=CC=C1)C"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C7H8/c1-7-5-3-2-4-6-7/h2-6H,1H3"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 15.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "Combined organic extracts and organic layer was washed with water (50 mL), brine (50 mL)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 50.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "brine"
+              },
+              {
+                "type": "SMILES",
+                "value": "[Cl-].[Na+].O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH.Na.H2O/h1H;;1H2/q;+1;/p-1"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 50.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "dried over sodium sulfate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "sodium sulfate"
+              },
+              {
+                "type": "SMILES",
+                "value": "S(=O)(=O)([O-])[O-].[Na+].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/2Na.H2O4S/c;;1-5(2,3)4/h;;(H2,1,2,3,4)/q2*+1;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated on a rotary evaporator"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 1.5,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "alcohol"
+            },
+            {
+              "type": "NAME",
+              "value": "4-(2-piperidine-1-yl-ethoxy)-benzyl alcohol"
+            },
+            {
+              "type": "SMILES",
+              "value": "N1(CCCCC1)CCOC1=CC=C(CO)C=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C14H21NO2/c16-12-13-4-6-14(7-5-13)17-11-10-15-8-2-1-3-9-15/h4-7,16H,1-3,8-12H2"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 8.725,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 75.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 74.2
+              }
+            }
+          ],
+          "isolated_color": "yellowish brown",
+          "texture": {
+            "type": "OIL",
+            "details": "oil"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06005102",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:23.111751"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-65b1e7d3fc794e8282339830fb07881d"
+}

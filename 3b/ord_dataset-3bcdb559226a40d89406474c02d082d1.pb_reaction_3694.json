@@ -1,0 +1,202 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[S:1]1[CH:5]=[CH:4][N:3]=[CH:2]1.[Br:6][CH2:7][C:8]([O:10][CH3:11])=[O:9]>C(O)C>[Br-:6].[CH3:11][O:10][C:8](=[O:9])[CH2:7][N+:3]1[CH:4]=[CH:5][S:1][CH:2]=1 |f:3.4|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Thiazole"
+            },
+            {
+              "type": "SMILES",
+              "value": "S1C=NC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H3NS/c1-2-5-3-4-1/h1-3H"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 850.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methyl bromoacetate"
+            },
+            {
+              "type": "SMILES",
+              "value": "BrCC(=O)OC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H5BrO2/c1-6-3(5)2-4/h2H2,1H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 50.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "Thiazole, (850 mg, 10 mmol), methyl bromoacetate (1.52, mmol) and absolute ethanol (50 ml) were refluxed for 2 hours. On cooling, the salt separated and was recrystallized from absolute ethanol to give the title compound (1.59 g), m.p. 189-190° C. (dec)."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "On cooling"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the salt separated"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "was recrystallized from absolute ethanol",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "3-(2-Methoxy-2-oxoethyl)-thiazolium Bromide"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Br-].COC(C[N+]1=CSC=C1)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H8NO2S.BrH/c1-9-6(8)4-7-2-3-10-5-7;/h2-3,5H,4H2,1H3;1H/q+1;/p-1"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 1.59,
+                  "units": "GRAM"
+                }
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06007865",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:16.244123"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-98a96d86e6e74ce88f13c6e5424654c7"
+}

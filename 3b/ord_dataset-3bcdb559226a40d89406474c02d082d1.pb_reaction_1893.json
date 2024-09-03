@@ -1,0 +1,266 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "Cl.[O:2]1[C:10]2[CH2:9][CH2:8][NH:7][CH2:6][C:5]=2[CH:4]=[CH:3]1.C(N(CC)CC)C.Cl[S:19]([C:22]1[CH:30]=[CH:29][C:25]([C:26]([OH:28])=[O:27])=[CH:24][CH:23]=1)(=[O:21])=[O:20]>ClCCl>[O:2]1[C:10]2[CH2:9][CH2:8][N:7]([S:19]([C:22]3[CH:23]=[CH:24][C:25]([C:26]([OH:28])=[O:27])=[CH:29][CH:30]=3)(=[O:21])=[O:20])[CH2:6][C:5]=2[CH:4]=[CH:3]1 |f:0.1|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m4_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4,5,6,7-tetrahydrofuro[3,2-c]pyridine hydrochloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl.O1C=CC=2CNCCC21"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H9NO.ClH/c1-3-8-5-6-2-4-9-7(1)6;/h2,4,8H,1,3,5H2;1H"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 2.9,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "triethylamine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)N(CC)CC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H15N/c1-4-7(5-2)6-3/h4-6H2,1-3H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 12.7,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-chlorosulfonylbenzoic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClS(=O)(=O)C1=CC=C(C(=O)O)C=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H5ClO4S/c8-13(11,12)6-3-1-5(2-4-6)7(9)10/h1-4H,(H,9,10)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 4.81,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "dichloromethane"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClCCl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 100.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "stirring at room temperature"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a solution of 2.900 g (18.169 mmol) of 4,5,6,7-tetrahydrofuro[3,2-c]pyridine hydrochloride and 12.7 ml (90.8 mmol) of triethylamine in 100 ml of dichloromethane, 4.81 g (21.8 mmol) of 4-chlorosulfonylbenzoic acid was added under ice-cooling, followed by overnight stirring at room temperature. After the solvent was distilled off under reduced pressure, 1 N hydrochloric acid was added; the resulting precipitate was filtered, washed with 1 N hydrochloric acid and dried to yield the desired product."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "cooling"
+    },
+    {
+      "type": "DISTILLATION",
+      "details": "After the solvent was distilled off under reduced pressure, 1 N hydrochloric acid",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "hydrochloric acid"
+              },
+              {
+                "type": "SMILES",
+                "value": "Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH/h1H"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "ADDITION",
+      "details": "was added"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "the resulting precipitate was filtered"
+    },
+    {
+      "type": "WASH",
+      "details": "washed with 1 N hydrochloric acid",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "hydrochloric acid"
+              },
+              {
+                "type": "SMILES",
+                "value": "Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH/h1H"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 8.0,
+        "precision": 8.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "desired product"
+            },
+            {
+              "type": "NAME",
+              "value": "4-(6,7-dihydro-4H-furo[3,2-c]pyridin-5-ylsulfonyl)benzoic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "O1C=CC=2CN(CCC21)S(=O)(=O)C2=CC=C(C(=O)O)C=C2"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C14H13NO5S/c16-14(17)10-1-3-12(4-2-10)21(18,19)15-7-5-13-11(9-15)6-8-20-13/h1-4,6,8H,5,7,9H2,(H,16,17)"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998433",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:46.469161"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-01bafb4f1d1441c4b4fa4596e154c30d"
+}

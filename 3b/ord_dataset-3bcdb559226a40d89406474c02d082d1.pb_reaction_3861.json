@@ -1,0 +1,307 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[Al+3].[Cl-].[Cl-].[Cl-].C[O:6][C:7]1[CH:8]=[CH:9][C:10]2[CH2:16][CH:15]([CH2:17][C:18]([O:20][CH2:21][CH3:22])=[O:19])[C:14]3[CH:23]=[CH:24][CH:25]=[CH:26][C:13]=3[CH2:12][C:11]=2[CH:27]=1>C(Cl)Cl>[OH:6][C:7]1[CH:8]=[CH:9][C:10]2[CH2:16][CH:15]([CH2:17][C:18]([O:20][CH2:21][CH3:22])=[O:19])[C:14]3[CH:23]=[CH:24][CH:25]=[CH:26][C:13]=3[CH2:12][C:11]=2[CH:27]=1 |f:0.1.2.3|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m2_m3_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "AlCl3"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Al+3].[Cl-].[Cl-].[Cl-]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Al.3ClH/h;3*1H/q+3;;;/p-3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 1.38,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethyl (±)-10,11-dihydro-3-methoxy-5H-dibenzo[a,d]cycloheptene-10-acetate"
+            },
+            {
+              "type": "SMILES",
+              "value": "COC=1C=CC2=C(CC3=C(C(C2)CC(=O)OCC)C=CC=C3)C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C20H22O3/c1-3-23-20(21)13-17-10-14-8-9-18(22-2)12-16(14)11-15-6-4-5-7-19(15)17/h4-9,12,17H,3,10-11,13H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 643.6,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "CH2Cl2"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(Cl)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 21.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "stirred for 3 h"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "Anhydrous AlCl3 (1.38 g, 10.35 mmol) was added all at once to a solution of ethyl (±)-10,11-dihydro-3-methoxy-5H-dibenzo[a,d]cycloheptene-10-acetate (643.6 mg, 2.07 mmol) in anhydrous CH2Cl2 (21 mL) at 0° C. under argon. The yellow solution was warmed to RT and stirred for 3 h, then was cooled to 0° C. and quenched with cold 3 N HCl (10 mL). The layers were separated, and the aqueous layer was extracted with CH2Cl2. The combined organic layers were dried (MgSO4) and concentrated. Silica gel chromatography (25% EtOAc/hexanes) gave the title compound as a nearly colorless oil (611.7 mg, 100%): TLC Rf 0.26 (20% EtOAc/hexanes); 1H NMR (400 MHz, CDCl13) δ 7.03-7.22 (m, 4H), 6.93 (d, J=8.1 Hz, 1H), 6.69 (d, J=2.6 Hz, 1H), 6.58 (dd, J=8.1, 2.6 Hz, 1H), 5.00 (s, 1H), 4.25 (d, J=14.9 Hz, 1H), 4.11-4.25 (m, 2H), 3.73-3.88 (m, 1H), 3.79 (d, J=14.9 Hz, 1H), 3.28 (dd, J=15.0, 4.1 Hz, 1H), 2.91 (dd, J=15.0, 9.3 Hz, 1H), 2.65 (dd, J=15.6, 4.9 Hz, 1H), 2.53 (dd, J=15.6, 9.5 Hz, 1H), 1.27 (t, J=7.2 Hz, 3H); FTIR (CCl4) 3611 (sharp), 3447 (broad), 1734, 1504, 1291, 1272, 1176, 1152 cm-1 ; MS (ES) m/e 314.2 (M+NH4)+, 297.2 (M+H)+."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "was cooled to 0° C.",
+      "temperature": {
+        "setpoint": {
+          "value": 0.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "quenched with cold 3 N HCl (10 mL)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "HCl"
+              },
+              {
+                "type": "SMILES",
+                "value": "Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH/h1H"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 10.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The layers were separated"
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "the aqueous layer was extracted with CH2Cl2",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "CH2Cl2"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(Cl)Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "The combined organic layers were dried (MgSO4)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "MgSO4"
+              },
+              {
+                "type": "SMILES",
+                "value": "[O-]S(=O)(=O)[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 3.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "Ethyl (±)-10,11-dihydro-3-hydroxy-5H-dibenzo[a,d]cycloheptene-10-acetate"
+            },
+            {
+              "type": "SMILES",
+              "value": "OC=1C=CC2=C(CC3=C(C(C2)CC(=O)OCC)C=CC=C3)C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C19H20O3/c1-2-22-19(21)12-16-9-13-7-8-17(20)11-15(13)10-14-5-3-4-6-18(14)16/h3-8,11,16,20H,2,9-10,12H2,1H3"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "oil"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 611.7,
+                  "units": "MILLIGRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 100.0
+              }
+            }
+          ],
+          "texture": {
+            "type": "OIL",
+            "details": "oil"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06008213",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:19.415961"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-25fc560882e64ca9ac9afb3247131ebf"
+}

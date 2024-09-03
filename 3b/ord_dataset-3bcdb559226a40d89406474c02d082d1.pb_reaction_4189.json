@@ -1,0 +1,283 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[OH:1][C:2]1[C:7]2[N:8]=[CH:9][O:10][C:6]=2[CH:5]=[CH:4][CH:3]=1.[C:11]([O-])([O-])=O.[K+].[K+].IC>CC(C)=O>[CH3:11][O:1][C:2]1[C:7]2[N:8]=[CH:9][O:10][C:6]=2[CH:5]=[CH:4][CH:3]=1 |f:1.2.3|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "K2CO3"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(=O)([O-])[O-].[K+].[K+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2O3.2K/c2-1(3)4;;/h(H2,2,3,4);;/q;2*+1/p-2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 2.25,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acetone"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC(=O)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H6O/c1-3(2)4/h1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 80.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-hydroxybenzoxazole"
+            },
+            {
+              "type": "SMILES",
+              "value": "OC1=CC=CC2=C1N=CO2"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H5NO2/c9-5-2-1-3-6-7(5)8-4-10-6/h1-4,9H"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 2.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "iodomethane"
+            },
+            {
+              "type": "SMILES",
+              "value": "IC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH3I/c1-2/h1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 1.38,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a suspension of 4-hydroxybenzoxazole (2.00 g, 14.8 mmol) (Musser et al., J. Med. Chem., 30, pp. 62-67 (1987)) in acetone (80.0 ml) was added dried K2CO3 (2.25 g, 16.3 mmol) followed by iodomethane (1.38 ml, 22.2 mmol). The reaction was heated under reflux under N2 for 4.5 h, then filtered and reduced in vacuo to afford the crude product. The resulting residue was purified by flash chromatography (25:75 ethyl acetate/hexane) to give 2.0 g (91%) of the title compound as a white crystalline solid: m.p. 72-74° C.; IR (KBr) 3089, 1619, 1610, 1503, 1496, 1322, 1275, 1090, 1071, 780, 741; 1H NMR (CDCl3) δ 8.02 (1H, s), 7.32 (1H, t, J=8.0), 7.18 (1H, d, J=8.0), 6.81 (1H, d, J=8.0), 4.04 (3H, s). Anal. Calcd. for C8H7NO2 : C, 64.42; H, 4.73; N, 9.39. Found: C, 64.40; H, 4.84; N, 9.31; m/z (EI) 149 (M+ +1, 100%)."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "The reaction was heated"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "under reflux under N2 for 4.5 h",
+      "duration": {
+        "value": 4.5,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filtered"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to afford the crude product",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "crude product"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The resulting residue was purified by flash chromatography (25:75 ethyl acetate/hexane)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate hexane"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC.CCCCCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C6H14.C4H8O2/c1-3-5-6-4-2;1-3-6-4(2)5/h3-6H2,1-2H3;3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "4-Methoxybenzoxazole"
+            },
+            {
+              "type": "SMILES",
+              "value": "COC1=CC=CC2=C1N=CO2"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H7NO2/c1-10-6-3-2-4-7-8(6)9-5-11-7/h2-5H,1H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 2.0,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 91.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 90.6
+              }
+            }
+          ],
+          "isolated_color": "white crystalline",
+          "texture": {
+            "type": "CUSTOM",
+            "details": "solid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06008217",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:25.223800"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-4f1877117c624d36b6a2f2ea9cd2181e"
+}

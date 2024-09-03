@@ -1,0 +1,318 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "CN1CCCC1=O.F[C:9]1[C:14]([F:15])=[CH:13][C:12]([F:16])=[C:11]([NH:17][CH:18]([CH3:20])[CH3:19])[N:10]=1.[CH3:21][O:22][C:23]1[CH:30]=[CH:29][C:26]([CH2:27][NH2:28])=[CH:25][CH:24]=1.C1C=CC=CC=1>CCCCCC>[F:16][C:12]1[C:11]([NH:17][CH:18]([CH3:20])[CH3:19])=[N:10][C:9]([NH:28][CH2:27][C:26]2[CH:29]=[CH:30][C:23]([O:22][CH3:21])=[CH:24][CH:25]=2)=[C:14]([F:15])[CH:13]=1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4_m5_m6": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "mixed solution"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 50.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "benzene"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H6/c1-2-4-6-5-3-1/h1-6H"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "n-hexane"
+            },
+            {
+              "type": "SMILES",
+              "value": "CCCCCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H14/c1-3-5-6-4-2/h3-6H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m1_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-methylpyrrolidone"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN1C(CCC1)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C5H9NO/c1-6-4-2-3-5(6)7/h2-4H2,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 4.1,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2,3,5-trifluoro-6-isopropylaminopyridine"
+            },
+            {
+              "type": "SMILES",
+              "value": "FC1=NC(=C(C=C1F)F)NC(C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H9F3N2/c1-4(2)12-8-6(10)3-5(9)7(11)13-8/h3-4H,1-2H3,(H,12,13)"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "p-methoxybenzylamine"
+            },
+            {
+              "type": "SMILES",
+              "value": "COC1=CC=C(CN)C=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H11NO/c1-10-8-4-2-7(6-9)3-5-8/h2-5H,6,9H2,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 3.1,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 150.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "the mixture was stirred at 150° C. for 15 hours"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To 4.1 g of N-methylpyrrolidone were added all amount of the 2,3,5-trifluoro-6-isopropylaminopyridine as described above together with 3.1 g of p-methoxybenzylamine, and the mixture was stirred at 150° C. for 15 hours and allowed to cool. After adding 50 ml of the mixed solution of benzene and n-hexane (1:1, v/v), the solution was washed twice with 400 ml of distilled water. The organic layer was dried over anhydrous magnesium sulfate and concentrated under reduced pressure to obtain 3.9 g of the title compound as a brown crude oil."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "to cool"
+    },
+    {
+      "type": "WASH",
+      "details": "v/v), the solution was washed twice with 400 ml of distilled water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 400.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "The organic layer was dried over anhydrous magnesium sulfate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "magnesium sulfate"
+              },
+              {
+                "type": "SMILES",
+                "value": "S(=O)(=O)([O-])[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated under reduced pressure"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 15.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "3,5-difluoro-2-isopropylamino-6-(p-methoxybenzylamino)pyridine"
+            },
+            {
+              "type": "SMILES",
+              "value": "FC=1C(=NC(=C(C1)F)NCC1=CC=C(C=C1)OC)NC(C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C16H19F2N3O/c1-10(2)20-16-14(18)8-13(17)15(21-16)19-9-11-4-6-12(22-3)7-5-11/h4-8,10H,9H2,1-3H3,(H2,19,20,21)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 3.9,
+                  "units": "GRAM"
+                }
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998436",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:28.771897"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-9a28217a7e15463da07636f2e0026fda"
+}

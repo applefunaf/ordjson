@@ -1,0 +1,275 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "C([O:3][C:4](=[O:23])[CH2:5][C:6]1[O:10][C:9]([C:11]2[CH:16]=[CH:15][C:14]([C:17]3[CH:22]=[CH:21][CH:20]=[CH:19][CH:18]=3)=[CH:13][CH:12]=2)=[CH:8][CH:7]=1)C.[Li+].[OH-].Cl>C1COCC1>[C:14]1([C:17]2[CH:18]=[CH:19][CH:20]=[CH:21][CH:22]=2)[CH:15]=[CH:16][C:11]([C:9]2[O:10][C:6]([CH2:5][C:4]([OH:23])=[O:3])=[CH:7][CH:8]=2)=[CH:12][CH:13]=1 |f:1.2|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "HCl"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/ClH/h1H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 50.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m1_m4_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-(2-biphenyl-4-yl-furan-5-yl)-acetic acid ethyl ester"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)OC(CC1=CC=C(O1)C1=CC=C(C=C1)C1=CC=CC=C1)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C20H18O3/c1-2-22-20(21)14-18-12-13-19(23-18)17-10-8-16(9-11-17)15-6-4-3-5-7-15/h3-13H,2,14H2,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.465,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "LiOH"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Li+].[OH-]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Li.H2O/h;1H2/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 2.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "THF"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1CCOC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O/c1-2-4-5-3-1/h1-4H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 10.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a solution of 2-(2-biphenyl-4-yl-furan-5-yl)-acetic acid ethyl ester (0.465 g, 1.44 mmol) in THF (10 mL) at 0° C. was added 2M aqueous LiOH (2 mL). The mixture was allowed to warm over 4 hours to ambient temperature and then poured into 0.5M aqueous HCl (50 mL). The resultant pale orange precipitate was filtered off, rinsed with water, and dried under vacuum over P2O5 to provide 400 mg (100%) of 2-(2-biphenyl-4-yl-furan-5-yl)-acetic acid as a light orange solid, mp 196-210° C., used without further purification. 1H NMR (acetone-d6): δ 7.78 (d, 2H, J=8.1 Hz), 7.72-7.67 (m, 4H), 7.46 (t, 2H, J=7.4 Hz), 7.35 (t, 1H, J=7.4 Hz), 6.84 (d, 1H, J=3.3 Hz), 6.41 (d, 1H, J=3.3 Hz), 3.81 (s, 2H). Anal. Calculated for C18H14O3 : C, 77.68; H, 5.07. Found: C, 77.44; H, 5.16."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "to warm over 4 hours to ambient temperature"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "The resultant pale orange precipitate was filtered off"
+    },
+    {
+      "type": "WASH",
+      "details": "rinsed with water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "dried under vacuum over P2O5",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "P2O5"
+              },
+              {
+                "type": "SMILES",
+                "value": "O=P12OP3(=O)OP(=O)(O1)OP(=O)(O2)O3"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/O10P4/c1-11-5-12(2)8-13(3,6-11)10-14(4,7-11)9-12"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-(2-biphenyl-4-yl-furan-5-yl)-acetic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1(=CC=C(C=C1)C=1OC(=CC1)CC(=O)O)C1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C18H14O3/c19-18(20)12-16-10-11-17(21-16)15-8-6-14(7-9-15)13-4-2-1-3-5-13/h1-11H,12H2,(H,19,20)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 400.0,
+                  "units": "MILLIGRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 100.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 99.8
+              }
+            }
+          ],
+          "isolated_color": "light orange",
+          "texture": {
+            "type": "CUSTOM",
+            "details": "solid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06008243",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:28.812100"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-55fb6bccc65b4f3f932b55d89dc79408"
+}

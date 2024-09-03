@@ -1,0 +1,330 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "Br[C:2]1[C:6]([Br:7])=[CH:5][S:4][CH:3]=1.[Li]C(C)(C)C.[C:13](=[O:15])=[O:14]>CCOCC.CCCCC>[Br:7][C:6]1[C:2]([C:13]([OH:15])=[O:14])=[CH:3][S:4][CH:5]=1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m6_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "dry ice"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(=O)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CO2/c2-1-3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ether"
+            },
+            {
+              "type": "SMILES",
+              "value": "CCOCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m1_m4_m2_m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3,4-dibromothiophene"
+            },
+            {
+              "type": "SMILES",
+              "value": "BrC1=CSC=C1Br"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H2Br2S/c5-3-1-7-2-4(3)6/h1-2H"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 15.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "t-BuLi"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Li]C(C)(C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H9.Li/c1-4(2)3;/h1-3H3;"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 75.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ether"
+            },
+            {
+              "type": "SMILES",
+              "value": "CCOCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 80.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "pentane"
+            },
+            {
+              "type": "SMILES",
+              "value": "CCCCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C5H12/c1-3-5-4-2/h3-5H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": -78.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "was stirred at -78° C. for 0.5 h"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a solution of 3,4-dibromothiophene (15 g, 62 mmol) in 80 mL ether under a positive nitrogen atmosphere was added dropwise 75 mL 1.7M t-BuLi in pentane at below -73° C. and the resulting reaction solution was stirred at -78° C. for 0.5 h. After that, the ether solution was poured into dry ice and extracted with d water. The aq solution was washed with ether and then acidified with concentrated HCl. The solid was filtered and air-dried to give 9 g of 4-bromo-3-thiophenecarboxylic acid, yield 70.3%."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "the resulting reaction solution"
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "extracted with d water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "The aq solution was washed with ether",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "The solid was filtered"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "air-dried"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 0.5,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-bromo-3-thiophenecarboxylic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "BrC=1C(=CSC1)C(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C5H3BrO2S/c6-4-2-9-1-3(4)5(7)8/h1-2H,(H,7,8)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 9.0,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 70.3
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998466",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:38.597941"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-965712d12bb147feae44b0aecf2596f8"
+}

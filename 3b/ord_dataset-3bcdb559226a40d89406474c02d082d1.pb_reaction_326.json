@@ -1,0 +1,172 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[C:1]([O:4][C:5](=O)[CH3:6])(=[O:3])[CH3:2].[OH:8][CH2:9][CH2:10][O:11][C:12]1[CH:17]=[CH:16][N+:15]([O-])=[C:14](C)[C:13]=1C.[CH2:21]([OH:23])[CH3:22]>>[C:21]([O:8][CH2:9][CH2:10][O:11][C:12]1[CH:13]=[CH:14][N:15]=[C:6]([CH2:5][O:4][C:1](=[O:3])[CH3:2])[C:17]=1[CH3:16])(=[O:23])[CH3:22]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acetic anhydride"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)OC(C)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H6O3/c1-3(5)7-4(2)6/h1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 15.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-(2-hydroxyethoxy)-2,3-dimethylpyridine N-oxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "OCCOC1=C(C(=[N+](C=C1)[O-])C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H13NO3/c1-7-8(2)10(12)4-3-9(7)13-6-5-11/h3-4,11H,5-6H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 25.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 90.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "This solution was stirred at 90° C. for 2 hours"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "15 ml of acetic anhydride was added to 25 g of 4-(2-hydroxyethoxy)-2,3-dimethylpyridine N-oxide to obtain a solution. This solution was stirred at 90° C. for 2 hours, followed by the addition of ethanol. The obtained mixture was distilled under a reduced pressure to obtain 4-(2-acetoxyethoxy)-2-acetoxymethyl-3-methylpyridine."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "to obtain a solution"
+    },
+    {
+      "type": "DISTILLATION",
+      "details": "The obtained mixture was distilled under a reduced pressure"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 2.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-(2-acetoxyethoxy)-2-acetoxymethyl-3-methylpyridine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)OCCOC1=C(C(=NC=C1)COC(C)=O)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C13H17NO5/c1-9-12(8-19-11(3)16)14-5-4-13(9)18-7-6-17-10(2)15/h4-5H,6-8H2,1-3H3"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998445",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:21.246285"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-9563ce710ff74177b782e301dd57c8a6"
+}

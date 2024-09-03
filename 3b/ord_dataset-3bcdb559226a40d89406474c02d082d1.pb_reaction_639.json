@@ -1,0 +1,387 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][O:2][C:3]1[CH:8]=[CH:7][C:6]([N:9]2[CH:13]=[CH:12][C:11]([NH:14]C(OC)=O)=[N:10]2)=[CH:5][CH:4]=1.[OH-].[K+].Cl>O.CO.C(OCC)(=O)C>[CH3:1][O:2][C:3]1[CH:4]=[CH:5][C:6]([N:9]2[CH:13]=[CH:12][C:11]([NH2:14])=[N:10]2)=[CH:7][CH:8]=1 |f:1.2,4.5|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "HCl"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/ClH/h1H"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethyl acetate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)OCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m1_m4_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "1-[(4-methoxy)phenyl]-3-[(methoxycarbonyl)amino]-1H-pyrazole"
+            },
+            {
+              "type": "SMILES",
+              "value": "COC1=CC=C(C=C1)N1N=C(C=C1)NC(=O)OC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C12H13N3O3/c1-17-10-5-3-9(4-6-10)15-8-7-11(14-15)13-12(16)18-2/h3-8H,1-2H3,(H,13,14,16)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.22,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "potassium hydroxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "[OH-].[K+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/K.H2O/h;1H2/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 2.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water methanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "O.CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH4O.H2O/c1-2;/h2H,1H3;1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 10.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 70.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "The resulting mixture was stirred at 70° C. for 4 h"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a solution of 1-[(4-methoxy)phenyl]-3-[(methoxycarbonyl)amino]-1H-pyrazole-5-[(2'-aminosulfonyl-[1,1']-biphen-4-yl)carboxyamide (0.22 g, 0.42 mmol) in 10 mL of 1:1 water/methanol was added potassium hydroxide (2.0 g, 35 mmol). The resulting mixture was stirred at 70° C. for 4 h and then was cooled to ambient temperature and was acidified with aq HCl. The reaction mixture was diluted with ethyl acetate and the organics were washed with brine, dried (MgSO4) and concentrated in vacuo. The residue was purified by prep HPLC (C18 reverse phase column, elution with a H2O/CH3CN gradient with 0.5% TFA) and lyophilized to afford 75 mg (38%) of the title compound as a white powder. LRMS (ES+): 463.8 (M+H)+."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "was cooled to ambient temperature",
+      "temperature": {
+        "control": {
+          "type": "AMBIENT"
+        }
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "the organics were washed with brine",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "brine"
+              },
+              {
+                "type": "SMILES",
+                "value": "[Cl-].[Na+].O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH.Na.H2O/h1H;;1H2/q;+1;/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "dried (MgSO4)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "MgSO4"
+              },
+              {
+                "type": "SMILES",
+                "value": "[O-]S(=O)(=O)[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated in vacuo"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The residue was purified by prep HPLC ("
+    },
+    {
+      "type": "WASH",
+      "details": "C18 reverse phase column, elution with a H2O/CH3CN gradient with 0.5% TFA) and",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "H2O CH3CN"
+              },
+              {
+                "type": "SMILES",
+                "value": "O.CC#N"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C2H3N.H2O/c1-2-3;/h1H3;1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "TFA"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(=O)(C(F)(F)F)O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C2HF3O2/c3-2(4,5)1(6)7/h(H,6,7)"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 4.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "1-[(4-Methoxy)phenyl]-3-amino-1H-pyrazole"
+            },
+            {
+              "type": "SMILES",
+              "value": "COC1=CC=C(C=C1)N1N=C(C=C1)N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C10H11N3O/c1-14-9-4-2-8(3-5-9)13-7-6-10(11)12-13/h2-7H,1H3,(H2,11,12)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 75.0,
+                  "units": "MILLIGRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 38.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 94.4
+              }
+            }
+          ],
+          "isolated_color": "white",
+          "texture": {
+            "type": "POWDER",
+            "details": "powder"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998424",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:26.521987"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-7599911cb28646da8050b449413c4a86"
+}

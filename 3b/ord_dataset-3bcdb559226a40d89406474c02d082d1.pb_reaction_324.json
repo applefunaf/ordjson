@@ -1,0 +1,213 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][C:2]1[C:7]([CH3:8])=[C:6]([O:9][CH2:10][CH2:11][O:12][CH2:13][C:14]2[CH:19]=[CH:18][CH:17]=[CH:16][N:15]=2)[CH:5]=[CH:4][N+:3]=1[O-].[C:21]([O:24]C(=O)C)(=[O:23])[CH3:22]>C(O)C>[C:21]([O:24][CH2:1][C:2]1[C:7]([CH3:8])=[C:6]([O:9][CH2:10][CH2:11][O:12][CH2:13][C:14]2[CH:19]=[CH:18][CH:17]=[CH:16][N:15]=2)[CH:5]=[CH:4][N:3]=1)(=[O:23])[CH3:22]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2,3-dimethyl-4-(2-pyridylmethoxyethoxy)pyridine N-oxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC1=[N+](C=CC(=C1C)OCCOCC1=NC=CC=C1)[O-]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C15H18N2O3/c1-12-13(2)17(18)8-6-15(12)20-10-9-19-11-14-5-3-4-7-16-14/h3-8H,9-11H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.6,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acetic anhydride"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)OC(C)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H6O3/c1-3(5)7-4(2)6/h1-2H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 40.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 100.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "was stirred at 100° C. for 0.5 hour"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture comprising 0.60 g of 2,3-dimethyl-4-(2-pyridylmethoxyethoxy)pyridine N-oxide and acetic anhydride was stirred at 100° C. for 0.5 hour and cooled, followed by the addition of 40 ml of ethanol. The obtained mixture was stirred at a room temperature for 0.5 hour and distilled to remove the solvent. The residue was dried in a vacuum to obtain 0.47 g of crude 2-acetoxymethyl-3-methyl-4-(2-pyridylmethoxyethoxy)pyridine as an oil."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "cooled"
+    },
+    {
+      "type": "STIRRING",
+      "details": "The obtained mixture was stirred at a room temperature for 0.5 hour",
+      "duration": {
+        "value": 0.5,
+        "units": "HOUR"
+      },
+      "temperature": {
+        "control": {
+          "type": "AMBIENT"
+        }
+      }
+    },
+    {
+      "type": "DISTILLATION",
+      "details": "distilled"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to remove the solvent"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The residue was dried in a vacuum"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 0.5,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-acetoxymethyl-3-methyl-4-(2-pyridylmethoxyethoxy)pyridine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)OCC1=NC=CC(=C1C)OCCOCC1=NC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C17H20N2O4/c1-13-16(12-23-14(2)20)19-8-6-17(13)22-10-9-21-11-15-5-3-4-7-18-15/h3-8H,9-12H2,1-2H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 0.47,
+                  "units": "GRAM"
+                }
+              }
+            }
+          ],
+          "texture": {
+            "type": "OIL",
+            "details": "oil"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998445",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:21.217885"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-33ae668a36b24eb1af806b7c12113dac"
+}

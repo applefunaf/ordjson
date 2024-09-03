@@ -1,0 +1,206 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[Cl:1][C:2]1[CH:7]=[CH:6][CH:5]=[C:4]([Si:8]([CH3:11])([CH3:10])[CH3:9])[C:3]=1[N:12]=[C:13]=[O:14].[CH2:15]([OH:17])[CH3:16]>>[Cl:1][C:2]1[CH:7]=[CH:6][CH:5]=[C:4]([Si:8]([CH3:10])([CH3:11])[CH3:9])[C:3]=1[NH:12][C:13](=[O:14])[O:17][CH2:15][CH3:16]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "compound"
+            },
+            {
+              "type": "NAME",
+              "value": "2-Chloro-6-(trimethylsilyl)phenyl isocyanate"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC1=C(C(=CC=C1)[Si](C)(C)C)N=C=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C10H12ClNOSi/c1-14(2,3)9-6-4-5-8(11)10(9)12-7-13/h4-6H,1-3H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 10.0,
+              "units": "MILLIMOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 75.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture of the compound of Example h (10 mmol) and ethanol (75 mL) was ref luxed for 1 h. The mixture was concentrated and the residue dissolved in ethyl acetate. The solution was washed twice with water and the solvent removed to yield the crude product, which was recrystallized from hexane. GC/MS showed some remaining isocyanate so the solid was dissolved in ethanol and refluxed again with approx. 0.1 g diazobisbicyclooctane. FID/GC indicated a complete reaction and the ethanol was removed and the title compound recovered. m.p. 109-110° C."
+  },
+  "workups": [
+    {
+      "type": "CONCENTRATION",
+      "details": "The mixture was concentrated"
+    },
+    {
+      "type": "DISSOLUTION",
+      "details": "the residue dissolved in ethyl acetate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "The solution was washed twice with water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the solvent removed"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 1.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "crude product"
+            },
+            {
+              "type": "NAME",
+              "value": "[2-Chloro-6-(trimethylsilyl)phenyl]carbamic acid, ethyl ester"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC1=C(C(=CC=C1)[Si](C)(C)C)NC(OCC)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C12H18ClNO2Si/c1-5-16-12(15)14-11-9(13)7-6-8-10(11)17(2,3)4/h6-8H,5H2,1-4H3,(H,14,15)"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998466",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:37.527166"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-5b91e31166734a5fb8ae9c25ead2347d"
+}

@@ -1,0 +1,338 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[OH-].[Na+].[O:3]1[CH:8]=[CH:7][CH:6]([C:9]2[CH:10]=[C:11]3[C:15](=[CH:16][CH:17]=2)[N:14](C(=O)C2C=CC=CC=2)[CH:13]=[C:12]3[CH2:26][CH2:27][N:28]([CH3:30])[CH3:29])[CH2:5][CH2:4]1>CO>[NH3:14].[O:3]1[CH:4]=[CH:5][CH:6]([C:9]2[CH:10]=[C:11]3[C:15](=[CH:16][CH:17]=2)[NH:14][CH:13]=[C:12]3[CH2:26][CH2:27][N:28]([CH3:29])[CH3:30])[CH2:7][CH2:8]1 |f:0.1|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m2_m3_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sodium hydroxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "[OH-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Na.H2O/h;1H2/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 1.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "5-(3,4-dihydropyran-4-yl)-3-[2-(N,N-dimethylamino)ethyl]-1-benzoylindole"
+            },
+            {
+              "type": "SMILES",
+              "value": "O1CCC(C=C1)C=1C=C2C(=CN(C2=CC1)C(C1=CC=CC=C1)=O)CCN(C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C24H26N2O2/c1-25(2)13-10-21-17-26(24(27)19-6-4-3-5-7-19)23-9-8-20(16-22(21)23)18-11-14-28-15-12-18/h3-9,11,14,16-18H,10,12-13,15H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 30.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 2.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "the resulting solution was stirred at room temperature for 16 h"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "An aqueous solution of sodium hydroxide (2M, 1 mL, 2 mmol) was added to 5-(3,4-dihydropyran-4-yl)-3-[2-(N,N-dimethylamino)ethyl]-1-benzoylindole (30 mg, 0.08 mmol) in methanol (2 mL) and the resulting solution was stirred at room temperature for 16 h. The reaction mixture was partitioned between water and ethyl acetate, washed with brine, dried over sodium sulfate and the solvent was removed in vacuo. Preparative thin layer chromatography (silica gel, 10% 2M methanolic ammonia in dichloromethane) yielded 5-(3,4-dihydropyran-4-yl)-3-[2-(N,N-dimethylamino)ethyl]-1H-indole (15.3 mg, 70%); HRMS-FAB+ for C17H22N2O: calculated MH+ :271.18103; found MH+ :271.18177."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "The reaction mixture was partitioned between water and ethyl acetate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "washed with brine",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "brine"
+              },
+              {
+                "type": "SMILES",
+                "value": "[Cl-].[Na+].O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH.Na.H2O/h1H;;1H2/q;+1;/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "dried over sodium sulfate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "sodium sulfate"
+              },
+              {
+                "type": "SMILES",
+                "value": "S(=O)(=O)([O-])[O-].[Na+].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/2Na.H2O4S/c;;1-5(2,3)4/h;;(H2,1,2,3,4)/q2*+1;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the solvent was removed in vacuo"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 16.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ammonia"
+            },
+            {
+              "type": "SMILES",
+              "value": "N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H3N/h1H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MOLARITY"
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 10.0
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "5-(3,4-dihydropyran-4-yl)-3-[2-(N,N-dimethylamino)ethyl]-1H-indole"
+            },
+            {
+              "type": "SMILES",
+              "value": "O1CCC(C=C1)C=1C=C2C(=CNC2=CC1)CCN(C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C17H22N2O/c1-19(2)8-5-15-12-18-17-4-3-14(11-16(15)17)13-6-9-20-10-7-13/h3-4,6,9,11-13,18H,5,7-8,10H2,1-2H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 15.3,
+                  "units": "MILLIGRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 70.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 141.5
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998438",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:19.508924"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-f7644bf8f2e14e5d9929e4671f6fde81"
+}

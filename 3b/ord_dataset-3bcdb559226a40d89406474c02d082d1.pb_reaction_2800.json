@@ -1,0 +1,371 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "C(Cl)(=O)[C:2]([Cl:4])=O.[CH3:7][O:8][C:9]([CH:11]1[O:15][CH:14]([C:16]([OH:18])=O)[CH2:13][CH2:12]1)=[O:10]>ClCCl.CN(C)C=O>[Cl:4][CH2:2][C:16]([CH:14]1[O:15][CH:11]([C:9]([O:8][CH3:7])=[O:10])[CH2:12][CH2:13]1)=[O:18]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Dimethylformamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN(C=O)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H7NO/c1-4(2)3-5/h3H,1-2H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "CATALYST"
+        }
+      ]
+    },
+    "m1_m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Oxalyl chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C(=O)Cl)(=O)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2Cl2O2/c3-1(5)2(4)6"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 1.55,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "5-methoxycarbonyltetrahydrofuran-2-ylcarboxylic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "COC(=O)C1CCC(O1)C(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H10O5/c1-11-7(10)5-3-2-4(12-5)6(8)9/h4-5H,2-3H2,1H3,(H,8,9)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 2.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "dichloromethane"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClCCl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 30.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "the mixture stirred at room temperature for 1 h"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "Oxalyl chloride (1.55 ml) was added to a stirred solution of (2RS, 5SR) -5-methoxycarbonyltetrahydrofuran-2-ylcarboxylic acid (2.00 g) in dichloromethane (30 ml). Dimethylformamide (1 drop) was added and the mixture stirred at room temperature for 1 h, and then heated to reflux for 10 min. The mixture was cooled and the solvent removed on a rotary evaporator. Chloroform was then evaporated from the residue twice. The residue was dissolved in dichloromethane (100 ml) and the solution cooled in an ice bath, then excess diazomethane was passed into the solution. The mixture was stirred at 0° C. for 15min and then excess hydrogen chloride was passed into the solution. The solution was washed with brine, dried over magnesium sulphate and evaporated. The title compound (2.02 g) was isolated by column chromatography of the residue using gradient elution (silica gel, 4:1 going to 1:1 hexane:ethyl acetate); νmax (CHCl3) 1740 cm-1 ; δH (CDCl3) 1.9-2.5 (4 H, m), 3.71 (3 H, s), 4.45-4.8 (2 H, m), 4.54 (1 H, d, J 18 Hz) and 4.89 (1 H, d, J 18 Hz)."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "heated"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "to reflux for 10 min",
+      "duration": {
+        "value": 10.0,
+        "units": "MINUTE"
+      }
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "The mixture was cooled"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the solvent removed on a rotary evaporator"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "Chloroform was then evaporated from the residue twice",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "Chloroform"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(Cl)(Cl)Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CHCl3/c2-1(3)4/h1H"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DISSOLUTION",
+      "details": "The residue was dissolved in dichloromethane (100 ml)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "dichloromethane"
+              },
+              {
+                "type": "SMILES",
+                "value": "ClCCl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 100.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "the solution cooled in an ice bath"
+    },
+    {
+      "type": "STIRRING",
+      "details": "The mixture was stirred at 0° C. for 15min",
+      "duration": {
+        "value": 15.0,
+        "units": "MINUTE"
+      },
+      "temperature": {
+        "setpoint": {
+          "value": 0.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "The solution was washed with brine",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "brine"
+              },
+              {
+                "type": "SMILES",
+                "value": "[Cl-].[Na+].O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH.Na.H2O/h1H;;1H2/q;+1;/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "dried over magnesium sulphate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "magnesium sulphate"
+              },
+              {
+                "type": "SMILES",
+                "value": "S(=O)(=O)([O-])[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "evaporated"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 1.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "Methyl (2RS,5SR)-5-(2-chloroacetyl)tetrahydro-2-furoate"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClCC(=O)C1CCC(O1)C(=O)OC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H11ClO4/c1-12-8(11)7-3-2-6(13-7)5(10)4-9/h6-7H,2-4H2,1H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 2.02,
+                  "units": "GRAM"
+                }
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06001997",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:29.488488"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-f83a34e4ddfd46e7861ed059482b1716"
+}

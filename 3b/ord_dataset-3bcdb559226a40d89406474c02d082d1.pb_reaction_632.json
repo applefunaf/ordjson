@@ -1,0 +1,329 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][O:2][C:3]1[CH:8]=[CH:7][C:6]([N:9]2[C:13]([C:14]([O:16][CH3:17])=[O:15])=[CH:12][C:11]([C:18]([OH:20])=[O:19])=[N:10]2)=[CH:5][CH:4]=1.[CH:21](N(C(C)C)CC)(C)[CH3:22].C(O)C>S(Cl)(Cl)=O>[CH3:1][O:2][C:3]1[CH:8]=[CH:7][C:6]([N:9]2[C:13]([C:14]([O:16][CH3:17])=[O:15])=[CH:12][C:11]([C:18]([O:20][CH2:21][CH3:22])=[O:19])=[N:10]2)=[CH:5][CH:4]=1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "1-[(4-methoxy)phenyl]-5-(methoxycarbonyl)pyrazole -3-carboxylic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "COC1=CC=C(C=C1)N1N=C(C=C1C(=O)OC)C(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C13H12N2O5/c1-19-9-5-3-8(4-6-9)15-11(13(18)20-2)7-10(14-15)12(16)17/h3-7H,1-2H3,(H,16,17)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 7.5,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "thionyl chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "S(=O)(Cl)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Cl2OS/c1-4(2)3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 50.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "diisopropylethylamine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(C)N(CC)C(C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H19N/c1-6-9(7(2)3)8(4)5/h7-8H,6H2,1-5H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 11.8,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 3.2,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "to stir at ambient temperature for 24 h"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A solution of 1-[(4-methoxy)phenyl]-5-(methoxycarbonyl)pyrazole -3-carboxylic acid (7.50 g, 27.1 mmol) in 50 mL of thionyl chloride was stirred at 80° C. for 1 h. The volatiles were then removed and the residue was azeotroped with 20 mL of toluene and dried in vacuo. The residue was dissolved in 100 mL of tetrahydrofuran and then there was added diisopropylethylamine (11.8 mL, 67.9 mmol) and absolute ethanol (3.2 mL, 54.3 mmol). The reaction mixture was allowed to stir at ambient temperature for 24 h. The volatiles were removed and the residue was dissolved in ethyl acetate. This solution was filtered through a pad of silica gel and was concentrated in vacuo to afford 3.7 g (45%) of the title compound which was used without purification. LRMS (DCI): 305.1 (M+H)+."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "The volatiles were then removed"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the residue was azeotroped with 20 mL of toluene",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "toluene"
+              },
+              {
+                "type": "SMILES",
+                "value": "C1(=CC=CC=C1)C"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C7H8/c1-7-5-3-2-4-6-7/h2-6H,1H3"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 20.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried in vacuo"
+    },
+    {
+      "type": "DISSOLUTION",
+      "details": "The residue was dissolved in 100 mL of tetrahydrofuran",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "tetrahydrofuran"
+              },
+              {
+                "type": "SMILES",
+                "value": "O1CCCC1"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O/c1-2-4-5-3-1/h1-4H2"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 100.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The volatiles were removed"
+    },
+    {
+      "type": "DISSOLUTION",
+      "details": "the residue was dissolved in ethyl acetate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "This solution was filtered through a pad of silica gel"
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "was concentrated in vacuo"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 24.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "1-[(4-methoxy)phenyl]-3-(ethoxycarbonyl)-5-(methoxycarbonyl)pyrazole"
+            },
+            {
+              "type": "SMILES",
+              "value": "COC1=CC=C(C=C1)N1N=C(C=C1C(=O)OC)C(=O)OCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C15H16N2O5/c1-4-22-14(18)12-9-13(15(19)21-3)17(16-12)10-5-7-11(20-2)8-6-10/h5-9H,4H2,1-3H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 3.7,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 45.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 44.9
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998424",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:26.381172"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-61ddf471416d4863a7025f3b59489ee6"
+}

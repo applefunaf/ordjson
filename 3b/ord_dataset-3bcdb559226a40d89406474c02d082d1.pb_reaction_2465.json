@@ -1,0 +1,361 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][O:2][C:3]1[CH:12]=[C:11]2[C:6]([C:7](=[O:15])[C:8]([C:13]#[N:14])=[CH:9][NH:10]2)=[CH:5][CH:4]=1.[N+:16]([O-])([O-:18])=[O:17].[NH4+]>FC(F)(F)C(OC(=O)C(F)(F)F)=O>[CH3:1][O:2][C:3]1[CH:12]=[C:11]2[C:6]([C:7](=[O:15])[C:8]([C:13]#[N:14])=[CH:9][NH:10]2)=[CH:5][C:4]=1[N+:16]([O-:18])=[O:17] |f:1.2|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "1,4-dihydro-7-methoxy-4-oxo-3-quinolinecarbonitrile"
+            },
+            {
+              "type": "SMILES",
+              "value": "COC1=CC=C2C(C(=CNC2=C1)C#N)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C11H8N2O2/c1-15-8-2-3-9-10(4-8)13-6-7(5-12)11(9)14/h2-4,6H,1H3,(H,13,14)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 10.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "trifluroacetic anhydride"
+            },
+            {
+              "type": "SMILES",
+              "value": "FC(C(=O)OC(C(F)(F)F)=O)(F)F"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4F6O3/c5-3(6,7)1(11)13-2(12)4(8,9)10"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 160.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ammonium nitrate"
+            },
+            {
+              "type": "SMILES",
+              "value": "[N+](=O)([O-])[O-].[NH4+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/NO3.H3N/c2-1(3)4;/h;1H3/q-1;/p+1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 6.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "The mixture was stirred an additional two hours"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a suspension of 10 g (49.6 mmol) of 1,4-dihydro-7-methoxy-4-oxo-3-quinolinecarbonitrile in 160 ml of trifluroacetic anhydride was added 6 g (74.9 mmol) of ammonium nitrate over a period of 3 hours. The mixture was stirred an additional two hours. Excess anhydride was removed at reduced pressure at 45° C. The residue was stirred with 500 ml of water. The solid was collected and washed with water. The solid was dissolved in 1000 ml of boiling acetic acid and the solution was treated with decolorizing charcoal. The mixture was filtered and concentrated to a volume of 300 ml. Cooling gave a solid which was collected giving 5.4 g of 1,4-dihydro-7-methoxy-6-nitro-4-oxo-3-quinolinecarbonitrile as a brown solid: mass spectrum (electrospray, m/e): M+H 246."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "Excess anhydride was removed at reduced pressure at 45° C",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "anhydride"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      },
+      "temperature": {
+        "setpoint": {
+          "value": 45.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "STIRRING",
+      "details": "The residue was stirred with 500 ml of water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 500.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The solid was collected"
+    },
+    {
+      "type": "WASH",
+      "details": "washed with water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DISSOLUTION",
+      "details": "The solid was dissolved in 1000 ml of boiling acetic acid",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "acetic acid"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C2H4O2/c1-2(3)4/h1H3,(H,3,4)"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 1000.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "ADDITION",
+      "details": "the solution was treated with decolorizing charcoal",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "charcoal"
+              },
+              {
+                "type": "SMILES",
+                "value": "C"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH4/h1H4"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "The mixture was filtered"
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated to a volume of 300 ml"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "Cooling"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "gave a solid which"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "was collected"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 2.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "1,4-dihydro-7-methoxy-6-nitro-4-oxo-3-quinolinecarbonitrile"
+            },
+            {
+              "type": "SMILES",
+              "value": "COC1=C(C=C2C(C(=CNC2=C1)C#N)=O)[N+](=O)[O-]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C11H7N3O4/c1-18-10-3-8-7(2-9(10)14(16)17)11(15)6(4-12)5-13-8/h2-3,5H,1H3,(H,13,15)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 5.4,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 44.4
+              }
+            }
+          ],
+          "isolated_color": "brown",
+          "texture": {
+            "type": "CUSTOM",
+            "details": "solid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06002008",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:24.262956"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-2d53591408fc4bbbbb3e10560ebdb08d"
+}

@@ -1,0 +1,244 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[C:1]([N:4]([CH3:19])[C:5]1[CH:6]=[C:7]([N:14]([CH3:18])[C:15](=[O:17])[CH3:16])[CH:8]=[C:9]([N+:11]([O-])=O)[CH:10]=1)(=[O:3])[CH3:2].[H][H]>C(O)C.[Pd]>[C:1]([N:4]([CH3:19])[C:5]1[CH:6]=[C:7]([N:14]([CH3:18])[C:15](=[O:17])[CH3:16])[CH:8]=[C:9]([NH2:11])[CH:10]=1)(=[O:3])[CH3:2]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrogen"
+            },
+            {
+              "type": "SMILES",
+              "value": "[H][H]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2/h1H"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Pd/C"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Pd]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Pd"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.019,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "CATALYST"
+        }
+      ]
+    },
+    "m1_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-[3-(acetyl-methyl-amino)-5-nitro-phenyl]-N-methyl-acetamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)N(C=1C=C(C=C(C1)[N+](=O)[O-])N(C(C)=O)C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C12H15N3O4/c1-8(16)13(3)10-5-11(14(4)9(2)17)7-12(6-10)15(18)19/h5-7H,1-4H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.19,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 15.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "0.19 g (0.00072 mol) of N-[3-(acetyl-methyl-amino)-5-nitro-phenyl]-N-methyl-acetamide was dissolved in 15 ml of ethanol, treated with 0.019 g of Pd/C (10%) and hydrogenated with hydrogen gas at room temperature for 2 hours. The catalyst was filtered off, the solvent was distilled off and the residue was chromatographed on silica gel with ethyl acetate. There was obtained 0.16 g (94%) of N-[3-(acetyl-methyl-amino)-5-amino-phenyl]-N-methyl-acetamide as white crystals; m.p.: 179-181° C."
+  },
+  "workups": [
+    {
+      "type": "FILTRATION",
+      "details": "The catalyst was filtered off"
+    },
+    {
+      "type": "DISTILLATION",
+      "details": "the solvent was distilled off"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the residue was chromatographed on silica gel with ethyl acetate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-[3-(acetyl-methyl-amino)-5-amino-phenyl]-N-methyl-acetamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)N(C=1C=C(C=C(C1)N)N(C(C)=O)C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C12H17N3O2/c1-8(16)14(3)11-5-10(13)6-12(7-11)15(4)9(2)17/h5-7H,13H2,1-4H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 0.16,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 94.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 94.4
+              }
+            }
+          ],
+          "isolated_color": "white",
+          "texture": {
+            "type": "CRYSTAL",
+            "details": "crystals"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998665",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:36.349220"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-690dba7a828c43d988af94ac3000b95a"
+}

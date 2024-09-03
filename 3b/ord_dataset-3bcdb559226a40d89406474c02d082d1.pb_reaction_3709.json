@@ -1,0 +1,226 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[C:1]([O:5][C:6]([NH:8][C@H:9]([C:14]([OH:16])=[O:15])[CH2:10][C:11]([OH:13])=O)=[O:7])([CH3:4])([CH3:3])[CH3:2]>O1CCCC1>[C:1]([O:5][C:6]([NH:8][C@@H:9]1[C:14](=[O:15])[O:16][C:11](=[O:13])[CH2:10]1)=[O:7])([CH3:2])([CH3:3])[CH3:4]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m3_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-t-butyloxycarbonyl-L-aspartic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(C)(C)OC(=O)N[C@@H](CC(=O)O)C(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H15NO6/c1-9(2,3)16-8(15)10-5(7(13)14)4-6(11)12/h5H,4H2,1-3H3,(H,10,15)(H,11,12)(H,13,14)/t5-/m0/s1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 23.3,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N,N-dicyclohexyl-carbodiimide"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 20.6,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "tetrahydrofuran"
+            },
+            {
+              "type": "SMILES",
+              "value": "O1CCCC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O/c1-2-4-5-3-1/h1-4H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 150.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a solution of 23.3 g N-t-butyloxycarbonyl-L-aspartic acid in 150 mL of tetrahydrofuran was added portionwise 20.6 g of N,N-dicyclohexyl-carbodiimide at 0° C. and overnight at room temperature. The precipitated dicyclohexyl urea was filtered off and all solvent was evaporated under reduced pressure. The oily residue was crystallized from acetone/hexane to give 18.24 g of anydride as white needles."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "overnight",
+      "duration": {
+        "value": 8.0,
+        "precision": 8.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "at room temperature",
+      "temperature": {
+        "control": {
+          "type": "AMBIENT"
+        }
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "The precipitated dicyclohexyl urea was filtered off",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "dicyclohexyl urea"
+              },
+              {
+                "type": "SMILES",
+                "value": "C1(CCCCC1)NC(NC1CCCCC1)=O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C13H24N2O/c16-13(14-11-7-3-1-4-8-11)15-12-9-5-2-6-10-12/h11-12H,1-10H2,(H2,14,15,16)"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "all solvent was evaporated under reduced pressure"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The oily residue was crystallized from acetone/hexane",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "acetone hexane"
+              },
+              {
+                "type": "SMILES",
+                "value": "CC(=O)C.CCCCCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C6H14.C3H6O/c1-3-5-6-4-2;1-3(2)4/h3-6H2,1-2H3;1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to give 18.24 g of anydride as white needles"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-t-Butyloxycarbonyl-L-aspartic acid anhydride"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(C)(C)OC(=O)N[C@H]1CC(=O)OC1=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H13NO5/c1-9(2,3)15-8(13)10-5-4-6(11)14-7(5)12/h5H,4H2,1-3H3,(H,10,13)/t5-/m0/s1"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06008058",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:16.512830"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-671e327625df43ec844fd6ebc60ff142"
+}

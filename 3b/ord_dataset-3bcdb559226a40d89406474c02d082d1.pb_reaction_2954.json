@@ -1,0 +1,209 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "C[O:2][C:3]1[CH:4]=[C:5]2[C:9](=[CH:10][CH:11]=1)[CH2:8][N:7]([NH:12][C:13]1[CH:18]=[CH:17][N:16]=[CH:15][CH:14]=1)[CH2:6]2.[BrH:19]>>[BrH:19].[N:16]1[CH:15]=[CH:14][C:13]([NH:12][N:7]2[CH2:6][C:5]3[C:9](=[CH:10][CH:11]=[C:3]([OH:2])[CH:4]=3)[CH2:8]2)=[CH:18][CH:17]=1 |f:2.3|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2,3-dihydro-5-methoxy-N-(4-pyridinyl)-1 H-isoindol-2-amine"
+            },
+            {
+              "type": "SMILES",
+              "value": "COC=1C=C2CN(CC2=CC1)NC1=CC=NC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C14H15N3O/c1-18-14-3-2-11-9-17(10-12(11)8-14)16-13-4-6-15-7-5-13/h2-8H,9-10H2,1H3,(H,15,16)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 5.25,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrobromic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "Br"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/BrH/h1H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 35.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 10.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "with stirring"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A solution of 2,3-dihydro-5-methoxy-N-(4-pyridinyl)-1 H-isoindol-2-amine (5.25 g) in 48% hydrobromic acid (35 ml) was heated under reflux for 5 hrs, with stirring. The reaction mixture was cooled to about 10° C. and filtered. The filter cake was washed with cold water and dried under vacuum in an oven at 80° C. to give 4.8 g (72%) of product. The product was recrystallized from water and dried under vacuum at 80° C. to give 3.1 g (46%) of the analytical sample, mp 261-264° C."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "under reflux for 5 hrs",
+      "duration": {
+        "value": 5.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filtered"
+    },
+    {
+      "type": "WASH",
+      "details": "The filter cake was washed with cold water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried under vacuum in an oven at 80° C.",
+      "temperature": {
+        "setpoint": {
+          "value": 80.0,
+          "units": "CELSIUS"
+        }
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "product"
+            },
+            {
+              "type": "NAME",
+              "value": "2,3-Dihydro-2-(4-pyridinylamino)-1H-isoindol-5-ol hydrobromide"
+            },
+            {
+              "type": "SMILES",
+              "value": "Br.N1=CC=C(C=C1)NN1CC2=CC=C(C=C2C1)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C13H13N3O.BrH/c17-13-2-1-10-8-16(9-11(10)7-13)15-12-3-5-14-6-4-12;/h1-7,17H,8-9H2,(H,14,15);1H"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 4.8,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 72.0
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06004977",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:17.909632"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-cc0cb014f334449f9c9748620d748bf2"
+}

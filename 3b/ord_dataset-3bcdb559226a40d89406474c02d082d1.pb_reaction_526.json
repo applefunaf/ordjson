@@ -1,0 +1,289 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[C:1]1([CH2:14][C:15]#[N:16])[C:5]2=[C:6]3[C:11](=[CH:12][CH:13]=[C:4]2[O:3][CH:2]=1)[O:10][CH2:9][CH:8]=[CH:7]3.[H][H]>C(O)C.N.[Ni]>[C:1]1([CH2:14][CH2:15][NH2:16])[C:5]2=[C:6]3[C:11](=[CH:12][CH:13]=[C:4]2[O:3][CH:2]=1)[O:10][CH2:9][CH2:8][CH2:7]3",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m3_m4_m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "compound"
+            },
+            {
+              "type": "NAME",
+              "value": "2-(7H-Furo[3,2-f]chromen-1-yl]acetonitrile"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1(=COC=2C1=C1C=CCOC1=CC2)CC#N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C13H9NO2/c14-6-5-9-8-16-12-4-3-11-10(13(9)12)2-1-7-15-11/h1-4,8H,5,7H2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 1.4,
+              "units": "MILLIMOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 30.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ammonia"
+            },
+            {
+              "type": "SMILES",
+              "value": "N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H3N/h1H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Nickel"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Ni]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Ni"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 400.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "CATALYST"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrogen"
+            },
+            {
+              "type": "SMILES",
+              "value": "[H][H]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2/h1H"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "1.4 mmol of compound obtained in stage E are dissolved in 30 ml of ethanol saturated with ammonia, in the presence of 400 mg of Nickel (Raney). The reaction mixture is stirred at 50° C. under 50 atm of hydrogen during 5 hours. After cooling and filtration of the catalyst, the filtrate is concentrated, dissolved in a mixture of ether/water and extracted. The organic layer is dried over magnesium sulfate and concentrated to yield the title product."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "After cooling"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filtration of the catalyst"
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "the filtrate is concentrated"
+    },
+    {
+      "type": "DISSOLUTION",
+      "details": "dissolved in a mixture of ether/water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ether water"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOCC.O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O.H2O/c1-3-5-4-2;/h3-4H2,1-2H3;1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "extracted"
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "The organic layer is dried over magnesium sulfate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "magnesium sulfate"
+              },
+              {
+                "type": "SMILES",
+                "value": "S(=O)(=O)([O-])[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title product"
+            },
+            {
+              "type": "NAME",
+              "value": "2-(8,9-Dihydro-7H-furo[3,2-f]chromen-1-yl)ethylamine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1(=COC=2C1=C1CCCOC1=CC2)CCN"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C13H15NO2/c14-6-5-9-8-16-12-4-3-11-10(13(9)12)2-1-7-15-11/h3-4,8H,1-2,5-7,14H2"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998461",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:24.957886"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-d8ea24ce3f4148a484b7c18872da68fd"
+}

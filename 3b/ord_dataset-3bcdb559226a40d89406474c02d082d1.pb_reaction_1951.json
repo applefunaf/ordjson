@@ -1,0 +1,249 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "C[C@@H:2]([C@@H:8]1[C@@:12]2(C)[C@@H:13](O)[CH2:14][C@@H:15]3[C@@:20]4(C)[CH2:21]C[C@@H](O)C[C@H:19]4[CH2:18][C@@H:17](O)[C@@:16]3(C)[C@@H:11]2[CH2:10][CH2:9]1)[CH2:3][CH2:4][C:5]([O-:7])=[O:6].[Na+]>[Cl-].[Ca+2].[Cl-]>[C:5]([OH:7])(=[O:6])[CH2:4][CH2:3][CH2:2][CH2:8][CH2:9][CH2:10][CH2:11][CH2:12][CH2:13][CH2:14][CH2:15][CH2:16][CH2:17][CH2:18][CH3:19].[C:5]([OH:7])(=[O:6])[CH2:4][CH2:3][CH2:2][CH2:8][CH2:9][CH2:10][CH2:11]/[CH:12]=[CH:13]\\[CH2:14][CH2:15][CH2:16][CH2:17][CH2:18][CH2:19][CH2:20][CH3:21].[C:5]([OH:7])(=[O:6])[CH2:4][CH2:3][CH2:2][CH2:8][CH2:9][CH2:10][CH2:11][CH2:12][CH2:13][CH2:14][CH2:15][CH2:16][CH2:17][CH2:18][CH2:19][CH2:20][CH3:21] |f:0.1,2.3.4|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4_m6": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sodium cholate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C[C@H](CCC(=O)[O-])[C@H]1CC[C@@H]2[C@@]1([C@H](C[C@H]3[C@]2([C@@H](C[C@H]4[C@@]3(CC[C@H](C4)O)C)O)C)O)C.[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C25H42O5.Na/c1-14(5-8-22(29)30)17-6-7-18-24(17,3)21(28)13-19-23(2)10-9-16(26)11-15(23)12-20(27)25(18,19)4;/h14-21,26-28H,5-13H2,1-4H3,(H,29,30);/q;+1/p-1/t14-,15+,16-,17-,18-,19-,20-,21+,23+,24-,25+;/m1./s1"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 40.0,
+              "units": "MICROLITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "calcium chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Cl-].[Ca+2].[Cl-]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Ca.2ClH/h;2*1H/q+2;;/p-2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 100.0,
+              "units": "MICROLITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "fatty acid"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To 0.5 mL of a cultured cell fraction of Pyrococcus horikoshii JCM 9974 were added 2 mg of each of these substrates, 40 μl of 100 mM sodium cholate and 100 μL of 20 mM calcium chloride. The resultant reaction solution was reacted at 75° C. overnight. From the reaction solution, a fraction containing the fatty acid produced was extracted with isooctane and then subjected to gas chromatography. As a result, a decomposition product including 47-48% of oleic acid, oleic acid, palmitic acid or linolenic acid resulted from the decomposition by phospholipase A2 and 47-48% of palmitic acid, stearic acid, oleic acid or stearic acid resulted from the decomposition by phospholipase A1 was obtained from each of the substrates."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "The resultant reaction solution"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "was reacted at 75° C. overnight",
+      "duration": {
+        "value": 8.0,
+        "precision": 8.0,
+        "units": "HOUR"
+      },
+      "temperature": {
+        "setpoint": {
+          "value": 75.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "produced"
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "was extracted with isooctane",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "isooctane"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(C)CC(C)(C)C"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C8H18/c1-7(2)6-8(3,4)5/h7H,6H2,1-5H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "A2"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "palmitic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(CCCCCCCCCCCCCCC)(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C16H32O2/c1-2-3-4-5-6-7-8-9-10-11-12-13-14-15-16(17)18/h2-15H2,1H3,(H,17,18)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 47.0
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "oleic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(CCCCCCC\\C=C/CCCCCCCC)(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C18H34O2/c1-2-3-4-5-6-7-8-9-10-11-12-13-14-15-16-17-18(19)20/h9-10H,2-8,11-17H2,1H3,(H,19,20)/b10-9-"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "stearic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(CCCCCCCCCCCCCCCCC)(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C18H36O2/c1-2-3-4-5-6-7-8-9-10-11-12-13-14-15-16-17-18(19)20/h2-17H2,1H3,(H,19,20)"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06001626",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:15.996424"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-c8c00cdd1b30490b9b3d5e825036be32"
+}

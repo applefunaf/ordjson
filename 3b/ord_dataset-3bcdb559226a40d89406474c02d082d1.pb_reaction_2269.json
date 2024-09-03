@@ -1,0 +1,332 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[NH:1]([C:5]1[CH:6]=[C:7]([CH:12]=[CH:13][CH:14]=1)[C:8]([O:10][CH3:11])=[O:9])[C:2]([NH2:4])=[S:3].BrBr.C(OCC)C>ClC1C=CC=CC=1>[NH2:4][C:2]1[S:3][C:6]2[C:7]([C:8]([O:10][CH3:11])=[O:9])=[CH:12][CH:13]=[CH:14][C:5]=2[N:1]=1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "chlorobenzene"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H5Cl/c7-6-4-2-1-3-5-6/h1-5H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 120.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methyl 3-thioureido-benzoate"
+            },
+            {
+              "type": "SMILES",
+              "value": "N(C(=S)N)C=1C=C(C(=O)OC)C=CC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H10N2O2S/c1-13-8(12)6-3-2-4-7(5-6)11-9(10)14/h2-5H,1H3,(H3,10,11,14)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 8.4,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2_m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "bromine"
+            },
+            {
+              "type": "SMILES",
+              "value": "BrBr"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Br2/c1-2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 2.2,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "chlorobenzene"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H5Cl/c7-6-4-2-1-3-5-6/h1-5H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 30.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "diethyl ether"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)OCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "while stirring as thoroughly as possible, and the mixture"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "8.4 g of methyl 3-thioureido-benzoate are suspended in 120 ml of chlorobenzene, 2.2 ml of bromine in 30 ml of chlorobenzene are added at 0° C. in the course of 1 hour, while stirring as thoroughly as possible, and the mixture is then stirred to room temperature. It is then kept at 70° C. for 4 hours and subsequently cooled, a little diethyl ether is added and the precipitate is filtered off, mixed thoroughly with 70 ml of aqueous sodium bicarbonate solution, filtered off again and washed with water. 7.7 g (88%) of crude product of melting point 231-232° C. result. HPLC analysis shows a content of more than 83% of the pure title compound, in addition to 8-18% of isomeric methyl 2-amino-benzothiazole-5-carboxylate. Suspension in and brief heating at 70° C. with ethyl acetate, cooling to 30° C. and filtration give the pure title compound of melting point >250° C. If the reaction is carried out in acetic acid (instead of in chlorobenzene), the content of the undesired isomeric methyl 2-amino-benzothiazole-5-carboxylate is only about 5%."
+  },
+  "workups": [
+    {
+      "type": "STIRRING",
+      "details": "is then stirred to room temperature",
+      "temperature": {
+        "control": {
+          "type": "AMBIENT"
+        }
+      }
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "subsequently cooled"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "the precipitate is filtered off"
+    },
+    {
+      "type": "ADDITION",
+      "details": "mixed thoroughly with 70 ml of aqueous sodium bicarbonate solution",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "sodium bicarbonate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C([O-])(O)=O.[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2O3.Na/c2-1(3)4;/h(H2,2,3,4);/q;+1/p-1"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 70.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filtered off again"
+    },
+    {
+      "type": "WASH",
+      "details": "washed with water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "7.7 g (88%) of crude product of melting point 231-232° C. result",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "crude product"
+              }
+            ],
+            "amount": {
+              "mass": {
+                "value": 7.7,
+                "units": "GRAM"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 4.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "pure title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "Methyl 2-aminobenzothiazole-7-carboxylate"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC=1SC2=C(N1)C=CC=C2C(=O)OC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H8N2O2S/c1-13-8(12)5-3-2-4-6-7(5)14-9(10)11-6/h2-4H,1H3,(H2,10,11)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 83.0
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06002013",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:20.717720"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-19fa00906ed84435a0b61ac3a23e8fd9"
+}

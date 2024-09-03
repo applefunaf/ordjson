@@ -1,0 +1,235 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[NH2:1][C:2]([NH2:4])=[S:3].[Br:5][CH2:6][C:7](=O)[C:8]([O:10][CH2:11][CH3:12])=[O:9]>C(O)C>[BrH:5].[NH2:1][C:2]1[S:3][CH:6]=[C:7]([C:8]([O:10][CH2:11][CH3:12])=[O:9])[N:4]=1 |f:3.4|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "thiourea"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC(=S)N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH4N2S/c2-1(3)4/h(H4,2,3,4)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 6.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 80.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethyl bromopyruvate"
+            },
+            {
+              "type": "SMILES",
+              "value": "BrCC(C(=O)OCC)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C5H7BrO3/c1-2-9-5(8)4(7)3-6/h2-3H2,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 15.4,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 45.0,
+        "units": "CELSIUS"
+      }
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a stirring suspension of thiourea (6.0 g, 78.8 mmol) in ethanol (80 mL) was added ethyl bromopyruvate (15.4 g, 78.8 mmol). The resulting solution was heated at 45° C. for 23 h. The solution was cooled at 0° C. for 24 h, and the crystals were collected by filtration and washed with cold ethanol to provide the title compound (15.8 g, 79%). 1H NMR (400 MHz, CD3OD) δ 7.70 (s, 1H), 4.41 (q, 2H), 1.38 (t, 3H)."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "The solution was cooled at 0° C. for 24 h",
+      "duration": {
+        "value": 24.0,
+        "units": "HOUR"
+      },
+      "temperature": {
+        "setpoint": {
+          "value": 0.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "the crystals were collected by filtration"
+    },
+    {
+      "type": "WASH",
+      "details": "washed with cold ethanol",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "ethyl 2-aminothiazole-4-carboxylate hydrobromide"
+            },
+            {
+              "type": "SMILES",
+              "value": "Br.NC=1SC=C(N1)C(=O)OCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H8N2O2S.BrH/c1-2-10-5(9)4-3-11-6(7)8-4;/h3H,2H2,1H3,(H2,7,8);1H"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 15.8,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 79.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 79.2
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998470",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:31.338211"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-d3f09455b1d6402b81aae646f22cdda6"
+}

@@ -1,0 +1,542 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][C:2]1([CH3:26])[CH2:11][CH2:10][C:9](=[O:12])[C:8]2[CH:7]=[C:6]([N:13]=[N:14][C:15]3[CH:25]=[CH:24][C:18]([C:19]([O:21][CH2:22][CH3:23])=[O:20])=[CH:17][CH:16]=3)[CH:5]=[CH:4][C:3]1=2>C1C=CC=CC=1.[Zn]>[CH3:26][C:2]1([CH3:1])[CH2:11][CH2:10][C:9]([OH:12])([CH2:18][C:19]([O:21][CH2:22][CH3:23])=[O:20])[C:8]2[CH:7]=[C:6]([N:13]=[N:14][C:15]3[CH:16]=[CH:17][C:18]([C:19]([O:21][CH2:22][CH3:23])=[O:20])=[CH:24][CH:25]=3)[CH:5]=[CH:4][C:3]1=2",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "zinc"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Zn]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Zn"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "CATALYST"
+        }
+      ]
+    },
+    "m1_m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "bromo ethyl acetate"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 0.082,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethyl 4-[(5,5-dimethyl-5,6-dihydro-naphthalen-8(7H)-one-2-yl)azo]benzoate"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC1(C=2C=CC(=CC2C(CC1)=O)N=NC1=CC=C(C(=O)OCC)C=C1)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C21H22N2O3/c1-4-26-20(25)14-5-7-15(8-6-14)22-23-16-9-10-18-17(13-16)19(24)11-12-21(18,2)3/h5-10,13H,4,11-12H2,1-3H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.13,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "benzene"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H6/c1-2-4-6-5-3-1/h1-6H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 6.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a refluxing solution of zinc dust (0.15 g, 20 mesh, activated prior to use by washing with 2% of hydrochloric acid, water, 95% ethanol, acetone and anhydrous ether, then dried in vacuum for several hours) in 6 ml of dry benzene was slowly added a mixture of bromo ethyl acetate (0.082 ml, 0.74 mmol) and ethyl 4-[(5,5-dimethyl-5,6-dihydro-naphthalen-8(7H)-one-2-yl)azo]benzoate (Compound D10, 0.13 g, 0.371 mmol) in 6 ml of dry benzene. The resulting mixture was refluxed for 2 h then cooled to room temperature. The precipitate was filtered through celite and the filtrate was washed with cold 15% sulfuric acid. The organic phase was washed with saturated sodium bicarbonate, brine, dried over Na2SO4, filtered and concentrated to give a red oil. Purification by flash chromatography (silica gel, 30% ethyl acetate in hexane) afforded the title compound as a red oil."
+  },
+  "workups": [
+    {
+      "type": "WASH",
+      "details": "by washing with 2% of hydrochloric acid, water, 95% ethanol, acetone and anhydrous ether",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "hydrochloric acid"
+              },
+              {
+                "type": "SMILES",
+                "value": "Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH/h1H"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "acetone"
+              },
+              {
+                "type": "SMILES",
+                "value": "CC(=O)C"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C3H6O/c1-3(2)4/h1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "dried in vacuum for several hours) in 6 ml of dry benzene",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "benzene"
+              },
+              {
+                "type": "SMILES",
+                "value": "C1=CC=CC=C1"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C6H6/c1-2-4-6-5-3-1/h1-6H"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 6.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "ADDITION",
+      "details": "was slowly added"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "The resulting mixture was refluxed for 2 h",
+      "duration": {
+        "value": 2.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "The precipitate was filtered through celite"
+    },
+    {
+      "type": "WASH",
+      "details": "the filtrate was washed with cold 15% sulfuric acid",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "sulfuric acid"
+              },
+              {
+                "type": "SMILES",
+                "value": "S(O)(O)(=O)=O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O4S/c1-5(2,3)4/h(H2,1,2,3,4)"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "The organic phase was washed with saturated sodium bicarbonate, brine",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "sodium bicarbonate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C([O-])(O)=O.[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2O3.Na/c2-1(3)4;/h(H2,2,3,4);/q;+1/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "brine"
+              },
+              {
+                "type": "SMILES",
+                "value": "[Cl-].[Na+].O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH.Na.H2O/h1H;;1H2/q;+1;/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "dried over Na2SO4",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "Na2SO4"
+              },
+              {
+                "type": "SMILES",
+                "value": "[O-]S(=O)(=O)[O-].[Na+].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/2Na.H2O4S/c;;1-5(2,3)4/h;;(H2,1,2,3,4)/q2*+1;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filtered"
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to give a red oil"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "Purification by flash chromatography (silica gel, 30% ethyl acetate in hexane)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "hexane"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCCCCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C6H14/c1-3-5-6-4-2/h3-6H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "(+/-) Ethyl 4-[(5,5-dimethyl-8-hydroxy-8-carbethoxymethyl-5,6,7,8-tetrahydronaphth-2-yl)azo]benzoate"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC1(C=2C=CC(=CC2C(CC1)(CC(=O)OCC)O)N=NC1=CC=C(C(=O)OCC)C=C1)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C25H30N2O5/c1-5-31-22(28)16-25(30)14-13-24(3,4)20-12-11-19(15-21(20)25)27-26-18-9-7-17(8-10-18)23(29)32-6-2/h7-12,15,30H,5-6,13-14,16H2,1-4H3"
+            }
+          ],
+          "isolated_color": "red",
+          "texture": {
+            "type": "OIL",
+            "details": "oil"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998655",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:39.380104"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-76904f951a524b4eaf1732172122d17c"
+}

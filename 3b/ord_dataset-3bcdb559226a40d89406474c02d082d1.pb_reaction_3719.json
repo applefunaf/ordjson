@@ -1,0 +1,316 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[Br:1][CH2:2][CH2:3][CH2:4][CH2:5][CH2:6][CH2:7][OH:8].[C:9]1([P:15]([C:22]2[CH:27]=[CH:26][CH:25]=[CH:24][CH:23]=2)[C:16]2[CH:21]=[CH:20][CH:19]=[CH:18][CH:17]=2)[CH:14]=[CH:13][CH:12]=[CH:11][CH:10]=1>C(#N)C>[Br-:1].[OH:8][CH2:7][CH2:6][CH2:5][CH2:4][CH2:3][CH2:2][P+:15]([C:16]1[CH:17]=[CH:18][CH:19]=[CH:20][CH:21]=1)([C:22]1[CH:27]=[CH:26][CH:25]=[CH:24][CH:23]=1)[C:9]1[CH:10]=[CH:11][CH:12]=[CH:13][CH:14]=1 |f:3.4|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m2_m3_m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "6-bromo- 1 -hexanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "BrCCCCCCO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H13BrO/c7-5-3-1-2-4-6-8/h8H,1-6H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 500.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "triphenylphosphine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1(=CC=CC=C1)P(C1=CC=CC=C1)C1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C18H15P/c1-4-10-16(11-5-1)19(17-12-6-2-7-13-17)18-14-8-3-9-15-18/h1-15H"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 768.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acetonitrile"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)#N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H3N/c1-2-3/h1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 1800.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "5L"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "5L"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "thermometer, mechanical stirring"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "Into a 5L, 3 neck round bottom flask fitted with nitrogen inlet, condenser, thermometer, mechanical stirring and nitrogen outlet is added 6-bromo- 1 -hexanol (500 g, 2.76 mol), triphenylphosphine (768 g, 2.9 mol) and acetonitrile (1800 ml) under nitrogen. The reaction mixture is heated to reflux for 72 hrs. The reaction mixture is cooled to room temperature and transferred into a 5L beaker. The product is recrystallized from anhydrous ethyl ether (1.5L) at 10° C. Vacuum filtration of the mixture followed by washing the white crystals with ethyl ether and drying in a vacuum oven at 50° C. for 2 hrs. gives 1140 g of the desired product."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "The reaction mixture is heated"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "to reflux for 72 hrs",
+      "duration": {
+        "value": 72.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The product is recrystallized from anhydrous ethyl ether (1.5L) at 10° C",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 1.5,
+                "units": "LITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      },
+      "temperature": {
+        "setpoint": {
+          "value": 10.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "Vacuum filtration of the mixture"
+    },
+    {
+      "type": "WASH",
+      "details": "by washing the white crystals with ethyl ether",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "drying in a vacuum oven at 50° C. for 2 hrs",
+      "duration": {
+        "value": 2.0,
+        "units": "HOUR"
+      },
+      "temperature": {
+        "setpoint": {
+          "value": 50.0,
+          "units": "CELSIUS"
+        }
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "desired product"
+            },
+            {
+              "type": "NAME",
+              "value": "(6-hydroxyhexyl) Triphenylphosphonium Bromide"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Br-].OCCCCCC[P+](C1=CC=CC=C1)(C1=CC=CC=C1)C1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C24H28OP.BrH/c25-20-12-1-2-13-21-26(22-14-6-3-7-15-22,23-16-8-4-9-17-23)24-18-10-5-11-19-24;/h3-11,14-19,25H,1-2,12-13,20-21H2;1H/q+1;/p-1"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 1140.0,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 93.2
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06008181",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:16.652932"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-2d5822ab73a8465d87bb21ccd095395d"
+}

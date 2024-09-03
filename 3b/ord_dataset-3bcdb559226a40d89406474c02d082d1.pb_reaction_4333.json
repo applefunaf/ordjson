@@ -1,0 +1,192 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[C:1]1([C:16]2[CH:21]=[CH:20][CH:19]=[CH:18][CH:17]=2)[CH:6]=[CH:5][C:4]([C:7]2[CH:8]([O:14][CH3:15])[O:9][CH:10]([O:12][CH3:13])[CH:11]=2)=[CH:3][CH:2]=1>CCO.CCOC(C)=O.[Pd]>[C:1]1([C:16]2[CH:17]=[CH:18][CH:19]=[CH:20][CH:21]=2)[CH:2]=[CH:3][C:4]([CH:7]2[CH2:11][CH:10]([O:12][CH3:13])[O:9][CH:8]2[O:14][CH3:15])=[CH:5][CH:6]=1 |f:1.2|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m3_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3-biphenyl-4-yl-2,5-dihydro-2,5-dimethoxyfuran"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1(=CC=C(C=C1)C=1C(OC(C1)OC)OC)C1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C18H18O3/c1-19-17-12-16(18(20-2)21-17)15-10-8-14(9-11-15)13-6-4-3-5-7-13/h3-12,17-18H,1-2H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 1.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "EtOH EtOAc"
+            },
+            {
+              "type": "SMILES",
+              "value": "CCO.CCOC(=O)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O2.C2H6O/c1-3-6-4(2)5;1-2-3/h3H2,1-2H3;3H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Pd/C"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Pd]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Pd"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 300.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "CATALYST"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "was stirred under H2 atmosphere for 1.75 hours"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture of 3-biphenyl-4-yl-2,5-dihydro-2,5-dimethoxyfuran (1.00 g, 3.55 mmol) and 5% Pd/C (300 mg) in EtOH:EtOAc (1:2) was stirred under H2 atmosphere for 1.75 hours. The catalyst was filtered onto Celite. The filtrate was concentrated to provide 0.97 g (97%) of a diastereomeric mixture of 3-biphenyl-4-yl-2,5-dimethoxy-tetrahydro-furan as a colorless oil which was typically used without purification. 1H NMR: δ 7.60-7.53 (m, 4H), 7.45-7.28 (m, 5H), 5.26 (t, 1H, J=5.5 Hz), 5.02 (d, 1H, J=4.4 Hz), 3.54 (s, 3H), 3.36 (m, 1H), 2.41-2.30 (m, 1H). Anal. calculated for C18H20O3 : C, 76.03; H, 7.09. Found: C, 75.74; H, 6.92."
+  },
+  "workups": [
+    {
+      "type": "FILTRATION",
+      "details": "The catalyst was filtered onto Celite"
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "The filtrate was concentrated"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 1.75,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "diastereomeric mixture"
+            },
+            {
+              "type": "NAME",
+              "value": "3-(Biphenyl-4-yl)-2,5-dimethoxytetrahydrofuran"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1(=CC=C(C=C1)C1C(OC(C1)OC)OC)C1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C18H20O3/c1-19-17-12-16(18(20-2)21-17)15-10-8-14(9-11-15)13-6-4-3-5-7-13/h3-11,16-18H,12H2,1-2H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 0.97,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 97.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 96.1
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06008243",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:27.414303"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-87ea789b2ce144968a0d9fe2a2cf6962"
+}

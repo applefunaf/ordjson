@@ -1,0 +1,306 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[NH2:1][C:2]1[CH:7]=[CH:6][C:5]([S:8]([NH:11][C:12]2[CH:17]=[C:16](Cl)[N:15]=[C:14]([NH2:19])[N:13]=2)(=[O:10])=[O:9])=[CH:4][CH:3]=1.[CH3:20][OH:21]>[Na]>[NH2:1][C:2]1[CH:7]=[CH:6][C:5]([S:8]([NH:11][C:12]2[CH:17]=[C:16]([O:21][CH3:20])[N:15]=[C:14]([NH2:19])[N:13]=2)(=[O:10])=[O:9])=[CH:4][CH:3]=1 |^1:21|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m3_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-amino-N-(2-amino-6-chloro-pyrimidin-4-yl)-benzenesulfonamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC1=CC=C(C=C1)S(=O)(=O)NC1=NC(=NC(=C1)Cl)N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C10H10ClN5O2S/c11-8-5-9(15-10(13)14-8)16-19(17,18)7-3-1-6(12)2-4-7/h1-5H,12H2,(H3,13,14,15,16)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.27,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 20.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sodium"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Na]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Na"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.23,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 150.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "stirred in an autoclave at 150° C. for 9 hours"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "0.27 g (0.0009 mol) of 4-amino-N-(2-amino-6-chloro-pyrimidin-4-yl)-benzenesulfonamide was dissolved in a solution of 0.23 g of sodium in 20 ml of methanol and stirred in an autoclave at 150° C. for 9 hours. The solvent was distilled off, the residue was added to water and the pH value was adjusted to 4-5 with 1N HCl. The precipitate which thereby separated was filtered off under suction, washed with water and dried. The crystals obtained were triturated in 20 ml of methanol, again filtered off and dried in a high vacuum. There was obtained 0.25 g (94%) of 4-amino-N-(2-amino-6-methoxy-pyrimidin-4-yl)-benzenesulfonamide as beige crystals; m.p.: >250° C. (dec.)."
+  },
+  "workups": [
+    {
+      "type": "DISTILLATION",
+      "details": "The solvent was distilled off"
+    },
+    {
+      "type": "ADDITION",
+      "details": "the residue was added to water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The precipitate which thereby separated"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "was filtered off under suction"
+    },
+    {
+      "type": "WASH",
+      "details": "washed with water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The crystals obtained"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "were triturated in 20 ml of methanol",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "methanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "CO"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 20.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "again filtered off"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried in a high vacuum"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 9.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-amino-N-(2-amino-6-methoxy-pyrimidin-4-yl)-benzenesulfonamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC1=CC=C(C=C1)S(=O)(=O)NC1=NC(=NC(=C1)OC)N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C11H13N5O3S/c1-19-10-6-9(14-11(13)15-10)16-20(17,18)8-4-2-7(12)3-5-8/h2-6H,12H2,1H3,(H3,13,14,15,16)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 0.25,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 94.0
+              }
+            }
+          ],
+          "isolated_color": "beige",
+          "texture": {
+            "type": "CRYSTAL",
+            "details": "crystals"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998665",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:36.145520"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-f48bf2bf55c34a58b4d151e08077cabe"
+}

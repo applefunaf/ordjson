@@ -1,0 +1,257 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][C:2]1[S:3][C:4]2[CH:10]=[CH:9][C:8]([Cl:11])=[CH:7][C:5]=2[N:6]=1.[CH3:12][N:13]([CH3:22])[C:14]1[CH:21]=[CH:20][C:17]([CH:18]=O)=[CH:16][CH:15]=1.O>[Cl-].C([N+](CC)(CC)CC)C1C=CC=CC=1.[OH-].[Na+]>[Cl:11][C:8]1[CH:9]=[CH:10][C:4]2[S:3][C:2](/[CH:1]=[CH:18]/[C:17]3[CH:20]=[CH:21][C:14]([N:13]([CH3:22])[CH3:12])=[CH:15][CH:16]=3)=[N:6][C:5]=2[CH:7]=1 |f:3.4,5.6|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m4_m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-methyl-5-chloro-benzothiazole"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC=1SC2=C(N1)C=C(C=C2)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H6ClNS/c1-5-10-7-4-6(9)2-3-8(7)11-5/h2-4H,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 3.78,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-(dimethylamino)benzaldehyde"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN(C1=CC=C(C=O)C=C1)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H11NO/c1-10(2)9-5-3-8(7-11)4-6-9/h3-7H,1-2H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 3.04,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "benzyltriethylammonium chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Cl-].C(C1=CC=CC=C1)[N+](CC)(CC)CC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C13H22N.ClH/c1-4-14(5-2,6-3)12-13-10-8-7-9-11-13;/h7-11H,4-6,12H2,1-3H3;1H/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.5,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "CATALYST"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sodium hydroxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "[OH-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Na.H2O/h;1H2/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 30.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 20.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "was mechanically stirred in an ultrasonic bath at room temperature for 12 hours"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "The procedure of Cuadro, et al., Il Farmaco., 47:477-488 (1992), was followed. A suspension of 2-methyl-5-chloro-benzothiazole (3.78 g, 20.6 mmol), 4-(dimethylamino)benzaldehyde (3.04 g, 20.4 mmol), and 0.5 g of benzyltriethylammonium chloride in 30 mL of 50% aqueous sodium hydroxide solution was mechanically stirred in an ultrasonic bath at room temperature for 12 hours. Water (20 mL) was added, the mixture was cooled, filtered, and the solid was washed with water to give the title compound as a yellow solid, mp 182-184° C."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "the mixture was cooled"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filtered"
+    },
+    {
+      "type": "WASH",
+      "details": "the solid was washed with water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 12.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "(E)-{4-[2-(5-Chlorobenzothiazol-2-yl)vinyl]phenyl}dimethylamine"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC=1C=CC2=C(N=C(S2)/C=C/C2=CC=C(C=C2)N(C)C)C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C17H15ClN2S/c1-20(2)14-7-3-12(4-8-14)5-10-17-19-15-11-13(18)6-9-16(15)21-17/h3-11H,1-2H3/b10-5+"
+            }
+          ],
+          "isolated_color": "yellow",
+          "texture": {
+            "type": "CUSTOM",
+            "details": "solid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06001331",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:15.675616"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-85184f63846a432892ac96f0309ba3cd"
+}

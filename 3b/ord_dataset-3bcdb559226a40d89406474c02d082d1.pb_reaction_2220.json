@@ -1,0 +1,310 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH:1]([O:4]C(C)C)(C)[CH3:2].[C:8]([O:12][CH2:13][C:14]1[CH:19]=[CH:18][C:17]([OH:20])=[CH:16][CH:15]=1)(=[O:11])[CH:9]=[CH2:10].C(OC(=O)C)(=O)C>N1C=CC=CC=1>[C:8]([O:12][CH2:13][C:14]1[CH:15]=[CH:16][C:17]([O:20][C:1](=[O:4])[CH3:2])=[CH:18][CH:19]=1)(=[O:11])[CH:9]=[CH2:10]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "isopropyl ether"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(C)OC(C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H14O/c1-5(2)7-6(3)4/h5-6H,1-4H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 1400.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-hydroxybenzyl acrylate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C=C)(=O)OCC1=CC=C(C=C1)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C10H10O3/c1-2-10(12)13-7-8-3-5-9(11)6-4-8/h2-6,11H,1,7H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 100.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "pyridine"
+            },
+            {
+              "type": "SMILES",
+              "value": "N1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C5H5N/c1-2-4-6-5-3-1/h1-5H"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 53.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acetic anhydride"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)OC(C)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H6O3/c1-3(5)7-4(2)6/h1-2H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 125.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "stirring"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "1400 g of isopropyl ether, 100 g of 4-hydroxybenzyl acrylate and 53 g of pyridine were charged into a separable flask of the same type as used in Reference Example 1, and the flask inside gas was replaced with a nitrogen gas over 30 minutes, while ice cooling the flask. Then, 125 g of acetic anhydride was dropwise added thereto at 3° C. over 2 hours, and stirring was continued at room temperature for 3 hours. After completion of the reaction, the reaction mixture was washed with 0.5N hydrochloric acid and then with water. By distilling off isopropyl ether from the reaction mixture, 113 g of 4-acetoxybenzyl acrylate of the following chemical formula was obtained (yield:91%): ##STR12##"
+  },
+  "workups": [
+    {
+      "type": "WAIT",
+      "details": "at 3° C. over 2 hours",
+      "duration": {
+        "value": 2.0,
+        "units": "HOUR"
+      },
+      "temperature": {
+        "setpoint": {
+          "value": 3.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "WAIT",
+      "details": "was continued at room temperature for 3 hours",
+      "duration": {
+        "value": 3.0,
+        "units": "HOUR"
+      },
+      "temperature": {
+        "control": {
+          "type": "AMBIENT"
+        }
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "After completion of the reaction"
+    },
+    {
+      "type": "WASH",
+      "details": "the reaction mixture was washed with 0.5N hydrochloric acid",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "hydrochloric acid"
+              },
+              {
+                "type": "SMILES",
+                "value": "Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH/h1H"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DISTILLATION",
+      "details": "By distilling off isopropyl ether from the reaction mixture, 113 g of 4-acetoxybenzyl acrylate of the following chemical formula",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "isopropyl ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(C)OC(C)C"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C6H14O/c1-5(2)7-6(3)4/h5-6H,1-4H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "4-acetoxybenzyl acrylate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C=C)(=O)OCC1=CC=C(C=C1)OC(C)=O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C12H12O4/c1-3-12(14)15-8-10-4-6-11(7-5-10)16-9(2)13/h3-7H,1,8H2,2H3"
+              }
+            ],
+            "amount": {
+              "mass": {
+                "value": 113.0,
+                "units": "GRAM"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "was obtained (yield:91%)"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 30.0,
+        "units": "MINUTE"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-acetoxybenzyl acrylate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C=C)(=O)OCC1=CC=C(C=C1)OC(C)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C12H12O4/c1-3-12(14)15-8-10-4-6-11(7-5-10)16-9(2)13/h3-7H,1,8H2,2H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 91.0
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06001932",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:19.978330"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-6719b1972c834e88b16b255ad13a2d21"
+}

@@ -1,0 +1,243 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "C([BH3-])#N.[Na+].[OH:5][C:6]1[CH:14]=[CH:13][CH:12]=[C:11]2[C:7]=1[CH:8]=[CH:9][N:10]2[CH2:15][CH:16]([OH:18])[CH3:17].N>C(O)(=O)C>[OH:5][C:6]1[CH:14]=[CH:13][CH:12]=[C:11]2[C:7]=1[CH2:8][CH2:9][N:10]2[CH2:15][CH:16]([OH:18])[CH3:17] |f:0.1|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ammonia"
+            },
+            {
+              "type": "SMILES",
+              "value": "N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H3N/h1H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acetic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H4O2/c1-2(3)4/h1H3,(H,3,4)"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 40.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m1_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sodium cyanoborohydride"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(#N)[BH3-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH3BN.Na/c2-1-3;/h2H3;/q-1;+1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 1.4,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-hydroxy-1-N-(β-hydroxypropyl)indole"
+            },
+            {
+              "type": "SMILES",
+              "value": "OC1=C2C=CN(C2=CC=C1)CC(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C11H13NO2/c1-8(13)7-12-6-5-9-10(12)3-2-4-11(9)14/h2-6,8,13-14H,7H2,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 7.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ice"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 200.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "After stirring for 30 minutes"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "1.4 g of sodium cyanoborohydride were added to a solution of 7 g of 4-hydroxy-1-N-(β-hydroxypropyl)indole, obtained in the preceding stage, in 40 cm3 of acetic acid, the temperature being maintained below 30° C. After stirring for 30 minutes, the reaction mixture was poured onto 200 g of ice-cold water and the pH was neutralized to 7.5 by addition of 30% aqueous ammonia. The precipitate obtained was filtered off and dried. 4 g of the expected product were obtained, the melting point of which was between 130 and 131° C. and the elemental analysis of which, calculated for C11H15NO2, was as follows:"
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "the temperature being maintained below 30° C"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The precipitate obtained"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "was filtered off"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 30.0,
+        "units": "MINUTE"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "expected product"
+            },
+            {
+              "type": "NAME",
+              "value": "4-hydroxy-1-N-(β-hydroxypropyl)indoline"
+            },
+            {
+              "type": "SMILES",
+              "value": "OC1=C2CCN(C2=CC=C1)CC(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C11H15NO2/c1-8(13)7-12-6-5-9-10(12)3-2-4-11(9)14/h2-4,8,13-14H,5-7H2,1H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 4.0,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 56.5
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06002018",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:20.800673"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-b472f8d245c04b4c9d4aa049d696b594"
+}

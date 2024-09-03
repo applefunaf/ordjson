@@ -1,0 +1,269 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[N:1]1[N:5]2[C:6]3[C:11]([C:12]([OH:14])=[CH:13][C:4]2=[N:3][N:2]=1)=[CH:10][CH:9]=[CH:8][CH:7]=3.[N+:15]([O-])([OH:17])=[O:16]>C(O)(=O)C>[OH2:14].[N+:15]([C:13]1[C:4]2[N:5]([N:1]=[N:2][N:3]=2)[C:6]2[C:11]([C:12]=1[OH:14])=[CH:10][CH:9]=[CH:8][CH:7]=2)([O-:17])=[O:16] |f:3.4|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Tetrazolo[1,5-a]quinolin-5-ol"
+            },
+            {
+              "type": "SMILES",
+              "value": "N1=NN=C2N1C1=CC=CC=C1C(=C2)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H6N4O/c14-8-5-9-10-11-12-13(9)7-4-2-1-3-6(7)8/h1-5,14H"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 10.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Nitric acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "[N+](=O)(O)[O-]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/HNO3/c2-1(3)4/h(H,2,3,4)"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 4.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acetic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H4O2/c1-2(3)4/h1H3,(H,3,4)"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 200.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 40.0,
+        "units": "CELSIUS"
+      }
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "Tetrazolo[1,5-a]quinolin-5-ol (10 g, 54 mmole, Example 1) was suspended in acetic acid (200 mL) then warmed to 40° C. Nitric acid (4 mL of 16M, 59 mmole) was added to the reaction mixture. The reaction mixture was heated at 80° C. for 30 minutes then allowed to cool to ambient temperature. The resulting precipitate was isolated by filtration, rinsed with water then recrystallized from isopropanol/water to provide 8.1 g of 4-nitrotetrazolo[1,5-a]quinolin-5-ol hydrate as light yellow plates, m.p. 186.5-187° C. Analysis: Calculated for C9H5N5O3.H2O: % C, 43.38; % H, 2.83; % N, 28.10; Found: % C, 43.27; % H, 2.84; % N, 28.25."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "The reaction mixture was heated at 80° C. for 30 minutes",
+      "duration": {
+        "value": 30.0,
+        "units": "MINUTE"
+      },
+      "temperature": {
+        "setpoint": {
+          "value": 80.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "to cool to ambient temperature",
+      "temperature": {
+        "control": {
+          "type": "AMBIENT"
+        }
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The resulting precipitate was isolated by filtration"
+    },
+    {
+      "type": "WASH",
+      "details": "rinsed with water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "then recrystallized from isopropanol/water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "isopropanol water"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(C)O.O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C3H8O.H2O/c1-3(2)4;/h3-4H,1-2H3;1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-nitrotetrazolo[1,5-a]quinolin-5-ol hydrate"
+            },
+            {
+              "type": "SMILES",
+              "value": "O.[N+](=O)([O-])C=1C=2N(C3=CC=CC=C3C1O)N=NN2"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H5N5O3.H2O/c15-8-5-3-1-2-4-6(5)13-9(10-11-12-13)7(8)14(16)17;/h1-4,15H;1H2"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 8.1,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 120.4
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998619",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:32.209602"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-8b42c851ccb841138b9772d6a36358c5"
+}

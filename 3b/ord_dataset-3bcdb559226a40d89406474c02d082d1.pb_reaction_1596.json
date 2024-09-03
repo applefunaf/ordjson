@@ -1,0 +1,218 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][N:2]([CH2:4][C:5]1[O:29][C:8]2[CH2:9][N:10]([C:13](=[O:28])[C:14]3[CH:19]=[CH:18][C:17]([C:20](=[O:27])[C:21]4[CH:26]=[CH:25][CH:24]=[CH:23][CH:22]=4)=[CH:16][CH:15]=3)[CH2:11][CH2:12][C:7]=2[CH:6]=1)[CH3:3].[ClH:30]>CO.C(OCC)(=O)C>[ClH:30].[CH3:3][N:2]([CH2:4][C:5]1[O:29][C:8]2[CH2:9][N:10]([C:13](=[O:28])[C:14]3[CH:19]=[CH:18][C:17]([C:20](=[O:27])[C:21]4[CH:26]=[CH:25][CH:24]=[CH:23][CH:22]=4)=[CH:16][CH:15]=3)[CH2:11][CH2:12][C:7]=2[CH:6]=1)[CH3:1] |f:4.5|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N,N-Dimethyl-[6-(4-benzoylbenzoyl)-4,5,6,7-tetrahydrofuro[2,3-c]pyridin-2-ylmethyl]amine"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN(C)CC1=CC2=C(CN(CC2)C(C2=CC=C(C=C2)C(C2=CC=CC=C2)=O)=O)O1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C24H24N2O3/c1-25(2)15-21-14-20-12-13-26(16-22(20)29-21)24(28)19-10-8-18(9-11-19)23(27)17-6-4-3-5-7-17/h3-11,14H,12-13,15-16H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.329,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 2.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m2_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrogen chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/ClH/h1H"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethyl acetate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)OCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "by stirring"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "N,N-Dimethyl-[6-(4-benzoylbenzoyl)-4,5,6,7-tetrahydrofuro[2,3-c]pyridin-2-ylmethyl]amine 0.329 g was dissolved in 2 ml of methanol; hydrogen chloride in ethyl acetate was added in excess, followed by stirring. After this mixture was concentrated, the resulting solid was recrystallized from methanol-diethyl ether to yield the desired product."
+  },
+  "workups": [
+    {
+      "type": "CONCENTRATION",
+      "details": "After this mixture was concentrated"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the resulting solid was recrystallized from methanol-diethyl ether",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "methanol diethyl ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "CO.C(C)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O.CH4O/c1-3-5-4-2;1-2/h3-4H2,1-2H3;2H,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "desired product"
+            },
+            {
+              "type": "NAME",
+              "value": "N,N-dimethyl-[6-(4-benzoylbenzoyl)-4,5,6,7-tetrahydrofuro[2,3-c]pyridin-2-ylmethyl]amine hydrochloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl.CN(C)CC1=CC2=C(CN(CC2)C(C2=CC=C(C=C2)C(C2=CC=CC=C2)=O)=O)O1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C24H24N2O3.ClH/c1-25(2)15-21-14-20-12-13-26(16-22(20)29-21)24(28)19-10-8-18(9-11-19)23(27)17-6-4-3-5-7-17;/h3-11,14H,12-13,15-16H2,1-2H3;1H"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998433",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:40.754556"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-f36f24b3eb6b471d8bf6e0e2ab98b83a"
+}

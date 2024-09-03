@@ -1,0 +1,505 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[C:1]1([OH:7])[CH:6]=[CH:5][CH:4]=[CH:3][CH:2]=1.[Cl:8][CH2:9][CH2:10][N:11]1[CH2:16][CH2:15][CH2:14][CH2:13][CH2:12]1.C(=O)([O-])[O-].[K+].[K+]>CN(C)C=O>[ClH:8].[N:11]1([CH2:10][CH2:9][O:7][C:1]2[CH:6]=[CH:5][CH:4]=[CH:3][CH:2]=2)[CH2:16][CH2:15][CH2:14][CH2:13][CH2:12]1 |f:2.3.4,6.7|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m3_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "phenol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1(=CC=CC=C1)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H6O/c7-6-4-2-1-3-5-6/h1-5,7H"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 46.5,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "1-(2-chloroethyl) piperidine"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClCCN1CCCCC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H14ClN/c8-4-7-9-5-2-1-3-6-9/h1-7H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 103.5,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "potassium carbonate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C([O-])([O-])=O.[K+].[K+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2O3.2K/c2-1(3)4;;/h(H2,2,3,4);;/q;2*+1/p-2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 207.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "dimethylformamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN(C=O)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H7NO/c1-4(2)3-5/h3H,1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 900.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture of phenol (46.5 g), 1-(2-chloroethyl) piperidine (103.5 g), and potassium carbonate (207 g) in dimethylformamide (900 mL) was heated to reflux. After refluxing for two hours, the reaction mixture was allowed to cool to room temperature. This mixture was filtered, and the solids washed with dimethylformamide (100 mL). The combined filtrates was concentrated in vacuo to a brown oil. This oil was dissolved with ethyl acetate (400 mL), and the resulting solution was washed with water (2×200 mL) and saturated brine (2×200 mL). The ethyl acetate solution was dried over magnesium sulfate, filtered, and concentrated in vacuc to a brown oil. This oil was dissolved in methanol (100 mL), and the resulting solution acidified with 3% methanolic hydrochloric acid (prepared from acetyl chloride and methanol, 500 mL). The resulting solution was evaporated to dryness in vacuo. The residue (74 g) was crystallized from 1-propanol (800 mL) and ethyl acetate (500 mL) to give 59.6 g of the title compound as an off-white crystalline solid. Melting point 179-180° C."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "was heated to reflux"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "After refluxing for two hours",
+      "duration": {
+        "value": 2.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "This mixture was filtered"
+    },
+    {
+      "type": "WASH",
+      "details": "the solids washed with dimethylformamide (100 mL)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "dimethylformamide"
+              },
+              {
+                "type": "SMILES",
+                "value": "CN(C=O)C"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C3H7NO/c1-4(2)3-5/h3H,1-2H3"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 100.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "The combined filtrates was concentrated in vacuo to a brown oil"
+    },
+    {
+      "type": "DISSOLUTION",
+      "details": "This oil was dissolved with ethyl acetate (400 mL)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 400.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "the resulting solution was washed with water (2×200 mL) and saturated brine (2×200 mL)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 200.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "brine"
+              },
+              {
+                "type": "SMILES",
+                "value": "[Cl-].[Na+].O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH.Na.H2O/h1H;;1H2/q;+1;/p-1"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 200.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "The ethyl acetate solution was dried over magnesium sulfate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "magnesium sulfate"
+              },
+              {
+                "type": "SMILES",
+                "value": "S(=O)(=O)([O-])[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filtered"
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated in vacuc to a brown oil"
+    },
+    {
+      "type": "DISSOLUTION",
+      "details": "This oil was dissolved in methanol (100 mL)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "methanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "CO"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 100.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The resulting solution was evaporated to dryness in vacuo"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The residue (74 g) was crystallized from 1-propanol (800 mL) and ethyl acetate (500 mL)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "residue"
+              }
+            ],
+            "amount": {
+              "mass": {
+                "value": 74.0,
+                "units": "GRAM"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "1-propanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(CC)O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C3H8O/c1-2-3-4/h4H,2-3H2,1H3"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 800.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 500.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "Phenyl 2-Piperidinoethyl Ether Hydrochloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl.N1(CCCCC1)CCOC1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C13H19NO.ClH/c1-3-7-13(8-4-1)15-12-11-14-9-5-2-6-10-14;/h1,3-4,7-8H,2,5-6,9-12H2;1H"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 59.6,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 49.9
+              }
+            }
+          ],
+          "isolated_color": "off-white crystalline",
+          "texture": {
+            "type": "CUSTOM",
+            "details": "solid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06008377",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:26.338626"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-485e7b247540482c85954cba9777ef40"
+}

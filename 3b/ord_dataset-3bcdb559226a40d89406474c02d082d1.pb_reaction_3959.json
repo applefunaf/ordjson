@@ -1,0 +1,209 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[C:1]([C:4]1[CH:5]=[N:6][C:7]2[C:12]([C:13]=1Cl)=[CH:11][CH:10]=[CH:9][C:8]=2[N+:15]([O-:17])=[O:16])(=O)[CH3:2].[CH3:18][NH:19][NH2:20]>C(Cl)CCl>[CH3:18][N:19]1[C:1]([CH3:2])=[C:4]2[CH:5]=[N:6][C:7]3[C:8]([N+:15]([O-:17])=[O:16])=[CH:9][CH:10]=[CH:11][C:12]=3[C:13]2=[N:20]1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3-acetyl-4-chloro-8-nitroquinoline"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)C=1C=NC2=C(C=CC=C2C1Cl)[N+](=O)[O-]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C11H7ClN2O3/c1-6(15)8-5-13-11-7(10(8)12)3-2-4-9(11)14(16)17/h2-5H,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 140.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methylhydrazine"
+            },
+            {
+              "type": "SMILES",
+              "value": "CNN"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH6N2/c1-3-2/h3H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 77.2,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethylene chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(CCl)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H4Cl2/c3-1-2-4/h1-2H2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture of 3-acetyl-4-chloro-8-nitroquinoline (140 mg) and methylhydrazine (77.2 mg) in ethylene chloride was refluxed for 30 minutes. The mixture was concentrated in vacuo, and the residue was purified by column chromatography on silica gel (methanol-dichloroethane) to give 2,3-dimethyl-6-nitro-2H-pyrazolo[4,3-c]quinoline (61.2 mg)."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "was refluxed for 30 minutes",
+      "duration": {
+        "value": 30.0,
+        "units": "MINUTE"
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "The mixture was concentrated in vacuo"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the residue was purified by column chromatography on silica gel (methanol-dichloroethane)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "methanol dichloroethane"
+              },
+              {
+                "type": "SMILES",
+                "value": "CO.ClC(C)Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C2H4Cl2.CH4O/c1-2(3)4;1-2/h2H,1H3;2H,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2,3-dimethyl-6-nitro-2H-pyrazolo[4,3-c]quinoline"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN1N=C2C(C=NC=3C(=CC=CC23)[N+](=O)[O-])=C1C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C12H10N4O2/c1-7-9-6-13-12-8(11(9)14-15(7)2)4-3-5-10(12)16(17)18/h3-6H,1-2H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 61.2,
+                  "units": "MILLIGRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 45.2
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06008230",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:20.928518"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-f5c673ac04ff4372a4fdaf7bf1b824a6"
+}

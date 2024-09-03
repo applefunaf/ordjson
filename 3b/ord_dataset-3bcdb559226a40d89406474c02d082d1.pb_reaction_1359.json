@@ -1,0 +1,268 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[N+](=[CH2:3])=[N-].[C:4]([C:8]1[CH:13]=[CH:12][CH:11]=[CH:10][C:9]=1[O:14][C:15]([CH2:17][C:18]([NH:21][S:22]([C:25]([F:28])([F:27])[F:26])(=[O:24])=[O:23])([CH3:20])[CH3:19])=[O:16])([CH3:7])([CH3:6])[CH3:5]>CCOCC>[CH3:3][N:21]([C:18]([CH3:20])([CH3:19])[CH2:17][C:15]([O:14][C:9]1[CH:10]=[CH:11][CH:12]=[CH:13][C:8]=1[C:4]([CH3:5])([CH3:6])[CH3:7])=[O:16])[S:22]([C:25]([F:28])([F:26])[F:27])(=[O:24])=[O:23]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m3_m2_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "diazomethane"
+            },
+            {
+              "type": "SMILES",
+              "value": "[N+](=[N-])=C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2N2/c1-3-2/h1H2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-[2-(2-tert-butylphenylcarboxy)-1,1-dimethylethyl]-trifluoromethanesulfonamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(C)(C)C1=C(C=CC=C1)OC(=O)CC(C)(C)NS(=O)(=O)C(F)(F)F"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C16H22F3NO4S/c1-14(2,3)11-8-6-7-9-12(11)24-13(21)10-15(4,5)20-25(22,23)16(17,18)19/h6-9,20H,10H2,1-5H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 13.1,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ether"
+            },
+            {
+              "type": "SMILES",
+              "value": "CCOCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ether"
+            },
+            {
+              "type": "SMILES",
+              "value": "CCOCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A freshly prepared solution of diazomethane in anhydrous ether was added in excess to a solution of N-[2-(2-tert-butylphenylcarboxy)-1,1-dimethylethyl]-trifluoromethanesulfonamide (13.1 g) in ether. The resulting yellow solution was allowed to stand at RT overnight, then was washed with 10% HCl followed by 2.5N aq NaOH. The organic solution was dried (MgSO4), and concentrated to afford 13.0 g of pure N-methyl-N-[2-(2-tert-butylphenylcarboxy)-1,1-dimethylethyl]-trifluoromethanesulfonamide as a white solid, a 96% yield. m.p. 42-44° C."
+  },
+  "workups": [
+    {
+      "type": "WASH",
+      "details": "was washed with 10% HCl",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "HCl"
+              },
+              {
+                "type": "SMILES",
+                "value": "Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH/h1H"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "The organic solution was dried (MgSO4)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "MgSO4"
+              },
+              {
+                "type": "SMILES",
+                "value": "[O-]S(=O)(=O)[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 8.0,
+        "precision": 8.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-methyl-N-[2-(2-tert-butylphenylcarboxy)-1,1-dimethylethyl]-trifluoromethanesulfonamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN(S(=O)(=O)C(F)(F)F)C(CC(=O)OC1=C(C=CC=C1)C(C)(C)C)(C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C17H24F3NO4S/c1-15(2,3)12-9-7-8-10-13(12)25-14(22)11-16(4,5)21(6)26(23,24)17(18,19)20/h7-10H,11H2,1-6H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 13.0,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 96.0
+              }
+            }
+          ],
+          "isolated_color": "white",
+          "texture": {
+            "type": "CUSTOM",
+            "details": "solid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998466",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:36.946152"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-529fa4115a124c17832af5d2009269bb"
+}

@@ -1,0 +1,378 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[OH:1][CH2:2][CH2:3][O:4][C:5]1[CH:11]=[CH:10][CH:9]=[CH:8][C:6]=1[NH2:7].Cl[CH2:13][CH2:14][O:15][CH2:16][CH2:17][OH:18].C(N(CC)CC)C>CN(C)C=O>[OH:18][CH2:17][CH2:16][O:15][CH2:14][CH2:13][NH:7][C:6]1[CH:8]=[CH:9][CH:10]=[CH:11][C:5]=1[O:4][CH2:3][CH2:2][OH:1]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m3_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-(2-hydroxyethoxy)aniline"
+            },
+            {
+              "type": "SMILES",
+              "value": "OCCOC1=C(N)C=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H11NO2/c9-7-3-1-2-4-8(7)11-6-5-10/h1-4,10H,5-6,9H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 6.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-(2-chloroethoxy)ethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClCCOCCO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H9ClO2/c5-1-3-7-4-2-6/h6H,1-4H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 5.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "triethylamine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)N(CC)CC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H15N/c1-4-7(5-2)6-3/h4-6H2,1-3H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 8.19,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "dimethylformamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN(C=O)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H7NO/c1-4(2)3-5/h3H,1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 20.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 90.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "stirred for 4 days at 90° C"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "6 g (39.17 mmol) 2-(2-hydroxyethoxy)aniline A3, 5 ml (5.85 g, 47 mmol) 2-(2-chloroethoxy)ethanol and 8.19 ml (5.95 g, 58.75 mmol) triethylamine were dissolved in 20 ml dimethylformamide and stirred for 4 days at 90° C. After cooling, the solution was filtered, the precipitate washed with dichioromethane and the filtrate concentrated in vacuo. The residue was taken up in chloroform and washed twice with a small quantity of water. The chloroform solution was then dried over sodium sulfate and concentrated. The viscous crude product was purified by column chromatography on silica gel 60 with toluene/acetone 1:2 as the mobile phase. 5 g of brown, viscous oil were obtained; yield 53%."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "After cooling"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "the solution was filtered"
+    },
+    {
+      "type": "WASH",
+      "details": "the precipitate washed with dichioromethane",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "dichioromethane"
+              },
+              {
+                "type": "SMILES",
+                "value": "ClCCl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "the filtrate concentrated in vacuo"
+    },
+    {
+      "type": "WASH",
+      "details": "washed twice with a small quantity of water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "The chloroform solution was then dried over sodium sulfate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "chloroform"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(Cl)(Cl)Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CHCl3/c2-1(3)4/h1H"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "sodium sulfate"
+              },
+              {
+                "type": "SMILES",
+                "value": "S(=O)(=O)([O-])[O-].[Na+].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/2Na.H2O4S/c;;1-5(2,3)4/h;;(H2,1,2,3,4)/q2*+1;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The viscous crude product was purified by column chromatography on silica gel 60 with toluene/acetone 1:2 as the mobile phase",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "crude product"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "toluene acetone"
+              },
+              {
+                "type": "SMILES",
+                "value": "C1(=CC=CC=C1)C.CC(=O)C"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C7H8.C3H6O/c1-7-5-3-2-4-6-7;1-3(2)4/h2-6H,1H3;1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "5 g of brown, viscous oil were obtained"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 4.0,
+        "units": "DAY"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-[2-(2-hydroxyethoxy)ethyl]-2-(2-hydroxyethoxy)aniline"
+            },
+            {
+              "type": "SMILES",
+              "value": "OCCOCCNC1=C(C=CC=C1)OCCO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C12H19NO4/c14-6-9-16-8-5-13-11-3-1-2-4-12(11)17-10-7-15/h1-4,13-15H,5-10H2"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 53.0
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06001999",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:20.522544"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-111923b33764491498c2cd2aa3710dab"
+}

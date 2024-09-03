@@ -1,0 +1,183 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH2:1]([N:8]=[C:9]=[O:10])[C:2]1[CH:7]=[CH:6][CH:5]=[CH:4][CH:3]=1.[NH2:11][C:12]1[S:13][C:14]([C:18]([O:20][CH2:21][CH3:22])=[O:19])=[C:15]([CH3:17])[N:16]=1>CN(C=O)C>[CH2:1]([NH:8][C:9](=[O:10])[NH:11][C:12]1[S:13][C:14]([C:18]([O:20][CH2:21][CH3:22])=[O:19])=[C:15]([CH3:17])[N:16]=1)[C:2]1[CH:7]=[CH:6][CH:5]=[CH:4][CH:3]=1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "benzyl isocyanate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C1=CC=CC=C1)N=C=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H7NO/c10-7-9-6-8-4-2-1-3-5-8/h1-5H,6H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 4.05,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethyl 2-amino-4-methyl-thiazole-5-carboxylate"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC=1SC(=C(N1)C)C(=O)OCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H10N2O2S/c1-3-11-6(10)5-4(2)9-7(8)12-5/h3H2,1-2H3,(H2,8,9)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 5.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "DMF"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN(C)C=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H7NO/c1-4(2)3-5/h3H,1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 50.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "The reaction mixture is stirred at RT overnight"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "4.05 ml of benzyl isocyanate are added to a solution of 5.0 g of ethyl 2-amino-4-methyl-thiazole-5-carboxylate in 50 ml of DMF. The reaction mixture is stirred at RT overnight, evaporated on a rotary evaporator and the residue is suspended in methylene chloride:methanol 1:1. The insoluble material is filtered off and dried. There are obtained 4.6 g of colorless ethyl 2-(3-benzyl-ureido)-4-methyl-thiazole-5-carboxylate, MS: 320 (M+H)+."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "evaporated on a rotary evaporator"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "The insoluble material is filtered off"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 8.0,
+        "precision": 8.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethyl 2-(3-benzyl-ureido)-4-methyl-thiazole-5-carboxylate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C1=CC=CC=C1)NC(NC=1SC(=C(N1)C)C(=O)OCC)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C15H17N3O3S/c1-3-21-13(19)12-10(2)17-15(22-12)18-14(20)16-9-11-7-5-4-6-8-11/h4-8H,3,9H2,1-2H3,(H2,16,17,18,20)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 4.6,
+                  "units": "GRAM"
+                }
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06001855",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:18.496734"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-e9a327e1d7cc48c68c02f70456cd79d5"
+}

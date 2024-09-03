@@ -1,0 +1,275 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[Cl:1][C:2]1[C:3]2[C:10]([C:11]3[CH:16]=[CH:15][C:14]([N+:17]([O-])=O)=[CH:13][CH:12]=3)=[CH:9][N:8]([CH:20]([CH3:22])[CH3:21])[C:4]=2[N:5]=[CH:6][N:7]=1.[Cl-].[NH4+]>[Fe].O>[NH2:17][C:14]1[CH:15]=[CH:16][C:11]([C:10]2[C:3]3[C:2]([Cl:1])=[N:7][CH:6]=[N:5][C:4]=3[N:8]([CH:20]([CH3:22])[CH3:21])[CH:9]=2)=[CH:12][CH:13]=1 |f:1.2|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m4_m2_m5_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-chloro-7-isopropyl-5-(4-nitrophenyl)pyrrolo[2,3-d]pyrimidine"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC=1C2=C(N=CN1)N(C=C2C2=CC=C(C=C2)[N+](=O)[O-])C(C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C15H13ClN4O2/c1-9(2)19-7-12(13-14(16)17-8-18-15(13)19)10-3-5-11(6-4-10)20(21)22/h3-9H,1-2H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 1.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ammonium chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Cl-].[NH4+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/ClH.H3N/h1H;1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 86.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "industrial methylated spirit"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 40.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "iron"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Fe]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Fe"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 1.76,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "CATALYST"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 8.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture of 4-chloro-7-isopropyl-5-(4-nitrophenyl)pyrrolo[2,3-d]pyrimidine (1.0 g), iron powder (1.76 g), ammonium chloride (86 mg), water (8 ml) and industrial methylated spirit (40 ml) was boiled under reflux for one hour. The mixture was filtered and the solvent evaporated. The residue was taken up in ethyl acetate and washed with water. The ethyl acetate extract was dried, filtered and evaporated to give 5-(4-aminophenyl)-4-chloro-7-isopropylpyrrolo[2,3-d]pyrimidine."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "under reflux for one hour",
+      "duration": {
+        "value": 1.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "The mixture was filtered"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the solvent evaporated"
+    },
+    {
+      "type": "WASH",
+      "details": "washed with water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "The ethyl acetate extract",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "was dried"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filtered"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "evaporated"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "5-(4-aminophenyl)-4-chloro-7-isopropylpyrrolo[2,3-d]pyrimidine"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC1=CC=C(C=C1)C1=CN(C=2N=CN=C(C21)Cl)C(C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C15H15ClN4/c1-9(2)20-7-12(10-3-5-11(17)6-4-10)13-14(16)18-8-19-15(13)20/h3-9H,17H2,1-2H3"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06001839",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:17.096197"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-4836753ec72e49499603987c56851b6e"
+}

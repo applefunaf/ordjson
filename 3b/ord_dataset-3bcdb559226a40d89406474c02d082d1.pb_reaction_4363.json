@@ -1,0 +1,233 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[C:1]1([C:12]2[CH:17]=[CH:16][CH:15]=[CH:14][CH:13]=2)[CH:6]=[CH:5][C:4]([C:7]2[CH:11]=[CH:10][O:9][CH:8]=2)=[CH:3][CH:2]=1.BrC1C=CC(C2C=CC([C:31]#[N:32])=CC=2)=CC=1.O1C=CC(B(O)O)=C1>CO>[O:9]1[CH:10]=[CH:11][C:7]([C:4]2[CH:5]=[CH:6][C:1]([C:12]3[CH:17]=[CH:16][C:15]([C:31]#[N:32])=[CH:14][CH:13]=3)=[CH:2][CH:3]=2)=[CH:8]1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m3_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3-biphenyl-4-yl-furan"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1(=CC=C(C=C1)C1=COC=C1)C1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C16H12O/c1-2-4-13(5-3-1)14-6-8-15(9-7-14)16-10-11-17-12-16/h1-12H"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4'-bromo-biphenyl-4-carbonitrile"
+            },
+            {
+              "type": "SMILES",
+              "value": "BrC1=CC=C(C=C1)C1=CC=C(C=C1)C#N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C13H8BrN/c14-13-7-5-12(6-8-13)11-3-1-10(9-15)2-4-11/h1-8H"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 200.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3-furanboronic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "O1C=C(C=C1)B(O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H5BO3/c6-5(7)4-1-2-8-3-4/h1-3,6-7H"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 105.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "MeOH"
+            },
+            {
+              "type": "SMILES",
+              "value": "CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 2.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "As described in Example 1(a) for the preparation of 3-biphenyl-4-yl-furan, crude 4'-bromo-biphenyl-4-carbonitrile (200 mg, 0.775 mmol) and 3-furanboronic acid (see Thompson, W. J.; Gaudino, G. J. Org. Chem. 1984, 49, 5237-5243; 105 mg, 0.937 mmol) in MeOH (2 mL) were coupled to give a yellow solid, which was purified via preparative TLC. Elution with EtOAc:benzene (1:99) provided 100 mg (53%) of 4'-furan-3-yl-biphenyl-4-carbonitrile as a grey powder, mp 199-203° C. 1H NMR (CDCl3): δ 7.81 (bs, 1H), 7.72 (d, 4H, J=1.9 Hz), 7.61 (s, 4H), 7.51 (bs, 1H), 6.75 (s, 1H). IR (KBr): 2225, 1604, 1503, 1396, 1162, 1102, 1058 cm-1. Anal. Calculated for C17H11NO.0.3 EtOAc.0.2 C6H6 : C, 80.78; H, 5.05; N, 5.01. Found: C, 80.96; H, 4.88; N, 5.00."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "to give a yellow solid, which"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "was purified via preparative TLC"
+    },
+    {
+      "type": "WASH",
+      "details": "Elution with EtOAc:benzene (1:99)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "EtOAc benzene"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOC(=O)C.C1=CC=CC=C1"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C6H6.C4H8O2/c1-2-4-6-5-3-1;1-3-6-4(2)5/h1-6H;3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4'-furan-3-yl-biphenyl-4-carbonitrile"
+            },
+            {
+              "type": "SMILES",
+              "value": "O1C=C(C=C1)C1=CC=C(C=C1)C1=CC=C(C=C1)C#N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C17H11NO/c18-11-13-1-3-14(4-2-13)15-5-7-16(8-6-15)17-9-10-19-12-17/h1-10,12H"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 100.0,
+                  "units": "MILLIGRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 53.0
+              }
+            }
+          ],
+          "isolated_color": "grey",
+          "texture": {
+            "type": "POWDER",
+            "details": "powder"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06008243",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:27.808925"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-ec1518f0d2614e05b90c621281ff1687"
+}

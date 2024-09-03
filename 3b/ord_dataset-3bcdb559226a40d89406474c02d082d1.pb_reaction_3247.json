@@ -1,0 +1,275 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[C:1]1(=[O:7])[O:6][C:4](=[O:5])[CH:3]=[CH:2]1.[C:8]([NH2:12])([CH3:11])([CH3:10])[CH3:9]>C(#N)C>[C:8]([NH:12][C:1](=[O:7])/[CH:2]=[CH:3]\\[C:4]([OH:6])=[O:5])([CH3:11])([CH3:10])[CH3:9]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "four"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 12.0,
+              "units": "LITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "maleic anhydride"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1(\\C=C/C(=O)O1)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H2O3/c5-3-1-2-4(6)7-3/h1-2H"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 1072.6,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acetonitrile"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)#N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H3N/c1-2-3/h1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 6062.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "t-butylamine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(C)(C)N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H11N/c1-4(2,3)5/h5H2,1-3H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 800.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": -7.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "The mixture was stirred"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a 12 L four necked round bottom flask with a mechanical stirrer, thermometer and an addition funnel, under nitrogen, was added 1072.6 grams of maleic anhydride (10.9 moles) and 6062 grams of acetonitrile. The mixture was stirred to dissolve the solids and cooled to -7° C. To this was added 800 grams of t-butylamine (10.9 moles) slowly at a rate such that the temperature remained below 0° C. (approximately 2.5 hour addition). Following the addition the mixture was stirred at -7° C. for one hour and overnight at room temperature. The solid was collected by filtration, washed with 500 mL of acetonitrile and dried to give 1355 grams of (Z)-4-(tert-butylamino)-4-oxo-2-butenoic acid as a white solid. 13-C NMR shows this to be 94.62 wt % (Z)-4-(tert-butylamino)-4-oxo-2-butenoic acid, and 5.38 wt % t-butylamine. This material was used without further purification for the next reaction."
+  },
+  "workups": [
+    {
+      "type": "DISSOLUTION",
+      "details": "to dissolve the solids"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "remained below 0° C."
+    },
+    {
+      "type": "ADDITION",
+      "details": "(approximately 2.5 hour addition)",
+      "duration": {
+        "value": 2.5,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "ADDITION",
+      "details": "the addition the mixture"
+    },
+    {
+      "type": "STIRRING",
+      "details": "was stirred at -7° C. for one hour and overnight at room temperature",
+      "duration": {
+        "value": 8.0,
+        "precision": 8.0,
+        "units": "HOUR"
+      },
+      "temperature": {
+        "control": {
+          "type": "AMBIENT"
+        },
+        "setpoint": {
+          "value": -7.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "The solid was collected by filtration"
+    },
+    {
+      "type": "WASH",
+      "details": "washed with 500 mL of acetonitrile",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "acetonitrile"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)#N"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C2H3N/c1-2-3/h1H3"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 500.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "(Z)-4-(tert-butylamino)-4-oxo-2-butenoic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(C)(C)NC(\\C=C/C(=O)O)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H13NO3/c1-8(2,3)9-6(10)4-5-7(11)12/h4-5H,1-3H3,(H,9,10)(H,11,12)/b5-4-"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 1355.0,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 72.6
+              }
+            }
+          ],
+          "isolated_color": "white",
+          "texture": {
+            "type": "CUSTOM",
+            "details": "solid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06005062",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:22.167171"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-dd77ce5c6a8c498c9ee1eaf4173113af"
+}

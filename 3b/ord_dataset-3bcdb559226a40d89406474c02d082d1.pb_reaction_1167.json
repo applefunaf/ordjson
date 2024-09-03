@@ -1,0 +1,205 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[OH:1][C:2]1[CH:12]=[CH:11][CH:10]=[CH:9][C:3]=1[CH2:4][NH:5][CH2:6][CH2:7][NH2:8]>C(O)(C)C>[OH:1][C:2]1[CH:12]=[CH:11][CH:10]=[CH:9][C:3]=1[CH2:4][NH:5][CH2:6][CH2:7][N:8]=[CH:4][C:3]1[CH:9]=[CH:10][CH:11]=[CH:12][C:2]=1[OH:1]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-(2-hydroxybenzyl)-1,2-diaminoethane"
+            },
+            {
+              "type": "SMILES",
+              "value": "OC1=C(CNCCN)C=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H14N2O/c10-5-6-11-7-8-3-1-2-4-9(8)12/h1-4,11-12H,5-7,10H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 39.2,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "49b"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "isopropanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H8O/c1-3(2)4/h3-4H,1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 100.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "28.7 g of salicylicaldehyde were added to a solution of 39.2 g of N-(2-hydroxybenzyl)-1,2-diaminoethane [prepared in accordance with: A. Bottcher et al., Z. Naturforsch. 49b, 1089-1100 (1994)] in 100 ml of isopropanol, and the resulting solution was refluxed for two hours. Cooling the solution produced a solid, and recrystallization from isopropanol gave 49.8 g of N-(2-hydroxybenzyl)-N'-(2-hydroxybenzylidene)-1,2-diaminoethane."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "prepared in accordance with: A"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "Cooling the solution"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "produced"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "a solid, and recrystallization from isopropanol",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "isopropanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(C)O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C3H8O/c1-3(2)4/h3-4H,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-(2-hydroxybenzyl)-N'-(2-hydroxybenzylidene)-1,2-diaminoethane"
+            },
+            {
+              "type": "SMILES",
+              "value": "OC1=C(CNCCN=CC2=C(C=CC=C2)O)C=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C16H18N2O2/c19-15-7-3-1-5-13(15)11-17-9-10-18-12-14-6-2-4-8-16(14)20/h1-8,11,18-20H,9-10,12H2"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 49.8,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 156.2
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998645",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:34.292832"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-c866c5b2df084ae0bdf3443fe212f475"
+}

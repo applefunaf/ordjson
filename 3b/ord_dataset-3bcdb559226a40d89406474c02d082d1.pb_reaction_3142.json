@@ -1,0 +1,206 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[OH:1][C:2]1[CH:8]=[C:7]([N+:9]([O-:11])=[O:10])[CH:6]=[CH:5][C:3]=1[NH2:4].[Cl:12][C:13]1[CH:18]=[CH:17][CH:16]=[C:15]([CH3:19])[C:14]=1[N:20]=[C:21]=[O:22]>>[OH:1][C:2]1[CH:8]=[C:7]([N+:9]([O-:11])=[O:10])[CH:6]=[CH:5][C:3]=1[NH:4][C:21]([NH:20][C:14]1[C:15]([CH3:19])=[CH:16][CH:17]=[CH:18][C:13]=1[Cl:12])=[O:22]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-hydroxy 4-nitro aniline"
+            },
+            {
+              "type": "SMILES",
+              "value": "OC1=C(N)C=CC(=C1)[N+](=O)[O-]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H6N2O3/c7-5-2-1-4(8(10)11)3-6(5)9/h1-3,9H,7H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 500.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-chloro 6-methyl phenyl isocyanate"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC1=C(C(=CC=C1)C)N=C=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H6ClNO/c1-6-3-2-4-7(9)8(6)10-5-11/h2-4H,1H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "The urea was prepared from 2-hydroxy 4-nitro aniline (500 mg, 3.24 mmol) and 2-chloro 6-methyl phenyl isocyanate by general Method B. It was purified by dilution with methylene chloride and precipitation with hexane. Filtering afforded the desired compound (0.31 g, 29%). EI-MS m/z 322 (M+H)+"
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "It was purified by dilution with methylene chloride and precipitation with hexane",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "methylene chloride"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(Cl)Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "hexane"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCCCCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C6H14/c1-3-5-6-4-2/h3-6H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "Filtering"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "desired compound"
+            },
+            {
+              "type": "NAME",
+              "value": "N-(2-hydroxy-4-nitro phenyl) N'-(2-chloro 6-methyl phenyl) urea"
+            },
+            {
+              "type": "SMILES",
+              "value": "OC1=C(C=CC(=C1)[N+](=O)[O-])NC(=O)NC1=C(C=CC=C1C)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C14H12ClN3O4/c1-8-3-2-4-10(15)13(8)17-14(20)16-11-6-5-9(18(21)22)7-12(11)19/h2-7,19H,1H3,(H2,16,17,20)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 0.31,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 29.0
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06005008",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:20.610991"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-54b46baf0dd84441bf065e003afd234b"
+}

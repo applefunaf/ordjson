@@ -1,0 +1,212 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH2:1]([S:8]([NH:11][C:12]1[CH:18]=[CH:17][CH:16]=[CH:15][C:13]=1[NH2:14])(=[O:10])=[O:9])[C:2]1[CH:7]=[CH:6][CH:5]=[CH:4][CH:3]=1.[Br:19][C:20]1[CH:25]=[CH:24][CH:23]=[CH:22][C:21]=1[N:26]=[C:27]=[O:28]>>[CH2:1]([S:8]([NH:11][C:12]1[CH:18]=[CH:17][CH:16]=[CH:15][C:13]=1[NH:14][C:27]([NH:26][C:21]1[CH:22]=[CH:23][CH:24]=[CH:25][C:20]=1[Br:19])=[O:28])(=[O:9])=[O:10])[C:2]1[CH:3]=[CH:4][CH:5]=[CH:6][CH:7]=1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-(benzyl sulfonyl amino) aniline"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C1=CC=CC=C1)S(=O)(=O)NC1=C(N)C=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C13H14N2O2S/c14-12-8-4-5-9-13(12)15-18(16,17)10-11-6-2-1-3-7-11/h1-9,15H,10,14H2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 1.0,
+              "units": "MILLIMOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-bromo phenyl isocyanate"
+            },
+            {
+              "type": "SMILES",
+              "value": "BrC1=C(C=CC=C1)N=C=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H4BrNO/c8-6-3-1-2-4-7(6)9-5-10/h1-4H"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 1.0,
+              "units": "MILLIMOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "The urea was synthesized from 2-(benzyl sulfonyl amino) aniline (1 mmol) and 2-bromo phenyl isocyanate (1 mmol) by general Method B. It was purified by dilution with methylene chloride and precipitation with hexane. Filtering afforded the desired compound (0.11 g, 23%). EI-MS m/z 460 (M+H)+"
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "It was purified by dilution with methylene chloride and precipitation with hexane",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "methylene chloride"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(Cl)Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "hexane"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCCCCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C6H14/c1-3-5-6-4-2/h3-6H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "Filtering"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "desired compound"
+            },
+            {
+              "type": "NAME",
+              "value": "N-(2-(benzyl sulfonyl amino)phenyl) N'-(2-bromo phenyl) urea"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C1=CC=CC=C1)S(=O)(=O)NC1=C(C=CC=C1)NC(=O)NC1=C(C=CC=C1)Br"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C20H18BrN3O3S/c21-16-10-4-5-11-17(16)22-20(25)23-18-12-6-7-13-19(18)24-28(26,27)14-15-8-2-1-3-9-15/h1-13,24H,14H2,(H2,22,23,25)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 0.11,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 23.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 23.9
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06005008",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:20.906799"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-e2f7a9de0eab4a3193ecb260535f769d"
+}

@@ -1,0 +1,212 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[N+:1]([C:4]1[CH:5]=[C:6]2[C:10](=[CH:11][CH:12]=1)[N:9]([CH2:13][CH2:14][CH2:15][N:16]1[C:20](=[O:21])[C:19]3=[CH:22][CH:23]=[CH:24][CH:25]=[C:18]3[C:17]1=[O:26])[CH:8]=[CH:7]2)([O-])=O>[C].[Pd].CN(C)C=O>[NH2:1][C:4]1[CH:5]=[C:6]2[C:10](=[CH:11][CH:12]=1)[N:9]([CH2:13][CH2:14][CH2:15][N:16]1[C:17](=[O:26])[C:18]3=[CH:25][CH:24]=[CH:23][CH:22]=[C:19]3[C:20]1=[O:21])[CH:8]=[CH:7]2 |f:1.2|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "5-nitro-1-(3-phthalimidopropyl)-indole"
+            },
+            {
+              "type": "SMILES",
+              "value": "[N+](=O)([O-])C=1C=C2C=CN(C2=CC1)CCCN1C(C=2C(C1=O)=CC=CC2)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C19H15N3O4/c23-18-15-4-1-2-5-16(15)19(24)21(18)10-3-9-20-11-8-13-12-14(22(25)26)6-7-17(13)20/h1-2,4-8,11-12H,3,9-10H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 4.4,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "dimethylformamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN(C=O)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H7NO/c1-4(2)3-5/h3H,1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 200.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "palladium-carbon"
+            },
+            {
+              "type": "SMILES",
+              "value": "[C].[Pd]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C.Pd"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.15,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "CATALYST"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To 4.4 g of 5-nitro-1-(3-phthalimidopropyl)-indole was added 200 ml of dimethylformamide, further was added 0.15 g of 10% palladium-carbon and hydrogenized at 65° C., under the pressure of 4 kg/cm2, for 7 hours. After the reaction was finished, the reaction mixture was filtrated, and the solvent was removed by distillation under reduced pressure. The thus obtained residue was treated to a silica column chromatography (eluent: 3% methanol/dichloromethane) to obtain 3.4 g of 5-amino-1-(3-phthalimidopropyl)indole in the form of brown needle crystals."
+  },
+  "workups": [
+    {
+      "type": "FILTRATION",
+      "details": "the reaction mixture was filtrated"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the solvent was removed by distillation under reduced pressure"
+    },
+    {
+      "type": "ADDITION",
+      "details": "The thus obtained residue was treated to a silica column chromatography (eluent: 3% methanol/dichloromethane)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "methanol dichloromethane"
+              },
+              {
+                "type": "SMILES",
+                "value": "CO.ClCCl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2Cl2.CH4O/c2-1-3;1-2/h1H2;2H,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 7.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "5-amino-1-(3-phthalimidopropyl)indole"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC=1C=C2C=CN(C2=CC1)CCCN1C(C=2C(C1=O)=CC=CC2)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C19H17N3O2/c20-14-6-7-17-13(12-14)8-11-21(17)9-3-10-22-18(23)15-4-1-2-5-16(15)19(22)24/h1-2,4-8,11-12H,3,9-10,20H2"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 3.4,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 84.5
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998437",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:19.978355"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-7dd4d4ae66a24840abaace7d812fb2ea"
+}

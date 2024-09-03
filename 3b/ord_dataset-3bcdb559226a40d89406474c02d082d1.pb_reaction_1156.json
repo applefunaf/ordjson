@@ -1,0 +1,297 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[N+:1]([C:4]1[CH:10]=[CH:9][C:7]([NH2:8])=[CH:6][CH:5]=1)([O-:3])=[O:2].N1C=CC=CC=1.[F:17][C:18]1[CH:26]=[CH:25][C:21]([C:22](Cl)=[O:23])=[CH:20][CH:19]=1.O>ClCCl>[F:17][C:18]1[CH:26]=[CH:25][C:21]([C:22]([NH:8][C:7]2[CH:9]=[CH:10][C:4]([N+:1]([O-:3])=[O:2])=[CH:5][CH:6]=2)=[O:23])=[CH:20][CH:19]=1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 100.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-fluorobenzoyl chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "FC1=CC=C(C(=O)Cl)C=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H4ClFO/c8-7(10)5-1-3-6(9)4-2-5/h1-4H"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 24.5,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m1_m5_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-nitroaniline"
+            },
+            {
+              "type": "SMILES",
+              "value": "[N+](=O)([O-])C1=CC=C(N)C=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H6N2O2/c7-5-1-3-6(4-2-5)8(9)10/h1-4H,7H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 19.83,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "pyridine"
+            },
+            {
+              "type": "SMILES",
+              "value": "N1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C5H5N/c1-2-4-6-5-3-1/h1-5H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 12.9,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "dichloromethane"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClCCl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 150.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 0.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "The reaction mixture was then stirred for 15 minutes at 0° C., at which time the reaction mixture"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a stirred suspension of 19.83 gm (143.56 mMol) 4-nitroaniline in 150 mL dichloromethane and 12.9 mL (159.5 mMol) pyridine at 0° C. were slowly added 24.5 gm (154.8 mMol) 4-fluorobenzoyl chloride. The reaction mixture was then stirred for 15 minutes at 0° C., at which time the reaction mixture became homogeneous, and then for an hour at room temperature. To this mixture were then added 100 mL water and the solid which formed was collected by filtration. The filter cake was washed with hexane (80 mL) followed by water (100 mL) and it was then dried under vacuum at 60° C. to give 34.1 gm (91%) N-(4-fluorobenzoyl)-4-nitroaniline."
+  },
+  "workups": [
+    {
+      "type": "WAIT",
+      "details": "for an hour at room temperature",
+      "temperature": {
+        "control": {
+          "type": "AMBIENT"
+        }
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the solid which formed"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "was collected by filtration"
+    },
+    {
+      "type": "WASH",
+      "details": "The filter cake was washed with hexane (80 mL)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "hexane"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCCCCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C6H14/c1-3-5-6-4-2/h3-6H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 80.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "was then dried under vacuum at 60° C.",
+      "temperature": {
+        "setpoint": {
+          "value": 60.0,
+          "units": "CELSIUS"
+        }
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 15.0,
+        "units": "MINUTE"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-(4-fluorobenzoyl)-4-nitroaniline"
+            },
+            {
+              "type": "SMILES",
+              "value": "FC1=CC=C(C(=O)NC2=CC=C(C=C2)[N+](=O)[O-])C=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C13H9FN2O3/c14-10-3-1-9(2-4-10)13(17)15-11-5-7-12(8-6-11)16(18)19/h1-8H,(H,15,17)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 34.1,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 91.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 91.3
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998630",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:34.160420"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-49d1773f28aa45eba7893c6c337666b1"
+}

@@ -1,0 +1,261 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[C:1]([N:4](C)[C:5]1[CH:6]=[C:7]([NH:11][S:12]([C:15]2[CH:20]=[CH:19][C:18]([NH:21]C(=O)C)=[CH:17][CH:16]=2)(=[O:14])=[O:13])[CH:8]=[CH:9][CH:10]=1)(=O)C.Cl>[OH-].[Na+]>[NH2:21][C:18]1[CH:19]=[CH:20][C:15]([S:12]([NH:11][C:7]2[CH:8]=[CH:9][CH:10]=[C:5]([NH:4][CH3:1])[CH:6]=2)(=[O:13])=[O:14])=[CH:16][CH:17]=1 |f:2.3|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-[4-[3-(acetyl-methyl-amino)-phenylsulfamoyl]-phenyl]-acetamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)N(C=1C=C(C=CC1)NS(=O)(=O)C1=CC=C(C=C1)NC(C)=O)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C17H19N3O4S/c1-12(21)18-14-7-9-17(10-8-14)25(23,24)19-15-5-4-6-16(11-15)20(3)13(2)22/h4-11,19H,1-3H3,(H,18,21)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 2.5,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "NaOH"
+            },
+            {
+              "type": "SMILES",
+              "value": "[OH-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Na.H2O/h;1H2/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 150.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "HCl"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/ClH/h1H"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "2.5 g (0.0069 mol) of N-[4-[3-(acetyl-methyl-amino)-phenylsulfamoyl]-phenyl]-acetamide were dissolved in 150 ml of 1N NaOH and boiled in reflux for 4 hours. Subsequently, the pH value was adjusted to 4 with 1N HCl and the precipitate which separated was filtered off. After drying the material on the suction filter was chromatographed on silica gel with 3% methanol with dichloromethane. There were obtained 1.64 g (85%) of 4-amino-N-(3-methylamino-phenyl)-benzenesulfonamide as a yellowish solid; m.p.: 134-135° C."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "in reflux for 4 hours",
+      "duration": {
+        "value": 4.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the precipitate which separated"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "was filtered off"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "After drying the material on the suction"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filter"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "was chromatographed on silica gel with 3% methanol with dichloromethane",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "methanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "CO"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "dichloromethane"
+              },
+              {
+                "type": "SMILES",
+                "value": "ClCCl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-amino-N-(3-methylamino-phenyl)-benzenesulfonamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC1=CC=C(C=C1)S(=O)(=O)NC1=CC(=CC=C1)NC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C13H15N3O2S/c1-15-11-3-2-4-12(9-11)16-19(17,18)13-7-5-10(14)6-8-13/h2-9,15-16H,14H2,1H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 1.64,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 85.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 85.7
+              }
+            }
+          ],
+          "isolated_color": "yellowish",
+          "texture": {
+            "type": "CUSTOM",
+            "details": "solid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998665",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:36.376553"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-4ba8021258cd47928f38a102acd51021"
+}

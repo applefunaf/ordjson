@@ -1,0 +1,504 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[C:1]([C:3]1[C:7]([CH3:8])=[C:6]([C:9]2[CH:14]=[CH:13][CH:12]=[CH:11][CH:10]=2)[NH:5][C:4]=1[NH2:15])#[N:2].C(N(CC)CC)C.Cl[CH2:24][CH2:25][CH2:26][C:27](Cl)=[O:28]>C1COCC1>[C:1]([C:3]1[C:7]([CH3:8])=[C:6]([C:9]2[CH:10]=[CH:11][CH:12]=[CH:13][CH:14]=2)[NH:5][C:4]=1[N:15]1[CH2:24][CH2:25][CH2:26][C:27]1=[O:28])#[N:2]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-chlorobutyryl chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClCCCC(=O)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H6Cl2O/c5-3-1-2-4(6)7/h1-3H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 3.5,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m1_m4_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3-cyano-4-methyl-2-amino-5-phenylpyrrole"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(#N)C1=C(NC(=C1C)C1=CC=CC=C1)N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C12H11N3/c1-8-10(7-13)12(14)15-11(8)9-5-3-2-4-6-9/h2-6,15H,14H2,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 4.9,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "triethylamine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)N(CC)CC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H15N/c1-4-7(5-2)6-3/h4-6H2,1-3H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 2.5,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "THF"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1CCOC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O/c1-2-4-5-3-1/h1-4H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 80.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": -50.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "while the mixture was stirred at -50° C."
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a solution of 3-cyano-4-methyl-2-amino-5-phenylpyrrole (4.9 g) in THF (80 ml) was added triethylamine (2.5 g) and while the mixture was stirred at -50° C., 4-chlorobutyryl chloride (3.5 g) was added. This reaction mixture was then stirred at room temperature for 1.5 hours, after which the insoluble matter was filtered off. The filtrate was diluted with ethyl acetate and the organic layer was washed with water and saturated aqueous solution of sodium hydrogen carbonate, dried over MgSO4, and concentrated under reduced pressure. The residue was recrystallized from benzene/n-hexane. The crystals were suspended in ethanol (40 ml), and potassium tert-butoxide (1.32 g) was added thereto. The mixture was stirred at room temperature overnight and the resulting crystals were collected by filtration, washed with water, and air-dried. The crude crystals thus obtained were recrystallized from ethanol to provide the title compound as light-yellow needles (1.5 g). m.p. 140-141° C."
+  },
+  "workups": [
+    {
+      "type": "STIRRING",
+      "details": "This reaction mixture was then stirred at room temperature for 1.5 hours",
+      "duration": {
+        "value": 1.5,
+        "units": "HOUR"
+      },
+      "temperature": {
+        "control": {
+          "type": "AMBIENT"
+        }
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "after which the insoluble matter was filtered off"
+    },
+    {
+      "type": "ADDITION",
+      "details": "The filtrate was diluted with ethyl acetate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "the organic layer was washed with water and saturated aqueous solution of sodium hydrogen carbonate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "sodium hydrogen carbonate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(O)([O-])=O.[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2O3.Na/c2-1(3)4;/h(H2,2,3,4);/q;+1/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "dried over MgSO4",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "MgSO4"
+              },
+              {
+                "type": "SMILES",
+                "value": "[O-]S(=O)(=O)[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated under reduced pressure"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The residue was recrystallized from benzene/n-hexane",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "benzene n-hexane"
+              },
+              {
+                "type": "SMILES",
+                "value": "C1=CC=CC=C1.CCCCCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C6H6.C6H14/c1-2-4-6-5-3-1;1-3-5-6-4-2/h1-6H;3-6H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "ADDITION",
+      "details": "potassium tert-butoxide (1.32 g) was added",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "potassium tert-butoxide"
+              },
+              {
+                "type": "SMILES",
+                "value": "CC(C)([O-])C.[K+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H9O.K/c1-4(2,3)5;/h1-3H3;/q-1;+1"
+              }
+            ],
+            "amount": {
+              "mass": {
+                "value": 1.32,
+                "units": "GRAM"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "STIRRING",
+      "details": "The mixture was stirred at room temperature overnight",
+      "duration": {
+        "value": 8.0,
+        "precision": 8.0,
+        "units": "HOUR"
+      },
+      "temperature": {
+        "control": {
+          "type": "AMBIENT"
+        }
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "the resulting crystals were collected by filtration"
+    },
+    {
+      "type": "WASH",
+      "details": "washed with water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "air-dried"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The crude crystals thus obtained"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "were recrystallized from ethanol",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "3-Cyano-4-methyl-2-(2-oxopyrrolidin-1-yl)-5-phenylpyrrole"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(#N)C1=C(NC(=C1C)C1=CC=CC=C1)N1C(CCC1)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C16H15N3O/c1-11-13(10-17)16(19-9-5-8-14(19)20)18-15(11)12-6-3-2-4-7-12/h2-4,6-7,18H,5,8-9H2,1H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 1.5,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 22.8
+              }
+            }
+          ],
+          "isolated_color": "light-yellow",
+          "texture": {
+            "type": "CRYSTAL",
+            "details": "needles"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998459",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:25.166804"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-7b7007b340d3461ab0c1100b50d022ad"
+}

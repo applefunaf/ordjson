@@ -1,0 +1,250 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][O:2][C:3]1[CH:8]=[CH:7][C:6](/[CH:9]=[CH:10]/[CH2:11][CH2:12][CH2:13][CH2:14][O:15][C:16]2[CH:21]=[CH:20][C:19]([NH:22][C:23](=[O:35])[CH2:24][CH2:25][CH2:26][C:27](=[O:34])[N:28]3[CH2:33][CH2:32][O:31][CH2:30][CH2:29]3)=[CH:18][C:17]=2[CH2:36][CH2:37][C:38]([O:40]C(C)(C)C)=[O:39])=[CH:5][CH:4]=1>C(O)=O>[CH3:1][O:2][C:3]1[CH:8]=[CH:7][C:6](/[CH:9]=[CH:10]/[CH2:11][CH2:12][CH2:13][CH2:14][O:15][C:16]2[CH:21]=[CH:20][C:19]([NH:22][C:23](=[O:35])[CH2:24][CH2:25][CH2:26][C:27](=[O:34])[N:28]3[CH2:29][CH2:30][O:31][CH2:32][CH2:33]3)=[CH:18][C:17]=2[CH2:36][CH2:37][C:38]([OH:40])=[O:39])=[CH:5][CH:4]=1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "butyl ester"
+            },
+            {
+              "type": "NAME",
+              "value": "t-Butyl 3-[1-[6-(4-methoxyphenyl)hex-5E-enyl]oxy-4-(5-oxo-5-morpholinopentanamido)benzen-2-yl]propionate"
+            },
+            {
+              "type": "SMILES",
+              "value": "COC1=CC=C(C=C1)/C=C/CCCCOC1=C(C=C(C=C1)NC(CCCC(N1CCOCC1)=O)=O)CCC(=O)OC(C)(C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C35H48N2O7/c1-35(2,3)44-34(40)20-15-28-26-29(36-32(38)11-9-12-33(39)37-21-24-42-25-22-37)16-19-31(28)43-23-8-6-5-7-10-27-13-17-30(41-4)18-14-27/h7,10,13-14,16-19,26H,5-6,8-9,11-12,15,20-25H2,1-4H3,(H,36,38)/b10-7+"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 70.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "formic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2O2/c2-1-3/h1H,(H,2,3)"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 5.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "The solution was stirred for 5 hr"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "The butyl ester (70 mg; prepared in reference example 6) was dissolved in formic acid (5 ml). The solution was stirred for 5 hr. at room temperature. The reaction solution was evaporated to remove formic acid. The residue was purified by column chromatography on silica gel (ethyl acetate:methanol=10:1) to give the title compound (40 mg) of the present invention, having the following physical data."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "at room temperature",
+      "temperature": {
+        "control": {
+          "type": "AMBIENT"
+        }
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The reaction solution was evaporated"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to remove formic acid",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "formic acid"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(=O)O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2O2/c2-1-3/h1H,(H,2,3)"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The residue was purified by column chromatography on silica gel (ethyl acetate:methanol=10:1)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "methanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "CO"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 5.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "3-[1-[6-(4-methoxyphenyl)hex-5E-enyl]oxy-4-(5-oxo-5-morpholinopentanamido)benzen-2-yl]propionic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "COC1=CC=C(C=C1)/C=C/CCCCOC1=C(C=C(C=C1)NC(CCCC(N1CCOCC1)=O)=O)CCC(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C31H40N2O7/c1-38-27-14-10-24(11-15-27)7-4-2-3-5-20-40-28-16-13-26(23-25(28)12-17-31(36)37)32-29(34)8-6-9-30(35)33-18-21-39-22-19-33/h4,7,10-11,13-16,23H,2-3,5-6,8-9,12,17-22H2,1H3,(H,32,34)(H,36,37)/b7-4+"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 40.0,
+                  "units": "MILLIGRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 62.9
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06001877",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:19.612049"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-2b91b96c95b14698b4f1a15b0d58d030"
+}

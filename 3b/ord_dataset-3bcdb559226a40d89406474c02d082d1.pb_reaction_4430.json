@@ -1,0 +1,190 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "C([O:8][C:9](=[O:39])[CH:10]([N:22]1[CH:26]=[CH:25][N:24]([C:27]2[CH:32]=[CH:31][C:30]([C:33]3[CH:38]=[CH:37][CH:36]=[CH:35][CH:34]=3)=[CH:29][CH:28]=2)[CH2:23]1)[CH2:11][C:12]([O:14][CH2:15][C:16]1[CH:21]=[CH:20][CH:19]=[CH:18][CH:17]=1)=[O:13])C1C=CC=CC=1>O>[CH2:15]([O:14][C:12](=[O:13])[CH2:11][CH:10]([N:22]1[CH:26]=[CH:25][N:24]([C:27]2[CH:28]=[CH:29][C:30]([C:33]3[CH:34]=[CH:35][CH:36]=[CH:37][CH:38]=3)=[CH:31][CH:32]=2)[CH2:23]1)[C:9]([OH:39])=[O:8])[C:16]1[CH:21]=[CH:20][CH:19]=[CH:18][CH:17]=1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2(RS)-(3-biphenyl-4-yl-1H-imidazol-1-yl)-succinic acid dibenzyl ester"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C1=CC=CC=C1)OC(C(CC(=O)OCC1=CC=CC=C1)N1CN(C=C1)C1=CC=C(C=C1)C1=CC=CC=C1)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C33H30N2O4/c36-32(38-23-26-10-4-1-5-11-26)22-31(33(37)39-24-27-12-6-2-7-13-27)35-21-20-34(25-35)30-18-16-29(17-19-30)28-14-8-3-9-15-28/h1-21,31H,22-25H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 551.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "H2O"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 0.5,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A suspension of 2(RS)-(3-biphenyl-4-yl-1H-imidazol-1-yl)-succinic acid dibenzyl ester (551 mg, 1.07 mmol) in H2O (0.5 mL) was refluxed overnight. Once allowed to cool to ambient temperature, the resultant precipitate was collected and dried in vacuo to provide 436 mg (96%) of 2(RS)-(3-biphenyl-4-yl-1H-imidazol-1-yl)-succinic acid 4-benzyl ester. FABMS: 427 (C26H23N2O4 ; M+H+)."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "was refluxed overnight",
+      "duration": {
+        "value": 8.0,
+        "precision": 8.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the resultant precipitate was collected",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "resultant precipitate"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried in vacuo"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2(RS)-(3-biphenyl-4-yl-1H-imidazol-1-yl)-succinic acid 4-benzyl ester"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C1=CC=CC=C1)OC(CC(C(=O)O)N1CN(C=C1)C1=CC=C(C=C1)C1=CC=CC=C1)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C26H24N2O4/c29-25(32-18-20-7-3-1-4-8-20)17-24(26(30)31)28-16-15-27(19-28)23-13-11-22(12-14-23)21-9-5-2-6-10-21/h1-16,24H,17-19H2,(H,30,31)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 436.0,
+                  "units": "MILLIGRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 96.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 95.1
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06008243",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:28.964226"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-be9e4afe51d447a58b1857f4b2a74e60"
+}

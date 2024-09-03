@@ -1,0 +1,297 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "Cl.C(O)(=O)C.[Br:6][C:7]1[C:8]([F:36])=[C:9]([F:35])[CH:10]=[C:11]2[C:16]=1[N:15]([C:17]1[CH:22]=[CH:21][C:20]([F:23])=[C:19]([NH:24]C(C)(C)C)[N:18]=1)[CH:14]=[C:13]([C:29]([O:31]CC)=[O:30])[C:12]2=[O:34]>O>[NH2:24][C:19]1[N:18]=[C:17]([N:15]2[C:16]3[C:11](=[CH:10][C:9]([F:35])=[C:8]([F:36])[C:7]=3[Br:6])[C:12](=[O:34])[C:13]([C:29]([OH:31])=[O:30])=[CH:14]2)[CH:22]=[CH:21][C:20]=1[F:23]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m3_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "mixed solution"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 4.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrochloric acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/ClH/h1H"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acetic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H4O2/c1-2(3)4/h1H3,(H,3,4)"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethyl 8-bromo-1-[6-(t-butylamino)-5-fluoropyridin-2-yl]-6,7-difluoro-4-oxo-1,4-dihydroquinoline-3-carboxylate"
+            },
+            {
+              "type": "SMILES",
+              "value": "BrC=1C(=C(C=C2C(C(=CN(C12)C1=NC(=C(C=C1)F)NC(C)(C)C)C(=O)OCC)=O)F)F"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C21H19BrF3N3O3/c1-5-31-20(30)11-9-28(14-7-6-12(23)19(26-14)27-21(2,3)4)17-10(18(11)29)8-13(24)16(25)15(17)22/h6-9H,5H2,1-4H3,(H,26,27)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 480.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 4.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "with stirring for 2 hours"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To 4 ml of the mixed solution (1:1) of 4N hydrochloric acid and acetic acid was added 480 mg of ethyl 8-bromo-1-[6-(t-butylamino)-5-fluoropyridin-2-yl]-6,7-difluoro-4-oxo-1,4-dihydroquinoline-3-carboxylate, and the mixture was heated under reflux with stirring for 2 hours. After adding 4 ml of distilled water, the solution was allowed to cool, and the precipitate was collected by filtration and washed with ethanol and diisopropylether successively to obtain 345 mg of the title compound as a colorless powder."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "the mixture was heated"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "under reflux"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "to cool"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "the precipitate was collected by filtration"
+    },
+    {
+      "type": "WASH",
+      "details": "washed with ethanol and diisopropylether successively",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "diisopropylether"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(C)OC(C)C"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C6H14O/c1-5(2)7-6(3)4/h5-6H,1-4H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 2.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "1-(6-amino-5-fluoropyridin-2-yl)-8-bromo-6,7-difluoro-4-oxo-1,4-dihydroquinoline-3-carboxylic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC1=C(C=CC(=N1)N1C=C(C(C2=CC(=C(C(=C12)Br)F)F)=O)C(=O)O)F"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C15H7BrF3N3O3/c16-10-11(19)8(18)3-5-12(10)22(4-6(13(5)23)15(24)25)9-2-1-7(17)14(20)21-9/h1-4H,(H2,20,21)(H,24,25)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 345.0,
+                  "units": "MILLIGRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 86.5
+              }
+            }
+          ],
+          "isolated_color": "colorless",
+          "texture": {
+            "type": "POWDER",
+            "details": "powder"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998436",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:28.606673"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-fd220d30c8c640c0ae30f8bd5455212f"
+}

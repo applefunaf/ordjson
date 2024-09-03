@@ -1,0 +1,252 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[N+:1]([C:4]1[CH:9]=[CH:8][C:7]([CH3:10])=[C:6](Br)[C:5]=1[OH:12])([O-:3])=[O:2].[CH2:13]([N:15](CC)CC)C.CN(C1C=CC=CN=1)C.[Cu]C#N>CN(C)C=O>[N+:1]([C:4]1[CH:9]=[CH:8][C:7]([CH3:10])=[C:6]([C:13]#[N:15])[C:5]=1[OH:12])([O-:3])=[O:2]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "copper (I) cyanide"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Cu]C#N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CN.Cu/c1-2;"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 155.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "triethylamine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)N(CC)CC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H15N/c1-4-7(5-2)6-3/h4-6H2,1-3H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.175,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m1_m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-Nitro-5-methyl-6-bromophenol"
+            },
+            {
+              "type": "SMILES",
+              "value": "[N+](=O)([O-])C1=C(C(=C(C=C1)C)Br)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H6BrNO3/c1-4-2-3-5(9(11)12)7(10)6(4)8/h2-3,10H,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 100.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "dimethyl formamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN(C=O)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H7NO/c1-4(2)3-5/h3H,1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 2.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "dimethylamino pyridine"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN(C)C1=NC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H10N2/c1-9(2)7-5-3-4-6-8-7/h3-6H,1-2H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 80.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "to stir at 80° C. for 4 hours"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "2-Nitro-5-methyl-6-bromophenol (100 mg, 0.433 mmol) was dissolved in dimethyl formamide (2 mL) followed by the addition of triethylamine (0.175 g, 1.73 mmol). The addition of a catalytic amount dimethylamino pyridine was then made, followed by addition of copper (I) cyanide (155 mg, 1.73 mmol). The mixture was allowed to stir at 80° C. for 4 hours. The solvent was evaporated and chromatography of the resulting solid on silica gel (2%MeOH/CH2Cl2) gave the desired product (70 mg, 91%). 1H NMR (CD3COCD3): δ 8.30 (d,1H), 7.15 (d,1H), 2.61 (s, 3H)."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "The solvent was evaporated"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 4.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "desired product"
+            },
+            {
+              "type": "NAME",
+              "value": "2-nitro-5-methyl-6-cyanophenol"
+            },
+            {
+              "type": "SMILES",
+              "value": "[N+](=O)([O-])C1=C(C(=C(C=C1)C)C#N)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H6N2O3/c1-5-2-3-7(10(12)13)8(11)6(5)4-9/h2-3,11H,1H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 70.0,
+                  "units": "MILLIGRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 91.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 90.7
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06005008",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:21.201322"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-834ee1e0e96542e9a08e39a154c6b6c6"
+}

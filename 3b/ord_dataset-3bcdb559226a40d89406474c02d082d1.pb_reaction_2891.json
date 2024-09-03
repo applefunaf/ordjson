@@ -1,0 +1,293 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH2:1]([N:8]1[C:13](=[O:14])[C:12]([Br:15])=[C:11](Br)[CH:10]=[N:9]1)[C:2]1[CH:7]=[CH:6][CH:5]=[CH:4][CH:3]=1.[OH-:17].[K+]>CN(P(N(C)C)(N(C)C)=O)C>[CH2:1]([N:8]1[C:13](=[O:14])[C:12]([Br:15])=[C:11]([OH:17])[CH:10]=[N:9]1)[C:2]1[CH:7]=[CH:6][CH:5]=[CH:4][CH:3]=1 |f:1.2|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "residue"
+            },
+            {
+              "type": "NAME",
+              "value": "2-benzyl-4.5-dibromo-2H-pyridazin-3-one"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C1=CC=CC=C1)N1N=CC(=C(C1=O)Br)Br"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C11H8Br2N2O/c12-9-6-14-15(11(16)10(9)13)7-8-4-2-1-3-5-8/h1-6H,7H2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "HMPA"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN(C)P(=O)(N(C)C)N(C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H18N3OP/c1-7(2)11(10,8(3)4)9(5)6/h1-6H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 50.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "KOH"
+            },
+            {
+              "type": "SMILES",
+              "value": "[OH-].[K+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/K.H2O/h;1H2/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 65.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "stirred vigourously for 16 h"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "The residue from step 1 was dissolved in HMPA (50 mL) and 8N KOH (65 mL) was added. The mixture was warmed to 120°-125° C. and stirred vigourously for 16 h. The mixture was cooled to r.t., the aqueous layer was separated, diluted with H2O (500 mL) and acidified to pH 6 with 6N HCl under vigourous stirring. After cooling in an ice bath, the solid was collected and air dried. It was dissolved in warm IN NaOH and washed once with ETOAc. The aqueous layer was acidified to pH 6 with 6N HCl and cooled again in an ice bath. The solid was filtered and air dried to yield the title compound (4.4 g, 40 %)."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "The mixture was warmed to 120°-125° C."
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the aqueous layer was separated"
+    },
+    {
+      "type": "ADDITION",
+      "details": "diluted with H2O (500 mL)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "H2O"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 500.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "After cooling in an ice bath"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the solid was collected"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "air dried"
+    },
+    {
+      "type": "DISSOLUTION",
+      "details": "It was dissolved"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "in warm IN NaOH",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "NaOH"
+              },
+              {
+                "type": "SMILES",
+                "value": "[OH-].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Na.H2O/h;1H2/q+1;/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "washed once with ETOAc"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "cooled again in an ice bath"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "The solid was filtered"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "air dried"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 16.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "2-benzyl-4-bromo-5-hydroxy-2H-pyridazin-3-one"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C1=CC=CC=C1)N1N=CC(=C(C1=O)Br)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C11H9BrN2O2/c12-10-9(15)6-13-14(11(10)16)7-8-4-2-1-3-5-8/h1-6,15H,7H2"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 4.4,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 40.0
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06004960",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:16.829611"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-4dce9ca10250406ca8bff3b197657da8"
+}

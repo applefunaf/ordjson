@@ -1,0 +1,189 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[C:1]1([CH:7]([C:14]2[CH:19]=[CH:18][CH:17]=[CH:16][CH:15]=2)[C:8]2[CH:9]=[N:10][CH:11]=[CH:12][CH:13]=2)[CH:6]=[CH:5][CH:4]=[CH:3][CH:2]=1.[Br:20][CH2:21][C:22]([O:24][CH2:25][CH3:26])=[O:23]>C(#N)C>[Br-:20].[CH2:25]([O:24][C:22]([CH2:21][N+:10]1[CH:11]=[CH:12][CH:13]=[C:8]([CH:7]([C:14]2[CH:19]=[CH:18][CH:17]=[CH:16][CH:15]=2)[C:1]2[CH:2]=[CH:3][CH:4]=[CH:5][CH:6]=2)[CH:9]=1)=[O:23])[CH3:26] |f:3.4|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3-diphenylmethylpyridine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1(=CC=CC=C1)C(C=1C=NC=CC1)C1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C18H15N/c1-3-8-15(9-4-1)18(16-10-5-2-6-11-16)17-12-7-13-19-14-17/h1-14,18H"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.49,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethyl bromoacetate"
+            },
+            {
+              "type": "SMILES",
+              "value": "BrCC(=O)OCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H7BrO2/c1-2-7-4(6)3-5/h2-3H2,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.334,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acetonitrile"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)#N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H3N/c1-2-3/h1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 2.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture of 0.490 g (2 mmol) 3-diphenylmethylpyridine (Sigma-Aldrich Library of Rare Chemicals) and 0.334 g (4 mmol) ethyl bromoacetate (Aldrich) in 2 ml acetonitrile was heated under reflux for 1 hour. The solvent was evaporated, the residue suspended in diethyl ether and filtered to give 0.8 g 1-ethoxycarbonylmethyl-3-diphenylmethylpyridinium bromide as a yellow powder. 1H NMR (CD3OD, 300 MHz) δ 8.87 (d, 1 H), 8.77 (s, 1 H), 8.42 (d, 1 H), 8.10 (dd, 1 H), 7.50-7.10 (m, 10 H), 5.96 (s, 1 H), 5.55 (s, 2 H), 4.28 (q, 2 H), 1.29 (t, 3 H)."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "was heated"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "under reflux for 1 hour",
+      "duration": {
+        "value": 1.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The solvent was evaporated"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filtered"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "1-ethoxycarbonylmethyl-3-diphenylmethylpyridinium bromide"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Br-].C(C)OC(=O)C[N+]1=CC(=CC=C1)C(C1=CC=CC=C1)C1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C22H22NO2.BrH/c1-2-25-21(24)17-23-15-9-14-20(16-23)22(18-10-5-3-6-11-18)19-12-7-4-8-13-19;/h3-16,22H,2,17H2,1H3;1H/q+1;/p-1"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 0.8,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 97.0
+              }
+            }
+          ],
+          "isolated_color": "yellow",
+          "texture": {
+            "type": "POWDER",
+            "details": "powder"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06001854",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:17.340538"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-c65c0690850c4bd3a367d8c882874b2e"
+}

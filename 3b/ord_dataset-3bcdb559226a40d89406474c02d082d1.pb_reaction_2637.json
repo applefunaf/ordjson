@@ -1,0 +1,493 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][O:2][C:3]1[C:12]([O:13][CH3:14])=[C:11]([O:15][CH3:16])[CH:10]=[C:5]([C:6]([O:8]C)=O)[C:4]=1[NH2:17]>COC(OC)N(C)C>[OH:8][C:6]1[C:5]2[C:4](=[C:3]([O:2][CH3:1])[C:12]([O:13][CH3:14])=[C:11]([O:15][CH3:16])[CH:10]=2)[N:17]=[CH:12][C:3]=1[C:4]#[N:17]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methyl 3,4,5-trimethoxyanthranilate"
+            },
+            {
+              "type": "SMILES",
+              "value": "COC1=C(C(C(=O)OC)=CC(=C1OC)OC)N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C11H15NO5/c1-14-7-5-6(11(13)17-4)8(12)10(16-3)9(7)15-2/h5H,12H2,1-4H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 4.82,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N,N-dimethylformamide dimethyl acetal"
+            },
+            {
+              "type": "SMILES",
+              "value": "COC(N(C)C)OC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C5H13NO2/c1-6(2)5(7-3)8-4/h5H,1-4H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 20.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": -78.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "The mixture was stirred at -78° C. for 15 minutes"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture of 4.82 g of methyl 3,4,5-trimethoxyanthranilate in 20 ml of N,N-dimethylformamide dimethyl acetal was refluxed for 18 hours and concentrated in vacuo. The crude amidine product was used in the next step without further purification. To 25 ml of tetrahydrofuran at -78° C. was added 17.6 ml of 2.5M n-butyllithium in hexanes. Then 2.35 ml of acetonitrile in 45 ml of tetrahydrofuran was added dropwise. The mixture was stirred at -78° C. for 15 minutes. Then a solution of the crude amidine in 30 ml of tetrahydrofuran was added dropwise. The mixture was stirred at -78° C. for minutes, then 5.7 ml of acetic acid was added. The mixture was warmed to room temperature, and 100 ml of water was added. The product was collected, washed with water, and dried to give 4.14 g of 4-hydroxy-6,7,8-trimethoxy-quinoline-3-carbonitrile as a solid, mp 280° C. (decomposed); mass spectrum (electrospray, m/e): M+H 261.2."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "was refluxed for 18 hours",
+      "duration": {
+        "value": 18.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated in vacuo"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The crude amidine product was used in the next step without further purification",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "amidine"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "ADDITION",
+      "details": "To 25 ml of tetrahydrofuran at -78° C. was added 17.6 ml of 2.5M n-butyllithium in hexanes",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "tetrahydrofuran"
+              },
+              {
+                "type": "SMILES",
+                "value": "O1CCCC1"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O/c1-2-4-5-3-1/h1-4H2"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 25.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "n-butyllithium"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(CCC)[Li]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H9.Li/c1-3-4-2;/h1,3-4H2,2H3;"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 17.6,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "hexanes"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      },
+      "temperature": {
+        "setpoint": {
+          "value": -78.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "ADDITION",
+      "details": "Then 2.35 ml of acetonitrile in 45 ml of tetrahydrofuran was added dropwise",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "acetonitrile"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)#N"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C2H3N/c1-2-3/h1H3"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 2.35,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "tetrahydrofuran"
+              },
+              {
+                "type": "SMILES",
+                "value": "O1CCCC1"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O/c1-2-4-5-3-1/h1-4H2"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 45.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "ADDITION",
+      "details": "Then a solution of the crude amidine in 30 ml of tetrahydrofuran was added dropwise",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "amidine"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "tetrahydrofuran"
+              },
+              {
+                "type": "SMILES",
+                "value": "O1CCCC1"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O/c1-2-4-5-3-1/h1-4H2"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 30.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "STIRRING",
+      "details": "The mixture was stirred at -78° C. for minutes",
+      "temperature": {
+        "setpoint": {
+          "value": -78.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "ADDITION",
+      "details": "5.7 ml of acetic acid was added",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "acetic acid"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C2H4O2/c1-2(3)4/h1H3,(H,3,4)"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 5.7,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "The mixture was warmed to room temperature",
+      "temperature": {
+        "control": {
+          "type": "AMBIENT"
+        }
+      }
+    },
+    {
+      "type": "ADDITION",
+      "details": "100 ml of water was added",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 100.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The product was collected"
+    },
+    {
+      "type": "WASH",
+      "details": "washed with water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 15.0,
+        "units": "MINUTE"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-hydroxy-6,7,8-trimethoxy-quinoline-3-carbonitrile"
+            },
+            {
+              "type": "SMILES",
+              "value": "OC1=C(C=NC2=C(C(=C(C=C12)OC)OC)OC)C#N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C13H12N2O4/c1-17-9-4-8-10(13(19-3)12(9)18-2)15-6-7(5-14)11(8)16/h4,6H,1-3H3,(H,15,16)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 4.14,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 159.2
+              }
+            }
+          ],
+          "texture": {
+            "type": "CUSTOM",
+            "details": "solid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06002008",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:27.198590"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-28614f9ba6b84bae900568e9697be248"
+}

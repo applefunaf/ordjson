@@ -1,0 +1,290 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "C(OC([NH:11][C@@H:12]([CH:20]([CH3:22])[CH3:21])C(OC(=O)C)C#N)=O)C1C=CC=CC=1.Cl.C1([O:30]C)C=CC=CC=1.[O:32]1[CH2:37][CH2:36][O:35]CC1>>[NH2:11][C@@H:12]([CH:20]([CH3:22])[CH3:21])[CH:36]([OH:35])[C:37]([OH:32])=[O:30]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3-(S)-[(benzyloxycarbonyl)amino]-2-acetoxy-4-methylpentanenitrile"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C1=CC=CC=C1)OC(=O)N[C@H](C(C#N)OC(C)=O)C(C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C16H20N2O4/c1-11(2)15(14(9-17)22-12(3)19)18-16(20)21-10-13-7-5-4-6-8-13/h4-8,11,14-15H,10H2,1-3H3,(H,18,20)/t14?,15-/m0/s1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 15.2,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "dioxane"
+            },
+            {
+              "type": "SMILES",
+              "value": "O1CCOCC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O2/c1-2-6-4-3-5-1/h1-4H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 183.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrochloric acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/ClH/h1H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 183.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "anisole"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1(=CC=CC=C1)OC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H8O/c1-8-7-5-3-2-4-6-7/h2-6H,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 7.45,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a solution containing 3-(S)-[(benzyloxycarbonyl)amino]-2-acetoxy-4-methylpentanenitrile (see example 1 of WO 96/16080) (15.2 g, 50.0 mmol) in 183 mL of dioxane was added 183 mL of concentrated hydrochloric acid and 7.45 mL of anisole. The reaction mixture was heated to reflux overnight. The hydrolysis reaction was allowed to cool to room temperature and then concentrated in vacuo. The resulting aqueous solution was extracted with ether (2×). The aqueous phase was placed on a Dowex 50X8-100 column (H+ form, preeluted with deionized water to pH=7). The column was eluted with 2.0 N ammonium hydroxide and the pure fractions concentrated to afford 5.53 g (75%) of 3-(S)-amino-2-(R,S)-hydroxy-4-methylpentanoic acid as a pale yellow solid. FAB MS [M+H] m/z; Calcd: 148, Found: 148."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "The reaction mixture was heated"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "to reflux overnight",
+      "duration": {
+        "value": 8.0,
+        "precision": 8.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The hydrolysis reaction"
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated in vacuo"
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "The resulting aqueous solution was extracted with ether (2×)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "The column was eluted with 2.0 N ammonium hydroxide",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ammonium hydroxide"
+              },
+              {
+                "type": "SMILES",
+                "value": "[OH-].[NH4+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H3N.H2O/h1H3;1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "the pure fractions concentrated"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3-(S)-amino-2-(R,S)-hydroxy-4-methylpentanoic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "N[C@H](C(C(=O)O)O)C(C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H13NO3/c1-3(2)4(7)5(8)6(9)10/h3-5,8H,7H2,1-2H3,(H,9,10)/t4-,5?/m0/s1"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 5.53,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 75.0
+              }
+            }
+          ],
+          "isolated_color": "pale yellow",
+          "texture": {
+            "type": "CUSTOM",
+            "details": "solid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998379",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:16.468367"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-e4510ec65d3a44ccb5f0f35037270ccc"
+}

@@ -1,0 +1,261 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "CC([N:5]1[C:17]2[C:16]3[C:11](=[CH:12][CH:13]=[CH:14][CH:15]=3)[N:10]3[N:18]=[N:19][N:20]=[C:9]3[C:8]=2[N:7]=[CH:6]1)(C)C.Cl.[OH-].[Na+]>O>[N:18]1[N:10]2[C:11]3[C:16]([C:17]4[NH:5][CH:6]=[N:7][C:8]=4[C:9]2=[N:20][N:19]=1)=[CH:15][CH:14]=[CH:13][CH:12]=3 |f:2.3|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 20.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m1_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "6-(1,1-Dimethylethyl)-6H-imidazo[4,5-c]tetrazolo[1,5-a]quinoline"
+            },
+            {
+              "type": "NAME",
+              "value": "6-(1,1-dimethylethyl)-6H-imidazo[4,5-c]tetrazolo[1,5-a]quinoline"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC(C)(C)N1C=NC=2C=3N(C4=CC=CC=C4C21)N=NN3"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C14H14N6/c1-14(2,3)19-8-15-11-12(19)9-6-4-5-7-10(9)20-13(11)16-17-18-20/h4-8H,1-3H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 1.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrochloric acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/ClH/h1H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 5.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sodium hydroxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "[OH-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Na.H2O/h;1H2/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "6-(1,1-Dimethylethyl)-6H-imidazo[4,5-c]tetrazolo[1,5-a]quinoline (1 g, 3.8 mmole, Example 20) was added to hydrochloric acid (5 mL of 6N); water (20 mL) was added and the mixture was heated on a steam bath for 1 hour. The reaction mixture was allowed to cool to ambient temperature then made basic (pH 11) by the addition of sodium hydroxide solution. The resulting precipitate was isolated by filtration, dried then recrystallized from N,N-dimethylformamide to provide 0.65 g of the desired product as a solid. A sample of this material was refluxed in a large amount of dichloromethane/methanol, isolated by filtration, then dried to provide 6H-imidazo[4,5-c]tetrazolo[1,5-a]quinoline as a solid, m.p. >300° C. Analysis: Calculated for C10H6N6 : % C, 57.14; % H, 2.88; % N, 39.98; Found: % C, 56.89; % H, 3.10; % N 39.34. The structure was confirmed by both mass spectroscopy and nuclear magnetic resonance spectroscopy."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "the mixture was heated on a steam bath for 1 hour",
+      "duration": {
+        "value": 1.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The resulting precipitate was isolated by filtration"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "then recrystallized from N,N-dimethylformamide",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "N,N-dimethylformamide"
+              },
+              {
+                "type": "SMILES",
+                "value": "CN(C=O)C"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C3H7NO/c1-4(2)3-5/h3H,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "desired product"
+            },
+            {
+              "type": "NAME",
+              "value": "6H-Imidazo[4,5-c]tetrazolo[1,5-a]quinoline"
+            },
+            {
+              "type": "SMILES",
+              "value": "N1=NN=C2N1C1=CC=CC=C1C1=C2N=CN1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C10H6N6/c1-2-4-7-6(3-1)8-9(12-5-11-8)10-13-14-15-16(7)10/h1-5H,(H,11,12)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 0.65,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 81.4
+              }
+            }
+          ],
+          "texture": {
+            "type": "CUSTOM",
+            "details": "solid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998619",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:32.347621"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-6d97163b116d4b40973fc76dfb0317c4"
+}

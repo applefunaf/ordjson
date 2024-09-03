@@ -1,0 +1,263 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "Cl.[CH3:2][N:3]([CH2:5][C:6]1[O:30][C:9]2[CH2:10][N:11]([C:14](=[O:29])[C:15]3[CH:20]=[CH:19][C:18]([C:21](=[O:28])[C:22]4[CH:27]=[CH:26][CH:25]=[CH:24][CH:23]=4)=[CH:17][CH:16]=3)[CH2:12][CH2:13][C:8]=2[CH:7]=1)[CH3:4].[BH4-].[Na+].[OH-].[Na+]>CO>[CH3:4][N:3]([CH2:5][C:6]1[O:30][C:9]2[CH2:10][N:11]([C:14]([C:15]3[CH:20]=[CH:19][C:18]([CH:21]([C:22]4[CH:27]=[CH:26][CH:25]=[CH:24][CH:23]=4)[OH:28])=[CH:17][CH:16]=3)=[O:29])[CH2:12][CH2:13][C:8]=2[CH:7]=1)[CH3:2] |f:0.1,2.3,4.5|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sodium hydroxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "[OH-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Na.H2O/h;1H2/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m1_m4_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N,N-dimethyl-[6-(4-benzoylbenzoyl)-4,5,6,7-tetrahydrofuro[2,3-c]pyridin-2-ylmethyl]amine hydrochloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl.CN(C)CC1=CC2=C(CN(CC2)C(C2=CC=C(C=C2)C(C2=CC=CC=C2)=O)=O)O1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C24H24N2O3.ClH/c1-25(2)15-21-14-20-12-13-26(16-22(20)29-21)24(28)19-10-8-18(9-11-19)23(27)17-6-4-3-5-7-17;/h3-11,14H,12-13,15-16H2,1-2H3;1H"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.196,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sodium borohydride"
+            },
+            {
+              "type": "SMILES",
+              "value": "[BH4-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/BH4.Na/h1H4;/q-1;+1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 70.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 10.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "stirring at room temperature"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a solution of 0.196 g (0.461 mmol) of N,N-dimethyl-[6-(4-benzoylbenzoyl)-4,5,6,7-tetrahydrofuro[2,3-c]pyridin-2-ylmethyl]amine hydrochloride in 10 ml of methanol, 70 mg (1.9 mmol) of sodium borohydride was added under ice-cooling, followed by overnight stirring at room temperature. Aqueous sodium hydroxide was added, followed by 3 extractions with dichloromethane. The combined organic layer was dried over anhydrous magnesium sulfate; the solvent was distilled off under reduced pressure to yield the desired product."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "cooling"
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "followed by 3 extractions with dichloromethane",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "dichloromethane"
+              },
+              {
+                "type": "SMILES",
+                "value": "ClCCl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "The combined organic layer was dried over anhydrous magnesium sulfate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "magnesium sulfate"
+              },
+              {
+                "type": "SMILES",
+                "value": "S(=O)(=O)([O-])[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DISTILLATION",
+      "details": "the solvent was distilled off under reduced pressure"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 8.0,
+        "precision": 8.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "desired product"
+            },
+            {
+              "type": "NAME",
+              "value": "4-(2-dimethylaminomethyl-5,7-dihydro-4H-furo[2,3-c]pyridin-6-ylcarbonyl)phenylphenylmethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN(C)CC1=CC2=C(CN(CC2)C(=O)C2=CC=C(C=C2)C(O)C2=CC=CC=C2)O1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C24H26N2O3/c1-25(2)15-21-14-20-12-13-26(16-22(20)29-21)24(28)19-10-8-18(9-11-19)23(27)17-6-4-3-5-7-17/h3-11,14,23,27H,12-13,15-16H2,1-2H3"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998433",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:45.801934"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-d236b767edca40c69c376dce7b09df1f"
+}

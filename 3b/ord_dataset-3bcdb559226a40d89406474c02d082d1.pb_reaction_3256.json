@@ -1,0 +1,261 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[NH2:1][C:2]1[C:3]([NH:13][CH2:14][C:15]2[CH:20]=[CH:19][C:18]([C:21]3[CH:26]=[CH:25][CH:24]=[CH:23][C:22]=3[C:27]#[N:28])=[CH:17][CH:16]=2)=[C:4]([CH:10]=[CH:11][CH:12]=1)[C:5]([O:7][CH2:8][CH3:9])=[O:6].[CH2:29]([N:31]=[C:32]=[S:33])[CH3:30].C(O)C>C(OCC)(=O)C>[C:27]([C:22]1[CH:23]=[CH:24][CH:25]=[CH:26][C:21]=1[C:18]1[CH:19]=[CH:20][C:15]([CH2:14][NH:13][C:3]2[C:2]([NH:1][C:32]([NH:31][CH2:29][CH3:30])=[S:33])=[CH:12][CH:11]=[CH:10][C:4]=2[C:5]([O:7][CH2:8][CH3:9])=[O:6])=[CH:16][CH:17]=1)#[N:28]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethyl acetate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)OCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m1_m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethyl 3-amino-2-[[(2'-cyanobiphenyl-4-yl)-methyl]amino]benzoate"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC=1C(=C(C(=O)OCC)C=CC1)NCC1=CC=C(C=C1)C1=C(C=CC=C1)C#N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C23H21N3O2/c1-2-28-23(27)20-8-5-9-21(25)22(20)26-15-16-10-12-17(13-11-16)19-7-4-3-6-18(19)14-24/h3-13,26H,2,15,25H2,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 1.61,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethyl isothiocyanate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)N=C=S"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H5NS/c1-2-4-3-5/h2H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 1.5,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 1.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "was stirred at room temperature for 3 days"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture of ethyl 3-amino-2-[[(2'-cyanobiphenyl-4-yl)-methyl]amino]benzoate (1.61 g), ethyl isothiocyanate (1.5 ml) and ethanol (1 ml) was stirred at room temperature for 3 days. The reaction mixture was dissolved in ethyl acetate and the solution was washed with water, dried and concentrated to dryness to give crystals. Recrystallization from ethyl acetate--hexane afforded pale yellow crystals (1.92 g, 91%), m.p. 108-110° C."
+  },
+  "workups": [
+    {
+      "type": "WASH",
+      "details": "the solution was washed with water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried"
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated to dryness"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to give crystals"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "Recrystallization from ethyl acetate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 3.0,
+        "units": "DAY"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Ethyl 2-[[(2'-cyanobiphenyl-4-yl)methyl]amino]-3-(3-ethylthioureido)benzoate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(#N)C1=C(C=CC=C1)C1=CC=C(C=C1)CNC1=C(C(=O)OCC)C=CC=C1NC(=S)NCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C26H26N4O2S/c1-3-28-26(33)30-23-11-7-10-22(25(31)32-4-2)24(23)29-17-18-12-14-19(15-13-18)21-9-6-5-8-20(21)16-27/h5-15,29H,3-4,17H2,1-2H3,(H2,28,30,33)"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06004989",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:22.313120"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-bedca4adc5284db689d20f28933eca0c"
+}

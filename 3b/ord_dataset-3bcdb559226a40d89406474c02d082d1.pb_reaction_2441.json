@@ -1,0 +1,236 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[F:1][C:2]1[CH:10]=[C:9]([OH:11])[CH:8]=[CH:7][C:3]=1[C:4]([OH:6])=[O:5].[C:12](O)(=[O:14])[CH3:13]>S(=O)(=O)(O)O.O>[F:1][C:2]1[CH:10]=[C:9]([O:11][C:12](=[O:14])[CH3:13])[CH:8]=[CH:7][C:3]=1[C:4]([OH:6])=[O:5]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sulfuric acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "S(O)(O)(=O)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O4S/c1-5(2,3)4/h(H2,1,2,3,4)"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "CATALYST"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m1_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-fluoro-4-hydroxybenzoic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "FC1=C(C(=O)O)C=CC(=C1)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H5FO3/c8-6-3-4(9)1-2-5(6)7(10)11/h1-3,9H,(H,10,11)"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acetic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H4O2/c1-2(3)4/h1H3,(H,3,4)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 8.4,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 80.0,
+        "units": "CELSIUS"
+      }
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "4.3 Grams of 2-fluoro-4-hydroxybenzoic acid and 8.4 g of anhydrous acetic acid were placed in a two-necked flask, and mixed. While the mixture was cooled with water, 5 drops of sulfuric acid were added. After heat generation terminated, the mixture was heated at 80° C. for 30 minutes. Then, the reaction mixture was poured into cold water, and a precipitated crystal was recovered by filtration. The crystal was vacuum-dried and used in the next step. The yield of the crystal was 4.7 g."
+  },
+  "workups": [
+    {
+      "type": "ADDITION",
+      "details": "mixed"
+    },
+    {
+      "type": "ADDITION",
+      "details": "were added"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "After heat generation"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "terminated"
+    },
+    {
+      "type": "ADDITION",
+      "details": "Then, the reaction mixture was poured into cold water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "a precipitated crystal was recovered by filtration"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The crystal was vacuum-dried"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-fluoro-4-acetoxybenzoic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "FC1=C(C(=O)O)C=CC(=C1)OC(C)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H7FO4/c1-5(11)14-6-2-3-7(9(12)13)8(10)4-6/h2-4H,1H3,(H,12,13)"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06002042",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:23.921381"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-6b1c7bfea1884e9690056e37454fb235"
+}

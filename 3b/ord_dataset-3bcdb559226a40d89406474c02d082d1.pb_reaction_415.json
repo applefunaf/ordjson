@@ -1,0 +1,290 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[OH:1][CH2:2][CH2:3][CH2:4][O:5][C:6]1[CH:11]=[CH:10][CH:9]=[CH:8][C:7]=1[NH:12][C:13](=[O:15])[CH3:14].[C:16]1(C)[CH:21]=[CH:20][C:19]([S:22](Cl)(=[O:24])=[O:23])=[CH:18][CH:17]=1>N1C=CC=CC=1>[C:19]1([S:22]([O:1][CH2:2][CH2:3][CH2:4][O:5][C:6]2[CH:11]=[CH:10][CH:9]=[CH:8][C:7]=2[NH:12][C:13](=[O:15])[CH3:14])(=[O:24])=[O:23])[CH:20]=[CH:21][CH:16]=[CH:17][CH:18]=1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-[2-(3-hydroxypropoxy)phenyl]-acetamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "OCCCOC1=C(C=CC=C1)NC(C)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C11H15NO3/c1-9(14)12-10-5-2-3-6-11(10)15-8-4-7-13/h2-3,5-6,13H,4,7-8H2,1H3,(H,12,14)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 7.5,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "pyridine"
+            },
+            {
+              "type": "SMILES",
+              "value": "N1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C5H5N/c1-2-4-6-5-3-1/h1-5H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 90.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "p-toluenesulfonyl chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1(=CC=C(C=C1)S(=O)(=O)Cl)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H7ClO2S/c1-6-2-4-7(5-3-6)11(8,9)10/h2-5H,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 13.6,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "tosyl chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "S(=O)(=O)(C1=CC=C(C)C=C1)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H7ClO2S/c1-6-2-4-7(5-3-6)11(8,9)10/h2-5H,1H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a solution of N-[2-(3-hydroxypropoxy)phenyl]-acetamide (Example 113) (7.5 g, 36 mmol) in pyridine (90 ml), cooled to 0° C., was added p-toluenesulfonyl chloride (13.6 g, 56 mmol). After the tosyl chloride went into solution, the reaction was then allowed to stand at 5° C. for 16 hours. The reaction was poured onto ice, and a brown oil settled. The aqueous supernatant was decanted from the oil, and the residual oil taken up in diethyl ether. The diethyl ether was washed with cold (5° C.) 3N HCl and then with brine. The organic layer was dried (MgSO4), and concentrated to afford a thick, brown oil, 5.3 g."
+  },
+  "workups": [
+    {
+      "type": "ADDITION",
+      "details": "The reaction was poured onto ice"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The aqueous supernatant was decanted from the oil"
+    },
+    {
+      "type": "WASH",
+      "details": "The diethyl ether was washed with cold (5° C.) 3N HCl",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "diethyl ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "HCl"
+              },
+              {
+                "type": "SMILES",
+                "value": "Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH/h1H"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      },
+      "temperature": {
+        "setpoint": {
+          "value": 5.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "The organic layer was dried (MgSO4)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "MgSO4"
+              },
+              {
+                "type": "SMILES",
+                "value": "[O-]S(=O)(=O)[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to afford a thick, brown oil, 5.3 g"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 16.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-[2-(3-phenylsulfonyloxypropoxy)phenyl]acetamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1(=CC=CC=C1)S(=O)(=O)OCCCOC1=C(C=CC=C1)NC(C)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C17H19NO5S/c1-14(19)18-16-10-5-6-11-17(16)22-12-7-13-23-24(20,21)15-8-3-2-4-9-15/h2-6,8-11H,7,12-13H2,1H3,(H,18,19)"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998417",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:23.074940"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-67a074bce4544ed08d637c15b6c8935f"
+}

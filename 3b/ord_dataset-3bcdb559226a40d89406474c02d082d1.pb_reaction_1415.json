@@ -1,0 +1,196 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH2:1]([N:3]([CH2:13][CH3:14])[C:4](=[O:12])[C:5]1[CH:10]=[CH:9][CH:8]=[CH:7][C:6]=1[Cl:11])[CH3:2].[CH3:15]I>>[CH2:13]([N:3]([CH2:1][CH3:2])[C:4](=[O:12])[C:5]1[C:10]([CH3:15])=[CH:9][CH:8]=[CH:7][C:6]=1[Cl:11])[CH3:14]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "compound"
+            },
+            {
+              "type": "NAME",
+              "value": "N,N-Diethyl-2-chlorobenzamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)N(C(C1=C(C=CC=C1)Cl)=O)CC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C11H14ClNO/c1-3-13(4-2)11(14)9-7-5-6-8-10(9)12/h5-8H,3-4H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "MeI"
+            },
+            {
+              "type": "SMILES",
+              "value": "CI"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH3I/c1-2/h1H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "The compound from example e (1.0 eq) and MeI (3.0 eq) were combined according to Method A. The crude product was purified by HPLC with 1:4 EtOAc/hexanes to give 5.2 g of N,N-diethyl 2-chloro-6-methylbenzamide as a yellow solid, a 92% yield. m.p. 48-49° C."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "The crude product was purified by HPLC with 1:4 EtOAc/hexanes",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "crude product"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "EtOAc hexanes"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N,N-diethyl 2-chloro-6-methylbenzamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)N(C(C1=C(C=CC=C1C)Cl)=O)CC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C12H16ClNO/c1-4-14(5-2)12(15)11-9(3)7-6-8-10(11)13/h6-8H,4-5H2,1-3H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 5.2,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 92.0
+              }
+            }
+          ],
+          "isolated_color": "yellow",
+          "texture": {
+            "type": "CUSTOM",
+            "details": "solid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998466",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:37.722402"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-4a9be3268345491b8555b72c6f64c56b"
+}

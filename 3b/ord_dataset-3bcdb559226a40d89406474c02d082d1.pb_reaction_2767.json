@@ -1,0 +1,209 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[OH:1][CH2:2][C:3]1[C:16]2[C:11](=[CH:12][CH:13]=[CH:14][CH:15]=2)[C:10]([CH:17]=[N:18][CH3:19])=[C:9]2[C:4]=1[CH:5]=[CH:6][CH:7]=[CH:8]2.[BH4-].[Na+]>C(O)(C)C>[OH:1][CH2:2][C:3]1[C:4]2[C:9](=[CH:8][CH:7]=[CH:6][CH:5]=2)[C:10]([CH2:17][NH:18][CH3:19])=[C:11]2[C:16]=1[CH:15]=[CH:14][CH:13]=[CH:12]2 |f:1.2|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "10-(hydroxymethyl)-9-((methylimino)methyl)anthracene"
+            },
+            {
+              "type": "SMILES",
+              "value": "OCC1=C2C=CC=CC2=C(C2=CC=CC=C12)C=NC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C17H15NO/c1-18-10-16-12-6-2-4-8-14(12)17(11-19)15-9-5-3-7-13(15)16/h2-10,19H,11H2,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 1.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "NaBH4"
+            },
+            {
+              "type": "SMILES",
+              "value": "[BH4-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/BH4.Na/h1H4;/q-1;+1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.454,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "isopropanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H8O/c1-3(2)4/h3-4H,1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 25.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "the solution was stirred at room temperature for 72 h"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "10-(hydroxymethyl)-9-((methylimino)methyl)anthracene (1.00 g, 4.0 mmol) was slurried in 25 mL isopropanol. NaBH4 (0.454 g, 12.0 mmol) was added as a solid and the solution was stirred at room temperature for 72 h. The mixture was filtered on a sintered-glass frit and the solvent was removed under reduced pressure to yield 10 as a bright yellow powder (0.853 g, 86% yield): 1H NMR (300.13 MHz, CD3OD) δ 2.55 (s, 3H), 4.64 (s, 2H), 5.56 (s, 2H), 7.55 (m, 4H), 8.38 (m, 2H), 8.50 (m, 2H); 13C-{1H} NMR (75.4 MHz, CD3OD) δ 133.4, 133.0, 131.6, 131.5, 126.9, 126.7, 126.2, 125.7, 57.2, 47.9, 36.5."
+  },
+  "workups": [
+    {
+      "type": "FILTRATION",
+      "details": "The mixture was filtered on a sintered-glass frit"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the solvent was removed under reduced pressure"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 72.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "10"
+            },
+            {
+              "type": "NAME",
+              "value": "10-(hydroxymethyl)-9-((methylamino)methyl)anthracene"
+            },
+            {
+              "type": "SMILES",
+              "value": "OCC1=C2C=CC=CC2=C(C2=CC=CC=C12)CNC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C17H17NO/c1-18-10-16-12-6-2-4-8-14(12)17(11-19)15-9-5-3-7-13(15)16/h2-9,18-19H,10-11H2,1H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 0.853,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 86.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 84.9
+              }
+            }
+          ],
+          "isolated_color": "bright yellow",
+          "texture": {
+            "type": "POWDER",
+            "details": "powder"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06002954",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:28.906104"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-90a74ba7d3a6483c9bb2f296f332ad4f"
+}

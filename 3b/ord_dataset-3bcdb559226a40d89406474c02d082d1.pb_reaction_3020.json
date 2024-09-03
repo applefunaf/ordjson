@@ -1,0 +1,245 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[C:1]([N:4]1[C:12]2[C:7](=[CH:8][C:9]([O:13][CH3:14])=[CH:10][CH:11]=2)[CH:6]([CH2:15][CH2:16][NH:17][C:18](=[O:20])[CH3:19])[CH2:5]1)(=[O:3])[CH3:2].[Cl-:21].[Na+]>C(#N)C.ClCCl>[C:1]([N:4]1[C:12]2[C:7](=[CH:8][C:9]([O:13][CH3:14])=[C:10]([Cl:21])[CH:11]=2)[CH:6]([CH2:15][CH2:16][NH:17][C:18](=[O:20])[CH3:19])[CH2:5]1)(=[O:3])[CH3:2] |f:1.2|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sodium chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Cl-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/ClH.Na/h1H;/q;+1/p-1"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 0.5,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "dichloromethane"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClCCl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 10.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m1_m4_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-[2-(1-acetyl-5-methoxyindolin-3-yl)ethyl]acetamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)N1CC(C2=CC(=CC=C12)OC)CCNC(C)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C15H20N2O3/c1-10(18)16-7-6-12-9-17(11(2)19)15-5-4-13(20-3)8-14(12)15/h4-5,8,12H,6-7,9H2,1-3H3,(H,16,18)"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.29,
+              "units": "MILLIMOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "bis(trifluoroacetoxyiodobenzene)"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acetonitrile"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)#N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H3N/c1-2-3/h1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 1.5,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "stirring for 1 min at room temperature"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a solution of N-[2-(1-acetyl-5-methoxyindolin-3-yl)ethyl]acetamide (0.29 mmol) in acetonitrile (1.5 ml) is added bis(trifluoroacetoxyiodobenzene) (PIFA 1.2 eq) and the medium is left stirring for 1 min at room temperature. Saturated sodium chloride solution (0.5 ml) is next added and, after 15 min, the mixture is diluted with dichloromethane (10 ml) and dried over magnesium sulphate. The crude product obtained after evaporation is chromatographed on a column of flash silica (5/95 methanol/dichloromethane) and N-[2-(l-acetyl-6-chloro-5-methoxyindolin-3-yl)ethyl]acetamide (70 mg) is thus obtained."
+  },
+  "workups": [
+    {
+      "type": "WAIT",
+      "details": "the medium is left"
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "dried over magnesium sulphate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "magnesium sulphate"
+              },
+              {
+                "type": "SMILES",
+                "value": "S(=O)(=O)([O-])[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 1.0,
+        "units": "MINUTE"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "crude product"
+            },
+            {
+              "type": "NAME",
+              "value": "N-[2-(1-acetyl-6-chloro-5-methoxyindolin-3-yl) ethyl]acetamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)N1CC(C2=CC(=C(C=C12)Cl)OC)CCNC(C)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C15H19ClN2O3/c1-9(19)17-5-4-11-8-18(10(2)20)14-7-13(16)15(21-3)6-12(11)14/h6-7,11H,4-5,8H2,1-3H3,(H,17,19)"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06004991",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:18.949399"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-7f9f2a6716c848deb5b5d78d181730e6"
+}

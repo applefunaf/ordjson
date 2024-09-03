@@ -1,0 +1,282 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH:1]([C:3]1[CH:21]=[CH:20][C:6]([CH2:7][CH:8]([C:14]2([O:19][CH2:18][CH2:17][O:16]2)[CH3:15])[C:9]([O:11]CC)=[O:10])=[CH:5][CH:4]=1)=[CH2:2].[NH4+].[OH-].Cl.[C:25]1(=O)OCC[CH2:26]1>>[CH2:25]([C:8]([CH2:7][C:6]1[CH:5]=[CH:4][C:3]([CH:1]=[CH2:2])=[CH:21][CH:20]=1)([C:14]1([O:16][CH2:17][CH2:18][O:19]1)[CH3:15])[C:9]([OH:11])=[O:10])[CH3:26] |f:1.2|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "NH4OH"
+            },
+            {
+              "type": "SMILES",
+              "value": "[NH4+].[OH-]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H3N.H2O/h1H3;1H2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m1_m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Ethyl 2-(4-vinylbenzyl)-3,3-(ethylenedioxy)butanoate"
+            },
+            {
+              "type": "NAME",
+              "value": "ethyl 2-(4-vinylbenzyl)-3,3-(ethylenedioxy)butanoate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(=C)C1=CC=C(CC(C(=O)OCC)C2(C)OCCO2)C=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C17H22O4/c1-4-13-6-8-14(9-7-13)12-15(16(18)19-5-2)17(3)20-10-11-21-17/h4,6-9,15H,1,5,10-12H2,2-3H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 1.9,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "g-butyrolactone"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1(CCCO1)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H6O2/c5-4-2-1-3-6-4/h1-3H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 30.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "resultant solution"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "HCl"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/ClH/h1H"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 110.0,
+        "units": "CELSIUS"
+      }
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "Ethyl 2-(4-vinylbenzyl)-3,3-(ethylenedioxy)butanoate polymer (formed in Example 3) (1.9 g, 7.7 mmol) was dissolved in g-butyrolactone (30 ml). A solution of NH4OH (30% in water) was added and the solution warmed to 110 ° C. for 5 hours. The resultant solution was made slightly acidic with the addition of HCl and the ethyl 2-(4-vinylbenzyl)-3,3-(ethylenedioxy)butanoic acid polymer precipitated into toluene and dried as a white powder (0.6g)."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "the ethyl 2-(4-vinylbenzyl)-3,3-(ethylenedioxy)butanoic acid polymer precipitated into toluene",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl 2-(4-vinylbenzyl)-3,3-(ethylenedioxy)butanoic acid"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)C(C(=O)O)(C1(C)OCCO1)CC1=CC=C(C=C1)C=C"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C17H22O4/c1-4-13-6-8-14(9-7-13)12-17(5-2,15(18)19)16(3)20-10-11-21-16/h4,6-9H,1,5,10-12H2,2-3H3,(H,18,19)"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "toluene"
+              },
+              {
+                "type": "SMILES",
+                "value": "C1(=CC=CC=C1)C"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C7H8/c1-7-5-3-2-4-6-7/h2-6H,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "dried as a white powder (0.6g)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "powder"
+              }
+            ],
+            "amount": {
+              "mass": {
+                "value": 0.6,
+                "units": "GRAM"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethyl 2-(4-vinylbenzyl)-3,3-(ethylenedioxy)butanoic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)C(C(=O)O)(C1(C)OCCO1)CC1=CC=C(C=C1)C=C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C17H22O4/c1-4-13-6-8-14(9-7-13)12-17(5-2,15(18)19)16(3)20-10-11-21-16/h4,6-9H,1,5,10-12H2,2-3H3,(H,18,19)"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998092",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:16.060000"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-a70dcb38784641269407135c32bc4b0f"
+}

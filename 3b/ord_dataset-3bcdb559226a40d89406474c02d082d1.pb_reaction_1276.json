@@ -1,0 +1,313 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[O:1]=[C:2]([CH2:8][CH2:9][CH2:10][CH2:11][CH3:12])[CH2:3][C:4]([O:6][CH3:7])=[O:5].CO.[H][H]>C(Cl)Cl.[Ru]>[OH:1][C@@H:2]([CH2:8][CH2:9][CH2:10][CH2:11][CH3:12])[CH2:3][C:4]([O:6][CH3:7])=[O:5]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Hastelloy"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methyl 3-oxooctanoate"
+            },
+            {
+              "type": "SMILES",
+              "value": "O=C(CC(=O)OC)CCCCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H16O3/c1-3-4-5-6-8(10)7-9(11)12-2/h3-7H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 20.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 50.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m4_m7_m6": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Ru2Cl4 ((-)-(T)BINAP)2Et3N"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 140.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methylene chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(Cl)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 1.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ruthenium"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Ru]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Ru"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "CATALYST"
+        }
+      ]
+    },
+    "m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrogen"
+            },
+            {
+              "type": "SMILES",
+              "value": "[H][H]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2/h1H"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "Into a 100-ml autoclave (made of Hastelloy) were introduced 20 g of methyl 3-oxooctanoate (manufactured by Inoue Perfumery Mfg. Co., Ltd.) and 50 ml of methanol. The atmosphere in the autoclave was replaced with nitrogen gas. Thereto was added a solution prepared by dissolving 140 mg of Ru2Cl4 ((-)-(T)BINAP)2Et3N as a ruthenium-optically active phosphine complex in 1.0 ml of methylene chloride. Asymmetric hydrogenation was conducted at a reaction temperature of 65° C. and a hydrogen pressure of 30 atm. After the reaction mixture was thus reacted for 6 hours, it was taken out of the autoclave. The methanol was distilled off, and the residue was subjected to vacuum distillation to obtain 19.4 g of methyl (S)-3-hydroxyoctanoate. Yield, 96%."
+  },
+  "workups": [
+    {
+      "type": "ADDITION",
+      "details": "Thereto was added a solution"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "prepared"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "was conducted at a reaction temperature of 65° C.",
+      "temperature": {
+        "setpoint": {
+          "value": 65.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "After the reaction mixture was thus reacted for 6 hours",
+      "duration": {
+        "value": 6.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "DISTILLATION",
+      "details": "The methanol was distilled off",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "methanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "CO"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DISTILLATION",
+      "details": "the residue was subjected to vacuum distillation"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methyl (S)-3-hydroxyoctanoate"
+            },
+            {
+              "type": "SMILES",
+              "value": "O[C@H](CC(=O)OC)CCCCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H18O3/c1-3-4-5-6-8(10)7-9(11)12-2/h8,10H,3-7H2,1-2H3/t8-/m0/s1"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 19.4,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 95.9
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998668",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:35.565638"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-4b92dff144d248a589ce7194ce76eebe"
+}

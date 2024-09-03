@@ -1,0 +1,217 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[Cl:1][C:2]1[CH:27]=[CH:26][CH:25]=[C:24]([Cl:28])[C:3]=1[C:4]([NH:6][C:7]1[CH:8]=[CH:9][CH:10]=[C:11]2[C:16]=1[N:15]=[CH:14][C:13](/[CH:17]=[CH:18]/[C:19]([O:21][CH2:22][CH3:23])=[O:20])=[CH:12]2)=[O:5]>O1CCOCC1.[Pt](=O)=O>[Cl:1][C:2]1[CH:27]=[CH:26][CH:25]=[C:24]([Cl:28])[C:3]=1[C:4]([NH:6][C:7]1[CH:8]=[CH:9][CH:10]=[C:11]2[C:16]=1[N:15]=[CH:14][C:13]([CH2:17][CH2:18][C:19]([O:21][CH2:22][CH3:23])=[O:20])=[CH:12]2)=[O:5]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m3_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "8-(2,6-dichlorobenzoylamino)-3-((E)-2-ethoxycarbonylvinyl)quinoline"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC1=C(C(=O)NC=2C=CC=C3C=C(C=NC23)\\C=C\\C(=O)OCC)C(=CC=C1)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C21H16Cl2N2O3/c1-2-28-18(26)10-9-13-11-14-5-3-8-17(20(14)24-12-13)25-21(27)19-15(22)6-4-7-16(19)23/h3-12H,2H2,1H3,(H,25,27)/b10-9+"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 40.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "dioxane"
+            },
+            {
+              "type": "SMILES",
+              "value": "O1CCOCC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O2/c1-2-6-4-3-5-1/h1-4H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 1.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "platinum (IV) oxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Pt](=O)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/2O.Pt"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 5.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "CATALYST"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "was stirred for 3 hours at ambient temperature under hydrogen atmosphere"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture of 8-(2,6-dichlorobenzoylamino)-3-((E)-2-ethoxycarbonylvinyl)quinoline (40 mg) and platinum (IV) oxide (5 mg) in dioxane (1 ml) was stirred for 3 hours at ambient temperature under hydrogen atmosphere. Insoluble material was filtered off and the filtrate was concentrated in vacuo. The residue was purified by preparative thin layer chromatography (ethyl acetate-n-hexane) to give 8-(2,6-dichlorobenzoylamino)-3-(2-ethoxycarbonylethyl)quinoline (16 mg)."
+  },
+  "workups": [
+    {
+      "type": "FILTRATION",
+      "details": "Insoluble material was filtered off"
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "the filtrate was concentrated in vacuo"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The residue was purified by preparative thin layer chromatography (ethyl acetate-n-hexane)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate n-hexane"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC.CCCCCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C6H14.C4H8O2/c1-3-5-6-4-2;1-3-6-4(2)5/h3-6H2,1-2H3;3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 3.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "8-(2,6-dichlorobenzoylamino)-3-(2-ethoxycarbonylethyl)quinoline"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC1=C(C(=O)NC=2C=CC=C3C=C(C=NC23)CCC(=O)OCC)C(=CC=C1)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C21H18Cl2N2O3/c1-2-28-18(26)10-9-13-11-14-5-3-8-17(20(14)24-12-13)25-21(27)19-15(22)6-4-7-16(19)23/h3-8,11-12H,2,9-10H2,1H3,(H,25,27)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 16.0,
+                  "units": "MILLIGRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 39.8
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06008230",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:21.606015"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-0ff8a376a0984408839de3ccf12c8109"
+}

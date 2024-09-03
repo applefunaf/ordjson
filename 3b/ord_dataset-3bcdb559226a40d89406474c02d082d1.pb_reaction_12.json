@@ -1,0 +1,238 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[C:1]([O:7][CH2:8][CH3:9])(=[O:6])[CH2:2][C:3]([CH3:5])=[O:4].[O-]CC.[Na+].[CH:14]([C:16]1[CH:23]=[CH:22][C:19]([CH2:20]Cl)=[CH:18][CH:17]=1)=[CH2:15]>C(O)C>[CH:14]([C:16]1[CH:23]=[CH:22][C:19]([CH2:20][CH:2]([C:3](=[O:4])[CH3:5])[C:1]([O:7][CH2:8][CH3:9])=[O:6])=[CH:18][CH:17]=1)=[CH2:15] |f:1.2|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-Vinylbenzyl chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(=C)C1=CC=C(CCl)C=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H9Cl/c1-2-8-3-5-9(7-10)6-4-8/h2-6H,1,7H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 33.92,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2_m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Ethyl acetoacetate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(CC(=O)C)(=O)OCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H10O3/c1-3-9-6(8)4-5(2)7/h3-4H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 27.61,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 100.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sodium ethoxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "[O-]CC.[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H5O.Na/c1-2-3;/h2H2,1H3;/q-1;+1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 15.59,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "Ethyl acetoacetate (27.61 g, 0.21 mol) was dissolved in ethanol (100 ml) which was cooled in an ice-water bath, and sodium ethoxide (15.59 g, 0.22 mol) was added. 4-Vinylbenzyl chloride (33.92 g, 0.2 mole) was added. The mixture was refluxed for 16 hours, then the resulting slurry was filtered to remove any salt, and the solution collected. The solvent was removed under reduced pressure to give ethyl 2-(4-vinylbenzyl)-3-oxobutanoate in the form of a light red liquid (49 g) in 95% yield."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "was cooled in an ice-water bath"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "The mixture was refluxed for 16 hours",
+      "duration": {
+        "value": 16.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "the resulting slurry was filtered"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to remove any salt"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the solution collected"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The solvent was removed under reduced pressure"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethyl 2-(4-vinylbenzyl)-3-oxobutanoate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(=C)C1=CC=C(CC(C(=O)OCC)C(C)=O)C=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C15H18O3/c1-4-12-6-8-13(9-7-12)10-14(11(3)16)15(17)18-5-2/h4,6-9,14H,1,5,10H2,2-3H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 95.0
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "liquid"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 49.0,
+                  "units": "GRAM"
+                }
+              }
+            }
+          ],
+          "texture": {
+            "type": "CUSTOM",
+            "details": "liquid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998092",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:16.052075"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-2068622bef2e4f6bb930d7ee2f308d0b"
+}

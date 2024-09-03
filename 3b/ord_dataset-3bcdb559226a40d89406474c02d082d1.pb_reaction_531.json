@@ -1,0 +1,169 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[C:1]([CH2:3][C:4](=[NH:8])OCC)#[N:2].[NH:9]1[CH2:14][CH2:13][O:12][CH2:11][CH2:10]1>C(O)C>[NH2:8][C:4]([N:9]1[CH2:14][CH2:13][O:12][CH2:11][CH2:10]1)=[CH:3][C:1]#[N:2]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m3_m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethyl 2-cyanoacetimidate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(#N)CC(OCC)=N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C5H8N2O/c1-2-8-5(7)3-4-6/h7H,2-3H2,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 1.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 10.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "morpholine"
+            },
+            {
+              "type": "SMILES",
+              "value": "N1CCOCC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H9NO/c1-3-6-4-2-5-1/h5H,1-4H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.78,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "The mixture was stirred at room temperature for 4 hours"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "In anhydrous ethanol (10 ml) was dissolved ethyl 2-cyanoacetimidate (1.0 g), followed by addition of morpholine (0.78 g). The mixture was stirred at room temperature for 4 hours, and the separated crystals were collected by filtration. This crystal crop was used as it was in the next reaction."
+  },
+  "workups": [
+    {
+      "type": "FILTRATION",
+      "details": "the separated crystals were collected by filtration"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "was in the next reaction"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 4.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3-Amino-3-morpholinoacrylonitrile"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC(=CC#N)N1CCOCC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H11N3O/c8-2-1-7(9)10-3-5-11-6-4-10/h1H,3-6,9H2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998459",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:25.050278"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-007f37c576bd446793605b8aa1a181ca"
+}

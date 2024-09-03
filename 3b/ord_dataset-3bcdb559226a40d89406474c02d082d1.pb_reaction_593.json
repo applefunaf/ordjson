@@ -1,0 +1,204 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[F:1][C:2]1[CH:3]=[C:4]([CH:11]=[CH:12][C:13]=1[O:14][CH3:15])[CH:5]=[C:6]([CH3:10])[C:7]([OH:9])=[O:8].[H][H]>CO.[Pt]=O>[F:1][C:2]1[CH:3]=[C:4]([CH:11]=[CH:12][C:13]=1[O:14][CH3:15])[CH2:5][CH:6]([CH3:10])[C:7]([OH:9])=[O:8]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "platinum oxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Pt]=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/O.Pt"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 1.5,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "CATALYST"
+        }
+      ]
+    },
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3-Fluoro-4-methoxy-α-methylcinnamic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "FC=1C=C(C=C(C(=O)O)C)C=CC1OC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C11H11FO3/c1-7(11(13)14)5-8-3-4-10(15-2)9(12)6-8/h3-6H,1-2H3,(H,13,14)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 49.5,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrogen"
+            },
+            {
+              "type": "SMILES",
+              "value": "[H][H]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2/h1H"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 800.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 60.0,
+        "units": "CELSIUS"
+      }
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "3-Fluoro-4-methoxy-α-methylcinnamic acid (49.5 g; 0.236 mol), in 800 ml methanol is hydrogenated at 43 lbs. pressure and room temperature until the theoretical uptake of hydrogen has occurred (24 min at 20° C., using 1.5 g platinum oxide catalyst). The solution is filtered and then evaporated with warming to 60° C. to give 3-fluoro-4-methoxy-α-methyl dihydrocinnamic acid Rf 0.5 on silica-gel G with methylene chloride-methanol (9:1)."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "pressure and room temperature",
+      "temperature": {
+        "control": {
+          "type": "AMBIENT"
+        }
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "The solution is filtered"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "evaporated"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3-fluoro-4-methoxy-α-methyl dihydrocinnamic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "FC=1C=C(CC(C(=O)O)C)C=CC1OC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C11H13FO3/c1-7(11(13)14)5-8-3-4-10(15-2)9(12)6-8/h3-4,6-7H,5H2,1-2H3,(H,13,14)"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998477",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:25.817901"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-d1d74c30b96546e6909ed6ebb9dbdbe7"
+}

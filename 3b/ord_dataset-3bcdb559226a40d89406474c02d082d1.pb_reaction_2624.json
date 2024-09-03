@@ -1,0 +1,357 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "Cl[C:2]1[C:11]2[C:6](=[CH:7][C:8]([O:15][CH3:16])=[C:9]([N+:12]([O-:14])=[O:13])[CH:10]=2)[N:5]=[CH:4][C:3]=1[C:17]#[N:18].[Br:19][C:20]1[CH:21]=[C:22]([CH:24]=[CH:25][C:26]=1[F:27])[NH2:23]>COC(O)C.C(OCC)(=O)C>[Br:19][C:20]1[CH:21]=[C:22]([NH:23][C:2]2[C:11]3[C:6](=[CH:7][C:8]([O:15][CH3:16])=[C:9]([N+:12]([O-:14])=[O:13])[CH:10]=3)[N:5]=[CH:4][C:3]=2[C:17]#[N:18])[CH:24]=[CH:25][C:26]=1[F:27]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethyl acetate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)OCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m1_m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-chloro-7-methoxy -6-nitro-3-quinolinecarbonitrile"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC1=C(C=NC2=CC(=C(C=C12)[N+](=O)[O-])OC)C#N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C11H6ClN3O3/c1-18-10-3-8-7(2-9(10)15(16)17)11(12)6(4-13)5-14-8/h2-3,5H,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 3.52,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3-bromo-4-fluoro aniline"
+            },
+            {
+              "type": "SMILES",
+              "value": "BrC=1C=C(N)C=CC1F"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H5BrFN/c7-5-3-4(9)1-2-6(5)8/h1-3H,9H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 2.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methoxyethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "COC(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H8O2/c1-3(4)5-2/h3-4H,1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 150.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture of 3.52 g (9.7 mmol) of 4-chloro-7-methoxy -6-nitro-3-quinolinecarbonitrile and 2.0 g (10.7 mmol) of 3-bromo-4-fluoro aniline in 150 ml of methoxyethanol was refluxed under nitrogen for 5.5 hours. The reaction mixture was diluted with ethyl acetate and wash with sodium bicarbonate solution and sodium chloride solution. The organic layer was dried with sodium sulfate and then solvent was removed under vacuum. The residue was chromatographed on silica gel eluting with mixture of ethyl acetate and methanol to give 3 g of yellow solid: mass spectrum (electrospray, m/e): 416.8 and 418.8."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "was refluxed under nitrogen for 5.5 hours",
+      "duration": {
+        "value": 5.5,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "wash with sodium bicarbonate solution and sodium chloride solution",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "sodium bicarbonate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C([O-])(O)=O.[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2O3.Na/c2-1(3)4;/h(H2,2,3,4);/q;+1/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "sodium chloride"
+              },
+              {
+                "type": "SMILES",
+                "value": "[Cl-].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH.Na/h1H;/q;+1/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "The organic layer was dried with sodium sulfate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "sodium sulfate"
+              },
+              {
+                "type": "SMILES",
+                "value": "S(=O)(=O)([O-])[O-].[Na+].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/2Na.H2O4S/c;;1-5(2,3)4/h;;(H2,1,2,3,4)/q2*+1;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "solvent was removed under vacuum"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The residue was chromatographed on silica gel eluting with mixture of ethyl acetate and methanol",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "methanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "CO"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "yellow solid"
+            },
+            {
+              "type": "NAME",
+              "value": "4-(3-Bromo-4-fluoro-phenylamino)-7-methoxy-6-nitro-quinoline-3-carbonitrile"
+            },
+            {
+              "type": "SMILES",
+              "value": "BrC=1C=C(C=CC1F)NC1=C(C=NC2=CC(=C(C=C12)[N+](=O)[O-])OC)C#N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C17H10BrFN4O3/c1-26-16-6-14-11(5-15(16)23(24)25)17(9(7-20)8-21-14)22-10-2-3-13(19)12(18)4-10/h2-6,8H,1H3,(H,21,22)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 3.0,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 74.1
+              }
+            }
+          ],
+          "isolated_color": "yellow",
+          "texture": {
+            "type": "CUSTOM",
+            "details": "solid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06002008",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:26.970079"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-b9a1c9e4552b4f0ea40172a67bea4baf"
+}

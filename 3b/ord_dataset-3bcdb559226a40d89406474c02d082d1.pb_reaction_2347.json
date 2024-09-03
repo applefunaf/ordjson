@@ -1,0 +1,233 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][N:2]([CH3:14])[C:3](=[O:13])[C:4]1[CH:9]=[CH:8][C:7]([OH:10])=[C:6]([O:11][CH3:12])[CH:5]=1.C(=O)([O-])[O-].[K+].[K+].[Br:21][CH2:22][CH2:23][CH2:24]Br>C(#N)C>[CH3:14][N:2]([CH3:1])[C:3](=[O:13])[C:4]1[CH:9]=[CH:8][C:7]([O:10][CH2:24][CH2:23][CH2:22][Br:21])=[C:6]([O:11][CH3:12])[CH:5]=1 |f:1.2.3|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "1,3dibromopropane"
+            },
+            {
+              "type": "SMILES",
+              "value": "BrCCCBr"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H6Br2/c4-2-1-3-5/h1-3H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 11.6,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m1_m4_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N,N-dimethyl-4-hydroxy-3-methoxybenzamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN(C(C1=CC(=C(C=C1)O)OC)=O)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C10H13NO3/c1-11(2)10(13)7-4-5-8(12)9(6-7)14-3/h4-6,12H,1-3H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 5.64,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "potassium carbonate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C([O-])([O-])=O.[K+].[K+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2O3.2K/c2-1(3)4;;/h(H2,2,3,4);;/q;2*+1/p-2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 7.9,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acetonitrile"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)#N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H3N/c1-2-3/h1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 450.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "stirred at room temperature for 12 hours"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To N,N-dimethyl-4-hydroxy-3-methoxybenzamide (5.64 g, 28.7 mmol) in acetonitrile (450 ml) was added potassium carbonate (7.9 g) followed by 1,3dibromopropane (11.6 g). The resulting reaction mixture was refluxed for 3 hours and stirred at room temperature for 12 hours. The mixture was filtered and concentrated to an oil. Following purification by column chromatography, N,N-dimethyl-4-bromopropoxy-3-methoxybenzamide as a colorless oil (7.6 g) was obtained."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "The resulting reaction mixture"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "was refluxed for 3 hours",
+      "duration": {
+        "value": 3.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "The mixture was filtered"
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated to an oil"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "purification by column chromatography"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 12.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N,N-dimethyl-4-bromopropoxy-3-methoxybenzamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN(C(C1=CC(=C(C=C1)OCCCBr)OC)=O)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C13H18BrNO3/c1-15(2)13(16)10-5-6-11(12(9-10)17-3)18-8-4-7-14/h5-6,9H,4,7-8H2,1-3H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 7.6,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 83.7
+              }
+            }
+          ],
+          "isolated_color": "colorless",
+          "texture": {
+            "type": "OIL",
+            "details": "oil"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06001834",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:22.261922"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-ee0af3ff02074c97b9e209521f2a3da2"
+}

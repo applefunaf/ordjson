@@ -1,0 +1,326 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][O:2][C:3]1[CH:10]=[CH:9][C:8]([O:11][CH3:12])=[CH:7][C:4]=1[CH:5]=O.N1CCCCC1.C(O)(=O)[CH2:20][C:21]([OH:23])=[O:22].Cl>N1C=CC=CC=1.O>[CH3:1][O:2][C:3]1[CH:10]=[CH:9][C:8]([O:11][CH3:12])=[CH:7][C:4]=1/[CH:5]=[CH:20]/[C:21]([OH:23])=[O:22]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrochloric acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/ClH/h1H"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m6": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 80.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Piperidine"
+            },
+            {
+              "type": "SMILES",
+              "value": "N1CCCCC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C5H11N/c1-2-4-6-5-3-1/h6H,1-5H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 0.2,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "malonic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(CC(=O)O)(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H4O4/c4-2(5)1-3(6)7/h1H2,(H,4,5)(H,6,7)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 2.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m1_m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2,5-Dimethoxybenzaldehyde"
+            },
+            {
+              "type": "SMILES",
+              "value": "COC1=C(C=O)C=C(C=C1)OC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H10O3/c1-11-8-3-4-9(12-2)7(5-8)6-10/h3-6H,1-2H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 1.7,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "pyridine"
+            },
+            {
+              "type": "SMILES",
+              "value": "N1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C5H5N/c1-2-4-6-5-3-1/h1-5H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 10.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 85.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "The solution was stirred for 1 hour at 85° C."
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "2,5-Dimethoxybenzaldehyde (1.7 g) was dissolved in pyridine (10 ml). Piperidine (0.2 ml) and malonic acid (2.0 g) were added to the soluton. The solution was stirred for 1 hour at 85° C. and then for 3 hr. at 110° C. The solution was cooled. Water (80 ml) was added to the solution. Conc. hydrochloric acid was added to the solution until pH of the solution was down to about 2. The crystals were deposited. The crystals were separated from the solution by filtration, washed with water and dried to give the title compound (1.97 g) having the following physical data."
+  },
+  "workups": [
+    {
+      "type": "WAIT",
+      "details": "for 3 hr",
+      "duration": {
+        "value": 3.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "at 110° C",
+      "temperature": {
+        "setpoint": {
+          "value": 110.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "The solution was cooled"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The crystals were separated from the solution by filtration"
+    },
+    {
+      "type": "WASH",
+      "details": "washed with water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 1.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "3-(1,4-dimethoxybenzen-2-yl)prop-2E-enoic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "COC1=C(C=C(C=C1)OC)/C=C/C(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C11H12O4/c1-14-9-4-5-10(15-2)8(7-9)3-6-11(12)13/h3-7H,1-2H3,(H,12,13)/b6-3+"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 1.97,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 92.5
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06001877",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:19.509978"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-f5d6042b02f2425b808c3cbaf1ee382a"
+}

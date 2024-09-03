@@ -1,0 +1,289 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[Cl-].C[N+](C)(C)CCOC(=O)C=C.[C:13]([NH:17][C:18](=[O:21])[CH:19]=[CH2:20])([CH3:16])([CH3:15])[CH3:14].[C:22]([NH2:26])(=[O:25])[CH:23]=[CH2:24]>C(O)(C)C>[C:13]([NH:17][C:18](=[O:21])[CH:19]=[CH2:20])([CH3:16])([CH3:15])[CH3:14].[C:22]([NH2:26])(=[O:25])[CH:23]=[CH2:24] |f:0.1,5.6|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acrylamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C=C)(=O)N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H5NO/c1-2-3(4)5/h2H,1H2,(H2,4,5)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 8.06,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "aqueous solution"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-trimethylammonioethylacrylate chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Cl-].C[N+](CCOC(C=C)=O)(C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H16NO2.ClH/c1-5-8(10)11-7-6-9(2,3)4;/h5H,1,6-7H2,2-4H3;1H/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "isopropanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H8O/c1-3(2)4/h3-4H,1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 150.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-t-butylacrylamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(C)(C)NC(C=C)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H13NO/c1-5-6(9)8-7(2,3)4/h5H,1H2,2-4H3,(H,8,9)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 8.06,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 75.0,
+        "units": "CELSIUS"
+      }
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a 500 mL round-bottom, three-neck flask fitted with a thermocouple, reflux condenser, and septum was added 150 mL of isopropanol followed by 16.13 g of a 50% aqueous solution of 2-trimethylammonioethylacrylate chloride, 8.06 g of N-t-butylacrylamide, and 8.06 g of acrylamide. The solution was purged with nitrogen for 1 hour and 0.5 g AIBN was added. The mixture was purged for ~ 15 minutes until all of the AIBN dissolved. The solution was heated to 75° C. under nitrogen for 16 hours."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "To a 500 mL round-bottom, three-neck flask fitted with a thermocouple"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "reflux condenser"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The solution was purged with nitrogen for 1 hour",
+      "duration": {
+        "value": 1.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "ADDITION",
+      "details": "0.5 g AIBN was added",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "AIBN"
+              },
+              {
+                "type": "SMILES",
+                "value": "CC(C)(C#N)N=NC(C)(C)C#N"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C8H12N4/c1-7(2,5-9)11-12-8(3,4)6-10/h1-4H3"
+              }
+            ],
+            "amount": {
+              "mass": {
+                "value": 0.5,
+                "units": "GRAM"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The mixture was purged for ~ 15 minutes until all of the AIBN",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "AIBN"
+              },
+              {
+                "type": "SMILES",
+                "value": "CC(C)(C#N)N=NC(C)(C)C#N"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C8H12N4/c1-7(2,5-9)11-12-8(3,4)6-10/h1-4H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DISSOLUTION",
+      "details": "dissolved"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-t-Butylacrylamide Acrylamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(C)(C)NC(C=C)=O.C(C=C)(=O)N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H13NO.C3H5NO/c1-5-6(9)8-7(2,3)4;1-2-3(4)5/h5H,1H2,2-4H3,(H,8,9);2H,1H2,(H2,4,5)"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06007803",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:16.097757"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-8861da523e224b2c8a84be68616e2e80"
+}

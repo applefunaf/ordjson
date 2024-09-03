@@ -1,0 +1,312 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "O[CH2:2][CH2:3][O:4][CH2:5][CH:6]=[CH2:7].C(N(C(C)C)CC)(C)C.[CH3:17][S:18](Cl)(=[O:20])=[O:19]>ClCCl>[CH3:17][S:18]([CH2:2][CH2:3][O:4][CH2:5][CH:6]=[CH2:7])(=[O:20])=[O:19]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "dichloromethane"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClCCl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 20.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "allyl hydroxyethyl ether"
+            },
+            {
+              "type": "SMILES",
+              "value": "OCCOCC=C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C5H10O2/c1-2-4-7-5-3-6/h2,6H,1,3-5H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 1.02,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "diisopropylethylamine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(C)N(CC)C(C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H19N/c1-6-9(7(2)3)8(4)5/h7-8H,6H2,1-5H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 4.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methanesulfonyl chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "CS(=O)(=O)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH3ClO2S/c1-5(2,3)4/h1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 1.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "Combine allyl hydroxyethyl ether (1.02 g, 10 mmol), and diisopropylethylamine (4.0 mL, 23 mmol), and dichloromethane (20 mL). Cool in an ice-bath. Add dropwise, methanesulfonyl chloride (1.0 mL, 13 mmol). After 1.5 hours, extract the reaction mixture with 1 M aqueous hydrochloric acid solution, saturated aqueous sodium bicarbonate solution, and saturated aqueous sodium chloride solution. Dry the organic layer over Na2SO4, filter, and evaporate invacuo to obtain allyl methanesulfonylethyl ether: Rf =0.80 (silica gel, 20% ethyl acetate/dichloromethane)."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "Cool in an ice-bath"
+    },
+    {
+      "type": "ADDITION",
+      "details": "Add dropwise"
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "extract the reaction mixture with 1 M aqueous hydrochloric acid solution, saturated aqueous sodium bicarbonate solution, and saturated aqueous sodium chloride solution",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "hydrochloric acid"
+              },
+              {
+                "type": "SMILES",
+                "value": "Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH/h1H"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "sodium bicarbonate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C([O-])(O)=O.[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2O3.Na/c2-1(3)4;/h(H2,2,3,4);/q;+1/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "sodium chloride"
+              },
+              {
+                "type": "SMILES",
+                "value": "[Cl-].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH.Na/h1H;/q;+1/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "Dry the organic layer over Na2SO4",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "Na2SO4"
+              },
+              {
+                "type": "SMILES",
+                "value": "[O-]S(=O)(=O)[O-].[Na+].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/2Na.H2O4S/c;;1-5(2,3)4/h;;(H2,1,2,3,4)/q2*+1;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filter"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "evaporate invacuo"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 1.5,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "allyl methanesulfonylethyl ether"
+            },
+            {
+              "type": "SMILES",
+              "value": "CS(=O)(=O)CCOCC=C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H12O3S/c1-3-4-9-5-6-10(2,7)8/h3H,1,4-6H2,2H3"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998439",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:20.509197"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-49773dd96dc142c1980df3ce4dd043d7"
+}

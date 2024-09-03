@@ -1,0 +1,242 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "CS(O[CH2:6][CH2:7][C:8]1[CH:12]=[CH:11][O:10][CH:9]=1)(=O)=O.[C:13]1(=[O:23])[NH:17][C:16](=[O:18])[C:15]2=[CH:19][CH:20]=[CH:21][CH:22]=[C:14]12.[K].O>CN(C)C=O>[O:10]1[CH:11]=[CH:12][C:8]([CH2:7][CH2:6][N:17]2[C:16](=[O:18])[C:15]3=[CH:19][CH:20]=[CH:21][CH:22]=[C:14]3[C:13]2=[O:23])=[CH:9]1 |f:1.2,^1:23|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m1_m4_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-(3-furyl)ethyl methanesulfonate"
+            },
+            {
+              "type": "SMILES",
+              "value": "CS(=O)(=O)OCCC1=COC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H10O4S/c1-12(8,9)11-5-3-7-2-4-10-6-7/h2,4,6H,3,5H2,1H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "potassium phthalimide"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1(C=2C(C(N1)=O)=CC=CC2)=O.[K]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H5NO2.K/c10-7-5-3-1-2-4-6(5)8(11)9-7;/h1-4H,(H,9,10,11);"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 14.2,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N,N-dimethylformamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN(C=O)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H7NO/c1-4(2)3-5/h3H,1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 500.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 100.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "stirring at 100° C"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a solution of the 2-(3-furyl)ethyl methanesulfonate in 500 ml of N,N-dimethylformamide, 14.2 g (76.8 mmol) of potassium phthalimide was added, followed by overnight stirring at 100° C. After cooling to room temperature, the reaction mixture was added to water while being stirred vigorously. The resulting precipitate was filtered, washed with water and dried to yield N-[2-(3-furyl)ethyl]phthalimide."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "After cooling to room temperature",
+      "temperature": {
+        "control": {
+          "type": "AMBIENT"
+        }
+      }
+    },
+    {
+      "type": "STIRRING",
+      "details": "while being stirred vigorously"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "The resulting precipitate was filtered"
+    },
+    {
+      "type": "WASH",
+      "details": "washed with water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 8.0,
+        "precision": 8.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-[2-(3-furyl)ethyl]phthalimide"
+            },
+            {
+              "type": "SMILES",
+              "value": "O1C=C(C=C1)CCN1C(C=2C(C1=O)=CC=CC2)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C14H11NO3/c16-13-11-3-1-2-4-12(11)14(17)15(13)7-5-10-6-8-18-9-10/h1-4,6,8-9H,5,7H2"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998433",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:39.792421"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-ee6a041d586442d5b95af9b36bd631a6"
+}

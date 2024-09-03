@@ -1,0 +1,279 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "C([O:4][C:5]1[CH:10]=CC(OC(=O)C)=[CH:7][C:6]=1[O:15]C(=O)C)(=O)C.[CH2:19]([CH:26]([C:32]([CH3:34])=O)[C:27]([O:29][CH2:30][CH3:31])=[O:28])[C:20]1[CH:25]=[CH:24][CH:23]=[CH:22][CH:21]=1.S(=O)(=O)(O)O>>[OH:4][C:5]1[CH:10]=[C:31]2[C:30](=[CH:7][C:6]=1[OH:15])[O:29][C:27](=[O:28])[C:26]([CH2:19][C:20]1[CH:25]=[CH:24][CH:23]=[CH:22][CH:21]=1)=[C:32]2[CH3:34]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ice water"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 350.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m1_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "1,2,4-triacetoxybenzene"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)OC1=C(C=C(C=C1)OC(C)=O)OC(C)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C12H12O6/c1-7(13)16-10-4-5-11(17-8(2)14)12(6-10)18-9(3)15/h4-6H,1-3H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 6.3,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethyl 2-benzylacetoacetate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C1=CC=CC=C1)C(C(=O)OCC)C(=O)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C13H16O3/c1-3-16-13(15)12(10(2)14)9-11-7-5-4-6-8-11/h4-8,12H,3,9H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 5.5,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sulphuric acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "S(O)(O)(=O)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O4S/c1-5(2,3)4/h(H2,1,2,3,4)"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 35.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "stirring"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "1,2,4-triacetoxybenzene (6.3 g, 25 mmol) and ethyl 2-benzylacetoacetate (5.5 g, 25 mmol) were heated together as described in Example 1. 75% sulphuric acid (35 ml) was added to the stirred solution and stirring continued for 16 hours. The dark coloured suspension was poured into ice/water (350 ml) with good stirring and the grey suspension filtered and the residue washed with abundant water. The residual solid was air dried and recrystallised from hot ethanol with subsequent addition of a little water to aid crystallisation. The esculetin derivative formed small white needles (5.5 g, 75.3%)."
+  },
+  "workups": [
+    {
+      "type": "STIRRING",
+      "details": "with good stirring"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "the grey suspension filtered"
+    },
+    {
+      "type": "WASH",
+      "details": "the residue washed with abundant water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "recrystallised from hot ethanol with subsequent addition of a little water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "crystallisation"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 16.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "6,7-dihydroxy-3-benzyl-4-methyl Coumarin"
+            },
+            {
+              "type": "SMILES",
+              "value": "OC=1C=C2C(=C(C(OC2=CC1O)=O)CC1=CC=CC=C1)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C17H14O4/c1-10-12-8-14(18)15(19)9-16(12)21-17(20)13(10)7-11-5-3-2-4-6-11/h2-6,8-9,18-19H,7H2,1H3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06008008",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:16.335425"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-a29ec01c446548ebb542a0f28ee242e2"
+}

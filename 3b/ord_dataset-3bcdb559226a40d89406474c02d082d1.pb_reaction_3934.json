@@ -1,0 +1,281 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH2:1]([O:5][C:6]1[CH:7]=[C:8]2[C:13](=[CH:14][CH:15]=1)[O:12][C:11]([CH3:17])([CH3:16])[CH:10](OC(=O)C)[CH:9]2[N:22]([CH3:27])[S:23]([CH3:26])(=[O:25])=[O:24])[CH2:2][CH2:3][CH3:4].C1CCN2C(=NCCC2)CC1>C1(C)C=CC=CC=1.CC(=O)OCC>[CH2:1]([O:5][C:6]1[CH:7]=[C:8]2[C:13](=[CH:14][CH:15]=1)[O:12][C:11]([CH3:16])([CH3:17])[CH:10]=[C:9]2[N:22]([CH3:27])[S:23]([CH3:26])(=[O:24])=[O:25])[CH2:2][CH2:3][CH3:4]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "EA"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC(OCC)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m1_m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-(6-butoxy-3-acetoxy-2,2-dimethylchroman-4-yl)-N-methyl-methanesulfonamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(CCC)OC=1C=C2C(C(C(OC2=CC1)(C)C)OC(C)=O)N(S(=O)(=O)C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C19H29NO6S/c1-7-8-11-24-14-9-10-16-15(12-14)17(20(5)27(6,22)23)18(25-13(2)21)19(3,4)26-16/h9-10,12,17-18H,7-8,11H2,1-6H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.5,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "DBU"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1CCC2=NCCCN2CC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H16N2/c1-2-5-9-10-6-4-8-11(9)7-3-1/h1-8H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 1.1,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "toluene"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1(=CC=CC=C1)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H8/c1-7-5-3-2-4-6-7/h2-6H,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 2.5,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A solution of 0.5 g (1.3 mmol) of N-(6-butoxy-3-acetoxy-2,2-dimethylchroman-4-yl)-N-methyl-methanesulfonamide (Example 6) and 1.1 g (7.5 mmol) of DBU in 2.5 ml of toluene was heated at 105° C. for 60 h. The reaction mixture was diluted with EA and washed with hydrochloric acid until the aqueous phase gave an acidic reaction. The mixture was washed with sodium bicarbonate solution, dried over magnesium sulfate and concentrated i. vac., giving 0.3 9 of N-(6-butoxy-2,2-dimethyl-2H-chromen-4-yl)-N-methyl-methanesulfonamide; m.p. 114-116° C."
+  },
+  "workups": [
+    {
+      "type": "WASH",
+      "details": "washed with hydrochloric acid until the aqueous phase",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "hydrochloric acid"
+              },
+              {
+                "type": "SMILES",
+                "value": "Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH/h1H"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "gave"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "an acidic reaction"
+    },
+    {
+      "type": "WASH",
+      "details": "The mixture was washed with sodium bicarbonate solution",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "sodium bicarbonate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C([O-])(O)=O.[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2O3.Na/c2-1(3)4;/h(H2,2,3,4);/q;+1/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "dried over magnesium sulfate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "magnesium sulfate"
+              },
+              {
+                "type": "SMILES",
+                "value": "S(=O)(=O)([O-])[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated i"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-(6-butoxy-2,2-dimethyl-2H-chromen-4-yl)-N-methyl-methanesulfonamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(CCC)OC=1C=C2C(=CC(OC2=CC1)(C)C)N(S(=O)(=O)C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C17H25NO4S/c1-6-7-10-21-13-8-9-16-14(11-13)15(12-17(2,3)22-16)18(4)23(5,19)20/h8-9,11-12H,6-7,10H2,1-5H3"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06008245",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:20.503079"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-12ad30c2c22d49fbbb031808bd78578b"
+}

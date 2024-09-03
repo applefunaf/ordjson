@@ -1,0 +1,402 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[C:1]([C:5]1[CH:6]=[C:7]([CH:10]=[C:11]([C:14]([CH3:17])([CH3:16])[CH3:15])[C:12]=1[OH:13])[CH:8]=O)([CH3:4])([CH3:3])[CH3:2].[NH2:18][CH2:19][CH2:20][C:21]([OH:23])=[O:22].[SH:24][CH2:25][C:26](O)=[O:27]>C1C=CC=CC=1>[C:1]([C:5]1[CH:6]=[C:7]([CH:8]2[N:18]([CH2:19][CH2:20][C:21]([OH:23])=[O:22])[C:26](=[O:27])[CH2:25][S:24]2)[CH:10]=[C:11]([C:14]([CH3:17])([CH3:16])[CH3:15])[C:12]=1[OH:13])([CH3:4])([CH3:3])[CH3:2]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "benzene"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H6/c1-2-4-6-5-3-1/h1-6H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 500.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3,5-di-tert-butyl-4-hydroxybenzaldehyde"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(C)(C)C=1C=C(C=O)C=C(C1O)C(C)(C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C15H22O2/c1-14(2,3)11-7-10(9-16)8-12(13(11)17)15(4,5)6/h7-9,17H,1-6H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 50.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "β-alanine"
+            },
+            {
+              "type": "SMILES",
+              "value": "NCCC(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H7NO2/c4-2-1-3(5)6/h1-2,4H2,(H,5,6)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 20.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "α-mercaptoacetic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "SCC(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H4O2S/c3-2(4)1-5/h5H,1H2,(H,3,4)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 23.6,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "In benzene (500 ml) were suspended 3,5-di-tert-butyl-4-hydroxybenzaldehyde (50.0 g) and β-alanine (20.0 g) under a nitrogen atmosphere. A Dean-Stark trap was fitted to the reactor, and the suspension was refluxed for 1 hour. After allowing the mixture to cool, α-mercaptoacetic acid (23.6 g) was added, then the mixture was further refluxed for 24 hours. After removal of benzene by evaporation, water (500 ml) was added to the residue, and the mixture was extracted with chloroform. The organic layer was dried over anhydrous sodium sulfate, and the solvent was removed under reduced pressure. The residue was purified by silica gel column chromatography (eluent; chloroform-methanol, 98:2) to afford 54.6 g (67%) of 2-(3,5-di-tert-butyl-4-hydroxyphenyl)-3-(2-carboxyethyl)-1,3-thiazolidin-4-one as colorless crystals. mp 164-165° C. NMR (CDCl3, 200 MHz) δ: 1.42 (18H, s), 2.2-2.5 (1H, m), 2.5-2.8 (1H, m), 3.0-3.3 (1H, m), 3.5-4.0 (3H, m), 5.33 (1H, s), 5.64 (1H, s), 7.09 (2H, s), 8.5 (1H, brs)"
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "A Dean-Stark trap was fitted to the reactor"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "the suspension was refluxed for 1 hour",
+      "duration": {
+        "value": 1.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "to cool"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "the mixture was further refluxed for 24 hours",
+      "duration": {
+        "value": 24.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "After removal of benzene",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "benzene"
+              },
+              {
+                "type": "SMILES",
+                "value": "C1=CC=CC=C1"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C6H6/c1-2-4-6-5-3-1/h1-6H"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "by evaporation, water (500 ml)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 500.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "ADDITION",
+      "details": "was added to the residue"
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "the mixture was extracted with chloroform",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "chloroform"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(Cl)(Cl)Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CHCl3/c2-1(3)4/h1H"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "The organic layer was dried over anhydrous sodium sulfate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "sodium sulfate"
+              },
+              {
+                "type": "SMILES",
+                "value": "S(=O)(=O)([O-])[O-].[Na+].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/2Na.H2O4S/c;;1-5(2,3)4/h;;(H2,1,2,3,4)/q2*+1;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the solvent was removed under reduced pressure"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The residue was purified by silica gel column chromatography (eluent; chloroform-methanol, 98:2)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "chloroform methanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(Cl)(Cl)Cl.CO"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CHCl3.CH4O/c2-1(3)4;1-2/h1H;2H,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-(3,5-di-tert-butyl-4-hydroxyphenyl)-3-(2-carboxyethyl)-1,3-thiazolidin-4-one"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(C)(C)C=1C=C(C=C(C1O)C(C)(C)C)C1SCC(N1CCC(=O)O)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C20H29NO4S/c1-19(2,3)13-9-12(10-14(17(13)25)20(4,5)6)18-21(8-7-16(23)24)15(22)11-26-18/h9-10,18,25H,7-8,11H2,1-6H3,(H,23,24)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 54.6,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 67.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 67.4
+              }
+            }
+          ],
+          "isolated_color": "colorless",
+          "texture": {
+            "type": "CRYSTAL",
+            "details": "crystals"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998452",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:22.048604"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-ad04ec329216432da343a52743dfdc33"
+}

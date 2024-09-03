@@ -1,0 +1,279 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[OH-].[K+].NC1[S:5][C:6]2[C:12]([C:13]([O:15]C)=[O:14])=[CH:11][CH:10]=[CH:9][C:7]=2[N:8]=1>O.O1CCOCC1>[NH2:8][C:7]1[C:6]([SH:5])=[C:12]([CH:11]=[CH:10][CH:9]=1)[C:13]([OH:15])=[O:14] |f:0.1|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "potassium hydroxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "[OH-].[K+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/K.H2O/h;1H2/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 28.9,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 38.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m2_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methyl 2-amino-benzothiazole-7-carboxylate"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC=1SC2=C(N1)C=CC=C2C(=O)OC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H8N2O2S/c1-13-8(12)5-3-2-4-6-7(5)14-9(10)11-6/h2-4H,1H3,(H2,10,11)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 3.5,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "dioxane"
+            },
+            {
+              "type": "SMILES",
+              "value": "O1CCOCC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O2/c1-2-6-4-3-5-1/h1-4H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 38.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 25.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "while stirring"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "28.9 g of potassium hydroxide (85%), dissolved in 38 ml of water, are added dropwise to 3.5 g of methyl 2-amino-benzothiazole-7-carboxylate in 38 ml of dioxane under a nitrogen atmosphere in the course of 20 minutes, while stirring and cooling with ice, such that the internal temperature of 25° C. is not exceeded. Thereafter, the mixture is refluxed at a bath temperature of 140° C., and towards the end of the reaction the internal temperature is increased to 170° C. and dioxane is distilled off by means of a descending condenser. The mixture is then cooled to 0° C. and filtered under a nitrogen atmosphere and the residue is rinsed with 30 ml of ice-water. The title compound can be isolated from the filtrate by acidification to pH 5.5, with severe cooling and stirring at a maximum of 0° C., and extraction with ethyl acetate/tetrahydrofuran (8:2) and washing with concentrated sodium chloride solution. Because of the risk of the formation of the disulfide, the potassium salt in the filtrate (potassium 3-amino-2-mercapto-benzoate) is preferably further reacted directly."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "Thereafter, the mixture is refluxed at a bath temperature of 140° C.",
+      "temperature": {
+        "setpoint": {
+          "value": 140.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "towards the end of the reaction the internal temperature"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "is increased to 170° C.",
+      "temperature": {
+        "setpoint": {
+          "value": 170.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "DISTILLATION",
+      "details": "dioxane is distilled off by means of a descending condenser",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "dioxane"
+              },
+              {
+                "type": "SMILES",
+                "value": "O1CCOCC1"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-2-6-4-3-5-1/h1-4H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "The mixture is then cooled to 0° C.",
+      "temperature": {
+        "setpoint": {
+          "value": 0.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filtered under a nitrogen atmosphere"
+    },
+    {
+      "type": "WASH",
+      "details": "the residue is rinsed with 30 ml of ice-water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ice water"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 30.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "3-Amino-2-mercapto-benzoic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC=1C(=C(C(=O)O)C=CC1)S"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H7NO2S/c8-5-3-1-2-4(6(5)11)7(9)10/h1-3,11H,8H2,(H,9,10)"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06002013",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:20.684488"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-fa1bf3139d664ff7a64ca6e149e167b4"
+}

@@ -1,0 +1,341 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[NH2:1][NH:2][C:3]([NH2:5])=[S:4].[Cl:6][CH2:7][CH2:8][CH2:9][C:10]([C:12]1[CH:17]=[CH:16][C:15]([CH3:18])=[CH:14][CH:13]=1)=O>CO.Cl.O>[CH3:18][C:15]1[CH:16]=[CH:17][C:12]([C:10](=[N:1][NH:2][C:3](=[S:4])[NH2:5])[CH2:9][CH2:8][CH2:7][Cl:6])=[CH:13][CH:14]=1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m3_m4_m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Thiosemicarbazide"
+            },
+            {
+              "type": "SMILES",
+              "value": "NNC(=S)N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH5N3S/c2-1(5)4-3/h3H2,(H3,2,4,5)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 6.84,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-chloro-4'-methylbutyrophenone"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClCCCC(=O)C1=CC=C(C=C1)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C11H13ClO/c1-9-4-6-10(7-5-9)11(13)3-2-8-12/h4-7H,2-3,8H2,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 10.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 175.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "HCl"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/ClH/h1H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 13.5,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 12.5,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "the reaction stirred at room temperature overnight"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "Thiosemicarbazide (6.84 g, 75 mmol) was added under nitrogen to a solution of 4-chloro-4'-methylbutyrophenone (10.0 g, 50 mmol) in 175 mL of methanol plus 13.5 mL of 1 N HCl plus 12.5 mL of water and the reaction stirred at room temperature overnight. The solid formed was collected by filtration and dissolved in methylene chloride. The organic solution was washed multiple times with water, dried (MgSO4) and the solvent removed under reduced pressure to give 10.15 g of an off-white solid. Recrystallization of the solid from isopropyl alcohol gave 8.65 g (64%) of the tide compound as an off-white solid, mp133-135° C."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "The solid formed"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "was collected by filtration"
+    },
+    {
+      "type": "DISSOLUTION",
+      "details": "dissolved in methylene chloride",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "methylene chloride"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(Cl)Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "The organic solution was washed multiple times with water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "dried (MgSO4)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "MgSO4"
+              },
+              {
+                "type": "SMILES",
+                "value": "[O-]S(=O)(=O)[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the solvent removed under reduced pressure"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 8.0,
+        "precision": 8.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "off-white solid"
+            },
+            {
+              "type": "NAME",
+              "value": "2-[1-(4-Methyl-phenyl)-4-chloro-butylidene]-hydrazinecarbothioamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC1=CC=C(C=C1)C(CCCCl)=NNC(N)=S"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C12H16ClN3S/c1-9-4-6-10(7-5-9)11(3-2-8-13)15-16-12(14)17/h4-7H,2-3,8H2,1H3,(H3,14,16,17)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 10.15,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 75.2
+              }
+            }
+          ],
+          "isolated_color": "off-white",
+          "texture": {
+            "type": "CUSTOM",
+            "details": "solid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06008362",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:25.072646"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-5f1abbbe2bbd47828c907cf2310e5e60"
+}

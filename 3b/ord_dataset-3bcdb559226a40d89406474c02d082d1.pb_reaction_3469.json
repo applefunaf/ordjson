@@ -1,0 +1,360 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[C:1]1([CH3:8])[CH:6]=[CH:5][C:4]([CH3:7])=[CH:3][CH:2]=1.[Br:9][CH2:10][C:11](Cl)=[O:12].[Cl-].[Al+3].[Cl-].[Cl-].Cl>ClCCCl>[Br:9][CH2:10][C:11]([C:2]1[CH:3]=[C:4]([CH3:7])[CH:5]=[CH:6][C:1]=1[CH3:8])=[O:12] |f:2.3.4.5|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "HCl"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/ClH/h1H"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m1_m2_m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "para-xylene"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1(=CC=C(C=C1)C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H10/c1-7-3-5-8(2)6-4-7/h3-6H,1-2H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 10.6,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "α-bromoacetyl chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "BrCC(=O)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H2BrClO/c3-1-2(4)5/h1H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 16.53,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "1,2-dichloroethane"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClCCCl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H4Cl2/c3-1-2-4/h1-2H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 300.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "aluminum chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Cl-].[Al+3].[Cl-].[Cl-]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Al.3ClH/h;3*1H/q+3;;;/p-3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 14.15,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 2.5,
+        "precision": 2.5,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "The reaction mixture was stirred for 30 minutes at 0-5° C."
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture of 10.60 g (0.10 mol) of para-xylene and 16.53 g (0.105 mol) of α-bromoacetyl chloride in 300 mL of 1,2-dichloroethane was cooled in an ice bath under an atmosphere of dry N2 and treated portionwise with 14.15 g (0.106 mol) of aluminum chloride. The reaction mixture was stirred for 30 minutes at 0-5° C. and then for 2.5 hours at room temperature. The mixture was then poured onto ice and the aqueous layer was acidified with concentrated HCl. The organic layer was separated and the aqueous layer was extracted twice with methylene dichloride. The combined organic extracts were dried with brine solution and with magnesium sulfate. The solvent was evaporated to give 23.87 g of an amber oil which was for use in the next reaction without further purification."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "was cooled in an ice bath under an atmosphere of dry N2"
+    },
+    {
+      "type": "WAIT",
+      "details": "for 2.5 hours at room temperature",
+      "duration": {
+        "value": 2.5,
+        "units": "HOUR"
+      },
+      "temperature": {
+        "control": {
+          "type": "AMBIENT"
+        }
+      }
+    },
+    {
+      "type": "ADDITION",
+      "details": "The mixture was then poured onto ice"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The organic layer was separated"
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "the aqueous layer was extracted twice with methylene dichloride",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "methylene dichloride"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(Cl)Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "The combined organic extracts were dried with brine solution and with magnesium sulfate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "brine"
+              },
+              {
+                "type": "SMILES",
+                "value": "[Cl-].[Na+].O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH.Na.H2O/h1H;;1H2/q;+1;/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "magnesium sulfate"
+              },
+              {
+                "type": "SMILES",
+                "value": "S(=O)(=O)([O-])[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The solvent was evaporated"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 30.0,
+        "units": "MINUTE"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "amber oil"
+            },
+            {
+              "type": "NAME",
+              "value": "2-Bromo-2',5'-dimethylacetophenone"
+            },
+            {
+              "type": "SMILES",
+              "value": "BrCC(=O)C1=C(C=CC(=C1)C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C10H11BrO/c1-7-3-4-8(2)9(5-7)10(12)6-11/h3-5H,6H2,1-2H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 23.87,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 105.1
+              }
+            }
+          ],
+          "isolated_color": "amber",
+          "texture": {
+            "type": "OIL",
+            "details": "oil"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06005109",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:25.173736"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-003126cbccfc48ae9c3bbf0c216c735d"
+}

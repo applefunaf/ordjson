@@ -1,0 +1,337 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][Si:2]([CH3:11])([CH3:10])[C:3]1[CH:4]=[C:5]([CH:7]=[CH:8][CH:9]=1)[NH2:6].N1C=CC=CC=1.Cl[C:19]([C:21]1[CH:30]=[CH:29][C:24]([C:25]([O:27][CH3:28])=[O:26])=[CH:23][CH:22]=1)=[O:20].O>C1C=CC=CC=1>[CH3:1][Si:2]([CH3:11])([CH3:10])[C:3]1[CH:4]=[C:5]([NH:6][C:19]([C:21]2[CH:30]=[CH:29][C:24]([C:25]([O:27][CH3:28])=[O:26])=[CH:23][CH:22]=2)=[O:20])[CH:7]=[CH:8][CH:9]=1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m1_m5_m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "m-trimethylsilylaniline"
+            },
+            {
+              "type": "SMILES",
+              "value": "C[Si](C=1C=C(N)C=CC1)(C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H15NSi/c1-11(2,3)9-6-4-5-8(10)7-9/h4-7H,10H2,1-3H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 135.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "pyridine"
+            },
+            {
+              "type": "SMILES",
+              "value": "N1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C5H5N/c1-2-4-6-5-3-1/h1-5H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 1.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methyl p-chloroformylbenzoate"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC(=O)C1=CC=C(C(=O)OC)C=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H7ClO3/c1-13-9(12)7-4-2-6(3-5-7)8(10)11/h2-5H,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 179.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "benzene"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H6/c1-2-4-6-5-3-1/h1-6H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 8.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "The mixture was stirred at room temperature for 20 hours"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a solution of 135 mg (0.817 mmol) of m-trimethylsilylaniline in 8 ml of dry benzene were added 1.0 ml of dry pyridine and 179 mg (0.900 mmol) of methyl p-chloroformylbenzoate, successively. The mixture was stirred at room temperature for 20 hours. To the reaction mixture was added water and the aqueous solution was extracted with AcOEt. The extract was washed successively with water, sat.eq.NaHCO3 and sat.ag.NaCl, dried and evaporated to give 272 mg of white powder, which was purified by column chromatography on silica gel (eluent: methylene chloride) to give 266 mg of white powder (yield: 99%). Recrystallization of the powder from a mixture of methylene chloride, n-hexane and chloroform gave 120 mg of white needles, m.p. 125°-126° C. (yield 45%)."
+  },
+  "workups": [
+    {
+      "type": "EXTRACTION",
+      "details": "the aqueous solution was extracted with AcOEt",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "AcOEt"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOC(=O)C"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "The extract was washed successively with water, sat.eq",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "NaCl, dried",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "NaCl"
+              },
+              {
+                "type": "SMILES",
+                "value": "[Na+].[Cl-]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH.Na/h1H;/q;+1/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "evaporated"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 20.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "white powder"
+            },
+            {
+              "type": "NAME",
+              "value": "Methyl 4-(3-Trimethylsilylphenylcarbamoyl)benzoate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C[Si](C=1C=C(C=CC1)NC(=O)C1=CC=C(C(=O)OC)C=C1)(C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C18H21NO3Si/c1-22-18(21)14-10-8-13(9-11-14)17(20)19-15-6-5-7-16(12-15)23(2,3)4/h5-12H,1-4H3,(H,19,20)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 272.0,
+                  "units": "MILLIGRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 101.7
+              }
+            }
+          ],
+          "isolated_color": "white",
+          "texture": {
+            "type": "POWDER",
+            "details": "powder"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "USRE036477",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:15.529227"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-9e930e9685b4439b81c688aac60cb46a"
+}

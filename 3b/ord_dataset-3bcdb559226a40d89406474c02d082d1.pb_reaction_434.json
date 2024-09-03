@@ -1,0 +1,253 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[OH:1][CH2:2][CH2:3][CH:4]1[O:9][C:8]2[CH:10]=[CH:11][CH:12]=[CH:13][C:7]=2[O:6][CH2:5]1.C(N(CC)CC)C.[S:21](Cl)([CH3:24])(=[O:23])=[O:22]>ClCCl>[S:21]([O:1][CH2:2][CH2:3][CH:4]1[O:9][C:8]2[CH:10]=[CH:11][CH:12]=[CH:13][C:7]=2[O:6][CH2:5]1)([CH3:24])(=[O:23])=[O:22]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Mesylchloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "S(=O)(=O)(C)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH3ClO2S/c1-5(2,3)4/h1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 9.2,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m1_m4_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-hydroxyethyl-1,4-benzodioxan"
+            },
+            {
+              "type": "SMILES",
+              "value": "OCCC1COC2=C(O1)C=CC=C2"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C10H12O3/c11-6-5-8-7-12-9-3-1-2-4-10(9)13-8/h1-4,8,11H,5-7H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 11.96,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "triethylamine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)N(CC)CC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H15N/c1-4-7(5-2)6-3/h4-6H2,1-3H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 10.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "dichloromethane"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClCCl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 450.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "the reaction mixture was stirred for one hour at room temperature"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To the compound 2-hydroxyethyl-1,4-benzodioxan (11.96 g) in dichloromethane (450 ml) was added triethylamine (0.12 mol, 10 ml). Mesylchloride (9.2 g) was then added dropwise and the reaction mixture was stirred for one hour at room temperature. After completion of the reaction, the solution was washed with water, brine, and concentrated to an oil, which was purified by chromatography on silica gel to yield 2-mesyloxyethyl-1,4-benzodioxan, 17.08 g."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "After completion of the reaction"
+    },
+    {
+      "type": "WASH",
+      "details": "the solution was washed with water, brine",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "brine"
+              },
+              {
+                "type": "SMILES",
+                "value": "[Cl-].[Na+].O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH.Na.H2O/h1H;;1H2/q;+1;/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated to an oil, which"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "was purified by chromatography on silica gel"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 1.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-mesyloxyethyl-1,4-benzodioxan"
+            },
+            {
+              "type": "SMILES",
+              "value": "S(=O)(=O)(C)OCCC1COC2=C(O1)C=CC=C2"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C11H14O5S/c1-17(12,13)15-7-6-9-8-14-10-4-2-3-5-11(10)16-9/h2-5,9H,6-8H2,1H3"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US05998417",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:23.352510"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-7a3b3b9e67b641a0b28d1ed6a009303a"
+}

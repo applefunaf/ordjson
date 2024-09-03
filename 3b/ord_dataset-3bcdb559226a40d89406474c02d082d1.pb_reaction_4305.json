@@ -1,0 +1,352 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "Br[C:2]1[CH:9]=[CH:8][C:5]([C:6]#[N:7])=[C:4]([F:10])[CH:3]=1.C1(C)C=CC=CC=1.[Cl-].[NH4+].[CH3:20][N:21](C=O)C>[C-]#N.[Zn+2].[C-]#N>[F:10][C:4]1[CH:3]=[C:2]([C:20]#[N:21])[CH:9]=[CH:8][C:5]=1[C:6]#[N:7] |f:2.3,5.6.7|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m6_m2_m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-bromo-2-fluorobenzonitrile"
+            },
+            {
+              "type": "SMILES",
+              "value": "BrC1=CC(=C(C#N)C=C1)F"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H3BrFN/c8-6-2-1-5(4-10)7(9)3-6/h1-3H"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 20.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "tetrakis(triphenyl-phosphine)palladium"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 4.6,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "DMF"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN(C)C=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H7NO/c1-4(2)3-5/h3H,1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 100.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "zinc cyanide"
+            },
+            {
+              "type": "SMILES",
+              "value": "[C-]#N.[Zn+2].[C-]#N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/2CN.Zn/c2*1-2;/q2*-1;+2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 7.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "CATALYST"
+        }
+      ]
+    },
+    "m3_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Toluene"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1(=CC=CC=C1)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H8/c1-7-5-3-2-4-6-7/h2-6H,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 300.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ammonium chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Cl-].[NH4+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/ClH.H3N/h1H;1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 300.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A solution of 4-bromo-2-fluorobenzonitrile (20 g, 100 mmol), zinc cyanide (7 g, 60 mmol) and tetrakis(triphenyl-phosphine)palladium (4.6 g, 4 mmol) in DMF (100 mL) was heated at 80° C. for 4 hr. Toluene (300 mL) and saturated aqueous ammonium chloride (300 mL) were added and the layers were separated. The organic layer was washed once with saturated aqueous ammonium chloride and twice with brine. The organic phase was dried (MgSO4), filtered and concentrated. The product was purified by silica gel chromatography, eluting with a gradient of hexanes to 30% EtOAc/hexanes (11 g, 75%)."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "the layers were separated"
+    },
+    {
+      "type": "WASH",
+      "details": "The organic layer was washed once with saturated aqueous ammonium chloride and twice with brine",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ammonium chloride"
+              },
+              {
+                "type": "SMILES",
+                "value": "[Cl-].[NH4+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH.H3N/h1H;1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "brine"
+              },
+              {
+                "type": "SMILES",
+                "value": "[Cl-].[Na+].O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH.Na.H2O/h1H;;1H2/q;+1;/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "The organic phase was dried (MgSO4)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "MgSO4"
+              },
+              {
+                "type": "SMILES",
+                "value": "[O-]S(=O)(=O)[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filtered"
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The product was purified by silica gel chromatography"
+    },
+    {
+      "type": "WASH",
+      "details": "eluting with a gradient of hexanes to 30% EtOAc/hexanes (11 g, 75%)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "hexanes"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "EtOAc hexanes"
+              }
+            ],
+            "amount": {
+              "mass": {
+                "value": 11.0,
+                "units": "GRAM"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-fluoroterephthalonitrile"
+            },
+            {
+              "type": "SMILES",
+              "value": "FC1=C(C#N)C=CC(=C1)C#N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H3FN2/c9-8-3-6(4-10)1-2-7(8)5-11/h1-3H"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US06008367",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 17:51:26.981279"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 21:22:47 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-8766f5e9ab9240889c70592b1cee2531"
+}
