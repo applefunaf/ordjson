@@ -1,0 +1,267 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[OH:1]O.[C:3]([C:8]1[CH:13]=[CH:12][C:11]([CH2:14][CH:15]([CH3:23])[CH2:16][N:17]2[CH2:22][CH2:21][CH2:20][CH2:19][CH2:18]2)=[CH:10][CH:9]=1)([CH2:6][CH3:7])([CH3:5])[CH3:4]>C(O)(C)C.[Pt]>[C:3]([C:8]1[CH:9]=[CH:10][C:11]([CH2:14][CH:15]([CH3:23])[CH2:16][N+:17]2([O-:1])[CH2:18][CH2:19][CH2:20][CH2:21][CH2:22]2)=[CH:12][CH:13]=1)([CH2:6][CH3:7])([CH3:4])[CH3:5]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m3_m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrogen peroxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "OO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O2/c1-2/h1-2H"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "platinum sponge"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Pt]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Pt"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "CATALYST"
+        }
+      ]
+    },
+    "m1_m2_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrogen peroxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "OO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O2/c1-2/h1-2H"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 7.2,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "1-[3-(p-tert.amyl-phenyl)-2-methyl-propyl]-piperidine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(C)(CC)C1=CC=C(C=C1)CC(CN1CCCCC1)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C20H33N/c1-5-20(3,4)19-11-9-18(10-12-19)15-17(2)16-21-13-7-6-8-14-21/h9-12,17H,5-8,13-16H2,1-4H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 5.8,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "isopropanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H8O/c1-3(2)4/h3-4H,1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 20.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 40.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "After stirring at 40° C. for 60 hours"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "7.2 g of 30% hydrogen peroxide are added dropwise at 40° C. to a solution of 5.8 g of 1-[3-(p-tert.amyl-phenyl)-2-methyl-propyl]-piperidine in 20 ml of isopropanol and this addition is repeated after 24 hours. After stirring at 40° C. for 60 hours, the mixture is cooled and the excess hydrogen peroxide is decomposed by addition of platinum sponge. The solution is filtered, the filtrate is evaporated, the residue is taken up in 50 ml of water and extracted with hexane. The aqueous solution is subsequently evaporated and the residue is dried in a high vacuum. There is obtained pure 1-[3-(p-tert.amyl-phenyl)-2-methyl-propyl]-piperidine-1-oxide; nD20 =1.5180."
+  },
+  "workups": [
+    {
+      "type": "ADDITION",
+      "details": "this addition"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "the mixture is cooled"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "The solution is filtered"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the filtrate is evaporated"
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "extracted with hexane",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "hexane"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCCCCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C6H14/c1-3-5-6-4-2/h3-6H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The aqueous solution is subsequently evaporated"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the residue is dried in a high vacuum"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 24.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "1-[3-(p-tert.amyl-phenyl)-2-methyl-propyl]-piperidine-1-oxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(C)(CC)C1=CC=C(C=C1)CC(C[N+]1(CCCCC1)[O-])C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C20H33NO/c1-5-20(3,4)19-11-9-18(10-12-19)15-17(2)16-21(22)13-7-6-8-14-21/h9-12,17H,5-8,13-16H2,1-4H3"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04202894",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:26.306841"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-5ff15de35f5145cc8cea553fe2009f56"
+}

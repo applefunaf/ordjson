@@ -1,0 +1,223 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "Cl[C:2]1[CH:7]=[CH:6][CH:5]=[C:4]([CH2:8][N:9]([CH3:11])[CH3:10])[N:3]=1.[CH3:12][N:13]([CH2:15][CH2:16][NH2:17])[CH3:14].[OH-].[Na+]>N1C=CC=CC=1>[CH3:12][N:13]([CH3:14])[CH2:15][CH2:16][NH:17][C:2]1[CH:7]=[CH:6][CH:5]=[C:4]([CH2:8][N:9]([CH3:11])[CH3:10])[N:3]=1 |f:2.3|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-Chloro-6-dimethylaminomethylpyridine"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC1=NC(=CC=C1)CN(C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H11ClN2/c1-11(2)6-7-4-3-5-8(9)10-7/h3-5H,6H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 14.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "unsym-dimethylethylenediamine"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN(C)CCN"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H12N2/c1-6(2)4-3-5/h3-5H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 21.8,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "pyridine"
+            },
+            {
+              "type": "SMILES",
+              "value": "N1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C5H5N/c1-2-4-6-5-3-1/h1-5H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 10.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m3_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "solid"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 20.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sodium hydroxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "[OH-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Na.H2O/h;1H2/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "2-Chloro-6-dimethylaminomethylpyridine (14 g., 0.0825 mole) and unsym-dimethylethylenediamine (21.8 g, 0.248 mole) in 10 ml of pyridine are heated at 180° for 8 hours in a bomb. The dark reaction mixture is stirred over 20 g of solid sodium hydroxide for 1 hour on a steam bath. Then the mixture is filtered. Distillation of the filtrate gives 6.5 g of product, b.p. 110°-11° at 0.1 mm, nD25 1.5287."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "The dark reaction mixture"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "Then the mixture is filtered"
+    },
+    {
+      "type": "DISTILLATION",
+      "details": "Distillation of the filtrate"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "product"
+            },
+            {
+              "type": "NAME",
+              "value": "2-(2-Dimethylaminoethylamino)-6-dimethylaminomethylpyridine"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN(CCNC1=NC(=CC=C1)CN(C)C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C12H22N4/c1-15(2)9-8-13-12-7-5-6-11(14-12)10-16(3)4/h5-7H,8-10H2,1-4H3,(H,13,14)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 6.5,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 35.4
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04203988",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:27.650787"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-2118240aacf4412685a1411ec7e1eef5"
+}

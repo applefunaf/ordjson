@@ -1,0 +1,245 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][O:2][N:3]=[C:4]([C:10](=[O:12])[CH3:11])[C:5]([O:7][CH2:8][CH3:9])=[O:6].[Br:13]Br>C(Cl)(Cl)Cl>[CH3:1][O:2][N:3]=[C:4]([C:10](=[O:12])[CH2:11][Br:13])[C:5]([O:7][CH2:8][CH3:9])=[O:6]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m3_m2_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethyl α-methoxyimino-β-oxobutyrate"
+            },
+            {
+              "type": "SMILES",
+              "value": "CON=C(C(=O)OCC)C(C)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H11NO4/c1-4-12-7(10)6(5(2)9)8-11-3/h4H2,1-3H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 27.3,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "bromine"
+            },
+            {
+              "type": "SMILES",
+              "value": "BrBr"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Br2/c1-2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 25.3,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "chloroform"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(Cl)(Cl)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CHCl3/c2-1(3)4/h1H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 120.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "chloroform"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(Cl)(Cl)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CHCl3/c2-1(3)4/h1H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 30.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "The solution is stirred for 1 hour at room temperature"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a solution of 27.3 g of ethyl α-methoxyimino-β-oxobutyrate in 120 ml of chloroform is dropwise added a solution of 25.3 g of bromine in 30 ml of chloroform over a period of 30 minutes. The solution is stirred for 1 hour at room temperature, and washed with dilute sodium bicarbonate aq. solution and water and dried. The dried solution is subjected to the distillation of the solvent to give an oily crude product of ethyl α-methoxyimino-β-oxo-γ-bromobutyrate. The crude product is dissolved in 250 ml of ethanol and 24 g of thiourea is added thereto, followed by refluxing for 3 hours. After cooling, the precipitates are collected by filtration, washed with ethanol and then suspended in 300 ml of a mixture of ethyl acetate and tetrahydrofuran (1:1). To the suspension is added to 200 ml of 10% sodium bicarbonate aq. solution and the mixture is thoroughly shaken. The organic layer is dried and subjected to the distillation of the solvent to give crystal, followed by washing with ether. The procedure gives 16.86 g of ethyl α-methoxyimino-α-(2-aminothiazol-4-yl)acetate. Melting point: 112°-113° C."
+  },
+  "workups": [
+    {
+      "type": "WASH",
+      "details": "washed with dilute sodium bicarbonate aq. solution and water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "sodium bicarbonate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C([O-])(O)=O.[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2O3.Na/c2-1(3)4;/h(H2,2,3,4);/q;+1/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried"
+    },
+    {
+      "type": "DISTILLATION",
+      "details": "The dried solution is subjected to the distillation of the solvent"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 1.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethyl α-methoxyimino-β-oxo-γ-bromobutyrate"
+            },
+            {
+              "type": "SMILES",
+              "value": "CON=C(C(=O)OCC)C(CBr)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H10BrNO4/c1-3-13-7(11)6(9-12-2)5(10)4-8/h3-4H2,1-2H3"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04205180",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:28.726865"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-ff9e85e38a2b41d18d138300c28e508e"
+}

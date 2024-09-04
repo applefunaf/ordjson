@@ -1,0 +1,241 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[O:1]=[CH:2][C@@H:3]([C@H:5]([C@@H:7]([C@@H:9]([CH2:11][OH:12])[OH:10])[OH:8])[OH:6])[OH:4].P([O-])([O-])([O-])=O>>[OH:1][CH2:2][C:3]([C@H:5]([C@@H:7]([C@@H:9]([CH2:11][OH:12])[OH:10])[OH:8])[OH:6])=[O:4]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "D-glucose"
+            },
+            {
+              "type": "SMILES",
+              "value": "O=C[C@H](O)[C@@H](O)[C@H](O)[C@H](O)CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H12O6/c7-1-3(9)5(11)6(12)4(10)2-8/h1,3-6,8-12H,2H2/t3-,4+,5+,6+/m0/s1"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "MgSO4.7H2O"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "phosphate"
+            },
+            {
+              "type": "SMILES",
+              "value": "P(=O)([O-])([O-])[O-]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H3O4P/c1-5(2,3)4/h(H3,1,2,3,4)/p-3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 70.0,
+        "units": "CELSIUS"
+      }
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture of 0.2 ml of a 1 M aqueous D-glucose solution, 0.2 ml of a 0.05 M aqueous MgSO4.7H2O solution, 0.2 ml of a 0.5 M aqueous phosphate buffer solution (pH=7.2) and a given amount of aqueous glucose isomerase extract is diluted with water to make 2 ml. The resulting mixture is maintained at a temperature of 70° C. for 60 minutes to effect the glucose isomerization which is terminated by the addition of 2 ml of 0.5 M perchloric acid. The amount of fructose produced is determined by cystein carbazole method. The value obtained by dividing the amount of fructose produced by the amount of aqueous glucose isomerase extract is the activity, the unit of which is expressed by the abbreviation \"U\"."
+  },
+  "workups": [
+    {
+      "type": "EXTRACTION",
+      "details": "a given amount of aqueous glucose isomerase extract",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "glucose"
+              },
+              {
+                "type": "SMILES",
+                "value": "O=C[C@H](O)[C@@H](O)[C@H](O)[C@H](O)CO"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C6H12O6/c7-1-3(9)5(11)6(12)4(10)2-8/h1,3-6,8-12H,2H2/t3-,4+,5+,6+/m0/s1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "ADDITION",
+      "details": "is diluted with water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "is terminated by the addition of 2 ml of 0.5 M perchloric acid",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "perchloric acid"
+              },
+              {
+                "type": "SMILES",
+                "value": "Cl(=O)(=O)(=O)O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClHO4/c2-1(3,4)5/h(H,2,3,4,5)"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 2.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "fructose"
+            },
+            {
+              "type": "SMILES",
+              "value": "OCC(=O)[C@@H](O)[C@H](O)[C@H](O)CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H12O6/c7-1-3(9)5(11)6(12)4(10)2-8/h3,5-9,11-12H,1-2H2/t3-,5-,6-/m1/s1"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04205127",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:25.791906"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-c2964d7d27f542c2bde13dad0ae5994e"
+}

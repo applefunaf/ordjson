@@ -1,0 +1,456 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[O:1]1[CH2:22][CH:2]1[CH2:3][O:4][C:5]1[CH:19]=[C:18]([CH3:20])[CH:17]=[C:16]([CH3:21])[C:6]=1[C:7]([C:9]1[CH:14]=[CH:13][C:12]([CH3:15])=[CH:11][CH:10]=1)=[O:8].[CH:23]([NH2:26])([CH3:25])[CH3:24]>CO>[CH3:21][C:16]1[C:6]([C:7]([C:9]2[CH:10]=[CH:11][C:12]([CH3:15])=[CH:13][CH:14]=2)=[O:8])=[C:5]([CH:19]=[C:18]([CH3:20])[CH:17]=1)[O:4][CH2:3][CH:2]([OH:1])[CH2:22][NH:26][CH:23]([CH3:25])[CH3:24]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-(2,3-epoxypropoxy)-4,4',6-trimethylbenzophenone"
+            },
+            {
+              "type": "SMILES",
+              "value": "O1C(COC2=C(C(=O)C3=CC=C(C=C3)C)C(=CC(=C2)C)C)C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C19H20O3/c1-12-4-6-15(7-5-12)19(20)18-14(3)8-13(2)9-17(18)22-11-16-10-21-16/h4-9,16H,10-11H2,1-3H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 10.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "isopropylamine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(C)N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H9N/c1-3(2)4/h3H,4H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 10.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 50.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "was shaken with ethyl acetate"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture of 2-(2,3-epoxypropoxy)-4,4',6-trimethylbenzophenone (10.0 g.), isopropylamine (10 ml.) and anhydrous methanol (50 ml.) was heated at reflux for 17 hours. The solution was then evaporated in vacuo, and the residue was dissolved in water (100 ml.) containing concentrated hydrochloric acid (10 ml.). The solution was adjusted to a pH between 6 and 7 and was shaken with ethyl acetate. The aqueous phase was then adjusted to pH 12 by the addition of aqueous sodium hydroxide solution. The precipitated oil was extracted with ethyl acetate and the extract was washed with water, dried over anhydrous sodium sulphate and evaporated. The residue was dissolved in a hot mixture of light petroleum (b.p. 40°-60° C.; 75 ml.) and cyclohexane (3 ml.) and allowed to cool slowly. The solid was filtered off and recrystallized from cyclohexane (25 ml.) to give DL-1-(3,5-dimethyl-2-p-toluoylphenoxy)-2-hydroxy-3-isopropylaminopropane (5.9 g.), m.p. 89°-91° C."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "was heated"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "at reflux for 17 hours",
+      "duration": {
+        "value": 17.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The solution was then evaporated in vacuo"
+    },
+    {
+      "type": "DISSOLUTION",
+      "details": "the residue was dissolved in water (100 ml.)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 100.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "ADDITION",
+      "details": "containing concentrated hydrochloric acid (10 ml.)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "hydrochloric acid"
+              },
+              {
+                "type": "SMILES",
+                "value": "Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH/h1H"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 10.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "ADDITION",
+      "details": "The aqueous phase was then adjusted to pH 12 by the addition of aqueous sodium hydroxide solution",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "sodium hydroxide"
+              },
+              {
+                "type": "SMILES",
+                "value": "[OH-].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Na.H2O/h;1H2/q+1;/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "The precipitated oil was extracted with ethyl acetate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "the extract was washed with water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "dried over anhydrous sodium sulphate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "sodium sulphate"
+              },
+              {
+                "type": "SMILES",
+                "value": "S(=O)(=O)([O-])[O-].[Na+].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/2Na.H2O4S/c;;1-5(2,3)4/h;;(H2,1,2,3,4)/q2*+1;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "evaporated"
+    },
+    {
+      "type": "DISSOLUTION",
+      "details": "The residue was dissolved in a hot mixture of light petroleum (b.p. 40°-60° C.; 75 ml.) and cyclohexane (3 ml.)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "light petroleum"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 75.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "cyclohexane"
+              },
+              {
+                "type": "SMILES",
+                "value": "C1CCCCC1"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C6H12/c1-2-4-6-5-3-1/h1-6H2"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 3.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "to cool slowly"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "The solid was filtered off"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "recrystallized from cyclohexane (25 ml.)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "cyclohexane"
+              },
+              {
+                "type": "SMILES",
+                "value": "C1CCCCC1"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C6H12/c1-2-4-6-5-3-1/h1-6H2"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 25.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "1-(3,5-dimethyl-2-p-toluoylphenoxy)-2-hydroxy-3-isopropylaminopropane"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC=1C(=C(OCC(CNC(C)C)O)C=C(C1)C)C(=O)C1=CC=C(C=C1)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C22H29NO3/c1-14(2)23-12-19(24)13-26-20-11-16(4)10-17(5)21(20)22(25)18-8-6-15(3)7-9-18/h6-11,14,19,23-24H,12-13H2,1-5H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 5.9,
+                  "units": "GRAM"
+                }
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04201790",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:25.242316"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-9d4cedad701343fdb4f2468b8e864969"
+}

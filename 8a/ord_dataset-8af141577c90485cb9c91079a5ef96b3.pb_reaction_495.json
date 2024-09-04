@@ -1,0 +1,257 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH:1]([CH:14]1[CH2:19][CH2:18][N:17]([C:20](=[O:27])[CH2:21][O:22][CH2:23][C:24]([OH:26])=[O:25])[CH2:16][CH2:15]1)([C:8]1[CH:13]=[CH:12][CH:11]=[CH:10][CH:9]=1)[C:2]1[CH:7]=[CH:6][CH:5]=[CH:4][CH:3]=1.[C:28]1([CH3:38])[CH:33]=[CH:32][C:31](S(O)(=O)=O)=[CH:30][CH:29]=1>C(O)C1C=CC=CC=1>[CH:1]([CH:14]1[CH2:15][CH2:16][N:17]([C:20](=[O:27])[CH2:21][O:22][CH2:23][C:24]([O:26][CH2:38][C:28]2[CH:33]=[CH:32][CH:31]=[CH:30][CH:29]=2)=[O:25])[CH2:18][CH2:19]1)([C:2]1[CH:7]=[CH:6][CH:5]=[CH:4][CH:3]=1)[C:8]1[CH:13]=[CH:12][CH:11]=[CH:10][CH:9]=1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m3_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "[2-(4-benzhydrylpiperidino)-2-oxoethoxy]acetic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C1=CC=CC=C1)(C1=CC=CC=C1)C1CCN(CC1)C(COCC(=O)O)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C22H25NO4/c24-20(15-27-16-21(25)26)23-13-11-19(12-14-23)22(17-7-3-1-4-8-17)18-9-5-2-6-10-18/h1-10,19,22H,11-16H2,(H,25,26)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 3.63,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "p-toluenesulfonic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1(=CC=C(C=C1)S(=O)(=O)O)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H8O3S/c1-6-2-4-7(5-3-6)11(8,9)10/h2-5H,1H3,(H,8,9,10)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 150.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "benzyl alcohol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C1=CC=CC=C1)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H8O/c8-6-7-4-2-1-3-5-7/h1-5,8H,6H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 50.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "In a similar operation, 3.63 grams (10 millimoles) of [2-(4-benzhydrylpiperidino)-2-oxoethoxy]acetic acid, 50 milliliters of benzyl alcohol and 150 milligrams of p-toluenesulfonic acid are mixed together and the resulting mixture heated at reflux temperature for about 6 hours to obtain a product in the reaction mixture. Thereafter, the reaction mixture subjected to reduced pressure to evaporate the alcohol and the residue is dissolved in benzene, the resulting solution washed with bicarbonate solution, dried and the solvent evaporated to obtain a benzyl [2-(4-benzhydrylpiperidino)-2-oxoethoxy]acetate product. The molecular weight of benzyl [2-(4-benzhydrylpiperidino)-2-oxoethoxy]acetate is 453."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "the resulting mixture heated"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "at reflux temperature for about 6 hours",
+      "duration": {
+        "value": 6.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to obtain a product in the reaction mixture"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to evaporate the alcohol",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "alcohol"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DISSOLUTION",
+      "details": "the residue is dissolved in benzene",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "benzene"
+              },
+              {
+                "type": "SMILES",
+                "value": "C1=CC=CC=C1"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C6H6/c1-2-4-6-5-3-1/h1-6H"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "the resulting solution washed with bicarbonate solution",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "bicarbonate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C([O-])(O)=O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2O3/c2-1(3)4/h(H2,2,3,4)/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the solvent evaporated"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "benzyl [2-(4-benzhydrylpiperidino)-2-oxoethoxy]acetate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C1=CC=CC=C1)(C1=CC=CC=C1)C1CCN(CC1)C(COCC(=O)OCC1=CC=CC=C1)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C29H31NO4/c31-27(21-33-22-28(32)34-20-23-10-4-1-5-11-23)30-18-16-26(17-19-30)29(24-12-6-2-7-13-24)25-14-8-3-9-15-25/h1-15,26,29H,16-22H2"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04203991",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:26.441896"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-f2d81979881a46fe8cff0aac2c8f1a3c"
+}

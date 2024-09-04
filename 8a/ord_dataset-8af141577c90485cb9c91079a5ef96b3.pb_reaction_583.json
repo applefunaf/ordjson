@@ -1,0 +1,298 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "Cl.[NH2:2][C@H:3]([C:6](O)=O)[CH2:4][SH:5].Br[CH2:10][CH2:11][NH:12][C:13]([NH2:15])=[O:14].[OH2:16]>>[NH:12]([CH2:11][CH2:10][CH2:6][C@@H:3]([C:4]([OH:16])=[S:5])[NH2:2])[C:13]([NH2:15])=[O:14] |f:0.1|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 30.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m1_m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "cysteine hydrochloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl.N[C@@H](CS)C(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H7NO2S.ClH/c4-2(1-7)3(5)6;/h2,7H,1,4H2,(H,5,6);1H/t2-;/m0./s1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 26.25,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "β-bromoethylurea"
+            },
+            {
+              "type": "SMILES",
+              "value": "BrCCNC(=O)N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H7BrN2O/c4-1-2-6-3(5)7/h1-2H2,(H3,5,6,7)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 27.83,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 150.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 50.0,
+        "units": "CELSIUS"
+      }
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "26.25 g of cysteine hydrochloride and 27.83 g of β-bromoethylurea are dissolved in 150 cc of water under nitrogen. A solution of 13.35 g of soda in 30 cc of water is added during a 40 minute period and the mixture is heated for 3 hours at 50° C. After cooling, there is added to the solution, four times its volume of water and the resulting mixture is passed over a cation exchange resin. After washing with water, the product fixed on the resin is eluted with an ammoniacal solution. The eluate is evaporated to dryness and the residue is crystallized in an aqueous methanol solution. There are obtained 19.5 grams of the white product melting at 220° C. with decomposition."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "After cooling"
+    },
+    {
+      "type": "WASH",
+      "details": "After washing with water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "is eluted with an ammoniacal solution"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The eluate is evaporated to dryness"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the residue is crystallized in an aqueous methanol solution",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "methanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "CO"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "white product"
+            },
+            {
+              "type": "NAME",
+              "value": "3-β-ureidoethylthio alanine"
+            },
+            {
+              "type": "SMILES",
+              "value": "N(C(=O)N)CCC[C@H](N)C(=S)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H13N3O2S/c7-4(5(10)12)2-1-3-9-6(8)11/h4H,1-3,7H2,(H,10,12)(H3,8,9,11)/t4-/m0/s1"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 19.5,
+                  "units": "GRAM"
+                }
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04204064",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:28.301198"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-ed243f0b55f145eca699328a45a4b83b"
+}

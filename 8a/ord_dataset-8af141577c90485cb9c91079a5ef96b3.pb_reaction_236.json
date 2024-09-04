@@ -1,0 +1,255 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "Cl[C:2]1[C:7]2[CH:8]=[N:9][C:10]3[N:14]([CH2:15][CH3:16])[N:13]=[CH:12][C:11]=3[C:6]=2[N:5]2[N:17]=[C:18]([CH3:20])[CH:19]=[C:4]2[N:3]=1.[CH2:21]([NH:23][CH2:24][CH3:25])[CH3:22]>C(O)CCC>[CH2:21]([N:23]([CH2:24][CH3:25])[C:2]1[C:7]2[CH:8]=[N:9][C:10]3[N:14]([CH2:15][CH3:16])[N:13]=[CH:12][C:11]=3[C:6]=2[N:5]2[N:17]=[C:18]([CH3:20])[CH:19]=[C:4]2[N:3]=1)[CH3:22]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "5-chloro-8-ethyl-2-methyl-8H-pyrazolo[1,5-a]pyrazolo[4',3':5,6]pyrido[3,4-e]pyrimidine"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC1=NC=2N(C3=C1C=NC1=C3C=NN1CC)N=C(C2)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C13H11ClN6/c1-3-19-13-9(6-16-19)11-8(5-15-13)12(14)17-10-4-7(2)18-20(10)11/h4-6H,3H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 8.6,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "diethylamine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)NCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H11N/c1-3-5-4-2/h5H,3-4H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 7.2,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "butyl alcohol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(CCC)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 50.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "with stirring in an autoclave for 10 hours at 150°"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "8.6 g of 5-chloro-8-ethyl-2-methyl-8H-pyrazolo[1,5-a]pyrazolo[4',3':5,6]pyrido[3,4-e]pyrimidine (0.03 mol) and 7.2 g of diethylamine are suspended in 50 ml of butyl alcohol and heated with stirring in an autoclave for 10 hours at 150°. After this time, the solvent is removed, the residue is treated with water and filtered off. Recrystallization from alcohol yields 8 g (83%) of N,N,8-triethyl-2-methyl-8H-pyrazolo[1,5-a]pyrazolo[4',3':5,6]pyrido[3,4-e]pyrimidin-5-amine; m.p. 106°-108°."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "heated"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "After this time, the solvent is removed"
+    },
+    {
+      "type": "ADDITION",
+      "details": "the residue is treated with water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filtered off"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "Recrystallization from alcohol",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "alcohol"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 10.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N,N,8-triethyl-2-methyl-8H-pyrazolo[1,5-a]pyrazolo[4',3':5,6]pyrido[3,4-e]pyrimidin-5-amine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)N(C1=NC=2N(C3=C1C=NC1=C3C=NN1CC)N=C(C2)C)CC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C17H21N7/c1-5-22(6-2)17-12-9-18-16-13(10-19-23(16)7-3)15(12)24-14(20-17)8-11(4)21-24/h8-10H,5-7H2,1-4H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 8.0,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 83.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 82.5
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04202899",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:26.604189"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-91ccb3eb1ceb4376b632b631368aa9b3"
+}

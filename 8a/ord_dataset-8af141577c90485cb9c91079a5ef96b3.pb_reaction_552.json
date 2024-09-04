@@ -1,0 +1,193 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "C([O:4][CH2:5][CH2:6][NH:7][C:8]([N:10]([CH2:19][CH2:20][N:21]([CH3:23])[CH3:22])[C:11]1[CH:16]=[C:15]([CH3:17])[CH:14]=[C:13]([CH3:18])[N:12]=1)=[O:9])(=[O:3])C>C(O)C>[OH2:3].[OH2:3].[OH:4][CH2:5][CH2:6][NH:7][C:8]([N:10]([CH2:19][CH2:20][N:21]([CH3:23])[CH3:22])[C:11]1[CH:16]=[C:15]([CH3:17])[CH:14]=[C:13]([CH3:18])[N:12]=1)=[O:9] |f:2.3.4|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-(2-acetoxyethyl)-N'-(2-dimethylamino ethyl)-N'-(4,6-dimethyl-2-pyridyl)urea"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)OCCNC(=O)N(C1=NC(=CC(=C1)C)C)CCN(C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C16H26N4O3/c1-12-10-13(2)18-15(11-12)20(8-7-19(4)5)16(22)17-6-9-23-14(3)21/h10-11H,6-9H2,1-5H3,(H,17,22)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 11.5,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 300.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A solution of N-(2-acetoxyethyl)-N'-(2-dimethylamino ethyl)-N'-(4,6-dimethyl-2-pyridyl)urea (11.5 g, 0.034 mole) in 1:1 ethanol-aqueous ammonia (300 ml.) is allowed to overnight at room temperature. The solvent is then removed under vacuum and the residue is crystallized from acetonitrile. The yield of crude product is 7.30 g, m.p. 173-176. Recrystallization from acetonitrile gives pure product melitng at 177°-179° C."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "The solvent is then removed under vacuum"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the residue is crystallized from acetonitrile",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "acetonitrile"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)#N"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C2H3N/c1-2-3/h1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "Recrystallization from acetonitrile",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "acetonitrile"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)#N"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C2H3N/c1-2-3/h1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "gives pure product melitng at 177°-179° C."
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-(2-Hydroxyethyl)-N'-(2-dimethylaminoethyl)-N'-(4,6-dimethyl-2-pyridyl)urea Dihydrate"
+            },
+            {
+              "type": "SMILES",
+              "value": "O.O.OCCNC(=O)N(C1=NC(=CC(=C1)C)C)CCN(C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C14H24N4O2.2H2O/c1-11-9-12(2)16-13(10-11)18(7-6-17(3)4)14(20)15-5-8-19;;/h9-10,19H,5-8H2,1-4H3,(H,15,20);2*1H2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04203988",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:27.790689"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-7abfbbf7417641468be8e7e00980fa95"
+}

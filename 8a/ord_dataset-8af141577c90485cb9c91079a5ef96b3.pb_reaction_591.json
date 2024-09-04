@@ -1,0 +1,287 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][C:2]([C:4]1[CH:9]=[CH:8][CH:7]=[CH:6][CH:5]=1)=[CH2:3].[C:10](Cl)([C:13]1[CH:18]=[CH:17][CH:16]=[CH:15][CH:14]=1)([CH3:12])[CH3:11].[O-:20][OH:21].C1(C(C)C)C=CC=CC=1.[OH-].[Na+]>>[C:2]([O:20][O:21][C:10]([C:13]1[CH:18]=[CH:17][CH:16]=[CH:15][CH:14]=1)([CH3:12])[CH3:11])([C:4]1[CH:9]=[CH:8][CH:7]=[CH:6][CH:5]=1)([CH3:1])[CH3:3] |f:2.3,4.5|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sodium hydroxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "[OH-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Na.H2O/h;1H2/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "α-methylstyrene"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC(=C)C1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H10/c1-8(2)9-6-4-3-5-7-9/h3-7H,1H2,2H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "cumyl chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(C)(C1=CC=CC=C1)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H11Cl/c1-9(2,10)8-6-4-3-5-7-8/h3-7H,1-2H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "cumene hydroperoxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "[O-]O.C1(=CC=CC=C1)C(C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H12.H2O2/c1-8(2)9-6-4-3-5-7-9;1-2/h3-8H,1-2H3;1-2H/p-1"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "The mixture was stirred at 40°±2° C. for 5 hours"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "Into a 100 ml. open-top, jacketed reactor was placed 19.2 g. (0.162 m.) of α-methylstyrene, 4.4 g. (0.0285 m.) of distilled cumyl chloride and 37 g. (0.20 m.) of 82% assay cumene hydroperoxide. The mixture was stirred at 40°±2° C. for 5 hours. The reaction mixture was cooled to 20° and then stirred for 15 minutes with 40 ml. of 20% sodium hydroxide solution. The aqueous layer was discarded. The washing with caustic was repeated twice and the organic layer washed with 50 ml. portions of 20% sodium chloride solution until neutral. The organic layer was added to 400 ml. of water and the mixture distilled at 80-90 mm. on a steam bath until no further oil came over with the water. The pot residue was stirred vigorously and cooled to 0° by adding ice."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "The reaction mixture was cooled to 20°"
+    },
+    {
+      "type": "STIRRING",
+      "details": "stirred for 15 minutes with 40 ml",
+      "duration": {
+        "value": 15.0,
+        "units": "MINUTE"
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "the organic layer washed with 50 ml"
+    },
+    {
+      "type": "ADDITION",
+      "details": "The organic layer was added to 400 ml"
+    },
+    {
+      "type": "DISTILLATION",
+      "details": "of water and the mixture distilled at 80-90 mm",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "on a steam bath until no further oil came over with the water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "STIRRING",
+      "details": "The pot residue was stirred vigorously"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "cooled to 0°"
+    },
+    {
+      "type": "ADDITION",
+      "details": "by adding ice"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 5.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Dicumyl Peroxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(C)(C1=CC=CC=C1)OOC(C)(C)C1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C18H22O2/c1-17(2,15-11-7-5-8-12-15)19-20-18(3,4)16-13-9-6-10-14-16/h5-14H,1-4H3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04204075",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:28.384473"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-8826059533644b5dac12cff57da20cd7"
+}

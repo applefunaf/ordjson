@@ -1,0 +1,294 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH2:1]([O:3][P:4]([NH:9][NH2:10])(=[O:8])[O:5][CH2:6][CH3:7])[CH3:2].C(N(CC)CC)C.[C:18](Cl)(=[O:20])[CH3:19]>ClCCl>[C:18]([NH:10][NH:9][P:4]([O:5][CH2:6][CH3:7])([O:3][CH2:1][CH3:2])=[O:8])(=[O:20])[CH3:19]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m3_m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acetyl chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H3ClO/c1-2(3)4/h1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 7.4,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "dichloromethane"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClCCl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 15.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m1_m2_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Diethylphosphorohydrazidate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)OP(OCC)(=O)NN"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H13N2O3P/c1-3-8-10(7,6-5)9-4-2/h3-5H2,1-2H3,(H,6,7)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 5.3,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "triethylamine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)N(CC)CC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H15N/c1-4-7(5-2)6-3/h4-6H2,1-3H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 13.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "dichloromethane"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClCCl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 15.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "with stirring"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "Diethylphosphorohydrazidate (5.3 g) and triethylamine (13 ml) were dissolved in dichloromethane (15 ml). To this solution was added dropwise with stirring and cooling a solution of acetyl chloride (7.4 g) in dichloromethane (15 ml). The mixture was then stirred at ambient temperature and then filtered to remove the triethylamine hydrochloride after the addition of 50 ml of anhydrous diethylether. The filtrates were stripped on a rotary evaporator to yield a red-brown oil which was distilled under high vacuum to give a pale yellow liquid, b.p. 180° C./1 mm, identified as the product."
+  },
+  "workups": [
+    {
+      "type": "ADDITION",
+      "details": "To this solution was added dropwise"
+    },
+    {
+      "type": "STIRRING",
+      "details": "The mixture was then stirred at ambient temperature",
+      "temperature": {
+        "control": {
+          "type": "AMBIENT"
+        }
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filtered"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to remove the triethylamine hydrochloride",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "triethylamine hydrochloride"
+              },
+              {
+                "type": "SMILES",
+                "value": "Cl.C(C)N(CC)CC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C6H15N.ClH/c1-4-7(5-2)6-3;/h4-6H2,1-3H3;1H"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "ADDITION",
+      "details": "after the addition of 50 ml of anhydrous diethylether",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "diethylether"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 50.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The filtrates were stripped on a rotary evaporator"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to yield a red-brown oil which"
+    },
+    {
+      "type": "DISTILLATION",
+      "details": "was distilled under high vacuum"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to give a pale yellow liquid, b.p. 180° C./1 mm"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "1-Acetyl-2-Diethoxyphosphoryl Hydrazine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)NNP(=O)(OCC)OCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H15N2O4P/c1-4-11-13(10,12-5-2)8-7-6(3)9/h4-5H2,1-3H3,(H,7,9)(H,8,10)"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04203932",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:24.841451"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-e7333ed741b948dc9645cae461eecfb7"
+}

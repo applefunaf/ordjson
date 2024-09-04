@@ -1,0 +1,192 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[F:1][C:2]([F:17])([F:16])[C:3]1[CH:4]=[C:5]([N:10]2[CH2:15][CH2:14][NH:13][CH2:12][CH2:11]2)[CH:6]=[CH:7][C:8]=1[F:9].Br[CH2:19][CH2:20][OH:21]>C(O)CCC>[F:17][C:2]([F:16])([F:1])[C:3]1[CH:4]=[C:5]([N:10]2[CH2:11][CH2:12][N:13]([CH2:19][CH2:20][OH:21])[CH2:14][CH2:15]2)[CH:6]=[CH:7][C:8]=1[F:9]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-(3-Trifluoromethyl-4-fluorophenyl)piperazine"
+            },
+            {
+              "type": "SMILES",
+              "value": "FC(C=1C=C(C=CC1F)N1CCNCC1)(F)F"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C11H12F4N2/c12-10-2-1-8(7-9(10)11(13,14)15)17-5-3-16-4-6-17/h1-2,7,16H,3-6H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 10.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-bromoethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "BrCCO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H5BrO/c3-1-2-4/h4H,1-2H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 7.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "n-butanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(CCC)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 60.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "10 g (0.04 mole) 4-(3-Trifluoromethyl-4-fluorophenyl)piperazine and 7 g (0.056 mole) 2-bromoethanol are heated under reflux for 4 hours in 60 ml n-butanol. The mixture is left to cool, filtered and then recrystallised from ethanol."
+  },
+  "workups": [
+    {
+      "type": "WAIT",
+      "details": "The mixture is left"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "to cool"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filtered"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "recrystallised from ethanol",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-[4-(3-Trifluoromethyl-4-fluorophenyl)-piperazino]-ethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "FC(C=1C=C(C=CC1F)N1CCN(CC1)CCO)(F)F"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C13H16F4N2O/c14-12-2-1-10(9-11(12)13(15,16)17)19-5-3-18(4-6-19)7-8-20/h1-2,9,20H,3-8H2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04203986",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:25.532018"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-50d9b4073e544fca828a272c53607494"
+}

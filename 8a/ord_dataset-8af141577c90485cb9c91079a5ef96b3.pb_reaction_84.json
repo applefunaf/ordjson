@@ -1,0 +1,175 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH:1]1([N:7]2[CH:15]=[N:14][C:13]3[C:8]2=[N:9][C:10]([O:17][CH2:18][CH3:19])=[N:11][C:12]=3[NH2:16])[CH2:6][CH2:5][CH2:4][CH:3]=[CH:2]1>C(O)C.[Pd]>[CH2:18]([O:17][C:10]1[N:9]=[C:8]2[C:13]([N:14]=[CH:15][N:7]2[CH:1]2[CH2:2][CH2:3][CH2:4][CH2:5][CH2:6]2)=[C:12]([NH2:16])[N:11]=1)[CH3:19]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m3_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "9-(2-cyclohexenyl)-2-ethoxy-9H-adenine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1(C=CCCC1)N1C2=NC(=NC(=C2N=C1)N)OCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C13H17N5O/c1-2-19-13-16-11(14)10-12(17-13)18(8-15-10)9-6-4-3-5-7-9/h4,6,8-9H,2-3,5,7H2,1H3,(H2,14,16,17)"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.5,
+              "units": "MILLIMOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 6.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "palladium-on-charcoal"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Pd]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Pd"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 35.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "CATALYST"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture of 9-(2-cyclohexenyl)-2-ethoxy-9H-adenine (0.5 mmole) and 10% palladium-on-charcoal (35 mg.) in ethanol (6 ml.) was hydrogenated at room temperature and under atmospheric pressure. The reaction mixture was filtered and the filtrate was evaporated. The residue was lyophilized to give the title product in 40% yield; m.p. 134°-136° C. IR(KBr): 3280, 2995, 1705, 1615, 1525, 1415, 1310, 1010 cm-1. UV: λmaxEtOH 253 nm (ε6800), 269 nm (ε, 10200). NMR(CDCl3): 1.44(3H, t, J=7 Hz), 2.00 (10H, m), 4.45(2H, q, J=7 Hz), 4.50(1H, m), 8.07(1H, s), 8.60(2H, s)."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "was hydrogenated at room temperature and under atmospheric pressure",
+      "temperature": {
+        "control": {
+          "type": "AMBIENT"
+        }
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "The reaction mixture was filtered"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the filtrate was evaporated"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title product"
+            },
+            {
+              "type": "NAME",
+              "value": "2-Ethoxy-9-cyclohexyl-9H-adenine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)OC1=NC(=C2N=CN(C2=N1)C1CCCCC1)N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C13H19N5O/c1-2-19-13-16-11(14)10-12(17-13)18(8-15-10)9-6-4-3-5-7-9/h8-9H,2-7H2,1H3,(H2,14,16,17)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 40.0
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04201860",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:25.544863"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-2b222862854b42df9d070b8ec8c9e7e9"
+}

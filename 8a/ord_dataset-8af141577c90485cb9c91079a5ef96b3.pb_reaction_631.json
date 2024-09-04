@@ -1,0 +1,184 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "Cl[CH2:2][C:3]([C:5]1[CH:10]=[CH:9][CH:8]=[CH:7][CH:6]=1)=[O:4].[C:11]([S-:13])#[N:12].[K+]>C(O)C.O>[S:13]([CH2:2][C:3]([C:5]1[CH:10]=[CH:9][CH:8]=[CH:7][CH:6]=1)=[O:4])[C:11]#[N:12] |f:1.2|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ω-chloroacetophenone"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClCC(=O)C1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H7ClO/c9-6-8(10)7-4-2-1-3-5-7/h1-5H,6H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 150.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 1000.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m2_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "KSCN"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(#N)[S-].[K+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CHNS.K/c2-1-3;/h3H;/q;+1/p-1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 102.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 40.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 50.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "After stirring for 10 minutes at 50° C."
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "150 g of ω-chloroacetophenone are dissolved at 50° C. in 1000 ml of ethanol, followed by the addition of a solution of 102 g of KSCN in 40 ml of water. After stirring for 10 minutes at 50° C., the ω-thiocyano acetophenone formed is precipitated with water."
+  },
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 10.0,
+        "units": "MINUTE"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ω-thiocyano acetophenone"
+            },
+            {
+              "type": "SMILES",
+              "value": "S(C#N)CC(=O)C1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H7NOS/c10-7-12-6-9(11)8-4-2-1-3-5-8/h1-5H,6H2"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04204867",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:24.199557"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-7b8bd479b84f475ab2cab32ca67c4a53"
+}

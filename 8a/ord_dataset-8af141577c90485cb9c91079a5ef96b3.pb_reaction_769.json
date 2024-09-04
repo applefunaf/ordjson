@@ -1,0 +1,332 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "O=[C:2]1[CH2:8][C:7]2[CH:9]=[CH:10][CH:11]=[CH:12][C:6]=2[O:5][C:4]2[CH:13]=[C:14]([CH:17]([CH3:22])[C:18]([O:20][CH3:21])=[O:19])[CH:15]=[CH:16][C:3]1=2.Cl.O>C1(C)C=CC=CC=1>[CH:16]1[C:3]2[CH2:2][CH2:8][C:7]3[CH:9]=[CH:10][CH:11]=[CH:12][C:6]=3[O:5][C:4]=2[CH:13]=[C:14]([CH:17]([CH3:22])[C:18]([O:20][CH3:21])=[O:19])[CH:15]=1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m5_m2_m3_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methyl 2-(10,11-dihydro-11-oxo dibenzo[b,f]-oxepin-3-yl)-propionate"
+            },
+            {
+              "type": "SMILES",
+              "value": "O=C1C2=C(OC3=C(C1)C=CC=C3)C=C(C=C2)C(C(=O)OC)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C18H16O4/c1-11(18(20)21-2)12-7-8-14-15(19)9-13-5-3-4-6-16(13)22-17(14)10-12/h3-8,10-11H,9H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 95.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "zinc amalgam"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydochloric acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/ClH/h1H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 0.3,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 0.2,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "toluene"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1(=CC=CC=C1)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H8/c1-7-5-3-2-4-6-7/h2-6H,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 1.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "with stirring for 1 hour"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To 95 mg of methyl 2-(10,11-dihydro-11-oxo dibenzo[b,f]-oxepin-3-yl)-propionate in 1 ml of toluene were added a small amount of zinc-amalgam, 0.3 ml of conc. hydochloric acid and 0.2 ml of water, and the mixture was refluxed with stirring for 1 hour. After cooling, the mixture was filtered and the filtrate was extracted with benzene. The extract was washed with saturated sodium chloride solution and dried over anhydrous sodium sulfate. The solvent was distilled off to obtain pale yellow oil, which was subjected to thin-layer chromatography to give 30 mg of methyl 2-(10,11-dihydro dibenzo[b,f]oxepin-3-yl)-propionate as pale yellow oil."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "the mixture was refluxed"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "After cooling"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "the mixture was filtered"
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "the filtrate was extracted with benzene",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "benzene"
+              },
+              {
+                "type": "SMILES",
+                "value": "C1=CC=CC=C1"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C6H6/c1-2-4-6-5-3-1/h1-6H"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "The extract was washed with saturated sodium chloride solution",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "sodium chloride"
+              },
+              {
+                "type": "SMILES",
+                "value": "[Cl-].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH.Na/h1H;/q;+1/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "dried over anhydrous sodium sulfate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "sodium sulfate"
+              },
+              {
+                "type": "SMILES",
+                "value": "S(=O)(=O)([O-])[O-].[Na+].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/2Na.H2O4S/c;;1-5(2,3)4/h;;(H2,1,2,3,4)/q2*+1;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DISTILLATION",
+      "details": "The solvent was distilled off"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to obtain pale yellow oil, which"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 1.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methyl 2-(10,11-dihydro dibenzo[b,f]oxepin-3-yl)-propionate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1=CC(=CC=2OC3=C(CCC21)C=CC=C3)C(C(=O)OC)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C18H18O3/c1-12(18(19)20-2)15-10-9-14-8-7-13-5-3-4-6-16(13)21-17(14)11-15/h3-6,9-12H,7-8H2,1-2H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 30.0,
+                  "units": "MILLIGRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 33.1
+              }
+            }
+          ],
+          "isolated_color": "pale yellow",
+          "texture": {
+            "type": "OIL",
+            "details": "oil"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04205170",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:27.016706"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-ead7eb06864b4b4995acbbce1bfddd38"
+}

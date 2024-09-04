@@ -1,0 +1,219 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[C:1]1(=[O:11])[O:6][C:4](=O)[C:3]2=[CH:7][CH:8]=[CH:9][CH:10]=[C:2]12.[P:12](=[S:20])([NH2:19])([O:16][CH2:17][CH3:18])[O:13][CH2:14][CH3:15].C(N(CC)CC)C>O>[C:4]1(=[O:6])[N:19]([P:12](=[S:20])([O:16][CH2:17][CH3:18])[O:13][CH2:14][CH3:15])[C:1](=[O:11])[C:2]2=[CH:10][CH:9]=[CH:8][CH:7]=[C:3]12",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m6": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m2_m3_m4_m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "phthalic anhydride"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1(C=2C(C(=O)O1)=CC=CC2)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H4O3/c9-7-5-3-1-2-4-6(5)8(10)11-7/h1-4H"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 222.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "O,O-diethyl phosphoramidothioate"
+            },
+            {
+              "type": "SMILES",
+              "value": "P(OCC)(OCC)(N)=S"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H12NO2PS/c1-3-6-8(5,9)7-4-2/h3-4H2,1-2H3,(H2,5,9)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 84.5,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "triethylamine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)N(CC)CC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H15N/c1-4-7(5-2)6-3/h4-6H2,1-3H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 151.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "light petroleum"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 800.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 67.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "was stirred"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture of 222 g (1.5 moles) phthalic anhydride, 84.5 g (0.5 moles) O,O-diethyl phosphoramidothioate and 151 g (1.5 moles) triethylamine in 800 mls light petroleum (bP 60°-80° C.) was stirred and heated at 67° C. for 5.75 hours. Two hundred and eighty mls of water were added to the vigourously stirred system. After several minutes the mixture was allowed to stand and the hot organic layer was separated and cooled to 0°-5° C. to give the desired compound, O,O-diethyl phthalimidophosphonothioate, as a colorless solid, m.p. 75°-81° C. (97.5 purity by GLC). The yield was calculated to be 55% from the O,O-diethyl phosphoramidothioate. A further 4% yield of the desired compound was obtained by filtering the cooled aqueous layer."
+  },
+  "workups": [
+    {
+      "type": "WAIT",
+      "details": "After several minutes the mixture was allowed"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the hot organic layer was separated"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "cooled to 0°-5° C."
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "desired compound"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "O,O-diethyl phthalimidophosphonothioate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1(C=2C(C(N1P(OCC)(OCC)=S)=O)=CC=CC2)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C12H14NO4PS/c1-3-16-18(19,17-4-2)13-11(14)9-7-5-6-8-10(9)12(13)15/h5-8H,3-4H2,1-2H3"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04204996",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:24.374281"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-d513e01dc6444378ad7b6f2f0ac4668c"
+}

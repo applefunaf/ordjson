@@ -1,0 +1,336 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "Cl.[C:2]([C:7]1[CH:12]=[CH:11][C:10]([C:13]([CH3:25])=[C:14]([CH3:24])[CH2:15][N:16]2[CH2:21][CH:20]([CH3:22])[O:19][CH:18]([CH3:23])[CH2:17]2)=[CH:9][CH:8]=1)([CH2:5][CH3:6])([CH3:4])[CH3:3]>[Pd]>[C:2]([C:7]1[CH:12]=[CH:11][C:10]([CH:13]([CH3:25])[CH:14]([CH3:24])[CH2:15][N:16]2[CH2:21][CH:20]([CH3:22])[O:19][CH:18]([CH3:23])[CH2:17]2)=[CH:9][CH:8]=1)([CH2:5][CH3:6])([CH3:3])[CH3:4]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "palladium/carbon"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Pd]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Pd"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "CATALYST"
+        }
+      ]
+    },
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrochloric acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/ClH/h1H"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-[3-(p-tert.-amyl-phenyl)-2,3-dimethyl-2-propenyl]2,6-dimethylmorpholine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(C)(CC)C1=CC=C(C=C1)C(=C(CN1CC(OC(C1)C)C)C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C22H35NO/c1-8-22(6,7)21-11-9-20(10-12-21)19(5)16(2)13-23-14-17(3)24-18(4)15-23/h9-12,17-18H,8,13-15H2,1-7H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "alcohol"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "1.8 Ml. of 32% hydrochloric acid and subsequently 1.5 g. of 5% palladium/carbon are added to a solution of 4.5 g. of 4-[3-(p-tert.-amyl-phenyl)-2,3-dimethyl-2-propenyl]2,6-dimethylmorpholine in 125 ml. of alcohol and the mixture is hydrogenated. After completion of the hydrogen uptake, the catalyst is removed by filtration, the filtrate is treated with 200 ml. of 10% sodium hydroxide and then extracted with ether. The combined ether extracts are washed neutral with water, dried and evaporated. By distillation, there is obtained pure 4-[3-(p-tert.-amyl-phenyl)-2,3-dimethyl-propyl]-2,6-dimethylmorpholine having a boiling point of 145° C./0.05 Torr."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "After completion of the hydrogen uptake, the catalyst is removed by filtration",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "hydrogen"
+              },
+              {
+                "type": "SMILES",
+                "value": "[H][H]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2/h1H"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "ADDITION",
+      "details": "the filtrate is treated with 200 ml"
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "of 10% sodium hydroxide and then extracted with ether",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "sodium hydroxide"
+              },
+              {
+                "type": "SMILES",
+                "value": "[OH-].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Na.H2O/h;1H2/q+1;/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "The combined ether extracts are washed neutral with water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "evaporated"
+    },
+    {
+      "type": "DISTILLATION",
+      "details": "By distillation"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-[3-(p-tert.-amyl-phenyl)-2,3-dimethyl-propyl]-2,6-dimethylmorpholine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(C)(CC)C1=CC=C(C=C1)C(C(CN1CC(OC(C1)C)C)C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C22H37NO/c1-8-22(6,7)21-11-9-20(10-12-21)19(5)16(2)13-23-14-17(3)24-18(4)15-23/h9-12,16-19H,8,13-15H2,1-7H3"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04202894",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:26.264372"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-3d90e2f1ec82420c894a1d6e3d7c7705"
+}

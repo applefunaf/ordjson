@@ -1,0 +1,202 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][N:2]([CH3:7])[CH2:3][CH2:4][CH2:5]O.[CH3:8][N:9]([CH3:13])[C:10]([NH2:12])=[S:11]>Br>[CH3:8][N:9]([CH3:13])[C:10](=[NH:12])[S:11][CH2:5][CH2:4][CH2:3][N:2]([CH3:7])[CH3:1]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m2_m3_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3-dimethylaminopropanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN(CCCO)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C5H13NO/c1-6(2)4-3-5-7/h7H,3-5H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 10.3,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N,N1 -dimethylthiourea"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN(C(=S)N)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H8N2S/c1-5(2)3(4)6/h1-2H3,(H2,4,6)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 10.4,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrobromic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "Br"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/BrH/h1H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 60.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture of 3-dimethylaminopropanol (10.3 g), N,N1 -dimethylthiourea (10.4 g) and aqueous hydrobromic acid (48%, 60 ml) was boiled under reflux for 18 hours and evaporated to dryness. The residue was recrystallised from ethanol to give the dihydrobromide of the title compound m.p. 173°-174°. (Found: C, 27.4; H, 6.0; N, 12.0; S, 9.1; Br, 45.3; C8H19N3S.2HBr, requires: C, 27.4; H, 6.0; N, 12.0; S, 9.1; Br. 45.5%.)"
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "under reflux for 18 hours",
+      "duration": {
+        "value": 18.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "evaporated to dryness"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The residue was recrystallised from ethanol",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "dihydrobromide"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "N,N1 -Dimethyl-S-(3-dimethylaminopropyl)isothiourea"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN(C(SCCCN(C)C)=N)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H19N3S/c1-10(2)6-5-7-12-8(9)11(3)4/h9H,5-7H2,1-4H3"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04205071",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:24.686562"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-1982acbd9db74e0fa923103cf4d6498a"
+}

@@ -1,0 +1,326 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[Cl:1][C:2]1[C:7](=[O:8])[C:6](Cl)=[N:5][S:4][N:3]=1.[OH:10][C:11]1[CH:21]=[CH:20][C:14]([CH:15]=[CH:16][C:17]([OH:19])=[O:18])=[CH:13][CH:12]=1.[OH-].[Na+].Cl>O>[C:17]([CH:16]=[CH:15][C:14]1[CH:13]=[CH:12][C:11]([O:10][C:6]2[C:7](=[O:8])[C:2]([Cl:1])=[N:3][S:4][N:5]=2)=[CH:21][CH:20]=1)([OH:19])=[O:18] |f:2.3|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrochloric acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/ClH/h1H"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "p-hydroxycinnamic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "OC1=CC=C(C=CC(=O)O)C=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H8O3/c10-8-4-1-7(2-5-8)3-6-9(11)12/h1-6,10H,(H,11,12)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 13.1,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sodium hydroxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "[OH-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Na.H2O/h;1H2/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m1_m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3,5-dichloro-4H-1,2,6-thiadiazin-4-one"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC1=NSN=C(C1=O)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3Cl2N2OS/c4-2-1(8)3(5)7-9-6-2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 14.6,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 350.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "The reaction mixture was stirred for 2 hours at ambient temperature"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a stirred suspension of 14.6 grams (0.08 mole) of 3,5-dichloro-4H-1,2,6-thiadiazin-4-one in 350 ml of water was added dropwise a previously prepared solution of 13.1 grams (0.08 mole) of p-hydroxycinnamic acid in 80 ml of aqueous 1 N sodium hydroxide. The reaction mixture was stirred for 2 hours at ambient temperature, then acidified with aqueous 6 N hydrochloric acid. A yellow precipitate was collected by vacuum filtration and washed with water, then dried for 5 hours/50° C. The solid was triturated with hot ethanol and collected by vacuum filtration, to give 23.3 grams (93.8%) of 3-[4-(2-carboxyethenyl)phenoxy]-5-chloro-4H-1,2,6-thiadiazin-4-one; m.p. >280° C. The nmr and the ir spectra were consistent with the proposed structure."
+  },
+  "workups": [
+    {
+      "type": "FILTRATION",
+      "details": "A yellow precipitate was collected by vacuum filtration"
+    },
+    {
+      "type": "WASH",
+      "details": "washed with water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried for 5 hours/50° C",
+      "duration": {
+        "value": 5.0,
+        "units": "HOUR"
+      },
+      "temperature": {
+        "setpoint": {
+          "value": 50.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The solid was triturated with hot ethanol",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "collected by vacuum filtration"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 2.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3-[4-(2-carboxyethenyl)phenoxy]-5-chloro-4H-1,2,6-thiadiazin-4-one"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(=O)(O)C=CC1=CC=C(OC2=NSN=C(C2=O)Cl)C=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C12H7ClN2O4S/c13-11-10(18)12(15-20-14-11)19-8-4-1-7(2-5-8)3-6-9(16)17/h1-6H,(H,16,17)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 23.3,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 93.8
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 93.7
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04201780",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:24.931316"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-006ec02776744983a2175803426e2a7b"
+}

@@ -1,0 +1,367 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[O:1]1[CH2:22][CH:2]1[CH2:3][O:4][C:5]1[C:18]([CH3:19])=[C:17]([CH3:20])[CH:16]=[C:15]([CH3:21])[C:6]=1[C:7]([C:9]1[CH:14]=[CH:13][CH:12]=[CH:11][CH:10]=1)=[O:8].[CH:23]([NH2:26])([CH3:25])[CH3:24]>CO>[C:7]([C:6]1[C:15]([CH3:21])=[CH:16][C:17]([CH3:20])=[C:18]([CH3:19])[C:5]=1[O:4][CH2:3][CH:2]([OH:1])[CH2:22][NH:26][CH:23]([CH3:25])[CH3:24])(=[O:8])[C:9]1[CH:10]=[CH:11][CH:12]=[CH:13][CH:14]=1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-(2,3-epoxypropoxy)-3,4,6-trimethylbenzophenone"
+            },
+            {
+              "type": "SMILES",
+              "value": "O1C(COC2=C(C(=O)C3=CC=CC=C3)C(=CC(=C2C)C)C)C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C19H20O3/c1-12-9-13(2)17(18(20)15-7-5-4-6-8-15)19(14(12)3)22-11-16-10-21-16/h4-9,16H,10-11H2,1-3H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 10.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "isopropylamine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(C)N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H9N/c1-3(2)4/h3H,4H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 10.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 100.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture of 2-(2,3-epoxypropoxy)-3,4,6-trimethylbenzophenone (10.0 g.), isopropylamine (10 ml.) and anhydrous methanol (100 ml.) was heated at reflux for 17 hours. The solution was evaporated in vacuo and the residue was dissolved in water (100 ml.) containing concentrated hydrochloric acid (6 ml.). The solution was filtered through charcoal and kieselguhr, adjusted to pH 11 by means of 2 N aqueous sodium hydroxide solution and extracted with ethyl acetate. The extract was washed 3 times with water, dried over anhydrous sodium sulphate and evaporated. The residue was recystallized from cyclohexane to give DL-1-(2-benzoyl-3,5,6-trimethylphenoxy)-2-hydroxy-3-isopropylaminopropane (6.6 g.), m.p. 121°-123° C."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "was heated"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "at reflux for 17 hours",
+      "duration": {
+        "value": 17.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The solution was evaporated in vacuo"
+    },
+    {
+      "type": "DISSOLUTION",
+      "details": "the residue was dissolved in water (100 ml.)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 100.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "ADDITION",
+      "details": "containing concentrated hydrochloric acid (6 ml.)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "hydrochloric acid"
+              },
+              {
+                "type": "SMILES",
+                "value": "Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH/h1H"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 6.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "The solution was filtered through charcoal and kieselguhr",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "charcoal"
+              },
+              {
+                "type": "SMILES",
+                "value": "C"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH4/h1H4"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "extracted with ethyl acetate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "The extract was washed 3 times with water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "dried over anhydrous sodium sulphate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "sodium sulphate"
+              },
+              {
+                "type": "SMILES",
+                "value": "S(=O)(=O)([O-])[O-].[Na+].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/2Na.H2O4S/c;;1-5(2,3)4/h;;(H2,1,2,3,4)/q2*+1;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "evaporated"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "1-(2-benzoyl-3,5,6-trimethylphenoxy)-2-hydroxy-3-isopropylaminopropane"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C1=CC=CC=C1)(=O)C1=C(OCC(CNC(C)C)O)C(=C(C=C1C)C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C22H29NO3/c1-14(2)23-12-19(24)13-26-22-17(5)15(3)11-16(4)20(22)21(25)18-9-7-6-8-10-18/h6-11,14,19,23-24H,12-13H2,1-5H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 6.6,
+                  "units": "GRAM"
+                }
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04201790",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:25.322284"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-cecc382f4a0842e58585e8a1db061759"
+}

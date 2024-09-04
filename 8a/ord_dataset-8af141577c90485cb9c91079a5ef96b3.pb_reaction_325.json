@@ -1,0 +1,327 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[Cr](Cl)([O-])(=O)=O.[NH+]1C=CC=CC=1.[OH:12][C@@H:13]1[CH2:17][CH2:16][CH2:15][C@H:14]1[O:18][C:19]1[CH:24]=[CH:23][CH:22]=[C:21]([C:25]([F:28])([F:27])[F:26])[CH:20]=1>C(Cl)Cl.CCOCC>[F:26][C:25]([F:27])([F:28])[C:21]1[CH:20]=[C:19]([CH:24]=[CH:23][CH:22]=1)[O:18][CH:14]1[CH2:15][CH2:16][CH2:17][C:13]1=[O:12] |f:0.1|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "pyridinium chlorochromate"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Cr](=O)(=O)([O-])Cl.[NH+]1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C5H5N.ClH.Cr.3O/c1-2-4-6-5-3-1;;;;;/h1-5H;1H;;;;/q;;+1;;;-1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 327.43,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methylene chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(Cl)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 1.0,
+              "units": "LITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m2_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "trans-1-hydroxy-2-(3-trifluoromethylphenoxy)cyclopentane"
+            },
+            {
+              "type": "SMILES",
+              "value": "O[C@H]1[C@@H](CCC1)OC1=CC(=CC=C1)C(F)(F)F"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C12H13F3O2/c13-12(14,15)8-3-1-4-9(7-8)17-11-6-2-5-10(11)16/h1,3-4,7,10-11,16H,2,5-6H2/t10-,11-/m1/s1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 220.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methylene chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(Cl)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 500.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ether"
+            },
+            {
+              "type": "SMILES",
+              "value": "CCOCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "The mixture is stirred for 2 hours 15 minutes"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a suspension of 327.43 g of pyridinium chlorochromate in one liter of methylene chloride is added 220 g of trans-1-hydroxy-2-(3-trifluoromethylphenoxy)cyclopentane in 500 ml of methylene chloride. The mixture is stirred for 2 hours 15 minutes. Another 50 g of the oxidizing agent is added and the mixture is stirred for 41/2 hours. The mixture is diluted with ether and decanted from a black residue which is washed with more ether. The combined solutions are filtered through silica gel. The solvent is removed. The residue is dissolved in ether and again filtered through silica-gel. The solvent is removed and the residue is distilled (bp 113°-116° C., 1.5 mm) to give 188 g of 2-(3-trifluoromethylphenoxy)cyclopentanone."
+  },
+  "workups": [
+    {
+      "type": "ADDITION",
+      "details": "Another 50 g of the oxidizing agent is added"
+    },
+    {
+      "type": "STIRRING",
+      "details": "the mixture is stirred for 41/2 hours",
+      "duration": {
+        "value": 2.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "decanted from a black residue which"
+    },
+    {
+      "type": "WASH",
+      "details": "is washed with more ether",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "The combined solutions are filtered through silica gel"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The solvent is removed"
+    },
+    {
+      "type": "DISSOLUTION",
+      "details": "The residue is dissolved in ether",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "again filtered through silica-gel"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The solvent is removed"
+    },
+    {
+      "type": "DISTILLATION",
+      "details": "the residue is distilled (bp 113°-116° C., 1.5 mm)"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 15.0,
+        "units": "MINUTE"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-(3-trifluoromethylphenoxy)cyclopentanone"
+            },
+            {
+              "type": "SMILES",
+              "value": "FC(C=1C=C(OC2C(CCC2)=O)C=CC1)(F)F"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C12H11F3O2/c13-12(14,15)8-3-1-4-9(7-8)17-11-6-2-5-10(11)16/h1,3-4,7,11H,2,5-6H2"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 188.0,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 86.2
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04202988",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:28.109048"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-74bfc03297414ddfbe74b0d13f4d4e2e"
+}

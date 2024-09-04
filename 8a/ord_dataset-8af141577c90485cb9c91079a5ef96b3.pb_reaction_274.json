@@ -1,0 +1,197 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[I-].[NH2:2][N+:3]1[CH:8]=[CH:7][CH:6]=[CH:5][C:4]=1[NH2:9].[C:10]1(=O)[O:14][CH2:13][CH2:12][CH2:11]1.C(=O)([O-])[O-].[K+].[K+]>>[OH:14][CH2:13][CH2:12][CH2:11][C:10]1[N:9]=[C:4]2[CH:5]=[CH:6][CH:7]=[CH:8][N:3]2[N:2]=1 |f:0.1,3.4.5|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "1,2-diaminopyridinium iodide"
+            },
+            {
+              "type": "SMILES",
+              "value": "[I-].N[N+]1=C(C=CC=C1)N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C5H7N3.HI/c6-5-3-1-2-4-8(5)7;/h1-4,6H,7H2;1H"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 24.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "γ-butyrolactone"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1(CCCO1)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H6O2/c5-4-2-1-3-6-4/h1-3H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 17.2,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "potassium carbonate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C([O-])([O-])=O.[K+].[K+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2O3.2K/c2-1(3)4;;/h(H2,2,3,4);;/q;2*+1/p-2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 57.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "with stirring for 8 hours"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture of 24 g of 1,2-diaminopyridinium iodide, 17.2 g of γ-butyrolactone and 57 g of potassium carbonate in 100 ml of diethylcellosolve was refluxed with stirring for 8 hours. The mixture was concentrated under reduced pressure to the residue, which was extracted by hot dichloromethane. The solvent was removed to give crude 2-(3-hydroxypropyl)-s-triazolo[1,5-a]pyridine, which was recrystallized from ethyl acetate to colorless needles (16 g, 90%), mp 71.5°-73° C. Anal. Calcd. for C9H11ON3 : C, 61.00; H, 6.24; N, 23.72. Found: C, 60.82; H, 6.14; N, 23.48."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "was refluxed"
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "The mixture was concentrated under reduced pressure to the residue, which"
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "was extracted by hot dichloromethane",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "dichloromethane"
+              },
+              {
+                "type": "SMILES",
+                "value": "ClCCl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The solvent was removed"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 8.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-(3-hydroxypropyl)-s-triazolo[1,5-a]pyridine"
+            },
+            {
+              "type": "SMILES",
+              "value": "OCCCC1=NN2C(C=CC=C2)=N1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H11N3O/c13-7-3-4-8-10-9-5-1-2-6-12(9)11-8/h1-2,5-6,13H,3-4,7H2"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04202977",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:27.259007"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-88bfdba64b354e7999cf098a7ee5a1ba"
+}

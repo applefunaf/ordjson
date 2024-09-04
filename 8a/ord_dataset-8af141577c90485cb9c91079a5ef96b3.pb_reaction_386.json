@@ -1,0 +1,223 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[Cl:1]Cl.[I:3][C:4]1[CH:9]=[CH:8][CH:7]=[CH:6][CH:5]=1>C(Cl)(Cl)Cl>[Cl-:1].[Cl-:1].[I:3][C:4]1[CH:9]=[CH:8][CH:7]=[CH:6][CH:5]=1 |f:3.4.5|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Chlorine"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClCl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Cl2/c1-2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "iodobenzene"
+            },
+            {
+              "type": "SMILES",
+              "value": "IC1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H5I/c7-6-4-2-1-3-5-6/h1-5H"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 20.4,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "chloroform"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(Cl)(Cl)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CHCl3/c2-1(3)4/h1H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 100.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": -5.0,
+        "units": "CELSIUS"
+      }
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "Chlorine gas is bubbled through a solution of iodobenzene (20.4 g; 0.1 mole) in chloroform (100 ml) while the temperature of the reaction mixture is maintained at -5° C. In about 10 minutes a yellow solid precipitates and is removed by filtration. The filtrate is then further treated with chlorine gas until the formation of yellow solid ceases. The solid fractions are combined and air dried to afford 25.9 g (94.2%) of title product."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "In about 10 minutes a yellow solid precipitates",
+      "duration": {
+        "value": 10.0,
+        "units": "MINUTE"
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "is removed by filtration"
+    },
+    {
+      "type": "ADDITION",
+      "details": "The filtrate is then further treated with chlorine gas until the formation of yellow solid ceases",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "chlorine"
+              },
+              {
+                "type": "SMILES",
+                "value": "ClCl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Cl2/c1-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "air dried"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title product"
+            },
+            {
+              "type": "NAME",
+              "value": "iodobenzene dichloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Cl-].[Cl-].IC1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H5I.2ClH/c7-6-4-2-1-3-5-6;;/h1-5H;2*1H/p-2"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 25.9,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 94.2
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04203918",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:24.663303"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-65e88d784d3e4f3dab7af4f6c04c765f"
+}

@@ -1,0 +1,221 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH2:1]([NH:5][S:6]([C:9]([F:12])([F:11])[F:10])(=[O:8])=[O:7])[CH2:2][CH2:3][CH3:4].C(=O)([O-])[O-].[K+].[K+].[CH2:19](Br)[CH:20]=[CH2:21]>CO>[CH2:21]([N:5]([CH2:1][CH2:2][CH2:3][CH3:4])[S:6]([C:9]([F:12])([F:10])[F:11])(=[O:7])=[O:8])[CH:20]=[CH2:19] |f:1.2.3|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m2_m3_m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-butyltrifluoromethanesulfonamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(CCC)NS(=O)(=O)C(F)(F)F"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C5H10F3NO2S/c1-2-3-4-9-12(10,11)5(6,7)8/h9H,2-4H2,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 62.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "potassium carbonate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C([O-])([O-])=O.[K+].[K+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2O3.2K/c2-1(3)4;;/h(H2,2,3,4);;/q;2*+1/p-2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 45.54,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 250.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Allyl bromide"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C=C)Br"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H5Br/c1-2-3-4/h2H,1,3H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 39.93,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "with stirring for two hours"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture of N-butyltrifluoromethanesulfonamide (62.0 g, 0.302 mole), potassium carbonate (45.54 g, 0.330 mole) and methanol (250 ml) was refluxed with stirring for two hours. Allyl bromide (39.93 g, 0.330 mole) was then added and this mixture stirred under reflux for 24 hours, cooled, filtered, and the solvent evaporated in vacuo. The residue was fractionally distilled yielding 37.0 g (b.p. of 53°-58° C. at 0.07 torr) of the desired compound, N-allyl-N-butyltrifluoromethylsulfonamide."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "was refluxed"
+    },
+    {
+      "type": "STIRRING",
+      "details": "this mixture stirred"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "under reflux for 24 hours",
+      "duration": {
+        "value": 24.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "cooled"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filtered"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the solvent evaporated in vacuo"
+    },
+    {
+      "type": "DISTILLATION",
+      "details": "The residue was fractionally distilled"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 2.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "desired compound"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-allyl-N-butyltrifluoromethylsulfonamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C=C)N(S(=O)(=O)C(F)(F)F)CCCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H14F3NO2S/c1-3-5-7-12(6-4-2)15(13,14)8(9,10)11/h4H,2-3,5-7H2,1H3"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04202706",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:24.340945"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-a4deaf4f69ae4158842ab3a71083e75e"
+}

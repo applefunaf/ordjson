@@ -1,0 +1,368 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][C:2]1[CH:3]=[C:4]([CH:34]=[CH:35][CH:36]=1)[C:5](=[N:32]O)[C:6]1[CH:31]=[CH:30][C:9]([O:10][CH2:11][CH2:12][O:13][C:14]2[CH:19]=[CH:18][C:17]([C:20](=[N:28]O)[C:21]3[CH:26]=[CH:25][CH:24]=[C:23]([CH3:27])[CH:22]=3)=[CH:16][CH:15]=2)=[CH:8][CH:7]=1.N.[H][H]>[Ni].C(O)C>[CH3:27][C:23]1[CH:22]=[C:21]([CH:26]=[CH:25][CH:24]=1)[CH:20]([C:17]1[CH:16]=[CH:15][C:14]([O:13][CH2:12][CH2:11][O:10][C:9]2[CH:30]=[CH:31][C:6]([CH:5]([NH2:32])[C:4]3[CH:34]=[CH:35][CH:36]=[C:2]([CH3:1])[CH:3]=3)=[CH:7][CH:8]=2)=[CH:19][CH:18]=1)[NH2:28]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m5_m2_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "1,2-bis[4-(3-methylbenzoyl)phenoxy]ethane dioxime"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC=1C=C(C(C2=CC=C(OCCOC3=CC=C(C=C3)C(C3=CC(=CC=C3)C)=NO)C=C2)=NO)C=CC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C30H28N2O4/c1-21-5-3-7-25(19-21)29(31-33)23-9-13-27(14-10-23)35-17-18-36-28-15-11-24(12-16-28)30(32-34)26-8-4-6-22(2)20-26/h3-16,19-20,33-34H,17-18H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 10.6,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ammonia"
+            },
+            {
+              "type": "SMILES",
+              "value": "N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H3N/h1H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Raney nickel"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Ni]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Ni"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "CATALYST"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethyl alcohol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 400.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrogen"
+            },
+            {
+              "type": "SMILES",
+              "value": "[H][H]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2/h1H"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "stirred for seven hours"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A reaction mixture is prepared from 1,2-bis[4-(3-methylbenzoyl)phenoxy]ethane dioxime (10.6 g, 0.022 mole), 400 ml absolute ethyl alcohol saturated with ammonia gas and Raney nickel catalyst W-6 (2 g). This mixture is subjected to 500 psi hydrogen pressure, heated to 90° and stirred for seven hours. The Raney nickel is removed by filtration and the alcohol and ammonia by distillation. The residual crude material is crystallized from ethanol to yield 4.2 g (42%) of material mp 113°-115°."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "heated to 90°"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The Raney nickel is removed by filtration",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "Raney nickel"
+              },
+              {
+                "type": "SMILES",
+                "value": "[Ni]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Ni"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DISTILLATION",
+      "details": "the alcohol and ammonia by distillation",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "alcohol"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ammonia"
+              },
+              {
+                "type": "SMILES",
+                "value": "N"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H3N/h1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The residual crude material is crystallized from ethanol",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "crude material"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 7.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "material"
+            },
+            {
+              "type": "NAME",
+              "value": "1,2-bis[4-(3-methyl-alpha-aminobenzyl)phenoxy]ethane"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC=1C=C(C(N)C2=CC=C(OCCOC3=CC=C(C=C3)C(C3=CC(=CC=C3)C)N)C=C2)C=CC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C30H32N2O2/c1-21-5-3-7-25(19-21)29(31)23-9-13-27(14-10-23)33-17-18-34-28-15-11-24(12-16-28)30(32)26-8-4-6-22(2)20-26/h3-16,19-20,29-30H,17-18,31-32H2,1-2H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 4.2,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 42.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 42.2
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04202904",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:27.052761"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-12f17194d5904b3f95336c2795e5e13a"
+}

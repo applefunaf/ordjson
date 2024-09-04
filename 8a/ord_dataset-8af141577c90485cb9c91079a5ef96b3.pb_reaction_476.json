@@ -1,0 +1,289 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[O:1]([CH2:8][CH2:9][NH:10][C:11]([S-:13])=[S:12])[CH2:2][CH2:3][NH:4][C:5]([S-:7])=[S:6].[NH4+:14].[NH4+]>O>[O:1]([CH2:8][CH2:9][NH:10][C:11]([S-:13])=[S:12])[CH2:2][CH2:3][NH:4][C:5]([S-:7])=[S:6].[NH4+:14].[NH4+:4].[O:1]([CH2:8][CH2:9][NH:10][C:11]([S-:13])=[S:12])[CH2:2][CH2:3][NH:4][C:5]([S-:7])=[S:6] |f:0.1.2,4.5.6|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m2_m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Compound 1"
+            },
+            {
+              "type": "NAME",
+              "value": "diammonium(oxydi-2,1-ethanediyl)biscarbamodithioate"
+            },
+            {
+              "type": "SMILES",
+              "value": "O(CCNC(=S)[S-])CCNC(=S)[S-].[NH4+].[NH4+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H12N2OS4.2H3N/c10-5(11)7-1-3-9-4-2-8-6(12)13;;/h1-4H2,(H2,7,10,11)(H2,8,12,13);2*1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 10.15,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "H2O"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 200.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m3_m4_m6": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ZnSO4.7H2O"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 9.67,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "MnSO4.7H2O"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.3,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "H2O"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 25.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "with stirring and over a period of 30 minutes"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a solution of 10.15 g (0.0351 mole) of Compound 1 in 200 ml H2O was added, with stirring and over a period of 30 minutes, a solution of 9.67 g (0.336 mole) ZnSO4.7H2O and 0.30 g (0.018 mole) MnSO4.7H2O dissolved in 25 ml H2O. The resulting precipitate was filtered, washed once with water and once with methanol, and dried under vacuum in a dessicator for 7 hours, to yield 10.8 g (96.5 percent of theory, calculated from Compound 1) of the titled compound as a fine purple powder."
+  },
+  "workups": [
+    {
+      "type": "FILTRATION",
+      "details": "The resulting precipitate was filtered"
+    },
+    {
+      "type": "WASH",
+      "details": "washed once with water and once with methanol",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "methanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "CO"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried under vacuum in a dessicator for 7 hours",
+      "duration": {
+        "value": 7.0,
+        "units": "HOUR"
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 30.0,
+        "units": "MINUTE"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Compound 1"
+            },
+            {
+              "type": "NAME",
+              "value": "diammonium(oxydi-2,1-ethanediyl)biscarbamodithioate"
+            },
+            {
+              "type": "SMILES",
+              "value": "O(CCNC(=S)[S-])CCNC(=S)[S-].[NH4+].[NH4+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H12N2OS4.2H3N/c10-5(11)7-1-3-9-4-2-8-6(12)13;;/h1-4H2,(H2,7,10,11)(H2,8,12,13);2*1H3"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "titled compound"
+            },
+            {
+              "type": "NAME",
+              "value": "(oxydi-2,1-ethanediyl)biscarbamodithioate"
+            },
+            {
+              "type": "SMILES",
+              "value": "O(CCNC(=S)[S-])CCNC(=S)[S-]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H12N2OS4/c10-5(11)7-1-3-9-4-2-8-6(12)13/h1-4H2,(H2,7,10,11)(H2,8,12,13)/p-2"
+            }
+          ],
+          "isolated_color": "fine purple",
+          "texture": {
+            "type": "POWDER",
+            "details": "powder"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04203999",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:26.210435"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-a10c024c6f6c45838a265d59c63b0c4c"
+}

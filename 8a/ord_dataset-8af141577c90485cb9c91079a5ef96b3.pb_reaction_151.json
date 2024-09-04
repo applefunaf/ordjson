@@ -1,0 +1,374 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[Cl:1][C:2]1[C:7]([N+:8]([O-:10])=[O:9])=[C:6](Cl)[C:5]([N+:12]([O-:14])=[O:13])=[CH:4][C:3]=1[C:15]([F:18])([F:17])[F:16].[CH3:19][N:20]([CH3:22])[NH2:21]>C1CCCCC1>[CH3:19][N:20]([CH3:22])[NH:21][C:6]1[C:5]([N+:12]([O-:14])=[O:13])=[CH:4][C:3]([C:15]([F:18])([F:17])[F:16])=[C:2]([Cl:1])[C:7]=1[N+:8]([O-:10])=[O:9]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2,4-dichloro-3,5-dinitrobenzotrifluoride"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC1=C(C=C(C(=C1[N+](=O)[O-])Cl)[N+](=O)[O-])C(F)(F)F"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7HCl2F3N2O4/c8-4-2(7(10,11)12)1-3(13(15)16)5(9)6(4)14(17)18/h1H"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.065,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "1,1-dimethylhydrazine"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN(N)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H8N2/c1-4(2)3/h3H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.13,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "cyclohexane"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1CCCCC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H12/c1-2-4-6-5-3-1/h1-6H2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "Stirring"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To 20.0 g. (0.065 mole) of 2,4-dichloro-3,5-dinitrobenzotrifluoride and 300 ml. of cyclohexane in a 500 ml. round-bottom flask equipped with a stirrer and dropping funnel was added 7.86 g. (0.13 mole) of 1,1-dimethylhydrazine at ambient temperature. The addition was drop-wise over a period of about 20 minutes. Stirring was continued for 22 hours at room temperature. The resultant mixture was filtered and the insoluble solid then stirred with 300 ml. of water for one hour to dissolve the hydrazine hydrochloride. The insoluble product was isolated by filtration and washed with water. Recrystallization from 95% ethanol gave 18.3 g. (85%) of the desired product as a yellow solid, m.p. 130°-131° C."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "round-bottom flask equipped with a stirrer"
+    },
+    {
+      "type": "ADDITION",
+      "details": "was added 7.86 g"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "at ambient temperature",
+      "temperature": {
+        "control": {
+          "type": "AMBIENT"
+        }
+      }
+    },
+    {
+      "type": "ADDITION",
+      "details": "The addition"
+    },
+    {
+      "type": "WAIT",
+      "details": "was continued for 22 hours at room temperature",
+      "duration": {
+        "value": 22.0,
+        "units": "HOUR"
+      },
+      "temperature": {
+        "control": {
+          "type": "AMBIENT"
+        }
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "The resultant mixture was filtered",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "resultant mixture"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "STIRRING",
+      "details": "the insoluble solid then stirred with 300 ml"
+    },
+    {
+      "type": "DISSOLUTION",
+      "details": "of water for one hour to dissolve the hydrazine hydrochloride",
+      "duration": {
+        "value": 1.0,
+        "units": "HOUR"
+      },
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "hydrazine hydrochloride"
+              },
+              {
+                "type": "SMILES",
+                "value": "Cl.NN"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH.H4N2/c;1-2/h1H;1-2H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The insoluble product was isolated by filtration"
+    },
+    {
+      "type": "WASH",
+      "details": "washed with water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "Recrystallization from 95% ethanol",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "gave 18.3 g"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 20.0,
+        "units": "MINUTE"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "desired product"
+            },
+            {
+              "type": "NAME",
+              "value": "N-(dimethylamino)-3-chloro-2,6-dinitro-4-trifluoromethylaniline"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN(NC1=C(C(=C(C=C1[N+](=O)[O-])C(F)(F)F)Cl)[N+](=O)[O-])C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H8ClF3N4O4/c1-15(2)14-7-5(16(18)19)3-4(9(11,12)13)6(10)8(7)17(20)21/h3,14H,1-2H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 85.0
+              }
+            }
+          ],
+          "isolated_color": "yellow",
+          "texture": {
+            "type": "CUSTOM",
+            "details": "solid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04202839",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:24.957862"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-7bb68268aa474bf8b926639d447d284f"
+}

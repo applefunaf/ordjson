@@ -1,0 +1,267 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "N1C=CC=CC=1.[CH3:7][O:8][CH:9]([O:16][CH3:17])[CH:10]([CH3:15])/[C:11](/[F:14])=[CH:12]\\[OH:13]>[O-2].[O-2].[O-2].[Cr+6].C(Cl)Cl>[CH3:7][O:8][CH:9]([O:16][CH3:17])/[C:10](/[CH3:15])=[C:11](/[F:14])\\[CH:12]=[O:13] |f:2.3.4.5|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methylene chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(Cl)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Pyridine"
+            },
+            {
+              "type": "SMILES",
+              "value": "N1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C5H5N/c1-2-4-6-5-3-1/h1-5H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 230.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "E-4,4-dimethoxy-2-fluoro-3-methyl-buten-1-ol"
+            },
+            {
+              "type": "SMILES",
+              "value": "COC(C(\\C(=C/O)\\F)C)OC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H13FO3/c1-5(6(8)4-9)7(10-2)11-3/h4-5,7,9H,1-3H3/b6-4+"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Chromium trioxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "[O-2].[O-2].[O-2].[Cr+6]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Cr.3O/q+6;3*-2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 145.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "CATALYST"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "the mixture was stirred for 2 hours"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "Chromium trioxide (145 g., 1.45 mol) was added to 5 l. of methylene chloride in a 12 l. round bottomed flask fitted with argon inlet and mechanical stirrer. Pyridine (230 ml., 2.9 mol) was added and the mixture was stirred for 2 hours. Celite (290 g.) was added and then E-4,4-dimethoxy-2-fluoro-3-methyl-buten-1-ol was added in one portion and stirred for 30 minutes. The mixture was filtered, evaporated at 30° C. to ~5% of its volume and diluted with 500 ml. of ether. This mixture was filtered and evaporated to ~100 ml. at 30° C. The resulting E-4,4-dimethoxy-2-fluoro-3-methyl-buten-1-al was used in the next step without further purification."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "round bottomed flask fitted with argon inlet and mechanical stirrer"
+    },
+    {
+      "type": "ADDITION",
+      "details": "Celite (290 g.) was added"
+    },
+    {
+      "type": "STIRRING",
+      "details": "stirred for 30 minutes",
+      "duration": {
+        "value": 30.0,
+        "units": "MINUTE"
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "The mixture was filtered"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "evaporated at 30° C. to ~5% of its volume"
+    },
+    {
+      "type": "ADDITION",
+      "details": "diluted with 500 ml"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "This mixture was filtered"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "evaporated to ~100 ml"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "at 30° C",
+      "temperature": {
+        "setpoint": {
+          "value": 30.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The resulting E-4,4-dimethoxy-2-fluoro-3-methyl-buten-1-al was used in the next step without further purification",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "E-4,4-dimethoxy-2-fluoro-3-methyl-buten-1-al"
+              },
+              {
+                "type": "SMILES",
+                "value": "COC(/C(=C(\\C=O)/F)/C)OC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C7H11FO3/c1-5(6(8)4-9)7(10-2)11-3/h4,7H,1-3H3/b6-5+"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 2.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "E-4,4-dimethoxy-2-fluoro-3-methyl-buten-1-al"
+            },
+            {
+              "type": "SMILES",
+              "value": "COC(/C(=C(\\C=O)/F)/C)OC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H11FO3/c1-5(6(8)4-9)7(10-2)11-3/h4,7H,1-3H3/b6-5+"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04201727",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:24.811555"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-0edc8f1ecaec4ff5b1669837baca21c2"
+}

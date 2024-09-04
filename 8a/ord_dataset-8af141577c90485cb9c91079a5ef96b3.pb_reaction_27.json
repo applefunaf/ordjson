@@ -1,0 +1,233 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[N+:1]([C:4]1[CH:5]=[C:6]([CH:15]=[CH:16][C:17]=1[N:18]([CH2:23][CH:24]([CH3:26])[CH3:25])[CH2:19][CH:20]([CH3:22])[CH3:21])[C:7]([C:9]1[CH:14]=[CH:13][CH:12]=[CH:11][CH:10]=1)=[O:8])([O-])=O.[H][H]>[Ni].C(OCC)(=O)C>[NH2:1][C:4]1[CH:5]=[C:6]([CH:15]=[CH:16][C:17]=1[N:18]([CH2:23][CH:24]([CH3:26])[CH3:25])[CH2:19][CH:20]([CH3:21])[CH3:22])[C:7]([C:9]1[CH:14]=[CH:13][CH:12]=[CH:11][CH:10]=1)=[O:8]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethyl acetate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)OCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3-nitro-4-(N,N-diisobutylamino)-benzophenone"
+            },
+            {
+              "type": "SMILES",
+              "value": "[N+](=O)([O-])C=1C=C(C(=O)C2=CC=CC=C2)C=CC1N(CC(C)C)CC(C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C21H26N2O3/c1-15(2)13-22(14-16(3)4)19-11-10-18(12-20(19)23(25)26)21(24)17-8-6-5-7-9-17/h5-12,15-16H,13-14H2,1-4H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrogen"
+            },
+            {
+              "type": "SMILES",
+              "value": "[H][H]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2/h1H"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Raney-nickel"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Ni]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Ni"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "CATALYST"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "10.63 g. of 3-nitro-4-(N,N-diisobutylamino)-benzophenone are dissolved in 106 ml. of ethyl acetate, the solution is poured into a hydrogenating apparatus, and 5,3 g. of Raney-nickel are added. The reaction mixture is hydrogenated at room temperature and atmospheric pressure until the uptake of the calculated amount of hydrogen (this requires generally about 1.5 hours). Thereafter the catalyst is removed by filtration and the clear solution is evaporated to dryness under reduced pressure. The obtained 9.4 g. of solid are recrystallized from isopropanol, to yield pure 3-amino-4-(N,N-diisobutylamino)-benzophenone; m.p.: 59°-60° C."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "is hydrogenated at room temperature",
+      "temperature": {
+        "control": {
+          "type": "AMBIENT"
+        }
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "Thereafter the catalyst is removed by filtration"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the clear solution is evaporated to dryness under reduced pressure"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "of solid are recrystallized from isopropanol",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "isopropanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(C)O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C3H8O/c1-3(2)4/h3-4H,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3-amino-4-(N,N-diisobutylamino)-benzophenone"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC=1C=C(C(=O)C2=CC=CC=C2)C=CC1N(CC(C)C)CC(C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C21H28N2O/c1-15(2)13-23(14-16(3)4)20-11-10-18(12-19(20)22)21(24)17-8-6-5-7-9-17/h5-12,15-16H,13-14,22H2,1-4H3"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04201723",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:24.482034"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-b256b11487f74bf4afd57570a982f31a"
+}

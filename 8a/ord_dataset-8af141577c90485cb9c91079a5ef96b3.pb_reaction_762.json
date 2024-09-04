@@ -1,0 +1,334 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH:1]1[C:11]2[CH2:10][CH2:9][C:8]3[CH:12]=[CH:13][CH:14]=[CH:15][C:7]=3[S:6][C:5]=2[CH:4]=[C:3]([CH:16]([CH3:22])[C:17]([O:19]CC)=[O:18])[CH:2]=1.C(O)C.[OH-].[K+].Cl>O>[CH:1]1[C:11]2[CH2:10][CH2:9][C:8]3[CH:12]=[CH:13][CH:14]=[CH:15][C:7]=3[S:6][C:5]=2[CH:4]=[C:3]([CH:16]([CH3:22])[C:17]([OH:19])=[O:18])[CH:2]=1 |f:2.3|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrochloric acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/ClH/h1H"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m1_m2_m3_m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethyl 2-(10,11-dihydro dibenzo[b,f]thiepin-3-yl)-propionate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1=CC(=CC=2SC3=C(CCC21)C=CC=C3)C(C(=O)OCC)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C19H20O2S/c1-3-21-19(20)13(2)16-11-10-15-9-8-14-6-4-5-7-17(14)22-18(15)12-16/h4-7,10-13H,3,8-9H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 26.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 1.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "potassium hydroxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "[OH-].[K+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/K.H2O/h;1H2/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 200.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 1.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "was stirred at room temperature for 1 hour"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "the mixture of 26 mg of ethyl 2-(10,11-dihydro dibenzo[b,f]thiepin-3-yl)-propionate, 1 ml of ethanol, 200 mg of potassium hydroxide and 1 ml of water was stirred at room temperature for 1 hour. The solvent was distilled off to obtain the residue, which was acidified with hydrochloric acid and the resulting mixture was extracted with ethyl acetate. The extract was washed with saturated sodium chloride solution and dried over anhydrous sodium sulfate. The solvent was distilled off to obtain 24 ml of 2-(10,11-dihydro dibenzo[b,f]thiepin-3-yl)-propionic acid as pale yellow oil."
+  },
+  "workups": [
+    {
+      "type": "DISTILLATION",
+      "details": "The solvent was distilled off"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to obtain the residue, which"
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "the resulting mixture was extracted with ethyl acetate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "The extract was washed with saturated sodium chloride solution",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "sodium chloride"
+              },
+              {
+                "type": "SMILES",
+                "value": "[Cl-].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH.Na/h1H;/q;+1/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "dried over anhydrous sodium sulfate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "sodium sulfate"
+              },
+              {
+                "type": "SMILES",
+                "value": "S(=O)(=O)([O-])[O-].[Na+].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/2Na.H2O4S/c;;1-5(2,3)4/h;;(H2,1,2,3,4)/q2*+1;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DISTILLATION",
+      "details": "The solvent was distilled off"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 1.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-(10,11-dihydro dibenzo[b,f]thiepin-3-yl)-propionic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1=CC(=CC=2SC3=C(CCC21)C=CC=C3)C(C(=O)O)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C17H16O2S/c1-11(17(18)19)14-9-8-13-7-6-12-4-2-3-5-15(12)20-16(13)10-14/h2-5,8-11H,6-7H2,1H3,(H,18,19)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "VOLUME",
+              "amount": {
+                "volume": {
+                  "value": 24.0,
+                  "units": "MILLILITER"
+                }
+              }
+            }
+          ],
+          "isolated_color": "pale yellow",
+          "texture": {
+            "type": "OIL",
+            "details": "oil"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04205170",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:26.856785"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-b700b0102aa444e4a58196ba82d1f7e1"
+}

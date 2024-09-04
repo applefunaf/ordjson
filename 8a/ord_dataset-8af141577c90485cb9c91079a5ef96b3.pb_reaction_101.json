@@ -1,0 +1,275 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[C:1]([C:5]1[CH:14]=[CH:13][C:8]([NH:9]C(=O)C)=[CH:7][CH:6]=1)(=[O:4])[CH2:2][CH3:3].C(=O)([O-])[O-].[Na+].[Na+]>Cl>[C:1]([C:5]1[CH:6]=[CH:7][C:8]([NH2:9])=[CH:13][CH:14]=1)(=[O:4])[CH2:2][CH3:3] |f:1.2.3|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "p-propionylacetanilide"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(CC)(=O)C1=CC=C(NC(C)=O)C=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C11H13NO2/c1-3-11(14)9-4-6-10(7-5-9)12-8(2)13/h4-7H,3H2,1-2H3,(H,12,13)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 141.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sodium carbonate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C([O-])([O-])=O.[Na+].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2O3.2Na/c2-1(3)4;;/h(H2,2,3,4);;/q;2*+1/p-2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 300.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrochloric acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/ClH/h1H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 600.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "141 g (1 mole) of p-propionylacetanilide were dissolved while refluxing and stirring into 600 ml of 5 N hydrochloric acid. Refluxing was continued for 30 min, cooling was applied, and sodium carbonate (about 300 g) was added, until the reaction mixture was alkaline. The residue formed was sucked off, washed with water until neutral and recrystallized from 725 ml of isopropanol. The mixture was sucked off and washed with ether. After drying under vacuum, a yellow-brownish powder was obtained."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "while refluxing"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "Refluxing"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "cooling"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The residue formed"
+    },
+    {
+      "type": "WASH",
+      "details": "washed with water until neutral and",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "recrystallized from 725 ml of isopropanol",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "isopropanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(C)O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C3H8O/c1-3(2)4/h3-4H,1-2H3"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 725.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "washed with ether",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "After drying under vacuum"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "a yellow-brownish powder was obtained"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 30.0,
+        "units": "MINUTE"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "p-propionyl aniline"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(CC)(=O)C1=CC=C(N)C=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H11NO/c1-2-9(11)7-3-5-8(10)6-4-7/h3-6H,2,10H2,1H3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04202697",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:24.233166"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-dddf784d330f4a969843da8cb504e923"
+}

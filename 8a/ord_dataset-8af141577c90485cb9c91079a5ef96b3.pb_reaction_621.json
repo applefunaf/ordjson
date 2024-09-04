@@ -1,0 +1,229 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[F:1][C:2]1[CH:10]=[CH:9][C:5]([CH2:6][CH2:7][OH:8])=[CH:4][CH:3]=1.C([O-])(=O)C.[Na+].[Cr](Cl)([O-])(=O)=O.[NH+]1C=CC=CC=1>ClCCl>[F:1][C:2]1[CH:10]=[CH:9][C:5]([CH2:6][CH:7]=[O:8])=[CH:4][CH:3]=1 |f:1.2,3.4|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m4_m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "p-fluorophenethyl alcohol"
+            },
+            {
+              "type": "SMILES",
+              "value": "FC1=CC=C(CCO)C=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H9FO/c9-8-3-1-7(2-4-8)5-6-10/h1-4,10H,5-6H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 4.5,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sodium acetate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)[O-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H4O2.Na/c1-2(3)4;/h1H3,(H,3,4);/q;+1/p-1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.5,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "pyridinium chlorochromate"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Cr](=O)(=O)([O-])Cl.[NH+]1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C5H5N.ClH.Cr.3O/c1-2-4-6-5-3-1;;;;;/h1-5H;1H;;;;/q;;+1;;;-1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 10.4,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "dichloromethane"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClCCl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 50.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "with stirring, at RT and under nitrogen"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To p-fluorophenethyl alcohol (4.5 g, 31.9 mmol) in 50 ml dichloromethane is added sodium acetate (0.5 g, 6.2 mmol) and pyridinium chlorochromate (10.4 g, 48.1 mmol) with stirring, at RT and under nitrogen. The reaction mixture is stirred for about 2 hours and then filtered through a column of Florisil using dichloromethane. The filtrate is dried, concentrated under vacuum and distilled (short path) to yield p-fluorophenylacetaldehyde (fraction at 90°, 3.5 mm Hq.)."
+  },
+  "workups": [
+    {
+      "type": "STIRRING",
+      "details": "The reaction mixture is stirred for about 2 hours",
+      "duration": {
+        "value": 2.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filtered through a column of Florisil",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "Florisil"
+              },
+              {
+                "type": "SMILES",
+                "value": "[O-][Si](=O)[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.O3Si/c;1-4(2)3/q+2;-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The filtrate is dried"
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated under vacuum"
+    },
+    {
+      "type": "DISTILLATION",
+      "details": "distilled (short path)"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "p-fluorophenylacetaldehyde"
+            },
+            {
+              "type": "SMILES",
+              "value": "FC1=CC=C(C=C1)CC=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H7FO/c9-8-3-1-7(2-4-8)5-6-10/h1-4,6H,5H2"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04204071",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:28.846619"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-25a92c93e52d4a0dae669c9c329cea30"
+}

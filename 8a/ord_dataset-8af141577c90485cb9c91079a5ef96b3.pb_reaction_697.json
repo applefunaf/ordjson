@@ -1,0 +1,431 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "C(O)C.[OH:4][CH:5]([C:7]1[CH:12]=[CH:11][C:10]([C:13]2[CH:14]=[CH:15][C:16]3[O:20][C:19]([C:21]([O:23]CC)=[O:22])=[CH:18][C:17]=3[CH:26]=2)=[CH:9][CH:8]=1)[CH3:6]>O1CCCC1>[OH:4][CH:5]([C:7]1[CH:8]=[CH:9][C:10]([C:13]2[CH:14]=[CH:15][C:16]3[O:20][CH:19]([C:21]([OH:23])=[O:22])[CH2:18][C:17]=3[CH:26]=2)=[CH:11][CH:12]=1)[CH3:6]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 75.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "6B"
+            },
+            {
+              "type": "NAME",
+              "value": "ethyl 5-(4-(1-hydroxyethyl)phenyl)-2-benzofurancarboxylate"
+            },
+            {
+              "type": "SMILES",
+              "value": "OC(C)C1=CC=C(C=C1)C=1C=CC2=C(C=C(O2)C(=O)OCC)C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C19H18O4/c1-3-22-19(21)18-11-16-10-15(8-9-17(16)23-18)14-6-4-13(5-7-14)12(2)20/h4-12,20H,3H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 23.9,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "tetrahydrofuran"
+            },
+            {
+              "type": "SMILES",
+              "value": "O1CCCC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O/c1-2-4-5-3-1/h1-4H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 300.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sodium mercury amalgam"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 195.7,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "The mixture was stirred at room temperature overnight"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "75 ml of ethanol was added to a solution of 23.9 g of 6B in 300 ml of tetrahydrofuran, then 195.7 g of 2.5% sodium/mercury amalgam was added in portions, at room temperature. The mixture was stirred at room temperature overnight. The mercury was separated, the solid was collected and dissolved in 300 ml of water. The solution was acidified to pH=1 with concentrated hydrochloric acid. The solid was collected, washed with water and dried (P2O5 ; reduced pressure, 45° C.). The product was dissolved in tetrahydrofuran, the solution was filtered and its volume reduced to 30 ml by evaporating the solvent under reduced pressure. The resulting solution was triturated with ether. The solid was collected and dried in a vacuum oven over P2O5 to give 2,3-dihydro-5-(4-(1-hydroxyethyl)phenyl)-2-benzofurancarboxylic acid (6C), mp: 155°-157° C."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "The mercury was separated",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "mercury"
+              },
+              {
+                "type": "SMILES",
+                "value": "[Hg]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Hg"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the solid was collected"
+    },
+    {
+      "type": "DISSOLUTION",
+      "details": "dissolved in 300 ml of water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 300.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The solid was collected"
+    },
+    {
+      "type": "WASH",
+      "details": "washed with water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "dried (P2O5 ; reduced pressure, 45° C.)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "P2O5"
+              },
+              {
+                "type": "SMILES",
+                "value": "O=P12OP3(=O)OP(=O)(O1)OP(=O)(O2)O3"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/O10P4/c1-11-5-12(2)8-13(3,6-11)10-14(4,7-11)9-12"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      },
+      "temperature": {
+        "setpoint": {
+          "value": 45.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "DISSOLUTION",
+      "details": "The product was dissolved in tetrahydrofuran",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "tetrahydrofuran"
+              },
+              {
+                "type": "SMILES",
+                "value": "O1CCCC1"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O/c1-2-4-5-3-1/h1-4H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "the solution was filtered"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "by evaporating the solvent under reduced pressure"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The resulting solution was triturated with ether",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The solid was collected"
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "dried in a vacuum oven over P2O5",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "P2O5"
+              },
+              {
+                "type": "SMILES",
+                "value": "O=P12OP3(=O)OP(=O)(O1)OP(=O)(O2)O3"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/O10P4/c1-11-5-12(2)8-13(3,6-11)10-14(4,7-11)9-12"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 8.0,
+        "precision": 8.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2,3-dihydro-5-(4-(1-hydroxyethyl)phenyl)-2-benzofurancarboxylic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "OC(C)C1=CC=C(C=C1)C=1C=CC2=C(CC(O2)C(=O)O)C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C17H16O4/c1-10(18)11-2-4-12(5-3-11)13-6-7-15-14(8-13)9-16(21-15)17(19)20/h2-8,10,16,18H,9H2,1H3,(H,19,20)"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04205080",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:25.508201"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-66dc47013d4440c6a476c99db9f9c0e9"
+}

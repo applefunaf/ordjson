@@ -1,0 +1,200 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "Cl[C:2]1[CH:7]=[C:6]([N+:8]([O-:10])=[O:9])[CH:5]=[CH:4][N+:3]=1[O-:11].[CH:12]([N:15]([CH:19]([CH3:21])[CH3:20])[CH2:16][CH2:17][NH2:18])([CH3:14])[CH3:13]>C(O)C>[CH:12]([N:15]([CH:19]([CH3:21])[CH3:20])[CH2:16][CH2:17][NH:18][C:2]1[CH:7]=[C:6]([N+:8]([O-:10])=[O:9])[CH:5]=[CH:4][N+:3]=1[O-:11])([CH3:14])[CH3:13]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-chloro-4-nitropyridine-N-oxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC1=[N+](C=CC(=C1)[N+](=O)[O-])[O-]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C5H3ClN2O3/c6-5-3-4(8(10)11)1-2-7(5)9/h1-3H"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 20.9,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-diisopropylaminoethylamine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(C)N(CCN)C(C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H20N2/c1-7(2)10(6-5-9)8(3)4/h7-8H,5-6,9H2,1-4H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 34.8,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 200.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture of 2-chloro-4-nitropyridine-N-oxide (20.9 g., 0.12 mole) and 2-diisopropylaminoethylamine (34.8 g., 0.24 mole) dissolved in absolute ethanol (200 ml) is refluxed for 31/2 hours. The solvent is evaporated and the residue is extracted with hot cyclohexane several times to give upon cooling orange crystalline product (20.9 g.), m.p. 94°-97° C."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "is refluxed for 31/2 hours",
+      "duration": {
+        "value": 2.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The solvent is evaporated"
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "the residue is extracted with hot cyclohexane several times",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "cyclohexane"
+              },
+              {
+                "type": "SMILES",
+                "value": "C1CCCCC1"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C6H12/c1-2-4-6-5-3-1/h1-6H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to give"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "upon cooling orange crystalline product (20.9 g.), m.p. 94°-97° C."
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-(2-Diisopropylaminoethylamino)-4-nitropyridine-N-oxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(C)N(CCNC1=[N+](C=CC(=C1)[N+](=O)[O-])[O-])C(C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C13H22N4O3/c1-10(2)15(11(3)4)8-6-14-13-9-12(17(19)20)5-7-16(13)18/h5,7,9-11,14H,6,8H2,1-4H3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04203988",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:28.007318"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-0b04cc1d1e0d4d5c99beeb62c77bc734"
+}

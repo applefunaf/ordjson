@@ -1,0 +1,156 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "C([NH:4][CH:5]([C:10]([OH:12])=[O:11])[CH2:6][CH2:7][S:8][CH3:9])(=O)C>O>[NH2:4][C@H:5]([C:10]([OH:12])=[O:11])[CH2:6][CH2:7][S:8][CH3:9]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-acetyl-DL-methionine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)NC(CCSC)C(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H13NO3S/c1-5(9)8-6(7(10)11)3-4-12-2/h6H,3-4H2,1-2H3,(H,8,9)(H,10,11)"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.2,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "above catalyst"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 100.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "CATALYST"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "100 g of the above catalyst was swelled in water for about one hour and packed into a jacketed glass column having 2.5 cm diameter and 80 cm height and kept at 50° C. Solution of N-acetyl-DL-methionine (0.2 mol, pH 7.0, added with 5.0×10-4 mol CoCl2) was continuously flown down from the top of the column at a flow rate of 1000 ml/hr. The reaction solution flown out of the bottom of the column was sampled on every certain interval of time and the amount of the L-methionine produced was determined by way of ninhydrine colorimetry. The results are shown in table 6."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "kept at 50° C",
+      "temperature": {
+        "setpoint": {
+          "value": 50.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "ALIQUOT",
+      "details": "was sampled on every certain interval of time"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "L-methionine"
+            },
+            {
+              "type": "SMILES",
+              "value": "N[C@@H](CCSC)C(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C5H11NO2S/c1-9-3-2-4(6)5(7)8/h4H,2-3,6H2,1H3,(H,7,8)/t4-/m0/s1"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04205128",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:25.823073"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-3890561da99a43de8dfc1b07f0cfc902"
+}

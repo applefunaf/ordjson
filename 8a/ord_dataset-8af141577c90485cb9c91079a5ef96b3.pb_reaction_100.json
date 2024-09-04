@@ -1,0 +1,384 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[Cl-].[Al+3].[Cl-].[Cl-].[C:5]([NH:8][C:9]1[CH:14]=[CH:13][CH:12]=[CH:11][CH:10]=1)(=[O:7])[CH3:6].[C:15](Cl)(=[O:18])[CH2:16][CH3:17]>C(=S)=S>[C:15]([C:12]1[CH:13]=[CH:14][C:9]([NH:8][C:5](=[O:7])[CH3:6])=[CH:10][CH:11]=1)(=[O:18])[CH2:16][CH3:17] |f:0.1.2.3|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "carbon disulphide"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(=S)=S"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CS2/c2-1-3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 1500.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "aluminium chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Cl-].[Al+3].[Cl-].[Cl-]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Al.3ClH/h;3*1H/q+3;;;/p-3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 1290.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acetanilide"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)NC1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H9NO/c1-7(10)9-8-5-3-2-4-6-8/h2-6H,1H3,(H,9,10)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 405.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "propionyl chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(CC)(=O)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H5ClO/c1-2-3(4)5/h2H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 565.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 25.0,
+        "units": "CELSIUS"
+      }
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "1290 g of aluminium chloride (9.6 mole) were suspended with stirring in 1500 ml of carbon disulphide. 405 g of acetanilide (3 moles) were added slowly to this suspension, while the temperature was kept at 25° C. The reaction mixture was heated until reflux and was cooled immediately to 25° C. 565 ml of propionyl chloride (6.5 moles) were added dropwise in such a way that the temperature was kept at 25° C. The reaction mixture was heated until reflux for 5 hours and kept overnight at ambient temperature (20° C.). The supernatant carbon disulphide layer was decanted and the remaining viscous mixture was poured in a mixture of ice and hydrochloric acid. The residue formed was filtered off and further recrystallized from a mixture of 1500 ml of ethanol and 75 ml of water. Drying was applied under vacuum at 100° C. A light yellow powder was obtained."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "was kept at 25° C",
+      "temperature": {
+        "setpoint": {
+          "value": 25.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "The reaction mixture was heated"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "until reflux"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "was kept at 25° C",
+      "temperature": {
+        "setpoint": {
+          "value": 25.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "The reaction mixture was heated"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "until reflux for 5 hours",
+      "duration": {
+        "value": 5.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "(20° C.)",
+      "temperature": {
+        "setpoint": {
+          "value": 20.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The supernatant carbon disulphide layer was decanted",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "carbon disulphide"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(=S)=S"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CS2/c2-1-3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "ADDITION",
+      "details": "the remaining viscous mixture was poured in a mixture of ice and hydrochloric acid",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "hydrochloric acid"
+              },
+              {
+                "type": "SMILES",
+                "value": "Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH/h1H"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The residue formed"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "was filtered off"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "further recrystallized from a mixture of 1500 ml of ethanol and 75 ml of water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 1500.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 75.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "Drying"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "was applied under vacuum at 100° C",
+      "temperature": {
+        "setpoint": {
+          "value": 100.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "A light yellow powder was obtained"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 8.0,
+        "precision": 8.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "p-propionyl-acetanilide"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(CC)(=O)C1=CC=C(NC(C)=O)C=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C11H13NO2/c1-3-11(14)9-4-6-10(7-5-9)12-8(2)13/h4-7H,3H2,1-2H3,(H,12,13)"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04202697",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:24.214512"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-d07dcea0b1e44504ae6b7411e8226fad"
+}

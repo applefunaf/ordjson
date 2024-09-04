@@ -1,0 +1,229 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[NH2:1][CH2:2][CH2:3][S:4][CH2:5][C:6]([OH:8])=[O:7].[CH3:9]OC(OC)(C)C.[ClH:16]>CO>[ClH:16].[CH3:9][O:7][C:6]([CH2:5][S:4][CH2:3][CH2:2][NH2:1])=[O:8] |f:4.5|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 20.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m1_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "S-(β-aminoethyl)mercaptoacetic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "NCCSCC(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H9NO2S/c5-1-2-8-3-4(6)7/h1-3,5H2,(H,6,7)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 13.5,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2,2-dimethoxy propane"
+            },
+            {
+              "type": "SMILES",
+              "value": "COC(C)(C)OC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C5H12O2/c1-5(2,6-3)7-4/h1-4H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 10.8,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrochloric acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/ClH/h1H"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 7.3,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "13.5 g of S-(β-aminoethyl)mercaptoacetic acid and 10.8 g of 2,2-dimethoxy propane are added, successively, to a solution of 7.3 g of gaseous hydrochloric acid in 20 cc of methanol. The solution is permitted to stand for 12 hours at ambient temperature. The flakes formed (17.5 g) are filtered and washed with ethyl acetate. Fusion point=100° C."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "The flakes formed (17.5 g)"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "are filtered"
+    },
+    {
+      "type": "WASH",
+      "details": "washed with ethyl acetate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "Fusion point=100° C.",
+      "temperature": {
+        "setpoint": {
+          "value": 100.0,
+          "units": "CELSIUS"
+        }
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 12.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-methoxycarbonylmethylthioethylamine hydrochloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl.COC(=O)CSCCN"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C5H11NO2S.ClH/c1-8-5(7)4-9-3-2-6;/h2-4,6H2,1H3;1H"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04204064",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:28.329959"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-22b06dce01664df9b70cac09cc33e009"
+}

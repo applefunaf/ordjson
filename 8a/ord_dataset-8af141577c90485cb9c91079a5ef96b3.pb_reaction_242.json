@@ -1,0 +1,268 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[H-].[Na+].[CH3:3][N:4]([CH3:9])[CH2:5][CH2:6][CH2:7][OH:8].Cl[C:11]1[C:16]2[CH:17]=[N:18][C:19]3[N:23]([CH2:24][CH3:25])[N:22]=[CH:21][C:20]=3[C:15]=2[N:14]2[N:26]=[C:27]([CH3:29])[CH:28]=[C:13]2[N:12]=1>C1C=CC=CC=1>[CH3:3][N:4]([CH3:9])[CH2:5][CH2:6][CH2:7][O:8][C:11]1[C:16]2[CH:17]=[N:18][C:19]3[N:23]([CH2:24][CH3:25])[N:22]=[CH:21][C:20]=3[C:15]=2[N:14]2[N:26]=[C:27]([CH3:29])[CH:28]=[C:13]2[N:12]=1 |f:0.1|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "5-chloro-8-ethyl-2-methyl-8H-pyrazolo[1,5-a]pyrazolo[4',3':5,6]pyrido[3,4-e]pyrimidine"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC1=NC=2N(C3=C1C=NC1=C3C=NN1CC)N=C(C2)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C13H11ClN6/c1-3-19-13-9(6-16-19)11-8(5-15-13)12(14)17-10-4-7(2)18-20(10)11/h4-6H,3H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 28.6,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m1_m4_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sodium hydride"
+            },
+            {
+              "type": "SMILES",
+              "value": "[H-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Na.H/q+1;-1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 3.6,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3-(dimethylamino)propanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN(CCCO)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C5H13NO/c1-6(2)4-3-5-7/h7H,3-5H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "benzene"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H6/c1-2-4-6-5-3-1/h1-6H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 100.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "with stirring"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a suspension of 3.6 g of sodium hydride in 100 ml of dry benzene 15.3 g of 3-(dimethylamino)propanol are added and the mixture is refluxed for 6 hours. After this time, 28.6 g of 5-chloro-8-ethyl-2-methyl-8H-pyrazolo[1,5-a]pyrazolo[4',3':5,6]pyrido[3,4-e]pyrimidine are added in small portions with stirring. The solution is refluxed for 10 hours, and then the solvent is distilled off. The residue is treated with water, filtered off and recrystallized from ethyl acetate, yield 25 g (71%); m.p. 62°-64°."
+  },
+  "workups": [
+    {
+      "type": "ADDITION",
+      "details": "are added"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "the mixture is refluxed for 6 hours",
+      "duration": {
+        "value": 6.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "The solution is refluxed for 10 hours",
+      "duration": {
+        "value": 10.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "DISTILLATION",
+      "details": "the solvent is distilled off"
+    },
+    {
+      "type": "ADDITION",
+      "details": "The residue is treated with water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filtered off"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "recrystallized from ethyl acetate, yield 25 g (71%)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "5-[3-(Dimethylamino)propoxy]-8-ethyl-2-methyl-8H-pyrazolo[1,5-a]pyrazolo[4',3':5,6]pyrido[3,4-e]pyrimidine"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN(CCCOC1=NC=2N(C3=C1C=NC1=C3C=NN1CC)N=C(C2)C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C18H23N7O/c1-5-24-17-13(11-20-24)16-14(10-19-17)18(26-8-6-7-23(3)4)21-15-9-12(2)22-25(15)16/h9-11H,5-8H2,1-4H3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04202899",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:26.718215"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-bf6f68a19460493cb5094834a29a5781"
+}

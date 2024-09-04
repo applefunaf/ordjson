@@ -1,0 +1,251 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[BrH:1].[Br-].[CH3:3][N+:4]([CH3:11])([CH3:10])[CH2:5][CH2:6][CH2:7][NH:8][CH3:9].[OH-].[Na+]>CO>[Br-:1].[CH3:3][N+:4]([CH3:11])([CH3:10])[CH2:5][CH2:6][CH2:7][NH:8][CH3:9] |f:0.1.2,3.4,6.7|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m3_m2_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N,N,N-trimethyl-[3-(methylamino)]-1-propanaminium bromide hydrobromide"
+            },
+            {
+              "type": "SMILES",
+              "value": "Br.[Br-].C[N+](CCCNC)(C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H19N2.2BrH/c1-8-6-5-7-9(2,3)4;;/h8H,5-7H2,1-4H3;2*1H/q+1;;/p-1"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 3.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sodium hydroxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "[OH-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Na.H2O/h;1H2/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 120.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 2.75,
+              "units": "LITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 1.0,
+              "units": "LITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "the solid residue is shaken with 750 ml"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a stirred suspension of 876.0 g. (3.0 moles) of N,N,N-trimethyl-[3-(methylamino)]-1-propanaminium bromide hydrobromide in 2.75 liters of absolute methanol at room temperature is added a freshly prepared solution of sodium hydroxide (120.0 g., 3.0 moles) in 1.0 liter of absolute methanol over a period of 1.0 hour. The reaction mixture is evaporated under reduced pressure and the solid residue is shaken with 750 ml. of acetonitrile. The insoluble sodium bromide is removed by filtration and the filtrate is evaporated. The solid residue is dried in vacuo to give a quantitative yield of white, crystalline hygroscopic product which may be used without further purification or can be recrystallized from isopropanol-ether. NMR (D2 0)γ: 2.28 (3H, S, --NHCH3); 3.11 (9H, S, --N+(CH3)3)."
+  },
+  "workups": [
+    {
+      "type": "ADDITION",
+      "details": "To a stirred suspension of 876.0 g"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The reaction mixture is evaporated under reduced pressure"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The insoluble sodium bromide is removed by filtration",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "sodium bromide"
+              },
+              {
+                "type": "SMILES",
+                "value": "[Br-].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/BrH.Na/h1H;/q;+1/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the filtrate is evaporated"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The solid residue is dried in vacuo"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to give a quantitative yield of white, crystalline hygroscopic product which"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "may be used without further purification"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "can be recrystallized from isopropanol-ether",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "isopropanol-ether"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N,N,N-Trimethyl-[3-(methylamino)]-1-propanaminium Bromide"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Br-].C[N+](CCCNC)(C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H19N2.BrH/c1-8-6-5-7-9(2,3)4;/h8H,5-7H2,1-4H3;1H/q+1;/p-1"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04205064",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:24.706370"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-baa1cda78dfe4aa8a582c76a68a40a78"
+}

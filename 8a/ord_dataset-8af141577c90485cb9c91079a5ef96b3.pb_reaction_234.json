@@ -1,0 +1,248 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "Cl[C:2]1[C:7]2[CH:8]=[N:9][C:10]3[N:14]([CH2:15][CH3:16])[N:13]=[CH:12][C:11]=3[C:6]=2[N:5]2[N:17]=[C:18]([CH3:20])[CH:19]=[C:4]2[N:3]=1.[CH2:21]([NH2:25])[CH2:22][CH2:23][CH3:24]>>[CH2:21]([NH:25][C:2]1[C:7]2[CH:8]=[N:9][C:10]3[N:14]([CH2:15][CH3:16])[N:13]=[CH:12][C:11]=3[C:6]=2[N:5]2[N:17]=[C:18]([CH3:20])[CH:19]=[C:4]2[N:3]=1)[CH2:22][CH2:23][CH3:24]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "5-chloro-8-ethyl-2-methyl-8H-pyrazolo[1,5-a]-pyrazolo[4',3':5,6]pyrido[3,4-e]pyrimidine"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC1=NC=2N(C3=C1C=NC1=C3C=NN1CC)N=C(C2)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C13H11ClN6/c1-3-19-13-9(6-16-19)11-8(5-15-13)12(14)17-10-4-7(2)18-20(10)11/h4-6H,3H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 5.7,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "alcohol"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 50.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "n-butylamine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(CCC)N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H11N/c1-2-3-4-5/h2-5H2,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 1.5,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "with stirring for 12 hours"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "5.7 g of 5-chloro-8-ethyl-2-methyl-8H-pyrazolo[1,5-a]-pyrazolo[4',3':5,6]pyrido[3,4-e]pyrimidine (0.02 mol) are dissolved in 50 ml of dry alcohol. After addition of 1.5 g of n-butylamine, the mixture is heated at reflux temperature with stirring for 12 hours. The solvent is removed and the crystalline residue is treated with water. The N-butyl-8-ethyl-2-methyl-8H-pyrazolo[1,5-a]pyrazolo[4',3':5,6]pyrido[4,3e]pyrimidin-5-amine is filtered off and recrystallized from ethyl acetate, yield 5 g (77%); m.p. 160°-162°."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "the mixture is heated"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "at reflux temperature"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The solvent is removed"
+    },
+    {
+      "type": "ADDITION",
+      "details": "the crystalline residue is treated with water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "The N-butyl-8-ethyl-2-methyl-8H-pyrazolo[1,5-a]pyrazolo[4',3':5,6]pyrido[4,3e]pyrimidin-5-amine is filtered off",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "N-butyl-8-ethyl-2-methyl-8H-pyrazolo[1,5-a]pyrazolo[4',3':5,6]pyrido[4,3e]pyrimidin-5-amine"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "recrystallized from ethyl acetate, yield 5 g (77%)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 12.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-Butyl-8-ethyl-2-methyl-8H-pyrazolo[1,5-a]pyrazolo[4',3':5,6]pyrido[3,4-e]pyrimidin-5-amine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(CCC)NC1=NC=2N(C3=C1C=NC1=C3C=NN1CC)N=C(C2)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C17H21N7/c1-4-6-7-18-16-12-9-19-17-13(10-20-23(17)5-2)15(12)24-14(21-16)8-11(3)22-24/h8-10H,4-7H2,1-3H3,(H,18,21)"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04202899",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:26.513944"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-c9c808f680604112bee2ac143efc55e2"
+}

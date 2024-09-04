@@ -1,0 +1,307 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[Cl:1][CH2:2][CH2:3][CH2:4][O:5][C:6]1[CH:7]=[CH:8][C:9]([CH2:12][OH:13])=[N:10][CH:11]=1.[Mn]([O-])(=O)(=O)=[O:15].[K+]>O>[Cl:1][CH2:2][CH2:3][CH2:4][O:5][C:6]1[CH:7]=[CH:8][C:9]([C:12]([OH:15])=[O:13])=[N:10][CH:11]=1 |f:1.2|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "5-(3-chloropropoxy)-2-pyridine methanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClCCCOC=1C=CC(=NC1)CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H12ClNO2/c10-4-1-5-13-9-3-2-8(7-12)11-6-9/h2-3,6,12H,1,4-5,7H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 30.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "potassium permanganate"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Mn](=O)(=O)(=O)[O-].[K+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/K.Mn.4O/q+1;;;;;-1"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "is stirred vigorously at 5°"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "The mixture of 30.0 g of 5-(3-chloropropoxy)-2-pyridine methanol and 1,200 ml of water is stirred vigorously at 5°. To this mixture is added 31.0 of potassium permanganate in several portions during which time the temperature of the mixture rises to 25° and then the mixture is stirred at 25° for 30 minutes. Then the mixture is filtered, the precipitated manganese dioxide washed with several portions of water, the washing is combined with the filtrate and the resulting aqueous solution is adjusted to pH 5. Then the aqueous solution is evaporated to a small volume and the concentrate is extracted several times with ethyl acetate. After the extracts are combined, the combined ethyl acetate solution is washed and dried. The solution is filtered and the filtrate evaporated to yield 5-(3-chloropropoxy)-2-pyridinecarboxylic acid melting at 120°-121°."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "rises to 25°"
+    },
+    {
+      "type": "STIRRING",
+      "details": "the mixture is stirred at 25° for 30 minutes",
+      "duration": {
+        "value": 30.0,
+        "units": "MINUTE"
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "Then the mixture is filtered"
+    },
+    {
+      "type": "WASH",
+      "details": "the precipitated manganese dioxide washed with several portions of water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "manganese dioxide"
+              },
+              {
+                "type": "SMILES",
+                "value": "[O-2].[O-2].[Mn+4]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mn.2O/q+4;2*-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "Then the aqueous solution is evaporated to a small volume"
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "the concentrate is extracted several times with ethyl acetate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "the combined ethyl acetate solution is washed",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "The solution is filtered"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the filtrate evaporated"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "5-(3-chloropropoxy)-2-pyridinecarboxylic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClCCCOC=1C=CC(=NC1)C(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H10ClNO3/c10-4-1-5-14-7-2-3-8(9(12)13)11-6-7/h2-3,6H,1,4-5H2,(H,12,13)"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04202901",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:25.970425"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-dc27a5140f5040a8bfe6d14aa146bd78"
+}

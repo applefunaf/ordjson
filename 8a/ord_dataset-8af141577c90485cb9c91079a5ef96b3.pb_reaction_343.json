@@ -1,0 +1,230 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[C:1]([O:4][CH2:5][C:6]1[CH2:7][S:8][C@@H:9]2[CH:16]([NH:17][C:18](=[O:48])[C:19]([C:23]3[N:24]=[C:25]([NH:28]C(C4C=CC=CC=4)(C4C=CC=CC=4)C4C=CC=CC=4)[S:26][CH:27]=3)=[N:20][O:21][CH3:22])[C:15](=[O:49])[N:10]2[C:11]=1[C:12]([OH:14])=[O:13])(=[O:3])[CH3:2].C(O)=O>O>[C:1]([O:4][CH2:5][C:6]1[CH2:7][S:8][C@@H:9]2[CH:16]([NH:17][C:18](=[O:48])[C:19]([C:23]3[N:24]=[C:25]([NH2:28])[S:26][CH:27]=3)=[N:20][O:21][CH3:22])[C:15](=[O:49])[N:10]2[C:11]=1[C:12]([OH:14])=[O:13])(=[O:3])[CH3:2]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "product"
+            },
+            {
+              "type": "NAME",
+              "value": "3-acetoxymethyl-7-[{2-(2-tritylamino-4-thiazolyl)-2-methoxyiminoacetyl}amino]-ceph-3-eme-4-carboxylic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)OCC=1CS[C@H]2N(C1C(=O)O)C(C2NC(C(=NOC)C=2N=C(SC2)NC(C2=CC=CC=C2)(C2=CC=CC=C2)C2=CC=CC=C2)=O)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C35H31N5O7S2/c1-21(41)47-18-22-19-48-32-28(31(43)40(32)29(22)33(44)45)37-30(42)27(39-46-2)26-20-49-34(36-26)38-35(23-12-6-3-7-13-23,24-14-8-4-9-15-24)25-16-10-5-11-17-25/h3-17,20,28,32H,18-19H2,1-2H3,(H,36,38)(H,37,42)(H,44,45)/t28?,32-/m1/s1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.975,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "formic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2O2/c2-1-3/h1H,(H,2,3)"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 4.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 4.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 55.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "was stirred for 10 minutes at 55° C."
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture of 0.975 g of the product of Step A and 4 ml of 50% aqueous formic acid was stirred for 10 minutes at 55° C. and after the addition of 4 ml of water, the mixture was vacuum filtered. The filtrate was evaporated under reduced pressure to dryness and the residue was effloresced with 2 ml of ethanol. The mixture was vacuum filtered and the product was washed with ethanol and then ether to obtain 0.428 g of pure 3-acetoxymethyl-7-[{2-(2-amino-4-thiazolyl)-2-methoxyiminoacetyl}amino]-ceph-3-eme-4-carboxylic acid in the syn configuration."
+  },
+  "workups": [
+    {
+      "type": "FILTRATION",
+      "details": "filtered"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The filtrate was evaporated under reduced pressure to dryness"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filtered"
+    },
+    {
+      "type": "WASH",
+      "details": "the product was washed with ethanol",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 10.0,
+        "units": "MINUTE"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3-acetoxymethyl-7-[{2-(2-amino-4-thiazolyl)-2-methoxyiminoacetyl}amino]-ceph-3-eme-4-carboxylic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)OCC=1CS[C@H]2N(C1C(=O)O)C(C2NC(C(=NOC)C=2N=C(SC2)N)=O)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C16H17N5O7S2/c1-6(22)28-3-7-4-29-14-10(13(24)21(14)11(7)15(25)26)19-12(23)9(20-27-2)8-5-30-16(17)18-8/h5,10,14H,3-4H2,1-2H3,(H2,17,18)(H,19,23)(H,25,26)/t10?,14-/m1/s1"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 0.428,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 67.3
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04202893",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:28.508682"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-2cfbd6bb47b74e328a7e274f1a606c6a"
+}

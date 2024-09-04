@@ -1,0 +1,232 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[NH:1](C(OCC1C=CC=CC=1)=O)[C@H:2]([C:18]([NH:20][C@@H:21]([C:23]([NH2:25])=[O:24])[CH3:22])=[O:19])[CH2:3][C:4]1[CH:9]=[CH:8][C:7]([O:10]CC2C=CC=CC=2)=[CH:6][CH:5]=1>CO.C(O)(=O)C.[Pd]>[NH2:1][C@H:2]([C:18]([NH:20][C@@H:21]([C:23]([NH2:25])=[O:24])[CH3:22])=[O:19])[CH2:3][C:4]1[CH:5]=[CH:6][C:7]([OH:10])=[CH:8][CH:9]=1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Pd"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Pd]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Pd"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "CATALYST"
+        }
+      ]
+    },
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "product"
+            },
+            {
+              "type": "NAME",
+              "value": "Z-Tyr(OBzl)-D-Ala-NH2"
+            },
+            {
+              "type": "SMILES",
+              "value": "N([C@@H](CC1=CC=C(C=C1)OCC1=CC=CC=C1)C(=O)N[C@H](C)C(=O)N)C(=O)OCC1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C27H29N3O5/c1-19(25(28)31)29-26(32)24(30-27(33)35-18-22-10-6-3-7-11-22)16-20-12-14-23(15-13-20)34-17-21-8-4-2-5-9-21/h2-15,19,24H,16-18H2,1H3,(H2,28,31)(H,29,32)(H,30,33)/t19-,24+/m1/s1"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acetic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H4O2/c1-2(3)4/h1H3,(H,3,4)"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "CATALYST"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "1 G. of the product of Example 2 was hydrogenated in methanol at TR and 1 atmosphere with 600 mg. of 10% Pd. on carbon catalyst with a few drops of glacial acetic acid for 20 hours at TR. The catalyst was removed by filtration and the methanol evaporated to dryness in vacuo. The product was lyophyllized from water to yield 500 mg. of title compound."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "The catalyst was removed by filtration"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the methanol evaporated to dryness in vacuo",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "methanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "CO"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to yield 500 mg"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "H-Tyr-D-Ala-NH2"
+            },
+            {
+              "type": "SMILES",
+              "value": "N[C@@H](CC1=CC=C(C=C1)O)C(=O)N[C@H](C)C(=O)N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C12H17N3O3/c1-7(11(14)17)15-12(18)10(13)6-8-2-4-9(16)5-3-8/h2-5,7,10,16H,6,13H2,1H3,(H2,14,17)(H,15,18)/t7-,10+/m1/s1"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04205069",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:25.012389"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-4dabfbd34be145de96678fda24d2cf70"
+}

@@ -1,0 +1,356 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "CN(C)C1C=CC=CC=1.[NH2:10][C:11]1[N:16]=[C:15](O)[C:14]([CH2:18][C:19]2[CH:24]=[C:23]([O:25][CH3:26])[C:22]([C:27]([CH3:29])=[CH2:28])=[C:21]([O:30][CH3:31])[CH:20]=2)=[C:13]([NH2:32])[N:12]=1.P(Cl)(Cl)(Cl)=O>>[NH2:10][C:11]1[N:12]=[C:13]([NH2:32])[C:14]([CH2:18][C:19]2[CH:20]=[C:21]([O:30][CH3:31])[C:22]([C:27]([CH3:29])=[CH2:28])=[C:23]([O:25][CH3:26])[CH:24]=2)=[CH:15][N:16]=1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "dimethylaniline"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN(C1=CC=CC=C1)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H11N/c1-9(2)8-6-4-3-5-7-8/h3-7H,1-2H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2,6-diamino-5-(3,5-dimethoxy-4-isopropenylbenzyl)-4-pyrimidinol"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC1=NC(=C(C(=N1)O)CC1=CC(=C(C(=C1)OC)C(=C)C)OC)N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C16H20N4O3/c1-8(2)13-11(22-3)6-9(7-12(13)23-4)5-10-14(17)19-16(18)20-15(10)21/h6-7H,1,5H2,2-4H3,(H5,17,18,19,20,21)"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "phosphorus oxychloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "P(=O)(Cl)(Cl)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Cl3OP/c1-5(2,3)4"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "while stirring to a suspension of 0.8 g"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "0.65 G. of dimethylaniline was added dropwise while stirring to a suspension of 0.8 g. of 2,6-diamino-5-(3,5-dimethoxy-4-isopropenylbenzyl)-4-pyrimidinol in 6.5 g. of phosphorus oxychloride. The mixture was boiled for 4 hours while stirring and then about half of the phosphorus oxychloride was distilled under reduced pressure. About 10 g. of ice were added to the residue. The suspension was left to stand at room temperature for 2 days, adjusted to pH 10 with concentrated ammonia solution and the precipitate was filtered under suction 2 hours later. The precipitate was freed from dimethylaniline by steam distillation. After cooling the aqueous suspension, the resulting crude 2,6-diamino-4-chloro-5-(3,5-dimethoxy-4-isopropenylbenzyl)-pyrimidine was chromatographed on silica gel with benzene/methanol (9:1, v/v) and, after evaporation of the solvents, recrystallized from methanol. Yield: 0.27 g. (32%); melting point 199°-200° C."
+  },
+  "workups": [
+    {
+      "type": "STIRRING",
+      "details": "while stirring"
+    },
+    {
+      "type": "DISTILLATION",
+      "details": "about half of the phosphorus oxychloride was distilled under reduced pressure",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "phosphorus oxychloride"
+              },
+              {
+                "type": "SMILES",
+                "value": "P(=O)(Cl)(Cl)Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Cl3OP/c1-5(2,3)4"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "ADDITION",
+      "details": "of ice were added to the residue"
+    },
+    {
+      "type": "WAIT",
+      "details": "The suspension was left"
+    },
+    {
+      "type": "WAIT",
+      "details": "to stand at room temperature for 2 days",
+      "duration": {
+        "value": 2.0,
+        "units": "DAY"
+      },
+      "temperature": {
+        "control": {
+          "type": "AMBIENT"
+        }
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "the precipitate was filtered under suction 2 hours later",
+      "duration": {
+        "value": 2.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "DISTILLATION",
+      "details": "The precipitate was freed from dimethylaniline by steam distillation",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "dimethylaniline"
+              },
+              {
+                "type": "SMILES",
+                "value": "CN(C1=CC=CC=C1)C"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C8H11N/c1-9(2)8-6-4-3-5-7-8/h3-7H,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "After cooling the aqueous suspension"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the resulting crude 2,6-diamino-4-chloro-5-(3,5-dimethoxy-4-isopropenylbenzyl)-pyrimidine was chromatographed on silica gel with benzene/methanol (9:1",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "2,6-diamino-4-chloro-5-(3,5-dimethoxy-4-isopropenylbenzyl)-pyrimidine"
+              },
+              {
+                "type": "SMILES",
+                "value": "NC1=NC(=C(C(=N1)Cl)CC1=CC(=C(C(=C1)OC)C(=C)C)OC)N"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C16H19ClN4O2/c1-8(2)13-11(22-3)6-9(7-12(13)23-4)5-10-14(17)20-16(19)21-15(10)18/h6-7H,1,5H2,2-4H3,(H4,18,19,20,21)"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "benzene methanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "C1=CC=CC=C1.CO"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C6H6.CH4O/c1-2-4-6-5-3-1;1-2/h1-6H;2H,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "v/v) and, after evaporation of the solvents"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "recrystallized from methanol",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "methanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "CO"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 4.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2,4-diamino-5-(3,5-dimethoxy-4-isopropenylbenzyl)-pyrimidine"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC1=NC=C(C(=N1)N)CC1=CC(=C(C(=C1)OC)C(=C)C)OC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C16H20N4O2/c1-9(2)14-12(21-3)6-10(7-13(14)22-4)5-11-8-19-16(18)20-15(11)17/h6-8H,1,5H2,2-4H3,(H4,17,18,19,20)"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04203980",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:25.360278"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-51533f1a01614dd084c8b6658230d882"
+}

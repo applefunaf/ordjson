@@ -1,0 +1,231 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "S([O:6][CH3:7])(OC)(=O)=O.[CH:8]1([C:11]2[N:16]=[C:15](O)[CH:14]=[C:13]([OH:18])[N:12]=2)[CH2:10][CH2:9]1>[OH-].[Na+]>[CH:8]1([C:11]2[N:12]=[C:13]([OH:18])[CH:14]=[C:15]([O:6][CH3:7])[N:16]=2)[CH2:10][CH2:9]1 |f:2.3|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sodium hydroxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "[OH-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Na.H2O/h;1H2/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m1_m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "dimethyl sulphate"
+            },
+            {
+              "type": "SMILES",
+              "value": "S(=O)(=O)(OC)OC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6O4S/c1-5-7(3,4)6-2/h1-2H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 76.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-cyclopropyl-4,6-dihydroxy-pyrimidine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1(CC1)C1=NC(=CC(=N1)O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H8N2O2/c10-5-3-6(11)9-7(8-5)4-1-2-4/h3-4H,1-2H2,(H2,8,9,10,11)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 76.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sodium hydroxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "[OH-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Na.H2O/h;1H2/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 250.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 50.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "The mixture was then stirred at 50° C. for a further 2 hours"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "76 g (0.6 mol) of dimethyl sulphate were added dropwise to a solution of 76 g (0.5 mol) of 2-cyclopropyl-4,6-dihydroxy-pyrimidine in 250 ml of 2 N sodium hydroxide solution at 50° C. The pH value of the reaction solution was kept at 8 to 8.2 by simultaneously adding 2 N sodium hydroxide solution. The mixture was then stirred at 50° C. for a further 2 hours, control of the pH being continued. The mixture was then cooled to 0° C. and the product which had precipitated was filtered off. 33 g (40% of theory) of 2-cyclopropyl-4-hydroxy-6-methoxy-pyrimidine were obtained in this manner in the form of colorless crystals with a melting point of 186° C."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "The mixture was then cooled to 0° C.",
+      "temperature": {
+        "setpoint": {
+          "value": 0.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the product which had precipitated"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "was filtered off"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 2.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-cyclopropyl-4-hydroxy-6-methoxy-pyrimidine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1(CC1)C1=NC(=CC(=N1)O)OC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H10N2O2/c1-12-7-4-6(11)9-8(10-7)5-2-3-5/h4-5H,2-3H2,1H3,(H,9,10,11)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 33.0,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 40.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 39.7
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04202889",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:25.053511"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-d2d3e75a31af42b3ab6b56e269693f29"
+}

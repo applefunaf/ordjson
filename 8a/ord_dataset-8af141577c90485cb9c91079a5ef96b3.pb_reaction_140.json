@@ -1,0 +1,284 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[NH3:1].[C:2](=[S:4])=[S:3].[Cl:5][C:6]1[CH:13]=[CH:12][C:9]([CH2:10][NH2:11])=[CH:8][CH:7]=1>C(#N)C>[Cl:5][C:6]1[CH:13]=[CH:12][C:9]([CH2:10][NH:11][C:2](=[S:4])[S-:3])=[CH:8][CH:7]=1.[NH4+:1] |f:4.5|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acetonitrile"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)#N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H3N/c1-2-3/h1H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ammonia"
+            },
+            {
+              "type": "SMILES",
+              "value": "N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H3N/h1H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "carbon disulfide"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(=S)=S"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CS2/c2-1-3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-chlorobenzylamine"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC1=CC=C(CN)C=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H8ClN/c8-7-3-1-6(5-9)2-4-7/h1-4H,5,9H2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "Subsequently, the mixture was stirred overnight at room temperature"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "260 ml. of concentrated ammonia solution were treated under an atmosphere of argon, and while cooling by means of ice/methanol bath at ≤-10° C. within about 20 minutes, with 164.5 g. of carbon disulfide and the mixture was subsequently stirred for an additional 15 minutes at the same temperature. 245 G. of 4-chlorobenzylamine dissolved in 122 ml. of acetonitrile were then slowly added, the temperature still maintained at ≤-10° C. Subsequently, the mixture was stirred overnight at room temperature and then cooled in an ice-bath to 0° C. The precipitated crystals were removed by filtration under suction, washed successively with acetonitrile and diethyl ether and dried to a constant weight under reduced pressure at 70°-80° C., and 390 g. of ammonium (N-4-chlorobenzyl)dithiocarbamate having a melting point of 140°-142° C. was obtained."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "while cooling by means of ice/methanol bath at ≤-10° C. within about 20 minutes, with 164.5 g",
+      "duration": {
+        "value": 20.0,
+        "units": "MINUTE"
+      }
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "the temperature still maintained at ≤-10° C"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "cooled in an ice-bath to 0° C",
+      "temperature": {
+        "setpoint": {
+          "value": 0.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The precipitated crystals were removed by filtration under suction"
+    },
+    {
+      "type": "WASH",
+      "details": "washed successively with acetonitrile and diethyl ether",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "acetonitrile"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)#N"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C2H3N/c1-2-3/h1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "diethyl ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried to a constant weight under reduced pressure at 70°-80° C."
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 8.0,
+        "precision": 8.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ammonium (N-4-chlorobenzyl)dithiocarbamate"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC1=CC=C(CNC([S-])=S)C=C1.[NH4+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H8ClNS2.H3N/c9-7-3-1-6(2-4-7)5-10-8(11)12;/h1-4H,5H2,(H2,10,11,12);1H3"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04202832",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:24.825019"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-1b3b17a5839e44288b22de42bfe2875a"
+}

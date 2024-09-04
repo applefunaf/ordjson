@@ -1,0 +1,253 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[I:1]/[CH:2]=[CH:3]/[CH2:4][CH:5]([O:10][Si](C)(C)C)[CH2:6][CH2:7][CH2:8][CH3:9].C1(C)C=CC=CC=1>C(O)(=O)C.O1CCCC1.O>[OH:10][CH:5]([CH2:6][CH2:7][CH2:8][CH3:9])[CH2:4]/[CH:3]=[CH:2]/[I:1]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m3_m4_m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "1-iodo-4-trimethylsiloxy-trans-1-octene"
+            },
+            {
+              "type": "SMILES",
+              "value": "I\\C=C\\CC(CCCC)O[Si](C)(C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C11H23IOSi/c1-5-6-8-11(9-7-10-12)13-14(2,3)4/h7,10-11H,5-6,8-9H2,1-4H3/b10-7+"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acetic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H4O2/c1-2(3)4/h1H3,(H,3,4)"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 200.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "tetrahydrofuran"
+            },
+            {
+              "type": "SMILES",
+              "value": "O1CCCC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O/c1-2-4-5-3-1/h1-4H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 100.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 50.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "toluene"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1(=CC=CC=C1)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H8/c1-7-5-3-2-4-6-7/h2-6H,1H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A 23 g portion of 1-iodo-4-trimethylsiloxy-trans-1-octene is dissolved in a mixture of 200 ml of glacial acetic acid, 100 ml of tetrahydrofuran and 50 ml of water. After solution occurs, toluene is added and the mixture is evaporated. The resulting oil is chromatographed on silica gel with hexane progressively enriched in benzene followed by acetone to give 16 g of an oil, pmr spectrum (CDCl3): 3.69 (m, CHOH) and 2.3 (s, OH)."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "the mixture is evaporated"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The resulting oil is chromatographed on silica gel with hexane",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "hexane"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCCCCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C6H14/c1-3-5-6-4-2/h3-6H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "oil"
+            },
+            {
+              "type": "NAME",
+              "value": "4-Hydroxy-1-iodo-trans-1-octene"
+            },
+            {
+              "type": "SMILES",
+              "value": "OC(C/C=C/I)CCCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H15IO/c1-2-3-5-8(10)6-4-7-9/h4,7-8,10H,2-3,5-6H2,1H3/b7-4+"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 16.0,
+                  "units": "GRAM"
+                }
+              }
+            }
+          ],
+          "texture": {
+            "type": "OIL",
+            "details": "oil"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04202989",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:27.742016"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-030f52fee0ce4b1d90a668ad61990e4b"
+}

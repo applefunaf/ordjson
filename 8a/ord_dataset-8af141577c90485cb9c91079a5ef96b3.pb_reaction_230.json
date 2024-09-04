@@ -1,0 +1,242 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[C:1]([C:6]1[CH:11]=[CH:10][C:9]([CH:12]=[C:13]([CH3:16])[CH:14]=[O:15])=[CH:8][CH:7]=1)([CH2:4][CH3:5])([CH3:3])[CH3:2].[OH-].[Ca+2].[OH-].[H][H]>[Pd]>[C:1]([C:6]1[CH:7]=[CH:8][C:9]([CH2:12][CH:13]([CH3:16])[CH:14]=[O:15])=[CH:10][CH:11]=1)([CH2:4][CH3:5])([CH3:2])[CH3:3] |f:1.2.3|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrogen"
+            },
+            {
+              "type": "SMILES",
+              "value": "[H][H]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2/h1H"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m1_m4_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3-(p-tert.amyl-phenyl)-2-methyl-acrolein"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(C)(CC)C1=CC=C(C=C1)C=C(C=O)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C15H20O/c1-5-15(3,4)14-8-6-13(7-9-14)10-12(2)11-16/h6-11H,5H2,1-4H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 110.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "calcium hydroxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "[OH-].[Ca+2].[OH-]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Ca.2H2O/h;2*1H2/q+2;;/p-2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.39,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "palladium/carbon"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Pd]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Pd"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 4.75,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "CATALYST"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture of 110 g of 3-(p-tert.amyl-phenyl)-2-methyl-acrolein, 4.75 g of 5% palladium/carbon and 0.390 g of calcium hydroxide is flushed with nitrogen and a solution of 7.6 ml of water in 285 ml of methanol is added. The mixture is hydrogenated at room temperature until 1 mol of hydrogen has been taken up. The catalyst is filtered the filtrate is evaporated and the residue is distilled. There is obtained pure 3-(p-tert.amyl-phenyl)-2-methyl-propionaldehyde of boiling point 109°-111° C./0.06 Torr."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "is flushed with nitrogen"
+    },
+    {
+      "type": "ADDITION",
+      "details": "a solution of 7.6 ml of water in 285 ml of methanol is added",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 7.6,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "methanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "CO"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 285.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "The catalyst is filtered the filtrate"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "is evaporated"
+    },
+    {
+      "type": "DISTILLATION",
+      "details": "the residue is distilled"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3-(p-tert.amyl-phenyl)-2-methyl-propionaldehyde"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(C)(CC)C1=CC=C(C=C1)CC(C=O)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C15H22O/c1-5-15(3,4)14-8-6-13(7-9-14)10-12(2)11-16/h6-9,11-12H,5,10H2,1-4H3"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04202894",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:26.452998"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-a798922aba7e49b5824851f038142be7"
+}

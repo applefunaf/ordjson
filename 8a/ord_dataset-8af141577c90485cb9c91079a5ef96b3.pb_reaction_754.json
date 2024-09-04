@@ -1,0 +1,356 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[C:1]([C:5]1[NH:9][C:8]([S:10][CH2:11][CH:12]=[CH2:13])=[N:7][N:6]=1)([CH3:4])([CH3:3])[CH3:2].[CH3:14][N:15]([CH3:19])[C:16](Cl)=[O:17]>N1C=CC=CC=1>[CH3:14][N:15]([CH3:19])[C:16]([N:7]1[C:8]([S:10][CH2:11][CH:12]=[CH2:13])=[N:9][C:5]([C:1]([CH3:4])([CH3:3])[CH3:2])=[N:6]1)=[O:17]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3-tert.butyl-5-allylthio-4H-1,2,4-triazole"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(C)(C)C1=NN=C(N1)SCC=C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H15N3S/c1-5-6-13-8-10-7(11-12-8)9(2,3)4/h5H,1,6H2,2-4H3,(H,10,11,12)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 56.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "dimethylcarbamyl chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN(C(=O)Cl)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H6ClNO/c1-5(2)3(4)6/h1-2H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 31.2,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "pyridine"
+            },
+            {
+              "type": "SMILES",
+              "value": "N1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C5H5N/c1-2-4-6-5-3-1/h1-5H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 300.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A solution of 56 g (0.284 mol) of 3-tert.butyl-5-allylthio-4H-1,2,4-triazole and 31.2 g (0.29 mol) of dimethylcarbamyl chloride in 300 ml of pyridine was maintained at reflux temperature for 16 hrs. After the pyridine was removed at reduced pressure on the rotary evaporator, water was added followed by chloroform. The organic layer was washed with successive portions of dilute hydrochloric acid, water and brine, then dried over Na2SO4. The solvent was removed in vacuo to give 66.3 g of an oil, nD26 1.5126."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "at reflux temperature for 16 hrs",
+      "duration": {
+        "value": 16.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "After the pyridine was removed at reduced pressure on the rotary evaporator, water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "pyridine"
+              },
+              {
+                "type": "SMILES",
+                "value": "N1=CC=CC=C1"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C5H5N/c1-2-4-6-5-3-1/h1-5H"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "ADDITION",
+      "details": "was added"
+    },
+    {
+      "type": "WASH",
+      "details": "The organic layer was washed with successive portions of dilute hydrochloric acid, water and brine",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "hydrochloric acid"
+              },
+              {
+                "type": "SMILES",
+                "value": "Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH/h1H"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "brine"
+              },
+              {
+                "type": "SMILES",
+                "value": "[Cl-].[Na+].O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH.Na.H2O/h1H;;1H2/q;+1;/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "dried over Na2SO4",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "Na2SO4"
+              },
+              {
+                "type": "SMILES",
+                "value": "[O-]S(=O)(=O)[O-].[Na+].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/2Na.H2O4S/c;;1-5(2,3)4/h;;(H2,1,2,3,4)/q2*+1;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The solvent was removed in vacuo"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "oil"
+            },
+            {
+              "type": "NAME",
+              "value": "1-Dimethylcarbamyl-3-tert.butyl-5-allylthio-1H-1,2,4-triazole"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN(C(=O)N1N=C(N=C1SCC=C)C(C)(C)C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C12H20N4OS/c1-7-8-18-10-13-9(12(2,3)4)14-16(10)11(17)15(5)6/h7H,1,8H2,2-6H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 66.3,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 87.0
+              }
+            }
+          ],
+          "texture": {
+            "type": "OIL",
+            "details": "oil"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04205177",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:26.604370"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-0e3645caab8a41d386afbc1a7d04136e"
+}

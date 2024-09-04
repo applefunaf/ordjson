@@ -1,0 +1,253 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[Cl:1][C:2]1[CH:3]=[C:4]([CH:15]=[CH:16][CH:17]=1)[CH2:5][O:6][C:7]1[CH:8]=[CH:9][C:10]([CH2:13][OH:14])=[N:11][CH:12]=1.[Mn]([O-])(=O)(=O)=[O:19].[K+]>O>[Cl:1][C:2]1[CH:3]=[C:4]([CH:15]=[CH:16][CH:17]=1)[CH2:5][O:6][C:7]1[CH:8]=[CH:9][C:10]([C:13]([OH:19])=[O:14])=[N:11][CH:12]=1 |f:1.2|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "5-(m-chloro-benzyloxy)-2-pyridinemethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC=1C=C(COC=2C=CC(=NC2)CO)C=CC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C13H12ClNO2/c14-11-3-1-2-10(6-11)9-17-13-5-4-12(8-16)15-7-13/h1-7,16H,8-9H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 13.1,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 250.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "potassium permanganate"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Mn](=O)(=O)(=O)[O-].[K+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/K.Mn.4O/q+1;;;;;-1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 11.5,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "is stirred vigorously at 25°"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "The mixture of 13.1 g of 5-(m-chloro-benzyloxy)-2-pyridinemethanol and 250 ml of water is stirred vigorously at 25°. To this mixture is added 11.5 g of potassium permanganate in several portions. Then the mixture is filtered, the precipitated manganese dioxide washed with hot water, the washing is combined with the filtrate, concentrated to a small volume and then acidified with aqueous hydrochloric acid. The precipitated product is collected and recrystallized from ethyl acetate to yield 5-(3-chloro-benzyloxy)-2-pyridinecarboxylic acid melting at 176°-177°."
+  },
+  "workups": [
+    {
+      "type": "FILTRATION",
+      "details": "Then the mixture is filtered"
+    },
+    {
+      "type": "WASH",
+      "details": "the precipitated manganese dioxide washed with hot water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "manganese dioxide"
+              },
+              {
+                "type": "SMILES",
+                "value": "[O-2].[O-2].[Mn+4]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mn.2O/q+4;2*-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated to a small volume"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The precipitated product is collected"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "recrystallized from ethyl acetate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "5-(3-chloro-benzyloxy)-2-pyridinecarboxylic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC=1C=C(COC=2C=CC(=NC2)C(=O)O)C=CC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C13H10ClNO3/c14-10-3-1-2-9(6-10)8-18-11-4-5-12(13(16)17)15-7-11/h1-7H,8H2,(H,16,17)"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04202901",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:25.829582"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-6d8dadf283284758ae4da04fddabd450"
+}

@@ -1,0 +1,351 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "Br.[CH2:2]([O:4][N:5]=[C:6]([C:12]1[N:13]=[C:14]([NH2:17])[S:15][CH:16]=1)[C:7]([O:9][CH2:10][CH3:11])=[O:8])[CH3:3].[Cl:18]CC(Cl)=O.[C:23]([O:26]CC)(=O)[CH3:24]>CN(C)C(=O)C>[CH2:2]([O:4][N:5]=[C:6]([C:12]1[N:13]=[C:14]([N:17]([Cl:18])[C:23]([CH3:24])=[O:26])[S:15][CH:16]=1)[C:7]([O:9][CH2:10][CH3:11])=[O:8])[CH3:3] |f:0.1|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethyl acetate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)OCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 150.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m1_m4_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethyl α-ethoxyimino-2-aminothiazol-4-ylacetate hydrobromide"
+            },
+            {
+              "type": "SMILES",
+              "value": "Br.C(C)ON=C(C(=O)OCC)C=1N=C(SC1)N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H13N3O3S.BrH/c1-3-14-8(13)7(12-15-4-2)6-5-16-9(10)11-6;/h5H,3-4H2,1-2H3,(H2,10,11);1H"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 2.43,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "chloroacetyl chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClCC(=O)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H2Cl2O/c3-1-2(4)5/h1H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 1.43,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N,N-dimethylacetamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN(C(C)=O)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H9NO/c1-4(6)5(2)3/h1-3H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 25.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "stirring"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a solution of 2.43 g of ethyl α-ethoxyimino-2-aminothiazol-4-ylacetate hydrobromide in 25 ml of anhydrous N,N-dimethylacetamide is added 1.43 g of chloroacetyl chloride under cooling and stirring. The solution is stirred for 30 minutes under ice-cooling and then for 30 minutes at room temperature. To the reaction mixture is added 150 ml of ethyl acetate and the mixture is repeatedly washed with saturated aq. NaCl solution. The ethyl acetate layer is dried over anhydrous magnesium sulfate, and subjected to the distillation of the solvent under reduced pressure. To the residue is added water to precipitate solid material. The solid is collected by filtration and dried. The procedure gives 1.90 g of ethyl α-ethoxyimino-2-(chloroacetamino)thiazol-4-ylacetate. Yield 79%."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "under cooling"
+    },
+    {
+      "type": "STIRRING",
+      "details": "The solution is stirred for 30 minutes under ice-",
+      "duration": {
+        "value": 30.0,
+        "units": "MINUTE"
+      }
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "cooling"
+    },
+    {
+      "type": "WASH",
+      "details": "the mixture is repeatedly washed with saturated aq. NaCl solution",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "NaCl"
+              },
+              {
+                "type": "SMILES",
+                "value": "[Na+].[Cl-]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH.Na/h1H;/q;+1/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "The ethyl acetate layer is dried over anhydrous magnesium sulfate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "magnesium sulfate"
+              },
+              {
+                "type": "SMILES",
+                "value": "S(=O)(=O)([O-])[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DISTILLATION",
+      "details": "subjected to the distillation of the solvent under reduced pressure"
+    },
+    {
+      "type": "ADDITION",
+      "details": "To the residue is added water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to precipitate solid material"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "The solid is collected by filtration"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 30.0,
+        "units": "MINUTE"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethyl α-ethoxyimino-2-(chloroacetamino)thiazol-4-ylacetate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)ON=C(C(=O)OCC)C=1N=C(SC1)N(C(=O)C)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C11H14ClN3O4S/c1-4-18-10(17)9(14-19-5-2)8-6-20-11(13-8)15(12)7(3)16/h6H,4-5H2,1-3H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 1.9,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 79.0
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04203899",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:25.099556"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-4c0613e5a8f0461786e69413e6dd651a"
+}

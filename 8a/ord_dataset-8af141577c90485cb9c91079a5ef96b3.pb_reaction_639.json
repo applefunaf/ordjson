@@ -1,0 +1,245 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[C:1]1(=[O:11])[O:6][C:4](=O)[C:3]2=[CH:7][CH:8]=[CH:9][CH:10]=[C:2]12.[P:12](=[S:20])([NH2:19])([O:16][CH2:17][CH3:18])[O:13][CH2:14][CH3:15].C(N(CC)CC)C>O>[C:4]1(=[O:6])[N:19]([P:12](=[S:20])([O:16][CH2:17][CH3:18])[O:13][CH2:14][CH3:15])[C:1](=[O:11])[C:2]2=[CH:10][CH:9]=[CH:8][CH:7]=[C:3]12",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m2_m3_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "phthalic anhydride"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1(C=2C(C(=O)O1)=CC=CC2)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H4O3/c9-7-5-3-1-2-4-6(5)8(10)11-7/h1-4H"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 74.06,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "O,O-diethyl phosphoramidothioate"
+            },
+            {
+              "type": "SMILES",
+              "value": "P(OCC)(OCC)(N)=S"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H12NO2PS/c1-3-6-8(5,9)7-4-2/h3-4H2,1-2H3,(H2,5,9)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 33.84,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "triethylamine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)N(CC)CC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H15N/c1-4-7(5-2)6-3/h4-6H2,1-3H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 50.6,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 55.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "the system was stirred for 10 minutes"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture of the 74.06 g (0.5 mole) phthalic anhydride, 33.84 g (0.2 mole) O,O-diethyl phosphoramidothioate and 50.60 g (0.5 mole) triethylamine was heated at 55° C. for 3.5 hours. Eighty three mls of water were added to the stirred mixture and the system was stirred for 10 minutes and then cooled to 25° C. over a one hour period. The solid was filtered, washed with 150 ml water to give the desired compound, O,O-diethyl phthalimidophosphonothioate, purity by GLC. The yield was calculated to be 76% from the phosphoramidothioate."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "cooled to 25° C. over a one hour period",
+      "duration": {
+        "value": 1.0,
+        "units": "HOUR"
+      },
+      "temperature": {
+        "setpoint": {
+          "value": 25.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "The solid was filtered"
+    },
+    {
+      "type": "WASH",
+      "details": "washed with 150 ml water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 150.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 10.0,
+        "units": "MINUTE"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "desired compound"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "O,O-diethyl phthalimidophosphonothioate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1(C=2C(C(N1P(OCC)(OCC)=S)=O)=CC=CC2)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C12H14NO4PS/c1-3-16-18(19,17-4-2)13-11(14)9-7-5-6-8-10(9)12(13)15/h5-8H,3-4H2,1-2H3"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04204996",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:24.352565"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-06f4bc4d707e4bcebde15db0ee40fe44"
+}

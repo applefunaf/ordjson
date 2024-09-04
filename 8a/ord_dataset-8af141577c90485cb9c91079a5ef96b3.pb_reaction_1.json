@@ -1,0 +1,234 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH:1]([C:4]1([CH3:18])[N:8]2[C:9](=[O:16])[C:10]3[C:15]([C:7]2=[N:6][C:5]1=[O:17])=[CH:14][CH:13]=[CH:12][CH:11]=3)([CH3:3])[CH3:2].[CH3:19][NH:20][CH3:21]>O1CCCC1>[CH:1]([C:4]1([CH3:18])[NH:8][C:7]([C:15]2[CH:14]=[CH:13][CH:12]=[CH:11][C:10]=2[C:9]([N:20]([CH3:21])[CH3:19])=[O:16])=[N:6][C:5]1=[O:17])([CH3:2])[CH3:3]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m3_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3-isopropyl-3-methyl-5H-imidazo[2,1-a] isoindole-2-(3H), 5-dione"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(C)C1(C(N=C2N1C(C1=CC=CC=C21)=O)=O)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C14H14N2O2/c1-8(2)14(3)13(18)15-11-9-6-4-5-7-10(9)12(17)16(11)14/h4-8H,1-3H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 180.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "dimethylamine"
+            },
+            {
+              "type": "SMILES",
+              "value": "CNC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H7N/c1-3-2/h3H,1-2H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 68.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "tetrahydrofuran"
+            },
+            {
+              "type": "SMILES",
+              "value": "O1CCCC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O/c1-2-4-5-3-1/h1-4H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 300.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 50.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "with stirring for 16 hours"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a cold solution of 180 g of 3-isopropyl-3-methyl-5H-imidazo[2,1-a] isoindole-2-(3H), 5-dione in 300 ml of dry tetrahydrofuran in a pressure bottle is added 68 g of dimethylamine. The bottle is sealed and the mixture heated to 50° C. with stirring for 16 hours. The mixture is cooled, and the contents of the bottle transferred to a flask. The solvent is then removed in vacuo. The crystalline residue is then suspended in ether, filtered, washed with ether, and air-dried to give 195 g of o-(5-isopropyl-5-methyl-4-oxo-2-imidazolin-2-yl)-N,N-dimethylbenzamide, melting point 144°-146° C. This product is recrystallized from acetonitrile to give an analytically pure product, melting point 147°-150° C."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "The bottle is sealed"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "The mixture is cooled"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the contents of the bottle transferred to a flask"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The solvent is then removed in vacuo"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filtered"
+    },
+    {
+      "type": "WASH",
+      "details": "washed with ether",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "air-dried"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 16.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "o-(5-isopropyl-5-methyl-4-oxo-2-imidazolin-2-yl)-N,N-dimethylbenzamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(C)C1(C(N=C(N1)C1=C(C(=O)N(C)C)C=CC=C1)=O)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C16H21N3O2/c1-10(2)16(3)15(21)17-13(18-16)11-8-6-7-9-12(11)14(20)19(4)5/h6-10H,1-5H3,(H,17,18,21)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 195.0,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 91.3
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04201565",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:24.102132"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-eb7367bb406d451fbee6935667671baf"
+}

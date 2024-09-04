@@ -1,0 +1,280 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][C:2]1[CH:7]=[CH:6][C:5]([OH:8])=[CH:4][N:3]=1.C(O)(=[O:11])C.OO>O>[CH3:1][C:2]1[CH:7]=[CH:6][C:5]([OH:8])=[CH:4][N+:3]=1[O-:11]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 500.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m1_m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-methyl-5-hydroxy-pyridine"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC1=NC=C(C=C1)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H7NO/c1-5-2-3-6(8)4-7-5/h2-4,8H,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 100.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acetic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H4O2/c1-2(3)4/h1H3,(H,3,4)"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 600.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrogen peroxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "OO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O2/c1-2/h1-2H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 200.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture of 100.0 g of 2-methyl-5-hydroxy-pyridine, 600 ml of acetic acid and 200 ml of 30-35% hydrogen peroxide is heated on a steam bath with occasional swirling for 18 hours. Then to the mixture is added 500 ml of water and the resulting solution is evaporated to leave a residue. The last traces of water from the residue are removed azeotropically with isopropanol to give a yellow solid. This solid is recrystallized from ethanol to give 2-methyl-5-hydroxy-pyridine-1-oxide melting at 185°-187°."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "is heated on a steam bath"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the resulting solution is evaporated"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to leave a residue"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The last traces of water from the residue are removed azeotropically with isopropanol",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "isopropanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(C)O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C3H8O/c1-3(2)4/h3-4H,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to give a yellow solid"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "This solid is recrystallized from ethanol",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 18.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-methyl-5-hydroxy-pyridine-1-oxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC1=[N+](C=C(C=C1)O)[O-]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H7NO2/c1-5-2-3-6(8)4-7(5)9/h2-4,8H,1H3"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04202901",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:25.846231"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-2cd9cc3fe15842a8a7a9086a40c69c80"
+}

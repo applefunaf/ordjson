@@ -1,0 +1,317 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "C[O:2][C:3](=[O:27])[C@H:4]([CH2:21][C:22]1[N:26]=[CH:25][NH:24][CH:23]=1)[NH:5][C:6](=[O:20])[C@H:7]([C@H:16]([CH2:18][CH3:19])[CH3:17])[NH:8][C:9]([O:11][C:12]([CH3:15])([CH3:14])[CH3:13])=[O:10].[OH-].[Li+].[ClH:30]>CO>[ClH:30].[C:12]([O:11][C:9]([NH:8][C@H:7]([C:6]([NH:5][C@H:4]([C:3]([OH:27])=[O:2])[CH2:21][C:22]1[N:26]=[CH:25][NH:24][CH:23]=1)=[O:20])[C@H:16]([CH2:18][CH3:19])[CH3:17])=[O:10])([CH3:14])([CH3:15])[CH3:13] |f:1.2,5.6|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "t-butoxycarbonylisoleucylhistidine methyl ester"
+            },
+            {
+              "type": "SMILES",
+              "value": "COC([C@@H](NC([C@@H](NC(=O)OC(C)(C)C)[C@@H](C)CC)=O)CC1=CNC=N1)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C18H30N4O5/c1-7-11(2)14(22-17(25)27-18(3,4)5)15(23)21-13(16(24)26-6)8-12-9-19-10-20-12/h9-11,13-14H,7-8H2,1-6H3,(H,19,20)(H,21,23)(H,22,25)/t11-,13-,14-/m0/s1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 29.4,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 150.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "lithium hydroxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "[OH-].[Li+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Li.H2O/h;1H2/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 308.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrochloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/ClH/h1H"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "The reaction mixture is stirred for three hours"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "29.4 g of t-butoxycarbonylisoleucylhistidine methyl ester is dissolved in 150 ml of methanol. To this solution is added 308 ml of 1 N lithium hydroxide. The reaction mixture is stirred for three hours, then neutralized with 1 N hydrochloride acid to pH 3. The solvent is removed by vacuum and the residue is dissolved in N,N-dimethylformamide. The solution is filtered and the solvent removed by vacuum. The residue is dissolved in methanol/2-propanol. The alcohol solution is added to 2 liters of cold rapidly stirring ethyl ether. The white precipitate is filtered and dried in vacuo to afford t-butoxycarbonylisoleucylhistidine hydrochloride."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "The solvent is removed by vacuum"
+    },
+    {
+      "type": "DISSOLUTION",
+      "details": "the residue is dissolved in N,N-dimethylformamide",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "N,N-dimethylformamide"
+              },
+              {
+                "type": "SMILES",
+                "value": "CN(C=O)C"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C3H7NO/c1-4(2)3-5/h3H,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "The solution is filtered"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the solvent removed by vacuum"
+    },
+    {
+      "type": "DISSOLUTION",
+      "details": "The residue is dissolved in methanol/2-propanol",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "methanol 2-propanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "CO.CC(C)O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C3H8O.CH4O/c1-3(2)4;1-2/h3-4H,1-2H3;2H,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "ADDITION",
+      "details": "The alcohol solution is added to 2 liters of cold rapidly stirring ethyl ether",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "alcohol"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "The white precipitate is filtered"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried in vacuo"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 3.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "t-butoxycarbonylisoleucylhistidine hydrochloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl.C(C)(C)(C)OC(=O)N[C@@H]([C@@H](C)CC)C(=O)N[C@@H](CC1=CNC=N1)C(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C17H28N4O5.ClH/c1-6-10(2)13(21-16(25)26-17(3,4)5)14(22)20-12(15(23)24)7-11-8-18-9-19-11;/h8-10,12-13H,6-7H2,1-5H3,(H,18,19)(H,20,22)(H,21,25)(H,23,24);1H/t10-,12-,13-;/m0./s1"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04204991",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:28.259592"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-e9333d58926b46e7819169fd760a8527"
+}

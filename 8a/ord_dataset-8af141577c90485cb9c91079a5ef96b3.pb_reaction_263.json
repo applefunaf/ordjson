@@ -1,0 +1,252 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[C:1](=[N:32]O)([C:8]1[CH:31]=[CH:30][C:11]([C:12](=[N:28]O)[C:13]2[CH:18]=[CH:17][C:16]([C:19](=[N:26]O)[C:20]3[CH:25]=[CH:24][CH:23]=[CH:22][CH:21]=3)=[CH:15][CH:14]=2)=[CH:10][CH:9]=1)[C:2]1[CH:7]=[CH:6][CH:5]=[CH:4][CH:3]=1.[H][H]>C(O)C.N.[Ni]>[NH2:26][CH:19]([C:20]1[CH:25]=[CH:24][CH:23]=[CH:22][CH:21]=1)[C:16]1[CH:15]=[CH:14][C:13]([CH:12]([NH2:28])[C:11]2[CH:30]=[CH:31][C:8]([CH:1]([C:2]3[CH:7]=[CH:6][CH:5]=[CH:4][CH:3]=3)[NH2:32])=[CH:9][CH:10]=2)=[CH:18][CH:17]=1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m3_m4_m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "trioxime"
+            },
+            {
+              "type": "NAME",
+              "value": "4,4'-Dibenzoylbenzophenone trioxime"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C1=CC=CC=C1)(C1=CC=C(C(C2=CC=C(C=C2)C(C2=CC=CC=C2)=NO)=NO)C=C1)=NO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C27H21N3O3/c31-28-25(19-7-3-1-4-8-19)21-11-15-23(16-12-21)27(30-33)24-17-13-22(14-18-24)26(29-32)20-9-5-2-6-10-20/h1-18,31-33H"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 3.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethyl alcohol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 250.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ammonia"
+            },
+            {
+              "type": "SMILES",
+              "value": "N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H3N/h1H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Raney nickel"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Ni]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Ni"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "CATALYST"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrogen"
+            },
+            {
+              "type": "SMILES",
+              "value": "[H][H]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2/h1H"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "The trioxime from Step 2 (3 g) is dissolved in ethyl alcohol (250 ml) saturated with ammonia gas and Raney nickel W-6 (2 g) added. The mixture is subjected to 500 psi hydrogen pressure and heated to 90° for two hours. The catalyst is removed by filtration and 220 ml ethyl alcohol by distillation. A pale yellow crystalline material is filtered and dried."
+  },
+  "workups": [
+    {
+      "type": "ADDITION",
+      "details": "(2 g) added"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "heated to 90° for two hours",
+      "duration": {
+        "value": 2.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The catalyst is removed by filtration and 220 ml ethyl alcohol by distillation",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl alcohol"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 220.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "A pale yellow crystalline material is filtered"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "1,1-Bis(alpha-amino-alpha-phenyl-p-tolyl)methylamine"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC(C1=CC=C(C=C1)C(C1=CC=C(C=C1)C(N)C1=CC=CC=C1)N)C1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C27H27N3/c28-25(19-7-3-1-4-8-19)21-11-15-23(16-12-21)27(30)24-17-13-22(14-18-24)26(29)20-9-5-2-6-10-20/h1-18,25-27H,28-30H2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04202904",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:27.113601"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-d804f0b6f76347c6b47c790bbe888856"
+}

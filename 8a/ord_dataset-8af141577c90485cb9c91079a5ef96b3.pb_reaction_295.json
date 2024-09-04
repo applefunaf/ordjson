@@ -1,0 +1,267 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[Cl:1][C:2]1[C:11]2[C:6](=[CH:7][CH:8]=[C:9]([Cl:12])[CH:10]=2)[N:5]=[CH:4][C:3]=1[CH2:13]O.S(Cl)([Cl:17])=O>>[Cl:17][CH2:13][C:3]1[CH:4]=[N:5][C:6]2[C:11]([C:2]=1[Cl:1])=[CH:10][C:9]([Cl:12])=[CH:8][CH:7]=2",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4,6-dichloroquinoline-3-methanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC1=C(C=NC2=CC=C(C=C12)Cl)CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C10H7Cl2NO/c11-7-1-2-9-8(3-7)10(12)6(5-14)4-13-9/h1-4,14H,5H2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.05,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "thionyl chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "S(=O)(Cl)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Cl2OS/c1-4(2)3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "11.4 g. of 4,6-dichloroquinoline-3-methanol (0.05 mol.) are added in portions to 150 ml. of thionyl chloride. The reaction mixture is allowed to stand for 24 hours at room temperature. Then the solution is filtered and the excess thionyl chloride removed by a rotary evaporator. The residue is triturated with water, filtered off, washed again with water and dried in a desiccator over P2O5 to obtain 3-chloromethyl-4,6-dichloroquinoline; yield: 11.5 g. (93.5%); m.p. 102°-105°. Recrystallization from cyclohexane does not change the melting point."
+  },
+  "workups": [
+    {
+      "type": "FILTRATION",
+      "details": "Then the solution is filtered"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the excess thionyl chloride removed by a rotary evaporator",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "thionyl chloride"
+              },
+              {
+                "type": "SMILES",
+                "value": "S(=O)(Cl)Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Cl2OS/c1-4(2)3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The residue is triturated with water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filtered off"
+    },
+    {
+      "type": "WASH",
+      "details": "washed again with water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "dried in a desiccator over P2O5",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "P2O5"
+              },
+              {
+                "type": "SMILES",
+                "value": "O=P12OP3(=O)OP(=O)(O1)OP(=O)(O2)O3"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/O10P4/c1-11-5-12(2)8-13(3,6-11)10-14(4,7-11)9-12"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 24.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3-chloromethyl-4,6-dichloroquinoline"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClCC=1C=NC2=CC=C(C=C2C1Cl)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C10H6Cl3N/c11-4-6-5-14-9-2-1-7(12)3-8(9)10(6)13/h1-3,5H,4H2"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04202985",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:27.546179"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-b0be73cef6d947a8a692b7f493874768"
+}

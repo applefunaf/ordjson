@@ -1,0 +1,232 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][N:2]([CH2:4][C:5]1[O:9][C:8]([CH2:10][S:11][CH2:12][CH2:13][NH2:14])=[CH:7][CH:6]=1)[CH3:3].[CH3:15][S:16][C:17](SC)=[CH:18][N+:19]([O-:21])=[O:20]>C(#N)C>[N+:19]([CH:18]=[C:17]([S:16][CH3:15])[NH:14][CH2:13][CH2:12][S:11][CH2:10][C:8]1[O:9][C:5]([CH2:4][N:2]([CH3:1])[CH3:3])=[CH:6][CH:7]=1)([O-:21])=[O:20]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-[(5-dimethylaminomethyl-2-furyl)methylthio]ethylamine"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN(C)CC1=CC=C(O1)CSCCN"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C10H18N2OS/c1-12(2)7-9-3-4-10(13-9)8-14-6-5-11/h3-4H,5-8,11H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 12.86,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "1,1-bis(methylthio)-2-nitroethylene"
+            },
+            {
+              "type": "SMILES",
+              "value": "CSC(=C[N+](=O)[O-])SC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H7NO2S2/c1-8-4(9-2)3-5(6)7/h3H,1-2H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 9.91,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acetonitrile"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)#N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H3N/c1-2-3/h1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 150.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture of 2-[(5-dimethylaminomethyl-2-furyl)methylthio]ethylamine (12.86 g, 60 mmole) [prepared by the procedure described in Belgian Pat. No. 857,388] and 1,1-bis(methylthio)-2-nitroethylene (9.91 g, 60 mmole) [prepared according to the procedure described in Chem. Ber., 100, 591 (1967) and Acta Chem. Scand., 21. 2797 (1967)] in acetonitrile (150 ml) was stirred and heated to reflux temperature under a positive pressure of nitrogen for 15.5 hours. The solvent was removed by evaporation under reduced pressure and the crude product placed on silica gel and chromatographed using a gradient elution of methylene chloride-methanol. The appropriate fractions were combined to yield the title compound (12.6 g)."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "prepared by the procedure"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "heated"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "to reflux temperature under a positive pressure of nitrogen for 15.5 hours",
+      "duration": {
+        "value": 15.5,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The solvent was removed by evaporation under reduced pressure"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "chromatographed"
+    },
+    {
+      "type": "WASH",
+      "details": "a gradient elution of methylene chloride-methanol",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "methylene chloride methanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(Cl)Cl.CO"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2Cl2.CH4O/c2-1-3;1-2/h1H2;2H,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "1-Nitro-2-methylthio-2-{2-[(5-dimethylaminomethyl-2-furyl)methylthio]ethylamino}ethylene"
+            },
+            {
+              "type": "SMILES",
+              "value": "[N+](=O)([O-])C=C(NCCSCC=1OC(=CC1)CN(C)C)SC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C13H21N3O3S2/c1-15(2)8-11-4-5-12(19-11)10-21-7-6-14-13(20-3)9-16(17)18/h4-5,9,14H,6-8,10H2,1-3H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 12.6,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 63.4
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04203909",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:24.689599"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-7582c528bcbf4e4893e8163180d58655"
+}

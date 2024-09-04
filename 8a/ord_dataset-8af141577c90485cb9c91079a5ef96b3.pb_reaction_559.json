@@ -1,0 +1,251 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][N:2]([CH3:20])[C:3]([N:5]([CH2:15][CH2:16][N:17]([CH3:19])[CH3:18])[C:6]1[CH:11]=[CH:10][C:9]([N+:12]([O-])=O)=[CH:8][N:7]=1)=[O:4].[H][H]>C(O)C.[Pd]>[CH3:1][N:2]([CH3:20])[C:3]([N:5]([CH2:15][CH2:16][N:17]([CH3:19])[CH3:18])[C:6]1[CH:11]=[CH:10][C:9]([NH2:12])=[CH:8][N:7]=1)=[O:4]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "palladium-on-carbon"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Pd]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Pd"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "CATALYST"
+        }
+      ]
+    },
+    "m1_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N,N-Dimethyl-N'-(2-dimethylaminoethyl)-N'-(5-nitro-2-pyridyl)urea"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN(C(=O)N(C1=NC=C(C=C1)[N+](=O)[O-])CCN(C)C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C12H19N5O3/c1-14(2)7-8-16(12(18)15(3)4)11-6-5-10(9-13-11)17(19)20/h5-6,9H,7-8H2,1-4H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 9.68,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 50.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrogen"
+            },
+            {
+              "type": "SMILES",
+              "value": "[H][H]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2/h1H"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "N,N-Dimethyl-N'-(2-dimethylaminoethyl)-N'-(5-nitro-2-pyridyl)urea (9.68 g., 0.034 mole) is dissolved in absolute ethanol (50 ml.) containing 10% palladium-on-carbon and is hydrogenated at an initial 42 psi of hydrogen at ambient temperature for two hours. The reaction mixture is flushed with nitrogen and then is filtered under nitrogen. The filtrate is concentrated in vacuo on a steam bath to give a nearly colorless oil (8.05 g.) which partially solidifies on standing. Crystallization from acetonitrile yields 5.19 g. of the title compound, m.p. 118°-119° C."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "at ambient temperature",
+      "temperature": {
+        "control": {
+          "type": "AMBIENT"
+        }
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "for two hours",
+      "duration": {
+        "value": 2.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The reaction mixture is flushed with nitrogen"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "is filtered under nitrogen"
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "The filtrate is concentrated in vacuo on a steam bath"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to give a nearly colorless oil (8.05 g.) which"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "Crystallization from acetonitrile",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "acetonitrile"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)#N"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C2H3N/c1-2-3/h1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "yields 5.19 g"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "N,N-Dimethyl-N'-(2-dimethylaminoethyl)-N'-(5-amino-2-pyridyl)urea"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN(C(=O)N(C1=NC=C(C=C1)N)CCN(C)C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C12H21N5O/c1-15(2)7-8-17(12(18)16(3)4)11-6-5-10(13)9-14-11/h5-6,9H,7-8,13H2,1-4H3"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04203988",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:27.909394"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-a1b4b570dc2c4fb89aa21c196c9dc799"
+}

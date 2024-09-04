@@ -1,0 +1,257 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "C1(OC2C=CC=CC=2)C=CC=CC=1.[C:14]([N:17]1[CH2:22][CH2:21][N:20]([C:23]2[N:28]=[C:27]([NH:29][CH:30]=[C:31]([C:37]([O:39]CC)=O)[C:32]([O:34][CH2:35][CH3:36])=[O:33])[CH:26]=[CH:25][N:24]=2)[CH2:19][CH2:18]1)(=[O:16])[CH3:15]>CCCCCC>[C:14]([N:17]1[CH2:18][CH2:19][N:20]([C:23]2[N:24]=[CH:25][C:26]3[C:37](=[O:39])[C:31]([C:32]([O:34][CH2:35][CH3:36])=[O:33])=[CH:30][NH:29][C:27]=3[N:28]=2)[CH2:21][CH2:22]1)(=[O:16])[CH3:15]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "diphenyl ether"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1(=CC=CC=C1)OC1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C12H10O/c1-3-7-11(8-4-1)13-12-9-5-2-6-10-12/h1-10H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 16.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "diethyl N-[2-(4-acetyl-1-piperazinyl)-4-pyrimidinyl]-aminomethylenemalonate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)N1CCN(CC1)C1=NC=CC(=N1)NC=C(C(=O)OCC)C(=O)OCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C18H25N5O5/c1-4-27-16(25)14(17(26)28-5-2)12-20-15-6-7-19-18(21-15)23-10-8-22(9-11-23)13(3)24/h6-7,12H,4-5,8-11H2,1-3H3,(H,19,20,21)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 2.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "n-hexane"
+            },
+            {
+              "type": "SMILES",
+              "value": "CCCCCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H14/c1-3-5-6-4-2/h3-6H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 12.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To diphenyl ether (16 ml) kept at 250°-255° C. was added with stirring diethyl N-[2-(4-acetyl-1-piperazinyl)-4-pyrimidinyl]-aminomethylenemalonate (2.0 g). The mixture was gently refluxed for 10 minutes, and then allowed to cool to room temperature. To the mixture was added n-hexane (12 ml). The resulting precipitate was collected, washed with ethanol, and recrystallized from ethanol to yield ethyl 2-(4-acetyl-1-piperazinyl)-5,8-dihydro-5-oxopyrido[2,3-d]pyrimidine-6-carboxylate (1.52 g), m.p. 300°-302° C. (decomp.)."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "kept at 250°-255° C."
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "The mixture was gently refluxed for 10 minutes",
+      "duration": {
+        "value": 10.0,
+        "units": "MINUTE"
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The resulting precipitate was collected"
+    },
+    {
+      "type": "WASH",
+      "details": "washed with ethanol",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "recrystallized from ethanol",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethyl 2-(4-acetyl-1-piperazinyl)-5,8-dihydro-5-oxopyrido[2,3-d]pyrimidine-6-carboxylate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)N1CCN(CC1)C=1N=CC2=C(N1)NC=C(C2=O)C(=O)OCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C16H19N5O4/c1-3-25-15(24)12-9-17-14-11(13(12)23)8-18-16(19-14)21-6-4-20(5-7-21)10(2)22/h8-9H,3-7H2,1-2H3,(H,17,18,19,23)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 1.52,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 86.1
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04201781",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:24.995179"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-a22d9fbdcb62405e9d743c04d1c23a86"
+}

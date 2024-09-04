@@ -1,0 +1,342 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "C([N:4]1[CH2:9][CH2:8][N:7]([C:10]2[N:11]=[CH:12][C:13]3[C:19](=[O:20])[C:18]([C:21]([O:23]CC)=[O:22])=[CH:17][NH:16][C:14]=3[N:15]=2)[CH2:6][CH2:5]1)(=O)C.Cl>O.C(O)C>[N:7]1([C:10]2[N:11]=[CH:12][C:13]3[C:19](=[O:20])[C:18]([C:21]([OH:23])=[O:22])=[CH:17][NH:16][C:14]=3[N:15]=2)[CH2:6][CH2:5][NH:4][CH2:9][CH2:8]1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethyl 5,8-dihydro-2-(4-acetyl-1-piperazinyl)-5-oxopyrido[2,3-d]pyrimidine-6-carboxylate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)N1CCN(CC1)C=1N=CC2=C(N1)NC=C(C2=O)C(=O)OCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C16H19N5O4/c1-3-25-15(24)12-9-17-14-11(13(12)23)8-18-16(19-14)21-6-4-20(5-7-21)10(2)22/h8-9H,3-7H2,1-2H3,(H,17,18,19,23)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 1000.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrochloric acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/ClH/h1H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 800.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 1200.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 1000.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A suspension of ethyl 5,8-dihydro-2-(4-acetyl-1-piperazinyl)-5-oxopyrido[2,3-d]pyrimidine-6-carboxylate (1000 g) and concentrated hydrochloric acid (800 ml) in a mixture of water (1200 ml) and ethanol (1000 ml) was refluxed for 8 hours and allowed to stand overnight. The crystals precipitated were collected, washed with ethanol, and dissolved by heating in an aqueous solution (10 liters) of sodium hydroxide (250 g). The solution was filtered, adjusted to pH 7-8 with acetic acid, and allowed to stand overnight with ice-cooling. The crystalline precipitate was collected, washed with water, and dried at 110° C. to give 5,8-dihydro-2-(1-piperazinyl)-5-oxopyrido [2,3-d]pyrimidine-6-carboxylic acid (625 g). m.p. 299°-305° C. (decomp.)."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "was refluxed for 8 hours",
+      "duration": {
+        "value": 8.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The crystals precipitated"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "were collected"
+    },
+    {
+      "type": "WASH",
+      "details": "washed with ethanol",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DISSOLUTION",
+      "details": "dissolved"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "by heating in an aqueous solution (10 liters) of sodium hydroxide (250 g)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "sodium hydroxide"
+              },
+              {
+                "type": "SMILES",
+                "value": "[OH-].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Na.H2O/h;1H2/q+1;/p-1"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 10.0,
+                "units": "LITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "The solution was filtered"
+    },
+    {
+      "type": "WAIT",
+      "details": "to stand overnight with ice-",
+      "duration": {
+        "value": 8.0,
+        "precision": 8.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "cooling"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The crystalline precipitate was collected"
+    },
+    {
+      "type": "WASH",
+      "details": "washed with water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried at 110° C.",
+      "temperature": {
+        "setpoint": {
+          "value": 110.0,
+          "units": "CELSIUS"
+        }
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 8.0,
+        "precision": 8.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "5,8-dihydro-2-(1-piperazinyl)-5-oxopyrido [2,3-d]pyrimidine-6-carboxylic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "N1(CCNCC1)C=1N=CC2=C(N1)NC=C(C2=O)C(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C12H13N5O3/c18-9-7-5-15-12(17-3-1-13-2-4-17)16-10(7)14-6-8(9)11(19)20/h5-6,13H,1-4H2,(H,19,20)(H,14,15,16,18)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 625.0,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 78.4
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04201781",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:25.010163"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-42f90dcbb8e648d994227d86eda3b2f5"
+}

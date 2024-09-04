@@ -1,0 +1,367 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[N:1]1[C:11]2[S:10][C:9]3[CH:12]=[C:13]([CH:16]([CH3:20])[C:17]([OH:19])=[O:18])[CH:14]=[CH:15][C:8]=3[CH2:7][CH2:6][C:5]=2[CH:4]=[CH:3][CH:2]=1.Cl.C(=O)([O-])O.[Na+].[CH2:27](O)[CH3:28]>>[N:1]1[C:11]2[S:10][C:9]3[CH:12]=[C:13]([CH:16]([CH3:20])[C:17]([O:19][CH2:27][CH3:28])=[O:18])[CH:14]=[CH:15][C:8]=3[CH2:7][CH2:6][C:5]=2[CH:4]=[CH:3][CH:2]=1 |f:2.3|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sodium hydrogencarbonate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(O)([O-])=O.[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2O3.Na/c2-1(3)4;/h(H2,2,3,4);/q;+1/p-1"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrogen chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/ClH/h1H"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m1_m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-(5,6-dihydro benzo[b]pyrido[3,2-f]thiepin-9-yl)-propionic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "N1=CC=CC=2CCC3=C(SC21)C=C(C=C3)C(C(=O)O)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C16H15NO2S/c1-10(16(18)19)13-7-5-11-4-6-12-3-2-8-17-15(12)20-14(11)9-13/h2-3,5,7-10H,4,6H2,1H3,(H,18,19)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 40.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 15.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ice water"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "the mixture was stirred at room temperature for 3 hours"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To 40 mg of 2-(5,6-dihydro benzo[b]pyrido[3,2-f]thiepin-9-yl)-propionic acid was added 15 ml of ethanol containing hydrogen chloride and the mixture was stirred at room temperature for 3 hours. The solvent was distilled off to obtain the residue, to which was added ice-water, and the resulting mixture was alkalified with 5% sodium hydrogencarbonate and extracted with ethyl acetate. The extract was washed with water and dried over anhydrous sodium sulfate. The solvent was distilled off to obtain oily substance, which was chromatographed over silica gel, eluted with benzene/chloroform(1/1), and there was obtained 35 mg of ethyl 2-(5,6-dihydro benzo[b]pyrido[3,2-f]thiepin-9-yl)-propionate as oil."
+  },
+  "workups": [
+    {
+      "type": "DISTILLATION",
+      "details": "The solvent was distilled off"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to obtain the residue"
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "extracted with ethyl acetate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "The extract was washed with water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "dried over anhydrous sodium sulfate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "sodium sulfate"
+              },
+              {
+                "type": "SMILES",
+                "value": "S(=O)(=O)([O-])[O-].[Na+].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/2Na.H2O4S/c;;1-5(2,3)4/h;;(H2,1,2,3,4)/q2*+1;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DISTILLATION",
+      "details": "The solvent was distilled off"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to obtain oily substance, which"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "was chromatographed over silica gel"
+    },
+    {
+      "type": "WASH",
+      "details": "eluted with benzene/chloroform(1/1)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "benzene chloroform(1/1)"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 3.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethyl 2-(5,6-dihydro benzo[b]pyrido[3,2-f]thiepin-9-yl)-propionate"
+            },
+            {
+              "type": "SMILES",
+              "value": "N1=CC=CC=2CCC3=C(SC21)C=C(C=C3)C(C(=O)OCC)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C18H19NO2S/c1-3-21-18(20)12(2)15-9-7-13-6-8-14-5-4-10-19-17(14)22-16(13)11-15/h4-5,7,9-12H,3,6,8H2,1-2H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 35.0,
+                  "units": "MILLIGRAM"
+                }
+              }
+            }
+          ],
+          "texture": {
+            "type": "OIL",
+            "details": "oil"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04205170",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:27.236713"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-cc460ed298714d4d9835837675293184"
+}

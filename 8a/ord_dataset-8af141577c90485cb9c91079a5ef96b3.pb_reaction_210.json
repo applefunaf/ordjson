@@ -1,0 +1,207 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "C[O:2][C:3]([C:5]1[CH:10]=[CH:9][C:8]([O:11][CH2:12][CH:13]=[C:14]([Cl:16])[CH3:15])=[CH:7][N:6]=1)=[O:4].Cl>>[Cl:16][C:14]([CH3:15])=[CH:13][CH2:12][O:11][C:8]1[CH:9]=[CH:10][C:5]([C:3]([OH:4])=[O:2])=[N:6][CH:7]=1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "5-(3-chloro-2-butenyloxy)-2-pyridinecarboxylic acid methyl ester"
+            },
+            {
+              "type": "SMILES",
+              "value": "COC(=O)C1=NC=C(C=C1)OCC=C(C)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C11H12ClNO3/c1-8(12)5-6-16-9-3-4-10(13-7-9)11(14)15-2/h3-5,7H,6H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 3.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrochloric acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/ClH/h1H"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture of 3.0 g of 5-(3-chloro-2-butenyloxy)-2-pyridinecarboxylic acid methyl ester and 30 ml of 6 N-hydrochloric acid is heated on a steam bath for one hour. After that, the solution is cooled and the pH is adjusted to 5-6. Then the solution is evaporated and the residue extracted with ethanol. The ethanol extract is evaporated to yield 5-(3-chloro-2-butenyloxy)-2-pyridinecarboxylic acid melting at 96°-98°."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "is heated on a steam bath for one hour",
+      "duration": {
+        "value": 1.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "After that, the solution is cooled"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "Then the solution is evaporated"
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "the residue extracted with ethanol",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "The ethanol extract",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "is evaporated"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "5-(3-chloro-2-butenyloxy)-2-pyridinecarboxylic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC(=CCOC=1C=CC(=NC1)C(=O)O)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C10H10ClNO3/c1-7(11)4-5-15-8-2-3-9(10(13)14)12-6-8/h2-4,6H,5H2,1H3,(H,13,14)"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04202901",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:26.056488"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-7a72cdc50cf0448b9aa118c7faed048f"
+}

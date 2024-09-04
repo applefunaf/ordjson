@@ -1,0 +1,322 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[O:1]=[C:2]1[CH2:8][C:7]2[CH:9]=[CH:10][CH:11]=[CH:12][C:6]=2[S:5][C:4]2[CH:13]=[C:14]([CH:17]([CH3:21])[C:18](N)=[O:19])[CH:15]=[CH:16][C:3]1=2.S(=O)(=O)(O)O.[CH2:27]([OH:29])[CH3:28]>>[O:1]=[C:2]1[CH2:8][C:7]2[CH:9]=[CH:10][CH:11]=[CH:12][C:6]=2[S:5][C:4]2[CH:13]=[C:14]([CH:17]([CH3:21])[C:18]([O:29][CH2:27][CH3:28])=[O:19])[CH:15]=[CH:16][C:3]1=2",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m3_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-(10,11-dihydro-11-oxo dibenzo[b,f]thiepin-3-yl)-propionamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "O=C1C2=C(SC3=C(C1)C=CC=C3)C=C(C=C2)C(C(=O)N)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C17H15NO2S/c1-10(17(18)20)11-6-7-13-14(19)8-12-4-2-3-5-15(12)21-16(13)9-11/h2-7,9-10H,8H2,1H3,(H2,18,20)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 300.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sulfuric acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "S(O)(O)(=O)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O4S/c1-5(2,3)4/h(H2,1,2,3,4)"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 0.3,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 3.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To 300 mg of 2-(10,11-dihydro-11-oxo dibenzo[b,f]thiepin-3-yl)-propionamide in 3 ml of ethanol was added 0.3 ml of conc. sulfuric acid and the mixture was refluxed for 3.5 hours. The solvent was distilled off to obtain the residue, to which was added pieces of ice, and the mixture was extracted with ethyl acetate. The extract was washed with saturated sodium chloride solution and dried over anhydrous sodium sulfate. The solvent was distilled off to obtain brown oil, which was chromatographed over silica gel, eluted with chloroform, and there was obtained 277 mg of ethyl 2-(10,11-dihydro-11-oxo dibenzo[b,f]thiepin-3-yl)-propionate as pale brown oil."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "the mixture was refluxed for 3.5 hours",
+      "duration": {
+        "value": 3.5,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "DISTILLATION",
+      "details": "The solvent was distilled off"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to obtain the residue"
+    },
+    {
+      "type": "ADDITION",
+      "details": "to which was added pieces of ice"
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "the mixture was extracted with ethyl acetate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "The extract was washed with saturated sodium chloride solution",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "sodium chloride"
+              },
+              {
+                "type": "SMILES",
+                "value": "[Cl-].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH.Na/h1H;/q;+1/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "dried over anhydrous sodium sulfate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "sodium sulfate"
+              },
+              {
+                "type": "SMILES",
+                "value": "S(=O)(=O)([O-])[O-].[Na+].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/2Na.H2O4S/c;;1-5(2,3)4/h;;(H2,1,2,3,4)/q2*+1;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DISTILLATION",
+      "details": "The solvent was distilled off"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to obtain brown oil, which"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "was chromatographed over silica gel"
+    },
+    {
+      "type": "WASH",
+      "details": "eluted with chloroform",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "chloroform"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(Cl)(Cl)Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CHCl3/c2-1(3)4/h1H"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethyl 2-(10,11-dihydro-11-oxo dibenzo[b,f]thiepin-3-yl)-propionate"
+            },
+            {
+              "type": "SMILES",
+              "value": "O=C1C2=C(SC3=C(C1)C=CC=C3)C=C(C=C2)C(C(=O)OCC)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C19H18O3S/c1-3-22-19(21)12(2)13-8-9-15-16(20)10-14-6-4-5-7-17(14)23-18(15)11-13/h4-9,11-12H,3,10H2,1-2H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 277.0,
+                  "units": "MILLIGRAM"
+                }
+              }
+            }
+          ],
+          "isolated_color": "pale brown",
+          "texture": {
+            "type": "OIL",
+            "details": "oil"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04205170",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:26.759959"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-53b67106b4c6414b85caca03d449588d"
+}

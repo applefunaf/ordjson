@@ -1,0 +1,323 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "Cl.[SH:2][CH2:3][CH2:4][NH2:5].[O-:6][C:7]#[N:8].[K+].Cl[CH2:11][C:12]([O-:14])=[O:13].[Na+]>O>[NH:5]([CH2:4][CH2:3][S:2][CH2:11][C:12]([OH:14])=[O:13])[C:7]([NH2:8])=[O:6] |f:0.1,2.3,4.5|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m6": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 200.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m1_m4_m2_m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "β-mercaptoethylamine hydrochloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl.SCCN"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H7NS.ClH/c3-1-2-4;/h4H,1-3H2;1H"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 34.1,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "potassium cyanate"
+            },
+            {
+              "type": "SMILES",
+              "value": "[O-]C#N.[K+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CHNO.K/c2-1-3;/h3H;/q;+1/p-1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 24.3,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 200.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 80.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sodium monochloroacetate"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClCC(=O)[O-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H3ClO2.Na/c3-1-2(4)5;/h1H2,(H,4,5);/q;+1/p-1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 36.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 50.0,
+        "units": "CELSIUS"
+      }
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a solution of 34.1 g of β-mercaptoethylamine hydrochloride in 200 cc of water there are added a solution of 24.3 g of potassium cyanate in 80 cc of water, then 36 g of sodium monochloroacetate in 200 cc of water. The solution is heated at 50° C. for 2 hours while maintaining the pH at 6 by the addition of 2 N soda. The mixture is then acidified, concentrated to dryness and washed with a mixture of water and ethanol. After filtration, there are produced 42 g of the product which melts at 135° C."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "while maintaining the pH at 6"
+    },
+    {
+      "type": "ADDITION",
+      "details": "by the addition of 2 N soda"
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated to dryness"
+    },
+    {
+      "type": "WASH",
+      "details": "washed with a mixture of water and ethanol",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "After filtration, there"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "product"
+            },
+            {
+              "type": "NAME",
+              "value": "S-β-ureidoethylmercaptoacetic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "N(C(=O)N)CCSCC(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C5H10N2O3S/c6-5(10)7-1-2-11-3-4(8)9/h1-3H2,(H,8,9)(H3,6,7,10)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 42.0,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 78.7
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04204064",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:28.312703"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-0ce3b6782655448b99a3978eab05211d"
+}

@@ -1,0 +1,284 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[C:1]([OH:7])(=[O:6])[CH2:2][C:3]([OH:5])=[O:4].[NH:8]([CH2:12][CH2:13][OH:14])[CH2:9][CH2:10][OH:11].[CH:15](=O)[C:16]1[CH:21]=[CH:20][CH:19]=[CH:18][CH:17]=1>CO>[OH:11][CH2:10][CH2:9][N:8]([C:2]([CH2:15][C:16]1[CH:21]=[CH:20][CH:19]=[CH:18][CH:17]=1)([C:1]([OH:7])=[O:6])[C:3]([OH:5])=[O:4])[CH2:12][CH2:13][OH:14]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 100.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "malonic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(CC(=O)O)(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H4O4/c4-2(5)1-3(6)7/h1H2,(H,4,5)(H,6,7)"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.1,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "diethanol amine"
+            },
+            {
+              "type": "SMILES",
+              "value": "N(CCO)CCO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H11NO2/c6-3-1-5-2-4-7/h5-7H,1-4H2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.1,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "benzaldehyde"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C1=CC=CC=C1)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H6O/c8-6-7-4-2-1-3-5-7/h1-6H"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.1,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 20.0,
+        "units": "CELSIUS"
+      }
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "Bis-(hydroxyethyl)amino benzyl malonic acid was prepared conventionally in a flask equipped with a stirrer and reflux condenser by first charging 0.1 mol of malonic acid, 0.1 mol of diethanol amine and 100 cc methanol. The contents were warmed to a temperature of about 20° C. and then 0.1 mol benzaldehyde were added to the flask and the reaction commenced. After refluxing the reaction mixture for 1 hour, the methanol was removed from the reaction mixture by coupling the flask to a vacuum source and heating to a temperature of about 50° C. The residue remaining in the flask then was triturated in acetone and the resulting acid isolated by filtration."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "equipped with a stirrer"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "reflux condenser"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the reaction commenced"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "After refluxing the reaction mixture for 1 hour",
+      "duration": {
+        "value": 1.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the methanol was removed from the reaction mixture",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "methanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "CO"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "heating to a temperature of about 50° C",
+      "temperature": {
+        "setpoint": {
+          "value": 50.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "then was triturated in acetone",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "acetone"
+              },
+              {
+                "type": "SMILES",
+                "value": "CC(=O)C"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C3H6O/c1-3(2)4/h1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the resulting acid isolated by filtration"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Bis-(hydroxyethyl)amino benzyl malonic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "OCCN(CCO)C(C(=O)O)(C(=O)O)CC1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C14H19NO6/c16-8-6-15(7-9-17)14(12(18)19,13(20)21)10-11-4-2-1-3-5-11/h1-5,16-17H,6-10H2,(H,18,19)(H,20,21)"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04204062",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:28.193261"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-d0712b297711489e8c21ef74542afd70"
+}

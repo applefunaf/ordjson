@@ -1,0 +1,395 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[C:1]([CH:6]1[CH2:11][CH2:10][CH:9]([CH:12]=O)[CH2:8][CH2:7]1)([CH2:4][CH3:5])([CH3:3])[CH3:2].[C:14]([C:19](=P(C1C=CC=CC=1)(C1C=CC=CC=1)C1C=CC=CC=1)[CH3:20])([O:16][CH2:17][CH3:18])=[O:15].C(O)(=O)C1C=CC=CC=1>C1(C)C=CC=CC=1>[CH2:17]([O:16][C:14](=[O:15])[C:19]([CH3:20])=[CH:12][CH:9]1[CH2:8][CH2:7][CH:6]([C:1]([CH2:4][CH3:5])([CH3:2])[CH3:3])[CH2:11][CH2:10]1)[CH3:18]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m3_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-tert.amyl-cyclohexane-1-carboxaldehyde"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(C)(CC)C1CCC(CC1)C=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C12H22O/c1-4-12(2,3)11-7-5-10(9-13)6-8-11/h9-11H,4-8H2,1-3H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 46.3,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "(α-carbethoxy-ethylidene)-triphenyl-phosphorane"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(=O)(OCC)C(C)=P(C1=CC=CC=C1)(C1=CC=CC=C1)C1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C23H23O2P/c1-3-25-23(24)19(2)26(20-13-7-4-8-14-20,21-15-9-5-10-16-21)22-17-11-6-12-18-22/h4-18H,3H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 92.3,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "benzoic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C1=CC=CC=C1)(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H6O2/c8-7(9)6-4-2-1-3-5-6/h1-5H,(H,8,9)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 7.6,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "toluene"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1(=CC=CC=C1)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H8/c1-7-5-3-2-4-6-7/h2-6H,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 250.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture of 46.3 g of 4-tert.amyl-cyclohexane-1-carboxaldehyde, 92.3 g of (α-carbethoxy-ethylidene)-triphenyl-phosphorane and 7.6 g of benzoic acid in 250 ml of toluene is heated at reflux for 3.5 hours under nirogen gasification and the toluene is evaporated. The oily-crystalline residue is dissolved in 1600 ml of methanol/water (4:1) and exhaustively extracted with hexane. The combined hexane extracts are washed with sodium carbonate solution and water, dried over sodium sulphate and evaporated. By distillation there is obtained pure 3-(4-tert.amyl-cyclohexyl)-2-methyl-acrylic acid ethyl ester of boiling point 113°-115° C./0.03 Torr."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "is heated"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "at reflux for 3.5 hours under nirogen gasification",
+      "duration": {
+        "value": 3.5,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the toluene is evaporated",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "toluene"
+              },
+              {
+                "type": "SMILES",
+                "value": "C1(=CC=CC=C1)C"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C7H8/c1-7-5-3-2-4-6-7/h2-6H,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DISSOLUTION",
+      "details": "The oily-crystalline residue is dissolved in 1600 ml of methanol/water (4:1)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "methanol water"
+              },
+              {
+                "type": "SMILES",
+                "value": "CO.O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH4O.H2O/c1-2;/h2H,1H3;1H2"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 1600.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "exhaustively extracted with hexane",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "hexane"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCCCCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C6H14/c1-3-5-6-4-2/h3-6H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "The combined hexane extracts are washed with sodium carbonate solution and water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "hexane"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCCCCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C6H14/c1-3-5-6-4-2/h3-6H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "sodium carbonate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C([O-])([O-])=O.[Na+].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2O3.2Na/c2-1(3)4;;/h(H2,2,3,4);;/q;2*+1/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "dried over sodium sulphate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "sodium sulphate"
+              },
+              {
+                "type": "SMILES",
+                "value": "S(=O)(=O)([O-])[O-].[Na+].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/2Na.H2O4S/c;;1-5(2,3)4/h;;(H2,1,2,3,4)/q2*+1;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "evaporated"
+    },
+    {
+      "type": "DISTILLATION",
+      "details": "By distillation there"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3-(4-tert.amyl-cyclohexyl)-2-methyl-acrylic acid ethyl ester"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)OC(C(=CC1CCC(CC1)C(C)(C)CC)C)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C17H30O2/c1-6-17(4,5)15-10-8-14(9-11-15)12-13(3)16(18)19-7-2/h12,14-15H,6-11H2,1-5H3"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04202894",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:26.370937"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-b5aefe35b1e94d719a364b9f83476dfd"
+}

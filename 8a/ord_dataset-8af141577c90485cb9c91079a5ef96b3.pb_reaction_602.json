@@ -1,0 +1,279 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[NH2:1][CH:2]([CH2:6][CH2:7][CH2:8][CH2:9][CH2:10][CH2:11][CH2:12][CH3:13])[C:3]([OH:5])=[O:4].S(Cl)(Cl)=O.[OH-].[Na+].[CH2:20](O)[CH3:21]>>[NH2:1][CH:2]([CH2:6][CH2:7][CH2:8][CH2:9][CH2:10][CH2:11][CH2:12][CH3:13])[C:3]([O:5][CH2:20][CH3:21])=[O:4] |f:2.3|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sodium hydroxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "[OH-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Na.H2O/h;1H2/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m5_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "thionyl chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "S(=O)(Cl)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Cl2OS/c1-4(2)3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 6.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 70.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-Aminodecanoic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC(C(=O)O)CCCCCCCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C10H21NO2/c1-2-3-4-5-6-7-8-9(11)10(12)13/h9H,2-8,11H2,1H3,(H,12,13)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 16.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ice water"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "with stirring"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "2-Aminodecanoic acid (J. Am. Chem. Soc., 1946, 68, 450) (16.0 g) was added in portions to a cooled (-10° C.) mixture of absolute ethanol (70 ml) and thionyl chloride (6 ml) with stirring. The resulting solution was set aside for 2 hours, at room temperature, refluxed for 1 hour, cooled, poured into ice-water, and the pH of the solution was adjusted to 9 with aqueous sodium hydroxide. The mixture was extracted with ether, the extract was dried, concentrated, then distilled, giving ethyl 2-aminodecanoate (75%) as a colourless oil, b.p. 82°-84° C./0.2 mm."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "a cooled"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "refluxed for 1 hour",
+      "duration": {
+        "value": 1.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "cooled"
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "The mixture was extracted with ether",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the extract was dried"
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated"
+    },
+    {
+      "type": "DISTILLATION",
+      "details": "distilled"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 2.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethyl 2-aminodecanoate"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC(C(=O)OCC)CCCCCCCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C12H25NO2/c1-3-5-6-7-8-9-10-11(13)12(14)15-4-2/h11H,3-10,13H2,1-2H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 75.0
+              }
+            }
+          ],
+          "isolated_color": "colourless",
+          "texture": {
+            "type": "OIL",
+            "details": "oil"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04204068",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:28.548522"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-b9665060f1944271ac22f5e4b0281d06"
+}

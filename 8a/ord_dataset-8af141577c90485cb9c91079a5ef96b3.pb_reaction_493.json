@@ -1,0 +1,384 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH2:1](O)[CH3:2].[CH:4]([CH:17]1[CH2:22][CH2:21][N:20]([C:23](=[O:30])[CH2:24][O:25][CH2:26][C:27]([OH:29])=[O:28])[CH2:19][CH2:18]1)([C:11]1[CH:16]=[CH:15][CH:14]=[CH:13][CH:12]=1)[C:5]1[CH:10]=[CH:9][CH:8]=[CH:7][CH:6]=1.C1(C)C=CC(S(O)(=O)=O)=CC=1>ClCCl>[CH:4]([CH:17]1[CH2:18][CH2:19][N:20]([C:23](=[O:30])[CH2:24][O:25][CH2:26][C:27]([O:29][CH2:1][CH3:2])=[O:28])[CH2:21][CH2:22]1)([C:5]1[CH:10]=[CH:9][CH:8]=[CH:7][CH:6]=1)[C:11]1[CH:16]=[CH:15][CH:14]=[CH:13][CH:12]=1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ester"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m1_m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 50.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "[2-(4-benzhydrylpiperidino)-2-oxoethoxy]acetic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C1=CC=CC=C1)(C1=CC=CC=C1)C1CCN(CC1)C(COCC(=O)O)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C22H25NO4/c24-20(15-27-16-21(25)26)23-13-11-19(12-14-23)22(17-7-3-1-4-8-17)18-9-5-2-6-10-18/h1-10,19,22H,11-16H2,(H,25,26)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 3.63,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "p-toluenesulfonic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1(=CC=C(C=C1)S(=O)(=O)O)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H8O3S/c1-6-2-4-7(5-3-6)11(8,9)10/h2-5H,1H3,(H,8,9,10)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 200.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "dichloromethane"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClCCl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To about 50 milliliters of ethanol is added 3.63 grams (10 millimoles) of [2-(4-benzhydrylpiperidino)-2-oxoethoxy]acetic acid (prepared as described in Example V) and 200 milligrams of p-toluenesulfonic acid and the mixture refluxed for about four hours whereupon a reaction takes place with the formation in the reaction mixture of the desired ester product as confirmed by chromatographic analysis. The reaction mixture is subjected to reduced pressure to evaporate the ethanol and to obtain a product residue which is then dissolved in dichloromethane. The dichloromethane solution is first washed with aqueous bicarbonate solution, then dried over potassium carbonate and finally evaporated under reduced pressure to recover an ethyl [2-(4-benzhydrylpiperidino)-2-oxoethoxy]acetate product as residue. The ester product which may be further purified by distillation under reduced pressure has a molecular weight of 391.5."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "the mixture refluxed for about four hours whereupon a reaction",
+      "duration": {
+        "value": 4.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to evaporate the ethanol",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to obtain a product residue which"
+    },
+    {
+      "type": "WASH",
+      "details": "The dichloromethane solution is first washed with aqueous bicarbonate solution",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "dichloromethane"
+              },
+              {
+                "type": "SMILES",
+                "value": "ClCCl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "bicarbonate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C([O-])(O)=O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2O3/c2-1(3)4/h(H2,2,3,4)/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "dried over potassium carbonate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "potassium carbonate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C([O-])([O-])=O.[K+].[K+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2O3.2K/c2-1(3)4;;/h(H2,2,3,4);;/q;2*+1/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "finally evaporated under reduced pressure"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to recover an ethyl [2-(4-benzhydrylpiperidino)-2-oxoethoxy]acetate product as residue",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl [2-(4-benzhydrylpiperidino)-2-oxoethoxy]acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C1=CC=CC=C1)(C1=CC=CC=C1)C1CCN(CC1)C(COCC(=O)OCC)=O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C24H29NO4/c1-2-29-23(27)18-28-17-22(26)25-15-13-21(14-16-25)24(19-9-5-3-6-10-19)20-11-7-4-8-12-20/h3-12,21,24H,2,13-18H2,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DISTILLATION",
+      "details": "The ester product which may be further purified by distillation under reduced pressure",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ester"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Ethyl [2-(4-Benzhydrylpiperidino)-2-oxoethoxy]acetate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C1=CC=CC=C1)(C1=CC=CC=C1)C1CCN(CC1)C(COCC(=O)OCC)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C24H29NO4/c1-2-29-23(27)18-28-17-22(26)25-15-13-21(14-16-25)24(19-9-5-3-6-10-19)20-11-7-4-8-12-20/h3-12,21,24H,2,13-18H2,1H3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04203991",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:26.398519"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-21f2aca31b5e42c99d20d0b0d8dcbca7"
+}

@@ -1,0 +1,254 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[N+:1]([C:4]1[CH:9]=[CH:8][C:7]([NH2:10])=[C:6]([NH2:11])[CH:5]=1)([O-:3])=[O:2].[CH3:12][S:13](Cl)(=[O:15])=[O:14]>N1C=CC=CC=1>[NH2:11][C:6]1[CH:5]=[C:4]([N+:1]([O-:3])=[O:2])[CH:9]=[CH:8][C:7]=1[NH:10][S:13]([CH3:12])(=[O:15])=[O:14]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ice"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methanesulfonyl chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "CS(=O)(=O)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH3ClO2S/c1-5(2,3)4/h1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 22.8,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m1_m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-Nitro-o-phenylenediamine"
+            },
+            {
+              "type": "SMILES",
+              "value": "[N+](=O)([O-])C1=CC(=C(C=C1)N)N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H7N3O2/c7-5-2-1-4(9(10)11)3-6(5)8/h1-3H,7-8H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 30.6,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "pyridine"
+            },
+            {
+              "type": "SMILES",
+              "value": "N1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C5H5N/c1-2-4-6-5-3-1/h1-5H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 500.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ice"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 5.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "while stirring, at <10° C"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "4-Nitro-o-phenylenediamine (30.6 g; 0.2 mole) was nearly dissolved in pyridine (ca. 500 ml.) The mixture was chilled to 5° C. and methanesulfonyl chloride (22.8 g; 0.2 mole) was added dropwise, while stirring, at <10° C. After the addition, the solution was left stirring at the ice bath temperature for about one hour. The reaction solution was poured into ice cold water (~2 liter) and stirred while scratching vigorously. The product was filtered and dried to yield 28.8 g (62 percent) beige solid, m.p. 201° to 204° C."
+  },
+  "workups": [
+    {
+      "type": "ADDITION",
+      "details": "After the addition"
+    },
+    {
+      "type": "WAIT",
+      "details": "the solution was left"
+    },
+    {
+      "type": "STIRRING",
+      "details": "stirred"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "The product was filtered"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "beige solid"
+            },
+            {
+              "type": "NAME",
+              "value": "2'-Amino-4'-nitromethanesulfonanilide"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC1=C(NS(=O)(=O)C)C=CC(=C1)[N+](=O)[O-]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H9N3O4S/c1-15(13,14)9-7-3-2-5(10(11)12)4-6(7)8/h2-4,9H,8H2,1H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 28.8,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 62.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 62.3
+              }
+            }
+          ],
+          "isolated_color": "beige",
+          "texture": {
+            "type": "CUSTOM",
+            "details": "solid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04204993",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:24.508060"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-36acb20fcaee41b8bb828f0b87f46e2d"
+}

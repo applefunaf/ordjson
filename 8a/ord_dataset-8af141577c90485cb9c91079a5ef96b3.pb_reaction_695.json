@@ -1,0 +1,404 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[C:1](Cl)(=[O:3])[CH3:2].[C:5]1([C:11]2[CH:12]=[CH:13][C:14]3[O:18][C:17]([C:19]([O:21][CH2:22][CH3:23])=[O:20])=[CH:16][C:15]=3[CH:24]=2)[CH:10]=[CH:9][CH:8]=[CH:7][CH:6]=1.[Cl-].[Al+3].[Cl-].[Cl-]>C(=S)=S>[C:1]([C:8]1[CH:9]=[CH:10][C:5]([C:11]2[CH:12]=[CH:13][C:14]3[O:18][C:17]([C:19]([O:21][CH2:22][CH3:23])=[O:20])=[CH:16][C:15]=3[CH:24]=2)=[CH:6][CH:7]=1)(=[O:3])[CH3:2] |f:2.3.4.5|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ice water"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 1.0,
+              "units": "LITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m1_m2_m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acetyl chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H3ClO/c1-2(3)4/h1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 12.2,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "1B"
+            },
+            {
+              "type": "NAME",
+              "value": "ethyl 5-phenylbenzofuran-2-carboxylate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1(=CC=CC=C1)C=1C=CC2=C(C=C(O2)C(=O)OCC)C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C17H14O3/c1-2-19-17(18)16-11-14-10-13(8-9-15(14)20-16)12-6-4-3-5-7-12/h3-11H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 10.3,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "carbon disulfide"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(=S)=S"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CS2/c2-1-3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 120.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "aluminum chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Cl-].[Al+3].[Cl-].[Cl-]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Al.3ClH/h;3*1H/q+3;;;/p-3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 21.8,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "The mixture then was stirred at room temperature for 2.5 hours"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "12.2 g of acetyl chloride was added to a mixture of 10.3 g of 1B, and 120 ml of carbon disulfide, then 21.8 g of anhydrous aluminum chloride was added in portions to the stirred mixture. The mixture then was stirred at room temperature for 2.5 hours, the temperature rising to 32° C. The mixture was poured into 1 liter of ice water, the mixture was stirred for 30 minutes, and the solution was extracted with ether. The extract was dried (MgSO4) and concentrated. The residue was washed with ether and dried. It was dissolved in 100 ml of chloroform, the solution was treated with a decolorizing agent, and 100 ml of hexane was added. The resulting solution was concentrated to about 100 ml and cooled to give ethyl 5-(4-acetylphenyl)benzofuran-2-carboxylate (6A), mp: 105°-107° C."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "rising to 32° C",
+      "temperature": {
+        "setpoint": {
+          "value": 32.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "STIRRING",
+      "details": "the mixture was stirred for 30 minutes",
+      "duration": {
+        "value": 30.0,
+        "units": "MINUTE"
+      }
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "the solution was extracted with ether",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "The extract was dried (MgSO4)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "MgSO4"
+              },
+              {
+                "type": "SMILES",
+                "value": "[O-]S(=O)(=O)[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated"
+    },
+    {
+      "type": "WASH",
+      "details": "The residue was washed with ether",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried"
+    },
+    {
+      "type": "DISSOLUTION",
+      "details": "It was dissolved in 100 ml of chloroform",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "chloroform"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(Cl)(Cl)Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CHCl3/c2-1(3)4/h1H"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 100.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "ADDITION",
+      "details": "the solution was treated with a decolorizing agent, and 100 ml of hexane",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "hexane"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCCCCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C6H14/c1-3-5-6-4-2/h3-6H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 100.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "ADDITION",
+      "details": "was added"
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "The resulting solution was concentrated to about 100 ml"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "cooled"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 2.5,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethyl 5-(4-acetylphenyl)benzofuran-2-carboxylate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)C1=CC=C(C=C1)C=1C=CC2=C(C=C(O2)C(=O)OCC)C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C19H16O4/c1-3-22-19(21)18-11-16-10-15(8-9-17(16)23-18)14-6-4-13(5-7-14)12(2)20/h4-11H,3H2,1-2H3"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04205080",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:25.456636"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-275c3d4a156743349e28d68cbbc739c0"
+}

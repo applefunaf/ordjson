@@ -1,0 +1,312 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[OH:1][CH:2]([CH2:6][CH2:7][CH2:8][CH3:9])[CH2:3][C:4]#[CH:5].[C:10]1([C:16](Br)([C:23]2[CH:28]=[CH:27][CH:26]=[CH:25][CH:24]=2)[C:17]2[CH:22]=[CH:21][CH:20]=[CH:19][CH:18]=2)[CH:15]=[CH:14][CH:13]=[CH:12][CH:11]=1.O>N1C=CC=CC=1>[C:10]1([C:16]([C:23]2[CH:28]=[CH:27][CH:26]=[CH:25][CH:24]=2)([C:17]2[CH:22]=[CH:21][CH:20]=[CH:19][CH:18]=2)[O:1][CH:2]([CH2:6][CH2:7][CH2:8][CH3:9])[CH2:3][C:4]#[CH:5])[CH:15]=[CH:14][CH:13]=[CH:12][CH:11]=1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acetylenic hydrogen"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-hydroxy-1-octyne"
+            },
+            {
+              "type": "SMILES",
+              "value": "OC(CC#C)CCCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H14O/c1-3-5-7-8(9)6-4-2/h2,8-9H,3,5-7H2,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 10.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2_m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "triphenylmethyl bromide"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1(=CC=CC=C1)C(C1=CC=CC=C1)(C1=CC=CC=C1)Br"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C19H15Br/c20-19(16-10-4-1-5-11-16,17-12-6-2-7-13-17)18-14-8-3-9-15-18/h1-15H"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 30.75,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "pyridine"
+            },
+            {
+              "type": "SMILES",
+              "value": "N1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C5H5N/c1-2-4-6-5-3-1/h1-5H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 85.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture of 10 g (0.08 moles) of 4-hydroxy-1-octyne [1. Crombie and A. G. Jacklin, J. Chem. Soc., 1632 (1957), also Example 93] and 30.75 g (0.09 moles) of triphenylmethyl bromide in 85 ml of dry pyridine is heated on the steam bath for 2 hours. The cooled mixture is treated with water and extracted with ether. The extract is washed successively with ice cold 2% hydrochloric acid, saturated sodium chloride solution, dried with magnesium sulfate, and taken to dryness. Column chromatography of the residue on Florisil affords an oil; λ max 3.01, 4.72 (acetylenic hydrogen), 6.28, 9.65 and 14.25μ (triphenylmethoxy group)."
+  },
+  "workups": [
+    {
+      "type": "EXTRACTION",
+      "details": "extracted with ether",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "The extract is washed successively with ice cold 2% hydrochloric acid, saturated sodium chloride solution",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ice"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "sodium chloride"
+              },
+              {
+                "type": "SMILES",
+                "value": "[Cl-].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH.Na/h1H;/q;+1/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "dried with magnesium sulfate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "magnesium sulfate"
+              },
+              {
+                "type": "SMILES",
+                "value": "S(=O)(=O)([O-])[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "Column chromatography of the residue on Florisil affords an oil"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-triphenylmethoxy-1-octyne"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1(=CC=CC=C1)C(OC(CC#C)CCCC)(C1=CC=CC=C1)C1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C27H28O/c1-3-5-22-26(15-4-2)28-27(23-16-9-6-10-17-23,24-18-11-7-12-19-24)25-20-13-8-14-21-25/h2,6-14,16-21,26H,3,5,15,22H2,1H3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04202822",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:25.239442"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-14f95335181d4186b6f9f0f78e14146c"
+}

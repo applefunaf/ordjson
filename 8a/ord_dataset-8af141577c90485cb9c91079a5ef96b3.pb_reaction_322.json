@@ -1,0 +1,282 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "Br[CH2:2][CH2:3][CH2:4][CH2:5][CH2:6][C:7]([NH:9][C:10]1[CH:15]=[CH:14][C:13]([OH:16])=[CH:12][CH:11]=1)=[O:8].[C:17]1([N:23]2[CH2:28][CH2:27][NH:26][CH2:25][CH2:24]2)[CH:22]=[CH:21][CH:20]=[CH:19][CH:18]=1.C(N(CC)CC)C>C(O)C>[OH:16][C:13]1[CH:14]=[CH:15][C:10]([NH:9][C:7](=[O:8])[CH2:6][CH2:5][CH2:4][CH2:3][CH2:2][N:26]2[CH2:27][CH2:28][N:23]([C:17]3[CH:22]=[CH:21][CH:20]=[CH:19][CH:18]=3)[CH2:24][CH2:25]2)=[CH:11][CH:12]=1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m3_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "6-bromo-N-(4-hydroxyphenyl)hexanamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "BrCCCCCC(=O)NC1=CC=C(C=C1)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C12H16BrNO2/c13-9-3-1-2-4-12(16)14-10-5-7-11(15)8-6-10/h5-8,15H,1-4,9H2,(H,14,16)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 45.7,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "1-phenylpiperazine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1(=CC=CC=C1)N1CCNCC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C10H14N2/c1-2-4-10(5-3-1)12-8-6-11-7-9-12/h1-5,11H,6-9H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 26.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "triethylamine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)N(CC)CC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H15N/c1-4-7(5-2)6-3/h4-6H2,1-3H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 22.4,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 400.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A solution of 45.7 g (0.16 mol) of 6-bromo-N-(4-hydroxyphenyl)hexanamide, 26.0 g (0.16 mol) of 1-phenylpiperazine and 22.4 ml (16.3 g, 0.16 mol) of triethylamine in 400 ml of ethanol was heated under reflux overnight and then concentrated under vacuum. The residue was mixed with sodium bicarbonate solution and trichloromethane. The resulting suspension was filtered. The solid was recrystallized from ethanol-water and then from acetonitrile to give the end product as tan crystals, mp 157°-159°."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "under reflux overnight",
+      "duration": {
+        "value": 8.0,
+        "precision": 8.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated under vacuum"
+    },
+    {
+      "type": "ADDITION",
+      "details": "The residue was mixed with sodium bicarbonate solution and trichloromethane",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "sodium bicarbonate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C([O-])(O)=O.[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2O3.Na/c2-1(3)4;/h(H2,2,3,4);/q;+1/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "trichloromethane"
+              },
+              {
+                "type": "SMILES",
+                "value": "ClC(Cl)Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CHCl3/c2-1(3)4/h1H"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "The resulting suspension was filtered"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The solid was recrystallized from ethanol-water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethanol water"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)O.O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C2H6O.H2O/c1-2-3;/h3H,2H2,1H3;1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "product"
+            },
+            {
+              "type": "NAME",
+              "value": "N-(4-Hydroxyphenyl)-4-phenyl-1-piperazinehexanamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "OC1=CC=C(C=C1)NC(CCCCCN1CCN(CC1)C1=CC=CC=C1)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C22H29N3O2/c26-21-12-10-19(11-13-21)23-22(27)9-5-2-6-14-24-15-17-25(18-16-24)20-7-3-1-4-8-20/h1,3-4,7-8,10-13,26H,2,5-6,9,14-18H2,(H,23,27)"
+            }
+          ],
+          "isolated_color": "tan",
+          "texture": {
+            "type": "CRYSTAL",
+            "details": "crystals"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04202978",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:28.056700"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-0eb6442af9b1422cafcbbb9de1381b32"
+}

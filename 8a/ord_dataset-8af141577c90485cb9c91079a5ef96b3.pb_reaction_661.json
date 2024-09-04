@@ -1,0 +1,280 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][C:2]1[C:17]([C:18]([F:21])([F:20])[F:19])=[CH:16][CH:15]=[CH:14][C:3]=1[NH:4][C:5]1[N:13]=[CH:12][CH:11]=[CH:10][C:6]=1[C:7]([OH:9])=[O:8].C(O)(=[O:24])C.OO>O>[OH:24][C:11]1[CH:12]=[N:13][C:5]([NH:4][C:3]2[CH:14]=[CH:15][CH:16]=[C:17]([C:18]([F:19])([F:21])[F:20])[C:2]=2[CH3:1])=[C:6]([CH:10]=1)[C:7]([OH:9])=[O:8]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrogen peroxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "OO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O2/c1-2/h1-2H"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-(2-methyl-3-trifluoromethylanilino) nicotinic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC1=C(NC2=C(C(=O)O)C=CC=N2)C=CC=C1C(F)(F)F"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C14H11F3N2O2/c1-8-10(14(15,16)17)5-2-6-11(8)19-12-9(13(20)21)4-3-7-18-12/h2-7H,1H3,(H,18,19)(H,20,21)"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acetic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H4O2/c1-2(3)4/h1H3,(H,3,4)"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrogen peroxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "OO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O2/c1-2/h1-2H"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a suspension of 10 g. of 2-(2-methyl-3-trifluoromethylanilino) nicotinic acid and 160 ml. of glacial acetic acid, add 9 ml. of 30% hydrogen peroxide solution at room temperature. Warm the reaction mixture on a steam bath for one hour and add an additional 5 ml. of 30% hydrogen peroxide. Heat the resulting mixture for three hours on a steam bath, dilute with water and filter. After recrystallization from acetic acid, the product, 5-hydroxy-2-(2-methyl-3-trifluoromethylanilino) nicotinic acid melts at 305°-308° (dec.)"
+  },
+  "workups": [
+    {
+      "type": "ADDITION",
+      "details": "To a suspension of 10 g"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "at room temperature",
+      "temperature": {
+        "control": {
+          "type": "AMBIENT"
+        }
+      }
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "Warm the reaction mixture on a steam bath for one hour",
+      "duration": {
+        "value": 1.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "ADDITION",
+      "details": "add an additional 5 ml"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "Heat the resulting mixture for three hours on a steam bath",
+      "duration": {
+        "value": 3.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filter"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "After recrystallization from acetic acid",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "acetic acid"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C2H4O2/c1-2(3)4/h1H3,(H,3,4)"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "5-Hydroxy-2-(2-methyl-3-trifluoromethylanilino) nicotinic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "OC=1C=NC(=C(C(=O)O)C1)NC1=C(C(=CC=C1)C(F)(F)F)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C14H11F3N2O3/c1-7-10(14(15,16)17)3-2-4-11(7)19-12-9(13(21)22)5-8(20)6-18-12/h2-6,20H,1H3,(H,18,19)(H,21,22)"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04205073",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:24.799328"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-d6cf29cb4a114fc897e812715c781ee1"
+}

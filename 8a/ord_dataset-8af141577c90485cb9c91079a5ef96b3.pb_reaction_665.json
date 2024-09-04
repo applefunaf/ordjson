@@ -1,0 +1,208 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[C:1]1([C:7]([C:18]2[CH:23]=[CH:22][CH:21]=[CH:20][CH:19]=2)=[C:8]2[CH2:17][CH2:16][N:15]3[CH:10]([CH2:11][CH2:12][CH2:13][CH2:14]3)[CH2:9]2)[CH:6]=[CH:5][CH:4]=[CH:3][CH:2]=1.[CH3:24][I:25]>CC(C)=O>[CH3:24][I:25].[C:1]1([C:7]([C:18]2[CH:23]=[CH:22][CH:21]=[CH:20][CH:19]=2)=[C:8]2[CH2:17][CH2:16][N:15]3[CH:10]([CH2:11][CH2:12][CH2:13][CH2:14]3)[CH2:9]2)[CH:2]=[CH:3][CH:4]=[CH:5][CH:6]=1 |f:3.4|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-(diphenylmethylene)quinolizidine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1(=CC=CC=C1)C(=C1CC2CCCCN2CC1)C1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C22H25N/c1-3-9-18(10-4-1)22(19-11-5-2-6-12-19)20-14-16-23-15-8-7-13-21(23)17-20/h1-6,9-12,21H,7-8,13-17H2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methyl iodide"
+            },
+            {
+              "type": "SMILES",
+              "value": "CI"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH3I/c1-2/h1H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acetone"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC(=O)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H6O/c1-3(2)4/h1-2H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "the mixture was stirred at room temperature of 24 hrs"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "In 10 ml. of acetone was dissolved 0.1 g. of 2-(diphenylmethylene)quinolizidine. After 1.0 ml. of methyl iodide was added to the solution, the mixture was stirred at room temperature of 24 hrs. The precipitated crystals were removed by filtration and recrystallized from methanol to give 0.1 g. of colorless needles having a melting point of 280° to 282° C.(decomposed)."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "The precipitated crystals were removed by filtration"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "recrystallized from methanol",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "methanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "CO"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to give 0.1 g"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 24.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-(Diphenylmethylene)quinolizidine methyl iodide"
+            },
+            {
+              "type": "SMILES",
+              "value": "CI.C1(=CC=CC=C1)C(=C1CC2CCCCN2CC1)C1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C22H25N.CH3I/c1-3-9-18(10-4-1)22(19-11-5-2-6-12-19)20-14-16-23-15-8-7-13-21(23)17-20;1-2/h1-6,9-12,21H,7-8,13-17H2;1H3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04205074",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:24.879795"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-5c7eb9a905ef47b2923794a89f4902e0"
+}

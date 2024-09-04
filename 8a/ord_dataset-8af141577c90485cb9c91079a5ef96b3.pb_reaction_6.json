@@ -1,0 +1,214 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][O:2][C:3]1[CH:8]=[C:7]([O:9][CH2:10][CH2:11][CH2:12][CH2:13][CH2:14][CH2:15][CH2:16][CH2:17][CH2:18][CH2:19][CH2:20][CH2:21][CH2:22][CH2:23][CH2:24][CH3:25])[C:6]([O:26][CH3:27])=[CH:5][C:4]=1[N+:28]([O-])=O.[H][H]>C(O)C.[Ni]>[CH3:1][O:2][C:3]1[CH:8]=[C:7]([O:9][CH2:10][CH2:11][CH2:12][CH2:13][CH2:14][CH2:15][CH2:16][CH2:17][CH2:18][CH2:19][CH2:20][CH2:21][CH2:22][CH2:23][CH2:24][CH3:25])[C:6]([O:26][CH3:27])=[CH:5][C:4]=1[NH2:28]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Raney-nickel"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Ni]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Ni"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 2.5,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "CATALYST"
+        }
+      ]
+    },
+    "m1_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2,5-dimethoxy-4-hexadecyloxy nitrobenzene"
+            },
+            {
+              "type": "SMILES",
+              "value": "COC1=C(C=C(C(=C1)OCCCCCCCCCCCCCCCC)OC)[N+](=O)[O-]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C24H41NO5/c1-4-5-6-7-8-9-10-11-12-13-14-15-16-17-18-30-24-20-22(28-2)21(25(26)27)19-23(24)29-3/h19-20H,4-18H2,1-3H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 49.5,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 120.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrogen"
+            },
+            {
+              "type": "SMILES",
+              "value": "[H][H]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2/h1H"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "stirred in ethanol"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "In an autoclave 49.5 g (0.117 mole) of 2,5-dimethoxy-4-hexadecyloxy nitrobenzene dissolved in 120 ml of ethanol were hydrogenated using 2.5 ml of Raney-nickel, a hydrogen pressure between 750 and 1500 psi and a temperature of 70° C. After 3 h of agitation the catalyst was filtered off and the filtrate was cooled in ice. The residue formed was filtered off, stirred in ethanol and dried. Yield: 39.5 g (86%). Melting point: 61° C."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "a temperature of 70° C",
+      "temperature": {
+        "setpoint": {
+          "value": 70.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "After 3 h of agitation the catalyst was filtered off",
+      "duration": {
+        "value": 3.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "the filtrate was cooled in ice"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The residue formed"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "was filtered off"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2,5-dimethoxy-4-hexadecyloxy-aniline"
+            },
+            {
+              "type": "SMILES",
+              "value": "COC1=C(N)C=C(C(=C1)OCCCCCCCCCCCCCCCC)OC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C24H43NO3/c1-4-5-6-7-8-9-10-11-12-13-14-15-16-17-18-28-24-20-22(26-2)21(25)19-23(24)27-3/h19-20H,4-18,25H2,1-3H3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04201584",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:24.193136"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-490c83a667ba49bf9508afdc0c50eb12"
+}

@@ -1,0 +1,291 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[S:1](=[O:5])(=[O:4])([O-:3])[NH2:2].[NH4+:6].[S:7](=[O:11])(=[O:10])([OH:9])[NH2:8].O.[OH-].[K+:14]>>[S:1]([NH:2][S:7]([O-:11])(=[O:10])=[O:9])([O-:3])(=[O:5])=[O:4].[NH4+:8].[NH4+:6].[S:1]([NH:2][S:7]([O-:11])(=[O:10])=[O:9])([O-:3])(=[O:5])=[O:4].[K+:14].[K+:14] |f:0.1,4.5,6.7.8,9.10.11|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ammonium sulfamate"
+            },
+            {
+              "type": "SMILES",
+              "value": "S(N)([O-])(=O)=O.[NH4+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H3NO3S.H3N/c1-5(2,3)4;/h(H3,1,2,3,4);1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 114.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sulfamic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "S(N)(O)(=O)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H3NO3S/c1-5(2,3)4/h(H3,1,2,3,4)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 97.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "potassium hydroxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "[OH-].[K+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/K.H2O/h;1H2/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 375.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "Diammonium imidodisulfate was prepared by adding 114 grams (1.0 mole) of ammonium sulfamate to 97 grams (1.0 mole) of sulfamic acid in a 1-liter beaker. The mixture was heated on a hot plate with constant stirring. At about 130° C. a stirrable slurry was obtained and at about 155° C. an exothermic reaction began, forming a solid. When the solid cooled, it was dissolved in about 375 grams of 45 percent potassium hydroxide. Water was added to bring the total volume to 800 milliliters. The solution was filtered and then heated under vacuum to expel ammonia. Upon cooling, concentrated hydrochloric acid was carefully added to the solution to adjust the mixture to pH 7.5. A precipitate was obtained and upon filtering, about 150 grams of potassium imidodisulfate was obtained."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "The mixture was heated on a hot plate with constant stirring"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "At about 130° C. a stirrable slurry was obtained and at about 155° C.",
+      "temperature": {
+        "setpoint": {
+          "value": 155.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "an exothermic reaction"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "forming a solid"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "When the solid cooled"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "The solution was filtered"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "heated under vacuum"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "Upon cooling"
+    },
+    {
+      "type": "ADDITION",
+      "details": "concentrated hydrochloric acid was carefully added to the solution",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "hydrochloric acid"
+              },
+              {
+                "type": "SMILES",
+                "value": "Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH/h1H"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "A precipitate was obtained"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "upon filtering"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Diammonium imidodisulfate"
+            },
+            {
+              "type": "SMILES",
+              "value": "S(=O)(=O)([O-])NS(=O)(=O)[O-].[NH4+].[NH4+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H3NO6S2.2H3N/c2-8(3,4)1-9(5,6)7;;/h1H,(H,2,3,4)(H,5,6,7);2*1H3"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "potassium imidodisulfate"
+            },
+            {
+              "type": "SMILES",
+              "value": "S(=O)(=O)([O-])NS(=O)(=O)[O-].[K+].[K+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/2K.H3NO6S2/c;;2-8(3,4)1-9(5,6)7/h;;1H,(H,2,3,4)(H,5,6,7)/q2*+1;/p-2"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 150.0,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 118.4
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04201687",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:24.310356"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-ac000f4974a4464091ad3d331db322e5"
+}

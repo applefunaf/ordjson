@@ -1,0 +1,376 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH:1]([Mg]Cl)=[CH2:2].[O:5]=[C:6]([CH2:11][CH2:12][CH2:13][CH3:14])[CH2:7]/[CH:8]=[CH:9]/[I:10]>O1CCCC1>[OH:5][C:6]([CH:1]=[CH2:2])([CH2:11][CH2:12][CH2:13][CH3:14])[CH2:7]/[CH:8]=[CH:9]/[I:10]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "vinyl magnesium chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(=C)[Mg]Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H3.ClH.Mg/c1-2;;/h1H,2H2;1H;/q;;+1/p-1"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 7.8,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-oxo-1-iodo-trans-1-octene"
+            },
+            {
+              "type": "SMILES",
+              "value": "O=C(C/C=C/I)CCCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H13IO/c1-2-3-5-8(10)6-4-7-9/h4,7H,2-3,5-6H2,1H3/b7-4+"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 3.55,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "tetrahydrofuran"
+            },
+            {
+              "type": "SMILES",
+              "value": "O1CCCC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O/c1-2-4-5-3-1/h1-4H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 20.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "the solution is stirred at -20° C. to -15° C. for 30 minutes"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a stirred solution of 7.8 ml of vinyl magnesium chloride (2.3 M in tetrahydrofuran), at -25° C. is added a solution of 3.55 g of 4-oxo-1-iodo-trans-1-octene in 20 ml of tetrahydrofuran during 15 minutes. After the addition, the solution is stirred at -20° C. to -15° C. for 30 minutes. The reaction is quenched with a mixture of hexane and ice. The aqueous phase is separated and extracted with additional hexane. The combined hexane extracts are washed successively with water and brine. The solution is dried over magnesium sulfate and concentrated. The residue is subjected to dry column chromatography on silica gel with benzene as developing solvent to give a liquid, pmr spectrum (CDCl3): 5.2 (m, terminal CH2) 5.83 (g, CH=CH2), 6.13 (d, l CH=), and 6.52 (m, ICM=CH)."
+  },
+  "workups": [
+    {
+      "type": "ADDITION",
+      "details": "After the addition"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The reaction is quenched with a mixture of hexane and ice",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "hexane"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCCCCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C6H14/c1-3-5-6-4-2/h3-6H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The aqueous phase is separated"
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "extracted with additional hexane",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "hexane"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCCCCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C6H14/c1-3-5-6-4-2/h3-6H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "The combined hexane extracts are washed successively with water and brine",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "hexane"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCCCCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C6H14/c1-3-5-6-4-2/h3-6H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "brine"
+              },
+              {
+                "type": "SMILES",
+                "value": "[Cl-].[Na+].O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH.Na.H2O/h1H;;1H2/q;+1;/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "The solution is dried over magnesium sulfate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "magnesium sulfate"
+              },
+              {
+                "type": "SMILES",
+                "value": "S(=O)(=O)([O-])[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated"
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "to dry column chromatography on silica gel with benzene",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "benzene"
+              },
+              {
+                "type": "SMILES",
+                "value": "C1=CC=CC=C1"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C6H6/c1-2-4-6-5-3-1/h1-6H"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to give a liquid, pmr spectrum (CDCl3)"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 30.0,
+        "units": "MINUTE"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4-Hydroxy-4-vinyl-1-iodo-trans-1-octene"
+            },
+            {
+              "type": "SMILES",
+              "value": "OC(C/C=C/I)(CCCC)C=C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C10H17IO/c1-3-5-7-10(12,4-2)8-6-9-11/h4,6,9,12H,2-3,5,7-8H2,1H3/b9-6+"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04202989",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:27.766213"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-9466527e30f54b889dbb171e777db970"
+}

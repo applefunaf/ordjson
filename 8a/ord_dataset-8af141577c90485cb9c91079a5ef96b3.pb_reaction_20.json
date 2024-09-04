@@ -1,0 +1,273 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[OH-].[Na+].[CH2:3]([Cl:6])[CH:4]=[CH2:5].[C:7](#[N:10])[CH:8]=[CH2:9].S(OOS([O-])(=O)=O)([O-])(=O)=[O:12].[K+].[K+]>O>[C:7](#[N:10])[CH:8]=[CH2:9].[CH2:3]([OH:12])[CH:4]=[CH2:5].[CH2:3]([Cl:6])[CH:4]=[CH2:5] |f:0.1,4.5.6,8.9.10|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m6": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sodium hydroxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "[OH-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Na.H2O/h;1H2/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m2_m3_m5_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "allyl chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C=C)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H5Cl/c1-2-3-4/h2H,1,3H2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acrylonitrile"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C=C)#N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H3N/c1-2-3-4/h2H,1H2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "potassium persulfate"
+            },
+            {
+              "type": "SMILES",
+              "value": "S(=O)(=O)([O-])OOS(=O)(=O)[O-].[K+].[K+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/2K.H2O8S2/c;;1-9(2,3)7-8-10(4,5)6/h;;(H,1,2,3)(H,4,5,6)/q2*+1;/p-2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "then agitated at a temperature just below the boiling temperature of the reactants at ambient pressure for 1 to 12 hours"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "About 10 parts by weight of fine granular silica, 2.5 parts by weight of sodium hydroxide flakes and 2 parts by weight of water are mixed then heated at 90 degrees to 100 degrees C. until the water evaporates, thereby producing an activated silica. 30 parts by weight of allyl chloride, 3 parts by weight of acrylonitrile, 12 parts by weight of water and 0.2 parts by weight of potassium persulfate are mixed then agitated at a temperature just below the boiling temperature of the reactants at ambient pressure for 1 to 12 hours, thereby producing a white, solid poly (allyl chloride allyl alcohol acrylonitrile) copolymer."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "then heated at 90 degrees to 100 degrees C"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "until the water evaporates",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "producing an activated silica"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 6.5,
+        "precision": 5.5,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "allyl chloride allyl alcohol acrylonitrile"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C=C)#N.C(C=C)O.C(C=C)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H5Cl.C3H3N.C3H6O/c3*1-2-3-4/h2H,1,3H2;2H,1H2;2,4H,1,3H2"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04201702",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:24.411119"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-c6e50cd43a04401297d3a16b0b30b29a"
+}

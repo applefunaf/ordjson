@@ -1,0 +1,362 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[F:1][C:2]([F:21])([F:20])[CH2:3][NH:4][C:5]1[CH:18]=[CH:17][C:16]([Cl:19])=[CH:15][C:6]=1[C:7]([C:9]1[CH:14]=[CH:13][CH:12]=[CH:11][CH:10]=1)=O.[C:22](=O)([O:24]CC)[NH2:23]>C(Cl)(Cl)Cl.[Cl-].[Zn+2].[Cl-]>[F:1][C:2]([F:21])([F:20])[CH2:3][N:4]1[C:5]2[C:6](=[CH:15][C:16]([Cl:19])=[CH:17][CH:18]=2)[C:7]([C:9]2[CH:14]=[CH:13][CH:12]=[CH:11][CH:10]=2)=[N:23][C:22]1=[O:24] |f:3.4.5|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-(2,2,2-trifluoroethylamino)-5-chlorobenzophenone"
+            },
+            {
+              "type": "SMILES",
+              "value": "FC(CNC1=C(C(=O)C2=CC=CC=C2)C=C(C=C1)Cl)(F)F"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C15H11ClF3NO/c16-11-6-7-13(20-9-15(17,18)19)12(8-11)14(21)10-4-2-1-3-5-10/h1-8,20H,9H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 62.7,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethyl carbamate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(N)(OCC)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H7NO2/c1-2-6-3(4)5/h2H2,1H3,(H2,4,5)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 107.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "zinc chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Cl-].[Zn+2].[Cl-]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/2ClH.Zn/h2*1H;/q;;+2/p-2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 10.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "CATALYST"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "chloroform"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(Cl)(Cl)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CHCl3/c2-1(3)4/h1H"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 190.0,
+        "units": "CELSIUS"
+      }
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture of 62.7 g of 2-(2,2,2-trifluoroethylamino)-5-chlorobenzophenone, 107 g of ethyl carbamate and 10 g of zinc chloride was heated at 190° C. (oil bath temperature) for 3 hours. After cooling, the reaction mixture was dissolved in chloroform and the insoluble material was filtered off. The chloroform solution was washed successively with dilute hydrochloric acid and water, and dried over anhydrous sodium sulfate. Then the solvent was removed under reduced pressure and the residual solid was washed 3 times with 100 ml of isopropyl ether and dried to give 49.5 g of 1-(2,2,2-trifluoroethyl)-4-phenyl-6-chloro-2(1H)-quinazolinone as a pale gray powder. Recrystallization from ethanol gave pale yellow needles, m.p. 186.5°-187.5° C."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "After cooling"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "the insoluble material was filtered off"
+    },
+    {
+      "type": "WASH",
+      "details": "The chloroform solution was washed successively with dilute hydrochloric acid and water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "chloroform"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(Cl)(Cl)Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CHCl3/c2-1(3)4/h1H"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "hydrochloric acid"
+              },
+              {
+                "type": "SMILES",
+                "value": "Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH/h1H"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "dried over anhydrous sodium sulfate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "sodium sulfate"
+              },
+              {
+                "type": "SMILES",
+                "value": "S(=O)(=O)([O-])[O-].[Na+].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/2Na.H2O4S/c;;1-5(2,3)4/h;;(H2,1,2,3,4)/q2*+1;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "Then the solvent was removed under reduced pressure"
+    },
+    {
+      "type": "WASH",
+      "details": "the residual solid was washed 3 times with 100 ml of isopropyl ether",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "isopropyl ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(C)OC(C)C"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C6H14O/c1-5(2)7-6(3)4/h5-6H,1-4H3"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 100.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "1-(2,2,2-trifluoroethyl)-4-phenyl-6-chloro-2(1H)-quinazolinone"
+            },
+            {
+              "type": "SMILES",
+              "value": "FC(CN1C(N=C(C2=CC(=CC=C12)Cl)C1=CC=CC=C1)=O)(F)F"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C16H10ClF3N2O/c17-11-6-7-13-12(8-11)14(10-4-2-1-3-5-10)21-15(23)22(13)9-16(18,19)20/h1-8H,9H2"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 49.5,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 73.1
+              }
+            }
+          ],
+          "isolated_color": "pale gray",
+          "texture": {
+            "type": "POWDER",
+            "details": "powder"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04202895",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:25.089414"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-2104eabaa0df4b47b01079133fcb8174"
+}

@@ -1,0 +1,221 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][C:2]1[CH:7]=[CH:6][CH:5]=[C:4]([CH3:8])[C:3]=1[N:9]1[CH:14]=[N:13][CH:12]([NH:15][CH3:16])[NH:11][C:10]1=[O:17].[CH3:18][S:19]([OH:22])(=[O:21])=[O:20]>O>[CH3:18][S:19]([OH:22])(=[O:21])=[O:20].[CH3:8][C:4]1[CH:5]=[CH:6][CH:7]=[C:2]([CH3:1])[C:3]=1[N:9]1[CH:14]=[N:13][C:12]([NH:15][CH3:16])=[N:11][C:10]1=[O:17] |f:3.4|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "1-(2,6-dimethylphenyl)-4-methylamino-dihydro-1,3,5-triazin-2-one"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC1=C(C(=CC=C1)C)N1C(NC(N=C1)NC)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C12H16N4O/c1-8-5-4-6-9(2)10(8)16-7-14-11(13-3)15-12(16)17/h4-7,11,13H,1-3H3,(H,15,17)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 6.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methane-sulfonic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "CS(=O)(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH4O3S/c1-5(2,3)4/h1H3,(H,2,3,4)"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 2.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A solution of 6.0 g (0.026 moles) of 1-(2,6-dimethylphenyl)-4-methylamino-dihydro-1,3,5-triazin-2-one in 100 ml iPA was prepared with warming. To the warm solution was added 2.0 ml (0.031 moles) of methane-sulfonic acid. The mixture became hot and crystals of white crystalline solid began to form almost immediately. The mixture allowed to cool to room temperature in tap water and filtered. The solution was washed with IPA/Et2O to give 8.00 g of product which was dried overnight at 50°-60° C. in a vacuum. Obtained 8.0 g of 1-(2,6-dimethylphenyl)-4-methylaminodihydro-1,3,5-triazin-2-one methanesulfonate after drying."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "with warming"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to form almost immediately"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filtered"
+    },
+    {
+      "type": "WASH",
+      "details": "The solution was washed with IPA/Et2O",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "IPA Et2O"
+              },
+              {
+                "type": "SMILES",
+                "value": "CC(C)O.CCOCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O.C3H8O/c1-3-5-4-2;1-3(2)4/h3-4H2,1-2H3;3-4H,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "product"
+            },
+            {
+              "type": "NAME",
+              "value": "1-(2',6'-dimethylphenyl)-4-methylamino-1,2-dihydro-1,3,5-triazin-2-one methanesulfonate"
+            },
+            {
+              "type": "SMILES",
+              "value": "CS(=O)(=O)O.CC1=C(C(=CC=C1)C)N1C(N=C(N=C1)NC)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C12H14N4O.CH4O3S/c1-8-5-4-6-9(2)10(8)16-7-14-11(13-3)15-12(16)17;1-5(2,3)4/h4-7H,1-3H3,(H,13,15,17);1H3,(H,2,3,4)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 8.0,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 94.3
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04203985",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:25.650752"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-e11c5ad23858493da8fce1e5c3a7c727"
+}

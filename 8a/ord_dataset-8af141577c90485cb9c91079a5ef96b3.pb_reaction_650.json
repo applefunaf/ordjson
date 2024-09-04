@@ -1,0 +1,250 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][C:2]([CH2:5][CH3:6])=[CH:3][CH3:4].[CH2:7]([CH:9]([CH2:13][CH2:14][CH2:15]C)[C:10]([O-:12])=O)C.[C]=O.[H][H]>>[CH3:1][C:2]([CH2:5][CH3:6])=[CH:3][CH3:4].[CH3:7][CH:9]([CH:13]([CH3:1])[CH2:14][CH3:15])[CH:10]=[O:12] |^3:16|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m6_m7": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "carbon monoxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "[C]=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CO/c1-2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrogen"
+            },
+            {
+              "type": "SMILES",
+              "value": "[H][H]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2/h1H"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3_m4_m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3-methyl-2-pentene"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC(=CC)CC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H12/c1-4-6(3)5-2/h4H,5H2,1-3H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 400.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Rh"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 40.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-ethylhexanoate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)C(C(=O)[O-])CCCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H16O2/c1-3-5-6-7(4-2)8(9)10/h7H,3-6H2,1-2H3,(H,9,10)/p-1"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "400 g of 3-methyl-2-pentene as well as 40 mg Rh (in the form of 2-ethylhexanoate) were introduced into a high pressure vessel (volume 2.1 liters) and were reacted with an equimolar mixture of carbon monoxide and hydrogen at 90° C. and 260-270 bar. The reaction was completed in 7 hours, after which the pressure was relieved and the reactor allowed to cool. The composition of the crude reaction product was determined by a vacuum distillation and a gas chromatographic analysis. With a 99.9% 3-methyl-2-pentene conversion, 81.3% of isomeric C7 aldehydes was obtained as 2,3-dimethylpentanal (cf. Table 1, Exp. 1)."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "to cool"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The composition of the crude reaction product"
+    },
+    {
+      "type": "DISTILLATION",
+      "details": "was determined by a vacuum distillation"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 7.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3-methyl-2-pentene"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC(=CC)CC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H12/c1-4-6(3)5-2/h4H,5H2,1-3H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 99.9
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "C7 aldehydes"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 81.3
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2,3-dimethylpentanal"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC(C=O)C(CC)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H14O/c1-4-6(2)7(3)5-8/h5-7H,4H2,1-3H3"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04205013",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:24.561477"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-0483ad42d54241db82decf674a10fe6c"
+}

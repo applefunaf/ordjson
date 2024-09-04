@@ -1,0 +1,340 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "C([O:3][C:4](=[O:24])[CH:5]([NH:16][C:17]([O:19][C:20]([CH3:23])([CH3:22])[CH3:21])=[O:18])[C:6]1[N:7]=[C:8]([NH:11][C:12](=[O:15])[CH2:13][Cl:14])[S:9][CH:10]=1)C.[OH-].[K+]>C(O)C>[C:20]([O:19][C:17]([NH:16][CH:5]([C:6]1[N:7]=[C:8]([NH:11][C:12](=[O:15])[CH2:13][Cl:14])[S:9][CH:10]=1)[C:4]([OH:24])=[O:3])=[O:18])([CH3:23])([CH3:21])[CH3:22] |f:1.2|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "potassium hydroxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "[OH-].[K+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/K.H2O/h;1H2/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 681.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m1_m4_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "α-t-butyloxycarbonylamino-α-[2-(chloroacetamido)thiazol-4-yl]acetic acid ethyl ester"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)OC(C(C=1N=C(SC1)NC(CCl)=O)NC(=O)OC(C)(C)C)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C14H20ClN3O5S/c1-5-22-11(20)10(18-13(21)23-14(2,3)4)8-7-24-12(16-8)17-9(19)6-15/h7,10H,5-6H2,1-4H3,(H,18,21)(H,16,17,19)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 920.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "aqueous solution"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 1.4,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 20.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "the mixture is stirred for 15 minutes at room temperature"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a solution of 920 mg of α-t-butyloxycarbonylamino-α-[2-(chloroacetamido)thiazol-4-yl]acetic acid ethyl ester in 20 ml of ethanol is added 1.4 ml of aqueous solution containing 681 mg of potassium hydroxide and the mixture is stirred for 15 minutes at room temperature. The reaction solution is concentrated to dryness under reduced pressure and the residue is dissolved in water. The aqueous solution is adjusted to pH 2.0 with 1N hydrochloric acid and extracted with ethyl acetate. The organic layer is washed with water and dried over anhydrous magnesium sulfate. The solvent is distilled to obtain 690 mg of α-t-butyloxycarbonylamino-α-[2-(chloroacetamido)thiazol-4-yl]acetic acid as crystals (yield, 81%). Melting point: 169°-170° C. (dec.)."
+  },
+  "workups": [
+    {
+      "type": "CONCENTRATION",
+      "details": "The reaction solution is concentrated to dryness under reduced pressure"
+    },
+    {
+      "type": "DISSOLUTION",
+      "details": "the residue is dissolved in water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "extracted with ethyl acetate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "The organic layer is washed with water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "dried over anhydrous magnesium sulfate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "magnesium sulfate"
+              },
+              {
+                "type": "SMILES",
+                "value": "S(=O)(=O)([O-])[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DISTILLATION",
+      "details": "The solvent is distilled"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to obtain"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 15.0,
+        "units": "MINUTE"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "α-t-butyloxycarbonylamino-α-[2-(chloroacetamido)thiazol-4-yl]acetic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(C)(C)OC(=O)NC(C(=O)O)C=1N=C(SC1)NC(CCl)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C12H16ClN3O5S/c1-12(2,3)21-11(20)16-8(9(18)19)6-5-22-10(14-6)15-7(17)4-13/h5,8H,4H2,1-3H3,(H,16,20)(H,18,19)(H,14,15,17)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 690.0,
+                  "units": "MILLIGRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 81.0
+              }
+            }
+          ],
+          "texture": {
+            "type": "CRYSTAL",
+            "details": "crystals"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04205180",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:28.805610"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-73be5393faa64c77ae760f6c4714addf"
+}

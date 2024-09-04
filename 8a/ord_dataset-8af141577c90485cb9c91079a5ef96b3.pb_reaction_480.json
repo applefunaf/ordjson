@@ -1,0 +1,256 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[NH2:1][CH2:2][C:3]1[O:7][N:6]=[C:5]([C:8]2[CH:13]=[CH:12][CH:11]=[CH:10][CH:9]=2)[CH:4]=1.Cl[C:15]([O:17][CH2:18][CH3:19])=[O:16]>N1C=CC=CC=1>[C:8]1([C:5]2[CH:4]=[C:3]([CH2:2][NH:1][C:15](=[O:16])[O:17][CH2:18][CH3:19])[O:7][N:6]=2)[CH:9]=[CH:10][CH:11]=[CH:12][CH:13]=1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "pyridine"
+            },
+            {
+              "type": "SMILES",
+              "value": "N1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C5H5N/c1-2-4-6-5-3-1/h1-5H"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "product"
+            },
+            {
+              "type": "NAME",
+              "value": "5-aminomethyl-3-phenylisoxazole"
+            },
+            {
+              "type": "SMILES",
+              "value": "NCC1=CC(=NO1)C1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C10H10N2O/c11-7-9-6-10(12-13-9)8-4-2-1-3-5-8/h1-6H,7,11H2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethyl chloroformate"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC(=O)OCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H5ClO2/c1-2-6-3(4)5/h2H2,1H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ice water"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "The mixture was stirred at ice bath temperature for 1 hour"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A 7 g. portion of the product of Example 8 was dissolved in 50 ml. of pyridine, cooled in an ice bath, and combined with 10 ml. of ethyl chloroformate. The mixture was stirred at ice bath temperature for 1 hour and allowed to warm to room temperature while being stirred for 2 hours more. The mixture was then poured into ice water and the crude product was separated by filtration and purified by chromatography over silica gel with ethyl acetate as the eluent. The yield was 6 g. of purified [(3-phenyl-5-isoxazolyl)-methyl]carbamic acid, ethyl ester, m.p. 82°."
+  },
+  "workups": [
+    {
+      "type": "STIRRING",
+      "details": "while being stirred for 2 hours more",
+      "duration": {
+        "value": 2.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the crude product was separated by filtration",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "crude product"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "purified by chromatography over silica gel with ethyl acetate as the eluent",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 1.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "[(3-phenyl-5-isoxazolyl)methyl]carbamic acid, ethyl ester"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1(=CC=CC=C1)C1=NOC(=C1)CNC(OCC)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C13H14N2O3/c1-2-17-13(16)14-9-11-8-12(15-18-11)10-6-4-3-5-7-10/h3-8H,2,9H2,1H3,(H,14,16)"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04203994",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:26.255491"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-4edfe7e2cbfd425f883b105bd6819834"
+}

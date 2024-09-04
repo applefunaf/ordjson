@@ -1,0 +1,334 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH:1]([N:4]([CH:18]([CH3:20])[CH3:19])[CH2:5][CH2:6][NH:7][C:8]1[CH:13]=[C:12]([CH3:14])[C:11](C#N)=[C:10]([Cl:17])[N:9]=1)([CH3:3])[CH3:2].S(=O)(=O)(O)O.C(=O)([O-])[O-].[Na+].[Na+]>>[CH:18]([N:4]([CH:1]([CH3:3])[CH3:2])[CH2:5][CH2:6][NH:7][C:8]1[CH:13]=[C:12]([CH3:14])[CH:11]=[C:10]([Cl:17])[N:9]=1)([CH3:19])[CH3:20] |f:2.3.4|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "product"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m1_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-(2-diisopropylaminoethylamino)-4-methyl-5-cyano-6-chloropyridine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(C)N(CCNC1=NC(=C(C(=C1)C)C#N)Cl)C(C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C15H23ClN4/c1-10(2)20(11(3)4)7-6-18-14-8-12(5)13(9-17)15(16)19-14/h8,10-11H,6-7H2,1-5H3,(H,18,19)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 4.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sulfuric acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "S(O)(O)(=O)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O4S/c1-5(2,3)4/h(H2,1,2,3,4)"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sodium carbonate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C([O-])([O-])=O.[Na+].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2O3.2Na/c2-1(3)4;;/h(H2,2,3,4);;/q;2*+1/p-2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A solution of crude 2-(2-diisopropylaminoethylamino)-4-methyl-5-cyano-6-chloropyridine (4.0 g) in 20 ml of 50% (by volume) sulfuric acid is stirred at reflux for 16 hours over night. The solution is cooled and is cautiously poured into excess saturated sodium carbonate. The basic mixture is extracted with methylene chloride. After washing the extract with water, drying and filtering through activated carbon, the solvent is removed in vacuo. This gives 3.1 g of pale yellow oil which slowly solidifies. Extraction of the crude solid with hexane, cooling in dry ice-acetone and filtering gives 1.9 g. of white solid. The purified product melts at 64°-66° C."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "at reflux for 16 hours over night",
+      "duration": {
+        "value": 16.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "The solution is cooled"
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "The basic mixture is extracted with methylene chloride",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "methylene chloride"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(Cl)Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2Cl2/c2-1-3/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "After washing the"
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "extract with water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "drying"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filtering through activated carbon"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the solvent is removed in vacuo"
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "Extraction of the crude solid with hexane",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "hexane"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCCCCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C6H14/c1-3-5-6-4-2/h3-6H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "cooling in dry ice-acetone",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "dry ice acetone"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(=O)=O.CC(=O)C"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C3H6O.CO2/c1-3(2)4;2-1-3/h1-2H3;"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filtering"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "gives 1.9 g"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-(2-Diisopropylaminoethylamino)-4-methyl-6-chloropyridine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(C)N(CCNC1=NC(=CC(=C1)C)Cl)C(C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C14H24ClN3/c1-10(2)18(11(3)4)7-6-16-14-9-12(5)8-13(15)17-14/h8-11H,6-7H2,1-5H3,(H,16,17)"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04203988",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:27.854073"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-a9ce7fdb7ff84b7fab0402056bfe919a"
+}

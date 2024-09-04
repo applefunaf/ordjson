@@ -1,0 +1,193 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][N:2]([CH3:17])[C:3]([N:5]([CH2:14][C:15]#[N:16])[C:6]1[CH:11]=[C:10]([CH3:12])[CH:9]=[C:8]([CH3:13])[N:7]=1)=[O:4].[H][H]>C(OCC)(=O)C.[Pt]=O>[CH3:17][N:2]([CH3:1])[C:3]([N:5]([CH2:14][CH2:15][NH2:16])[C:6]1[CH:11]=[C:10]([CH3:12])[CH:9]=[C:8]([CH3:13])[N:7]=1)=[O:4]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m3_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N,N-dimethyl-N'-(cyanomethyl)-N'-(4,6-dimethyl-2-pyridyl)urea"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN(C(=O)N(C1=NC(=CC(=C1)C)C)CC#N)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C12H16N4O/c1-9-7-10(2)14-11(8-9)16(6-5-13)12(17)15(3)4/h7-8H,6H2,1-4H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethyl acetate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)OCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 100.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "platinum oxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Pt]=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/O.Pt"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.8,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "CATALYST"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrogen"
+            },
+            {
+              "type": "SMILES",
+              "value": "[H][H]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2/h1H"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A solution of N,N-dimethyl-N'-(cyanomethyl)-N'-(4,6-dimethyl-2-pyridyl)urea from Part B (5.3 g., 0.023 mole) in ethyl acetate (100 ml.) containing platinum oxide (0.8 g.) is hydrogenated in a Parr apparatus at 50 psi of hydrogen until the required amount is taken up (12 hours). The catalyst is filtered off and the solvent removed under vacuum to give 4.6 g. of oily product."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "(12 hours)",
+      "duration": {
+        "value": 12.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "The catalyst is filtered off"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the solvent removed under vacuum"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to give 4.6 g"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N,N-Dimethyl-N'-(2-aminoethyl)-N'-(4,6-dimethyl-2-pyridyl) urea"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN(C(=O)N(C1=NC(=CC(=C1)C)C)CCN)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C12H20N4O/c1-9-7-10(2)14-11(8-9)16(6-5-13)12(17)15(3)4/h7-8H,5-6,13H2,1-4H3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04203988",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:27.901426"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-c2a5514542eb40988ecf7fc5e3aac697"
+}

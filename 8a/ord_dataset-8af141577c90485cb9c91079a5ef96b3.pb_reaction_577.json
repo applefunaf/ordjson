@@ -1,0 +1,267 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH:1]([OH:3])=O.[N+:4]([C:7]1[CH:8]=[C:9]([CH:12]=[CH:13][C:14]=1[NH2:15])[CH:10]=[O:11])([O-:6])=[O:5].C(OC(=O)C)(=O)C>O>[N+:4]([C:7]1[CH:8]=[C:9]([CH:12]=[CH:13][C:14]=1[NH:15][CH:1]=[O:3])[CH:10]=[O:11])([O-:6])=[O:5]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "H2O"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 400.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m1_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "HCOOH"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2O2/c2-1-3/h1H,(H,2,3)"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 56.6,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3-nitro-4-aminobenzaldehyde"
+            },
+            {
+              "type": "SMILES",
+              "value": "[N+](=O)([O-])C=1C=C(C=O)C=CC1N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H6N2O3/c8-6-2-1-5(4-10)3-7(6)9(11)12/h1-4H,8H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 24.9,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acetic anhydride"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)OC(C)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H6O3/c1-3(5)7-4(2)6/h1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 28.4,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To 56.6 ml (1.50 mol) of HCOOH was added 24.9 g (150 mmol) of 3-nitro-4-aminobenzaldehyde. The solution was heated to reflux, 28.4 ml (300 mmol) of acetic anhydride was added dropwise and the solution was refluxed for 30 minutes. The resulting suspension was cooled and poured into 400 ml of cold H2O with rapid stirring. The product was filtered, air dried, and recrystallized from isopropanol to yield 23.2 g (80%) of 3-nitro-4-formamidobenzaldehyde as a bright yellow powder: melting point=183°-191°."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "The solution was heated"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "to reflux"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "the solution was refluxed for 30 minutes",
+      "duration": {
+        "value": 30.0,
+        "units": "MINUTE"
+      }
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "The resulting suspension was cooled"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "The product was filtered"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "air dried"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "recrystallized from isopropanol",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "isopropanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(C)O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C3H8O/c1-3(2)4/h3-4H,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3-nitro-4-formamidobenzaldehyde"
+            },
+            {
+              "type": "SMILES",
+              "value": "[N+](=O)([O-])C=1C=C(C=O)C=CC1NC=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H6N2O4/c11-4-6-1-2-7(9-5-12)8(3-6)10(13)14/h1-5H,(H,9,12)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 23.2,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 80.0
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 79.7
+              }
+            }
+          ],
+          "isolated_color": "bright yellow",
+          "texture": {
+            "type": "POWDER",
+            "details": "powder"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04204069",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:28.206723"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-5031d5b89010401baaa69e62662dd643"
+}

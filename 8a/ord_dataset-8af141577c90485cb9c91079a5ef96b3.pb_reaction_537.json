@@ -1,0 +1,221 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][N:2]([CH3:16])[CH2:3][CH2:4][N:5]([C:9]1[CH:14]=[CH:13][C:12]([CH3:15])=[CH:11][N:10]=1)C(=O)C>[OH-].[Na+]>[CH3:1][N:2]([CH3:16])[CH2:3][CH2:4][NH:5][C:9]1[CH:14]=[CH:13][C:12]([CH3:15])=[CH:11][N:10]=1 |f:1.2|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-(2-dimethylaminoethyl)-N-(5-methyl-2-pyridyl) acetamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN(CCN(C(C)=O)C1=NC=C(C=C1)C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C12H19N3O/c1-10-5-6-12(13-9-10)15(11(2)16)8-7-14(3)4/h5-6,9H,7-8H2,1-4H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 50.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sodium hydroxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "[OH-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Na.H2O/h;1H2/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 200.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "The mixture is stirred rapidly"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To N-(2-dimethylaminoethyl)-N-(5-methyl-2-pyridyl) acetamide (50.0 g, 0.226 mole) is added 200 ml of 5 N sodium hydroxide. The mixture is stirred rapidly at reflux for 16 hours. The mixture is cooled and the oil is extracted into ether. The ether extract is dried and evaporated under reduced pressure. Distillation of the residue gives a pale yellow liquid, b.p. 105°-112°, n25D 1.5355. Weight obtained is 35 g."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "at reflux for 16 hours",
+      "duration": {
+        "value": 16.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "The mixture is cooled"
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "the oil is extracted into ether",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "The ether extract",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "is dried"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "evaporated under reduced pressure"
+    },
+    {
+      "type": "DISTILLATION",
+      "details": "Distillation of the residue"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "gives a pale yellow liquid, b.p. 105°-112°, n25D 1.5355"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "Weight obtained"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-(2-Dimethylaminoethylamino)-5-methylpyridine"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN(CCNC1=NC=C(C=C1)C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C10H17N3/c1-9-4-5-10(12-8-9)11-6-7-13(2)3/h4-5,8H,6-7H2,1-3H3,(H,11,12)"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04203988",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:27.460155"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-1718d04284554ea89fa4944c7c42e1c9"
+}

@@ -1,0 +1,366 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[Cl:1][C:2]1[CH:3]=[C:4]2[C:9](=[CH:10][CH:11]=1)[N:8]=[CH:7][C:6]([C:12]([O:14][CH2:15][CH3:16])=[O:13])=[C:5]2O.S(Cl)([Cl:20])=O>>[Cl:20][C:5]1[C:4]2[C:9](=[CH:10][CH:11]=[C:2]([Cl:1])[CH:3]=2)[N:8]=[CH:7][C:6]=1[C:12]([O:14][CH2:15][CH3:16])=[O:13]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "6-chloro-4-hydroxyquinoline-3-carboxylic acid, ethyl ester"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC=1C=C2C(=C(C=NC2=CC1)C(=O)OCC)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C12H10ClNO3/c1-2-17-12(16)9-6-14-10-4-3-7(13)5-8(10)11(9)15/h3-6H,2H2,1H3,(H,14,15)"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.18,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "thionyl chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "S(=O)(Cl)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Cl2OS/c1-4(2)3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture of 45.2 g. of 6-chloro-4-hydroxyquinoline-3-carboxylic acid, ethyl ester (0.18 mol.) and 250 ml. of thionyl chloride is refluxed for 20 hours. The excess thionyl chloride is then removed in vacuo, the residue treated with 200 ml. of water and the ester is extracted with ether. After washing the ethereal extract twice with water, it is dried with Na2SO4 and the solvent distilled off. The residual 4,6-dichloroquinoline-3-carboxylic acid, ethyl ester is triturated with petroleum ether (40°-60°), filtered and dried. Yield: 45.3 g. (93%); m.p. 87°-88°."
+  },
+  "workups": [
+    {
+      "type": "ADDITION",
+      "details": "A mixture of 45.2 g"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The excess thionyl chloride is then removed in vacuo",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "thionyl chloride"
+              },
+              {
+                "type": "SMILES",
+                "value": "S(=O)(Cl)Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Cl2OS/c1-4(2)3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "ADDITION",
+      "details": "the residue treated with 200 ml"
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "of water and the ester is extracted with ether",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ester"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "After washing the ethereal"
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "extract twice with water, it",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "is dried with Na2SO4",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "Na2SO4"
+              },
+              {
+                "type": "SMILES",
+                "value": "[O-]S(=O)(=O)[O-].[Na+].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/2Na.H2O4S/c;;1-5(2,3)4/h;;(H2,1,2,3,4)/q2*+1;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DISTILLATION",
+      "details": "the solvent distilled off"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The residual 4,6-dichloroquinoline-3-carboxylic acid, ethyl ester is triturated with petroleum ether (40°-60°)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "4,6-dichloroquinoline-3-carboxylic acid, ethyl ester"
+              },
+              {
+                "type": "SMILES",
+                "value": "ClC1=C(C=NC2=CC=C(C=C12)Cl)C(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C12H9Cl2NO2/c1-2-17-12(16)9-6-15-10-4-3-7(13)5-8(10)11(9)14/h3-6H,2H2,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "petroleum ether"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filtered"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "4,6-Dichloroquinoline-3-carboxylic acid, ethyl ester"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC1=C(C=NC2=CC=C(C=C12)Cl)C(=O)OCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C12H9Cl2NO2/c1-2-17-12(16)9-6-15-10-4-3-7(13)5-8(10)11(9)14/h3-6H,2H2,1H3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04202985",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:27.500790"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-b164af05fc0a40b7bca11c9f4528abd8"
+}

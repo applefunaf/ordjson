@@ -1,0 +1,243 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "C([NH:4][C:5]1[CH:17]=[CH:16][C:8]([C:9]([CH2:11][CH2:12][C:13]([OH:15])=[O:14])=[O:10])=[CH:7][CH:6]=1)(=O)C.S(=O)(=O)(O)O.[C:23]([O-])(=O)C.[Na+]>CO>[NH2:4][C:5]1[CH:17]=[CH:16][C:8]([C:9]([CH2:11][CH2:12][C:13]([O:15][CH3:23])=[O:14])=[O:10])=[CH:7][CH:6]=1 |f:2.3|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3-(4-acetamidobenzoyl)propionic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)NC1=CC=C(C(=O)CCC(=O)O)C=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C12H13NO4/c1-8(14)13-10-4-2-9(3-5-10)11(15)6-7-12(16)17/h2-5H,6-7H2,1H3,(H,13,14)(H,16,17)"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sulfuric acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "S(O)(O)(=O)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O4S/c1-5(2,3)4/h(H2,1,2,3,4)"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sodium acetate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)[O-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H4O2.Na/c1-2(3)4;/h1H3,(H,3,4);/q;+1/p-1"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 35.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "The reaction mixture is stirred in an ice-bath"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture of 35 g. of 3-(4-acetamidobenzoyl)propionic acid, 700 ml. of methanol and 1.4 ml. of concentrated sulfuric acid is refluxed for 76 hours. The solution is cooled to 35° C. and poured onto 7 g. of anhydrous sodium acetate while stirring. The reaction mixture is stirred in an ice-bath. The solid is collected and washed with cold methanol to yield methyl 3-(4-aminobenzoyl)propionate as a white solid. A mixture of this solid, 9.2 g. of 15-(trifluoromethyl)pentadecyl bromide and 4.2 g. of potassium carbonate is stirred for 20 hours at 125° C. under nitrogen. The mixture is then cooled to 25° C. and 30 ml. of water is added. After stirring, the product is filtered and washed with water. Recrystallization from methanol affords methyl 3-{4-[15-(trifluoromethyl)pentadecylamino]benzoyl}propionate as a white solid."
+  },
+  "workups": [
+    {
+      "type": "ADDITION",
+      "details": "A mixture of 35 g"
+    },
+    {
+      "type": "ADDITION",
+      "details": "poured onto 7 g"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The solid is collected"
+    },
+    {
+      "type": "WASH",
+      "details": "washed with cold methanol",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "methanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "CO"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methyl 3-(4-aminobenzoyl)propionate"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC1=CC=C(C(=O)CCC(=O)OC)C=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C11H13NO3/c1-15-11(14)7-6-10(13)8-2-4-9(12)5-3-8/h2-5H,6-7,12H2,1H3"
+            }
+          ],
+          "isolated_color": "white",
+          "texture": {
+            "type": "CUSTOM",
+            "details": "solid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04205085",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:26.452830"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-1db3aba8d25048668faa47aeca636cc5"
+}

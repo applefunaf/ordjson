@@ -1,0 +1,232 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][O:2][N:3]=[C:4]([C:10](=O)[CH2:11]Br)[C:5]([O:7][CH2:8][CH3:9])=[O:6].CN(C)C1C=CC=CC=1.[Cl:23][C:24]([Cl:34])([Cl:33])[CH2:25][O:26][C:27]([NH:29][C:30]([NH2:32])=[S:31])=[O:28]>C(O)C>[CH3:1][O:2][N:3]=[C:4]([C:10]1[N:32]=[C:30]([NH:29][C:27]([O:26][CH2:25][C:24]([Cl:33])([Cl:23])[Cl:34])=[O:28])[S:31][CH:11]=1)[C:5]([O:7][CH2:8][CH3:9])=[O:6]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethyl α-methoxyimino-β-oxo-γ-bromobutyrate"
+            },
+            {
+              "type": "SMILES",
+              "value": "CON=C(C(=O)OCC)C(CBr)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H10BrNO4/c1-3-13-7(11)6(9-12-2)5(10)4-8/h3-4H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "dimethylaniline"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN(C1=CC=CC=C1)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H11N/c1-9(2)8-6-4-3-5-7-8/h3-7H,1-2H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-(β,β,β-trichloroethoxycarbonyl)thiourea"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC(COC(=O)NC(=S)N)(Cl)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H5Cl3N2O2S/c5-4(6,7)1-11-3(10)9-2(8)12/h1H2,(H3,8,9,10,12)"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a solution of 2.2 g. of ethyl α-methoxyimino-β-oxo-γ-bromobutyrate in 40 ml. of ethanol are added 1.22 g. of dimethylaniline and 2.2 g. of N-(β,β,β-trichloroethoxycarbonyl)thiourea. The mixture is heated for 1.5 hours under reflux and concentrated under reduced pressure. The concentrate of the reaction mixture is recrystallized from ligroin to give ethyl α-methoxyimino-[2-(β,β,β-trichloroethoxycarbonylamino)thiazol-4-yl]acetate as crystals. 1.84 g. Melting point: 125°-128° C."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "The mixture is heated for 1.5 hours",
+      "duration": {
+        "value": 1.5,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "under reflux"
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated under reduced pressure"
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "The concentrate of the reaction mixture"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "is recrystallized from ligroin",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ligroin"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethyl α-methoxyimino-[2-(β,β,β-trichloroethoxycarbonylamino)thiazol-4-yl]acetate"
+            },
+            {
+              "type": "SMILES",
+              "value": "CON=C(C(=O)OCC)C=1N=C(SC1)NC(=O)OCC(Cl)(Cl)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C11H12Cl3N3O5S/c1-3-21-8(18)7(17-20-2)6-4-23-9(15-6)16-10(19)22-5-11(12,13)14/h4H,3,5H2,1-2H3,(H,15,16,19)"
+            }
+          ],
+          "texture": {
+            "type": "CRYSTAL",
+            "details": "crystals"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04205180",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:28.610505"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-fc680a78dc9f44a8917ebe323bfd0814"
+}

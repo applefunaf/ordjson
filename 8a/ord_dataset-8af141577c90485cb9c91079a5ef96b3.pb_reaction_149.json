@@ -1,0 +1,243 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[C:1]([C:3](=[C:10]([C:17]1[CH:22]=[CH:21][CH:20]=[CH:19][CH:18]=1)[C:11]1[CH:16]=[CH:15][CH:14]=[CH:13][CH:12]=1)[C:4]([O:6][CH2:7][CH2:8][OH:9])=[O:5])#[N:2].[H-].[Na+].[CH2:25](Br)[CH:26]=[CH2:27]>>[CH2:27]([O:9][CH2:8][CH2:7][O:6][C:4](=[O:5])[C:3]([C:1]#[N:2])=[C:10]([C:17]1[CH:18]=[CH:19][CH:20]=[CH:21][CH:22]=1)[C:11]1[CH:12]=[CH:13][CH:14]=[CH:15][CH:16]=1)[CH:26]=[CH2:25] |f:1.2|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "allyl bromide"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C=C)Br"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H5Br/c1-2-3-4/h2H,1,3H2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.044,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-hydroxyethyl 2-cyano-3,3-diphenylacrylate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(#N)C(C(=O)OCCO)=C(C1=CC=CC=C1)C1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C18H15NO3/c19-13-16(18(21)22-12-11-20)17(14-7-3-1-4-8-14)15-9-5-2-6-10-15/h1-10,20H,11-12H2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.011,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sodium hydride"
+            },
+            {
+              "type": "SMILES",
+              "value": "[H-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Na.H/q+1;-1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.79,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "oil"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 66.0,
+        "units": "CELSIUS"
+      }
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "Into a round bottom flask equipped with magnetic stirrer, reflux condenser and drying tube was charged 20 ml. of dry tetrahydrofuran and 3.2 g. (0.011 moles) of 2-hydroxyethyl 2-cyano-3,3-diphenylacrylate and the solution is rapidly stirred. Then sodium hydride 0.79 g. (0.016 moles) as a 50% oil dispersion was added portionwise. To the resulting suspension was added 5.3 g. (0.044 moles) of allyl bromide and the mixture was heated at reflux (66° C.) for 5.5 hours. Upon cooling, a white insoluble solid (NaBr) was removed by filtration. The organic filtrate was evaporated, leaving as the desired product a pale yellow oil."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "Into a round bottom flask equipped with magnetic stirrer"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "reflux condenser"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "drying tube"
+    },
+    {
+      "type": "ADDITION",
+      "details": "was charged 20 ml"
+    },
+    {
+      "type": "ADDITION",
+      "details": "To the resulting suspension was added 5.3 g"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "Upon cooling"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "a white insoluble solid (NaBr) was removed by filtration",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "NaBr"
+              },
+              {
+                "type": "SMILES",
+                "value": "[Na+].[Br-]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/BrH.Na/h1H;/q;+1/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The organic filtrate was evaporated"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "desired product"
+            },
+            {
+              "type": "NAME",
+              "value": "2-(2-Cyano-3,3-Diphenylacryloxy)Ethyl Allyl Ether"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C=C)OCCOC(C(=C(C1=CC=CC=C1)C1=CC=CC=C1)C#N)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C21H19NO3/c1-2-13-24-14-15-25-21(23)19(16-22)20(17-9-5-3-6-10-17)18-11-7-4-8-12-18/h2-12H,1,13-15H2"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04202834",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:24.934916"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-ffadaf8e261c4bb9903b2eedb53264a1"
+}

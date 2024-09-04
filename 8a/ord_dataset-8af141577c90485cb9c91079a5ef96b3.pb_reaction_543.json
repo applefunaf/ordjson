@@ -1,0 +1,297 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "Cl[C:2]1[CH:7]=[CH:6][CH:5]=[C:4]([Cl:8])[N:3]=1.C[NH:10][CH2:11][CH2:12][NH:13][CH3:14].N1C=CC=C[CH:16]=1>>[CH3:16][N:13]([CH3:14])[CH2:12][CH2:11][NH:10][C:2]1[CH:7]=[CH:6][CH:5]=[C:4]([Cl:8])[N:3]=1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2,6-dichloropyridine"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC1=NC(=CC=C1)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C5H3Cl2N/c6-4-2-1-3-5(7)8-4/h1-3H"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 29.6,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "dimethylethylenediamine"
+            },
+            {
+              "type": "SMILES",
+              "value": "CNCCNC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H12N2/c1-5-3-4-6-2/h5-6H,3-4H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 52.9,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "pyridine"
+            },
+            {
+              "type": "SMILES",
+              "value": "N1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C5H5N/c1-2-4-6-5-3-1/h1-5H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 100.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A solution of 2,6-dichloropyridine (29.6 g., 0.20 mole) and unsymmetrical dimethylethylenediamine (52.9 g., 0.60 mole) in 100 ml of pyridine is stirred at reflux for 48 hours. The pyridine is removed under reduced pressure and the residual mixture is poured into water and made basic with excess sodium hydroxide. The product is extracted into ethyl acetate which is then concentrated and the residual oil is distilled. 2-(2-Dimethylaminoethylamino)-6-chloropyridine boiling at 104°-105° at 0.2 mm is collected in 70% yield."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "at reflux for 48 hours",
+      "duration": {
+        "value": 48.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The pyridine is removed under reduced pressure",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "pyridine"
+              },
+              {
+                "type": "SMILES",
+                "value": "N1=CC=CC=C1"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C5H5N/c1-2-4-6-5-3-1/h1-5H"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "ADDITION",
+      "details": "the residual mixture is poured into water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "The product is extracted into ethyl acetate which",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "is then concentrated"
+    },
+    {
+      "type": "DISTILLATION",
+      "details": "the residual oil is distilled"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "2-(2-Dimethylaminoethylamino)-6-chloropyridine boiling at 104°-105° at 0.2 mm is collected in 70% yield",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "2-(2-Dimethylaminoethylamino)-6-chloropyridine"
+              },
+              {
+                "type": "SMILES",
+                "value": "CN(CCNC1=NC(=CC=C1)Cl)C"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C9H14ClN3/c1-13(2)7-6-11-9-5-3-4-8(10)12-9/h3-5H,6-7H2,1-2H3,(H,11,12)"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-(2-Dimethylaminoethylamino)-6-chloro-pyridine"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN(CCNC1=NC(=CC=C1)Cl)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H14ClN3/c1-13(2)7-6-11-9-5-3-4-8(10)12-9/h3-5H,6-7H2,1-2H3,(H,11,12)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 70.0
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04203988",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:27.599739"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-3aad83be6d564b87924b3fa512e8ba83"
+}

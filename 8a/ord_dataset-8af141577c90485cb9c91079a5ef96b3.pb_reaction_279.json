@@ -1,0 +1,231 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][N:2]1[C:9](Cl)=[CH:8][C:6](=[O:7])[N:5]([CH:11]2[CH2:16][CH2:15][CH2:14][CH2:13][CH2:12]2)[C:3]1=[O:4].C([O-])(=O)C.[Na+].Cl.[NH2:23][OH:24]>COCCO>[CH3:1][N:2]1[C:9]([NH:23][OH:24])=[CH:8][C:6](=[O:7])[N:5]([CH:11]2[CH2:16][CH2:15][CH2:14][CH2:13][CH2:12]2)[C:3]1=[O:4] |f:1.2,3.4|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m3_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "1-methyl-3-cyclohexyl-6-chlorouracil"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN1C(=O)N(C(=O)C=C1Cl)C1CCCCC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C11H15ClN2O2/c1-13-9(12)7-10(15)14(11(13)16)8-5-3-2-4-6-8/h7-8H,2-6H2,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 7.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sodium acetate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)[O-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H4O2.Na/c1-2(3)4;/h1H3,(H,3,4);/q;+1/p-1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 18.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydroxylamine hydrochloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl.NO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/ClH.H3NO/c;1-2/h1H;2H,1H2"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 7.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methyl-cellosolve"
+            },
+            {
+              "type": "SMILES",
+              "value": "COCCO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H8O2/c1-5-3-2-4/h4H,2-3H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 100.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture of 7 g of 1-methyl-3-cyclohexyl-6-chlorouracil, 18 g of sodium acetate (trihydrate), 7 g of hydroxylamine hydrochloride and 100 ml of methyl-cellosolve is boiled for 1 hour and, when cold, the insolubles are removed by filtration. The filtrate is concentrated and recrystallized from water-ethanol. By the above procedure is obtained 4 g of 1-methyl-3-cyclohexyl-6-hydroxyaminouracil, melting point: 153°-155° C."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "when cold, the insolubles are removed by filtration"
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "The filtrate is concentrated"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "recrystallized from water-ethanol",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water ethanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "O.C(C)O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C2H6O.H2O/c1-2-3;/h3H,2H2,1H3;1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 1.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "1-methyl-3-cyclohexyl-6-hydroxyaminouracil"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN1C(=O)N(C(=O)C=C1NO)C1CCCCC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C11H17N3O3/c1-13-9(12-17)7-10(15)14(11(13)16)8-5-3-2-4-6-8/h7-8,12,17H,2-6H2,1H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 4.0,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 58.0
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04202975",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:27.315125"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-9743d395f0b64e5595205dea9c17332c"
+}

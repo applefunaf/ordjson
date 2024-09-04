@@ -1,0 +1,220 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[ClH:1].[CH2:2]([C:5]([N:12]=C=O)([CH2:9][CH2:10][CH3:11])[CH2:6][CH2:7][CH3:8])[CH2:3][CH3:4]>O>[ClH:1].[CH2:2]([C:5]([NH2:12])([CH2:6][CH2:7][CH3:8])[CH2:9][CH2:10][CH3:11])[CH2:3][CH3:4] |f:3.4|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m3_m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrochloric acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/ClH/h1H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 90.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 200.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "1,1-di-n-propyl-n-butylisocyanate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(CC)C(CCC)(CCC)N=C=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C11H21NO/c1-4-7-11(8-5-2,9-6-3)12-10-13/h4-9H2,1-3H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 105.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 90.0,
+        "units": "CELSIUS"
+      }
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "Into a three-necked flask equipped with a mechanical stirrer, a dropping-funnel, a thermometer and a condenser, were introduced 200 ml of water and 90 ml of concentrated hydrochloric acid (d=1.19). The acid solution was heated to 90° C. and then, under vigorous stirring, 105 g of 1,1-di-n-propyl-n-butylisocyanate, prepared as previously described, were slowly added. The operation of addition lasted one hour after which the reaction medium was heated for a further 4 hours at a temperature between about 95° and 100° C. The mixture was then cooled to about 0° C. and the colourless crystals so obtained were filtered off dried by exposure to the air and then in a dessicator in the presence of potassium hydroxide. In this manner, 99 g of 1,1-di-n-propyl-n-butylamine hydrochloride were isolated in the form of a white crystalline powder."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "Into a three-necked flask equipped with a mechanical stirrer, a dropping-funnel"
+    },
+    {
+      "type": "ADDITION",
+      "details": "were slowly added"
+    },
+    {
+      "type": "ADDITION",
+      "details": "The operation of addition"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "after which the reaction medium was heated for a further 4 hours at a temperature between about 95° and 100° C",
+      "duration": {
+        "value": 4.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "The mixture was then cooled to about 0° C.",
+      "temperature": {
+        "setpoint": {
+          "value": 0.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the colourless crystals so obtained"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "were filtered off"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried by exposure to the air"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 1.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "1,1-di-n-propyl-n-butylamine hydrochloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl.C(CC)C(CCC)(CCC)N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C10H23N.ClH/c1-4-7-10(11,8-5-2)9-6-3;/h4-9,11H2,1-3H3;1H"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 99.0,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "PERCENTYIELD",
+              "percentage": {
+                "value": 90.0
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04201725",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:24.629299"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-2c392dbb710d4616a9850c4a4a0b5a21"
+}

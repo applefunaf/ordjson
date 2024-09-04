@@ -1,0 +1,174 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH2:1]([Cl:5])[C:2](=[CH2:4])[CH3:3].[CH2:6]=[CH:7][C:8]1[CH:13]=[CH:12][CH:11]=[CH:10][CH:9]=1.S(=O)(=O)(O)O>>[CH2:6]=[CH:7][C:8]1[CH:13]=[CH:12][CH:11]=[CH:10][CH:9]=1.[CH2:1]([Cl:5])[C:2](=[CH2:3])[CH3:4] |f:3.4|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methallyl chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C(C)=C)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H7Cl/c1-4(2)3-5/h1,3H2,2H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "styrene"
+            },
+            {
+              "type": "SMILES",
+              "value": "C=CC1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H8/c1-2-8-6-4-3-5-7-8/h2-7H,1H2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sulfuric acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "S(O)(O)(=O)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O4S/c1-5(2,3)4/h(H2,1,2,3,4)"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "while agitating at ambient temperature"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "About 1 part by weight of fine granular hydrated silica, 2 parts by weight of methallyl chloride and 1 part by weight of styrene are mixed, then 0.1 part by weight of concentrated sulfuric acid is added while agitating at ambient temperature and pressure. The mixture is agitated for about 1 hour and the reaction is complete in 1 to 12 hours, thereby producing a light yellow, soft, solid, poly (methallyl chloride styrene) copolymer."
+  },
+  "workups": [
+    {
+      "type": "STIRRING",
+      "details": "The mixture is agitated for about 1 hour",
+      "duration": {
+        "value": 1.0,
+        "units": "HOUR"
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 6.5,
+        "precision": 5.5,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methallyl chloride styrene"
+            },
+            {
+              "type": "SMILES",
+              "value": "C=CC1=CC=CC=C1.C(C(C)=C)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H8.C4H7Cl/c1-2-8-6-4-3-5-7-8;1-4(2)3-5/h2-7H,1H2;1,3H2,2H3"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04201702",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:24.345151"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-aa8387462eef4c85b97655c81d0aceb4"
+}

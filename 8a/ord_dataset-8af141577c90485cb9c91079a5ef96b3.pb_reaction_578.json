@@ -1,0 +1,329 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[N:1]([C:3]1[N:10]2[C:6]([S:7][CH:8]=[CH:9]2)=[N:5][C:4]=1[C:11]1[CH:16]=[CH:15][CH:14]=[CH:13][CH:12]=1)=O.C(OP(OCC)OCC)C>C1(C)C=CC=CC=1>[S:7]1[C:6]2=[N:5][C:4]3[C:11]4[CH:16]=[CH:15][CH:14]=[CH:13][C:12]=4[NH:1][C:3]=3[N:10]2[CH:9]=[CH:8]1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "5-nitroso-6-phenylimidazo[2,1-b]thiazole"
+            },
+            {
+              "type": "SMILES",
+              "value": "N(=O)C1=C(N=C2SC=CN21)C2=CC=CC=C2"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C11H7N3OS/c15-13-10-9(8-4-2-1-3-5-8)12-11-14(10)6-7-16-11/h1-7H"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.04,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "triethylphosphite"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)OP(OCC)OCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H15O3P/c1-4-7-10(8-5-2)9-6-3/h4-6H2,1-3H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.05,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "toluene"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1(=CC=CC=C1)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H8/c1-7-5-3-2-4-6-7/h2-6H,1H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "with constant stirring and under a constant flow of dry nitrogen"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture of 8.5 grams of analytically pure 5-nitroso-6-phenylimidazo[2,1-b]thiazole (0.04 mole) and 10 ml. of triethylphosphite (0.05 mole) in 50 ml. of anhydrous toluene is refluxed for three hours with constant stirring and under a constant flow of dry nitrogen. The temperature of the oil bath is kept between 110° and 120° C. After cooling, the toluene and excess triethyl phosphite are removed by vacuum distillation at 0.2 Torr. The temperature of the oil bath is kept under 120° C. also during the distillation. The residue which is a thick oily liquid is kept over night at 0° C., during which time it solidifies. The solid is washed on a glass filter with cold carbon tetrachloride and then recrystallized twice from 2-propanol to yield three grams of 5H-thiazolo[2',3':2,3]imidazo[4,5-b]indole."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "is kept between 110° and 120° C"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "After cooling"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the toluene and excess triethyl phosphite are removed by vacuum distillation at 0.2 Torr",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "toluene"
+              },
+              {
+                "type": "SMILES",
+                "value": "C1(=CC=CC=C1)C"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C7H8/c1-7-5-3-2-4-6-7/h2-6H,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "triethyl phosphite"
+              },
+              {
+                "type": "SMILES",
+                "value": "P(OCC)(OCC)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C6H15O3P/c1-4-7-10(8-5-2)9-6-3/h4-6H2,1-3H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DISTILLATION",
+      "details": "The temperature of the oil bath is kept under 120° C. also during the distillation",
+      "temperature": {
+        "setpoint": {
+          "value": 120.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "WAIT",
+      "details": "is kept over night at 0° C., during which time it",
+      "temperature": {
+        "setpoint": {
+          "value": 0.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "The solid is washed on a glass"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filter with cold carbon tetrachloride",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "carbon tetrachloride"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(Cl)(Cl)(Cl)Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CCl4/c2-1(3,4)5"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "recrystallized twice from 2-propanol",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "2-propanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "CC(C)O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C3H8O/c1-3(2)4/h3-4H,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "5H-thiazolo[2',3':2,3]imidazo[4,5-b]indole"
+            },
+            {
+              "type": "SMILES",
+              "value": "S1C=CN2C1=NC1=C2NC=2C=CC=CC12"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C11H7N3S/c1-2-4-8-7(3-1)9-10(12-8)14-5-6-15-11(14)13-9/h1-6,12H"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 3.0,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 35.2
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04204067",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:28.220260"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-a245175854c34704b6f72f24639da902"
+}

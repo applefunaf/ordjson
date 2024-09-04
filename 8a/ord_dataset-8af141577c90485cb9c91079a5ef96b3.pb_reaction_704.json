@@ -1,0 +1,212 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[NH2:1][C:2]1[CH:11]=[C:10]2[C:5]([C:6]([CH3:13])=[CH:7][C:8](=[O:12])[O:9]2)=[CH:4][CH:3]=1.[CH2:14]([OH:18])[C:15](O)=[O:16]>O>[OH:18][CH2:14][C:15]([NH:1][C:2]1[CH:11]=[C:10]2[C:5]([C:6]([CH3:13])=[CH:7][C:8](=[O:12])[O:9]2)=[CH:4][CH:3]=1)=[O:16]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "7-amino-4-methyl-coumarin"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC1=CC=C2C(=CC(OC2=C1)=O)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C10H9NO2/c1-6-4-10(12)13-9-5-7(11)2-3-8(6)9/h2-5H,11H2,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 8.7,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "glycollic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C(=O)O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H4O3/c3-1-2(4)5/h3H,1H2,(H,4,5)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 7.6,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "8.7 g of 7-amino-4-methyl-coumarin are stirred, under nitrogen, in a round-bottomed flask, together with 7.6 g of glycollic acid at an oil bath temperature of 150°-160°. The reaction mass becomes crystalline after about 30 minutes. It is diluted with water and the product is filtered off with suction and recrystallised from 200 ml of dimethylformamide and 100 ml of ethanol. 7-Hydroxyacetamido-4-methyl-coumarin with a melting point of 253°-254° is obtained."
+  },
+  "workups": [
+    {
+      "type": "FILTRATION",
+      "details": "the product is filtered off with suction"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "recrystallised from 200 ml of dimethylformamide and 100 ml of ethanol",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "dimethylformamide"
+              },
+              {
+                "type": "SMILES",
+                "value": "CN(C=O)C"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C3H7NO/c1-4(2)3-5/h3H,1-2H3"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 200.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 100.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 30.0,
+        "units": "MINUTE"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "7-Hydroxyacetamido-4-methyl-coumarin"
+            },
+            {
+              "type": "SMILES",
+              "value": "OCC(=O)NC1=CC=C2C(=CC(OC2=C1)=O)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C12H11NO4/c1-7-4-12(16)17-10-5-8(2-3-9(7)10)13-11(15)6-14/h2-5,14H,6H2,1H3,(H,13,15)"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04205082",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:25.659062"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-4437a395496846aaa58f48208b4c1de1"
+}

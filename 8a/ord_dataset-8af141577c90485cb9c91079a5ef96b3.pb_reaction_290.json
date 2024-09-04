@@ -1,0 +1,214 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[NH2:1][C:2]1[N:11]=[C:10]2[C:5]([CH:6]([CH3:13])[CH2:7][CH2:8][N:9]2[CH3:12])=[CH:4][CH:3]=1.[F:14][C:15]([F:25])([F:24])[C:16](=O)[CH2:17][C:18](OCC)=[O:19]>>[O:19]=[C:18]1[NH:1][C:2]2=[N:11][C:10]3[N:9]([CH3:12])[CH2:8][CH2:7][CH:6]([CH3:13])[C:5]=3[CH:4]=[C:3]2[C:16]([C:15]([F:25])([F:24])[F:14])=[CH:17]1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "azaquinolones"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "7-Amino-1,4-dimethyl-1,2,3,4-tetrahydro-1,8-naphthyridine"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC1=CC=C2C(CCN(C2=N1)C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C10H15N3/c1-7-5-6-13(2)10-8(7)3-4-9(11)12-10/h3-4,7H,5-6H2,1-2H3,(H2,11,12)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 0.9,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethyl trifluoroacetoacetate"
+            },
+            {
+              "type": "SMILES",
+              "value": "FC(C(CC(=O)OCC)=O)(F)F"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H7F3O3/c1-2-12-5(11)3-4(10)6(7,8)9/h2-3H2,1H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "This is a representative procedure for making azaquinolones. 7-Amino-1,4-dimethyl-1,2,3,4-tetrahydro-1,8-naphthyridine (0.9 g.) and 1.0 g. of ethyl trifluoroacetoacetate were heated at 145°-165° for 18 hours. The cooled, semisolid mass was slurried with 5 ml. of ether, filtered and washed with more ether, 1.3 g., m.p. 225°-230°, wet 200°. Other data are found in the table. 1H nmr (deuteriochloroform, 100 MHz): δ1.30 (d,3H, CH3CH, J=7 Hz), 1.74 (m, 1H, H7a or H7b), 1.89 (m, H, H7a or H7b), 2.92 (m, 1H, H6), 3.20 (s, 3H, NCH3), 3.49 (t, 2H, H8, H8, J=6 Hz), 6.62 (s, 1H, H3), 7.46 (q, 1H, H5, JH5 --CF3 =~1.5 Hz), 9.40 (broad s, 1H,NH)."
+  },
+  "workups": [
+    {
+      "type": "FILTRATION",
+      "details": "of ether, filtered",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "washed with more ether, 1.3 g",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "m.p. 225°-230°, wet 200°"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-Oxo-6,9-dimethyl-4-trifluoromethyl-1,2,6,7,8,9-hexahydropyrido[2,3-b][ 1,8]naphthyridine"
+            },
+            {
+              "type": "SMILES",
+              "value": "O=C1C=C(C=2C(=NC=3N(CCC(C3C2)C)C)N1)C(F)(F)F"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C14H14F3N3O/c1-7-3-4-20(2)13-8(7)5-9-10(14(15,16)17)6-11(21)18-12(9)19-13/h5-7H,3-4H2,1-2H3,(H,18,19,21)"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04202981",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:27.457565"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-2c25b890967c4f64905930cb63d0f4fa"
+}

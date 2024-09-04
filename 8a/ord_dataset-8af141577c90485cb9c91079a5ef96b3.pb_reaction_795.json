@@ -1,0 +1,206 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "C([NH:4][CH2:5][CH2:6][C:7]1[S:11][C:10]([SH:12])=[N:9][N:8]=1)(=O)C.[ClH:13]>O1CCOCC1>[ClH:13].[NH2:4][CH2:5][CH2:6][C:7]1[S:11][C:10]([SH:12])=[N:9][N:8]=1 |f:3.4|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "5-(2-acetamidoethyl)-1,3,4-thiadiazole-2-thiol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)NCCC1=NN=C(S1)S"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H9N3OS2/c1-4(10)7-3-2-5-8-9-6(11)12-5/h2-3H2,1H3,(H,7,10)(H,9,11)"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrochloric acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/ClH/h1H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 9.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "dioxane"
+            },
+            {
+              "type": "SMILES",
+              "value": "O1CCOCC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O2/c1-2-6-4-3-5-1/h1-4H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 5.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "Thus obtained 5-(2-acetamidoethyl)-1,3,4-thiadiazole-2-thiol f(0.86 g) was dissolved in a mixture of 6 N hydrochloric acid (9 ml) and dioxane (5 ml) and the solution was heated to reflux for 2.5 hours. The solvent was distilled off and the residue was washed with ethanol to give 5-(2-aminoethyl)-1,3,4-thiadiazole-2-thiol hydrochloride (700 mg). m.p. 218° to 220° C."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "the solution was heated"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "to reflux for 2.5 hours",
+      "duration": {
+        "value": 2.5,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "DISTILLATION",
+      "details": "The solvent was distilled off"
+    },
+    {
+      "type": "WASH",
+      "details": "the residue was washed with ethanol",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "5-(2-aminoethyl)-1,3,4-thiadiazole-2-thiol hydrochloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl.NCCC1=NN=C(S1)S"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H7N3S2.ClH/c5-2-1-3-6-7-4(8)9-3;/h1-2,5H2,(H,7,8);1H"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 700.0,
+                  "units": "MILLIGRAM"
+                }
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04205166",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:27.594522"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-852af6a3c5a54645bf7dcd2edc1c063d"
+}

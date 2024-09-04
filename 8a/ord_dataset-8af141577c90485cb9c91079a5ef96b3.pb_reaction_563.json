@@ -1,0 +1,193 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[NH2:1][C:2]1[N:7]=[C:6]([NH:8][C:9](=[O:13])OCC)[CH:5]=[CH:4][C:3]=1[Cl:14].[CH3:15][NH:16][CH3:17]>C(O)C>[CH3:15][N:16]([CH3:17])[C:9]([NH:8][C:6]1[CH:5]=[CH:4][C:3]([Cl:14])=[C:2]([NH2:1])[N:7]=1)=[O:13]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethyl N-(6-amino-5-chloro-2-pyridyl)carbamate"
+            },
+            {
+              "type": "SMILES",
+              "value": "NC1=C(C=CC(=N1)NC(OCC)=O)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H10ClN3O2/c1-2-14-8(13)12-6-4-3-5(9)7(10)11-6/h3-4H,2H2,1H3,(H3,10,11,12,13)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 64.7,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "dimethylamine"
+            },
+            {
+              "type": "SMILES",
+              "value": "CNC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H7N/c1-3-2/h3H,1-2H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 45.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture of ethyl N-(6-amino-5-chloro-2-pyridyl)carbamate (64.7 g., 0.3 mole), dimethylamine (45 g., 1.0 mole) and 300 ml. of ethanol is heated at 120° C. for 24 hours in a pressure vessel. The reaction mixture is then concentrated in vacuo and 68 g. of brown solid is obtained. Recrystallization from n-butyl chloride gives pure material, m.p. 139°-141°"
+  },
+  "workups": [
+    {
+      "type": "CONCENTRATION",
+      "details": "The reaction mixture is then concentrated in vacuo and 68 g"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "of brown solid is obtained"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "Recrystallization from n-butyl chloride",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "n-butyl chloride"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(CCC)Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H9Cl/c1-2-3-4-5/h2-4H2,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "gives pure material, m.p. 139°-141°"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N,N-Dimethyl-N'-(6-amino-5-chloro-2-pyridyl)urea"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN(C(=O)NC1=NC(=C(C=C1)Cl)N)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H11ClN4O/c1-13(2)8(14)12-6-4-3-5(9)7(10)11-6/h3-4H,1-2H3,(H3,10,11,12,14)"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04203988",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:27.985157"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-06621220828144bea5bd43aa74768b23"
+}

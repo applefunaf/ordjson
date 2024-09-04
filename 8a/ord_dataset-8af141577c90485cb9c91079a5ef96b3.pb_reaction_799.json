@@ -1,0 +1,307 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[OH:1][CH2:2][CH2:3][NH:4][C:5](=[S:8])SC.[N-:9]=[N+:10]=[N-:11].[Na+].O>O1CCOCC1>[OH:1][CH2:2][CH2:3][N:4]1[C:5]([SH:8])=[N:11][N:10]=[N:9]1 |f:1.2|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m3_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methyl N-(2-hydroxyethyl)dithiocarbamate"
+            },
+            {
+              "type": "SMILES",
+              "value": "OCCNC(SC)=S"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H9NOS2/c1-8-4(7)5-2-3-6/h6H,2-3H2,1H3,(H,5,7)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 3.7,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sodium azide"
+            },
+            {
+              "type": "SMILES",
+              "value": "[N-]=[N+]=[N-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/N3.Na/c1-3-2;/q-1;+1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 2.4,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 20.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "dioxane"
+            },
+            {
+              "type": "SMILES",
+              "value": "O1CCOCC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O2/c1-2-6-4-3-5-1/h1-4H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 20.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture of methyl N-(2-hydroxyethyl)dithiocarbamate (3.7 g.), sodium azide (2.4 g.), water (20 ml.) and dioxane (20 ml.) was heated under reflux for four hours. After the dioxane was removed from the mixture under reduced pressure, the aqueous solution was washed with ether. The solution was adjusted to pH 1 with 10% hydrochloric acid and extracted with ethyl acetate. The extract was concentrated under reduced pressure to give oily product (0.47 g.). The oily product was purified by column chromatography on silica gel to give 1-(2-hydroxyethyl)-1H-tetrazole-5-thiol (0.17 g.). m.p. 135° to 137° C."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "was heated"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "under reflux for four hours",
+      "duration": {
+        "value": 4.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "After the dioxane was removed from the mixture under reduced pressure",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "dioxane"
+              },
+              {
+                "type": "SMILES",
+                "value": "O1CCOCC1"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-2-6-4-3-5-1/h1-4H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "the aqueous solution was washed with ether",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "extracted with ethyl acetate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "The extract was concentrated under reduced pressure"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to give oily product (0.47 g.)"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The oily product was purified by column chromatography on silica gel"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "1-(2-hydroxyethyl)-1H-tetrazole-5-thiol"
+            },
+            {
+              "type": "SMILES",
+              "value": "OCCN1N=NN=C1S"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H6N4OS/c8-2-1-7-3(9)4-5-6-7/h8H,1-2H2,(H,4,6,9)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 0.17,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 4.8
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04205166",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:27.667726"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-048e4b2c16414efa996fe87eb4bac4e8"
+}

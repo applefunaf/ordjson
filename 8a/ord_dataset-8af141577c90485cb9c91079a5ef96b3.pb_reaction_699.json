@@ -1,0 +1,209 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH2:1]([NH2:4])[CH:2]=[CH2:3].[OH:5][CH:6]([C:8]1[CH:13]=[CH:12][C:11]([C:14]2[CH:15]=[CH:16][C:17]3[O:21][CH:20]([C:22](OC)=[O:23])[CH2:19][C:18]=3[CH:26]=2)=[CH:10][CH:9]=1)[CH3:7]>CO>[OH:5][CH:6]([C:8]1[CH:13]=[CH:12][C:11]([C:14]2[CH:15]=[CH:16][C:17]3[O:21][CH:20]([C:22]([NH:4][CH2:1][CH:2]=[CH2:3])=[O:23])[CH2:19][C:18]=3[CH:26]=2)=[CH:10][CH:9]=1)[CH3:7]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-propenylamine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C=C)N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H7N/c1-2-3-4/h2H,1,3-4H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 15.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "6D"
+            },
+            {
+              "type": "NAME",
+              "value": "methyl 2,3-dihydro-5-(4-(1-hydroxyethyl)phenyl)-2-benzofurancarboxylate"
+            },
+            {
+              "type": "SMILES",
+              "value": "OC(C)C1=CC=C(C=C1)C=1C=CC2=C(CC(O2)C(=O)OC)C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C18H18O4/c1-11(19)12-3-5-13(6-4-12)14-7-8-16-15(9-14)10-17(22-16)18(20)21-2/h3-9,11,17,19H,10H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 5.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 100.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "The solution was stirred at room temperature overnight"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "15 ml of 2-propenylamine was added to a mixture of 5.0 g of 6D and 100 ml of methanol. The solution was stirred at room temperature overnight. The volatile materials were evaporated under reduced pressure. The residue was stirred with 50 ml of ether, the solid was collected and dried in a vacuum oven to give 6, mp: 122°-124° C."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "The volatile materials were evaporated under reduced pressure"
+    },
+    {
+      "type": "STIRRING",
+      "details": "The residue was stirred with 50 ml of ether",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 50.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the solid was collected"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried in a vacuum oven"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to give 6, mp: 122°-124° C."
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 8.0,
+        "precision": 8.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2,3-Dihydro-5-(4-(1-hydroxyethyl)phenyl)-N-(2-propenyl)-2-benzofurancarboxamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "OC(C)C1=CC=C(C=C1)C=1C=CC2=C(CC(O2)C(=O)NCC=C)C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C20H21NO3/c1-3-10-21-20(23)19-12-17-11-16(8-9-18(17)24-19)15-6-4-14(5-7-15)13(2)22/h3-9,11,13,19,22H,1,10,12H2,2H3,(H,21,23)"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04205080",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:25.558470"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-bd4f003d19544f8f9b9462b54020d048"
+}

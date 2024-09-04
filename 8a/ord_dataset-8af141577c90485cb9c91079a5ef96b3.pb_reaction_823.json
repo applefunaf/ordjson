@@ -1,0 +1,279 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][O:2][C:3](=[O:28])[C@H:4]([CH2:20][C:21]1[CH:26]=[CH:25][C:24]([OH:27])=[CH:23][CH:22]=1)[NH:5][C:6](=[O:19])[C@H:7]([CH:16]([CH3:18])[CH3:17])[NH:8]C(OC(C)(C)C)=O.[ClH:29]>C(O)(=O)C.O1CCOCC1>[ClH:29].[CH3:1][O:2][C:3](=[O:28])[C@H:4]([CH2:20][C:21]1[CH:26]=[CH:25][C:24]([OH:27])=[CH:23][CH:22]=1)[NH:5][C:6](=[O:19])[C@H:7]([CH:16]([CH3:18])[CH3:17])[NH2:8] |f:4.5|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "t-butoxycarbonylvalyltyrosine methyl ester"
+            },
+            {
+              "type": "SMILES",
+              "value": "COC([C@@H](NC([C@@H](NC(=O)OC(C)(C)C)C(C)C)=O)CC1=CC=C(C=C1)O)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C20H30N2O6/c1-12(2)16(22-19(26)28-20(3,4)5)17(24)21-15(18(25)27-6)11-13-7-9-14(23)10-8-13/h7-10,12,15-16,23H,11H2,1-6H3,(H,21,24)(H,22,26)/t15-,16-/m0/s1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 29.6,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acetic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H4O2/c1-2(3)4/h1H3,(H,3,4)"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 255.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m2_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrochloric acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/ClH/h1H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 128.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "dioxane"
+            },
+            {
+              "type": "SMILES",
+              "value": "O1CCOCC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O2/c1-2-6-4-3-5-1/h1-4H2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "29.6 g of t-butoxycarbonylvalyltyrosine methyl ester is dissolved in 255 ml of acetic acid. To this solution is added 128 ml of 6 N hydrochloric acid in dioxane. The reaction is allowed to stand for five minutes and the solution is removed under vacuum. The residue is triturated with ethyl ether. The resultant precipitate is filtered, washed with ethyl ether and dried in a vacuum oven at 55° C. to afford valyltyrosine methyl ester hydrochloride."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "the solution is removed under vacuum"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The residue is triturated with ethyl ether",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "The resultant precipitate is filtered",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "resultant precipitate"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "washed with ethyl ether",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried in a vacuum oven at 55° C.",
+      "temperature": {
+        "setpoint": {
+          "value": 55.0,
+          "units": "CELSIUS"
+        }
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 5.0,
+        "units": "MINUTE"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "valyltyrosine methyl ester hydrochloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl.COC([C@@H](NC([C@@H](N)C(C)C)=O)CC1=CC=C(C=C1)O)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C15H22N2O4.ClH/c1-9(2)13(16)14(19)17-12(15(20)21-3)8-10-4-6-11(18)7-5-10;/h4-7,9,12-13,18H,8,16H2,1-3H3,(H,17,19);1H/t12-,13-;/m0./s1"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04204991",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:28.078136"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-5358562922ff4d49b612e831ee79bd09"
+}

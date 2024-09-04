@@ -1,0 +1,417 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "Cl[CH2:2][C:3](=O)[CH3:4].[N:6]1[CH:11]=[CH:10][CH:9]=[CH:8][C:7]=1[CH3:12]>>[CH3:4][C:3]1[CH:12]=[C:7]2[N:6]([CH:2]=1)[CH:11]=[CH:10][CH:9]=[CH:8]2",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "monochloroacetone"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClCC(C)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H5ClO/c1-3(5)2-4/h2H2,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 92.5,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "α-picoline"
+            },
+            {
+              "type": "SMILES",
+              "value": "N1=C(C=CC=C1)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H7N/c1-6-4-2-3-5-7-6/h2-5H,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 93.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      },
+      "setpoint": {
+        "value": 20.0,
+        "units": "CELSIUS"
+      }
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture of 92.5 g monochloroacetone (1 mole) and 93 g of α-picoline (1 mole) was heated for 21/2 h on a boiling water-bath. The reaction mixture was cooled to ambient temperature (20° C.) and kept overnight. A solid black mass formed. Extraction was performed on a hot water-bath until the mass had dissolved completely (about 700 ml). The solution was filtered and washed 3 times with 100 ml of ether. A few ml of an aqueous saturated sodium carbonate solution were added and the solution was then washed again 4 times in ether. 150 g of solid sodium hydrogen carbonate was added carefully and steam distillation was carried out. The distillate was cooled and sucked off. The solid product was dissolved quickly in ether and dried on heated magnesium sulphate. The ether was evaporated and the residue dried."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "was heated for 21/2 h on a boiling water-bath",
+      "duration": {
+        "value": 2.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "A solid black mass formed"
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "Extraction"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "was performed on a hot water-bath until the mass"
+    },
+    {
+      "type": "DISSOLUTION",
+      "details": "had dissolved completely (about 700 ml)"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "The solution was filtered"
+    },
+    {
+      "type": "WASH",
+      "details": "washed 3 times with 100 ml of ether",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 100.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "ADDITION",
+      "details": "A few ml of an aqueous saturated sodium carbonate solution were added",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "sodium carbonate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C([O-])([O-])=O.[Na+].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2O3.2Na/c2-1(3)4;;/h(H2,2,3,4);;/q;2*+1/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "the solution was then washed again 4 times in ether",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "ADDITION",
+      "details": "150 g of solid sodium hydrogen carbonate was added carefully",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "solid"
+              }
+            ],
+            "amount": {
+              "mass": {
+                "value": 150.0,
+                "units": "GRAM"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "sodium hydrogen carbonate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(O)([O-])=O.[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2O3.Na/c2-1(3)4;/h(H2,2,3,4);/q;+1/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DISTILLATION",
+      "details": "steam distillation"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "The distillate was cooled"
+    },
+    {
+      "type": "DISSOLUTION",
+      "details": "The solid product was dissolved quickly in ether",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "on heated magnesium sulphate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "magnesium sulphate"
+              },
+              {
+                "type": "SMILES",
+                "value": "S(=O)(=O)([O-])[O-].[Mg+2]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/Mg.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The ether was evaporated",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the residue dried"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 8.0,
+        "precision": 8.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-methylindolizine"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC=1C=C2C=CC=CN2C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H9N/c1-8-6-9-4-2-3-5-10(9)7-8/h2-7H,1H3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04202697",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:24.259617"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-f1cc5c6a19c443cdb9f822a4157f3d5a"
+}

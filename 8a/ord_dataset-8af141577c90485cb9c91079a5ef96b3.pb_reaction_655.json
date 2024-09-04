@@ -1,0 +1,245 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][N:2]([CH3:6])[CH2:3][CH2:4]O.[CH3:7][N:8]([CH3:12])[C:9]([NH2:11])=[S:10]>Br>[CH3:7][N:8]([CH3:12])[C:9](=[NH:11])[S:10][CH2:4][CH2:3][N:2]([CH3:6])[CH3:1]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m2_m3_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-dimethylaminoethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN(CCO)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H11NO/c1-5(2)3-4-6/h6H,3-4H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 2.23,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N,N1 -dimethylthiourea"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN(C(=S)N)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H8N2S/c1-5(2)3(4)6/h1-2H3,(H2,4,6)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 2.6,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "hydrobromic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "Br"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/BrH/h1H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 20.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A mixture of 2-dimethylaminoethanol (2.23 g), N,N1 -dimethylthiourea (2.6 g) and aqueous hydrobromic acid (48%, 20 ml) was boiled under reflux for 50 hours and evaporated to dryness. The residue was recrystallised from a mixture of methanol and ethanol to give the dihydrobromide of the title compound (5.6 g) m.p. 198°-199°. (Found: C, 24.9; H, 5.7; N, 12.7; S, 9.5; Br, 47.2; C7H17N3S.2HBr requires: C, 24.9; H, 5.7; N, 12.5; S, 9.5; Br, 47.4%)"
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "under reflux for 50 hours",
+      "duration": {
+        "value": 50.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "evaporated to dryness"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The residue was recrystallised from a mixture of methanol and ethanol",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "methanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "CO"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "dihydrobromide"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "title compound"
+            },
+            {
+              "type": "NAME",
+              "value": "N,N1 -Dimethyl-S-(2-dimethylaminoethyl)isothiourea"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN(C(SCCN(C)C)=N)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C7H17N3S/c1-9(2)5-6-11-7(8)10(3)4/h8H,5-6H2,1-4H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 5.6,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 128.0
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04205071",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:24.694711"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-a9a1fe4f0811404da64771351a41c312"
+}

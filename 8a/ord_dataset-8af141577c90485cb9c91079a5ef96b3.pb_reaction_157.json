@@ -1,0 +1,196 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[F:1][C:2]1[CH:3]=[C:4]([CH:10]=[CH:11][C:12]=1[O:13][CH3:14])[CH:5]=[CH:6][C:7]([OH:9])=[O:8]>C(O)C.[Pt]=O>[F:1][C:2]1[CH:3]=[C:4]([CH2:5][CH2:6][C:7]([OH:9])=[O:8])[CH:10]=[CH:11][C:12]=1[O:13][CH3:14]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3-fluoro-4-methoxy cinnamic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "FC=1C=C(C=CC(=O)O)C=CC1OC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C10H9FO3/c1-14-9-4-2-7(6-8(9)11)3-5-10(12)13/h2-6H,1H3,(H,12,13)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 2.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethyl alcohol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 100.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "platinum oxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "[Pt]=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/O.Pt"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 100.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "CATALYST"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "2.0 g of 3-fluoro-4-methoxy cinnamic acid was dissolved in 100 ml ethyl alcohol. To this was added 100 mg of platinum oxide as a catalyst. The mixture was hydrogenated in a Parr apparatus for 90 minutes. After the hydrogenation was over, the mixture was filtered and concentrated. The solid was crystallized by adding water. Yield=1.63 g, m.p. 107°-112° C."
+  },
+  "workups": [
+    {
+      "type": "FILTRATION",
+      "details": "was filtered"
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The solid was crystallized"
+    },
+    {
+      "type": "ADDITION",
+      "details": "by adding water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 90.0,
+        "units": "MINUTE"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "3-(3-fluoro-4-methoxyphenyl)propionic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "FC=1C=C(C=CC1OC)CCC(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C10H11FO3/c1-14-9-4-2-7(6-8(9)11)3-5-10(12)13/h2,4,6H,3,5H2,1H3,(H,12,13)"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04202874",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:25.044285"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-382ac04617e34b0e8b7e4c99c4369da5"
+}

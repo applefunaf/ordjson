@@ -1,0 +1,270 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH:1]([CH:14]1[CH2:19][CH2:18][CH2:17][N:16]([C:20](=[O:27])[CH2:21][O:22][CH2:23][C:24]([OH:26])=[O:25])[CH2:15]1)([C:8]1[CH:13]=[CH:12][CH:11]=[CH:10][CH:9]=1)[C:2]1[CH:7]=[CH:6][CH:5]=[CH:4][CH:3]=1.[CH3:28]S(O)(=O)=O>CO>[CH:1]([CH:14]1[CH2:19][CH2:18][CH2:17][N:16]([C:20](=[O:27])[CH2:21][O:22][CH2:23][C:24]([O:26][CH3:28])=[O:25])[CH2:15]1)([C:2]1[CH:7]=[CH:6][CH:5]=[CH:4][CH:3]=1)[C:8]1[CH:13]=[CH:12][CH:11]=[CH:10][CH:9]=1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "[2-(3-benzhydrylpiperidino)-2-oxoethoxy]acetic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C1=CC=CC=C1)(C1=CC=CC=C1)C1CN(CCC1)C(COCC(=O)O)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C22H25NO4/c24-20(15-27-16-21(25)26)23-13-7-12-19(14-23)22(17-8-3-1-4-9-17)18-10-5-2-6-11-18/h1-6,8-11,19,22H,7,12-16H2,(H,25,26)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 3.63,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methanesulfonic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "CS(=O)(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH4O3S/c1-5(2,3)4/h1H3,(H,2,3,4)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 300.0,
+              "units": "MILLIGRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 150.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "are stirred together for about six hours at ambient temperature"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "In a manner similar to that described in Example XXVI, 3.63 grams (10 millimoles) of [2-(3-benzhydrylpiperidino)-2-oxoethoxy]acetic acid (Example VIII), 150 milliliters of methanol and 300 milligrams of methanesulfonic acid are stirred together for about six hours at ambient temperature. Thereafter, the methanol is evaporated, the residue dissolved in ether, the ether solution washed, dried and the solvent evaporated to obtain a methyl [2-(3-benzhydrylpiperidino)-2-oxoethoxy]acetate product as residue."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "Thereafter, the methanol is evaporated",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "methanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "CO"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DISSOLUTION",
+      "details": "the residue dissolved in ether",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "the ether solution washed",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the solvent evaporated"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 6.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methyl [2-(3-benzhydrylpiperidino)-2-oxoethoxy]acetate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C1=CC=CC=C1)(C1=CC=CC=C1)C1CN(CCC1)C(COCC(=O)OC)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C23H27NO4/c1-27-22(26)17-28-16-21(25)24-14-8-13-20(15-24)23(18-9-4-2-5-10-18)19-11-6-3-7-12-19/h2-7,9-12,20,23H,8,13-17H2,1H3"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04203991",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:26.424425"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-90c41539cd194f4fa3c052007e4b5166"
+}

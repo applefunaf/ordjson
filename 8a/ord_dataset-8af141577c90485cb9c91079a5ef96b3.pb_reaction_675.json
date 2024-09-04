@@ -1,0 +1,239 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[NH:1](C(OC(C)(C)C)=O)[C@@H:2]([C:11]([OH:13])=O)[CH2:3][C:4]1[CH:9]=[CH:8][C:7]([OH:10])=[CH:6][CH:5]=1.[NH2:21][C@@H:22]([C:24]([O:26][CH3:27])=[O:25])[CH3:23].FC(F)(F)C(O)=O>>[NH2:1][C@@H:2]([C:11]([NH:21][C@@H:22]([C:24]([O:26][CH3:27])=[O:25])[CH3:23])=[O:13])[CH2:3][C:4]1[CH:5]=[CH:6][C:7]([OH:10])=[CH:8][CH:9]=1",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Peptides"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m6": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Peptides"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "t-Boc-D-Tyr-OH"
+            },
+            {
+              "type": "SMILES",
+              "value": "N([C@H](CC1=CC=C(C=C1)O)C(=O)O)C(=O)OC(C)(C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C14H19NO5/c1-14(2,3)20-13(19)15-11(12(17)18)8-9-4-6-10(16)7-5-9/h4-7,11,16H,8H2,1-3H3,(H,15,19)(H,17,18)/t11-/m1/s1"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "D-Ala-OMe"
+            },
+            {
+              "type": "SMILES",
+              "value": "N[C@H](C)C(=O)OC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H9NO2/c1-3(5)4(6)7-2/h3H,5H2,1-2H3/t3-/m1/s1"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "trifluoroacetic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "FC(C(=O)O)(F)F"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2HF3O2/c3-2(4,5)1(6)7/h(H,6,7)"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-hydroxy-succinimide ester"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "t-Boc-D-Tyr-OH was coupled with D-Ala-OMe by the N-hydroxy-succinimide ester method (The Peptides, 1, p. 105). Deprotection was carried out using trifluoroacetic acid (The Peptides, 1, p. 39) and the resulting dipeptide methyl ester salt was purified by chromatography on Sephadex G-10 using 0.2 N HOAc."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "39) and the resulting dipeptide methyl ester salt was purified by chromatography on Sephadex",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "dipeptide methyl ester"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "H-D-Tyr-D-Ala-OMe"
+            },
+            {
+              "type": "SMILES",
+              "value": "N[C@H](CC1=CC=C(C=C1)O)C(=O)N[C@H](C)C(=O)OC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C13H18N2O4/c1-8(13(18)19-2)15-12(17)11(14)7-9-3-5-10(16)6-4-9/h3-6,8,11,16H,7,14H2,1-2H3,(H,15,17)/t8-,11-/m1/s1"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04205069",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:25.029148"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-0efa0e861ab443f6b5fefde308e4517c"
+}

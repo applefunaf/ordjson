@@ -1,0 +1,263 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[C:1]1([NH:17][NH2:18])[C:14]2[C:13](=O)[C:12]3[C:7](=[CH:8][CH:9]=[CH:10][CH:11]=3)[C:6](=[O:16])[C:5]=2[CH:4]=[CH:3][CH:2]=1.S(=O)(=O)(O)O>O>[CH:10]1[CH:11]=[C:12]2[C:13]3[C:14]4[C:1](=[CH:2][CH:3]=[CH:4][C:5]=4[C:6](=[O:16])[C:7]2=[CH:8][CH:9]=1)[NH:17][N:18]=3",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "1-anthraquinonyl hydrazine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1(=CC=CC=2C(C3=CC=CC=C3C(C12)=O)=O)NN"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C14H10N2O2/c15-16-11-7-3-6-10-12(11)14(18)9-5-2-1-4-8(9)13(10)17/h1-7,16H,15H2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sulfuric acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "S(O)(O)(=O)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O4S/c1-5(2,3)4/h(H2,1,2,3,4)"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 40.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "The reaction mixture is then stirred for 2 hours at 100° to 110° C."
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To 55 parts of a moist filter cake containing 24 parts of 1-anthraquinonyl hydrazine (dry weight) obtained by the the procedure described in any one of Examples 1 to 11 are added 150 parts by volume of concentrated sulfuric acid, such that the temperature does not rise above 100° C. (about 1/2 hour). The reaction mixture is then stirred for 2 hours at 100° to 110° C., subsequently cooled to 40° C. and diluted dropwise with 150 parts by volume of water. The suspension is then poured into a mixture of ice and water and filtered. The filter cake is washed neutral with water and dried, affording 22.2 parts of pyrazolanthrone of the formula. ##STR6##"
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "obtained by the the procedure"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "does not rise above 100° C."
+    },
+    {
+      "type": "CUSTOM",
+      "details": "(about 1/2 hour)",
+      "duration": {
+        "value": 0.5,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filtered"
+    },
+    {
+      "type": "WASH",
+      "details": "The filter cake is washed neutral with water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 2.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "22.2"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "pyrazolanthrone"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1=CC=C2C(=C1)C3=NNC4=CC=CC(=C43)C2=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C14H8N2O/c17-14-9-5-2-1-4-8(9)13-12-10(14)6-3-7-11(12)15-16-13/h1-7H,(H,15,16)"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04202827",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:24.697696"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-e76eb36fe1e54a81b9f74ed04ed45acd"
+}

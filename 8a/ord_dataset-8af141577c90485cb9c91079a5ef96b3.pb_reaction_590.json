@@ -1,0 +1,217 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[O:1]=[C:2]1[CH:6]([C:7](=[O:16])[CH2:8][O:9][C:10]2[CH:15]=[CH:14][CH:13]=[CH:12][CH:11]=2)[C:5]([CH3:18])([CH3:17])[C:4]([C:19]#[C:20][C:21]([CH3:25])=[CH:22][CH:23]=[O:24])=[C:3]1[CH3:26].[BH4-].[Na+].O>C(O)C>[O:1]=[C:2]1[CH:6]([C:7](=[O:16])[CH2:8][O:9][C:10]2[CH:11]=[CH:12][CH:13]=[CH:14][CH:15]=2)[C:5]([CH3:17])([CH3:18])[C:4]([C:19]#[C:20][C:21]([CH3:25])=[CH:22][CH2:23][OH:24])=[C:3]1[CH3:26] |f:1.2|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "5-[3-oxo-4-phenoxyacetyl-2,5,5-trimethyl-cyclopent-1-en-1-yl]-3-methyl-pent-2-en-4-yn-1-al"
+            },
+            {
+              "type": "SMILES",
+              "value": "O=C1C(=C(C(C1C(COC1=CC=CC=C1)=O)(C)C)C#CC(=CC=O)C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C22H22O4/c1-15(12-13-23)10-11-18-16(2)21(25)20(22(18,3)4)19(24)14-26-17-8-6-5-7-9-17/h5-9,12-13,20H,14H2,1-4H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 42.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 420.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sodium borohydride"
+            },
+            {
+              "type": "SMILES",
+              "value": "[BH4-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/BH4.Na/h1H4;/q-1;+1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 1.16,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "stirred for 10 minutes"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "42 g of 5-[3-oxo-4-phenoxyacetyl-2,5,5-trimethyl-cyclopent-1-en-1-yl]-3-methyl-pent-2-en-4-yn-1-al are dissolved in 420 ml of ethanol. The solution is treated at -40° C. with 1.16 g of sodium borohydride and stirred for 10 minutes. The mixture is then introduced into water and extracted with ether. The 5-[3-oxo-4-phenoxyacetyl-2,5,5-trimethyl-cyclopent-1-en-1-yl]-3-methyl-pent-2-en-4-yn-1-ol is obtained as a viscous oil."
+  },
+  "workups": [
+    {
+      "type": "EXTRACTION",
+      "details": "extracted with ether",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 10.0,
+        "units": "MINUTE"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "5-[3-oxo-4-phenoxyacetyl-2,5,5-trimethyl-cyclopent-1-en-1-yl]-3-methyl-pent-2-en-4-yn-1-ol"
+            },
+            {
+              "type": "SMILES",
+              "value": "O=C1C(=C(C(C1C(COC1=CC=CC=C1)=O)(C)C)C#CC(=CCO)C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C22H24O4/c1-15(12-13-23)10-11-18-16(2)21(25)20(22(18,3)4)19(24)14-26-17-8-6-5-7-9-17/h5-9,12,20,23H,13-14H2,1-4H3"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04204073",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:28.371981"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-13d3554082884063abe8414fb02de77a"
+}

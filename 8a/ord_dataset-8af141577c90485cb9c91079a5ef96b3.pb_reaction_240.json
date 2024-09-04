@@ -1,0 +1,208 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "Cl[C:2]1[C:7]2[CH:8]=[N:9][C:10]3[N:14]([CH2:15][CH3:16])[N:13]=[CH:12][C:11]=3[C:6]=2[N:5]2[N:17]=[CH:18][C:19]([C:20]([O:22][CH2:23][CH3:24])=[O:21])=[C:4]2[N:3]=1.[CH3:25][NH2:26]>>[CH2:15]([N:14]1[C:10]2[N:9]=[CH:8][C:7]3[C:2]([NH:26][CH3:25])=[N:3][C:4]4[N:5]([N:17]=[CH:18][C:19]=4[C:20]([O:22][CH2:23][CH3:24])=[O:21])[C:6]=3[C:11]=2[CH:12]=[N:13]1)[CH3:16]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "5-chloro-8-ethyl-8H-pyrazolo[1,5-a]pyrazolo[4',3':5,6]pyrido[3,4-e]pyrimidine-3-carboxylic acid, ethyl ester"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC1=NC=2N(C3=C1C=NC1=C3C=NN1CC)N=CC2C(=O)OCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C15H13ClN6O2/c1-3-21-13-9(6-18-21)11-8(5-17-13)12(16)20-14-10(7-19-22(11)14)15(23)24-4-2/h5-7H,3-4H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 3.5,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methylamine"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH5N/c1-2/h2H2,1H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 3.5,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "alcohol"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 50.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "3.5 g of 5-chloro-8-ethyl-8H-pyrazolo[1,5-a]pyrazolo[4',3':5,6]pyrido[3,4-e]pyrimidine-3-carboxylic acid, ethyl ester (0.01 mol) and 3.5 g of methylamine are heated in 50 ml of alcohol in an autoclave for 10 hours at 100°. The solvent is removed in vacuo and the residue treated with water, filtered off and recrystallized from butyl alcohol, yield 2.9 g (86%); m.p. 321°-322°."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "The solvent is removed in vacuo"
+    },
+    {
+      "type": "ADDITION",
+      "details": "the residue treated with water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filtered off"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "recrystallized from butyl alcohol, yield 2.9 g (86%)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "butyl alcohol"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(CCC)O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "8-Ethyl-5-(methylamino)-8H-pyrazolo[1,5-a]pyrazolo[4',3':5,6]pyrido[3,4-e]pyrimidine-3-carboxylic acid, ethyl ester"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)N1N=CC2=C1N=CC=1C(=NC=3N(C12)N=CC3C(=O)OCC)NC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C16H17N7O2/c1-4-22-14-10(7-19-22)12-9(6-18-14)13(17-3)21-15-11(8-20-23(12)15)16(24)25-5-2/h6-8H,4-5H2,1-3H3,(H,17,21)"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04202899",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:26.684049"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-49af2137492943aa822b66b7ca791752"
+}

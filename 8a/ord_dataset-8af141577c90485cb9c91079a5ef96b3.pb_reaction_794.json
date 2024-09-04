@@ -1,0 +1,244 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[C:1]([NH:4][CH2:5][CH2:6][C:7]([NH:9][NH:10][C:11]([S-:13])=[S:12])=O)(=[O:3])[CH3:2].[K+].S(=O)(=O)(O)O.[OH-].[Na+]>>[C:1]([NH:4][CH2:5][CH2:6][C:7]1[S:12][C:11]([SH:13])=[N:10][N:9]=1)(=[O:3])[CH3:2] |f:0.1,3.4|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ice water"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 300.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Potassium 3-(N-acetyl-β-alanyl)dithiocarbazate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)NCCC(=O)NNC(=S)[S-].[K+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H11N3O2S2.K/c1-4(10)7-3-2-5(11)8-9-6(12)13;/h2-3H2,1H3,(H,7,10)(H,8,11)(H2,9,12,13);/q;+1/p-1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 8.15,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sulfuric acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "S(O)(O)(=O)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O4S/c1-5(2,3)4/h(H2,1,2,3,4)"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 50.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sodium hydroxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "[OH-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Na.H2O/h;1H2/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "The mixture was stirred for 30 minutes at the same temperature"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "Potassium 3-(N-acetyl-β-alanyl)dithiocarbazate (8.15 g) was added bit by bit to concd. sulfuric acid (50 ml) at 5° to 10° C. The mixture was stirred for 30 minutes at the same temperature. The reaction mixture was poured into ice-water (c.a. 300 ml) and adjusted to pH around 6 with 20% sodium hydroxide, and then extracted seven times with ethyl acetate (each 300 ml). The extract was dried and the solvent was distilled off under reduced pressure to give 5-(2-acetamidoethyl)-1,3,4-thiadiazole-2-thiol (5.03 g) having m.p. 157° to 160° C."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "at 5° to 10° C"
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "extracted seven times with ethyl acetate (each 300 ml)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The extract was dried"
+    },
+    {
+      "type": "DISTILLATION",
+      "details": "the solvent was distilled off under reduced pressure"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 30.0,
+        "units": "MINUTE"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "5-(2-acetamidoethyl)-1,3,4-thiadiazole-2-thiol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)NCCC1=NN=C(S1)S"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H9N3OS2/c1-4(10)7-3-2-5-8-9-6(11)12-5/h2-3H2,1H3,(H,7,10)(H,9,11)"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 5.03,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 78.8
+              }
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04205166",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:27.584027"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-0834d166b1164580807aca2ac9c7544c"
+}

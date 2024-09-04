@@ -1,0 +1,336 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[C:1]([NH:4][CH:5]([C:11](=O)[CH2:12]Br)[C:6]([O:8][CH2:9][CH3:10])=[O:7])(=[O:3])[CH3:2].C(O)C.CCOCC.[C:23]([NH:26][C:27]([NH2:29])=[S:28])(=[O:25])[CH3:24]>N1C=CC=CC=1>[C:1]([NH:4][CH:5]([C:11]1[N:29]=[C:27]([NH:26][C:23](=[O:25])[CH3:24])[S:28][CH:12]=1)[C:6]([O:8][CH2:9][CH3:10])=[O:7])(=[O:3])[CH3:2]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-acetylthiourea"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)NC(=S)N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H6N2OS/c1-2(6)5-3(4)7/h1H3,(H3,4,5,6,7)"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethyl α-acetamido-β-oxo-γ-bromobutyrate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)NC(C(=O)OCC)C(CBr)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H12BrNO4/c1-3-14-8(13)7(6(12)4-9)10-5(2)11/h7H,3-4H2,1-2H3,(H,10,11)"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "pyridine"
+            },
+            {
+              "type": "SMILES",
+              "value": "N1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C5H5N/c1-2-4-6-5-3-1/h1-5H"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ether"
+            },
+            {
+              "type": "SMILES",
+              "value": "CCOCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a solution of 34.6 g. of ethyl α-acetamido-β-oxo-γ-bromobutyrate in a mixture of 50 ml. of ethanol and 20 ml. of ether are added 18.9 g. of N-acetylthiourea and 15 ml. of pyridine. The mixture is heated under reflux for 4 hours, and condensed under reduced pressure. The condensate is extracted with ethyl acetate and the extract is washed with 5% aq. NaHCO3, then with water, and dried. The oily substance which is obtained from the extract by removal of the solvent is purified by silica gel chromatography to give ethyl α-acetamido-2-acetamidothiazol-4-ylacetate. 4.46 g. Melting point: 148.9°-150° C."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "The mixture is heated"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "under reflux for 4 hours",
+      "duration": {
+        "value": 4.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "condensed under reduced pressure"
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "The condensate is extracted with ethyl acetate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethyl acetate"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)(=O)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H8O2/c1-3-6-4(2)5/h3H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "WASH",
+      "details": "the extract is washed with 5% aq. NaHCO3",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "NaHCO3"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(=O)(O)[O-].[Na+]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2O3.Na/c2-1(3)4;/h(H2,2,3,4);/q;+1/p-1"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DRY_WITH_MATERIAL",
+      "details": "with water, and dried",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "The oily substance which is obtained from the"
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "extract by removal of the solvent"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "is purified by silica gel chromatography"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "ethyl α-acetamido-2-acetamidothiazol-4-ylacetate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)NC(C(=O)OCC)C=1N=C(SC1)NC(C)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C11H15N3O4S/c1-4-18-10(17)9(12-6(2)15)8-5-19-11(14-8)13-7(3)16/h5,9H,4H2,1-3H3,(H,12,15)(H,13,14,16)"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04203899",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:25.013634"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-f9d1b18848794ff0abe4c23c72de00a8"
+}

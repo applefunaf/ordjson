@@ -1,0 +1,328 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH:1](=[N:3][C:4]([CH2:11][CH2:12][CH3:13])([CH2:8][CH2:9][CH3:10])[CH2:5][CH2:6][CH3:7])[CH3:2].[BH4-].[Na+].[OH-].[Na+]>CO>[CH2:1]([NH:3][C:4]([CH2:11][CH2:12][CH3:13])([CH2:5][CH2:6][CH3:7])[CH2:8][CH2:9][CH3:10])[CH3:2] |f:1.2,3.4|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sodium hydroxide"
+            },
+            {
+              "type": "SMILES",
+              "value": "[OH-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/Na.H2O/h;1H2/q+1;/p-1"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-ethylidene-1,1-di-n-propyl-n-butylamine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)=NC(CCC)(CCC)CCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C12H25N/c1-5-9-12(10-6-2,11-7-3)13-8-4/h8H,5-7,9-11H2,1-4H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 17.6,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "sodium borohydride"
+            },
+            {
+              "type": "SMILES",
+              "value": "[BH4-].[Na+]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/BH4.Na/h1H4;/q-1;+1"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 7.6,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m5": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 150.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "solution"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 100.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 5.0,
+        "units": "CELSIUS"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "while stirring"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "Into a 500-ml three-necked flask, fitted with a mechanical stirrer and a condenser, were introduced 17.6 g (0.096 mol) of N-ethylidene-1,1-di-n-propyl-n-butylamine, prepared as described hereabove, and 150 ml of methanol. To this solution when cooled, 7.6 g (0.2 mol) of sodium borohydride were added slowly and while stirring. After this operation, the mixture was maintained at a temperature of 5° C. for 30 minutes and then progressively heated under reflux. Thirty minutes later, the methanol was evaporated off under vacuum and 200 ml of water were added to the residue so obtained followed by 100 ml of a solution of sodium hydroxide (d=1.38). The organic fraction was extracted with ether and the solution was distilled under reduced pressure."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "Into a 500-ml three-necked flask, fitted with a mechanical stirrer and a condenser"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "prepared"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "To this solution when cooled"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "progressively heated"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "under reflux"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "Thirty minutes later, the methanol was evaporated off under vacuum and 200 ml of water",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "methanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "CO"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "water"
+              },
+              {
+                "type": "SMILES",
+                "value": "O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/H2O/h1H2"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 200.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "ADDITION",
+      "details": "were added to the residue"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "so obtained"
+    },
+    {
+      "type": "EXTRACTION",
+      "details": "The organic fraction was extracted with ether",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "DISTILLATION",
+      "details": "the solution was distilled under reduced pressure"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-Ethyl-1,1-di-n-propyl-n-butylamine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)NC(CCC)(CCC)CCC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C12H27N/c1-5-9-12(10-6-2,11-7-3)13-8-4/h13H,5-11H2,1-4H3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04201725",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:24.690927"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-9b2c2316baee449fbc592e555d7e5e93"
+}

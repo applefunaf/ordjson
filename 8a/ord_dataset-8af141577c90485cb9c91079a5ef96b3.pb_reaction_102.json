@@ -1,0 +1,229 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[N+]([C:4]1[CH:9]=[CH:8][CH:7]=[C:6]([N+:10]([O-])=O)[CH:5]=1)([O-])=O.[C:13](Cl)(=[O:17])[C:14]([CH3:16])=[CH2:15]>O1CCOCC1.C([O-])(=O)C.[Cu+2].C([O-])(=O)C>[C:13]([C:9]1[CH:8]=[CH:7][C:6]([NH:10][C:13](=[O:17])[C:14]([CH3:16])=[CH2:15])=[CH:5][CH:4]=1)(=[O:17])[CH2:14][CH3:15] |f:3.4.5|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m4_m2_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "m-dinitrobenzene"
+            },
+            {
+              "type": "SMILES",
+              "value": "[N+](=O)([O-])C1=CC(=CC=C1)[N+](=O)[O-]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H4N2O4/c9-7(10)5-2-1-3-6(4-5)8(11)12/h1-4H"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methacrylyl chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C(=C)C)(=O)Cl"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H5ClO/c1-3(2)4(5)6/h1H2,2H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 124.5,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "dioxan"
+            },
+            {
+              "type": "SMILES",
+              "value": "O1CCOCC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H8O2/c1-2-6-4-3-5-1/h1-4H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 125.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "copper(II) acetate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)[O-].[Cu+2].C(C)(=O)[O-]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/2C2H4O2.Cu/c2*1-2(3)4;/h2*1H3,(H,3,4);/q;;+2/p-2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "CATALYST"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "Stirring"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "A small amount of m-dinitrobenzene and copper(II) acetate were added whereupon a solution of 124.5 g of methacrylyl chloride (1 mole) in 125 ml of dioxan were added dropwise. The temperature was kept at 20°-25° C. Stirring was then continued for 30 min whilst slowly heating until reflux. Light yellow needles were sucked off, washed with ether, and dried under vacuum."
+  },
+  "workups": [
+    {
+      "type": "ADDITION",
+      "details": "were added dropwise"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "was kept at 20°-25° C"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "whilst slowly heating"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "until reflux"
+    },
+    {
+      "type": "WASH",
+      "details": "washed with ether",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "CCOCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "dried under vacuum"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 30.0,
+        "units": "MINUTE"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-p-propionylphenyl-methacrylamide"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(CC)(=O)C1=CC=C(C=C1)NC(C(=C)C)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C13H15NO2/c1-4-12(15)10-5-7-11(8-6-10)14-13(16)9(2)3/h5-8H,2,4H2,1,3H3,(H,14,16)"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04202697",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:24.246171"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-f0a772888a5047acb8c6ec095c4b4066"
+}

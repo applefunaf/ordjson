@@ -1,0 +1,317 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][NH:2][C:3]([NH:5][CH:6]1[CH2:11][CH2:10][CH2:9][CH2:8][CH2:7]1)=[O:4].[C:12](O)(=[O:17])[CH2:13][C:14](O)=[O:15].C(OC(=O)C)(=O)C.O>C(O)(=O)C.CO>[CH3:1][N:2]1[C:12](=[O:17])[CH2:13][C:14](=[O:15])[N:5]([CH:6]2[CH2:11][CH2:10][CH2:9][CH2:8][CH2:7]2)[C:3]1=[O:4]",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "water"
+            },
+            {
+              "type": "SMILES",
+              "value": "O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/H2O/h1H2"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 5.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m6": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "methanol"
+            },
+            {
+              "type": "SMILES",
+              "value": "CO"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH4O/c1-2/h2H,1H3"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m5_m1_m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N-methyl-N'-cyclohexylurea"
+            },
+            {
+              "type": "SMILES",
+              "value": "CNC(=O)NC1CCCCC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C8H16N2O/c1-9-8(11)10-7-5-3-2-4-6-7/h7H,2-6H2,1H3,(H2,9,10,11)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 5.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "malonic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(CC(=O)O)(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H4O4/c4-2(5)1-3(6)7/h1H2,(H,4,5)(H,6,7)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 5.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acetic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H4O2/c1-2(3)4/h1H3,(H,3,4)"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 15.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "acetic anhydride"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)(=O)OC(C)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C4H6O3/c1-3(5)7-4(2)6/h1-2H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 15.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "setpoint": {
+        "value": 70.0,
+        "units": "CELSIUS"
+      }
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "In 15 ml of acetic acid is dissolved 5 g of N-methyl-N'-cyclohexylurea together with 5 g of malonic acid under heating. Then, at 70° C., 15 ml of acetic anhydride is added dropwise over a period of 30 minutes. The mixture is further heated at 80°-90° C. for 2 hours, after which time 5 ml of water is added. The mixture is heated at 70° C. for 30 minutes and, then, concentrated to dryness. By the above procedure is obtained a pale-yellow oil. This oil is dissolved in methanol and allowed to stand in a refrigerator, whereupon needles separate out. These crystals are collected by filtration and washed with ethanol. The above procedure provided 6.9 g of 1-methyl-3-cyclohexylbarbituric acid as colorless crystals, melting point: 81°-82° C."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "under heating"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "The mixture is further heated at 80°-90° C. for 2 hours",
+      "duration": {
+        "value": 2.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "concentrated to dryness"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "By the above procedure is obtained a pale-yellow oil"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "separate out"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "These crystals are collected by filtration"
+    },
+    {
+      "type": "WASH",
+      "details": "washed with ethanol",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "ethanol"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "1-methyl-3-cyclohexylbarbituric acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN1C(=O)N(C(=O)CC1=O)C1CCCCC1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C11H16N2O3/c1-12-9(14)7-10(15)13(11(12)16)8-5-3-2-4-6-8/h8H,2-7H2,1H3"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 6.9,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 96.1
+              }
+            }
+          ],
+          "isolated_color": "colorless",
+          "texture": {
+            "type": "CRYSTAL",
+            "details": "crystals"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04202975",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:27.294445"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-00289eef5b6d4be180e4621ea615c9e9"
+}

@@ -1,0 +1,234 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "Cl.[Cl:2][C:3]1[CH:8]=[CH:7][CH:6]=[C:5]([Cl:9])[C:4]=1[NH:10][C:11]([NH:13][C:14](=[NH:17])[NH:15][CH3:16])=[O:12].[CH3:18]OC(OC)N(C)C>CC#N>[Cl:2][C:3]1[CH:8]=[CH:7][CH:6]=[C:5]([Cl:9])[C:4]=1[N:10]1[CH:16]=[N:15][C:14]([NH:17][CH3:18])=[N:13][C:11]1=[O:12] |f:0.1|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "1-(2,6-dichlorophenyl)-3-methylamidinourea hydrochloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl.ClC1=C(C(=CC=C1)Cl)NC(=O)NC(NC)=N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C9H10Cl2N4O.ClH/c1-13-8(12)15-9(16)14-7-5(10)3-2-4-6(7)11;/h2-4H,1H3,(H4,12,13,14,15,16);1H"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 11.88,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "CH3CN"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC#N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H3N/c1-2-3/h1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 30.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m2_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "N,N-dimethylformamide dimethylacetal"
+            },
+            {
+              "type": "SMILES",
+              "value": "COC(N(C)C)OC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C5H13NO2/c1-6(2)5(7-3)8-4/h5H,1-4H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 9.52,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "CH3CN"
+            },
+            {
+              "type": "SMILES",
+              "value": "CC#N"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C2H3N/c1-2-3/h1H3"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 20.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "The reaction mixture was stirred at ambient temperature for one hour"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "To a magnetically stirred suspension of 11.88 g (40 mmol) of 1-(2,6-dichlorophenyl)-3-methylamidinourea hydrochloride in 30 ml of CH3CN was added 9.52 g (80 mmol) of N,N-dimethylformamide dimethylacetal in 20 ml of CH3CN. The solid material began to dissolve immediately but in a few minutes, before the starting material had dissolved, another fine white solid began to precipitate out. The reaction mixture was stirred at ambient temperature for one hour then heated to reflux for two hours. After two hours, the reaction mixture was allowed to come to ambient temperature and the white solid precipitate filtered out to yield the desired product, melting point 270° C.; TLC (EtoAc 9:1); one major spot, one minor spot at origin. A small sample recrystallized from CH3OH/EtOAc gave one spot on TLC. (9.6 g, 89%) was crystallized from MeOH to yield 1-(2,6-dichlorophenyl)-4-methylaminodihydro-s-triazin-2-one."
+  },
+  "workups": [
+    {
+      "type": "DISSOLUTION",
+      "details": "to dissolve immediately but in a few minutes, before the starting material"
+    },
+    {
+      "type": "DISSOLUTION",
+      "details": "had dissolved"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to precipitate out"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "then heated"
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "to reflux for two hours",
+      "duration": {
+        "value": 2.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "WAIT",
+      "details": "After two hours",
+      "duration": {
+        "value": 2.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to come to ambient temperature",
+      "temperature": {
+        "control": {
+          "type": "AMBIENT"
+        }
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "the white solid precipitate filtered out"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 1.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "desired product"
+            },
+            {
+              "type": "NAME",
+              "value": "1-(2',6'-dichlorophenyl)-4-methylamino-1,2-dihydro-1,3,5-triazin-2-one"
+            },
+            {
+              "type": "SMILES",
+              "value": "ClC1=C(C(=CC=C1)Cl)N1C(N=C(N=C1)NC)=O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C10H8Cl2N4O/c1-13-9-14-5-16(10(17)15-9)8-6(11)3-2-4-7(8)12/h2-5H,1H3,(H,13,15,17)"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04203985",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:25.730815"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-a8483aa724154ed594ad32181cefef3f"
+}

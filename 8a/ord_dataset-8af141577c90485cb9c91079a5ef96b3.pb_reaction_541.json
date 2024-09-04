@@ -1,0 +1,351 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH3:1][N:2]([CH3:14])[CH2:3][CH2:4][NH:5][C:6]1[CH:11]=[C:10]([CH3:12])[CH:9]=[C:8]([CH3:13])[N:7]=1.C(N(CC)CC)C.[CH3:22][N:23]([CH3:27])[C:24]([Cl:26])=[O:25]>C1C=CC=CC=1>[ClH:26].[ClH:26].[CH3:22][N:23]([CH3:27])[C:24]([N:5]([CH2:4][CH2:3][N:2]([CH3:14])[CH3:1])[C:6]1[CH:11]=[C:10]([CH3:12])[CH:9]=[C:8]([CH3:13])[N:7]=1)=[O:25] |f:4.5.6|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m1_m2_m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "2-(2-Dimethylaminoethylamino)-4,6-dimethylpyridine"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN(CCNC1=NC(=CC(=C1)C)C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C11H19N3/c1-9-7-10(2)13-11(8-9)12-5-6-14(3)4/h7-8H,5-6H2,1-4H3,(H,12,13)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 7.73,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "triethylamine"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(C)N(CC)CC"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H15N/c1-4-7(5-2)6-3/h4-6H2,1-3H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 4.8,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        },
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "benzene"
+            },
+            {
+              "type": "SMILES",
+              "value": "C1=CC=CC=C1"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C6H6/c1-2-4-6-5-3-1/h1-6H"
+            }
+          ],
+          "amount": {
+            "volume": {
+              "value": 200.0,
+              "units": "MILLILITER"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "Dimethyl carbamoyl chloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "CN(C(=O)Cl)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C3H6ClNO/c1-5(2)3(4)6/h1-2H3"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 4.85,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      }
+    },
+    "stirring": {
+      "type": "CUSTOM",
+      "details": "the mixture stirred at room temperature for 2 hours"
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "2-(2-Dimethylaminoethylamino)-4,6-dimethylpyridine (7.73 g, 0.04 mole) and triethylamine (4.8 g, 0.048 mole) are dissolved in 200 ml of anhydrous benzene. Dimethyl carbamoyl chloride (4.85 g, 0.045 mole) is added, the mixture stirred at room temperature for 2 hours and then refluxed four hours. After cooling and dilution with 200 ml of diethyl ether, the triethylamine hydrochloride is filtered off and the filtrate concentrated under vacuum. For purification the crude product is taken up in 200 ml diethyl ether and filtered thru Super-Cel. On addition of ethanolic hydrogen chloride to the filtrate, the product crystallizes and is filtered off to obtain 11 g of solid, m.p. 204°. Recrystallization from 150 ml ethanol and 250 ml diethyl ether yields 10.29 g, m.p. 205°-206° C. (d)."
+  },
+  "workups": [
+    {
+      "type": "TEMPERATURE",
+      "details": "refluxed four hours",
+      "duration": {
+        "value": 4.0,
+        "units": "HOUR"
+      }
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "After cooling"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "dilution with 200 ml of diethyl ether, the triethylamine hydrochloride is filtered off",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "diethyl ether"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(C)OCC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3"
+              }
+            ],
+            "amount": {
+              "volume": {
+                "value": 200.0,
+                "units": "MILLILITER"
+              }
+            },
+            "reaction_role": "WORKUP"
+          },
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "triethylamine hydrochloride"
+              },
+              {
+                "type": "SMILES",
+                "value": "Cl.C(C)N(CC)CC"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/C6H15N.ClH/c1-4-7(5-2)6-3;/h4-6H2,1-3H3;1H"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "the filtrate concentrated under vacuum"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "For purification the crude product",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "crude product"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FILTRATION",
+      "details": "filtered"
+    },
+    {
+      "type": "ADDITION",
+      "details": "On addition of ethanolic hydrogen chloride to the filtrate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "hydrogen chloride"
+              },
+              {
+                "type": "SMILES",
+                "value": "Cl"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/ClH/h1H"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "the product crystallizes"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "is filtered off"
+    }
+  ],
+  "outcomes": [
+    {
+      "reaction_time": {
+        "value": 2.0,
+        "units": "HOUR"
+      },
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "solid"
+            },
+            {
+              "type": "NAME",
+              "value": "N,N-Dimethyl-N'-(2-dimethylaminoethyl)-N'-(4,6-dimethyl-2-pyridyl)urea Dihydrochloride"
+            },
+            {
+              "type": "SMILES",
+              "value": "Cl.Cl.CN(C(=O)N(C1=NC(=CC(=C1)C)C)CCN(C)C)C"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/C14H24N4O.2ClH/c1-11-9-12(2)15-13(10-11)18(8-7-16(3)4)14(19)17(5)6;;/h9-10H,7-8H2,1-6H3;2*1H"
+            }
+          ],
+          "measurements": [
+            {
+              "type": "AMOUNT",
+              "details": "MASS",
+              "amount": {
+                "mass": {
+                  "value": 11.0,
+                  "units": "GRAM"
+                }
+              }
+            },
+            {
+              "type": "YIELD",
+              "details": "CALCULATEDPERCENTYIELD",
+              "percentage": {
+                "value": 144.9
+              }
+            }
+          ],
+          "texture": {
+            "type": "CUSTOM",
+            "details": "solid"
+          },
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04203988",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:27.541078"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-427bab30ae7540f1a8bafa8c6b47b734"
+}

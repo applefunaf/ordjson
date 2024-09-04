@@ -1,0 +1,413 @@
+{
+  "identifiers": [
+    {
+      "type": "REACTION_CXSMILES",
+      "value": "[CH:1]([O-:3])=[O:2].[U+2:4](=[O:6])=[O:5].[CH:7]([O-:9])=[O:8]>C(O)=O>[OH2:2].[CH:7]([O-:9])=[O:8].[U+2:4](=[O:6])=[O:5].[CH:1]([O-:3])=[O:2] |f:0.1.2,4.5.6.7|",
+      "is_mapped": true
+    }
+  ],
+  "inputs": {
+    "m4": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "formic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2O2/c2-1-3/h1H,(H,2,3)"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m1": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "uranyl formate"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(=O)[O-].[U+2](=O)=O.C(=O)[O-]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/2CH2O2.2O.U/c2*2-1-3;;;/h2*1H,(H,2,3);;;/q;;;;+2/p-2"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "REACTANT"
+        }
+      ]
+    },
+    "m2": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "formic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2O2/c2-1-3/h1H,(H,2,3)"
+            }
+          ],
+          "amount": {
+            "moles": {
+              "value": 0.0,
+              "precision": 1.0,
+              "units": "MOLE"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    },
+    "m3": {
+      "components": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "formic acid"
+            },
+            {
+              "type": "SMILES",
+              "value": "C(=O)O"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/CH2O2/c2-1-3/h1H,(H,2,3)"
+            }
+          ],
+          "amount": {
+            "mass": {
+              "value": 100.0,
+              "units": "GRAM"
+            }
+          },
+          "reaction_role": "SOLVENT"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "temperature": {
+      "control": {
+        "type": "AMBIENT"
+      },
+      "setpoint": {
+        "value": 25.0,
+        "units": "CELSIUS"
+      }
+    },
+    "conditions_are_dynamic": true,
+    "details": "See reaction.notes.procedure_details."
+  },
+  "notes": {
+    "procedure_details": "Unsaturated uranyl formate solution from the denitration step and at the denitration temperature of about 90° C. is then contacted with additional formic acid to precipitate uranyl formate monohydrate. The formic acid is added in sufficient stoichiometric excess and at a rate selected to control the nucleation and growth of crystalline particles during precipitation and to yield the desired particle size distribution for powder metallurgical requirements. Formic acid preferably at or in excess of 19.9 M concentration is added at a rate of between about 0.40 and 1.27 moles/(min)(liter of uranyl nitrate feed) to raise the solution acid concentration from about 0.3 to about 1.4 moles/100 g of solution. A higher concentration of formic acid (about 1.6 to 1.7 moles/100 g solution) is achieved by conventional volume reduction (evaporation) and controlled addition of small quantities of 90% formic acid. At this concentration the solution and precipitate are cooled to ambient room temperature (about 25° C.). The precipitate is then recovered by filtration. The precipitate is washed during this step with 90% formic acid to remove residual contaminants. The filter cake, consisting essentially of substantially pure uranyl formate monohydrate (UO2 (HCOO)2.H2O), is then dried at 110° to 120° C. for one to four hours to provide a crystalline uranyl formate monohydrate salt."
+  },
+  "workups": [
+    {
+      "type": "CUSTOM",
+      "details": "at the denitration temperature of about 90° C.",
+      "temperature": {
+        "setpoint": {
+          "value": 90.0,
+          "units": "CELSIUS"
+        }
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to precipitate uranyl formate monohydrate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "uranyl formate monohydrate"
+              },
+              {
+                "type": "SMILES",
+                "value": "O.C(=O)[O-].[U+2](=O)=O.C(=O)[O-]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/2CH2O2.H2O.2O.U/c2*2-1-3;;;;/h2*1H,(H,2,3);1H2;;;/q;;;;;+2/p-2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "ADDITION",
+      "details": "The formic acid is added in sufficient stoichiometric excess and at a rate",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "formic acid"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(=O)O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2O2/c2-1-3/h1H,(H,2,3)"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "during precipitation"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to yield the desired particle size distribution for powder metallurgical requirements"
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "Formic acid preferably at or in excess of 19.9 M concentration",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "Formic acid"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(=O)O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2O2/c2-1-3/h1H,(H,2,3)"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "ADDITION",
+      "details": "is added at a rate of between about 0.40 and 1.27 moles/(min)(liter of uranyl nitrate feed)",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "uranyl nitrate"
+              },
+              {
+                "type": "SMILES",
+                "value": "[N+](=O)([O-])[O-].[U+2](=O)=O.[N+](=O)([O-])[O-]"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/2NO3.2O.U/c2*2-1(3)4;;;/q2*-1;;;+2"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "TEMPERATURE",
+      "details": "to raise"
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "the solution acid concentration from about 0.3 to about 1.4 moles/100 g of solution",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "solution"
+              }
+            ],
+            "amount": {
+              "mass": {
+                "value": 100.0,
+                "units": "GRAM"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CONCENTRATION",
+      "details": "At this concentration the solution and precipitate"
+    },
+    {
+      "type": "FILTRATION",
+      "details": "The precipitate is then recovered by filtration"
+    },
+    {
+      "type": "WASH",
+      "details": "The precipitate is washed during this step with 90% formic acid",
+      "input": {
+        "components": [
+          {
+            "identifiers": [
+              {
+                "type": "NAME",
+                "value": "formic acid"
+              },
+              {
+                "type": "SMILES",
+                "value": "C(=O)O"
+              },
+              {
+                "type": "INCHI",
+                "value": "InChI=1S/CH2O2/c2-1-3/h1H,(H,2,3)"
+              }
+            ],
+            "amount": {
+              "moles": {
+                "value": 0.0,
+                "precision": 1.0,
+                "units": "MOLE"
+              }
+            },
+            "reaction_role": "WORKUP"
+          }
+        ]
+      }
+    },
+    {
+      "type": "CUSTOM",
+      "details": "to remove residual contaminants"
+    },
+    {
+      "type": "CUSTOM",
+      "details": "is then dried at 110° to 120° C. for one to four hours"
+    }
+  ],
+  "outcomes": [
+    {
+      "products": [
+        {
+          "identifiers": [
+            {
+              "type": "NAME",
+              "value": "uranyl formate monohydrate"
+            },
+            {
+              "type": "SMILES",
+              "value": "O.C(=O)[O-].[U+2](=O)=O.C(=O)[O-]"
+            },
+            {
+              "type": "INCHI",
+              "value": "InChI=1S/2CH2O2.H2O.2O.U/c2*2-1-3;;;;/h2*1H,(H,2,3);1H2;;;/q;;;;;+2/p-2"
+            }
+          ],
+          "reaction_role": "PRODUCT"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "doi": "10.6084/m9.figshare.5104873.v1",
+    "patent": "US04201738",
+    "record_created": {
+      "time": {
+        "value": "2022-12-02 16:45:24.862943"
+      },
+      "person": {
+        "username": "skearnes",
+        "name": "Steven Kearnes",
+        "orcid": "0000-0003-4579-4388",
+        "organization": "Google LLC",
+        "email": "kearnes@google.com"
+      }
+    },
+    "record_modified": [
+      {
+        "time": {
+          "value": "Mon Dec  5 19:16:53 2022"
+        },
+        "person": {
+          "username": "github-actions",
+          "email": "github-actions@github.com"
+        },
+        "details": "Automatic updates from the submission pipeline."
+      }
+    ]
+  },
+  "reaction_id": "ord-fce53c8a39584b4f873c5db58ebe74d2"
+}
